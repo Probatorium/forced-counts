@@ -17,4 +17,5 @@ data/sequences.json	analisis	extraido	el dato recibido, no escrito aqui
 data/PROVENANCE.md	aparato	propio	trazabilidad de la extraccion
 results/measurements.tsv	analisis	propio	salida del analisis
 results/permutations.txt	analisis	propio	salida del analisis
+DEFINICIONES-GRUPO.md	aparato	propio	documentacion de proceso, declara la nocion antes de enumerar
 INFORME.md	analisis	propio	lectura de los resultados sobre el objeto de estudio
