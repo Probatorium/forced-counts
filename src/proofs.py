@@ -616,13 +616,14 @@ def pieza_2_certificados():
     emit("p2.CERT.mwd.clases.con.testigo", con, "de 15")
     emit("p2.CERT.mwd.pares.demostrados", pares_con, "")
     emit("p2.CERT.mwd.aportacion.demostrada", pares_con // 2, "la mitad, por los Lemas 1 y 2")
-    emit("p2.CERT.mwd.clases.sin.testigo",
+    emit("p2.CERT.mwd.clases.sin.testigo.uniforme",
          " ".join("(%d,%d)" % c for c in sin_clases) if sin_clases else "ninguna",
-         "el Lema 2 no llega: quedan enumerativas")
-    emit("p2.CERT.mwd.pares.enumerativos", pares_sin, "")
+         "el Lema 2 no llega; se retoman en la pieza 5")
+    emit("p2.CERT.mwd.pares.fuera.del.lema.2", pares_sin, "")
     obs_sin = sum(status_vector(seq)[k] for (a, b), m in clase.items()
                   if (a, b) in sin_clases for k in m)
-    emit("p2.CERT.mwd.aportacion.enumerativa", obs_sin, "contada, no demostrada")
+    emit("p2.CERT.mwd.aportacion.fuera.del.lema.2", obs_sin,
+         "la fija el Lema 3 en la pieza 5")
 
     # Jing Fang, por orbitas
     seqj = SEQS["Jing Fang"]
@@ -664,6 +665,168 @@ def pieza_2_certificados():
     print("escrito results/certificates.txt")
 
 
+def relation_edges(seq, group, members):
+    """
+    Aristas del cierre de relaciones dentro de un conjunto de pares: {p, q} con
+    testigo g tal que g manda p sobre q y epsilon(g, p) vale uno. Por el Lema 0
+    los dos extremos de una arista tienen estado contrario, sin mirar el estado.
+    """
+    posof, vals = position_data(seq)
+    ms = set(members)
+    edges = {}
+    for g in sorted(group, key=lambda g: (GR.FAMILY[g][0], GR.FAMILY[g][1])):
+        gs = [g[h] for h in seq]
+        for k in members:
+            i, j = PAIRS[k]
+            a, b = posof[gs[i]], posof[gs[j]]
+            A = 1 if a > b else 0
+            B = 1 if ((VAL[gs[i]] > VAL[gs[j]]) != (vals[i] > vals[j])) else 0
+            if (A ^ B) != 1:
+                continue
+            q = PINDEX[(a, b) if a < b else (b, a)]
+            if q == k or q not in ms:
+                continue
+            edges.setdefault((min(k, q), max(k, q)), []).append(g)
+    return edges
+
+
+def max_matching(members, edges):
+    adj = {k: [] for k in members}
+    for (p, q) in edges:
+        adj[p].append(q)
+        adj[q].append(p)
+    match = {}
+
+    def aug(u, seen):
+        for v in adj[u]:
+            if v in seen:
+                continue
+            seen.add(v)
+            if v not in match or aug(match[v], seen):
+                match[v] = u
+                match[u] = v
+                return True
+        return False
+
+    n = 0
+    for u in members:
+        if u not in match and aug(u, set()):
+            n += 1
+    return n, match
+
+
+def pieza_5_clase01():
+    """
+    La clase (0,1) de Mawangdui: el certificado del Lema 3, o la constancia de
+    que no lo hay. Se construye el cierre de relaciones y se busca el
+    emparejamiento mas corto que fije la aportacion.
+    """
+    seq = SEQS["Mawangdui"]
+    G = GR.group_R1(seq, 8)
+    cls = [k for k, (i, j) in enumerate(PAIRS)
+           if weight(lower(seq[i]) ^ lower(seq[j])) == 0
+           and weight(upper(seq[i]) ^ upper(seq[j])) == 1]
+    emit("p5.clase01.pares", len(cls), "la clase que el Lema 2 no alcanza")
+
+    edges = relation_edges(seq, G, cls)
+    emit("p5.clase01.aristas.del.cierre", len(edges),
+         "pares {p,q} con algun testigo que obliga a estados contrarios")
+    # Las aristas solo unen paridades contrarias, luego su numero no puede pasar
+    # de c por (96 menos c). Que haya 2304 obliga a c igual a 48.
+    n = len(cls)
+    cotas = [c for c in range(n + 1) if c * (n - c) >= len(edges)]
+    emit("p5.clase01.valores.de.c.compatibles.con.ese.numero.de.aristas",
+         " ".join(str(c) for c in cotas),
+         "de c por (n menos c) mayor o igual que el numero de aristas")
+    check("p5.clase01.el.recuento.de.aristas.ya.fija.c.en.48", cotas == [n // 2])
+
+    hay, _ = max_matching(cls, edges)
+    check("p5.clase01.el.cierre.admite.emparejamiento.perfecto", hay == len(cls) // 2)
+
+    # el certificado mas corto: cuantos elementos distintos hacen falta
+    unicos = []
+    for g in sorted(G, key=lambda g: (GR.FAMILY[g][0], GR.FAMILY[g][1])):
+        sub = {e: ws for e, ws in edges.items() if g in ws}
+        m, _ = max_matching(cls, sub)
+        if m == len(cls) // 2:
+            unicos.append(g)
+    emit("p5.clase01.elementos.que.bastan.por.si.solos", len(unicos), "de %d" % len(G))
+    check("p5.clase01.basta.un.solo.elemento", len(unicos) > 0)
+
+    g = unicos[0]
+    sub = {e: ws for e, ws in edges.items() if g in ws}
+    m, match = max_matching(cls, sub)
+    parejas = sorted(set((min(a, b), max(a, b)) for a, b in match.items()))
+    emit("p5.clase01.testigo.del.certificado", GR.describe(g), "")
+    emit("p5.clase01.parejas.del.certificado", len(parejas), "")
+    check("p5.clase01.las.parejas.parten.la.clase",
+          len(parejas) == len(cls) // 2 and
+          sorted(x for pr in parejas for x in pr) == sorted(cls))
+
+    # verificacion de cada pareja, una por una y sin mirar ningun estado
+    posof, vals = position_data(seq)
+    gs = [g[h] for h in seq]
+    def aplica(origen):
+        """Aplica el testigo al par de posiciones y devuelve (destino, A, B)."""
+        i, j = PAIRS[origen]
+        a, b = posof[gs[i]], posof[gs[j]]
+        A = 1 if a > b else 0
+        B = 1 if ((VAL[gs[i]] > VAL[gs[j]]) != (vals[i] > vals[j])) else 0
+        return PINDEX[(a, b) if a < b else (b, a)], A, B
+
+    lineas = []
+    for (p, q) in parejas:
+        # la arista puede estar orientada en cualquiera de los dos sentidos
+        destino, A, B = aplica(p)
+        origen, llega = p, q
+        if not (destino == q and (A ^ B) == 1):
+            destino, A, B = aplica(q)
+            origen, llega = q, p
+        assert destino == llega and (A ^ B) == 1, "pareja sin testigo en ningun sentido"
+        i, j = PAIRS[origen]
+        u, v = PAIRS[llega]
+        lineas.append("  {%2d,%2d} -> {%2d,%2d}   A=%d B=%d epsilon=1"
+                      % (i, j, u, v, A, B))
+    check("p5.clase01.las.48.parejas.verifican.epsilon.uno", True)
+    obs = sum(status_vector(seq)[k] for k in cls)
+    emit("p5.clase01.aportacion", len(cls) // 2, "demostrada por el Lema 3")
+    check("p5.clase01.la.aportacion.demostrada.coincide.con.la.contada", obs == len(cls) // 2)
+
+    path = os.path.join(ROOT, "results", "certificate-mwd-01.txt")
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("CERTIFICADO DE LA CLASE (0,1) DE MAWANGDUI\n\n")
+        fh.write("Clase: los %d pares de posiciones cuyos hexagramas comparten trigrama\n" % len(cls))
+        fh.write("inferior y difieren en una sola linea del superior.\n\n")
+        fh.write("Testigo unico: %s\n" % GR.describe(g))
+        fh.write("La mascara se lee con la linea 6 a la izquierda y la linea 1 a la derecha.\n")
+        fh.write("La permutacion se escribe por las lineas de destino.\n\n")
+        fh.write("Las %d parejas de abajo parten la clase entera. En cada una, el testigo\n" % len(parejas))
+        fh.write("lleva el primer par de posiciones al segundo con epsilon igual a uno, y\n")
+        fh.write("por el Lema 0 eso obliga a que sus estados sean contrarios: la pareja\n")
+        fh.write("aporta exactamente una inversion, sin mirar cual de las dos lo es.\n")
+        fh.write("Sumando, la clase aporta %d. Cada linea se verifica por separado.\n\n" % (len(cls) // 2))
+        fh.write("\n".join(lineas) + "\n")
+    print("escrito results/certificate-mwd-01.txt")
+
+    # contraprueba: el Lema 3 no vale de balde. En King Wen no hay emparejamiento
+    # en las orbitas libres, y por eso alli no fuerza nada.
+    seqk = SEQS["King Wen"]
+    gk = GR.group_R1(seqk, 2)
+    orbits, oid, par, st = orbit_data(seqk, gk)
+    libres = [o for o in orbits if 2 * sum(par[k] for k in o) != len(o)]
+    sin_pm = 0
+    for o in libres:
+        e = relation_edges(seqk, gk, o)
+        m, _ = max_matching(o, e)
+        if m < len(o) // 2:
+            sin_pm += 1
+    emit("p5.contraprueba.kingwen.orbitas.libres", len(libres), "")
+    emit("p5.contraprueba.kingwen.orbitas.libres.sin.emparejamiento", sin_pm,
+         "el Lema 3 tampoco las alcanza, como tiene que ser")
+    check("p5.contraprueba.el.lema.3.no.fuerza.lo.que.no.esta.forzado",
+          sin_pm == len(libres))
+
+
 def main():
     pieza_1()
     pieza_2_mawangdui()
@@ -672,6 +835,7 @@ def main():
     pieza_3()
     pieza_4()
     pieza_2_certificados()
+    pieza_5_clase01()
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8", newline="\n") as fh:

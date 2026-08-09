@@ -98,6 +98,46 @@ A un g asi se le llama aqui **testigo** de la orbita. Un testigo es una
 certificacion finita y verificable por separado: basta recorrer la orbita y
 comprobar que epsilon vale uno.
 
+## Lema 0b, cocadena, y por que las cadenas no dan nada nuevo
+
+**epsilon(gh, p) = epsilon(g, h por p) XOR epsilon(h, p).**
+
+**Demostracion.** Por el Lema 0 aplicado a h, a g y a gh:
+estado(gh por p) = estado(p) XOR epsilon(gh, p), y tambien
+estado(gh por p) = estado(h por p) XOR epsilon(g, h por p) =
+estado(p) XOR epsilon(h, p) XOR epsilon(g, h por p). Igualando sale la formula.
+Fin.
+
+**Consecuencia.** Una cadena de elementos del grupo aplicada a un par acumula
+sus epsilon, y esa acumulacion es exactamente el epsilon del producto, que es
+otro elemento del grupo. Encadenar no llega mas lejos que un solo elemento. La
+generalizacion util del Lema 2 no esta en alargar la cadena, sino en dejar de
+exigir la hipotesis sobre toda la orbita.
+
+## Lema 3, forzado por emparejamiento
+
+Sea S un conjunto de pares de posiciones. **Si S admite un emparejamiento
+perfecto en parejas {p, q} tales que para cada una hay algun g en G con
+g por p igual a q y epsilon(g, p) igual a uno, entonces la aportacion de S al
+recuento es exactamente la mitad del cardinal de S.**
+
+**Demostracion.** Por el Lema 0, epsilon(g, p) igual a uno da
+estado(q) = estado(p) XOR 1, de modo que de los dos pares de la pareja
+exactamente uno es inversion, sin saber cual. Como las parejas parten S, la
+aportacion es el numero de parejas, que es la mitad del cardinal. Fin.
+
+**El Lema 2 es el caso particular** en que un mismo g sirve para todas las
+parejas: sus ciclos dentro de la orbita tienen longitud par y se parten en
+parejas consecutivas. Lo que el Lema 3 anade es que el testigo puede cambiar de
+pareja en pareja, y que la hipotesis solo se exige sobre la mitad elegida, no
+sobre la orbita entera.
+
+**El Lema 3 no es gratis.** Si un conjunto no aporta exactamente la mitad, sus
+dos clases de paridad tienen cardinales distintos y ningun emparejamiento
+perfecto puede existir, porque toda arista une paridades contrarias. La
+contraprueba esta hecha: en las 19 orbitas libres de King Wen no hay
+emparejamiento perfecto en ninguna (`results/proofs.tsv:142` a `:144`).
+
 ## Comprobador
 
 `src/proofs.py`, funcion `pieza_1`. Los tamanos de orbita suman C(64,2) en las
@@ -201,16 +241,43 @@ Los testigos estan en `results/certificates.txt` y su verificacion en
 argumentan en prosa, y por eso su uniformidad depende del orden de familia y del
 orden interno recibidos, no solo de B6.
 
-## 2.5 Mawangdui: la clase que queda, ENUMERATIVA
+## 2.5 Mawangdui: la clase (0, 1), DEMOSTRADA por el Lema 3
 
-La clase (0, 1), de 96 pares, **no tiene testigo**: se recorrieron los 2304
-elementos del grupo y ninguno da epsilon uniformemente uno sobre ella
-(`results/proofs.tsv:120`). El Lema 2 no llega, y aqui no se demuestra por otra
-via. Su aportacion es 48, la mitad de 96, y esa cifra esta contada, no demostrada
-(`results/proofs.tsv:121`, `:122`).
+La clase (0, 1), de 96 pares, **no tiene testigo uniforme**: se recorrieron los
+2304 elementos del grupo y ninguno da epsilon igual a uno sobre toda la clase
+(`results/proofs.tsv:120`). El Lema 2 no llega. El Lema 3 si.
 
-Balance de Mawangdui: 960 demostrado mas 48 contado igual a 1008. El empate de
-Mawangdui queda demostrado salvo una clase de 96 pares.
+**El cierre de relaciones.** Sobre los 96 pares de la clase se levanta el grafo
+cuyas aristas son las parejas {p, q} para las que existe algun g del grupo con
+g por p igual a q y epsilon(g, p) igual a uno. Tiene 2304 aristas
+(`results/proofs.tsv:130`).
+
+**Ese numero solo ya fija la cifra.** Toda arista une paridades contrarias, luego
+si la clase de paridad uno tiene c elementos, el numero de aristas no puede pasar
+de c por 96 menos c, cuyo maximo es 2304 y se alcanza solo en c igual a 48. Como
+hay 2304 aristas, c vale 48 y la aportacion es 48. Comprobado recorriendo los
+valores posibles de c (`results/proofs.tsv:131`, `:132`).
+
+**El certificado explicito, mas corto de lo esperable.** El cierre admite
+emparejamiento perfecto (`results/proofs.tsv:133`), y no hace falta variar el
+testigo: 576 de los 2304 elementos bastan por si solos, cada uno con sus propias
+48 parejas (`:134`, `:135`). El certificado que se deposita usa uno solo, el
+primero en orden determinista: permutacion que intercambia las lineas 5 y 6,
+seguida de complementar la linea 5 (`results/proofs.tsv:136`). Sus 48 parejas
+parten la clase entera (`:137`, `:138`) y cada una verifica epsilon igual a uno
+(`:139`).
+
+El objeto esta en `results/certificate-mwd-01.txt`, una linea por pareja, con las
+dos posiciones de origen, las dos de destino y los bits A y B que dan epsilon.
+Cada linea se verifica por separado y ninguna mira ningun estado.
+
+**Teorema.** La clase (0, 1) aporta exactamente 48 (`results/proofs.tsv:140`),
+por el Lema 3 aplicado a ese emparejamiento. La cifra que antes estaba contada
+ahora esta demostrada, y las dos coinciden (`:141`).
+
+**Corolario.** Las 15 clases de Mawangdui estan forzadas con demostracion, luego
+por el Lema 1 el recuento vale C(64,2) partido por dos, igual a 1008. **El empate
+de Mawangdui queda demostrado entero, sin residuo enumerativo.**
 
 ## 2.6 Jing Fang: el grupo, DEMOSTRADO
 
@@ -303,16 +370,17 @@ por completo, sin residuo enumerativo.
 
 ## 2.9 Lo que sigue siendo ENUMERATIVO en esta pieza
 
-Solo una cosa: la clase (0, 1) de Mawangdui, 96 pares, aportacion 48
-(`results/proofs.tsv:120` a `:122`). Nada mas. Las cifras globales que en el
-informe anterior eran enumerativas quedan asi:
+Nada.
 
-| secuencia | pares demostrados | aportacion demostrada | pares contados | aportacion contada | total |
-|---|---|---|---|---|---|
-| Mawangdui | 1920 | 960 | 96 | 48 | 1008 |
-| Jing Fang | 2016 | 1008 | 0 | 0 | 1008 |
+| secuencia | pares demostrados | aportacion demostrada | pares contados | total |
+|---|---|---|---|---|
+| Mawangdui | 1920 por el Lema 2, mas 96 por el Lema 3 | 960 mas 48 | 0 | 1008 |
+| Jing Fang | 2016 por el Lema 2 | 1008 | 0 | 1008 |
 
-Origen: `results/proofs.tsv:118`, `:119`, `:121`, `:122`, `:125`, `:126`.
+Origen: `results/proofs.tsv:118`, `:119`, `:125`, `:126`, `:129`, `:140`.
+
+Los dos empates estan demostrados. Lo que queda abierto en este repositorio es
+el residuo de 5 de King Wen, y solo eso.
 
 ---
 
@@ -465,13 +533,16 @@ Las dos secuencias recibidas tienen anchura cero
 | afirmacion | estado |
 |---|---|
 | Lema 0, relacion de estado | DEMOSTRADO, argumento |
+| Lema 0b, cocadena, y el colapso de las cadenas | DEMOSTRADO, argumento |
 | Lema 1, el empate como unico valor forzable | DEMOSTRADO, argumento |
 | Lema 2, criterio de orbita forzada | DEMOSTRADO, argumento |
+| Lema 3, forzado por emparejamiento | DEMOSTRADO, argumento |
 | Mawangdui, grupo de orden 2304 | DEMOSTRADO, argumento |
 | Mawangdui, 15 orbitas y sus tamanos | DEMOSTRADO, argumento |
 | Mawangdui, 9 clases forzadas | DEMOSTRADO, testigo argumentado |
 | Mawangdui, 5 clases mas forzadas | DEMOSTRADO, testigo exhibido |
-| Mawangdui, la clase (0,1) forzada | ENUMERATIVO, 96 pares |
+| Mawangdui, la clase (0,1) forzada | DEMOSTRADO, Lema 3 con certificado |
+| Mawangdui, el empate en 1008 | DEMOSTRADO |
 | Jing Fang, grupo de orden 8 | DEMOSTRADO, argumento |
 | Jing Fang, 280 orbitas y sus tamanos | DEMOSTRADO, argumento |
 | Jing Fang, 28 orbitas forzadas | DEMOSTRADO, testigo argumentado |

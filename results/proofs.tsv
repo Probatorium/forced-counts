@@ -117,12 +117,28 @@ p4.conserva.la.adyacencia.del.6.cubo	1	comprobado en una muestra de 64 elementos
 p2.CERT.mwd.clases.con.testigo	14	de 15
 p2.CERT.mwd.pares.demostrados	1920	
 p2.CERT.mwd.aportacion.demostrada	960	la mitad, por los Lemas 1 y 2
-p2.CERT.mwd.clases.sin.testigo	(0,1)	el Lema 2 no llega: quedan enumerativas
-p2.CERT.mwd.pares.enumerativos	96	
-p2.CERT.mwd.aportacion.enumerativa	48	contada, no demostrada
+p2.CERT.mwd.clases.sin.testigo.uniforme	(0,1)	el Lema 2 no llega; se retoman en la pieza 5
+p2.CERT.mwd.pares.fuera.del.lema.2	96	
+p2.CERT.mwd.aportacion.fuera.del.lema.2	48	la fija el Lema 3 en la pieza 5
 p2.CERT.jf.orbitas.con.testigo	280	de 280
 p2.CERT.jf.orbitas.sin.testigo	0	
 p2.CERT.jf.pares.demostrados	2016	
 p2.CERT.jf.aportacion.demostrada	1008	
 p2.CERT.jf.testigos.distintos.usados	3	
 p2.CERT.jf.el.empate.queda.demostrado	1	toda orbita forzada por el Lema 2, luego el total es C(64,2) partido por dos por el Lema 1
+p5.clase01.pares	96	la clase que el Lema 2 no alcanza
+p5.clase01.aristas.del.cierre	2304	pares {p,q} con algun testigo que obliga a estados contrarios
+p5.clase01.valores.de.c.compatibles.con.ese.numero.de.aristas	48	de c por (n menos c) mayor o igual que el numero de aristas
+p5.clase01.el.recuento.de.aristas.ya.fija.c.en.48	1	
+p5.clase01.el.cierre.admite.emparejamiento.perfecto	1	
+p5.clase01.elementos.que.bastan.por.si.solos	576	de 2304
+p5.clase01.basta.un.solo.elemento	1	
+p5.clase01.testigo.del.certificado	lineas 123465, mascara 010000	
+p5.clase01.parejas.del.certificado	48	
+p5.clase01.las.parejas.parten.la.clase	1	
+p5.clase01.las.48.parejas.verifican.epsilon.uno	1	
+p5.clase01.aportacion	48	demostrada por el Lema 3
+p5.clase01.la.aportacion.demostrada.coincide.con.la.contada	1	
+p5.contraprueba.kingwen.orbitas.libres	19	
+p5.contraprueba.kingwen.orbitas.libres.sin.emparejamiento	19	el Lema 3 tampoco las alcanza, como tiene que ser
+p5.contraprueba.el.lema.3.no.fuerza.lo.que.no.esta.forzado	1	

@@ -1,0 +1,63 @@
+CERTIFICADO DE LA CLASE (0,1) DE MAWANGDUI
+
+Clase: los 96 pares de posiciones cuyos hexagramas comparten trigrama
+inferior y difieren en una sola linea del superior.
+
+Testigo unico: lineas 123465, mascara 010000
+La mascara se lee con la linea 6 a la izquierda y la linea 1 a la derecha.
+La permutacion se escribe por las lineas de destino.
+
+Las 48 parejas de abajo parten la clase entera. En cada una, el testigo
+lleva el primer par de posiciones al segundo con epsilon igual a uno, y
+por el Lema 0 eso obliga a que sus estados sean contrarios: la pareja
+aporta exactamente una inversion, sin mirar cual de las dos lo es.
+Sumando, la clase aporta 48. Cada linea se verifica por separado.
+
+  {25,41} -> { 0,41}   A=1 B=0 epsilon=1
+  { 0,49} -> {25,49}   A=1 B=0 epsilon=1
+  { 0,57} -> { 9,49}   A=1 B=0 epsilon=1
+  {26,42} -> { 1,42}   A=1 B=0 epsilon=1
+  { 1,50} -> {26,50}   A=1 B=0 epsilon=1
+  { 1,58} -> {10,50}   A=1 B=0 epsilon=1
+  {27,43} -> { 2,43}   A=1 B=0 epsilon=1
+  { 2,51} -> {27,51}   A=1 B=0 epsilon=1
+  { 2,59} -> { 8,51}   A=1 B=0 epsilon=1
+  {28,40} -> { 3,40}   A=1 B=0 epsilon=1
+  { 3,52} -> {28,52}   A=1 B=0 epsilon=1
+  { 3,60} -> {11,52}   A=1 B=0 epsilon=1
+  {29,44} -> { 4,44}   A=1 B=0 epsilon=1
+  { 4,53} -> {29,53}   A=1 B=0 epsilon=1
+  { 4,61} -> {12,53}   A=1 B=0 epsilon=1
+  {30,45} -> { 5,45}   A=1 B=0 epsilon=1
+  { 5,48} -> {30,48}   A=1 B=0 epsilon=1
+  { 5,62} -> {13,48}   A=1 B=0 epsilon=1
+  {24,46} -> { 6,46}   A=1 B=0 epsilon=1
+  { 6,54} -> {24,54}   A=1 B=0 epsilon=1
+  { 6,63} -> {14,54}   A=1 B=0 epsilon=1
+  {31,47} -> { 7,47}   A=1 B=0 epsilon=1
+  { 7,55} -> {31,55}   A=1 B=0 epsilon=1
+  { 7,56} -> {15,55}   A=1 B=0 epsilon=1
+  { 8,59} -> { 8,34}   A=1 B=0 epsilon=1
+  { 9,57} -> { 9,33}   A=1 B=0 epsilon=1
+  {10,58} -> {10,32}   A=1 B=0 epsilon=1
+  {11,60} -> {11,35}   A=1 B=0 epsilon=1
+  {12,61} -> {12,36}   A=1 B=0 epsilon=1
+  {13,62} -> {13,37}   A=1 B=0 epsilon=1
+  {14,63} -> {14,38}   A=1 B=0 epsilon=1
+  {15,56} -> {15,39}   A=1 B=0 epsilon=1
+  {16,36} -> {16,61}   A=1 B=0 epsilon=1
+  {29,36} -> {16,44}   A=1 B=0 epsilon=1
+  {17,33} -> {17,57}   A=1 B=0 epsilon=1
+  {25,33} -> {17,41}   A=1 B=0 epsilon=1
+  {18,32} -> {18,58}   A=1 B=0 epsilon=1
+  {26,32} -> {18,42}   A=1 B=0 epsilon=1
+  {19,34} -> {19,59}   A=1 B=0 epsilon=1
+  {27,34} -> {19,43}   A=1 B=0 epsilon=1
+  {20,35} -> {20,60}   A=1 B=0 epsilon=1
+  {28,35} -> {20,40}   A=1 B=0 epsilon=1
+  {21,37} -> {21,62}   A=1 B=0 epsilon=1
+  {30,37} -> {21,45}   A=1 B=0 epsilon=1
+  {22,38} -> {22,63}   A=1 B=0 epsilon=1
+  {24,38} -> {22,46}   A=1 B=0 epsilon=1
+  {23,39} -> {23,56}   A=1 B=0 epsilon=1
+  {31,39} -> {23,47}   A=1 B=0 epsilon=1
