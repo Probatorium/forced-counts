@@ -29,3 +29,6 @@ results/certificates.txt	analisis	propio	testigos del Lema 2, uno por orbita
 PROOFS.md	analisis	propio	demostraciones y declaracion de lo enumerativo
 results/certificate-mwd-01.txt	analisis	propio	certificado del Lema 3 para la clase (0,1)
 NAME.md	aparato	propio	comprobacion de termino y deslinde del nombre
+src/gray.py	analisis	propio	ordenacion de comparacion y su contabilidad
+results/gray-measurements.tsv	analisis	propio	salida del analisis
+INFORME-GRAY.md	analisis	propio	lectura de los resultados de la ordenacion de comparacion

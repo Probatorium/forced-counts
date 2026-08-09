@@ -1,0 +1,101 @@
+# El codigo de Gray reflejado como ordenacion de comparacion.
+# clave	valor	nota
+gray.longitud	64	construido por la recursion, sin importar nada
+gray.es.una.permutacion.de.los.64	1	
+gray.coincide.con.la.forma.cerrada.n.xor.n.medio	1	la recursion reproduce n XOR n desplazado uno, bajo la convencion de referencia
+gray.pasos.de.una.sola.linea	1	cada paso cambia exactamente una linea
+gray.coste.hamming.adyacente	63	el minimo posible para 64 palabras
+denominador	2016	C(64,2), el mismo de siempre
+inv.Gray.yang1.bottomMSB	496	tasa 0.246032 sobre C(64,2)
+inv.Gray.yang1.bottomLSB	992	tasa 0.492063 sobre C(64,2)
+inv.Gray.yang0.bottomMSB	1520	tasa 0.753968 sobre C(64,2)
+inv.Gray.yang0.bottomLSB	1024	tasa 0.507937 sobre C(64,2)
+gray.nivel.2.bloques.son.cosets.de.un.mismo.conjunto	1	
+gray.nivel.2.ese.conjunto.es.subespacio	1	
+gray.nivel.2.R1.orden	7680	prediccion k! por (6-k)! por 64, igual a 7680
+gray.nivel.2.R1.orden.coincide.con.la.prediccion	1	
+gray.nivel.2.R2.orden	3840	
+gray.nivel.2.orbitas	11	
+gray.nivel.2.orbitas_forzadas	1	
+gray.nivel.2.orbitas_libres	10	
+gray.nivel.2.aportacion_forzada	16	
+gray.nivel.2.minimo	496	
+gray.nivel.2.maximo	1520	
+gray.nivel.2.observado	496	
+gray.nivel.2.anchura	1024	
+gray.nivel.2.totales_alcanzables	33	
+gray.nivel.2.esperado_alcanzable	1	
+gray.nivel.2.paridad_forzada	0	
+gray.nivel.2.fuerza.el.empate	0	
+gray.nivel.4.bloques.son.cosets.de.un.mismo.conjunto	1	
+gray.nivel.4.ese.conjunto.es.subespacio	1	
+gray.nivel.4.R1.orden	3072	prediccion k! por (6-k)! por 64, igual a 3072
+gray.nivel.4.R1.orden.coincide.con.la.prediccion	1	
+gray.nivel.4.R2.orden	384	
+gray.nivel.4.orbitas	14	
+gray.nivel.4.orbitas_forzadas	2	
+gray.nivel.4.orbitas_libres	12	
+gray.nivel.4.aportacion_forzada	48	
+gray.nivel.4.minimo	496	
+gray.nivel.4.maximo	1520	
+gray.nivel.4.observado	496	
+gray.nivel.4.anchura	1024	
+gray.nivel.4.totales_alcanzables	33	
+gray.nivel.4.esperado_alcanzable	1	
+gray.nivel.4.paridad_forzada	0	
+gray.nivel.4.fuerza.el.empate	0	
+gray.nivel.8.bloques.son.cosets.de.un.mismo.conjunto	1	
+gray.nivel.8.ese.conjunto.es.subespacio	1	
+gray.nivel.8.R1.orden	2304	prediccion k! por (6-k)! por 64, igual a 2304
+gray.nivel.8.R1.orden.coincide.con.la.prediccion	1	
+gray.nivel.8.R2.orden	48	
+gray.nivel.8.orbitas	15	
+gray.nivel.8.orbitas_forzadas	3	
+gray.nivel.8.orbitas_libres	12	
+gray.nivel.8.aportacion_forzada	112	
+gray.nivel.8.minimo	496	
+gray.nivel.8.maximo	1520	
+gray.nivel.8.observado	496	
+gray.nivel.8.anchura	1024	
+gray.nivel.8.totales_alcanzables	33	
+gray.nivel.8.esperado_alcanzable	1	
+gray.nivel.8.paridad_forzada	0	
+gray.nivel.8.fuerza.el.empate	0	
+gray.nivel.16.bloques.son.cosets.de.un.mismo.conjunto	1	
+gray.nivel.16.ese.conjunto.es.subespacio	1	
+gray.nivel.16.R1.orden	3072	prediccion k! por (6-k)! por 64, igual a 3072
+gray.nivel.16.R1.orden.coincide.con.la.prediccion	1	
+gray.nivel.16.R2.orden	8	
+gray.nivel.16.orbitas	14	
+gray.nivel.16.orbitas_forzadas	4	
+gray.nivel.16.orbitas_libres	10	
+gray.nivel.16.aportacion_forzada	240	
+gray.nivel.16.minimo	496	
+gray.nivel.16.maximo	1520	
+gray.nivel.16.observado	496	
+gray.nivel.16.anchura	1024	
+gray.nivel.16.totales_alcanzables	33	
+gray.nivel.16.esperado_alcanzable	1	
+gray.nivel.16.paridad_forzada	0	
+gray.nivel.16.fuerza.el.empate	0	
+gray.nivel.32.bloques.son.cosets.de.un.mismo.conjunto	1	
+gray.nivel.32.ese.conjunto.es.subespacio	1	
+gray.nivel.32.R1.orden	7680	prediccion k! por (6-k)! por 64, igual a 7680
+gray.nivel.32.R1.orden.coincide.con.la.prediccion	1	
+gray.nivel.32.R2.orden	2	
+gray.nivel.32.orbitas	11	
+gray.nivel.32.orbitas_forzadas	5	
+gray.nivel.32.orbitas_libres	6	
+gray.nivel.32.aportacion_forzada	496	
+gray.nivel.32.minimo	496	
+gray.nivel.32.maximo	1520	
+gray.nivel.32.observado	496	
+gray.nivel.32.anchura	1024	
+gray.nivel.32.totales_alcanzables	21	
+gray.nivel.32.esperado_alcanzable	1	
+gray.nivel.32.paridad_forzada	0	
+gray.nivel.32.fuerza.el.empate	0	
+gray.solo.complementacion.orbitas_forzadas	336	
+gray.solo.complementacion.aportacion_forzada	336	
+gray.solo.complementacion.anchura	1344	
+gray.solo.complementacion.observado	496	
