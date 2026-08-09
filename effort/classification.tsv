@@ -11,3 +11,10 @@ effort/README.md	aparato	propio	documentacion del instrumento
 effort/classification.tsv	aparato	propio	el propio instrumento
 effort/log.jsonl	aparato	propio	salida del instrumento, no del objeto de estudio
 tools/effort.py	aparato	propio	tooling de registro
+tools/extract_sequences.py	aparato	propio	extraccion y trazabilidad, no computa nada del objeto de estudio
+src/measure.py	analisis	propio	produce los resultados sobre el objeto de estudio
+data/sequences.json	analisis	extraido	el dato recibido, no escrito aqui
+data/PROVENANCE.md	aparato	propio	trazabilidad de la extraccion
+results/measurements.tsv	analisis	propio	salida del analisis
+results/permutations.txt	analisis	propio	salida del analisis
+INFORME.md	analisis	propio	lectura de los resultados sobre el objeto de estudio

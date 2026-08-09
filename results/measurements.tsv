@@ -1,0 +1,97 @@
+# Cada linea es una cifra medida en esta ejecucion.
+# clave	valor	nota
+fuente.commit	d6afae20bbefba56728251f34f8e3870c43e2cbd	kingwen-orderings-replication en la etiqueta zenodo-v3
+fuente.tree	18e55dd409b97c8794b1aa74d11a6bd892860bfd	arbol de la etiqueta
+fuente.fichero.sha256	1efd0521f3f3e31a718504fdf1a9fa42b9a015d709fdaaf0b2f4a76b88ac2a9e	verify_paper.py del que salen las secuencias
+denominador	2016	C(64,2), fijado en PREREGISTRATION.md
+valor.esperado.por.azar	1008	mitad del denominador, media de una ordenacion al azar
+reconstruccion.coincide.Mawangdui	1	1 si la construccion redderivada aqui reproduce la secuencia extraida
+reconstruccion.coincide.JingFang	1	1 si la construccion redderivada aqui reproduce la secuencia extraida
+reconstruccion.coincide.KingWen	0	King Wen no se reconstruye: es el dato recibido, no una construccion generable
+inv.Mawangdui.yang1.bottomMSB	1008	tasa 0.500000 sobre C(64,2)
+inv.Mawangdui.yang1.bottomLSB	1008	tasa 0.500000 sobre C(64,2)
+inv.Mawangdui.yang0.bottomMSB	1008	tasa 0.500000 sobre C(64,2)
+inv.Mawangdui.yang0.bottomLSB	1008	tasa 0.500000 sobre C(64,2)
+inv.JingFang.yang1.bottomMSB	1008	tasa 0.500000 sobre C(64,2)
+inv.JingFang.yang1.bottomLSB	1008	tasa 0.500000 sobre C(64,2)
+inv.JingFang.yang0.bottomMSB	1008	tasa 0.500000 sobre C(64,2)
+inv.JingFang.yang0.bottomLSB	1008	tasa 0.500000 sobre C(64,2)
+inv.KingWen.yang1.bottomMSB	1013	tasa 0.502480 sobre C(64,2)
+inv.KingWen.yang1.bottomLSB	1013	tasa 0.502480 sobre C(64,2)
+inv.KingWen.yang0.bottomMSB	1003	tasa 0.497520 sobre C(64,2)
+inv.KingWen.yang0.bottomLSB	1003	tasa 0.497520 sobre C(64,2)
+convenciones.distintas.en.una.ordenacion.de.prueba	4	recuentos distintos que dan las cuatro convenciones sobre una ordenacion barajada con la semilla del control
+clausura.Mawangdui.pares.conservados	968	pares en los que pi conserva el orden relativo
+clausura.Mawangdui.inversiones.forzadas	484	exactamente la mitad de los pares conservados
+clausura.Mawangdui.pares.libres	1048	pares en los que pi invierte el orden relativo
+clausura.Mawangdui.inversiones.libres	524	no forzadas por la clausura
+clausura.Mawangdui.libres.mitad	524	lo que aportaria la clase libre si tambien se partiera por la mitad
+clausura.Mawangdui.desviacion.en.la.clase.libre	0	toda la desviacion respecto del valor esperado vive aqui
+clausura.Mawangdui.total	1008	suma de las dos partes
+clausura.JingFang.pares.conservados	992	pares en los que pi conserva el orden relativo
+clausura.JingFang.inversiones.forzadas	496	exactamente la mitad de los pares conservados
+clausura.JingFang.pares.libres	1024	pares en los que pi invierte el orden relativo
+clausura.JingFang.inversiones.libres	512	no forzadas por la clausura
+clausura.JingFang.libres.mitad	512	lo que aportaria la clase libre si tambien se partiera por la mitad
+clausura.JingFang.desviacion.en.la.clase.libre	0	toda la desviacion respecto del valor esperado vive aqui
+clausura.JingFang.total	1008	suma de las dos partes
+clausura.KingWen.pares.conservados	1374	pares en los que pi conserva el orden relativo
+clausura.KingWen.inversiones.forzadas	687	exactamente la mitad de los pares conservados
+clausura.KingWen.pares.libres	642	pares en los que pi invierte el orden relativo
+clausura.KingWen.inversiones.libres	326	no forzadas por la clausura
+clausura.KingWen.libres.mitad	321	lo que aportaria la clase libre si tambien se partiera por la mitad
+clausura.KingWen.desviacion.en.la.clase.libre	5	toda la desviacion respecto del valor esperado vive aqui
+clausura.KingWen.total	1013	suma de las dos partes
+mawangdui.el.complemento.manda.octeto.sobre.octeto	1	cada octeto va entero a un octeto
+mawangdui.permutacion.octetos.es.desplazamiento.4	1	el octeto de trigrama superior U va al del trigrama superior complementario
+jingfang.permutacion.palacios.es.desplazamiento.4	1	complementar la cabeza de un palacio lleva al palacio situado cuatro mas alla
+jingfang.posicion.interna.se.conserva	1	el complemento manda la posicion p de un palacio a la misma posicion p del palacio imagen
+jingfang.palacio.complementado.es.palacio.de.la.cabeza.complementada	1	para los ocho palacios, complementar termino a termino da el palacio de la cabeza complementada
+jingfang.hexagramas.cuya.imagen.sale.de.la.construccion	0	criterio de refutacion declarado en la seccion (b) de PREREGISTRATION.md
+kingwen.pares.adyacentes	32	la construccion recibida agrupa la secuencia en pares adyacentes
+kingwen.pares.por.giro	28	el segundo miembro es el giro de media vuelta del primero
+kingwen.pares.por.complemento	8	el segundo miembro es el complemento del primero
+kingwen.pares.cubiertos.por.la.regla	36	giro cuando difiere, complemento cuando el giro no mueve
+kingwen.pares.que.el.complemento.manda.a.otro.par	32	clausura de la construccion de King Wen bajo complementacion, a nivel de par
+kingwen.pares.que.el.complemento.rompe	0	testigos en results/permutations.txt
+kingwen.orbitas.del.giro.de.tamano.dos	28	primera familia de pares de la construccion
+kingwen.hexagramas.que.el.giro.deja.quietos	8	los que se emparejan por complementacion, segunda familia
+kingwen.las.dos.familias.son.los.32.pares	1	la construccion queda cubierta por las dos familias
+kingwen.giro.y.complemento.conmutan	1	de aqui sale la clausura, sin mirar la secuencia recibida
+busqueda.familia.afin.aplicaciones	46080	x -> permutacion de las seis lineas seguida de una mascara de complementacion
+busqueda.familia.afin.involuciones	1384	de esas, las que son involucion
+busqueda.involuciones.que.invierten.el.orden.binario	1	solo puede haber una, y la busqueda lo confirma
+busqueda.involuciones.que.la.construccion.de.kingwen.respeta	112	mandan todo par de King Wen sobre un par de King Wen
+busqueda.involuciones.que.cumplen.las.dos.cosas	1	interseccion: invierten el orden binario y la construccion las respeta
+control.semilla	20260809	congelada en src/measure.py, declarada en el informe
+control.repeticiones	100000	por variante
+control.octetos.orden.de.familia.aciertos	9623	ordenaciones al azar cuyo recuento cae exactamente en el valor esperado
+control.octetos.orden.de.familia.tasa	0.09623	aciertos entre repeticiones
+control.octetos.orden.de.familia.recuentos.distintos	29	valores distintos observados
+control.octetos.orden.de.familia.minimo	896	recuento mas bajo observado
+control.octetos.orden.de.familia.maximo	1120	recuento mas alto observado
+control.octetos.orden.de.familia.clausura.se.mantiene	1	en las 1000 primeras repeticiones el complemento sigue mandando bloque sobre bloque
+control.octetos.orden.interno.aciertos	9573	ordenaciones al azar cuyo recuento cae exactamente en el valor esperado
+control.octetos.orden.interno.tasa	0.09573	aciertos entre repeticiones
+control.octetos.orden.interno.recuentos.distintos	28	valores distintos observados
+control.octetos.orden.interno.minimo	924	recuento mas bajo observado
+control.octetos.orden.interno.maximo	1086	recuento mas alto observado
+control.octetos.orden.interno.clausura.se.mantiene	1	en las 1000 primeras repeticiones el complemento sigue mandando bloque sobre bloque
+control.octetos.los.dos.ordenes.aciertos	1960	ordenaciones al azar cuyo recuento cae exactamente en el valor esperado
+control.octetos.los.dos.ordenes.tasa	0.01960	aciertos entre repeticiones
+control.octetos.los.dos.ordenes.recuentos.distintos	154	valores distintos observados
+control.octetos.los.dos.ordenes.minimo	854	recuento mas bajo observado
+control.octetos.los.dos.ordenes.maximo	1176	recuento mas alto observado
+control.octetos.los.dos.ordenes.clausura.se.mantiene	1	en las 1000 primeras repeticiones el complemento sigue mandando bloque sobre bloque
+control.palacios.orden.de.familia.aciertos	1187	ordenaciones al azar cuyo recuento cae exactamente en el valor esperado
+control.palacios.orden.de.familia.tasa	0.01187	aciertos entre repeticiones
+control.palacios.orden.de.familia.recuentos.distintos	292	valores distintos observados
+control.palacios.orden.de.familia.minimo	704	recuento mas bajo observado
+control.palacios.orden.de.familia.maximo	1320	recuento mas alto observado
+control.palacios.orden.de.familia.clausura.se.mantiene	1	en las 1000 primeras repeticiones el complemento sigue mandando bloque sobre bloque
+exhaustivo.octetos.orden.de.familia.ordenes	40320	todas las ordenaciones de familia posibles
+exhaustivo.octetos.orden.de.familia.aciertos	3836	las que dan exactamente el valor esperado
+exhaustivo.octetos.orden.de.familia.tasa	0.09514	aciertos entre ordenes
+exhaustivo.palacios.orden.de.familia.ordenes	40320	todas las ordenaciones de familia posibles
+exhaustivo.palacios.orden.de.familia.aciertos	464	las que dan exactamente el valor esperado
+exhaustivo.palacios.orden.de.familia.tasa	0.01151	aciertos entre ordenes
