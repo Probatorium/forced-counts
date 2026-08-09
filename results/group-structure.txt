@@ -1,0 +1,102 @@
+EL GRUPO COMPLETO POR CONSTRUCCION
+Nociones R1 y R2 tal y como quedaron fijadas en DEFINICIONES-GRUPO.md.
+
+Mawangdui, bloques de 8 (octeto)
+   R1: orden 2304, 10 generadores
+        lineas 123456, mascara 000001
+        lineas 123456, mascara 000010
+        lineas 123456, mascara 000100
+        lineas 123456, mascara 001000
+        lineas 123456, mascara 010000
+        lineas 123456, mascara 100000
+        lineas 123465, mascara 000000
+        lineas 123546, mascara 000000
+        lineas 132456, mascara 000000
+        lineas 213456, mascara 000000
+   R2: orden 1, 0 generadores
+   contiene la complementacion: R1 True, R2 False
+   contiene el giro de media vuelta: R1 False
+
+Jing Fang, bloques de 8 (palacio)
+   R1: orden 8, 3 generadores
+        lineas 123456, mascara 001001
+        lineas 123456, mascara 010010
+        lineas 123456, mascara 100100
+   R2: orden 8, 3 generadores
+        lineas 123456, mascara 001001
+        lineas 123456, mascara 010010
+        lineas 123456, mascara 100100
+   contiene la complementacion: R1 True, R2 True
+   contiene el giro de media vuelta: R1 False
+
+King Wen, bloques de 2 (par)
+   R1: orden 384, 6 generadores
+        lineas 123456, mascara 001100
+        lineas 123456, mascara 010010
+        lineas 123456, mascara 100001
+        lineas 124356, mascara 000000
+        lineas 132546, mascara 000000
+        lineas 213465, mascara 000000
+   R2: orden 1, 0 generadores
+   contiene la complementacion: R1 True, R2 False
+   contiene el giro de media vuelta: R1 True
+
+CONTABILIDAD POR ORBITAS DE PARES DE POSICIONES
+Convencion de referencia: yang = uno, linea inferior mas significativa.
+
+Mawangdui
+   solo.complementacion orbitas 1024  forzadas  484  libres  540  forzado  484
+                        intervalo [484, 1532] anchura 1048  observado 1008  fuerza el empate: False
+   R1                   orbitas   15  forzadas   15  libres    0  forzado 1008
+                        intervalo [1008, 1008] anchura 0  observado 1008  fuerza el empate: True
+   R2                   orbitas 2016  forzadas    0  libres 2016  forzado    0
+                        intervalo [0, 2016] anchura 2016  observado 1008  fuerza el empate: False
+
+Jing Fang
+   solo.complementacion orbitas 1024  forzadas  496  libres  528  forzado  496
+                        intervalo [496, 1520] anchura 1024  observado 1008  fuerza el empate: False
+   R1                   orbitas  280  forzadas  280  libres    0  forzado 1008
+                        intervalo [1008, 1008] anchura 0  observado 1008  fuerza el empate: True
+   R2                   orbitas  280  forzadas  280  libres    0  forzado 1008
+                        intervalo [1008, 1008] anchura 0  observado 1008  fuerza el empate: True
+
+King Wen
+   solo.complementacion orbitas 1024  forzadas  687  libres  337  forzado  687
+                        intervalo [687, 1329] anchura 642  observado 1013  fuerza el empate: False
+   R1                   orbitas   36  forzadas   17  libres   19  forzado  374
+                        intervalo [957, 1059] anchura 102  observado 1013  fuerza el empate: False
+   R2                   orbitas 2016  forzadas    0  libres 2016  forzado    0
+                        intervalo [0, 2016] anchura 2016  observado 1013  fuerza el empate: False
+
+CONTROL: EL MISMO GRUPO, ORDENES DE FAMILIA BARAJADOS
+
+   octetos   grupo identico 300/300, fuerza un valor 8, fuerza el empate 8, observado igual al esperado 27
+   palacios  grupo identico 300/300, fuerza un valor 0, fuerza el empate 0, observado igual al esperado 3
+
+LAS CUATRO CONVENCIONES BAJO R1
+
+   Mawangdui  yang1  bottomMSB   [1008, 1008]  observado 1008  libres 0
+   Mawangdui  yang1  bottomLSB   [1008, 1008]  observado 1008  libres 0
+   Mawangdui  yang0  bottomMSB   [1008, 1008]  observado 1008  libres 0
+   Mawangdui  yang0  bottomLSB   [1008, 1008]  observado 1008  libres 0
+   Jing Fang  yang1  bottomMSB   [1008, 1008]  observado 1008  libres 0
+   Jing Fang  yang1  bottomLSB   [1008, 1008]  observado 1008  libres 0
+   Jing Fang  yang0  bottomMSB   [1008, 1008]  observado 1008  libres 0
+   Jing Fang  yang0  bottomLSB   [1008, 1008]  observado 1008  libres 0
+   King Wen   yang1  bottomMSB   [957, 1059]  observado 1013  libres 19
+   King Wen   yang1  bottomLSB   [957, 1059]  observado 1013  libres 19
+   King Wen   yang0  bottomMSB   [957, 1059]  observado 1003  libres 19
+   King Wen   yang0  bottomLSB   [957, 1059]  observado 1003  libres 19
+
+CARACTERIZACION DE CADA GRUPO, COMPROBADA ELEMENTO A ELEMENTO
+
+   Mawangdui: R1 es exactamente el conjunto de aplicaciones que permutan
+   lineas dentro del trigrama inferior y dentro del superior, con cualquier
+   mascara. Orden predicho 6 x 6 x 64 = 2304. Coincide: True
+   Jing Fang: R1 es exactamente el conjunto de aplicaciones que no mueven
+   ninguna linea y complementan la misma linea en los dos trigramas.
+   Orden predicho 8. Coincide: True
+   King Wen: los bloques son las orbitas del giro, y R1 resulta ser
+   exactamente el centralizador del giro dentro de la familia afin.
+   Todos conmutan con el giro: True. Coincide con el centralizador: True.
+

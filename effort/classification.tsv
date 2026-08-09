@@ -19,3 +19,7 @@ results/measurements.tsv	analisis	propio	salida del analisis
 results/permutations.txt	analisis	propio	salida del analisis
 DEFINICIONES-GRUPO.md	aparato	propio	documentacion de proceso, declara la nocion antes de enumerar
 INFORME.md	analisis	propio	lectura de los resultados sobre el objeto de estudio
+src/group.py	analisis	propio	produce los resultados sobre el objeto de estudio
+results/group-measurements.tsv	analisis	propio	salida del analisis
+results/group-structure.txt	analisis	propio	salida del analisis
+INFORME-GRUPO.md	analisis	propio	lectura de los resultados sobre el objeto de estudio

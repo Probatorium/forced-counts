@@ -1,0 +1,269 @@
+# Cada linea es una cifra medida en esta ejecucion.
+# clave	valor	nota
+fuente.commit	d6afae20bbefba56728251f34f8e3870c43e2cbd	sin cambios respecto del commit de la medicion
+familia.afin.tamano	46080	permutacion de las seis lineas mas mascara
+grupo.R1.Mawangdui.orden	2304	aplicaciones afines que mandan cada octeto entero sobre un octeto
+grupo.R1.Mawangdui.generadores	10	conjunto generador hallado por avidez
+grupo.R2.Mawangdui.orden	1	ademas conservan el indice dentro del bloque
+grupo.R2.Mawangdui.generadores	0	conjunto generador hallado por avidez
+grupo.R1.Mawangdui.contiene.la.complementacion	1	
+grupo.R2.Mawangdui.contiene.la.complementacion	0	
+grupo.R1.Mawangdui.contiene.el.giro	0	
+grupo.R1.Mawangdui.involuciones	399	para poder comparar con la cifra del commit anterior
+grupo.R1.JingFang.orden	8	aplicaciones afines que mandan cada palacio entero sobre un palacio
+grupo.R1.JingFang.generadores	3	conjunto generador hallado por avidez
+grupo.R2.JingFang.orden	8	ademas conservan el indice dentro del bloque
+grupo.R2.JingFang.generadores	3	conjunto generador hallado por avidez
+grupo.R1.JingFang.contiene.la.complementacion	1	
+grupo.R2.JingFang.contiene.la.complementacion	1	
+grupo.R1.JingFang.contiene.el.giro	0	
+grupo.R1.JingFang.involuciones	7	para poder comparar con la cifra del commit anterior
+grupo.R1.KingWen.orden	384	aplicaciones afines que mandan cada par entero sobre un par
+grupo.R1.KingWen.generadores	6	conjunto generador hallado por avidez
+grupo.R2.KingWen.orden	1	ademas conservan el indice dentro del bloque
+grupo.R2.KingWen.generadores	0	conjunto generador hallado por avidez
+grupo.R1.KingWen.contiene.la.complementacion	1	
+grupo.R2.KingWen.contiene.la.complementacion	0	
+grupo.R1.KingWen.contiene.el.giro	1	
+grupo.R1.KingWen.involuciones	111	para poder comparar con la cifra del commit anterior
+valor.esperado.por.azar	1008	C(64,2) partido por dos
+cuenta.solo.complementacion.Mawangdui.orbitas	1024	
+cuenta.solo.complementacion.Mawangdui.orbitas_forzadas	484	
+cuenta.solo.complementacion.Mawangdui.orbitas_libres	540	
+cuenta.solo.complementacion.Mawangdui.orbitas_de_tamano_impar	32	
+cuenta.solo.complementacion.Mawangdui.aportacion_forzada	484	
+cuenta.solo.complementacion.Mawangdui.aportacion_libre_observada	524	
+cuenta.solo.complementacion.Mawangdui.minimo	484	
+cuenta.solo.complementacion.Mawangdui.maximo	1532	
+cuenta.solo.complementacion.Mawangdui.observado	1008	
+cuenta.solo.complementacion.Mawangdui.anchura	1048	
+cuenta.solo.complementacion.Mawangdui.orbita_mayor	2	
+cuenta.solo.complementacion.Mawangdui.totales_alcanzables	1049	
+cuenta.solo.complementacion.Mawangdui.esperado_alcanzable	1	
+cuenta.solo.complementacion.Mawangdui.paridades_alcanzables	2	
+cuenta.solo.complementacion.Mawangdui.paridad_forzada	0	
+cuenta.solo.complementacion.Mawangdui.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.solo.complementacion.Mawangdui.desviacion_minima_posible	0	
+cuenta.solo.complementacion.Mawangdui.fuerza.el.empate	0	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.solo.complementacion.Mawangdui.comprobacion.epsilon	4032	comprobaciones par por elemento, sobre 2 elementos del grupo de 2
+cuenta.R1.Mawangdui.orbitas	15	
+cuenta.R1.Mawangdui.orbitas_forzadas	15	
+cuenta.R1.Mawangdui.orbitas_libres	0	
+cuenta.R1.Mawangdui.orbitas_de_tamano_impar	0	
+cuenta.R1.Mawangdui.aportacion_forzada	1008	
+cuenta.R1.Mawangdui.aportacion_libre_observada	0	
+cuenta.R1.Mawangdui.minimo	1008	
+cuenta.R1.Mawangdui.maximo	1008	
+cuenta.R1.Mawangdui.observado	1008	
+cuenta.R1.Mawangdui.anchura	0	
+cuenta.R1.Mawangdui.orbita_mayor	288	
+cuenta.R1.Mawangdui.totales_alcanzables	1	
+cuenta.R1.Mawangdui.esperado_alcanzable	1	
+cuenta.R1.Mawangdui.paridades_alcanzables	1	
+cuenta.R1.Mawangdui.paridad_forzada	0	
+cuenta.R1.Mawangdui.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.R1.Mawangdui.desviacion_minima_posible	0	
+cuenta.R1.Mawangdui.fuerza.el.empate	1	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.R1.Mawangdui.comprobacion.epsilon	929376	comprobaciones par por elemento, sobre 461 elementos del grupo de 2304
+cuenta.R2.Mawangdui.orbitas	2016	
+cuenta.R2.Mawangdui.orbitas_forzadas	0	
+cuenta.R2.Mawangdui.orbitas_libres	2016	
+cuenta.R2.Mawangdui.orbitas_de_tamano_impar	2016	
+cuenta.R2.Mawangdui.aportacion_forzada	0	
+cuenta.R2.Mawangdui.aportacion_libre_observada	1008	
+cuenta.R2.Mawangdui.minimo	0	
+cuenta.R2.Mawangdui.maximo	2016	
+cuenta.R2.Mawangdui.observado	1008	
+cuenta.R2.Mawangdui.anchura	2016	
+cuenta.R2.Mawangdui.orbita_mayor	1	
+cuenta.R2.Mawangdui.totales_alcanzables	2017	
+cuenta.R2.Mawangdui.esperado_alcanzable	1	
+cuenta.R2.Mawangdui.paridades_alcanzables	2	
+cuenta.R2.Mawangdui.paridad_forzada	0	
+cuenta.R2.Mawangdui.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.R2.Mawangdui.desviacion_minima_posible	0	
+cuenta.R2.Mawangdui.fuerza.el.empate	0	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.R2.Mawangdui.comprobacion.epsilon	2016	comprobaciones par por elemento, sobre 1 elementos del grupo de 1
+cuenta.solo.complementacion.JingFang.orbitas	1024	
+cuenta.solo.complementacion.JingFang.orbitas_forzadas	496	
+cuenta.solo.complementacion.JingFang.orbitas_libres	528	
+cuenta.solo.complementacion.JingFang.orbitas_de_tamano_impar	32	
+cuenta.solo.complementacion.JingFang.aportacion_forzada	496	
+cuenta.solo.complementacion.JingFang.aportacion_libre_observada	512	
+cuenta.solo.complementacion.JingFang.minimo	496	
+cuenta.solo.complementacion.JingFang.maximo	1520	
+cuenta.solo.complementacion.JingFang.observado	1008	
+cuenta.solo.complementacion.JingFang.anchura	1024	
+cuenta.solo.complementacion.JingFang.orbita_mayor	2	
+cuenta.solo.complementacion.JingFang.totales_alcanzables	1025	
+cuenta.solo.complementacion.JingFang.esperado_alcanzable	1	
+cuenta.solo.complementacion.JingFang.paridades_alcanzables	2	
+cuenta.solo.complementacion.JingFang.paridad_forzada	0	
+cuenta.solo.complementacion.JingFang.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.solo.complementacion.JingFang.desviacion_minima_posible	0	
+cuenta.solo.complementacion.JingFang.fuerza.el.empate	0	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.solo.complementacion.JingFang.comprobacion.epsilon	4032	comprobaciones par por elemento, sobre 2 elementos del grupo de 2
+cuenta.R1.JingFang.orbitas	280	
+cuenta.R1.JingFang.orbitas_forzadas	280	
+cuenta.R1.JingFang.orbitas_libres	0	
+cuenta.R1.JingFang.orbitas_de_tamano_impar	0	
+cuenta.R1.JingFang.aportacion_forzada	1008	
+cuenta.R1.JingFang.aportacion_libre_observada	0	
+cuenta.R1.JingFang.minimo	1008	
+cuenta.R1.JingFang.maximo	1008	
+cuenta.R1.JingFang.observado	1008	
+cuenta.R1.JingFang.anchura	0	
+cuenta.R1.JingFang.orbita_mayor	8	
+cuenta.R1.JingFang.totales_alcanzables	1	
+cuenta.R1.JingFang.esperado_alcanzable	1	
+cuenta.R1.JingFang.paridades_alcanzables	1	
+cuenta.R1.JingFang.paridad_forzada	0	
+cuenta.R1.JingFang.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.R1.JingFang.desviacion_minima_posible	0	
+cuenta.R1.JingFang.fuerza.el.empate	1	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.R1.JingFang.comprobacion.epsilon	16128	comprobaciones par por elemento, sobre 8 elementos del grupo de 8
+cuenta.R2.JingFang.orbitas	280	
+cuenta.R2.JingFang.orbitas_forzadas	280	
+cuenta.R2.JingFang.orbitas_libres	0	
+cuenta.R2.JingFang.orbitas_de_tamano_impar	0	
+cuenta.R2.JingFang.aportacion_forzada	1008	
+cuenta.R2.JingFang.aportacion_libre_observada	0	
+cuenta.R2.JingFang.minimo	1008	
+cuenta.R2.JingFang.maximo	1008	
+cuenta.R2.JingFang.observado	1008	
+cuenta.R2.JingFang.anchura	0	
+cuenta.R2.JingFang.orbita_mayor	8	
+cuenta.R2.JingFang.totales_alcanzables	1	
+cuenta.R2.JingFang.esperado_alcanzable	1	
+cuenta.R2.JingFang.paridades_alcanzables	1	
+cuenta.R2.JingFang.paridad_forzada	0	
+cuenta.R2.JingFang.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.R2.JingFang.desviacion_minima_posible	0	
+cuenta.R2.JingFang.fuerza.el.empate	1	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.R2.JingFang.comprobacion.epsilon	16128	comprobaciones par por elemento, sobre 8 elementos del grupo de 8
+cuenta.solo.complementacion.KingWen.orbitas	1024	
+cuenta.solo.complementacion.KingWen.orbitas_forzadas	687	
+cuenta.solo.complementacion.KingWen.orbitas_libres	337	
+cuenta.solo.complementacion.KingWen.orbitas_de_tamano_impar	32	
+cuenta.solo.complementacion.KingWen.aportacion_forzada	687	
+cuenta.solo.complementacion.KingWen.aportacion_libre_observada	326	
+cuenta.solo.complementacion.KingWen.minimo	687	
+cuenta.solo.complementacion.KingWen.maximo	1329	
+cuenta.solo.complementacion.KingWen.observado	1013	
+cuenta.solo.complementacion.KingWen.anchura	642	
+cuenta.solo.complementacion.KingWen.orbita_mayor	2	
+cuenta.solo.complementacion.KingWen.totales_alcanzables	643	
+cuenta.solo.complementacion.KingWen.esperado_alcanzable	1	
+cuenta.solo.complementacion.KingWen.paridades_alcanzables	2	
+cuenta.solo.complementacion.KingWen.paridad_forzada	1	
+cuenta.solo.complementacion.KingWen.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.solo.complementacion.KingWen.desviacion_minima_posible	0	
+cuenta.solo.complementacion.KingWen.fuerza.el.empate	0	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.solo.complementacion.KingWen.comprobacion.epsilon	4032	comprobaciones par por elemento, sobre 2 elementos del grupo de 2
+cuenta.R1.KingWen.orbitas	36	
+cuenta.R1.KingWen.orbitas_forzadas	17	
+cuenta.R1.KingWen.orbitas_libres	19	
+cuenta.R1.KingWen.orbitas_de_tamano_impar	0	
+cuenta.R1.KingWen.aportacion_forzada	374	
+cuenta.R1.KingWen.aportacion_libre_observada	639	
+cuenta.R1.KingWen.minimo	957	
+cuenta.R1.KingWen.maximo	1059	
+cuenta.R1.KingWen.observado	1013	
+cuenta.R1.KingWen.anchura	102	
+cuenta.R1.KingWen.orbita_mayor	192	
+cuenta.R1.KingWen.totales_alcanzables	52	
+cuenta.R1.KingWen.esperado_alcanzable	0	
+cuenta.R1.KingWen.paridades_alcanzables	1	
+cuenta.R1.KingWen.paridad_forzada	1	
+cuenta.R1.KingWen.alcanzable_mas_cercano_al_esperado	1007	
+cuenta.R1.KingWen.desviacion_minima_posible	1	
+cuenta.R1.KingWen.fuerza.el.empate	0	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.R1.KingWen.comprobacion.epsilon	774144	comprobaciones par por elemento, sobre 384 elementos del grupo de 384
+cuenta.R2.KingWen.orbitas	2016	
+cuenta.R2.KingWen.orbitas_forzadas	0	
+cuenta.R2.KingWen.orbitas_libres	2016	
+cuenta.R2.KingWen.orbitas_de_tamano_impar	2016	
+cuenta.R2.KingWen.aportacion_forzada	0	
+cuenta.R2.KingWen.aportacion_libre_observada	1013	
+cuenta.R2.KingWen.minimo	0	
+cuenta.R2.KingWen.maximo	2016	
+cuenta.R2.KingWen.observado	1013	
+cuenta.R2.KingWen.anchura	2016	
+cuenta.R2.KingWen.orbita_mayor	1	
+cuenta.R2.KingWen.totales_alcanzables	2017	
+cuenta.R2.KingWen.esperado_alcanzable	1	
+cuenta.R2.KingWen.paridades_alcanzables	2	
+cuenta.R2.KingWen.paridad_forzada	0	
+cuenta.R2.KingWen.alcanzable_mas_cercano_al_esperado	1008	
+cuenta.R2.KingWen.desviacion_minima_posible	0	
+cuenta.R2.KingWen.fuerza.el.empate	0	criterio declarado: minimo y maximo coinciden en el valor esperado
+cuenta.R2.KingWen.comprobacion.epsilon	2016	comprobaciones par por elemento, sobre 1 elementos del grupo de 1
+control.semilla	20260809	la misma del commit anterior, ya congelada
+control.repeticiones	300	muestra de los 40320 ordenes de familia, no enumeracion: el coste de la contabilidad lo impide
+control.octetos.grupo.identico.al.historico	300	de 300, el grupo R1 no cambia al barajar el orden de familia
+control.octetos.el.grupo.fuerza.un.valor	8	anchura cero: la estructura determina el recuento entero
+control.octetos.el.grupo.fuerza.el.empate	8	anchura cero y ademas el valor forzado es el esperado
+control.octetos.recuento.observado.igual.al.esperado	27	para comparar con el control del commit anterior
+control.octetos.anchuras.distintas	12	conjunto de anchuras observadas
+control.octetos.anchura.maxima	176	
+control.palacios.grupo.identico.al.historico	300	de 300, el grupo R1 no cambia al barajar el orden de familia
+control.palacios.el.grupo.fuerza.un.valor	0	anchura cero: la estructura determina el recuento entero
+control.palacios.el.grupo.fuerza.el.empate	0	anchura cero y ademas el valor forzado es el esperado
+control.palacios.recuento.observado.igual.al.esperado	3	para comparar con el control del commit anterior
+control.palacios.anchuras.distintas	84	conjunto de anchuras observadas
+control.palacios.anchura.maxima	952	
+conv.Mawangdui.yang1.bottomMSB.minimo	1008	
+conv.Mawangdui.yang1.bottomMSB.maximo	1008	
+conv.Mawangdui.yang1.bottomMSB.observado	1008	
+conv.Mawangdui.yang1.bottomMSB.orbitas.libres	0	
+conv.Mawangdui.yang1.bottomLSB.minimo	1008	
+conv.Mawangdui.yang1.bottomLSB.maximo	1008	
+conv.Mawangdui.yang1.bottomLSB.observado	1008	
+conv.Mawangdui.yang1.bottomLSB.orbitas.libres	0	
+conv.Mawangdui.yang0.bottomMSB.minimo	1008	
+conv.Mawangdui.yang0.bottomMSB.maximo	1008	
+conv.Mawangdui.yang0.bottomMSB.observado	1008	
+conv.Mawangdui.yang0.bottomMSB.orbitas.libres	0	
+conv.Mawangdui.yang0.bottomLSB.minimo	1008	
+conv.Mawangdui.yang0.bottomLSB.maximo	1008	
+conv.Mawangdui.yang0.bottomLSB.observado	1008	
+conv.Mawangdui.yang0.bottomLSB.orbitas.libres	0	
+conv.JingFang.yang1.bottomMSB.minimo	1008	
+conv.JingFang.yang1.bottomMSB.maximo	1008	
+conv.JingFang.yang1.bottomMSB.observado	1008	
+conv.JingFang.yang1.bottomMSB.orbitas.libres	0	
+conv.JingFang.yang1.bottomLSB.minimo	1008	
+conv.JingFang.yang1.bottomLSB.maximo	1008	
+conv.JingFang.yang1.bottomLSB.observado	1008	
+conv.JingFang.yang1.bottomLSB.orbitas.libres	0	
+conv.JingFang.yang0.bottomMSB.minimo	1008	
+conv.JingFang.yang0.bottomMSB.maximo	1008	
+conv.JingFang.yang0.bottomMSB.observado	1008	
+conv.JingFang.yang0.bottomMSB.orbitas.libres	0	
+conv.JingFang.yang0.bottomLSB.minimo	1008	
+conv.JingFang.yang0.bottomLSB.maximo	1008	
+conv.JingFang.yang0.bottomLSB.observado	1008	
+conv.JingFang.yang0.bottomLSB.orbitas.libres	0	
+conv.KingWen.yang1.bottomMSB.minimo	957	
+conv.KingWen.yang1.bottomMSB.maximo	1059	
+conv.KingWen.yang1.bottomMSB.observado	1013	
+conv.KingWen.yang1.bottomMSB.orbitas.libres	19	
+conv.KingWen.yang1.bottomLSB.minimo	957	
+conv.KingWen.yang1.bottomLSB.maximo	1059	
+conv.KingWen.yang1.bottomLSB.observado	1013	
+conv.KingWen.yang1.bottomLSB.orbitas.libres	19	
+conv.KingWen.yang0.bottomMSB.minimo	957	
+conv.KingWen.yang0.bottomMSB.maximo	1059	
+conv.KingWen.yang0.bottomMSB.observado	1003	
+conv.KingWen.yang0.bottomMSB.orbitas.libres	19	
+conv.KingWen.yang0.bottomLSB.minimo	957	
+conv.KingWen.yang0.bottomLSB.maximo	1059	
+conv.KingWen.yang0.bottomLSB.observado	1003	
+conv.KingWen.yang0.bottomLSB.orbitas.libres	19	
+caracterizacion.Mawangdui.coincide	1	R1 es exactamente: permutar lineas dentro de cada trigrama, con cualquier mascara
+caracterizacion.Mawangdui.orden.predicho	2304	seis por seis permutaciones, por 64 mascaras
+caracterizacion.JingFang.coincide	1	R1 es exactamente: sin mover lineas, complementar la misma linea en los dos trigramas
+caracterizacion.JingFang.orden.predicho	8	dos elevado a tres mascaras
+caracterizacion.KingWen.todos.conmutan.con.el.giro	1	todo elemento de R1 conmuta con el giro de media vuelta
+caracterizacion.KingWen.coincide.con.el.centralizador	1	R1 es exactamente el centralizador del giro dentro de la familia afin
+caracterizacion.KingWen.orden.del.centralizador	384	
