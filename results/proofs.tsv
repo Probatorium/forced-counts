@@ -1,0 +1,128 @@
+# Comprobadores de PROOFS.md. Una comprobacion o una cifra por linea.
+# clave	valor	nota
+p1.pares.de.posiciones	2016	C(64,2)
+p1.pares.de.posiciones.coincide.con.C(64,2)	1	
+p1.JingFang.los.tamanos.de.orbita.suman.C(64,2)	1	
+p1.JingFang.hipotesis.cumplida.total.es.la.mitad	1	toda orbita forzada, luego el total tiene que ser C(64,2) partido por dos
+p1.KingWen.los.tamanos.de.orbita.suman.C(64,2)	1	
+p1.KingWen.hipotesis.no.cumplida	19	orbitas libres: la hipotesis falla y el lema no se aplica
+p1.Mawangdui.los.tamanos.de.orbita.suman.C(64,2)	1	
+p1.Mawangdui.hipotesis.cumplida.total.es.la.mitad	1	toda orbita forzada, luego el total tiene que ser C(64,2) partido por dos
+p1.la.aportacion.de.toda.orbita.es.una.de.las.dos.opciones	1	comprobado en las tres secuencias bajo su grupo R1
+p1.corolario.el.grupo.solo.puede.forzar.el.empate	1	la suma de los tamanos es par, luego la suma de mitades es un entero fijo
+p2.mwd.bloques.son.las.fibras.del.trigrama.superior	1	
+p2.mwd.V.es.subespacio.de.dimension.tres	1	
+p2.mwd.mismo.bloque.equivale.a.diferencia.en.V	1	
+p2.mwd.permutaciones.que.preservan.V	36	seis por seis
+p2.mwd.esas.permutaciones.son.las.que.no.mezclan.trigramas	1	
+p2.mwd.orden.predicho	2304	36 permutaciones por 64 mascaras
+p2.mwd.orden.predicho.coincide.con.la.enumeracion	1	
+p2.mwd.las.orbitas.son.las.clases.de.pesos	1	
+p2.mwd.numero.de.orbitas	15	cuatro por cuatro menos el caso de peso cero doble
+p2.mwd.numero.de.orbitas.es.quince	1	
+p2.mwd.tamanos.siguen.la.formula	1	
+p2.mwd.orbita.mayor	288	32 por 3 por 3
+p2.mwd.el.testigo.esta.en.el.grupo	1	
+p2.mwd.orbitas.demostradas.forzadas	9	las de peso positivo en los dos trigramas
+p2.mwd.pares.cubiertos.por.la.demostracion	1568	
+p2.mwd.aportacion.demostrada	784	la mitad, por el lema
+p2.mwd.el.testigo.da.epsilon.uno.y.no.fija.ningun.par	1	comprobado par a par en esas nueve orbitas
+p2.mwd.ENUMERATIVO.clase.peso.0.1.aportacion	48	tamano 96, la mitad seria 48
+p2.mwd.ENUMERATIVO.clase.peso.0.2.aportacion	48	tamano 96, la mitad seria 48
+p2.mwd.ENUMERATIVO.clase.peso.0.3.aportacion	16	tamano 32, la mitad seria 16
+p2.mwd.ENUMERATIVO.clase.peso.1.0.aportacion	48	tamano 96, la mitad seria 48
+p2.mwd.ENUMERATIVO.clase.peso.2.0.aportacion	48	tamano 96, la mitad seria 48
+p2.mwd.ENUMERATIVO.clase.peso.3.0.aportacion	16	tamano 32, la mitad seria 16
+p2.mwd.reduccion.peso.inferior.cero.el.estado.solo.depende.del.par.superior	1	
+p2.mwd.reduccion.peso.superior.cero.el.estado.solo.depende.del.octeto.y.del.par.inferior	1	
+p2.jf.los.ocho.palacios.son.el.mismo.M.trasladado	1	
+p2.jf.M	vacio 1 12 123 1234 5 1235 12345	cada elemento por las lineas que complementa, la linea 1 es la inferior
+p2.jf.M.tiene.ocho.elementos	1	
+p2.jf.D.es.subespacio.de.dimension.tres	1	
+p2.jf.las.cabezas.de.palacio.son.exactamente.D	1	
+p2.jf.diferencias.de.M	28	C(8,2)
+p2.jf.multiplicidad.por.linea	12 15 16 12 15 0	lineas 1 a 6, en ese orden
+p2.jf.multiplicidades.son.12.15.16.12.15.0	1	
+p2.jf.multiplicidad.de.los.singletons	1 1 1 2 3 0	
+p2.jf.singletons.son.1.1.1.2.3.0	1	
+p2.jf.estabilizador.de.las.diferencias.en.S6	1	
+p2.jf.ese.estabilizador.es.trivial	1	
+p2.jf.ninguna.diferencia.de.M.esta.en.D	1	
+p2.jf.D.mas.M.recorre.los.64.sin.repetir	1	
+p2.jf.orden.predicho	8	traslaciones por D
+p2.jf.el.grupo.es.exactamente.las.traslaciones.por.D	1	
+p2.jf.numero.de.orbitas	280	
+p2.jf.tamanos.de.orbita	4:56 8:224	tamano y cuantas hay
+p2.jf.el.desglose.previsto.28.56.196.da.280	1	
+p2.jf.los.tamanos.previstos.son.8.4.8	1	
+p2.jf.el.complemento.esta.en.el.grupo	1	
+p2.jf.orbitas.demostradas.forzadas	28	las de pares dentro de un palacio
+p2.jf.pares.cubiertos.por.la.demostracion	224	
+p2.jf.aportacion.demostrada	112	
+p2.jf.el.complemento.da.epsilon.uno.dentro.del.palacio	1	
+p2.ENUMERATIVO.Mawangdui.orbitas	15	
+p2.ENUMERATIVO.Mawangdui.orbitas.forzadas	15	comprobado por enumeracion de los 2016 pares, no demostrado
+p2.ENUMERATIVO.Mawangdui.clase.libre	0	
+p2.ENUMERATIVO.Mawangdui.total	1008	
+p2.ENUMERATIVO.JingFang.orbitas	280	
+p2.ENUMERATIVO.JingFang.orbitas.forzadas	280	comprobado por enumeracion de los 2016 pares, no demostrado
+p2.ENUMERATIVO.JingFang.clase.libre	0	
+p2.ENUMERATIVO.JingFang.total	1008	
+p3.los.bloques.son.las.orbitas.del.giro.mas.los.pares.de.palindromos	1	
+p3.orbitas.del.giro.de.tamano.dos	28	
+p3.palindromos	8	
+p3.respetar.los.bloques.equivale.a.conmutar.con.tau	1	
+p3.toda.la.familia.conmuta.con.la.complementacion	1	comprobado en una muestra de 2000 elementos, y demostrado en el texto
+p3.las.diferencias.de.bloque.son.los.no.nulos.de.Fix(giro)	1	
+p3.Fix(giro).tamano	8	subespacio de dimension tres
+p3.elementos.de.peso.dos.en.Fix(giro)	3	los tres generadores
+p3.permutaciones.que.preservan.Fix(giro)	48	
+p3.esas.permutaciones.son.48	1	
+p3.mascaras.en.Fix(giro)	8	
+p3.orden.predicho	384	48 por 8
+p3.orden.predicho.coincide.con.la.enumeracion	1	
+p3.el.grupo.es.el.centralizador.del.giro	1	
+p3.T.esta.contenido.en.el.grupo	1	
+p3.T.es.normal.en.el.grupo	1	comprobado en una muestra de 64 elementos, y demostrado en el texto
+p3.T.actua.libremente.sobre.los.hexagramas	1	
+p3.Mawangdui.ninguna.orbita.de.tamano.impar	1	
+p3.Mawangdui.paridad.estructural	0	suma de las c de cada orbita, modulo dos, independiente de los bits libres
+p3.Mawangdui.paridad.del.recuento.observado	0	
+p3.Mawangdui.la.paridad.estructural.predice.la.del.recuento	1	
+p3.JingFang.ninguna.orbita.de.tamano.impar	1	
+p3.JingFang.paridad.estructural	0	suma de las c de cada orbita, modulo dos, independiente de los bits libres
+p3.JingFang.paridad.del.recuento.observado	0	
+p3.JingFang.la.paridad.estructural.predice.la.del.recuento	1	
+p3.KingWen.ninguna.orbita.de.tamano.impar	1	
+p3.KingWen.paridad.estructural	1	suma de las c de cada orbita, modulo dos, independiente de los bits libres
+p3.KingWen.paridad.del.recuento.observado	1	
+p3.KingWen.la.paridad.estructural.predice.la.del.recuento	1	
+p3.tamanos.de.T.orbita.sobre.pares	4 8	
+p3.toda.T.orbita.de.pares.tiene.tamano.par	1	
+p3.dentro.de.una.G.orbita.todas.las.T.orbitas.miden.igual	1	
+p3.intervalo.minimo	957	
+p3.intervalo.maximo	1059	
+p3.totales.compatibles	52	
+p3.paridades.entre.los.compatibles	1	
+p3.compatible.mas.cercano.al.empate	1007	
+p3.desviacion.minima.posible	1	
+p3.observado	1013	
+p3.el.empate.no.esta.entre.los.compatibles	1	
+p3.ABIERTO.residuo.sobre.el.empate	5	no lo explica el grupo: queda abierto
+p4.orden.de.la.familia	46080	dos elevado a seis, por seis factorial
+p4.orden.es.2^6.por.6!	1	
+p4.cada.elemento.tiene.una.sola.escritura.como.permutacion.y.mascara	1	
+p4.la.familia.contiene.la.complementacion.y.el.giro	1	
+p4.conserva.la.adyacencia.del.6.cubo	1	comprobado en una muestra de 64 elementos
+p2.CERT.mwd.clases.con.testigo	14	de 15
+p2.CERT.mwd.pares.demostrados	1920	
+p2.CERT.mwd.aportacion.demostrada	960	la mitad, por los Lemas 1 y 2
+p2.CERT.mwd.clases.sin.testigo	(0,1)	el Lema 2 no llega: quedan enumerativas
+p2.CERT.mwd.pares.enumerativos	96	
+p2.CERT.mwd.aportacion.enumerativa	48	contada, no demostrada
+p2.CERT.jf.orbitas.con.testigo	280	de 280
+p2.CERT.jf.orbitas.sin.testigo	0	
+p2.CERT.jf.pares.demostrados	2016	
+p2.CERT.jf.aportacion.demostrada	1008	
+p2.CERT.jf.testigos.distintos.usados	3	
+p2.CERT.jf.el.empate.queda.demostrado	1	toda orbita forzada por el Lema 2, luego el total es C(64,2) partido por dos por el Lema 1

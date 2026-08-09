@@ -23,3 +23,7 @@ src/group.py	analisis	propio	produce los resultados sobre el objeto de estudio
 results/group-measurements.tsv	analisis	propio	salida del analisis
 results/group-structure.txt	analisis	propio	salida del analisis
 INFORME-GRUPO.md	analisis	propio	lectura de los resultados sobre el objeto de estudio
+src/proofs.py	analisis	propio	comprobadores de las demostraciones
+results/proofs.tsv	analisis	propio	salida de los comprobadores
+results/certificates.txt	analisis	propio	testigos del Lema 2, uno por orbita
+PROOFS.md	analisis	propio	demostraciones y declaracion de lo enumerativo
