@@ -1,0 +1,13 @@
+# Clasificacion de cada fichero del repositorio, segun EFFORT.md.
+# Columnas separadas por tabulador:
+#   ruta	clase	origen	motivo
+# clase:  aparato | analisis
+# origen: propio (escrito en este repositorio) | extraido (traido de una fuente externa)
+PREREGISTRATION.md	aparato	propio	documentacion de proceso, no produce resultados
+CONTACT-RULES.md	aparato	propio	documentacion de proceso
+EFFORT.md	aparato	propio	documentacion de proceso
+.gitignore	aparato	propio	infraestructura
+effort/README.md	aparato	propio	documentacion del instrumento
+effort/classification.tsv	aparato	propio	el propio instrumento
+effort/log.jsonl	aparato	propio	salida del instrumento, no del objeto de estudio
+tools/effort.py	aparato	propio	tooling de registro

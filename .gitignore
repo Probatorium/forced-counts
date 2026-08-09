@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+# Extraccion de solo lectura de kingwen-orderings-replication en la etiqueta
+# zenodo-v3. Es un directorio de trabajo, no contenido de este repositorio: su
+# procedencia queda registrada en data/PROVENANCE.md y no entra en la historia.
+_source/
