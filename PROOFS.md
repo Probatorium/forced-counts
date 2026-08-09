@@ -394,6 +394,11 @@ forman por complementacion los 8 hexagramas que el giro deja quietos
 medida en el commit de la medicion y vuelta a comprobar aqui. Todo lo que sigue
 se demuestra a partir de ella.
 
+**Cita.** Esta caracterizacion coincide con la equivarianza completa de Radisic
+2026, Teorema 3.3 (arXiv:2601.07175v3), que tiene dueno anterior por fecha y
+verificacion formal en Lean 4; aqui se obtuvo por via independiente y antes de
+abrir la revision de antecedentes. Registro del artefacto en PRIOR-ART.md.
+
 Sea tau el companero de bloque: vale rho fuera de los palindromos y kappa sobre
 ellos. Respetar los bloques equivale exactamente a conmutar con tau
 (`results/proofs.tsv:74`), porque f manda el bloque {x, tau x} al conjunto
