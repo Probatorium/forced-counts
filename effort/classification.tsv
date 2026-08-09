@@ -35,3 +35,4 @@ INFORME-GRAY.md	analisis	propio	lectura de los resultados de la ordenacion de co
 artifacts/radisic-2601.07175v3-appendix-A.tsv	aparato	extraido	transcripcion de artefacto, objeto de comparacion, no fuente de datos
 src/corroborate.py	aparato	propio	cotejo contra artefacto, no computa resultados
 results/corroboration.tsv	aparato	propio	salida del cotejo
+PRIOR-ART.md	aparato	propio	revision de antecedentes, documentacion de proceso
