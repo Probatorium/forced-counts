@@ -1,0 +1,95 @@
+# TRANSCRIPCION DE ARTEFACTO
+#
+# Identificador completo del artefacto:
+#   Alejandro Radisic, "Optimal Equivariant Matchings on the 6-Cube: With an
+#   Application to the King Wen Sequence", arXiv:2601.07175v3 [math.GM],
+#   fechado 25 de mayo de 2026, cabecera de la version v3; la primera pagina
+#   lleva ademas la fecha 27 de mayo de 2026.
+#   Apendice A, titulado "Full King Wen Binary Table", pagina 11 de 11.
+#
+# Convencion del artefacto, citada literalmente de su pie de tabla:
+#   "Binary values represent the hexagram as a 6-bit integer, with bit 0 as the
+#   bottom line."
+#   Y de su cabecera de columnas: KW es el numero de King Wen, Bin es el entero.
+#
+# QUE ES ESTE FICHERO. Una transcripcion literal, hecha a mano desde el
+# artefacto, para usarla SOLO como objeto de comparacion. NO es fuente de datos
+# de este repositorio y NO entra como entrada de ningun computo de resultados.
+# La secuencia King Wen que usan los analisis sigue siendo la de
+# data/sequences.json, con su procedencia en data/PROVENANCE.md.
+#
+# CANAL Y LIMITES DE LA TRANSCRIPCION, declarados.
+#   El PDF de arXiv se descargo en la sesion y se leyo la pagina 11 renderizada.
+#   La tabla se leyo dos veces por dos vias distintas: una lectura automatica de
+#   la version HTML del articulo y una lectura de la pagina del PDF. Las dos
+#   dieron la misma tabla. Eso reduce el riesgo de error de transcripcion pero
+#   no lo anula: sigue siendo una lectura, no un fichero de datos publicado por
+#   el autor. Si alguien encuentra una discrepancia con el articulo impreso,
+#   manda el articulo y no este fichero.
+#
+# Columnas: numero de King Wen, entero del artefacto.
+kw	bin
+1	63
+2	0
+3	17
+4	34
+5	23
+6	58
+7	2
+8	16
+9	55
+10	59
+11	7
+12	56
+13	61
+14	47
+15	4
+16	8
+17	25
+18	38
+19	3
+20	48
+21	41
+22	37
+23	32
+24	1
+25	57
+26	39
+27	33
+28	30
+29	18
+30	45
+31	28
+32	14
+33	60
+34	15
+35	40
+36	5
+37	53
+38	43
+39	20
+40	10
+41	35
+42	49
+43	31
+44	62
+45	24
+46	6
+47	26
+48	22
+49	29
+50	46
+51	9
+52	36
+53	52
+54	11
+55	13
+56	44
+57	54
+58	27
+59	50
+60	19
+61	51
+62	12
+63	21
+64	42

@@ -43,6 +43,18 @@ construcciones se vuelven a derivar desde cero en `src/measure.py` a partir de
 sus reglas, y el programa se detiene si la rederivacion no reproduce la
 secuencia extraida.
 
+## Corroboracion por artefacto independiente
+
+**King Wen sube de dato recibido a dato corroborado.** Las 64 posiciones de la
+secuencia King Wen de `sequences.json` coinciden con la tabla del apendice A de
+arXiv:2601.07175v3, bajo la convencion de ese artefacto, yang igual a uno con el
+bit 0 en la linea inferior. Cotejo en `src/corroborate.py`, transcripcion en
+`artifacts/radisic-2601.07175v3-appendix-A.tsv`, resultado en
+`results/corroboration.tsv`. La tabla transcrita es objeto de comparacion y no
+entra como entrada de ningun computo. Lo corroborado es la transcripcion, es
+decir que la lista no arrastra un error propio de una sola fuente; no se
+corrobora con ello nada historico.
+
 ## Nota de contacto
 
 La regla de contacto de CONTACT-RULES.md se cumplio: acceso de solo lectura y

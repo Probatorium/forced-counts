@@ -1,0 +1,14 @@
+# Cotejo contra artefacto independiente. Solo comparacion.
+# clave	valor	nota
+artefacto.fichero	artifacts/radisic-2601.07175v3-appendix-A.tsv	
+artefacto.identificador	arXiv:2601.07175v3, apendice A, pagina 11	
+artefacto.filas.transcritas	64	
+artefacto.numeros.de.king.wen.consecutivos.del.1.al.64	1	
+artefacto.es.una.permutacion.de.los.64.enteros	1	comprobacion interna del artefacto, antes de compararlo con nada
+repositorio.fichero	data/sequences.json	
+repositorio.procedencia	d6afae20bbefba56728251f34f8e3870c43e2cbd	kingwen-orderings-replication en la etiqueta zenodo-v3
+convencion.usada	yang1 con la linea inferior como bit menos significativo	es la del artefacto, bit 0 en la linea inferior
+posiciones.comparadas	64	
+posiciones.que.coinciden	64	
+posiciones.que.difieren	0	
+programas.de.resultados.que.tocan.el.artefacto	ninguno	measure.py, group.py, proofs.py y gray.py revisados

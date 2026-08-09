@@ -32,3 +32,6 @@ NAME.md	aparato	propio	comprobacion de termino y deslinde del nombre
 src/gray.py	analisis	propio	ordenacion de comparacion y su contabilidad
 results/gray-measurements.tsv	analisis	propio	salida del analisis
 INFORME-GRAY.md	analisis	propio	lectura de los resultados de la ordenacion de comparacion
+artifacts/radisic-2601.07175v3-appendix-A.tsv	aparato	extraido	transcripcion de artefacto, objeto de comparacion, no fuente de datos
+src/corroborate.py	aparato	propio	cotejo contra artefacto, no computa resultados
+results/corroboration.tsv	aparato	propio	salida del cotejo
