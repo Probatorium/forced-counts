@@ -193,3 +193,43 @@ voz alta.**
     python src/group.py
 
 Deterministas las dos. La unica fuente de azar es la semilla declarada.
+
+---
+
+# Enmiendas
+
+Se anaden al pie, con fecha y motivo. **No se borra ni se corrige nada del texto
+de arriba**, que queda tal y como se commiteo.
+
+## Enmienda 1, 2026-08-09: como se lee el control de la seccion 5
+
+**Motivo.** El texto de arriba, en la seccion 5 y en su lectura 2, escribe el
+resultado del control con lenguaje que pasa de la medicion a la interpretacion:
+dice que forzar es mas raro que acertar y que los dos ordenes historicos caen en
+la clase estrecha y no en la ancha. Las cifras son correctas y estan citadas.
+Lo que sobra es el paso siguiente, que el texto invita a dar sin darlo.
+
+**Que se sostiene.** Los numeros: el grupo R1 sale identico en las 300
+repeticiones; la anchura es cero en 8 de 300 barajados de octetos y en 0 de 300
+de palacios; el recuento observado cae en 1008 en 27 y en 3 de 300
+respectivamente; los dos ordenes recibidos tienen anchura cero. Todo ello con la
+semilla 20260809 y con su procedencia en `results/group-measurements.tsv`.
+
+**Que no se sostiene.** Nada de eso es evidencia de diseno, de intencion, ni de
+rareza. Es una propiedad medida de los dos ordenes recibidos, y se lee asi y no
+mas alla. Una lectura inferencial, del tipo "esto no puede ser casualidad",
+exigiria una hipotesis nula declarada antes de mirar, una familia de
+comparaciones fijada antes de mirar, y disciplina de multiplicidad sobre todas
+las propiedades que se podrian haber mirado y no se miraron. Este repositorio no
+construye ninguna de las tres cosas, y por tanto no puede sostener esa lectura,
+ni con estas cifras ni con otras mayores.
+
+**Alcance.** La enmienda afecta a como se leen las palabras, no a las cifras.
+Las tablas de la seccion 5 siguen siendo validas. Las frases interpretativas de
+la lectura 2 quedan retiradas por esta enmienda, sin borrarse del texto, para
+que se vea que estuvieron ahi.
+
+**Regla desde aqui.** En este repositorio el control se escribe solo como
+medicion con su procedencia. Sin significancia, sin diseno, sin intencion, sin
+rareza, y sin comparaciones con el azar fuera de la tabla. PROOFS.md ya se
+escribio con esta regla.
