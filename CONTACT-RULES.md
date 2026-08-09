@@ -50,3 +50,26 @@ historicas, que solo estan ahi. Se hace asi:
 Lo que la regla protegia sigue protegido: ninguna cifra medida se hereda. Lo que
 la regla prohibia en su letra, traer el dato en bruto, se hace de forma
 declarada y trazable porque sin el no hay medicion posible.
+
+**Enmienda 2, 2026-08-09, en este commit.** La regla decia que este repositorio
+nace sin remoto y que no se crea remoto sin que se pida de forma explicita. La
+regla se cierra aqui, y se cierra por cumplida, no por saltada.
+
+- **Motivo.** El remoto estaba condicionado a congelar el nombre. El nombre
+  queda congelado, `forced-counts`, despues de la comprobacion de termino que
+  esta escrita en NAME.md con sus cinco consultas, su resultado y sus limites,
+  y con el deslinde obligatorio respecto de zero forcing, de
+  quasirandom-forcing y del forcing de teoria de conjuntos.
+- **Autorizacion.** Explicita, del autor, en la sesion que produce este commit.
+  Queda tambien en el registro de esfuerzo.
+- **Lo que cambia.** Se crea el remoto `github.com/Probatorium/forced-counts` y
+  se empuja `main`. Antes del primer empuje se comprueba con `git ls-remote` que
+  el remoto esta vacio, para que el primer empuje no pise nada.
+- **Lo que no cambia.** Todo lo demas de este fichero sigue vigente sin tocar:
+  `kingwen-orderings-replication` sigue siendo de solo lectura y solo en la
+  etiqueta `zenodo-v3`, los repositorios de Stasis siguen sin abrirse, y los
+  textos firmados siguen sin enmendarse.
+- **Lo que el remoto no autoriza.** Publicar no es difundir. Que el repositorio
+  este en un remoto no autoriza a anunciarlo, ni a enviarlo a nadie, ni a
+  reclamar nada de lo que contiene. La revision de antecedentes sigue sin
+  empezar.
