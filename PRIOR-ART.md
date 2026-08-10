@@ -622,3 +622,150 @@ regla de escritura. Los ficheros ya commiteados que dicen inversiones siguen
 diciendolo, y esa inconsistencia entre lo viejo y lo nuevo es deliberada: quien
 lea la historia vera cuando se decidio y por que, en vez de encontrar un
 vocabulario uniforme que finja no haber tenido nunca dudas.
+
+---
+
+# 12. Estado de cierre, preparado y NO cerrado
+
+Esta seccion **no cierra la revision**. Prepara la decision de cerrarla, que no
+es de quien escribe. Lista lo que queda y, para cada pieza, una linea de riesgo:
+que se sabe de ella por cadena de cita, y por que es o no es plausible que
+contenga recuentos de pares discordantes contra ordenes de referencia, o forzado
+por grupo.
+
+Aviso sobre el valor de estas lineas: **la plausibilidad no es un veredicto**.
+Un veredicto exige leer la pieza. Lo que hay aqui es lo que permite decidir por
+donde empezar y cuanto arriesga cada hueco.
+
+## 12.1 Lo que queda
+
+Seis piezas de segunda mano y una observacion sin dueno. Nada mas se ha
+localizado como pendiente, y esa lista tampoco pretende ser completa.
+
+## 12.2 Goldenberg 1975
+
+- **Cadena de cita:** Schoter, artefacto leido, lo cita como Gol75 y le dedica
+  parrafo propio. Titulo, segun Schoter: "The Algebra of the I Ching and its
+  Philosophical Implications". Schoter dice que tiene "significant parallels
+  with the work presented here", que Goldenberg lo plantea desde el algebra
+  matematica tradicional y no desde la computacional, que **usa aritmetica
+  modular linea a linea** para definir sus operaciones, y que **no define
+  formalmente una operacion de complemento**. En su nota 3 Schoter anade que
+  supo de este trabajo por Steve Moore, ya avanzado el suyo.
+- **Riesgo de pares discordantes:** bajo. Lo descrito es un algebra de
+  operaciones sobre lineas, no un estadistico sobre pares de posiciones.
+- **Riesgo de forzado por grupo:** bajo, y con evidencia concreta: sin
+  complemento formalmente definido no hay involucion que invierta el orden
+  binario, que es la pieza de la que sale todo el aparato de este repositorio.
+- **Prioridad:** media. Es el antecedente del antecedente y conviene leerlo, pero
+  lo que se sabe de el no apunta a nuestro objeto.
+
+## 12.3 Davis 1998
+
+- **Cadena de cita:** Moore 2005, artefacto leido, escribe que "the leading
+  scholar of the King Wen sequence is probably Scott Davis" y lo describe asi:
+  enfoque holistico y antropologico que combina lo estructural y lo textual, y
+  que senala "a number of interesting local symmetries in the arrangement of the
+  hexagrams at certain points in the sequence".
+- **Riesgo de pares discordantes:** bajo. Simetrias locales en puntos concretos
+  de la secuencia no es un recuento global sobre los C(64,2) pares.
+- **Riesgo de forzado por grupo:** bajo por lo mismo. Que hable de simetrias no
+  lo acerca: aqui el grupo actua y se mide que determina, y lo descrito es
+  descripcion de configuraciones.
+- **Prioridad:** media alta, no por riesgo de solape sino porque es, segun un
+  artefacto leido, la referencia principal del tema.
+
+## 12.4 Higgins 1998
+
+- **Cadena de cita:** Schoter, artefacto leido, lo cita como Hig98 dentro de la
+  corriente de aplicar tecnicas analiticas modernas al sistema, y precisa en su
+  nota 5 que Higgins situa los trigramas en el espacio polinomico de (a+i) al
+  cubo, cuyo desarrollo tiene un termino por cada capa del reticulo de
+  trigramas.
+- **Riesgo de pares discordantes:** bajo. Un desarrollo polinomico de los
+  trigramas por peso no es un estadistico de orden.
+- **Riesgo de forzado por grupo:** bajo.
+- **Prioridad:** baja.
+
+## 12.5 Hacker, Moore y Patsco, y la nota sobre la fecha
+
+- **Cadena de cita:** Moore 2005, artefacto leido, cita **"Hacker, Moore &
+  Patsco 2002"** y da la entrada de un volumen publicado por Routledge en Nueva
+  York y Londres en **2002**, con un indice cuya entrada "Textual Sequence
+  (Received Order) of Hexagrams" recomienda consultar. Cita ademas "Hacker 1993"
+  paginas 101 a 122 como resumen del trabajo previo hasta 1993.
+- **Discrepancia con la instruccion, que se deja escrita:** la instruccion que
+  abrio esta tanda nombraba "Hacker y Moore 2003". El artefacto dice Hacker,
+  Moore y Patsco, 2002, con un tercer autor y un ano antes. Puede ser otra
+  edicion o una reimpresion; **no se resuelve aqui**, se senala.
+- **Riesgo de pares discordantes:** muy bajo. Es una bibliografia anotada, es
+  decir un instrumento para encontrar piezas, no una pieza con resultados.
+- **Riesgo de forzado por grupo:** muy bajo, por lo mismo.
+- **Prioridad:** alta, pero como **mapa** y no como fuente. Si en algun sitio
+  hay un antecedente de nuestro objeto, el indice de esa bibliografia es el
+  camino mas corto para dar con el. Es la pieza que mas puede reducir el hueco
+  de la revision, y la que menos puede colisionar por si misma.
+
+## 12.6 Mesker 2002
+
+- **Cadena de cita:** Moore 2005, artefacto leido, lo cita al hablar de la
+  disposicion de las Ocho Casas de Jing Fang, y da la entrada: Harmen Mesker,
+  "The Eight Houses: A Preliminary Survey", version 1.2, mayo de 2002. Moore
+  describe la disposicion asi: ordena los hexagramas por grupos de ocho, en una
+  secuencia que depende sobre todo del cambio de una linea de un hexagrama al
+  siguiente, y es un ordenamiento puramente estructural.
+- **Riesgo de pares discordantes:** bajo, pero **es la pieza pendiente que toca
+  mas de cerca un objeto nuestro**: Jing Fang es una de las tres construcciones
+  medidas, y aqui hay un survey dedicado a ella.
+- **Riesgo de forzado por grupo:** bajo. Un survey de la disposicion describe la
+  construccion; nada en lo citado sugiere que haga actuar un grupo sobre pares.
+- **Prioridad:** alta. Es donde mas facil seria encontrar ya escrito algo sobre
+  la estructura de los palacios que este repositorio demuestra en PROOFS.md 2.6
+  y 2.7.
+
+## 12.7 Moore 1989
+
+- **Cadena de cita:** Moore 2005, artefacto leido, se autocita: Steve Moore,
+  "The Trigrams of Han", Wellingborough, Aquarian Press, 1989.
+- **Riesgo de pares discordantes:** bajo. Por titulo y por lo que hace el mismo
+  autor en 2005, es un trabajo sobre trigramas y su tradicion.
+- **Riesgo de forzado por grupo:** bajo.
+- **Prioridad:** baja.
+
+## 12.8 La observacion folk de paridad de transiciones
+
+- **Cadena de cita:** ninguna localizada. Entro por la instruccion que abrio la
+  revision, con las cifras 48 pares y 16 impares, razon 3 a 1.
+- **Evidencia negativa acumulada:** cero apariciones de "3:1", "48 pairs", "16
+  pairs", "48 even" y "16 odd" en los cuatro artefactos del Yijing leidos.
+- **Riesgo:** no es riesgo de solape, es riesgo de **contaminacion**. Si alguien
+  pone esa observacion al lado de la obstruccion de paridad de PROOFS.md 3.3, se
+  leera como la misma cosa y no lo es: aquella cuenta transiciones entre
+  hexagramas consecutivos, esta cuenta la paridad de un recuento sobre pares de
+  posiciones. El deslinde de la seccion 3.7 es obligatorio.
+- **Nota aritmetica que sigue en pie:** 48 mas 16 son 64, y una secuencia de 64
+  hexagramas tiene 63 transiciones consecutivas.
+- **Prioridad:** media. No por lo que pueda contener, sino porque una cifra sin
+  puntero circulando cerca del trabajo es una fuente de error para terceros.
+
+## 12.9 Lectura del conjunto
+
+De las siete, **ninguna** tiene, por lo que se sabe de ella por cadena de cita,
+pinta de contener un recuento de pares discordantes contra una ordenacion de
+referencia ni un argumento de forzado por grupo. Las dos que mas cerca pasan de
+un objeto nuestro son **Mesker**, por Jing Fang, y **Hacker, Moore y Patsco**,
+no por contenido propio sino por ser el mapa que llevaria a cualquier otra
+pieza.
+
+Y la advertencia que hay que repetir: esto son lineas de plausibilidad, no
+veredictos. El unico solape encontrado hasta ahora, el de Radisic con
+PROOFS.md 3.1, **no habria salido de un juicio de plausibilidad**: la pieza no
+estaba en ninguna lista, aparecio al ir a buscar otra cosa, y solo se supo al
+leerla entera. Esa es la razon exacta por la que estas lineas no cierran nada.
+
+## 12.10 Quien cierra
+
+**Cerrar la revision es decision de Alexis.** Esta seccion solo la prepara.
+Mientras la cabecera de este fichero siga diciendo ABIERTA, no se afirma novedad
+de nada. Cuando se cierre, se dira en la seccion 10, con fecha, con la lista de
+lo leido, y con lo que se decidio no leer y por que.
