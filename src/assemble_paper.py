@@ -8,7 +8,9 @@ y comprueba lo que hay que comprobar antes de creerselo:
   - que esten las nueve secciones, en orden y sin duplicados;
   - que toda cita del texto resuelva a una entrada de las referencias;
   - que no haya guiones largos en ninguna forma, tambien en ingles;
-  - que ninguna seccion haya perdido sus comentarios de ensamblaje.
+  - que ninguna seccion haya perdido sus comentarios de ensamblaje;
+  - y, llamando a src/declared_values.py, que toda cifra impresa en la prosa
+    siga saliendo de la linea de results que su comentario declara.
 
 Herencia de verificaciones, por la enmienda 3 de CONTACT-RULES.md: el barrido de
 guiones es el mismo que se viene aplicando a cada seccion por separado, y aqui se
@@ -22,6 +24,8 @@ Salida: paper/PAPER.md y results/assembly-check.tsv
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAPER = os.path.join(ROOT, "paper")
@@ -192,6 +196,21 @@ ORCID 0009-0003-4636-8206
     sin_citar = sorted(CLAVES - citas)
     emit("referencias.sin.citar", " ".join(sin_citar) if sin_citar else "ninguna", "")
     check("ninguna.referencia.queda.sin.citar", not sin_citar)
+
+    # --- el congelador de cifras, dentro del mismo ensamblado -------------
+    # No basta con que el manuscrito este bien montado: hay que exigir que las
+    # cifras que imprime sigan siendo las que miden los ficheros de results. Se
+    # corre aqui, y su resultado entra en este mismo informe, para que no exista
+    # un ensamblado que pase mientras el congelador falla.
+    import declared_values
+    salida = declared_values.comprobar()
+    for k, v, n in declared_values.ROWS:
+        if k.startswith(("declaraciones.", "cifras.", "derivadas.",
+                         "el.cotejo.", "desajustes", "toda.cifra.")):
+            emit("cifras." + k, v, n)
+    for f in declared_values.FALLOS:
+        emit("cifras.DESAJUSTE", 1, f)
+    check("las.cifras.impresas.siguen.saliendo.de.results", salida == 0)
 
     emit("palabras.aproximadas", len(texto.split()), "")
 

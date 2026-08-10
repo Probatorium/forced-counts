@@ -77,3 +77,6 @@ paper/00-abstract.md	analisis	propio	resumen del manuscrito
 src/assemble_paper.py	aparato	propio	ensamblador y comprobador del manuscrito
 paper/PAPER.md	analisis	propio	manuscrito ensamblado
 results/assembly-check.tsv	aparato	propio	salida del comprobador de ensamblado
+src/declared_values.py	aparato	propio	congelador de cifras del manuscrito
+results/declared-values.tsv	aparato	propio	salida del congelador de cifras
+results/mutation-test.tsv	aparato	propio	prueba por mutacion del congelador
