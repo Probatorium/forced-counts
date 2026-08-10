@@ -453,6 +453,10 @@ primera aparicion. **Hasta que decida, ninguna prosa nueva de este repositorio
 usa el termino.** Los textos ya commiteados se quedan como estan; esta es una
 regla para lo que se escriba desde aqui.
 
+> **RESUELTA.** La decision se tomo y esta registrada en la seccion 11. Este
+> parrafo se deja como se escribio, con su reserva, para que se vea que la
+> decision no la tomo quien escribia.
+
 ---
 
 # 7. Cerrado el pendiente de Mutze: que es *balanced* en codigos de Gray
@@ -564,3 +568,57 @@ del ultimo punto.)
   objeto no lo hace nuestro. Que Schoter ya parametrice la orientacion de la
   lectura binaria si quita una cosa de la lista de lo que se podria haber
   llamado propio. La revision sigue ABIERTA.
+
+---
+
+# 11. Decision de vocabulario, tomada y registrada
+
+**Decisor: Alexis.** **Fecha declarada: 10 de agosto de 2026**, en el carril de
+chat. (Nota de reloj, que se deja en vez de alinearla: la maquina que produce
+este commit marca 2026-08-09, asi que el commit cae el dia anterior a la fecha
+declarada por el decisor. Se registran las dos.)
+
+Resuelve la reserva de la seccion 6. Tres reglas, y las tres valen **de aqui en
+adelante y para el manuscrito**. **La prosa ya commiteada no se reescribe.**
+
+## 11.1 El estadistico se llama "discordant pairs"
+
+El objeto que este repositorio mide, el numero de pares de posiciones cuyo orden
+en la secuencia contradice su orden en la ordenacion de referencia, se nombra
+**discordant pairs**.
+
+Nota que acompana a la primera aparicion: *es el inversion number en sentido
+combinatorio*, el mismo objeto que Bjorner y Brenti definen en su ecuacion
+(1.25) como `card{(i,j) : i < j, x(i) > x(j)}`. La nota es obligatoria porque el
+lector combinatorio tiene derecho a saber que no se le esta ofreciendo un
+estadistico nuevo, sino el de siempre con otro nombre.
+
+## 11.2 "Inversion" queda reservado al giro, en contexto sinologico
+
+En contexto sinologico, **inversion** nombra el giro de 180 grados del
+hexagrama, *fandui*, que es el uso medido en los cuatro artefactos de la seccion
+6. Este repositorio no lo usa para otra cosa, y cuando lo use llevara
+**deslinde en primera aparicion** dejando claro que es el giro y no el par
+discordante.
+
+## 11.3 "Balance" no se usa para el empate sin deslinde
+
+El empate en C(64,2) partido por dos **no se llama balance** sin deslinde
+inmediato de los dos sentidos ya ocupados y documentados en la seccion 2 y en la
+seccion 7:
+
+- **peso de Hamming**, en Radisic, seccion 4.3, que lo glosa como *yin-yang
+  balance* y aclara acto seguido que formalmente es peso de Hamming;
+- **recuentos de transicion por coordenada**, en Mutze, seccion 3.2, con la
+  condicion `|c_i - 2^n/n| < 2`.
+
+El nombre preferido sigue siendo **empate**, y donde haga falta precision,
+empate del recuento de pares discordantes contra el orden binario.
+
+## 11.4 Que no cambia esta decision
+
+No cambia ninguna cifra, ningun teorema y ningun fichero de resultados. Es una
+regla de escritura. Los ficheros ya commiteados que dicen inversiones siguen
+diciendolo, y esa inconsistencia entre lo viejo y lo nuevo es deliberada: quien
+lea la historia vera cuando se decidio y por que, en vez de encontrar un
+vocabulario uniforme que finja no haber tenido nunca dudas.
