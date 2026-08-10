@@ -51,3 +51,4 @@ PROOFS-GENERAL.md	analisis	propio	demostrado, enumerativo y refutado de la fase 
 src/general_n6.py	analisis	propio	n=6 en el mismo sistema B(n,k)
 results/general-n6.tsv	analisis	propio	salida de n=6 en el sistema general
 TABLA-GENERAL.md	analisis	propio	la tabla general unica, n de 3 a 6
+DEFINICIONES-B31.md	aparato	propio	lista cerrada de candidatos, declarada antes de mirar

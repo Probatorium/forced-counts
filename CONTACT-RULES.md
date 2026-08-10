@@ -73,3 +73,46 @@ regla se cierra aqui, y se cierra por cumplida, no por saltada.
   este en un remoto no autoriza a anunciarlo, ni a enviarlo a nadie, ni a
   reclamar nada de lo que contiene. La revision de antecedentes sigue sin
   empezar.
+
+**Enmienda 3, 2026-08-10: herencia de verificaciones.** Esta enmienda no es de
+contacto con otros repositorios; es una regla de metodo, y entra aqui porque
+aqui es donde viven las reglas del repositorio que no son texto firmado.
+
+> **Una reimplementacion de un objeto ya construido hereda las verificaciones
+> del original, o declara por escrito por que no.**
+
+Que quiere decir en la practica. Si un objeto ya existe en el repositorio con
+comprobaciones que lo atan a su definicion, y se vuelve a implementar en otro
+sitio, la reimplementacion arrastra esas mismas comprobaciones. No basta con que
+el codigo nuevo parezca correcto: tiene que pasar las pruebas que el viejo ya
+pasaba. Si alguna no se puede heredar, se dice cual y por que en el propio
+fichero.
+
+**Caso que origina la regla, y por eso se cita.** El codigo de Gray reflejado se
+construyo primero en `src/gray.py`, para n igual a 6, con dos comprobaciones
+pegadas a su definicion: que reproduce la forma cerrada, el numero XOR el mismo
+desplazado uno bajo la convencion de referencia, y que cada paso cambia
+exactamente una linea. Al reimplementarlo en `src/general_landscape.py` para n
+variable, **la reimplementacion solto las dos**. La funcion nueva construia otra
+ordenacion, la que anade el bit mas alto en vez de la linea inferior, y nadie lo
+noto hasta que la tabla unica de n de 3 a 6 puso las dos mitades en la misma
+pagina y salieron dos resultados distintos para el mismo objeto. El detalle esta
+en la enmienda 1 de PROOFS-GENERAL.md y en la enmienda 2 de INFORME-GENERAL.md,
+y el coste esta anotado en el registro de esfuerzo como callejon sin salida.
+
+La comprobacion de la forma cerrada habria cazado el error en el momento de
+escribir la funcion, sin gastar una sesion entera en explicar una anomalia que
+no existia. De ahi la regla.
+
+**Donde viven las demas reglas del repositorio**, para que esta no quede suelta:
+
+- **Textos firmados, que no se enmiendan:** PREREGISTRATION.md y
+  PREREGISTRATION-GENERAL.md.
+- **Reglas de contacto y de politica del repositorio:** este fichero, con sus
+  enmiendas al pie.
+- **Instrumentacion del esfuerzo:** EFFORT.md y effort/README.md.
+- **Doctrina de la revision de antecedentes:** PRIOR-ART.md, seccion de
+  doctrina, y la decision de vocabulario en su seccion 11.
+- **Como se escribe el control:** enmienda 1 de INFORME-GRUPO.md.
+- **Nociones y construcciones declaradas antes de medir:** DEFINICIONES-GRUPO.md
+  y DEFINICIONES-GENERAL.md.
