@@ -29,20 +29,25 @@ Las reglas de los carriles anteriores, aplicadas aqui:
 
 ## Estado de cada pieza
 
+Actualizado en la sesion 9. Las filas que cambiaron de estado lo dicen.
+
 | pieza | estado | registro |
 |---|---|---|
 | Radisic, arXiv:2601.07175v3 | **ARTEFACTO LEIDO**, entero, 11 paginas | seccion 1 |
 | Colision de "balance": Radisic 4.3 | **ARTEFACTO LEIDO** | seccion 2 |
-| Colision de "balance": codigos de Gray | **SEGUNDA MANO**, pendiente de artefacto | seccion 2 y 3 |
-| Cook 2006, STEDT Monograph 5 | **SEGUNDA MANO**, pendiente | seccion 3 |
-| Gritter, "The Hidden Pattern" | **SEGUNDA MANO**, pendiente | seccion 3 |
-| Moore, "Structural Elements" | **SEGUNDA MANO**, pendiente | seccion 3 |
-| Resena de Drasny | **SEGUNDA MANO**, pendiente | seccion 3 |
-| Schoter, "Boolean algebra and the Yijing" | **SEGUNDA MANO**, pendiente | seccion 3 |
-| Mutze, survey de codigos de Gray | **SEGUNDA MANO**, pendiente | seccion 3 |
-| Observacion folk de paridad de transiciones | **SEGUNDA MANO**, pendiente | seccion 3 |
+| Colision de "balance": codigos de Gray | **ARTEFACTO LEIDO** en la sesion 9, antes segunda mano | seccion 7 |
+| Cook 2006, STEDT Monograph 5 | **ARTEFACTO LEIDO** en parte: resena entera mas barridos del texto completo | seccion 5.4 |
+| Gritter, "The Hidden Pattern" | **ARTEFACTO LEIDO**, entero | seccion 5.1 |
+| Moore, "Structural Elements" | **ARTEFACTO LEIDO**, canal OCR | seccion 5.2 |
+| Resena de Drasny | **ARTEFACTO LEIDO**, entera | seccion 5.4 |
+| Schoter, "Boolean algebra and the Yijing" | **ARTEFACTO LEIDO** | seccion 5.3 |
+| Mutze, survey de codigos de Gray | **ARTEFACTO LEIDO** en la parte citada, verificada contra el PDF | seccion 7 |
+| Bjorner y Brenti, Coxeter groups | **ARTEFACTO LEIDO** en la parte citada, verificada contra el PDF | seccion 8 |
+| Colision de "inversion" en el Yijing | **MEDIDA** en cuatro artefactos | seccion 6 |
+| Observacion folk de paridad de transiciones | **SEGUNDA MANO**, sin dueno localizado | secciones 3.7 y 9 |
+| Goldenberg 1975, Davis 1998, Higgins 1998, Hacker y Moore 2003, Mesker 2002, Moore 1989 | **SEGUNDA MANO**, pendientes | seccion 9 |
 
-Nada mas se ha buscado todavia. La lista de pendientes no pretende ser completa.
+La lista de pendientes no pretende ser completa.
 
 ---
 
@@ -208,6 +213,12 @@ primera vez.
 
 # 3. Segunda mano, pendientes de artefacto
 
+> **SUPERADA EN PARTE en la sesion 9.** Gritter, Moore, Schoter, Cook por la via
+> de su resena, y Mutze pasaron a artefacto leido en la seccion 5 y siguientes.
+> Esta seccion se deja tal cual se escribio, sin corregir, para que se vea que
+> entraron primero como noticia y despues como lectura. Solo sigue viva la 3.7,
+> la observacion folk, que no tiene dueno localizado.
+
 Ninguna de estas piezas se ha leido. Todas entran con la misma cadena de cita:
 **el autor del repositorio las nombro en la instruccion que abrio esta
 revision**, en la sesion 8. No se ha verificado ni su contenido ni sus datos
@@ -274,7 +285,272 @@ segunda mano y asi queda marcada aqui.
 
 ---
 
-# 4. Que NO autoriza esta revision
+# 5. La tanda de la sesion 9: cuatro piezas del Yijing
+
+## 5.0 Fuente y canal, declarados antes de los veredictos
+
+Todo lo de esta seccion sale de `github.com/Probatorium/common`, carpeta
+`proyecto-bibliografias`, clonada en el area temporal de la sesion. Su README
+declara el canal, y se copia lo que importa: los `.md` son conversion verbatim
+de cada PDF, extraccion de texto ordenada por posicion en la pagina, con
+marcadores `--- pagina N ---` para poder situar cualquier pasaje contra el PDF;
+`Moore_Structural_Elements.md` es **OCR con Tesseract**, porque su PDF es un
+escaneo de imagen sin capa de texto; y `Drasny_Marshall_Resena_Cook.md` es
+conversion de la pagina web `https://www.biroco.com/yijing/cook.htm`, sin PDF
+equivalente.
+
+El mismo README advierte, y se respeta aqui, que en los ficheros largos con
+matematica (Cook, Mutze, Bjorner y Brenti, Yu) **la prosa se verifico pero las
+formulas, diagramas y ejemplos numericos no tienen garantia de orden**, porque
+la tipografia bidimensional no tiene un orden de lectura lineal unico. Regla que
+se aplica en consecuencia: **para cualquier formula que se cite, el canal fuerte
+es el PDF**, y asi se ha hecho en las secciones 7 y 8.
+
+Los barridos de esta seccion se corrieron sobre los `.md`, que es donde se puede
+buscar. Un barrido negativo sobre un `.md` es evidencia buena para palabras de
+prosa y evidencia debil para simbolos.
+
+## 5.1 Gritter, "The Hidden Pattern", ARTEFACTO LEIDO entero
+
+- Identidad: Gert Gritter, *The Hidden Pattern in the classical sequence of the
+  I Ching*. Cierre del texto: "Groningen, 2015". Dice que noto el patron en
+  diciembre de 2010. 13 paginas en la conversion.
+- Que hace: reordena los 32 pares de King Wen en una figura que llama **the
+  Grid**, con los 16 hexagramas de trigramas identicos u opuestos en la columna
+  central, y lee en ella simetria, complementariedad entre los dos canones, y
+  una serie de correspondencias numericas con 360, 72, 60, 30, 12 y 6.
+- Que no hace: no hay recuento de inversiones, ni ordenacion de referencia, ni
+  grupo, ni nada forzado por simetria. Es un trabajo de disposicion visual y
+  lectura numerologica.
+- **Veredicto: no cuenta inversiones contra el binario y no conoce forzado por
+  grupo.**
+
+## 5.2 Moore, "Structural Elements", ARTEFACTO LEIDO, canal OCR
+
+- Identidad, leida en la propia portada: Steve Moore, *Structural Elements in
+  the King Wen Sequence of Hexagrams*, **Oracle Paper No. 1, February 2005**,
+  copyright 2005 Steve Moore. El canal es OCR, con el ruido que el README
+  anuncia; se cita prosa, no cifras sueltas.
+- Que hace: analiza la estructura de la secuencia recibida por pares. Recoge que
+  56 hexagramas forman 28 pares invertibles y los otros ocho van por oposicion.
+  Clasifica los 32 pares por reparto de lineas yin y yang y por posicion par o
+  impar del par. Discute ademas a Jing Fang y la disposicion de Mawangdui, que
+  son objetos de este repositorio.
+- Vecino peligroso, que se registra: Moore hace un recuento de tipo paridad,
+  pero de **otro objeto**. Cuenta cuantos pares tienen reparto de lineas
+  equilibrado y cuantos estan en posicion correcta segun preponderancia de yin o
+  de yang. Nada de eso es la paridad del recuento de inversiones de PROOFS.md
+  3.3, que sale del cardinal par de las orbitas del grupo.
+- **Veredicto: no cuenta inversiones contra el binario y no conoce forzado por
+  grupo.**
+
+## 5.3 Schoter, "Boolean Algebra and the Yi Jing", ARTEFACTO LEIDO
+
+- Identidad, tomada de la nota al titulo del propio articulo: Andreas Schoter,
+  *Boolean Algebra and the Yi Jing*, publicado en **THE ORACLE: THE JOURNAL OF
+  YIJING STUDIES, Vol 2, No 7, Summer 1998, pp 19 a 34. ISSN 1463-6220**.
+- Que hace: monta un algebra de Boole sobre los gua, con not, or, and y xor,
+  define el orden parcial inducido `x <= y` si y solo si `x|y = y`, dibuja los
+  reticulos de bigramas y trigramas, y aplica todo ello a las relaciones de
+  Cleary y a la representacion del cambio.
+- **Vecindad fuerte, que hay que declarar.** Su seccion 2.4, Definicion 6,
+  "Sequence Parameters", parametriza las ordenaciones por conteo con tres
+  variables, y la primera es literalmente **"whether the lower or upper line is
+  the least significant bit"**. Eso es exactamente el parametro de orientacion
+  de las cuatro convenciones de PREREGISTRATION.md. Schoter llama **Rising
+  Yang** a la lectura con la linea inferior como bit menos significativo y
+  **Sinking Yang** a la contraria. La eleccion de polaridad, yang como uno o
+  como cero, no la parametriza. **Este repositorio no puede presentar el
+  parametro de orientacion como algo suyo.**
+- Coincidencia de numero que conviene no leer de mas: Schoter escribe que hay
+  "8! or 40,320 possible ways of arranging the gua into sequences", y 40320
+  aparece tambien en el control de este repositorio como el numero de ordenes de
+  familia. Son 8 factorial las dos veces y objetos distintos las dos veces.
+- Que no hace: su orden es el **parcial del reticulo**, no un orden total de
+  referencia contra el que medir; y no hay recuento de discordancias, ni grupo
+  actuando, ni nada forzado.
+- **Veredicto: no cuenta inversiones contra el binario y no conoce forzado por
+  grupo.**
+
+## 5.4 Cook 2006, por la resena de Drasny y por barridos del texto completo
+
+- Identidad, tomada de la cabecera de la resena: Richard S. Cook, *Classical
+  Chinese Combinatorics: Derivation of the Book of Changes Hexagram Sequence*,
+  University of California, Berkeley, STEDT Monograph Series, Vol. 5, 2006,
+  **xviii + 642 paginas**, ISBN 0-944613-44-6. El PDF de la conversion tiene 664
+  paginas. La cifra de 660 que circulaba es la suma xviii mas 642.
+- Resena: Jozsef Drasny, *The solution of the King Wen sequence?*, en Yijing
+  Dao, `https://www.biroco.com/yijing/cook.htm`, con agradecimiento a Steve
+  Marshall. **Leida entera.**
+- Que hace Cook, segun la resena: inventa una "n-gram science", clasifica
+  monogramas, digramas, trigramas, tetragramas y hexagramas por invertibilidad,
+  genero, pureza, nucleares y numero de lineas, y con esas reglas construye un
+  procedimiento que, partiendo del orden natural binario de Shao Yong comprimido
+  en 36 clases HEC, regenera la secuencia recibida. Es un programa de
+  **derivacion**.
+- Veredicto de la resena sobre Cook, que se recoge como lo que es, la opinion de
+  Drasny y no la de este repositorio: que el resultado final era conocido al
+  empezar, que el procedimiento no es una demostracion matematica, y que la
+  teoria le queda sin probar. Drasny cita al propio Cook, pagina 505: "This
+  sequence derivation is not a formal mathematical proof of the kind to which
+  modern mathematicians are accustomed."
+- **Distincion que este repositorio sostiene:** aqui **no se deriva** la
+  secuencia. Se computa que fuerza la simetria que su construccion respeta, y
+  se deja escrito y abierto por que el recuento es 1013 y no otro de los 52
+  compatibles. Derivar y computar lo forzado son programas distintos.
+- **Barridos sobre el texto completo convertido**, 1.36 MB. Apariciones:
+  Kendall 0, discordant 0, "pairwise disagreement" 0, "transposition distance"
+  0, "inversion count" 0, "number of inversions" 0, "rank correlation" 0,
+  "permutation distance" 0, "sortedness" 0.
+- **Cifras nuestras dentro de Cook, miradas una a una y ninguna es un recuento:**
+  1008 aparece una vez y es la referencia de diccionario `HDZ:1008`; 1017
+  aparece una vez y es un fragmento de un diagrama que la extraccion dejo
+  ilegible; 496 aparece cuatro veces y son una columna de una tabla de recuentos
+  de n-gramas para n igual a 10, otra referencia `HDZ:496`, un marcador de
+  pagina, y la entrada del glosario que dice que 496 es el tercer numero
+  perfecto. Ninguna de las tres cifras es un recuento de inversiones. 1013 no
+  aparece.
+- **Veredicto: no cuenta inversiones contra el binario y no conoce forzado por
+  grupo.** Con el limite de que el veredicto se apoya en la resena entera mas
+  barridos del texto completo, no en la lectura completa de 642 paginas.
+
+## 5.5 Lo que las cuatro tienen en comun
+
+Ninguna de las cuatro mide una discordancia entre la secuencia recibida y una
+ordenacion de referencia, y ninguna hace actuar un grupo sobre pares de
+posiciones para ver que queda determinado. El objeto de este repositorio no
+aparece en ellas. **Eso no autoriza a llamarlo nuevo**: son cuatro piezas de una
+lista que sigue abierta.
+
+---
+
+# 6. Quinta colision: la palabra "inversion"
+
+**Medida en cuatro artefactos.** En la literatura del Yijing, inversion nombra
+el **giro de 180 grados** del hexagrama, que es lo que este repositorio llama
+giro y escribe rho. No nombra el par discordante.
+
+| artefacto | lema que aparece | apariciones | termino chino |
+|---|---|---|---|
+| Gritter | "inversion" | 4 | *fandui*, en la nota 2 de la pagina 3 |
+| Cook | "inversion" y "obversion" | 92 y 100 | capitulo "Hexagram inversion and obversion" |
+| Drasny | "inverses of hexagrams" | 1 | *zonggua*, y *cuogua* para el obverso |
+| Moore | "invertible", "inverted" | 9 | no da termino chino |
+
+Precision que hay que hacer, porque el barrido tonto engana: la cadena exacta
+"inversion" **solo** aparece en Gritter y en Cook. En Moore y en Drasny la misma
+nocion viene con otro lema. Contar por la cadena y no por la nocion habria dado
+dos, y el resultado correcto es cuatro.
+
+Cita de Gritter, pagina 3, nota 2: "The Chinese terms are pangtong (opposition)
+en fandui (inversion)." Cita de Drasny: "There are inverses of hexagrams
+(*zonggua*), 'obverses' of hexagrams (*cuogua*, 'obverse' being an odd word to
+use for complementary)".
+
+**Decision de vocabulario: RESERVADA a Alexis.** Las opciones sobre la mesa son
+llamarlos "discordant pairs" o seguir con "inversions" acompanado de deslinde en
+primera aparicion. **Hasta que decida, ninguna prosa nueva de este repositorio
+usa el termino.** Los textos ya commiteados se quedan como estan; esta es una
+regla para lo que se escriba desde aqui.
+
+---
+
+# 7. Cerrado el pendiente de Mutze: que es *balanced* en codigos de Gray
+
+**ARTEFACTO LEIDO**, y la formula verificada contra el PDF, que es el canal
+fuerte, no contra la conversion.
+
+- Identidad: Torsten Mutze, *Combinatorial Gray codes, an updated survey*, The
+  Electronic Journal of Combinatorics 30(3) (2023), Dynamic Survey #DS26.
+- **Cita literal, seccion 3.2 "Transition counts", pagina impresa 11:**
+  "Specifically, let c_i denote the number of times that bit i is flipped along
+  a given Gray cycle, where we number bits from right to left with i = 1, ..., n.
+  Clearly, each transition count c_i must be an even number, and they sum up to
+  2^n, so we require that each c_i is approximately equal to 2^n/n. Formally, in
+  a *balanced Gray code*, we require that |c_i - 2^n/n| < 2 for i = 1, ..., n."
+- **Segundo sentido en el mismo survey**, seccion 2.2: la *balancedness
+  constraint* de un grafo de flips, que compara los tamanos de las clases de una
+  particion bipartita o k-partita como obstruccion a la hamiltonicidad. Aparece
+  ademas en otras variantes a lo largo del survey, como los posets balanceados y
+  las transposiciones balanceadas.
+- **Dato que toca directamente a nuestra cuarta ordenacion:** el propio survey
+  dice del codigo de Gray reflejado que "in the BRGC, we have c_i = 2^{n-i} for
+  i = 1, ..., n-1 and c_n = 2, i.e., it is very unbalanced". Es decir que la
+  ordenacion de comparacion que este repositorio anadio es, en el sentido de
+  Mutze, muy desbalanceada.
+
+Con esto queda cerrado el pendiente. La marca de segunda mano que llevaba el
+deslinde de INFORME-GRAY.md se resuelve **por enmienda visible al pie de ese
+fichero**, sin tocar la frase original.
+
+---
+
+# 8. Punteros de Bjorner y Brenti, para el deslinde del sentido B6
+
+**ARTEFACTO LEIDO** en las partes citadas, verificadas contra el PDF.
+
+- Identidad: Anders Bjorner y Francesco Brenti, *Combinatorics of Coxeter
+  Groups*.
+- **Pagina impresa 20, ecuacion (1.25):** el numero de inversiones de x en S_n
+  se define como `inv(x) = card{(i,j) : i < j, x(i) > x(j)}`.
+- **Pagina impresa 20, Proposicion 1.5.2, ecuacion (1.27):** `l_A(x) = inv(x)`,
+  es decir que en tipo A la funcion de longitud coincide con el numero de
+  inversiones.
+- **Secciones 8.1, tipo B, pagina 245, y 8.2, tipo D, pagina 252:** las
+  descripciones combinatorias de los grupos de tipo B y D como permutaciones con
+  signo y permutaciones con signo pares, y de sus funciones de longitud como
+  recuento de ciertas inversiones de esas permutaciones. El texto lo resume asi
+  en la seccion 7.1: "the combinatorial descriptions of the Coxeter groups of
+  types B and D as signed permutations and even signed permutations and of their
+  length functions as counting certain inversions of these permutations (see
+  Sections 8.1 and 8.2 for details)".
+
+**Por que esto importa aqui, dicho con precision.** La definicion (1.25) es
+**literalmente la misma** que la de este repositorio: pares con i menor que j y
+valores en orden contrario. No es un falso amigo, es el mismo objeto, y nuestro
+recuento contra el orden binario es el `inv` de la permutacion que lleva
+posiciones a rangos binarios. El riesgo es otro y es real: este repositorio
+nombra **B6**, y en la literatura de Coxeter la longitud en tipo B **es un
+recuento de ciertas inversiones de permutaciones con signo**, que **no** es la
+nuestra. Quien lea "B6" e "inversiones" en la misma frase puede entender
+longitud de Coxeter. **Deslinde obligatorio en cualquier texto que ponga las dos
+cosas juntas:** aqui B6 es solo el grupo que actua sobre los hexagramas, y el
+recuento de inversiones es el de la secuencia contra el orden binario, no la
+longitud de ningun elemento de B6.
+
+---
+
+# 9. Segunda mano nueva, pendiente de artefacto
+
+Misma cadena de cita que la seccion 3: el autor del repositorio las nombro en la
+instruccion que abrio esta tanda. No se han leido y no se ha verificado ningun
+dato bibliografico.
+
+- **Goldenberg 1975.** Aparece ademas citado dentro de un artefacto leido:
+  Schoter discute su algebra y anota que Goldenberg no define formalmente una
+  operacion de complemento. Ese es el puntero por donde empezar.
+- **Davis 1998**, del mismo numero de The Oracle que Schoter.
+- **Higgins 1998.**
+- **Hacker y Moore 2003.**
+- **Mesker 2002.**
+- **Moore 1989.**
+
+**La observacion folk de paridad de transiciones sigue sin dueno localizado.**
+Se busco en los cuatro artefactos del Yijing de esta tanda las cadenas "3:1",
+"48 pairs", "16 pairs", "48 even" y "16 odd": **cero apariciones en los
+cuatro**. Lo unico cercano es la clasificacion de pares de Moore descrita en
+5.2, que es otro objeto. La observacion se queda como estaba: cifras sin
+puntero, sin usar en ningun computo, y con su deslinde obligatorio de la
+seccion 3.7.
+
+---
+
+# 10. Que NO autoriza esta revision
+
+(Esta seccion se escribio en la sesion 8 con el numero 4. Al insertarse las
+secciones 5 a 9 en la sesion 9, se renumero para que el orden de lectura sea el
+del fichero. No se ha cambiado ni una palabra de su contenido, salvo la adicion
+del ultimo punto.)
 
 - **No autoriza a afirmar novedad de nada.** Abierta no es cerrada. Se ha leido
   un artefacto de una lista que ni siquiera esta completa.
@@ -284,3 +560,7 @@ segunda mano y asi queda marcada aqui.
   linea deja constancia; cerrar exigiria haber leido lo suficiente como para
   saber que mas hay.
 - Cuando se cierre, se dira aqui, con fecha, y con la lista de lo leido.
+- **Anadido en la sesion 9.** Que cuatro piezas del Yijing no midan nuestro
+  objeto no lo hace nuestro. Que Schoter ya parametrice la orientacion de la
+  lectura binaria si quita una cosa de la lista de lo que se podria haber
+  llamado propio. La revision sigue ABIERTA.

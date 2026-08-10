@@ -114,3 +114,47 @@ sobre las dos ordenaciones.
     python src/gray.py
 
 Determinista, sin azar.
+
+---
+
+# Enmiendas
+
+Se anaden al pie, con fecha y motivo. **No se toca el texto de arriba.**
+
+## Enmienda 1, 2026-08-09: el deslinde de *balanced*, de segunda mano a artefacto leido
+
+**Motivo.** La frase de deslinde con la que abre este informe afirma que en la
+literatura de codigos de Gray *balanced* refiere a los recuentos de transicion
+por coordenada. Cuando se escribio, esa afirmacion **no tenia artefacto detras**:
+su cadena de cita era el conocimiento general del asistente que la redacto, y
+PRIOR-ART.md la marco como segunda mano pendiente del survey de Mutze.
+
+**Queda resuelta.** Se leyo el artefacto y se verifico la formula contra el PDF,
+que es el canal fuerte. Torsten Mutze, *Combinatorial Gray codes, an updated
+survey*, The Electronic Journal of Combinatorics 30(3) (2023), Dynamic Survey
+#DS26, seccion 3.2 "Transition counts", pagina impresa 11, dice literalmente:
+
+> "Specifically, let c_i denote the number of times that bit i is flipped along
+> a given Gray cycle... Formally, in a *balanced Gray code*, we require that
+> |c_i - 2^n/n| < 2 for i = 1, ..., n."
+
+La frase de arriba, por tanto, **se sostiene**, y ahora con puntero.
+
+**Dos cosas que la frase de arriba no decia y hay que anadir.**
+
+Primera: el survey usa la palabra en **mas de un sentido**. Ademas del de los
+recuentos de transicion, en su seccion 2.2 llama *balancedness constraint* a la
+comparacion de tamanos entre las clases de una particion bipartita o k-partita
+de un grafo de flips, como obstruccion a la hamiltonicidad, y de ahi salen los
+posets balanceados y las transposiciones balanceadas del resto del survey. El
+deslinde vale contra los dos.
+
+Segunda, y toca a este informe de lleno: el mismo survey dice del codigo de Gray
+reflejado que **"in the BRGC, we have c_i = 2^{n-i} for i = 1, ..., n-1 and
+c_n = 2, i.e., it is very unbalanced"**. Es decir que la ordenacion de
+comparacion que este informe mide es, en el sentido tecnico de Mutze,
+**muy desbalanceada**. Eso no cambia ninguna cifra de las tablas de arriba, que
+son de otro objeto, pero cierra la puerta a leer la palabra en las dos
+direcciones a la vez.
+
+Registro completo del artefacto en PRIOR-ART.md, seccion 7.
