@@ -88,3 +88,5 @@ paper/PAPER.pdf	analisis	propio	manuscrito en PDF, binario, no se cuentan sus li
 results/build-paper.tsv	aparato	propio	salida del constructor
 results/pdf-bridge.tsv	aparato	propio	salida del puente
 results/pdf-bridge-test.tsv	aparato	propio	prueba de que el puente sabe romperse
+.gitattributes	aparato	propio	atributos de git, para que el PDF no se corrompa al sacarlo
+tools/package.py	aparato	propio	verificacion del paquete, historia, secretos y bundle

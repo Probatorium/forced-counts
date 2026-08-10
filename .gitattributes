@@ -1,0 +1,5 @@
+# El PDF no tiene ningun byte nulo, porque se escribe sin comprimir para poder
+# extraerle el texto y cotejarlo. Git lo toma por texto y, con core.autocrlf en
+# true, le mete retornos de carro al sacarlo en un clon nuevo, que es
+# exactamente donde nadie lo mira. Esto lo impide.
+*.pdf binary
