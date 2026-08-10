@@ -36,13 +36,93 @@ and have no row here.
 ## 7.2 The table
 
 <!-- origen: TABLA-GENERAL.md, catorce filas; cifras en
-     results/general-landscape.tsv y results/general-n6.tsv -->
+     results/general-landscape.tsv y results/general-n6.tsv. LA TABLA SE IMPRIME
+     ENTERA: un paisaje del que solo se dice que existe no es un paisaje. Las
+     casillas llevan aqui el nombre ingles de la seccion 1; en los ficheros de
+     results son FORZADO, INTERVALO y PROHIBIDO. -->
+<!-- CIFRAS: 16 = results/general-landscape.tsv:15 n3.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:46 n3.k1.O3.FORZADO;
+     24 = results/general-landscape.tsv:47 n3.k1.O3.INTERVALO;
+     24 = results/general-landscape.tsv:48 n3.k1.O3.PROHIBIDO;
+     48 = results/general-landscape.tsv:45 n3.k1.O3.casos;
+     16 = results/general-landscape.tsv:51 n3.k2.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:82 n3.k2.O3.FORZADO;
+     24 = results/general-landscape.tsv:83 n3.k2.O3.INTERVALO;
+     24 = results/general-landscape.tsv:84 n3.k2.O3.PROHIBIDO;
+     48 = results/general-landscape.tsv:81 n3.k2.O3.casos;
+     96 = results/general-landscape.tsv:96 n4.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:127 n4.k1.O3.FORZADO;
+     827 = results/general-landscape.tsv:128 n4.k1.O3.INTERVALO;
+     1173 = results/general-landscape.tsv:129 n4.k1.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:126 n4.k1.O3.casos;
+     64 = results/general-landscape.tsv:132 n4.k2.Gray.grupo.orden;
+     36 = results/general-landscape.tsv:163 n4.k2.O3.FORZADO;
+     228 = results/general-landscape.tsv:164 n4.k2.O3.INTERVALO;
+     312 = results/general-landscape.tsv:165 n4.k2.O3.PROHIBIDO;
+     576 = results/general-landscape.tsv:162 n4.k2.O3.casos;
+     96 = results/general-landscape.tsv:168 n4.k3.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:199 n4.k3.O3.FORZADO;
+     828 = results/general-landscape.tsv:200 n4.k3.O3.INTERVALO;
+     1172 = results/general-landscape.tsv:201 n4.k3.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:198 n4.k3.O3.casos;
+     768 = results/general-landscape.tsv:213 n5.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:244 n5.k1.O3.FORZADO;
+     781 = results/general-landscape.tsv:245 n5.k1.O3.INTERVALO;
+     1219 = results/general-landscape.tsv:246 n5.k1.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:243 n5.k1.O3.casos;
+     384 = results/general-landscape.tsv:249 n5.k2.Gray.grupo.orden;
+     10 = results/general-landscape.tsv:280 n5.k2.O3.FORZADO;
+     794 = results/general-landscape.tsv:281 n5.k2.O3.INTERVALO;
+     1196 = results/general-landscape.tsv:282 n5.k2.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:279 n5.k2.O3.casos;
+     384 = results/general-landscape.tsv:285 n5.k3.Gray.grupo.orden;
+     9 = results/general-landscape.tsv:316 n5.k3.O3.FORZADO;
+     753 = results/general-landscape.tsv:317 n5.k3.O3.INTERVALO;
+     1238 = results/general-landscape.tsv:318 n5.k3.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:315 n5.k3.O3.casos;
+     768 = results/general-landscape.tsv:321 n5.k4.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:352 n5.k4.O3.FORZADO;
+     771 = results/general-landscape.tsv:353 n5.k4.O3.INTERVALO;
+     1229 = results/general-landscape.tsv:354 n5.k4.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:351 n5.k4.O3.casos;
+     7680 = results/general-n6.tsv:11 n6.k1.Gray.grupo.orden;
+     3072 = results/general-n6.tsv:39 n6.k2.Gray.grupo.orden;
+     2304 = results/general-n6.tsv:67 n6.k3.Gray.grupo.orden;
+     3072 = results/general-n6.tsv:110 n6.k4.Gray.grupo.orden;
+     7680 = results/general-n6.tsv:138 n6.k5.Gray.grupo.orden;
+     2304 = results/general-n6.tsv:95 n6.k3.Mawangdui.historica.grupo.orden;
+     0 = results/general-n6.tsv:100 n6.k3.Mawangdui.historica.libres;
+     1 = results/general-n6.tsv:106 n6.k3.Mawangdui.historica.alcanzables;
+     1008 = results/general-n6.tsv:105 n6.k3.Mawangdui.historica.observado -->
 Dimensions three to six, every level, in one table with the same columns. The
 order of the group respecting B(n, k) is k factorial times n minus k factorial
 times 2 to the n, which was stated in the general preregistration before any of
-this was run and is verified in all fourteen rows. The order of the group
-depends only on the partition and not on the ordering, which the same table
-confirms across thousands of orderings.
+this was run and is verified in all 14 rows. The order of the group depends only
+on the partition and not on the ordering, which the same table confirms across
+thousands of orderings.
+
+| n | k | group order | Gray | canonical | forced | bounded | barred | cases |
+|---|---|---|---|---|---|---|---|---|
+| 3 | 1 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
+| 3 | 2 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
+| 4 | 1 | 96 | bounded | barred | 0 | 827 | 1173 | 2000, sampled |
+| 4 | 2 | 64 | bounded | bounded | **36** | 228 | 312 | 576, enumerated |
+| 4 | 3 | 96 | bounded | barred | 0 | 828 | 1172 | 2000, sampled |
+| 5 | 1 | 768 | bounded | barred | 0 | 781 | 1219 | 2000, sampled |
+| 5 | 2 | 384 | bounded | barred | **10** | 794 | 1196 | 2000, sampled |
+| 5 | 3 | 384 | bounded | barred | **9** | 753 | 1238 | 2000, sampled |
+| 5 | 4 | 768 | bounded | barred | 0 | 771 | 1229 | 2000, sampled |
+| 6 | 1 | 7680 | bounded | barred | . | . | . | not sampled |
+| 6 | 2 | 3072 | bounded | barred | . | . | . | not sampled |
+| 6 | 3 | 2304 | bounded | bounded | . | . | . | not sampled |
+| 6 | 4 | 3072 | bounded | barred | . | . | . | not sampled |
+| 6 | 5 | 7680 | bounded | barred | . | . | . | not sampled |
+
+The last three columns are the distribution of the three outcomes over the
+parametrised family, by block order and internal order; a dot means the
+distribution was not measured. The **forced** column is empty in every row at an
+extreme level and non empty only at the intermediate ones, which is the shape
+that section 7.3 takes up and cuts down to size.
 
 <!-- origen: TABLA-GENERAL.md; las tres casillas definidas en
      DEFINICIONES-GENERAL.md 5 -->
@@ -52,12 +132,20 @@ orderings of that family was small enough, the full distribution of the three
 outcomes over it. Where it was not small enough, a sample with the frozen seed
 was used and is labelled as a sample.
 
-<!-- origen: TABLA-GENERAL.md, fila aparte de la Mawangdui historica -->
+<!-- origen: TABLA-GENERAL.md, fila aparte de la Mawangdui historica.
+     Es la unica secuencia historica que encaja en el sistema, y por eso va en
+     su propia fila y no dentro de la tabla. -->
 **One historical row belongs here and is kept apart.** The first historical
 ordering does fit the family, at the middle level of dimension six, since its
-octets are exactly those cosets. In the table it has **zero free orbits and a
-single compatible total**, which is the forced outcome of section 6 read inside
-the general frame rather than beside it.
+octets are exactly those cosets. Its row reads:
+
+| ordering | n | k | group order | free orbits | compatible totals | count | outcome |
+|---|---|---|---|---|---|---|---|
+| Mawangdui, received | 6 | 3 | 2304 | 0 | 1 | 1008 | forced |
+
+**0** free orbits, exactly **1** compatible total, and that total is 1008: the
+forced outcome of section 6 read inside the general frame rather than beside it,
+and the same figure that the demonstration there produces.
 
 ## 7.3 A shape that we tried to raise to a theorem, and could not
 
@@ -66,11 +154,18 @@ Across the grid, the forced outcome appeared only at intermediate levels and
 never at the extremes. That was a real observation about what had been measured,
 and the temptation was to state it as a property of the extremes.
 
-<!-- origen: PROOFS-GENERAL.md pieza 1, refutacion con enumeracion entera -->
+<!-- origen: PROOFS-GENERAL.md pieza 1, refutacion con enumeracion entera.
+     Las cifras eran nuestras y refutaban una frase nuestra: se imprimen. -->
+<!-- CIFRAS: 40320 = results/general-theorems.tsv:3 p1.n3.k1.ordenaciones.recorridas;
+     472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
+     600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
 **It is false, and the refutation is by exhaustive enumeration.** In the smallest
-dimension the space of all orderings can be traversed in full, and at both
-extreme levels it contains forced orderings, with a witness exhibited. One also
-turns up at an extreme level in the next dimension.
+dimension the space of all orderings can be traversed in full, all **40320** of
+them, and at both extreme levels it contains forced orderings, with a witness
+exhibited: **472** of them at the lower extreme and **600** at the upper. One
+also turns up at an extreme level in the next dimension. Note that neither count
+is zero while the corresponding cell of the table above is: the forced orderings
+exist, and they lie outside the family the table samples.
 
 <!-- origen: PROOFS-GENERAL.md 1.3, la correccion precisa -->
 What had been measured was not false, it was narrower than the sentence
@@ -125,5 +220,5 @@ uniformly across four dimensions.
 <!-- origen: PREREGISTRATION-GENERAL.md c.2, declarado sin prediccion -->
 It does not show a classification. Which combinations of group and ordering fall
 into which outcome was declared, before any of this was measured, as a question
-on which no prediction would be made, and it remains unanswered. Fourteen rows in
+on which no prediction would be made, and it remains unanswered. The 14 rows in
 four dimensions are a shape, not a theorem.

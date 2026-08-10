@@ -65,6 +65,9 @@ T orbits of equal even size, and its cardinality is even. QED
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t1, exhibido para n = 2, 3
      y 4; y PREREGISTRATION-GENERAL.md b.2 -->
+<!-- CIFRAS: 2 = results/parity-hypotheses.tsv:8 t1.n2.orbitas.de.cardinal.impar;
+     4 = results/parity-hypotheses.tsv:17 t1.n3.orbitas.de.cardinal.impar;
+     8 = results/parity-hypotheses.tsv:26 t1.n4.orbitas.de.cardinal.impar -->
 The condition dim V >= 2 cannot be dropped. Take G to be the two element group
 consisting of the identity and the translation by a nonzero vector v. It
 satisfies everything else: its elements are translations by a subspace contained
@@ -74,7 +77,9 @@ translation, so its orbit has cardinality one, which is odd.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t1, tres dimensiones -->
 The witness is exhibited for three dimensions, and it is the same witness in all
-three: the pair whose two vertices differ exactly by v.
+three: the pair whose two vertices differ exactly by v. It produces 2 orbits of
+odd cardinality in the first dimension checked, 4 in the second and 8 in the
+third, so the failure is not an artefact of one small case.
 
 ## 4.4 The normality hypothesis is redundant, and that is a theorem
 
@@ -90,14 +95,21 @@ and its dimension is at least that of V. The theorem then applies with W in plac
 of V.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t2, caso con T no normal -->
-This is checked on an instance where T is genuinely not normal: a two dimensional
-V and a coordinate permutation that moves it. The subgroup T fails to be normal,
-the closure argument produces a larger invariant subspace, and every orbit of
-pairs still has even cardinality.
+<!-- CIFRAS: 16 = results/parity-hypotheses.tsv:32 t2.orden.del.grupo;
+     2 = results/parity-hypotheses.tsv:33 t2.dim.V;
+     3 = results/parity-hypotheses.tsv:35 t2.dim.W;
+     5 = results/parity-hypotheses.tsv:39 t2.orbitas.de.pares;
+     0 = results/parity-hypotheses.tsv:40 t2.orbitas.de.cardinal.impar -->
+This is checked on an instance where T is genuinely not normal: a group of order
+**16** built from a V of dimension 2 and a coordinate permutation that moves it.
+The subgroup T fails to be normal, the closure argument produces an invariant
+subspace W of dimension **3**, and of the **5** orbits of pairs, **0** have odd
+cardinality.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t3 -->
-A declared family of further cases, over two dimensions and every subspace of
-dimension at least two together with every coordinate permutation, produces no
+<!-- CIFRAS: 50 = results/parity-hypotheses.tsv:42 t3.casos.comprobados -->
+A declared family of **50** further cases, over two dimensions and every subspace
+of dimension at least two together with every coordinate permutation, produces no
 orbit of odd cardinality either.
 
 ## 4.5 When the obstruction bites

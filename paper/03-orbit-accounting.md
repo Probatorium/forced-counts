@@ -63,6 +63,8 @@ since the orbits partition the set of pairs, the total is half of C(N, 2). QED
 
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 14.1 y 14.4, artefacto
      Propp y Roby arXiv:1310.5201v6, seccion 2.1 verificada contra el PDF -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 **Prior owner of the germ.** The idea that an involution which sends the count to
 its complement forces the average to one half on every orbit is the founding
 example of the homomesy literature. Propp and Roby [PR], in section 2.1 of
@@ -136,11 +138,18 @@ orbit.
 
 <!-- origen: PROOFS.md pieza 1, ultimo parrafo; contraprueba en
      results/proofs.tsv:142 a :144 -->
+<!-- CIFRAS: 19 = results/proofs.tsv:142 p5.contraprueba.kingwen.orbitas.libres;
+     19 = results/proofs.tsv:143 p5.contraprueba.kingwen.orbitas.libres.sin.emparejamiento;
+     96 = results/proofs.tsv:129 p5.clase01.pares;
+     48 = results/proofs.tsv:140 p5.clase01.aportacion -->
 The lemma is not free. If a set does not contribute exactly half, its two parity
 classes have different cardinalities and no perfect matching can exist, because
 every edge of the relation graph joins opposite parities. The check has been
-carried out where it matters: in the nineteen free orbits of the third historical
-ordering there is no perfect matching in any of them.
+carried out where it matters, in both directions. Where the lemma applies, it
+settles a class of **96** pairs that Lemma 2 cannot reach, with a contribution of
+exactly **48**. Where it does not apply, it does not pretend to: of the **19**
+free orbits of the third historical ordering, **19** admit no perfect matching,
+which is what has to happen if the lemma is not to force what is not forced.
 
 ## 3.5 What this accounting is for
 

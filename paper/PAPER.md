@@ -40,28 +40,43 @@ structure, and when that parity differs from the parity of the midpoint the
 midpoint becomes **impossible** rather than merely unattained. The dimension
 hypothesis is necessary, by an exhibited witness.
 
-<!-- origen: INFORME.md, PROOFS.md piezas 2 y 3; los tres desenlaces -->
+<!-- origen: INFORME.md, PROOFS.md piezas 2 y 3; los tres desenlaces, ahora con
+     sus cifras: un resumen que anuncia tres desenlaces y no dice ninguno
+     obliga al lector a creerse la palabra. -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar;
+     1013 = results/measurements.tsv:19 inv.KingWen.yang1.bottomMSB;
+     3836 = results/measurements.tsv:93 exhaustivo.octetos.orden.de.familia.aciertos;
+     40320 = results/measurements.tsv:92 exhaustivo.octetos.orden.de.familia.ordenes;
+     484 = results/group-measurements.tsv:34 cuenta.solo.complementacion.Mawangdui.aportacion_forzada;
+     957 = results/group-measurements.tsv:169 cuenta.R1.KingWen.minimo;
+     1059 = results/group-measurements.tsv:170 cuenta.R1.KingWen.maximo;
+     52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables -->
 Applied to three constructed orderings of the 6-cube that have come down to us,
-the three outcomes all occur. Two of the constructions force the count to the
-midpoint, and for one of them the demonstration is complete with no enumerative
-residue; a mechanism previously claimed for the other is refuted here, since the
-closure it rests on forces less than half of the count and survives rearrangements
-that destroy the result. The third construction makes the midpoint impossible by
-the parity obstruction, and its count differs from the midpoint by a small
-amount.
+with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the
+constructions force the count to **1008**, and for one of them the demonstration
+is complete with no enumerative residue; a mechanism previously claimed for the
+other is refuted here, since the closure it rests on forces only 484 of the 2016
+pairs and survives rearrangements that destroy the result, the midpoint coming
+out in 3836 of the 40320 of them. The third construction makes 1008 impossible by
+the parity obstruction: its structure leaves the interval [957, 1059] and exactly
+**52** compatible totals within it, 1008 is not among them, and the observed count
+is **1013**.
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace y declaracion de frontera -->
-That difference is decomposed completely over the free orbits and has no culprit:
-every free orbit deviates, and the deviations nearly cancel. Against a list of
+<!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
+     19 = results/residuo5.tsv:6 orbitas.libres -->
+That difference of **5** is decomposed completely over the **19** free orbits and
+has no culprit: every free orbit deviates, and the deviations nearly cancel. Against a list of
 candidate structures declared before measuring, one narrows the interval, namely
 the construction's own pairing involution, which is not affine and so was absent
 from a group that is exactly its centraliser; none explains the difference. We
 therefore declare the residue informative relative to that list, and stop.
 
 <!-- origen: TABLA-GENERAL.md; PROOFS-GENERAL.md pieza 1 y enmienda 1 -->
-A landscape over block systems in dimensions three to six populates the three
-outcomes away from the historical cases and records two refutations of shapes we
-tried to raise into theorems, one of them of an error of our own.
+A landscape of 14 rows over block systems in dimensions three to six populates
+the three outcomes away from the historical cases and records two refutations of
+shapes we tried to raise into theorems, one of them of an error of our own.
 
 <!-- origen: EFFORT.md, PREREGISTRATION.md, PREREGISTRATION-GENERAL.md -->
 Every measurement was preceded, in an earlier commit of a public repository, by a
@@ -219,6 +234,7 @@ declared in advance, that is a checkable claim and not a rhetorical one.
 ## 2.1 The cube and its vertices
 
 <!-- origen: PROOFS.md, seccion "Convenios y nombre" -->
+<!-- CIFRAS: 64 = results/general-n6.tsv:3 n6.vertices -->
 A hexagram is a vector of six binary coordinates. We number the coordinates
 1 to 6, calling coordinate 1 the bottom line and coordinate 6 the top line, and
 we write yang for the value one and yin for the value zero. There are 2^6 = 64
@@ -231,6 +247,7 @@ specialised to n = 6 only where the object under study requires it.
 ## 2.2 The group
 
 <!-- origen: PROOFS.md pieza 4, verificado en results/proofs.tsv:112 a :116 -->
+<!-- CIFRAS: 46080 = results/group-measurements.tsv:4 familia.afin.tamano -->
 The maps we consider are those that permute the n coordinates and then
 complement a subset of them. There are n! 2^n of them, which for n = 6 is 46080.
 This is the **hyperoctahedral group B_n**, the symmetry group of the n-cube.
@@ -263,6 +280,8 @@ is the least significant bit", and names the two readings Rising Yang and Sinkin
 Yang. We use that parameter and do not present it as new.
 
 <!-- origen: PREREGISTRATION.md (d): denominador C(64,2) -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 The **reference order** throughout is the binary order induced by the convention
 in use, and the denominator for every rate is C(N, 2), the number of unordered
 pairs of distinct positions. For n = 6 that is 2016, and its half is 1008.
@@ -406,6 +425,8 @@ since the orbits partition the set of pairs, the total is half of C(N, 2). QED
 
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 14.1 y 14.4, artefacto
      Propp y Roby arXiv:1310.5201v6, seccion 2.1 verificada contra el PDF -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 **Prior owner of the germ.** The idea that an involution which sends the count to
 its complement forces the average to one half on every orbit is the founding
 example of the homomesy literature. Propp and Roby [PR], in section 2.1 of
@@ -479,11 +500,18 @@ orbit.
 
 <!-- origen: PROOFS.md pieza 1, ultimo parrafo; contraprueba en
      results/proofs.tsv:142 a :144 -->
+<!-- CIFRAS: 19 = results/proofs.tsv:142 p5.contraprueba.kingwen.orbitas.libres;
+     19 = results/proofs.tsv:143 p5.contraprueba.kingwen.orbitas.libres.sin.emparejamiento;
+     96 = results/proofs.tsv:129 p5.clase01.pares;
+     48 = results/proofs.tsv:140 p5.clase01.aportacion -->
 The lemma is not free. If a set does not contribute exactly half, its two parity
 classes have different cardinalities and no perfect matching can exist, because
 every edge of the relation graph joins opposite parities. The check has been
-carried out where it matters: in the nineteen free orbits of the third historical
-ordering there is no perfect matching in any of them.
+carried out where it matters, in both directions. Where the lemma applies, it
+settles a class of **96** pairs that Lemma 2 cannot reach, with a contribution of
+exactly **48**. Where it does not apply, it does not pretend to: of the **19**
+free orbits of the third historical ordering, **19** admit no perfect matching,
+which is what has to happen if the lemma is not to force what is not forced.
 
 ## 3.5 What this accounting is for
 
@@ -578,6 +606,9 @@ T orbits of equal even size, and its cardinality is even. QED
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t1, exhibido para n = 2, 3
      y 4; y PREREGISTRATION-GENERAL.md b.2 -->
+<!-- CIFRAS: 2 = results/parity-hypotheses.tsv:8 t1.n2.orbitas.de.cardinal.impar;
+     4 = results/parity-hypotheses.tsv:17 t1.n3.orbitas.de.cardinal.impar;
+     8 = results/parity-hypotheses.tsv:26 t1.n4.orbitas.de.cardinal.impar -->
 The condition dim V >= 2 cannot be dropped. Take G to be the two element group
 consisting of the identity and the translation by a nonzero vector v. It
 satisfies everything else: its elements are translations by a subspace contained
@@ -587,7 +618,9 @@ translation, so its orbit has cardinality one, which is odd.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t1, tres dimensiones -->
 The witness is exhibited for three dimensions, and it is the same witness in all
-three: the pair whose two vertices differ exactly by v.
+three: the pair whose two vertices differ exactly by v. It produces 2 orbits of
+odd cardinality in the first dimension checked, 4 in the second and 8 in the
+third, so the failure is not an artefact of one small case.
 
 ## 4.4 The normality hypothesis is redundant, and that is a theorem
 
@@ -603,14 +636,21 @@ and its dimension is at least that of V. The theorem then applies with W in plac
 of V.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t2, caso con T no normal -->
-This is checked on an instance where T is genuinely not normal: a two dimensional
-V and a coordinate permutation that moves it. The subgroup T fails to be normal,
-the closure argument produces a larger invariant subspace, and every orbit of
-pairs still has even cardinality.
+<!-- CIFRAS: 16 = results/parity-hypotheses.tsv:32 t2.orden.del.grupo;
+     2 = results/parity-hypotheses.tsv:33 t2.dim.V;
+     3 = results/parity-hypotheses.tsv:35 t2.dim.W;
+     5 = results/parity-hypotheses.tsv:39 t2.orbitas.de.pares;
+     0 = results/parity-hypotheses.tsv:40 t2.orbitas.de.cardinal.impar -->
+This is checked on an instance where T is genuinely not normal: a group of order
+**16** built from a V of dimension 2 and a coordinate permutation that moves it.
+The subgroup T fails to be normal, the closure argument produces an invariant
+subspace W of dimension **3**, and of the **5** orbits of pairs, **0** have odd
+cardinality.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t3 -->
-A declared family of further cases, over two dimensions and every subspace of
-dimension at least two together with every coordinate permutation, produces no
+<!-- CIFRAS: 50 = results/parity-hypotheses.tsv:42 t3.casos.comprobados -->
+A declared family of **50** further cases, over two dimensions and every subspace
+of dimension at least two together with every coordinate permutation, produces no
 orbit of odd cardinality either.
 
 ## 4.5 When the obstruction bites
@@ -697,15 +737,25 @@ the graph is bipartite between the two parity classes; if the orbit is not
 forced those classes have different cardinalities, and no perfect matching
 exists. This direction needs no search at all.
 
-<!-- origen: PROOFS-B31.md 2.1 y 4.4, con el estatus declarado y su N -->
+<!-- origen: PROOFS-B31.md 2.1 y 4.4, con el estatus declarado y su N. La cifra
+     que faltaba: el 6960 es el tamano exacto de lo enumerado, y sin el la
+     palabra "enumerativo" no dice cuanto. -->
+<!-- CIFRAS: 1272 = results/hall-search.tsv:25 ordenaciones.forzadas.recorridas;
+     6960 = results/hall-search.tsv:26 orbitas.forzadas.verificadas;
+     0 = results/hall-search.tsv:27 fallos.de.Hall;
+     200 = results/hall-search.tsv:20 n4.k2.forzadas.encontradas -->
 **The other direction is enumerative, and stays enumerative.** If an orbit is
 forced, the two classes have equal cardinality, but that alone does not give a
 matching: Hall's condition is needed and could fail. It does not fail in any case
 we examined, and the search was declared in advance, bounded, and reported with
-its outcome branch fixed beforehand. The count of forced orbits verified is
-recorded in the results file that accompanies this work, and it is a count, not a
-proof. **We do not promote it to a theorem.** A failure could occur in a higher
-dimension, in another partition, or in a case the search did not reach.
+its outcome branch fixed beforehand. Its size is the whole content of the word
+*enumerative*, so it is printed here rather than left to the results file:
+**1272** forced orderings traversed across three block systems and two dimensions,
+of which 200 were found by search in the larger one, giving **6960** forced orbits
+in which the matching was verified, and **0** failures of Hall's condition. That
+is a count, not a proof. **We do not promote it to a theorem.** A failure could
+occur in a higher dimension, in another partition, or in a case the search did
+not reach.
 
 ## 5.4 The forced class is closed under reversing the ordering
 
@@ -744,16 +794,20 @@ is fixed by the cardinality, which does not depend on the ordering. QED
 
 <!-- origen: PROOFS-B31.md 1.2 y 2.1, el espacio entero de B(3,1); y
      PROOFS-GENERAL.md 2.3, donde este testigo sustituyo al anterior -->
+<!-- CIFRAS: 16 = results/b31-characterization.tsv:3 grupo.orden;
+     40320 = results/b31-characterization.tsv:7 ordenaciones;
+     472 = results/b31-characterization.tsv:8 forzadas;
+     39848 = results/b31-characterization.tsv:9 no.forzadas -->
 *Proof of the second half, by witness.* Take the smallest block system in the
 smallest dimension we enumerate, where the space of orderings is small enough to
-be traversed in full. All orderings there share one and the same group, and yet
-some are forced and most are not. One group, two outcomes; therefore the outcome
-is not a function of the group. QED
+be traversed in full: all **40320** of them, under one and the same group of
+order 16. Of those, **472** are forced and **39848** are not. One group, two
+outcomes; therefore the outcome is not a function of the group. QED
 
-<!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv -->
-The counts of that traversal, forced against not forced under a single group, are
-reported in the results file. They are the witness of the theorem above and are
-not read for anything else.
+<!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv. GUARDA: son
+     el testigo del teorema y no se leen para nada mas. -->
+Those two counts partition the space exactly, which the results file checks. They
+are the witness of the theorem above and are not read for anything else.
 
 ## 5.6 What the characterisation is, and what it is not
 
@@ -791,86 +845,147 @@ the rebuild fails to reproduce the extracted sequence. The third is a received
 datum and cannot be derived from anything.
 
 <!-- origen: data/PROVENANCE.md, corroboracion; results/corroboration.tsv -->
+<!-- CIFRAS: 64 = results/corroboration.tsv:11 posiciones.comparadas -->
 That third sequence has since been checked against an independent artefact, the
 full binary table printed in the appendix of another paper, under that paper's
-own bit convention. All sixty four positions agree. What is corroborated is the
+own bit convention. All 64 positions agree. What is corroborated is the
 transcription, that is, that the list carries no error peculiar to a single
 source; nothing historical is corroborated by it.
 
+<!-- origen: PREREGISTRATION.md (d), denominador congelado antes de medir -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
+Every count below is a number of discordant pairs out of 2016, the number of
+unordered pairs of the 64 positions, and the tie is 1008.
+
 ## 6.1 Mawangdui: forced, and the mechanism that was claimed for it is false
 
-<!-- origen: INFORME.md, tabla de la seccion 1; cuatro convenciones -->
-The count is the tie, in all four conventions.
+<!-- origen: INFORME.md, tabla de la seccion 1; las cuatro convenciones dan lo
+     mismo, y por eso se declaran las cuatro y no la mas favorable -->
+<!-- CIFRAS: 1008 = results/measurements.tsv:11 inv.Mawangdui.yang1.bottomMSB;
+     1008 = results/measurements.tsv:12 inv.Mawangdui.yang1.bottomLSB;
+     1008 = results/measurements.tsv:13 inv.Mawangdui.yang0.bottomMSB;
+     1008 = results/measurements.tsv:14 inv.Mawangdui.yang0.bottomLSB -->
+The count is **1008** in all four conventions, which is the tie exactly.
 
 <!-- origen: PROOFS.md 2.1 y 2.2, teoremas -->
+<!-- CIFRAS: 2304 = results/group-measurements.tsv:5 grupo.R1.Mawangdui.orden;
+     36 = results/proofs.tsv:16 p2.mwd.permutaciones.que.preservan.V;
+     15 = results/proofs.tsv:21 p2.mwd.numero.de.orbitas -->
 The block system is the fibres of the upper trigram, that is, the cosets of the
 subspace spanned by the three lower lines. The group of elements of B_6
 respecting it is exactly the set of maps whose linear part does not mix the two
-trigrams, with any mask, and the orbits of pairs are exactly the classes given by
-the pair of difference weights, one for each trigram.
+trigrams, with any mask: 36 such permutations with all 64 masks, of order
+**2304**. Its orbits of pairs are exactly the classes given by the pair of
+difference weights, one for each trigram, and there are **15** of them.
 
 <!-- origen: PROOFS.md 2.3 a 2.5, con los testigos; el certificado esta en
      results/certificate-mwd-01.txt -->
-Every one of those classes is forced, and the demonstration is in two parts. Nine
-of them are forced by a witness that is argued rather than exhibited: complement
-the lower trigram, and the value order of the pair reverses while the block, and
-therefore the position order, does not. The remaining classes are forced by
-witnesses that are exhibited and verified, and one of them has no uniform witness
-at all in the whole group and needed the matching lemma, with a certificate that
-is deposited pair by pair and can be checked line by line. By Lemma 1, the total
-is the tie.
+<!-- CIFRAS: 9 = results/proofs.tsv:26 p2.mwd.orbitas.demostradas.forzadas;
+     1568 = results/proofs.tsv:27 p2.mwd.pares.cubiertos.por.la.demostracion;
+     784 = results/proofs.tsv:28 p2.mwd.aportacion.demostrada;
+     15 = results/group-measurements.tsv:50 cuenta.R1.Mawangdui.orbitas_forzadas;
+     0 = results/group-measurements.tsv:51 cuenta.R1.Mawangdui.orbitas_libres;
+     1008 = results/group-measurements.tsv:53 cuenta.R1.Mawangdui.aportacion_forzada -->
+Every one of those classes is forced, and the demonstration is in two parts. **9**
+of them, covering 1568 pairs and contributing 784, are forced by a witness that
+is argued rather than exhibited: complement the lower trigram, and the value
+order of the pair reverses while the block, and therefore the position order,
+does not. The remaining classes are forced by witnesses that are exhibited and
+verified, and one of them has no uniform witness at all in the whole group and
+needed the matching lemma, with a certificate that is deposited pair by pair and
+can be checked line by line. All **15** orbits are forced and **0** are free, so
+by Lemma 1 the forced contribution is the whole count, 1008, and the width of the
+interval is zero.
 
 <!-- REFUTACION. origen: INFORME.md seccion 3, y el control exhaustivo de
      results/measurements.tsv. No se esconde: se cuenta como refutacion. -->
+<!-- CIFRAS: 484 = results/group-measurements.tsv:34 cuenta.solo.complementacion.Mawangdui.aportacion_forzada;
+     540 = results/group-measurements.tsv:32 cuenta.solo.complementacion.Mawangdui.orbitas_libres;
+     1049 = results/group-measurements.tsv:41 cuenta.solo.complementacion.Mawangdui.totales_alcanzables;
+     40320 = results/measurements.tsv:92 exhaustivo.octetos.orden.de.familia.ordenes;
+     3836 = results/measurements.tsv:93 exhaustivo.octetos.orden.de.familia.aciertos;
+     0.09514 = results/measurements.tsv:94 exhaustivo.octetos.orden.de.familia.tasa -->
 **The mechanism that was previously claimed for this count does not hold, and
 saying so is part of the result.** The claim was that closure under
 complementation forces the count. Closure does hold, and it is concrete: the
-complement sends each octet onto another octet. But closure alone forces fewer
-than half of the discordant pairs, and the rest fall in the class it leaves free.
-The control settles it: the family order of the octets can be permuted in every
-possible way, all such rearrangements keep the closure intact, and the tie comes
-out in fewer than one in ten of them. Closure is true of the construction and is
-not what forces the count. What forces it is the full group together with the
-received family order.
+complement sends each octet onto another octet. But the group generated by
+complementation alone forces only **484** of the 2016 pairs, leaves 540 orbits
+free, and admits 1049 different compatible totals: an interval, not a value. The
+control settles it exhaustively rather than by sample. The family order of the
+octets can be permuted in every one of the **40320** possible ways, all such
+rearrangements keep the closure intact, and the tie comes out in **3836** of
+them, a rate of 0.09514. Closure is true of the construction and is not what
+forces the count. What forces it is the full group of order 2304 together with
+the received family order.
 
 ## 6.2 Jing Fang: forced, and the demonstration is complete
 
+<!-- origen: INFORME.md, tabla de la seccion 1; las cuatro convenciones -->
+<!-- CIFRAS: 1008 = results/measurements.tsv:15 inv.JingFang.yang1.bottomMSB;
+     1008 = results/measurements.tsv:16 inv.JingFang.yang1.bottomLSB;
+     1008 = results/measurements.tsv:17 inv.JingFang.yang0.bottomMSB;
+     1008 = results/measurements.tsv:18 inv.JingFang.yang0.bottomLSB -->
+The count is again **1008** in all four conventions.
+
 <!-- origen: PROOFS.md 2.6, teorema con su demostracion -->
+<!-- CIFRAS: 28 = results/proofs.tsv:43 p2.jf.diferencias.de.M -->
 Each palace is a translate of one and the same set of masks, read off the
-construction rules, and the palace heads are exactly the diagonal subspace. No
-difference of that mask set lies in the diagonal, which is why the palaces
-partition the vertices.
+construction rules, and the palace heads are exactly the diagonal subspace. None
+of the 28 differences of that mask set lies in the diagonal, which is why the
+palaces partition the vertices.
 
 <!-- origen: PROOFS.md 2.6, unicidad del estabilizador, con las multiplicidades
      de las diferencias -->
-The group respecting the palaces is exactly the translations by the diagonal, and
-this is proved rather than enumerated: any respecting map must preserve the
-multiset of differences of the mask set, one line never appears in any
-difference, the multiplicities of the remaining lines are pairwise distinct
-enough to pin the permutation down to the identity, and the mask is then forced
-into the diagonal.
+<!-- CIFRAS: 8 = results/group-measurements.tsv:13 grupo.R1.JingFang.orden;
+     "12 15 16 12 15 0" = results/proofs.tsv:44 p2.jf.multiplicidad.por.linea -->
+The group respecting the palaces is exactly the translations by the diagonal, of
+order **8**, and this is proved rather than enumerated: any respecting map must
+preserve the multiset of differences of the mask set, whose multiplicities line
+by line are 12 15 16 12 15 0, so one line never appears in any difference and the
+remaining multiplicities are distinct enough to pin the permutation down to the
+identity, after which the mask is forced into the diagonal.
 
 <!-- origen: PROOFS.md 2.7 y 2.8, con los certificados de
      results/certificates.txt -->
-The orbits are classified by hand into three families, and every one of them is
-forced: those inside a single palace by an argued witness, the complement, which
-here is the translation by the all ones vector of the diagonal; and the rest by
-exhibited witnesses, deposited orbit by orbit. By Lemma 1 the total is the tie.
-**For this ordering the demonstration is complete: there is no enumerative
+<!-- CIFRAS: 280 = results/group-measurements.tsv:107 cuenta.R1.JingFang.orbitas_forzadas;
+     0 = results/group-measurements.tsv:108 cuenta.R1.JingFang.orbitas_libres;
+     1 = results/group-measurements.tsv:117 cuenta.R1.JingFang.totales_alcanzables -->
+The **280** orbits are classified by hand into three families, and every one of
+them is forced: those inside a single palace by an argued witness, the
+complement, which here is the translation by the all ones vector of the diagonal;
+and the rest by exhibited witnesses, deposited orbit by orbit. There are **0**
+free orbits and exactly **1** compatible total, so by Lemma 1 that total is the
+tie. **For this ordering the demonstration is complete: there is no enumerative
 residue.**
 
 ## 6.3 King Wen: the tie is impossible
 
+<!-- origen: INFORME.md, tabla de la seccion 1. AQUI SI DIFIEREN las convenciones,
+     y por eso se imprimen las dos cifras y no una. -->
+<!-- CIFRAS: 1013 = results/measurements.tsv:19 inv.KingWen.yang1.bottomMSB;
+     1013 = results/measurements.tsv:20 inv.KingWen.yang1.bottomLSB;
+     1003 = results/measurements.tsv:21 inv.KingWen.yang0.bottomMSB;
+     1003 = results/measurements.tsv:22 inv.KingWen.yang0.bottomLSB -->
+The count is **1013** under the two conventions that read yang as one, and
+**1003** under the two that read yang as zero. The two are symmetric about the
+tie, since exchanging the roles of yang and yin turns every discordant pair into a
+concordant one, and 1013 plus 1003 is twice 1008. Neither is the tie. Everything
+below explains why neither could have been.
+
 <!-- origen: PROOFS.md 3.1, propiedad de la secuencia recibida -->
-The construction pairs the sequence into thirty two adjacent blocks. Those blocks
-are the orbits of size two of the half turn, together with the pairs formed by
-complementation among the hexagrams that the half turn leaves fixed.
+<!-- CIFRAS: 28 = results/proofs.tsv:72 p3.orbitas.del.giro.de.tamano.dos;
+     8 = results/proofs.tsv:73 p3.palindromos -->
+<!-- CIFRAS DERIVADAS: 32 = 28 + 8/2 -->
+The construction pairs the sequence into **32** adjacent blocks of two: the **28**
+orbits of size two of the half turn, together with the **8** hexagrams that the
+half turn leaves fixed, paired among themselves by complementation.
 
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
      linea de cita; artefacto Radisic arXiv:2601.07175v3, Teorema 3.3 -->
 **Prior owner of this characterisation.** It is the complete equivariance of
 Radisic [Ra], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
-is either the complement or the reversal of its partner and splits the thirty two
+is either the complement or the reversal of its partner and splits the 32
 pairs into palindromes paired by complement, anti-symmetric ones where reversal
 and complement coincide, and generic ones paired by reversal. That statement has
 prior date and a formal verification in Lean 4, which we do not have. We reached
@@ -878,12 +993,19 @@ it independently and before opening our review of the literature, which the
 commit history dates, and independent does not mean first.
 
 <!-- origen: PROOFS.md 3.2, teorema con su demostracion -->
+<!-- CIFRAS: 384 = results/group-measurements.tsv:21 grupo.R1.KingWen.orden;
+     8 = results/proofs.tsv:77 p3.Fix(giro).tamano;
+     3 = results/proofs.tsv:78 p3.elementos.de.peso.dos.en.Fix(giro);
+     48 = results/proofs.tsv:79 p3.permutaciones.que.preservan.Fix(giro) -->
+<!-- CIFRAS DERIVADAS: 384 = 48 * 8 -->
 From that block system, the group respecting it is exactly the centraliser of the
-half turn inside B_6, and this is proved: the block differences are precisely the
-nonzero vectors fixed by the half turn, a respecting map must preserve that
-subspace, its only weight two elements are the three that pair the mirror lines,
-so the linear part commutes with the half turn, and the mask is then forced to be
-fixed by it.
+half turn inside B_6, of order **384**, and this is proved rather than counted:
+the block differences are precisely the nonzero vectors of the subspace of size
+**8** fixed by the half turn, a respecting map must preserve that subspace, its
+only **3** elements of weight two are the ones that pair the mirror lines, so the
+linear part commutes with the half turn and there are 48 such permutations, and
+the mask is then forced to be fixed by the half turn, which leaves 8 masks. The
+predicted order 48 times 8 is 384, and it agrees with the enumeration.
 
 <!-- origen: PROOFS.md 3.3, teorema de paridad y sus dos corolarios -->
 Every orbit of that group on pairs has even cardinality, by the theorem of
@@ -892,12 +1014,24 @@ the count is fixed by the structure. That parity is odd, and the tie is even.
 **The tie is therefore impossible for this ordering**: not merely unattained, but
 outside the set of totals compatible with the structure.
 
-<!-- origen: results/measurements.tsv y results/group-measurements.tsv, via
-     INFORME.md e INFORME-GRUPO.md -->
-The observed count, the interval left by the structure, the number of compatible
-totals and the compatible total nearest to the tie are all reported in the
-results files, with the interval containing the tie and the tie not among the
-compatible values.
+<!-- origen: results/group-measurements.tsv, via INFORME-GRUPO.md. Es la cifra
+     que el auditor externo echaba en falta: la seccion explicaba el 1013 sin
+     imprimirlo. -->
+<!-- CIFRAS: 17 = results/group-measurements.tsv:164 cuenta.R1.KingWen.orbitas_forzadas;
+     19 = results/group-measurements.tsv:165 cuenta.R1.KingWen.orbitas_libres;
+     374 = results/group-measurements.tsv:167 cuenta.R1.KingWen.aportacion_forzada;
+     957 = results/group-measurements.tsv:169 cuenta.R1.KingWen.minimo;
+     1059 = results/group-measurements.tsv:170 cuenta.R1.KingWen.maximo;
+     52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables;
+     1007 = results/group-measurements.tsv:178 cuenta.R1.KingWen.alcanzable_mas_cercano_al_esperado -->
+<!-- CIFRAS DERIVADAS: 36 = 17 + 19; 103 = 1059 - 957 + 1 -->
+Here is the whole account in figures. Of the 36 orbits of that group on pairs,
+**17** are forced and contribute 374, and **19** are free. The structure
+therefore leaves the interval **[957, 1059]**, and inside it exactly **52** totals
+are compatible, of the 103 integers the interval contains. The observed 1013 is
+one of the 52. The tie, 1008, lies well inside the interval and is **not** one of
+them: the nearest compatible total to it is **1007**, one below. The tie is not
+missed by a small amount, it is absent from the list.
 
 ## 6.4 One structure narrows it, and it is the construction's own rule
 
@@ -915,21 +1049,35 @@ narrowing obtained with a large unstructured group was declared in advance not t
 count. It does not count.
 
 <!-- origen: INFORME-RESIDUO5.md 2.2, tabla de A5 -->
+<!-- CIFRAS: 768 = results/residuo5.tsv:187 f2.A5.orden.del.grupo.generado;
+     17 = results/residuo5.tsv:191 f2.A5.orbitas.libres;
+     961 = results/residuo5.tsv:192 f2.A5.intervalo.minimo;
+     1055 = results/residuo5.tsv:193 f2.A5.intervalo.maximo;
+     94 = results/residuo5.tsv:194 f2.A5.anchura;
+     0 = results/residuo5.tsv:195 f2.A5.empate.alcanzable -->
+<!-- CIFRAS DERIVADAS: 102 = 1059 - 957 -->
 The one that counts is the pairing involution itself, the map that sends each
 hexagram to its partner in the construction. **It is not affine**, which is why
 it was not in the group at all, even though that group is precisely its
-centraliser. Adding it doubles the group, removes two of the free orbits and
-narrows the interval. It does not force, and the tie remains impossible.
+centraliser. Adding it takes the group from 384 to **768**, cuts the free orbits
+from 19 to **17**, and narrows the interval from [957, 1059] to
+**[961, 1055]**, that is, from a width of 102 to one of **94**. It does not
+force, the tie is still not reachable, which the table records as **0**, and the
+observed count does not move: changing the group changes neither the sequence nor
+its discordance.
 
 ## 6.5 The anatomy of the residue, as a table
 
 <!-- origen: INFORME-RESIDUO5.md 1.1, vector completo; se reporta como tabla y
      no se lee mas alla. GUARDA: cero lenguaje de significancia. -->
-The count differs from the tie by a small amount, and the natural question is
-where that difference sits. The full decomposition over the free orbits, with
-cardinality, half, contribution and deviation for each one, is reported as a
-table in the results and in the accompanying report. Two things can be read off
-it directly, and nothing else is read off it here:
+<!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones -->
+<!-- CIFRAS DERIVADAS: 5 = 1013 - 1008 -->
+The count differs from the tie by **5**, that being 1013 minus 1008, and the
+natural question is where those 5 sit. Each free orbit contributes its half plus
+a deviation, the deviations sum to exactly 5, and the full decomposition over the
+19 free orbits, with cardinality, half, contribution and deviation for each one,
+is reported as a table in the results and in the accompanying report. Two things
+can be read off it directly, and nothing else is read off it here:
 
 <!-- origen: INFORME-RESIDUO5.md 1.2 -->
 first, **every free orbit deviates**; there is no orbit carrying the difference
@@ -1010,13 +1158,93 @@ and have no row here.
 ## 7.2 The table
 
 <!-- origen: TABLA-GENERAL.md, catorce filas; cifras en
-     results/general-landscape.tsv y results/general-n6.tsv -->
+     results/general-landscape.tsv y results/general-n6.tsv. LA TABLA SE IMPRIME
+     ENTERA: un paisaje del que solo se dice que existe no es un paisaje. Las
+     casillas llevan aqui el nombre ingles de la seccion 1; en los ficheros de
+     results son FORZADO, INTERVALO y PROHIBIDO. -->
+<!-- CIFRAS: 16 = results/general-landscape.tsv:15 n3.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:46 n3.k1.O3.FORZADO;
+     24 = results/general-landscape.tsv:47 n3.k1.O3.INTERVALO;
+     24 = results/general-landscape.tsv:48 n3.k1.O3.PROHIBIDO;
+     48 = results/general-landscape.tsv:45 n3.k1.O3.casos;
+     16 = results/general-landscape.tsv:51 n3.k2.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:82 n3.k2.O3.FORZADO;
+     24 = results/general-landscape.tsv:83 n3.k2.O3.INTERVALO;
+     24 = results/general-landscape.tsv:84 n3.k2.O3.PROHIBIDO;
+     48 = results/general-landscape.tsv:81 n3.k2.O3.casos;
+     96 = results/general-landscape.tsv:96 n4.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:127 n4.k1.O3.FORZADO;
+     827 = results/general-landscape.tsv:128 n4.k1.O3.INTERVALO;
+     1173 = results/general-landscape.tsv:129 n4.k1.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:126 n4.k1.O3.casos;
+     64 = results/general-landscape.tsv:132 n4.k2.Gray.grupo.orden;
+     36 = results/general-landscape.tsv:163 n4.k2.O3.FORZADO;
+     228 = results/general-landscape.tsv:164 n4.k2.O3.INTERVALO;
+     312 = results/general-landscape.tsv:165 n4.k2.O3.PROHIBIDO;
+     576 = results/general-landscape.tsv:162 n4.k2.O3.casos;
+     96 = results/general-landscape.tsv:168 n4.k3.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:199 n4.k3.O3.FORZADO;
+     828 = results/general-landscape.tsv:200 n4.k3.O3.INTERVALO;
+     1172 = results/general-landscape.tsv:201 n4.k3.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:198 n4.k3.O3.casos;
+     768 = results/general-landscape.tsv:213 n5.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:244 n5.k1.O3.FORZADO;
+     781 = results/general-landscape.tsv:245 n5.k1.O3.INTERVALO;
+     1219 = results/general-landscape.tsv:246 n5.k1.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:243 n5.k1.O3.casos;
+     384 = results/general-landscape.tsv:249 n5.k2.Gray.grupo.orden;
+     10 = results/general-landscape.tsv:280 n5.k2.O3.FORZADO;
+     794 = results/general-landscape.tsv:281 n5.k2.O3.INTERVALO;
+     1196 = results/general-landscape.tsv:282 n5.k2.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:279 n5.k2.O3.casos;
+     384 = results/general-landscape.tsv:285 n5.k3.Gray.grupo.orden;
+     9 = results/general-landscape.tsv:316 n5.k3.O3.FORZADO;
+     753 = results/general-landscape.tsv:317 n5.k3.O3.INTERVALO;
+     1238 = results/general-landscape.tsv:318 n5.k3.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:315 n5.k3.O3.casos;
+     768 = results/general-landscape.tsv:321 n5.k4.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:352 n5.k4.O3.FORZADO;
+     771 = results/general-landscape.tsv:353 n5.k4.O3.INTERVALO;
+     1229 = results/general-landscape.tsv:354 n5.k4.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:351 n5.k4.O3.casos;
+     7680 = results/general-n6.tsv:11 n6.k1.Gray.grupo.orden;
+     3072 = results/general-n6.tsv:39 n6.k2.Gray.grupo.orden;
+     2304 = results/general-n6.tsv:67 n6.k3.Gray.grupo.orden;
+     3072 = results/general-n6.tsv:110 n6.k4.Gray.grupo.orden;
+     7680 = results/general-n6.tsv:138 n6.k5.Gray.grupo.orden;
+     2304 = results/general-n6.tsv:95 n6.k3.Mawangdui.historica.grupo.orden;
+     0 = results/general-n6.tsv:100 n6.k3.Mawangdui.historica.libres;
+     1 = results/general-n6.tsv:106 n6.k3.Mawangdui.historica.alcanzables;
+     1008 = results/general-n6.tsv:105 n6.k3.Mawangdui.historica.observado -->
 Dimensions three to six, every level, in one table with the same columns. The
 order of the group respecting B(n, k) is k factorial times n minus k factorial
 times 2 to the n, which was stated in the general preregistration before any of
-this was run and is verified in all fourteen rows. The order of the group
-depends only on the partition and not on the ordering, which the same table
-confirms across thousands of orderings.
+this was run and is verified in all 14 rows. The order of the group depends only
+on the partition and not on the ordering, which the same table confirms across
+thousands of orderings.
+
+| n | k | group order | Gray | canonical | forced | bounded | barred | cases |
+|---|---|---|---|---|---|---|---|---|
+| 3 | 1 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
+| 3 | 2 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
+| 4 | 1 | 96 | bounded | barred | 0 | 827 | 1173 | 2000, sampled |
+| 4 | 2 | 64 | bounded | bounded | **36** | 228 | 312 | 576, enumerated |
+| 4 | 3 | 96 | bounded | barred | 0 | 828 | 1172 | 2000, sampled |
+| 5 | 1 | 768 | bounded | barred | 0 | 781 | 1219 | 2000, sampled |
+| 5 | 2 | 384 | bounded | barred | **10** | 794 | 1196 | 2000, sampled |
+| 5 | 3 | 384 | bounded | barred | **9** | 753 | 1238 | 2000, sampled |
+| 5 | 4 | 768 | bounded | barred | 0 | 771 | 1229 | 2000, sampled |
+| 6 | 1 | 7680 | bounded | barred | . | . | . | not sampled |
+| 6 | 2 | 3072 | bounded | barred | . | . | . | not sampled |
+| 6 | 3 | 2304 | bounded | bounded | . | . | . | not sampled |
+| 6 | 4 | 3072 | bounded | barred | . | . | . | not sampled |
+| 6 | 5 | 7680 | bounded | barred | . | . | . | not sampled |
+
+The last three columns are the distribution of the three outcomes over the
+parametrised family, by block order and internal order; a dot means the
+distribution was not measured. The **forced** column is empty in every row at an
+extreme level and non empty only at the intermediate ones, which is the shape
+that section 7.3 takes up and cuts down to size.
 
 <!-- origen: TABLA-GENERAL.md; las tres casillas definidas en
      DEFINICIONES-GENERAL.md 5 -->
@@ -1026,12 +1254,20 @@ orderings of that family was small enough, the full distribution of the three
 outcomes over it. Where it was not small enough, a sample with the frozen seed
 was used and is labelled as a sample.
 
-<!-- origen: TABLA-GENERAL.md, fila aparte de la Mawangdui historica -->
+<!-- origen: TABLA-GENERAL.md, fila aparte de la Mawangdui historica.
+     Es la unica secuencia historica que encaja en el sistema, y por eso va en
+     su propia fila y no dentro de la tabla. -->
 **One historical row belongs here and is kept apart.** The first historical
 ordering does fit the family, at the middle level of dimension six, since its
-octets are exactly those cosets. In the table it has **zero free orbits and a
-single compatible total**, which is the forced outcome of section 6 read inside
-the general frame rather than beside it.
+octets are exactly those cosets. Its row reads:
+
+| ordering | n | k | group order | free orbits | compatible totals | count | outcome |
+|---|---|---|---|---|---|---|---|
+| Mawangdui, received | 6 | 3 | 2304 | 0 | 1 | 1008 | forced |
+
+**0** free orbits, exactly **1** compatible total, and that total is 1008: the
+forced outcome of section 6 read inside the general frame rather than beside it,
+and the same figure that the demonstration there produces.
 
 ## 7.3 A shape that we tried to raise to a theorem, and could not
 
@@ -1040,11 +1276,18 @@ Across the grid, the forced outcome appeared only at intermediate levels and
 never at the extremes. That was a real observation about what had been measured,
 and the temptation was to state it as a property of the extremes.
 
-<!-- origen: PROOFS-GENERAL.md pieza 1, refutacion con enumeracion entera -->
+<!-- origen: PROOFS-GENERAL.md pieza 1, refutacion con enumeracion entera.
+     Las cifras eran nuestras y refutaban una frase nuestra: se imprimen. -->
+<!-- CIFRAS: 40320 = results/general-theorems.tsv:3 p1.n3.k1.ordenaciones.recorridas;
+     472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
+     600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
 **It is false, and the refutation is by exhaustive enumeration.** In the smallest
-dimension the space of all orderings can be traversed in full, and at both
-extreme levels it contains forced orderings, with a witness exhibited. One also
-turns up at an extreme level in the next dimension.
+dimension the space of all orderings can be traversed in full, all **40320** of
+them, and at both extreme levels it contains forced orderings, with a witness
+exhibited: **472** of them at the lower extreme and **600** at the upper. One
+also turns up at an extreme level in the next dimension. Note that neither count
+is zero while the corresponding cell of the table above is: the forced orderings
+exist, and they lie outside the family the table samples.
 
 <!-- origen: PROOFS-GENERAL.md 1.3, la correccion precisa -->
 What had been measured was not false, it was narrower than the sentence
@@ -1099,7 +1342,7 @@ uniformly across four dimensions.
 <!-- origen: PREREGISTRATION-GENERAL.md c.2, declarado sin prediccion -->
 It does not show a classification. Which combinations of group and ordering fall
 into which outcome was declared, before any of this was measured, as a question
-on which no prediction would be made, and it remains unanswered. Fourteen rows in
+on which no prediction would be made, and it remains unanswered. The 14 rows in
 four dimensions are a shape, not a theorem.
 
 
@@ -1122,14 +1365,19 @@ perfect matching of the relation graph can exist, because every edge joins pairs
 of opposite parity and the two parity classes then have different cardinalities.
 
 <!-- origen: PROOFS-B31.md 4, y results/hall-search.tsv -->
+<!-- CIFRAS: 472 = results/hall-search.tsv:7 n3.k1.forzadas;
+     600 = results/hall-search.tsv:12 n3.k2.forzadas;
+     200 = results/hall-search.tsv:20 n4.k2.forzadas.encontradas;
+     6960 = results/hall-search.tsv:26 orbitas.forzadas.verificadas;
+     0 = results/hall-search.tsv:27 fallos.de.Hall -->
 **What is measured.** The converse, that a forced orbit always admits such a
 matching, requires Hall's condition, which could fail. A bounded search was
 declared in advance, with its space, its seed and both outcome branches fixed
-before running: the forced orderings of two block systems in the smallest
-dimension, taken whole, and a sample of forced orderings of a third system in the
-next dimension, found using Theorem 2 of section 5. The number of forced orbits
-verified is recorded in the results file, across three block systems and two
-dimensions, and no failure appeared.
+before running: the **472** and **600** forced orderings of two block systems in
+the smallest dimension, taken whole, and **200** forced orderings of a third
+system in the next dimension, found using Theorem 2 of section 5. That is
+**6960** forced orbits in which the matching was verified, across three block
+systems and two dimensions, and **0** failures.
 
 <!-- origen: PROOFS-B31.md 4.4, la rama del desenlace escrita antes -->
 **What was deliberately not done.** The status was not promoted. Absence of a
@@ -1145,11 +1393,14 @@ currently the informative half of the characterisation of section 5.
 ## 8.2 How many orderings are forced?
 
 <!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv -->
-**What is measured.** In the smallest dimension the space of all orderings is
-enumerable, and the number of forced ones is known exactly for both block
-systems, under a single group in each case. Theorem 2 of section 5 says exactly
-which orderings those are: the ones in which every difference class splits in
-two.
+<!-- CIFRAS: 40320 = results/general-theorems.tsv:3 p1.n3.k1.ordenaciones.recorridas;
+     472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
+     600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
+**What is measured.** In the smallest dimension the space of all **40320**
+orderings is enumerable, and the number of forced ones is known exactly for both
+block systems, under a single group in each case: **472** for one and **600** for
+the other. Theorem 2 of section 5 says exactly which orderings those are: the
+ones in which every difference class splits in two.
 
 **What is missing.** A formula, or even an asymptotic. The characterisation turns
 membership into a countable condition but does not count the members. The
@@ -1164,12 +1415,15 @@ n and of the block system.
 ## 8.3 The residue of the third historical ordering
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace; NOVELTY.md punto 4 -->
-**What is measured.** The count differs from the tie, the difference is
-decomposed completely over the free orbits, and the decomposition has no culprit:
-every free orbit deviates and the deviations very nearly cancel. A closed list of
-five candidate structures was declared before measuring; one of them narrows the
-interval and none explains the difference. The residue is declared **informative
-relative to that list**.
+<!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
+     19 = results/residuo5.tsv:6 orbitas.libres;
+     1013 = results/residuo5.tsv:7 observado -->
+**What is measured.** The count, **1013**, differs from the tie by **5**, that
+difference is decomposed completely over the **19** free orbits, and the
+decomposition has no culprit: every free orbit deviates and the deviations very
+nearly cancel. A closed list of five candidate structures was declared before
+measuring; one of them narrows the interval and none explains the difference. The
+residue is declared **informative relative to that list**.
 
 **What would close it, structurally.** A structure, outside the declared list,
 that the construction respects and that absorbs the difference. The declaration
@@ -1213,9 +1467,9 @@ the tie by parity. The general preregistration fixed that question and declared,
 before any measurement, that no prediction would be made about its answer.
 
 <!-- origen: TABLA-GENERAL.md; PROOFS-GENERAL.md pieza 2 -->
-**What is measured.** Fourteen rows in four dimensions, the three outcomes
-populated, and a proved split of what belongs to the group and what to the
-ordering: the orbit cardinalities and the parity of the differences between
+**What is measured.** The 14 rows in four dimensions of section 7, the three
+outcomes populated, and a proved split of what belongs to the group and what to
+the ordering: the orbit cardinalities and the parity of the differences between
 compatible totals are functions of the group; the values of c, the absolute
 parity and the outcome are not.
 

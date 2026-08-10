@@ -62,15 +62,25 @@ the graph is bipartite between the two parity classes; if the orbit is not
 forced those classes have different cardinalities, and no perfect matching
 exists. This direction needs no search at all.
 
-<!-- origen: PROOFS-B31.md 2.1 y 4.4, con el estatus declarado y su N -->
+<!-- origen: PROOFS-B31.md 2.1 y 4.4, con el estatus declarado y su N. La cifra
+     que faltaba: el 6960 es el tamano exacto de lo enumerado, y sin el la
+     palabra "enumerativo" no dice cuanto. -->
+<!-- CIFRAS: 1272 = results/hall-search.tsv:25 ordenaciones.forzadas.recorridas;
+     6960 = results/hall-search.tsv:26 orbitas.forzadas.verificadas;
+     0 = results/hall-search.tsv:27 fallos.de.Hall;
+     200 = results/hall-search.tsv:20 n4.k2.forzadas.encontradas -->
 **The other direction is enumerative, and stays enumerative.** If an orbit is
 forced, the two classes have equal cardinality, but that alone does not give a
 matching: Hall's condition is needed and could fail. It does not fail in any case
 we examined, and the search was declared in advance, bounded, and reported with
-its outcome branch fixed beforehand. The count of forced orbits verified is
-recorded in the results file that accompanies this work, and it is a count, not a
-proof. **We do not promote it to a theorem.** A failure could occur in a higher
-dimension, in another partition, or in a case the search did not reach.
+its outcome branch fixed beforehand. Its size is the whole content of the word
+*enumerative*, so it is printed here rather than left to the results file:
+**1272** forced orderings traversed across three block systems and two dimensions,
+of which 200 were found by search in the larger one, giving **6960** forced orbits
+in which the matching was verified, and **0** failures of Hall's condition. That
+is a count, not a proof. **We do not promote it to a theorem.** A failure could
+occur in a higher dimension, in another partition, or in a case the search did
+not reach.
 
 ## 5.4 The forced class is closed under reversing the ordering
 
@@ -109,16 +119,20 @@ is fixed by the cardinality, which does not depend on the ordering. QED
 
 <!-- origen: PROOFS-B31.md 1.2 y 2.1, el espacio entero de B(3,1); y
      PROOFS-GENERAL.md 2.3, donde este testigo sustituyo al anterior -->
+<!-- CIFRAS: 16 = results/b31-characterization.tsv:3 grupo.orden;
+     40320 = results/b31-characterization.tsv:7 ordenaciones;
+     472 = results/b31-characterization.tsv:8 forzadas;
+     39848 = results/b31-characterization.tsv:9 no.forzadas -->
 *Proof of the second half, by witness.* Take the smallest block system in the
 smallest dimension we enumerate, where the space of orderings is small enough to
-be traversed in full. All orderings there share one and the same group, and yet
-some are forced and most are not. One group, two outcomes; therefore the outcome
-is not a function of the group. QED
+be traversed in full: all **40320** of them, under one and the same group of
+order 16. Of those, **472** are forced and **39848** are not. One group, two
+outcomes; therefore the outcome is not a function of the group. QED
 
-<!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv -->
-The counts of that traversal, forced against not forced under a single group, are
-reported in the results file. They are the witness of the theorem above and are
-not read for anything else.
+<!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv. GUARDA: son
+     el testigo del teorema y no se leen para nada mas. -->
+Those two counts partition the space exactly, which the results file checks. They
+are the witness of the theorem above and are not read for anything else.
 
 ## 5.6 What the characterisation is, and what it is not
 

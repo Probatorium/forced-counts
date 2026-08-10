@@ -15,14 +15,19 @@ perfect matching of the relation graph can exist, because every edge joins pairs
 of opposite parity and the two parity classes then have different cardinalities.
 
 <!-- origen: PROOFS-B31.md 4, y results/hall-search.tsv -->
+<!-- CIFRAS: 472 = results/hall-search.tsv:7 n3.k1.forzadas;
+     600 = results/hall-search.tsv:12 n3.k2.forzadas;
+     200 = results/hall-search.tsv:20 n4.k2.forzadas.encontradas;
+     6960 = results/hall-search.tsv:26 orbitas.forzadas.verificadas;
+     0 = results/hall-search.tsv:27 fallos.de.Hall -->
 **What is measured.** The converse, that a forced orbit always admits such a
 matching, requires Hall's condition, which could fail. A bounded search was
 declared in advance, with its space, its seed and both outcome branches fixed
-before running: the forced orderings of two block systems in the smallest
-dimension, taken whole, and a sample of forced orderings of a third system in the
-next dimension, found using Theorem 2 of section 5. The number of forced orbits
-verified is recorded in the results file, across three block systems and two
-dimensions, and no failure appeared.
+before running: the **472** and **600** forced orderings of two block systems in
+the smallest dimension, taken whole, and **200** forced orderings of a third
+system in the next dimension, found using Theorem 2 of section 5. That is
+**6960** forced orbits in which the matching was verified, across three block
+systems and two dimensions, and **0** failures.
 
 <!-- origen: PROOFS-B31.md 4.4, la rama del desenlace escrita antes -->
 **What was deliberately not done.** The status was not promoted. Absence of a
@@ -38,11 +43,14 @@ currently the informative half of the characterisation of section 5.
 ## 8.2 How many orderings are forced?
 
 <!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv -->
-**What is measured.** In the smallest dimension the space of all orderings is
-enumerable, and the number of forced ones is known exactly for both block
-systems, under a single group in each case. Theorem 2 of section 5 says exactly
-which orderings those are: the ones in which every difference class splits in
-two.
+<!-- CIFRAS: 40320 = results/general-theorems.tsv:3 p1.n3.k1.ordenaciones.recorridas;
+     472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
+     600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
+**What is measured.** In the smallest dimension the space of all **40320**
+orderings is enumerable, and the number of forced ones is known exactly for both
+block systems, under a single group in each case: **472** for one and **600** for
+the other. Theorem 2 of section 5 says exactly which orderings those are: the
+ones in which every difference class splits in two.
 
 **What is missing.** A formula, or even an asymptotic. The characterisation turns
 membership into a countable condition but does not count the members. The
@@ -57,12 +65,15 @@ n and of the block system.
 ## 8.3 The residue of the third historical ordering
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace; NOVELTY.md punto 4 -->
-**What is measured.** The count differs from the tie, the difference is
-decomposed completely over the free orbits, and the decomposition has no culprit:
-every free orbit deviates and the deviations very nearly cancel. A closed list of
-five candidate structures was declared before measuring; one of them narrows the
-interval and none explains the difference. The residue is declared **informative
-relative to that list**.
+<!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
+     19 = results/residuo5.tsv:6 orbitas.libres;
+     1013 = results/residuo5.tsv:7 observado -->
+**What is measured.** The count, **1013**, differs from the tie by **5**, that
+difference is decomposed completely over the **19** free orbits, and the
+decomposition has no culprit: every free orbit deviates and the deviations very
+nearly cancel. A closed list of five candidate structures was declared before
+measuring; one of them narrows the interval and none explains the difference. The
+residue is declared **informative relative to that list**.
 
 **What would close it, structurally.** A structure, outside the declared list,
 that the construction respects and that absorbs the difference. The declaration
@@ -106,9 +117,9 @@ the tie by parity. The general preregistration fixed that question and declared,
 before any measurement, that no prediction would be made about its answer.
 
 <!-- origen: TABLA-GENERAL.md; PROOFS-GENERAL.md pieza 2 -->
-**What is measured.** Fourteen rows in four dimensions, the three outcomes
-populated, and a proved split of what belongs to the group and what to the
-ordering: the orbit cardinalities and the parity of the differences between
+**What is measured.** The 14 rows in four dimensions of section 7, the three
+outcomes populated, and a proved split of what belongs to the group and what to
+the ordering: the orbit cardinalities and the parity of the differences between
 compatible totals are functions of the group; the values of c, the absolute
 parity and the outcome are not.
 

@@ -7,6 +7,7 @@
 ## 2.1 The cube and its vertices
 
 <!-- origen: PROOFS.md, seccion "Convenios y nombre" -->
+<!-- CIFRAS: 64 = results/general-n6.tsv:3 n6.vertices -->
 A hexagram is a vector of six binary coordinates. We number the coordinates
 1 to 6, calling coordinate 1 the bottom line and coordinate 6 the top line, and
 we write yang for the value one and yin for the value zero. There are 2^6 = 64
@@ -19,6 +20,7 @@ specialised to n = 6 only where the object under study requires it.
 ## 2.2 The group
 
 <!-- origen: PROOFS.md pieza 4, verificado en results/proofs.tsv:112 a :116 -->
+<!-- CIFRAS: 46080 = results/group-measurements.tsv:4 familia.afin.tamano -->
 The maps we consider are those that permute the n coordinates and then
 complement a subset of them. There are n! 2^n of them, which for n = 6 is 46080.
 This is the **hyperoctahedral group B_n**, the symmetry group of the n-cube.
@@ -51,6 +53,8 @@ is the least significant bit", and names the two readings Rising Yang and Sinkin
 Yang. We use that parameter and do not present it as new.
 
 <!-- origen: PREREGISTRATION.md (d): denominador C(64,2) -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 The **reference order** throughout is the binary order induced by the convention
 in use, and the denominator for every rate is C(N, 2), the number of unordered
 pairs of distinct positions. For n = 6 that is 2016, and its half is 1008.

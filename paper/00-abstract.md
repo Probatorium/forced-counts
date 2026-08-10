@@ -31,28 +31,43 @@ structure, and when that parity differs from the parity of the midpoint the
 midpoint becomes **impossible** rather than merely unattained. The dimension
 hypothesis is necessary, by an exhibited witness.
 
-<!-- origen: INFORME.md, PROOFS.md piezas 2 y 3; los tres desenlaces -->
+<!-- origen: INFORME.md, PROOFS.md piezas 2 y 3; los tres desenlaces, ahora con
+     sus cifras: un resumen que anuncia tres desenlaces y no dice ninguno
+     obliga al lector a creerse la palabra. -->
+<!-- CIFRAS: 2016 = results/measurements.tsv:6 denominador;
+     1008 = results/measurements.tsv:7 valor.esperado.por.azar;
+     1013 = results/measurements.tsv:19 inv.KingWen.yang1.bottomMSB;
+     3836 = results/measurements.tsv:93 exhaustivo.octetos.orden.de.familia.aciertos;
+     40320 = results/measurements.tsv:92 exhaustivo.octetos.orden.de.familia.ordenes;
+     484 = results/group-measurements.tsv:34 cuenta.solo.complementacion.Mawangdui.aportacion_forzada;
+     957 = results/group-measurements.tsv:169 cuenta.R1.KingWen.minimo;
+     1059 = results/group-measurements.tsv:170 cuenta.R1.KingWen.maximo;
+     52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables -->
 Applied to three constructed orderings of the 6-cube that have come down to us,
-the three outcomes all occur. Two of the constructions force the count to the
-midpoint, and for one of them the demonstration is complete with no enumerative
-residue; a mechanism previously claimed for the other is refuted here, since the
-closure it rests on forces less than half of the count and survives rearrangements
-that destroy the result. The third construction makes the midpoint impossible by
-the parity obstruction, and its count differs from the midpoint by a small
-amount.
+with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the
+constructions force the count to **1008**, and for one of them the demonstration
+is complete with no enumerative residue; a mechanism previously claimed for the
+other is refuted here, since the closure it rests on forces only 484 of the 2016
+pairs and survives rearrangements that destroy the result, the midpoint coming
+out in 3836 of the 40320 of them. The third construction makes 1008 impossible by
+the parity obstruction: its structure leaves the interval [957, 1059] and exactly
+**52** compatible totals within it, 1008 is not among them, and the observed count
+is **1013**.
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace y declaracion de frontera -->
-That difference is decomposed completely over the free orbits and has no culprit:
-every free orbit deviates, and the deviations nearly cancel. Against a list of
+<!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
+     19 = results/residuo5.tsv:6 orbitas.libres -->
+That difference of **5** is decomposed completely over the **19** free orbits and
+has no culprit: every free orbit deviates, and the deviations nearly cancel. Against a list of
 candidate structures declared before measuring, one narrows the interval, namely
 the construction's own pairing involution, which is not affine and so was absent
 from a group that is exactly its centraliser; none explains the difference. We
 therefore declare the residue informative relative to that list, and stop.
 
 <!-- origen: TABLA-GENERAL.md; PROOFS-GENERAL.md pieza 1 y enmienda 1 -->
-A landscape over block systems in dimensions three to six populates the three
-outcomes away from the historical cases and records two refutations of shapes we
-tried to raise into theorems, one of them of an error of our own.
+A landscape of 14 rows over block systems in dimensions three to six populates
+the three outcomes away from the historical cases and records two refutations of
+shapes we tried to raise into theorems, one of them of an error of our own.
 
 <!-- origen: EFFORT.md, PREREGISTRATION.md, PREREGISTRATION-GENERAL.md -->
 Every measurement was preceded, in an earlier commit of a public repository, by a
