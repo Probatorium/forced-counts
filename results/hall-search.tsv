@@ -1,0 +1,29 @@
+# Busqueda acotada de un fallo de Hall.
+# clave	valor	nota
+semilla	20260809	la ya congelada en el repositorio
+objetivo.muestra.n4	200	ordenaciones forzadas distintas de B(4,2)
+tope.de.busqueda.segundos	180	
+herencia.n3.k1.orden.del.grupo	1	
+n3.k1.forzadas	472	sobre las 40320 ordenaciones
+herencia.n3.k1.la.particion.coincide.con.lo.ya.medido	1	
+n3.k1.orbitas.forzadas.verificadas	2360	
+n3.k1.fallos.de.Hall	0	
+herencia.n3.k2.orden.del.grupo	1	
+n3.k2.forzadas	600	sobre las 40320 ordenaciones
+herencia.n3.k2.la.particion.coincide.con.lo.ya.medido	1	
+n3.k2.orbitas.forzadas.verificadas	3000	
+n3.k2.fallos.de.Hall	0	
+n4.k2.orden.del.grupo	64	
+herencia.n4.k2.orden.es.k!.por.(n-k)!.por.2^n	1	
+n4.k2.clases.de.diferencia	8	orbitas de la diferencia bajo las partes lineales
+n4.k2.intentos.de.busqueda	279	
+n4.k2.forzadas.encontradas	200	
+n4.k2.corte	objetivo alcanzado	
+n4.k2.orbitas.forzadas.verificadas	1600	
+n4.k2.fallos.de.Hall	0	
+n4.k2.el.criterio.del.teorema.2.coincide.con.la.contabilidad	1	comprobado en las 200 ordenaciones encontradas
+ordenaciones.forzadas.recorridas	1272	
+orbitas.forzadas.verificadas	6960	
+fallos.de.Hall	0	
+desenlace	RAMA DOS: ningun fallo de Hall	estatus enumerativo, no se promueve a teorema
+segundos.totales	11.5	

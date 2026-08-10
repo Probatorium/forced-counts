@@ -161,3 +161,69 @@ enumeracion de las 472.
 ## Reproducir
 
     python src/b31_characterization.py
+
+---
+
+# 4. La busqueda acotada del fallo de Hall
+
+Sesion posterior, con objetivo, espacio y las dos ramas del desenlace escritos
+**antes de correr**. Comprobador en `src/hall_search.py`, salida en
+`results/hall-search.tsv`.
+
+## 4.1 Que se buscaba
+
+Una **orbita forzada sin emparejamiento del Lema 3**, es decir un fallo de la
+condicion de Hall. Su existencia refutaria que C1 sea una equivalencia; su
+ausencia no demuestra nada, solo alarga la lista de casos.
+
+## 4.2 El espacio, declarado antes
+
+- las **472** ordenaciones forzadas de B(3,1), enteras;
+- las **600** de B(3,2), enteras;
+- **200** ordenaciones forzadas distintas de B(4,2), halladas con el criterio
+  del Teorema 2 de 1.2, con la semilla ya congelada 20260809 y un tope de 180
+  segundos de busqueda.
+
+## 4.3 El resultado
+
+| caso | ordenaciones forzadas | orbitas verificadas | fallos de Hall | origen |
+|---|---|---|---|---|
+| B(3,1) | 472 | 2360 | **0** | `results/hall-search.tsv:5`, `:7`, `:8` |
+| B(3,2) | 600 | 3000 | **0** | `:10`, `:12`, `:13` |
+| B(4,2) | 200 | 1600 | **0** | `:18`, `:20`, `:21` |
+| **total** | **1272** | **6960** | **0** | `:23` a `:25` |
+
+La muestra de B(4,2) se completo sin agotar el tope: 200 ordenaciones forzadas
+en 279 intentos de busqueda, con corte por objetivo alcanzado y no por tiempo
+(`results/hall-search.tsv:17` a `:19`). El Teorema 2 hizo lo que se esperaba de
+el: convirtio la busqueda de ordenaciones forzadas en un descenso barato sobre
+una desviacion que se puede contar.
+
+## 4.4 Desenlace, la rama que estaba escrita
+
+**RAMA DOS: no aparecio ningun fallo.** Por tanto, y tal y como quedo escrito
+antes de correr:
+
+- **el estatus de C1 sigue siendo ENUMERATIVO**, ahora en **6960 orbitas
+  forzadas** de 1272 ordenaciones, en tres sistemas de bloques y dos
+  dimensiones;
+- **y NO se promueve a teorema.** Que no haya aparecido un fallo en 6960 casos
+  no demuestra que no exista. La condicion de Hall podria fallar en una
+  dimension mayor, en otra particion, o en un caso que esta busqueda no toco.
+
+Lo unico que cambia respecto de la seccion 3 es el tamano de N. La pregunta
+sigue **abierta** y asi se queda.
+
+## 4.5 Un cruce que salio de regalo
+
+El criterio del Teorema 2 y la contabilidad por orbitas coincidieron en las 200
+ordenaciones de B(4,2) halladas (`results/hall-search.tsv:22`). El teorema se
+demostro en 1.2 para cualquier grupo que contenga todas las traslaciones, y aqui
+queda comprobado en un sistema de bloques donde no se habia usado.
+
+## 4.6 Corte de la fase de medicion
+
+Esta fue la ultima sesion de medicion declarada antes del manuscrito. No hubo
+que cortar nada por tiempo: la busqueda termino en 11.5 segundos
+(`results/hall-search.tsv:27`), muy por debajo del tope de 180 que se habia
+fijado.
