@@ -165,6 +165,24 @@ def parsear(texto):
     return bloques
 
 
+def separa_portada(bloques, titulo, autor, orcid):
+    """Quita del cuerpo los bloques que son la portada.
+
+    PAPER.md empieza con el titulo, el autor y el ORCID, y las dos salidas los
+    componen por su cuenta, con maketitle en el .tex y con su equivalente en el
+    PDF. Si no se quitan de aqui salen dos veces: una centrada arriba y otra
+    como si fueran una seccion mas del texto. Se comprueba que lo que se quita
+    es lo que se cree que se quita, para que este recorte no pueda tragarse una
+    seccion de verdad.
+    """
+    esperado = [("h1", titulo), ("parrafo", "**%s**" % autor),
+                ("parrafo", "ORCID %s" % orcid)]
+    coincide = bloques[:len(esperado)] == esperado
+    if not coincide:
+        return False, bloques
+    return True, bloques[len(esperado):]
+
+
 # --- salida LaTeX ------------------------------------------------------------
 
 ESCAPES = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$",
@@ -194,16 +212,29 @@ def tex_inline(s):
     return "".join(salida)
 
 
+# El preambulo de la casa, el mismo que usa el otro articulo del autor. Se fija
+# aqui entero y no por trozos para que se vea de un vistazo que carga y en que
+# orden. hyperref va el ULTIMO a proposito: redefine comandos de otros paquetes
+# y cargarlo antes rompe cosas en silencio. parskip NO se carga: el espaciado
+# entre parrafos y entre secciones es el que produce este preambulo, que es
+# sangria de primera linea y sin blanco entre parrafos.
 PREAMBULO = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=2.6cm]{geometry}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{longtable}
-\usepackage{parskip}
 \setlength{\emergencystretch}{3em}
+
 \title{%(titulo)s}
 \author{%(autor)s\\ORCID %(orcid)s}
 \date{}
+
+\usepackage{hyperref}
+
 \begin{document}
 \maketitle
 """
@@ -296,10 +327,13 @@ def a_pdf(bloques, colo, titulo, autor, orcid):
         s = re.sub(r"\*([^*]+)\*", r"<i>\1</i>", s)
         return s
 
+    # La portada, centrada y una sola vez, como la que compone maketitle.
+    centrado = ParagraphStyle("centrado", parent=cuerpo, alignment=1,
+                              spaceAfter=2)
     hist = [Paragraph(inline(titulo), ss["Title"]),
-            Paragraph("<b>%s</b>" % inline(autor), cuerpo),
-            Paragraph("ORCID %s" % orcid, cuerpo),
-            Spacer(1, 0.5 * cm)]
+            Paragraph("<b>%s</b>" % inline(autor), centrado),
+            Paragraph("ORCID %s" % orcid, centrado),
+            Spacer(1, 0.8 * cm)]
 
     for tipo, cont in bloques:
         if tipo == "h1":
@@ -341,8 +375,10 @@ def a_pdf(bloques, colo, titulo, autor, orcid):
            colo["sha256_manuscrito"], colo["comprobaciones_en_verde"]), peq))
 
     doc = SimpleDocTemplate(
-        PDF, pagesize=A4, leftMargin=2.4 * cm, rightMargin=2.4 * cm,
-        topMargin=2.2 * cm, bottomMargin=2.2 * cm,
+        # Una pulgada por los cuatro lados, el mismo margen que geometry pone
+        # en el .tex, para que las dos salidas no difieran ni en eso.
+        PDF, pagesize=A4, leftMargin=2.54 * cm, rightMargin=2.54 * cm,
+        topMargin=2.54 * cm, bottomMargin=2.54 * cm,
         title=titulo, author=autor,
         subject="colofon: commit=%s fecha=%s sha256=%s comprobaciones=%s "
                 "arbol_limpio=%s" % (colo["commit"], colo["fecha"],
@@ -467,23 +503,28 @@ def main():
     orcid = "0009-0003-4636-8206"
     check("el.titulo.del.manuscrito.es.el.congelado", bloques[0] == ("h1", titulo),
           "la portada de PAPER.md manda")
+    portada_ok, cuerpo_bloques = separa_portada(bloques, titulo, autor, orcid)
+    check("la.portada.se.separa.del.cuerpo", portada_ok,
+          "los tres bloques de portada son los esperados y salen del cuerpo "
+          "para no componerse dos veces")
+    emit("bloques.de.portada.retirados", len(bloques) - len(cuerpo_bloques))
 
     colo = colofon(md)
     for k, v in sorted(colo.items()):
         emit("colofon." + k, v)
 
-    tex = a_tex(bloques, colo, titulo, autor, orcid)
+    tex = a_tex(cuerpo_bloques, colo, titulo, autor, orcid)
     open(TEX, "w", encoding="utf-8", newline="\n").write(tex)
     emit("tex.bytes", len(tex.encode("utf-8")))
 
-    a_pdf(bloques, colo, titulo, autor, orcid)
+    a_pdf(cuerpo_bloques, colo, titulo, autor, orcid)
     emit("pdf.bytes", os.path.getsize(PDF))
     pdf_txt = texto_del_pdf(PDF)
     emit("pdf.caracteres.extraidos", len(pdf_txt))
     check("el.pdf.se.deja.leer", len(pdf_txt) > 10000,
           "si no se puede extraer texto, no hay cotejo posible")
 
-    cotejar(md, tex, pdf_txt, bloques)
+    cotejar(md, tex, pdf_txt, cuerpo_bloques)
     barrer_tex(tex)
 
     # que el colofon este de verdad en las dos salidas

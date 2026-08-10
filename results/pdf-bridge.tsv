@@ -4,16 +4,16 @@ existe.PAPER.md	1
 existe.PAPER.tex	1	
 existe.PAPER.pdf	1	
 el.pdf.lleva.colofon.legible	1	sin colofon dentro del fichero no hay puente que cotejar
-colofon.commit	be6c00bac260d24bd44dda48662daf770011e52d	
+colofon.commit	026a769f8292441f07a55c3bf605a48b0ca134d8	
 colofon.fecha	2026-08-10	
 colofon.sha256	225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02	
 colofon.comprobaciones	59	
 sha256.del.manuscrito.de.ahora	225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02	
 el.pdf.corresponde.al.manuscrito.de.ahora	1	el texto ha cambiado desde que se construyo el PDF: se debe una version nueva, hay que volver a correr src/build_paper.py
 el.commit.del.colofon.existe.en.esta.historia	1	
-head.actual	31307588c63fb2086bc68f4274d34611918a3a3b	
-commits.desde.el.del.colofon	2	cero quiere decir que el PDF es del estado actual
-el.pdf.retrata.el.head.actual	0	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
+head.actual	026a769f8292441f07a55c3bf605a48b0ca134d8	
+commits.desde.el.del.colofon	0	cero quiere decir que el PDF es del estado actual
+el.pdf.retrata.el.head.actual	1	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
 comprobaciones.en.verde.ahora	59	
 el.recuento.de.comprobaciones.no.ha.cambiado	1	los comprobadores dan hoy un numero distinto del que el PDF declara
 el.tex.declara.el.mismo.sha256.que.el.pdf	1	el .tex y el PDF tienen que haber salido del mismo manuscrito
