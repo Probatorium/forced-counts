@@ -23,6 +23,7 @@ Uso:
   python tools/effort.py classify
   python tools/effort.py verify
   python tools/effort.py status
+  python tools/effort.py export
 
 Ninguna suborden reescribe ni borra nada. `classify` calcula el reparto de
 lineas entre aparato y analisis a partir de effort/classification.tsv y anade
@@ -214,6 +215,102 @@ def verify():
     return log, problems
 
 
+# --- exportacion de recuentos ------------------------------------------------
+
+EXPORT = os.path.join(ROOT, "results", "effort.tsv")
+
+
+def export():
+    """Emite results/effort.tsv con los recuentos que la seccion 9 imprime.
+
+    Existe por una razon concreta: la seccion 9 del manuscrito hablaba de
+    sesiones, de callejones sin salida y del reparto entre aparato y analisis sin
+    imprimir ni una cifra, y no podia imprimirlas porque el congelador exige que
+    toda cifra publicable salga de un fichero de results, y el registro de
+    esfuerzo no emitia ninguno. Este subcomando cierra ese hueco.
+
+    Todo lo que emite se deriva del propio log, y la primera fila dice si la
+    cadena de hashes esta integra. Un recuento sacado de un registro roto no vale
+    nada, asi que el fichero lleva esa comprobacion dentro y no al lado.
+    """
+    log, problems = verify()
+
+    # CORTE, y esta decision importa. Se cuenta hasta el ultimo cierre de sesion
+    # incluido, no hasta el final del log. Si se contara hasta el final, abrir
+    # una sesion o anotar una decision cambiaria una cifra impresa en el
+    # manuscrito, el congelador fallaria a media sesion y el texto habria que
+    # refrescarlo a cada paso. Con este corte, las cifras solo se mueven cuando
+    # una sesion se cierra, que es exactamente cuando toca refrescarlas.
+    corte = 0
+    for i, rec in enumerate(log):
+        if rec["kind"] == "session_close":
+            corte = i + 1
+    vivos = log[:corte]
+
+    tipos = {}
+    for rec in vivos:
+        tipos[rec["kind"]] = tipos.get(rec["kind"], 0) + 1
+
+    aperturas = tipos.get("session_open", 0)
+    cierres = tipos.get("session_close", 0)
+
+    # el ultimo reparto calculado, que es el que vale
+    ultima = None
+    for rec in vivos:
+        if rec["kind"] == "classification":
+            ultima = rec
+    resumen = ultima["summary"] if ultima else {}
+    ficheros = len(ultima["files"]) if ultima else 0
+
+    total = resumen.get("aparato", 0) + resumen.get("analisis", 0)
+    extraido = (resumen.get("aparato_extraido", 0)
+                + resumen.get("analisis_extraido", 0))
+
+    filas = [
+        ("cadena.integra", int(not problems),
+         "si vale cero, ningun recuento de este fichero es de fiar"),
+        ("problemas.de.la.cadena", len(problems), ""),
+        ("corte", corte,
+         "se cuenta hasta el ultimo cierre de sesion incluido, no hasta el "
+         "final del log, para que la cifra no se mueva a media sesion"),
+        ("registros", len(vivos),
+         "lineas del registro append only hasta el corte"),
+        ("sesiones.abiertas", aperturas, ""),
+        ("sesiones.cerradas", cierres, ""),
+        ("sesiones.sin.cerrar", aperturas - cierres, ""),
+        ("dead_ends", tipos.get("dead_end", 0),
+         "callejones sin salida registrados como entrada propia"),
+        ("decisiones", tipos.get("decision", 0), ""),
+        ("procedencias", tipos.get("provenance", 0), ""),
+        ("notas", tipos.get("note", 0), ""),
+        ("clasificaciones", tipos.get("classification", 0), ""),
+        ("retroactivos", tipos.get("retroactive", 0),
+         "registros reconstruidos, que no equivalen a uno tomado en vivo"),
+        ("ficheros.clasificados", ficheros, ""),
+        ("lineas.de.aparato", resumen.get("aparato", 0), ""),
+        ("lineas.de.analisis", resumen.get("analisis", 0), ""),
+        ("lineas.totales", total, ""),
+        ("lineas.extraidas", extraido,
+         "lineas que vienen de fuera y no se cuentan como escritas aqui"),
+        ("lineas.de.analisis.propio", resumen.get("analisis_propio", 0), ""),
+        ("lineas.de.aparato.propio", resumen.get("aparato_propio", 0), ""),
+    ]
+
+    os.makedirs(os.path.dirname(EXPORT), exist_ok=True)
+    with open(EXPORT, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("# Recuentos del registro de esfuerzo, derivados del log.\n")
+        fh.write("# Emitido por: python tools/effort.py export\n")
+        fh.write("# clave\tvalor\tnota\n")
+        for k, v, n in filas:
+            fh.write("%s\t%s\t%s\n" % (k, v, n))
+        for p_ in problems:
+            fh.write("PROBLEMA\t1\t%s\n" % p_)
+
+    for k, v, _ in filas:
+        print("  %-30s %s" % (k, v))
+    return 1 if problems else 0
+
+
 # --- ordenes -----------------------------------------------------------------
 
 def main(argv=None):
@@ -244,6 +341,7 @@ def main(argv=None):
     sub.add_parser("classify")
     sub.add_parser("verify")
     sub.add_parser("status")
+    sub.add_parser("export")
 
     args = ap.parse_args(argv)
     log = read_log()
@@ -299,6 +397,9 @@ def main(argv=None):
         print("cadena integra, append only sin roturas")
         cur = open_session(log)
         print("sesion abierta: " + ("seq=%d" % cur["seq"] if cur else "ninguna"))
+
+    elif args.cmd == "export":
+        return export()
 
     elif args.cmd == "status":
         cur = open_session(log)

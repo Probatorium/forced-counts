@@ -49,11 +49,11 @@ toda.cita.resuelve	1
 el.texto.tiene.citas	1	una comprobacion que pasa en vacio no comprueba nada
 referencias.sin.citar	ninguna	
 ninguna.referencia.queda.sin.citar	1	
-cifras.declaraciones.totales	162	
+cifras.declaraciones.totales	173	
 cifras.derivadas.comprobadas	6	cifras que el texto obtiene con una cuenta a la vista
-cifras.cifras.impresas.en.la.prosa	192	
+cifras.cifras.impresas.en.la.prosa	202	
 cifras.el.cotejo.pasa.en.vacio	0	si vale uno, el comprobador no ha comprobado nada
 cifras.desajustes	0	
 cifras.toda.cifra.impresa.sale.de.results	1	
 las.cifras.impresas.siguen.saliendo.de.results	1	
-palabras.aproximadas	15203	
+palabras.aproximadas	15470	

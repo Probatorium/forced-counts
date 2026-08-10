@@ -80,3 +80,4 @@ results/assembly-check.tsv	aparato	propio	salida del comprobador de ensamblado
 src/declared_values.py	aparato	propio	congelador de cifras del manuscrito
 results/declared-values.tsv	aparato	propio	salida del congelador de cifras
 results/mutation-test.tsv	aparato	propio	prueba por mutacion del congelador
+results/effort.tsv	aparato	propio	recuentos del registro de esfuerzo, emitidos por effort.py export

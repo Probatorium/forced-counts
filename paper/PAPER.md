@@ -1536,24 +1536,44 @@ preregistration was left unamended, and the prediction was not cashed.
 ## 9.2 The effort log
 
 <!-- origen: EFFORT.md y effort/README.md; el instrumento se creo antes de medir
-     nada del objeto de estudio -->
-Every working session opens and closes an entry in an append only log. Each
-record carries the previous record's hash, so editing an old line breaks the
-chain and a verifier reports it; the tool that writes the log has no operation
-that rewrites or deletes. The first entry is marked retroactive and says that a
-reconstructed record is not equivalent to one taken live, which is the only
-honest thing to do with a log that begins one commit late.
+     nada del objeto de estudio. Las cifras salen de results/effort.tsv, que
+     emite el propio registro con `python tools/effort.py export`, y se cuentan
+     hasta el ultimo cierre de sesion. -->
+<!-- CIFRAS: 116 = results/effort.tsv:7 registros;
+     24 = results/effort.tsv:9 sesiones.cerradas;
+     1 = results/effort.tsv:4 cadena.integra;
+     0 = results/effort.tsv:5 problemas.de.la.cadena;
+     1 = results/effort.tsv:16 retroactivos -->
+Every working session opens and closes an entry in an append only log: **24**
+closed sessions in **116** records at the point this text was frozen. Each record
+carries the previous record's hash, so editing an old line breaks the chain and a
+verifier reports it, and the chain currently verifies with **0** problems; the
+tool that writes the log has no operation that rewrites or deletes. Exactly **1**
+entry is marked retroactive, the first, and it says that a reconstructed record
+is not equivalent to one taken live, which is the only honest thing to do with a
+log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
+<!-- CIFRAS: 77 = results/effort.tsv:17 ficheros.clasificados;
+     4216 = results/effort.tsv:18 lineas.de.aparato;
+     11906 = results/effort.tsv:19 lineas.de.analisis;
+     313 = results/effort.tsv:21 lineas.extraidas;
+     16122 = results/effort.tsv:20 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
-instruments and producing results is visible rather than anecdotal.
+instruments and producing results is visible rather than anecdotal. At the same
+point, **77** files were classified, over **16122** lines: **4216** of apparatus
+against **11906** of analysis, of which **313** lines are extracted from
+elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
+<!-- CIFRAS: 4 = results/effort.tsv:11 dead_ends -->
 Dead ends are recorded as their own kind of entry, with their cost. There are
-several: a command written with the wrong working tree, a process left running
-after its replacement had been launched, an analysis that hung because a group
-closure exploded exactly as a declaration had warned it might.
+**4** of them: a command written with the wrong working tree, a process left
+running after its replacement had been launched, an analysis that hung because a
+group closure exploded exactly as a declaration had warned it might, and a tool
+of our own that resolved a key by prefix and so pointed a figure at the wrong
+line, caught by the checker that was written to catch exactly that.
 
 ## 9.3 Rules that were born during the work, with their origin
 
@@ -1581,6 +1601,15 @@ name and the title of this paper each have their own record of that check, with
 the queries declared before running and the limits of the check declared after.
 
 ## 9.4 What a third party can verify today
+
+<!-- origen: EFFORT.md; la regla de refresco de estas cifras -->
+**These counts are a snapshot, and the apparatus makes going stale a failure
+rather than a silence.** They are counted up to the last closed session, so
+opening a session or recording a decision does not move them; closing one does.
+When it does, the exporter is rerun and the figures above no longer match, and
+the checker that guards every figure in this paper refuses the assembly until
+they are brought up to date. A number that would quietly rot is instead a number
+that stops the build.
 
 <!-- origen: los ficheros de reproduccion de cada informe; el repositorio es
      publico -->
