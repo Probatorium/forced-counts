@@ -525,6 +525,11 @@ def texto_del_pdf(ruta):
     for m in re.finditer(rb"\((?:\\.|[^\\()])*\)", datos):
         s = m.group(0)[1:-1]
         s = re.sub(rb"\\([()\\])", rb"\1", s)
+        # Los caracteres no ASCII viajan en el PDF como escapes
+        # octales, y sin descodificarlos el cotejo no veria una
+        # tilde ni una dieresis: creeria que falta lo que si esta.
+        s = re.sub(rb"\\([0-7]{1,3})",
+                   lambda mm: bytes([int(mm.group(1), 8) & 0xFF]), s)
         try:
             trozos.append(s.decode("latin-1"))
         except Exception:
@@ -669,6 +674,22 @@ def main():
 
     cotejar(md, tex, pdf_txt, cuerpo_bloques)
     barrer_tex(tex)
+
+    # DIACRITICOS. Si un acento se pierde por el camino, se pierde en silencio:
+    # el fichero sigue abriendo y el nombre sigue pareciendose. Se exige que
+    # esten en las dos salidas, y en el PDF sobre el texto extraido de sus
+    # propios flujos, que es donde se veria la perdida.
+    ACENTOS = ["García Hurtado", "Björner", "Mütze",
+               "Schöter"]
+    faltan_tex = [w for w in ACENTOS if w not in tex]
+    faltan_pdf = [w for w in ACENTOS if w not in pdf_txt]
+    emit("acentos.comprobados", len(ACENTOS), " ".join(ACENTOS))
+    emit("acentos.ausentes.en.el.tex",
+         " ".join(faltan_tex) if faltan_tex else "ninguno")
+    emit("acentos.ausentes.en.el.pdf",
+         " ".join(faltan_pdf) if faltan_pdf else "ninguno")
+    check("los.diacriticos.se.componen.en.las.dos.salidas",
+          not faltan_tex and not faltan_pdf)
 
     # NOTACION. Un guion bajo escapado en el .tex es notacion compuesta como
     # texto, que es justo lo que no se quiere. Se cuenta y se exige cero.

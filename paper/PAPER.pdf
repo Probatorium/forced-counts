@@ -242,8 +242,8 @@ endobj
 endobj
 28 0 obj
 <<
-/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810193425-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 9260e5b7eae47f44610463392f96304c34614b99452c34648d8741c3aafc110e) /ModDate (D:20260810193425-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=3f810d6a437c296c710adafc5defa3c9bd09924f fecha=2026-08-10 sha256=9260e5b7eae47f44610463392f96304c34614b99452c34648d8741c3aafc110e comprobaciones=61 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810193517-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2) /ModDate (D:20260810193517-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=2c8756c73f6135b9fd946c2aca0e183d3986bdab fecha=2026-08-10 sha256=b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 29 0 obj
@@ -4050,7 +4050,7 @@ endstream
 endobj
 49 0 obj
 <<
-/Length 6544
+/Length 6466
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -4092,45 +4092,39 @@ BT 1 0 0 1 18 16.5 Tm -18 0 Td 13 TL /F1 9.5 Tf 0 0 0 rg (5. Gritter, G. \(2015\
 Q
 Q
 q
-1 0 0 1 78 376.8898 cm
+1 0 0 1 78 350.8898 cm
 q
-BT 1 0 0 1 18 29.5 Tm -18 0 Td 1.498268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (6. Hacker, E., & Moore, S. \(2003\). A brief note on the two-part division of the received order of the) Tj T* 0 Tw 18 0 Td (hexagrams in the Zhouyi. ) Tj /F3 9.5 Tf (Journal of Chinese Philosophy) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(2\), 219\226221.) Tj  T* /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the bibliography of reference 6; not read.) Tj T* ET
+BT 1 0 0 1 18 55.5 Tm -18 0 Td 1.498268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (6. Hacker, E., & Moore, S. \(2003\). A brief note on the two-part division of the received order of the) Tj T* 0 Tw 18 0 Td (hexagrams in the Zhouyi. ) Tj /F3 9.5 Tf (Journal of Chinese Philosophy) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(2\), 219\226221.) Tj  T* 1.799299 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the bibliography of Moore \(2005\); not) Tj T* 0 Tw .272594 Tw (read. The pointer names the author and year and not a number, so that renumbering the list cannot) Tj T* 0 Tw (turn it into a reference to itself, which is what it had just become.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 331.8898 cm
+1 0 0 1 78 305.8898 cm
 q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td 13 TL /F1 9.5 Tf 0 0 0 rg (7. Moore, S. \(2005\). ) Tj /F3 9.5 Tf (Structural elements in the King Wen sequence of hexagrams) Tj /F1 9.5 Tf ( \(Oracle Paper No. 1\).) Tj  T* 18 0 Td .817474 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from) Tj T* 0 Tw (the OCR conversion.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 286.8898 cm
+1 0 0 1 78 260.8898 cm
 q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td 3.775545 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (8. M\374tze, T. \(2023\). Combinatorial Gray codes: An updated survey. ) Tj /F3 9.5 Tf (The Electronic Journal of) Tj T* 0 Tw 18 0 Td (Combinatorics) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(3\), Dynamic Survey DS26.) Tj  T* /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in the cited part, Section 3.2 on p. 11, verified against the PDF.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 228.8898 cm
+1 0 0 1 78 202.8898 cm
 q
 BT 1 0 0 1 18 42.5 Tm -18 0 Td 1.880724 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (9. Propp, J., & Roby, T. \(2015\). ) Tj /F3 9.5 Tf (Homomesy in products of two chains) Tj /F1 9.5 Tf ( \(Version 6\) [Preprint]. arXiv.) Tj T* 0 Tw 18 0 Td (https://arxiv.org/abs/1310.5201v6) Tj  T* .894005 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand,) Tj T* 0 Tw (since the artefact read is the arXiv version.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 170.8898 cm
+1 0 0 1 78 144.8898 cm
 q
 BT 1 0 0 1 18 42.5 Tm -18 0 Td 2.074506 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (10. Radisic, A. ) Tj /F3 9.5 Tf (Optimal equivariant matchings on the 6-cube: With an application to the King Wen) Tj T* 0 Tw 18 0 Td (sequence) Tj /F1 9.5 Tf ( \(Version 3\) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3) Tj  T* .554443 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full, eleven pages; its Appendix A was transcribed and collated against our data, all) Tj T* 0 Tw (sixty four positions agreeing.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 112.8898 cm
+1 0 0 1 78 86.88976 cm
 q
 BT 1 0 0 1 18 42.5 Tm -18 0 Td -0.071861 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (11. Reiner, V., Stanton, D., & White, D. \(2004\). The cyclic sieving phenomenon. ) Tj /F3 9.5 Tf (Journal of Combinatorial) Tj T* 0 Tw 18 0 Td (Theory, Series A) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (108) Tj /F1 9.5 Tf (\(1\), 17\22650. https://doi.org/10.1016/j.jcta.2004.04.009) Tj  T* 1.510974 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in identity and definition; cited for context, since it counts fixed points and not orbit) Tj T* 0 Tw (averages.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 80.88976 cm
-q
-BT 1 0 0 1 18 16.5 Tm -18 0 Td 1.744738 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (12. Roby, T. ) Tj /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3;) Tj T* 0 Tw 18 0 Td (Section 2.1 and Example 4, p. 4.) Tj T* ET
 Q
 Q
  
@@ -4138,29 +4132,29 @@ endstream
 endobj
 50 0 obj
 <<
-/Length 1344
+/Length 1552
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 711.8898 cm
+1 0 0 1 78 698.8898 cm
 q
-BT 1 0 0 1 18 42.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg  T* .39777 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its first page was checked again for this) Tj T* 0 Tw .909973 Tw (edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor) Tj T* 0 Tw (series, so neither is printed and the gap stays declared.) Tj T* ET
+BT 1 0 0 1 18 55.5 Tm -18 0 Td 1.744738 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (12. Roby, T. ) Tj /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3;) Tj T* 0 Tw 18 0 Td (Section 2.1 and Example 4, p. 4.) Tj  T* .39777 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its first page was checked again for this) Tj T* 0 Tw .909973 Tw (edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor) Tj T* 0 Tw (series, so neither is printed and the gap stays declared.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 666.8898 cm
+1 0 0 1 78 653.8898 cm
 q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td .183035 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (13. Sch\366ter, A. \(1998\). Boolean algebra and the Yi Jing. ) Tj /F3 9.5 Tf (The Oracle: The Journal of Yijing Studies) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (2) Tj /F1 9.5 Tf (\(7\),) Tj T* 0 Tw 18 0 Td (19\22634. ISSN 1463-6220.) Tj  T* /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; Definition 6, Sequence Parameters.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 645.8819 cm
+1 0 0 1 78 632.8819 cm
 Q
 q
-1 0 0 1 78 609.8819 cm
+1 0 0 1 78 596.8819 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.431399 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 3f810d6a437c296c710adafc5defa3c9bd09924f, dated 2026-08-10.) Tj T* 0 Tw .618849 Tw (Working tree clean: no. sha256 of the manuscript: 9260e5b7eae47f44610463392f96304c34614b99452c34648d8741c3aafc110e.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm 1.008839 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 2c8756c73f6135b9fd946c2aca0e183d3986bdab, dated 2026-08-10.) Tj T* 0 Tw 1.253449 Tw (Working tree clean: si. sha256 of the manuscript: b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
 Q
 Q
  
@@ -4218,11 +4212,11 @@ xref
 0000128247 00000 n 
 0000134222 00000 n 
 0000140201 00000 n 
-0000146797 00000 n 
+0000146719 00000 n 
 trailer
 <<
 /ID 
-[<5fb26c6a41504b2b2666cdf0f203ce41><5fb26c6a41504b2b2666cdf0f203ce41>]
+[<bec6a494133b96ff2c003f56e47c6977><bec6a494133b96ff2c003f56e47c6977>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 28 0 R
@@ -4230,5 +4224,5 @@ trailer
 /Size 51
 >>
 startxref
-148193
+148323
 %%EOF
