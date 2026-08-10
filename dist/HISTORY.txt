@@ -1,6 +1,13 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+b9dd2db Cierre de la sesion 28, con la seccion 9 refrescada
+f1beaee Commit C: tablas numeradas y referenciadas, y la negrita de vuelta a su sitio
+1774c31 Commit B: referencias a APA 7, numeradas y alfabetizadas
+3da09bb Commit A: una sola portada y el preambulo de la casa
+026a769 Cierre de la sesion 27
+3130758 Tres asientos: la politica de filtrado, el byte, y una verificacion de tercero
+fbeee9b Cierre de la sesion 26, con las cifras de la seccion 9 refrescadas
 be6c00b El verificador declara la unica linea que no puede reproducirse
 d8fe3e7 Commit C, el verificador del paquete y los tres arreglos que encontro
 286d99b Arreglo: el PDF salia corrupto de un clon nuevo
