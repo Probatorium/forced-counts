@@ -1,8 +1,14 @@
 # Esqueleto del manuscrito
 
-**Sin titulo.** No se propone todavia: el titulo pasa su propia puerta de
-termino, igual que la paso el nombre del repositorio en NAME.md, y eso es un paso
-propio y posterior. Asi queda escrito en NOVELTY.md.
+**Titulo CONGELADO** el 10 de agosto de 2026, por decision de Alexis, despues
+de pasar su puerta de termino:
+
+> **Forced counts: when a symmetry group determines the discordance of a
+> constructed ordering**
+
+El registro de la puerta, con las consultas declaradas antes de correr, el
+veredicto por termino y el deslinde obligatorio que salio de el, esta en
+TITLE.md. Cambiar el titulo exige una puerta nueva y un registro nuevo.
 
 **Sin prosa.** Este fichero tiene, por seccion, **una frase** de que contendra y
 **la lista de ficheros del repositorio de donde saldra**. La escritura sera
