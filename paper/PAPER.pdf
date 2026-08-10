@@ -242,8 +242,8 @@ endobj
 endobj
 28 0 obj
 <<
-/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810193517-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2) /ModDate (D:20260810193517-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=2c8756c73f6135b9fd946c2aca0e183d3986bdab fecha=2026-08-10 sha256=b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810193714-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2) /ModDate (D:20260810193714-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=c33b1e23b2cc29b086ca0207baeffd8bcf67b4c3 fecha=2026-08-10 sha256=b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 29 0 obj
@@ -4154,7 +4154,7 @@ Q
 q
 1 0 0 1 78 596.8819 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.008839 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 2c8756c73f6135b9fd946c2aca0e183d3986bdab, dated 2026-08-10.) Tj T* 0 Tw 1.253449 Tw (Working tree clean: si. sha256 of the manuscript: b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm 1.305239 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit c33b1e23b2cc29b086ca0207baeffd8bcf67b4c3, dated 2026-08-10.) Tj T* 0 Tw 1.253449 Tw (Working tree clean: si. sha256 of the manuscript: b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
 Q
 Q
  
@@ -4216,7 +4216,7 @@ xref
 trailer
 <<
 /ID 
-[<bec6a494133b96ff2c003f56e47c6977><bec6a494133b96ff2c003f56e47c6977>]
+[<d966a0af8a6068fbf54a3dace42da52e><d966a0af8a6068fbf54a3dace42da52e>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 28 0 R

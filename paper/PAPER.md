@@ -1653,13 +1653,13 @@ preregistration was left unamended, and the prediction was not cashed.
      nada del objeto de estudio. Las cifras salen de results/effort.tsv, que
      emite el propio registro con `python tools/effort.py export`, y se cuentan
      hasta el ultimo cierre de sesion. -->
-<!-- CIFRAS: 140 = results/effort.tsv:7 registros;
-     27 = results/effort.tsv:9 sesiones.cerradas;
+<!-- CIFRAS: 144 = results/effort.tsv:7 registros;
+     28 = results/effort.tsv:9 sesiones.cerradas;
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: 27
-closed sessions in 140 records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: 28
+closed sessions in 144 records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
 verifier reports it, and the chain currently verifies with 0 problems; the
 tool that writes the log has no operation that rewrites or deletes. Exactly 1
@@ -1668,16 +1668,16 @@ is not equivalent to one taken live, which is the only honest thing to do with a
 log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
-<!-- CIFRAS: 94 = results/effort.tsv:17 ficheros.clasificados;
-     6589 = results/effort.tsv:19 lineas.de.aparato;
-     12611 = results/effort.tsv:20 lineas.de.analisis;
+<!-- CIFRAS: 97 = results/effort.tsv:17 ficheros.clasificados;
+     6959 = results/effort.tsv:19 lineas.de.aparato;
+     12886 = results/effort.tsv:20 lineas.de.analisis;
      313 = results/effort.tsv:22 lineas.extraidas;
-     19200 = results/effort.tsv:21 lineas.totales -->
+     19845 = results/effort.tsv:21 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, 94 files were classified, over 19200 lines: 6589 of apparatus
-against 12611 of analysis, of which 313 lines are extracted from
+point, 97 files were classified, over 19845 lines: 6959 of apparatus
+against 12886 of analysis, of which 313 lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
