@@ -413,7 +413,7 @@ def texto_del_pdf(ruta):
 # --- cotejo de equivalencia --------------------------------------------------
 
 CIFRA = re.compile(r"(?<![\w.,:/-])\d+(?:\.\d+)?(?![\w:/-])(?!\.\d)")
-CITA = re.compile(r"\[([A-Z][A-Za-z]{1,3})\]")
+CITA = re.compile(r"\[(\d{1,2})\]")
 
 
 def cotejar(md, tex, pdf_txt, bloques):
@@ -462,6 +462,10 @@ LARGOS = "[\u2010-\u2015\u2212\ufe58\ufe63\uff0d]"
 # texto. Se listan aqui uno por uno y el informe dice cuantas veces aplico cada
 # uno, para que ninguna exencion quede sin nombre.
 EXENTOS_TEX = [
+    ("raya.corta.de.rango.de.pagina",
+     "\\d+\u2013\\d+",
+     "raya corta entre dos numeros de pagina: es el uso convencional de APA "
+     "para un rango, y es la unica raya que este repositorio admite"),
     ("regla.de.comentario", r"^%+[-\s]*$",
      "linea de comentario hecha de guiones para separar bloques de fuente"),
     ("opcion.de.paquete", r"\[[^\]]*\]\{[^}]*\}",
@@ -474,15 +478,21 @@ EXENTOS_TEX = [
 
 
 def barrer_tex(tex):
-    largos = len(re.findall(LARGOS, tex))
-    emit("tex.guiones.largos.unicode", largos)
-    check("tex.cero.guiones.largos.unicode", largos == 0)
-
+    # Primero se retiran los usos exentos, cada uno contado y con su motivo, y
+    # solo despues se cuenta lo que queda. Antes el barrido de unicode iba antes
+    # que las exenciones, y por eso no habia manera de admitir la raya corta de
+    # un rango de paginas sin admitirla en todas partes.
     limpio = tex
     for nombre, patron, motivo in EXENTOS_TEX:
-        limpio, k = re.subn(patron, lambda m: m.group(0).replace("-", "#"),
-                            limpio, flags=re.M)
+        def _tapa(m):
+            return re.sub(LARGOS, "#", m.group(0)).replace("-", "#")
+        limpio, k = re.subn(patron, _tapa, limpio, flags=re.M)
         emit("tex.exentos.%s" % nombre, k, motivo)
+
+    largos = len(re.findall(LARGOS, limpio))
+    emit("tex.guiones.largos.unicode", largos,
+         "fuera de los usos exentos de arriba")
+    check("tex.cero.guiones.largos.unicode", largos == 0)
 
     # lo que quede: rachas de dos o mas guiones, que LaTeX compone como raya
     rachas = re.findall(r"-{2,}", limpio)

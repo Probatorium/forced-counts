@@ -232,8 +232,8 @@ endobj
 endobj
 27 0 obj
 <<
-/Author (Alexis Garcia Hurtado) /CreationDate (D:20260810185146-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02) /ModDate (D:20260810185146-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=026a769f8292441f07a55c3bf605a48b0ca134d8 fecha=2026-08-10 sha256=225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02 comprobaciones=59 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garcia Hurtado) /CreationDate (D:20260810185612-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313) /ModDate (D:20260810185612-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=3da09bbf43977cfa3bc6c230d37c44e165d61570 fecha=2026-08-10 sha256=cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313 comprobaciones=59 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 28 0 obj
@@ -335,7 +335,7 @@ endstream
 endobj
 30 0 obj
 <<
-/Length 5609
+/Length 5608
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -412,7 +412,7 @@ q
 1 0 0 1 78 275.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL 2.545182 Tw (The caution is not ours to invent, and it is worth quoting from the literature itself. Discussing an) Tj T* 0 Tw (alternative arrangement, Moore [Mo] writes:) Tj T* ET
+BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL 2.545182 Tw (The caution is not ours to invent, and it is worth quoting from the literature itself. Discussing an) Tj T* 0 Tw (alternative arrangement, Moore [6] writes:) Tj T* ET
 Q
 Q
 q
@@ -552,7 +552,7 @@ endstream
 endobj
 32 0 obj
 <<
-/Length 6166
+/Length 6171
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -592,7 +592,7 @@ q
 1 0 0 1 78 477.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL 1.845099 Tw (The second of those two choices is not ours. Sch\366ter [Sc] parametrises the counting orders of the) Tj T* 0 Tw 1.490037 Tw (hexagrams by, among other things, "whether the lower or upper line is the least significant bit", and) Tj T* 0 Tw .201894 Tw (names the two readings Rising Yang and Sinking Yang. We use that parameter and do not present it as) Tj T* 0 Tw (new.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL 1.877756 Tw (The second of those two choices is not ours. Sch\366ter [12] parametrises the counting orders of the) Tj T* 0 Tw 1.490037 Tw (hexagrams by, among other things, "whether the lower or upper line is the least significant bit", and) Tj T* 0 Tw .201894 Tw (names the two readings Rising Yang and Sinking Yang. We use that parameter and do not present it as) Tj T* 0 Tw (new.) Tj T* ET
 Q
 Q
 q
@@ -617,7 +617,7 @@ Q
 q
 1 0 0 1 78 249.8898 cm
 q
-BT 1 0 0 1 0 94.5 Tm 1.828045 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (First appearance, and what the term already means.) Tj /F1 9.5 Tf ( Discordant pairs are counted ) Tj /F2 9.5 Tf (between the) Tj T* 0 Tw 2.144349 Tw (ordering and a fixed reference order) Tj /F1 9.5 Tf (, in the standard sense of rank correlation, where a pair is) Tj T* 0 Tw .649094 Tw (concordant when two rankings agree on it and discordant when they disagree. It is the same object as) Tj T* 0 Tw 1.676435 Tw (the combinatorial inversion number: Bj\366rner and Brenti [BB] define, in their equation \(1.25\), inv\(x\) =) Tj T* 0 Tw 1.281385 Tw (card{\(i, j\) : i < j, x\(i\) > x\(j\)}, which is exactly the count above with the reference order as the second) Tj T* 0 Tw .102672 Tw (ranking. It is also the quantity in the numerator of Kendall's tau, whose denominator is the same C\(N, 2\),) Tj T* 0 Tw .113808 Tw (so the value C\(N, 2\)/2 that we will call the ) Tj /F2 9.5 Tf (tie) Tj /F1 9.5 Tf ( is precisely the point where that tau is zero. We do not use) Tj T* 0 Tw (tau anywhere; we count the pairs.) Tj T* ET
+BT 1 0 0 1 0 94.5 Tm 1.828045 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (First appearance, and what the term already means.) Tj /F1 9.5 Tf ( Discordant pairs are counted ) Tj /F2 9.5 Tf (between the) Tj T* 0 Tw 2.144349 Tw (ordering and a fixed reference order) Tj /F1 9.5 Tf (, in the standard sense of rank correlation, where a pair is) Tj T* 0 Tw .649094 Tw (concordant when two rankings agree on it and discordant when they disagree. It is the same object as) Tj T* 0 Tw -0.089594 Tw (the combinatorial inversion number: Bj\366rner and Brenti [1] define, in their equation \(1.25\), inv\(x\) = card{\(i,) Tj T* 0 Tw .228634 Tw (j\) : i < j, x\(i\) > x\(j\)}, which is exactly the count above with the reference order as the second ranking. It is) Tj T* 0 Tw .102144 Tw (also the quantity in the numerator of Kendall's tau, whose denominator is the same C\(N, 2\), so the value) Tj T* 0 Tw 1.935076 Tw (C\(N, 2\)/2 that we will call the ) Tj /F2 9.5 Tf (tie) Tj /F1 9.5 Tf ( is precisely the point where that tau is zero. We do not use tau) Tj T* 0 Tw (anywhere; we count the pairs.) Tj T* ET
 Q
 Q
 q
@@ -637,13 +637,13 @@ Q
 q
 1 0 0 1 78 118.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .030006 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Inversion.) Tj /F1 9.5 Tf ( In the sinological literature on the Yijing, ) Tj /F3 9.5 Tf (inversion) Tj /F1 9.5 Tf ( names the 180 degree turn of a hexagram,) Tj T* 0 Tw 1.113366 Tw /F3 9.5 Tf (fandui) Tj /F1 9.5 Tf (, which is a symmetry of the figure and not a discordant pair. Gritter [Gr] states the two pairing) Tj T* 0 Tw 1.476006 Tw (principles as inversion and opposition and gives the Chinese terms; Cook [Co] devotes a chapter to) Tj T* 0 Tw .791578 Tw (inversion and obversion; Drasny [Dr] writes of inverses of hexagrams, ) Tj /F3 9.5 Tf (zonggua) Tj /F1 9.5 Tf (; Moore [Mo] speaks of) Tj T* 0 Tw (invertible pairs. In this paper ) Tj /F3 9.5 Tf (inversion) Tj /F1 9.5 Tf ( is never used for the statistic.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm .030006 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Inversion.) Tj /F1 9.5 Tf ( In the sinological literature on the Yijing, ) Tj /F3 9.5 Tf (inversion) Tj /F1 9.5 Tf ( names the 180 degree turn of a hexagram,) Tj T* 0 Tw 1.406283 Tw /F3 9.5 Tf (fandui) Tj /F1 9.5 Tf (, which is a symmetry of the figure and not a discordant pair. Gritter [4] states the two pairing) Tj T* 0 Tw 1.933273 Tw (principles as inversion and opposition and gives the Chinese terms; Cook [2] devotes a chapter to) Tj T* 0 Tw 1.695435 Tw (inversion and obversion; Drasny [3] writes of inverses of hexagrams, ) Tj /F3 9.5 Tf (zonggua) Tj /F1 9.5 Tf (; Moore [6] speaks of) Tj T* 0 Tw (invertible pairs. In this paper ) Tj /F3 9.5 Tf (inversion) Tj /F1 9.5 Tf ( is never used for the statistic.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 86.88976 cm
 q
-BT 1 0 0 1 0 16.5 Tm 1.794573 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Balance.) Tj /F1 9.5 Tf ( The word is occupied twice over in the neighbourhood. Radisic [Ra] uses it for Hamming) Tj T* 0 Tw .043792 Tw (weight, writing that weight preservation "may be viewed as preservation of yin-yang balance" and adding) Tj T* 0 Tw ET
+BT 1 0 0 1 0 16.5 Tm .065037 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Balance.) Tj /F1 9.5 Tf ( The word is occupied twice over in the neighbourhood. Radisic [9] uses it for Hamming weight,) Tj T* 0 Tw -0.030061 Tw (writing that weight preservation "may be viewed as preservation of yin-yang balance" and adding at once) Tj T* 0 Tw ET
 Q
 Q
  
@@ -651,20 +651,20 @@ endstream
 endobj
 33 0 obj
 <<
-/Length 5912
+/Length 5918
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 78 711.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .961476 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (at once that formally it is Hamming weight. In the Gray code literature M\374tze [Mu] defines a ) Tj /F3 9.5 Tf (balanced) Tj /F1 9.5 Tf  T* 0 Tw .41113 Tw (Gray code by the condition that the transition counts satisfy |c_i - 2^n/n| < 2, that is, a condition on how) Tj T* 0 Tw .711682 Tw (often each coordinate flips. Neither is the quantity studied here, and we therefore call C\(N, 2\)/2 the ) Tj /F2 9.5 Tf (tie) Tj /F1 9.5 Tf  T* 0 Tw (and not the balance point.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm -0.059884 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (that formally it is Hamming weight. In the Gray code literature M\374tze [7] defines a ) Tj /F3 9.5 Tf (balanced) Tj /F1 9.5 Tf ( Gray code by) Tj T* 0 Tw 1.071268 Tw (the condition that the transition counts satisfy |c_i - 2^n/n| < 2, that is, a condition on how often each) Tj T* 0 Tw .495866 Tw (coordinate flips. Neither is the quantity studied here, and we therefore call C\(N, 2\)/2 the ) Tj /F2 9.5 Tf (tie) Tj /F1 9.5 Tf ( and not the) Tj T* 0 Tw (balance point.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 640.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm -0.107095 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Length in type B.) Tj /F1 9.5 Tf ( This is the subtlest of the three, because we name B_n and we count inversions in the) Tj T* 0 Tw .07578 Tw (same breath. In Coxeter theory the length function of a group of type B is a count of certain inversions of) Tj T* 0 Tw .89777 Tw (signed permutations, as Bj\366rner and Brenti [BB] describe in their sections 8.1 and 8.2. That is not our) Tj T* 0 Tw 1.697616 Tw (count. Here B_n is only the group acting on the vertices, and the discordant pairs are those of the) Tj T* 0 Tw (ordering against the binary reference order, not the Coxeter length of any element of B_n.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm -0.107095 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Length in type B.) Tj /F1 9.5 Tf ( This is the subtlest of the three, because we name B_n and we count inversions in the) Tj T* 0 Tw .07578 Tw (same breath. In Coxeter theory the length function of a group of type B is a count of certain inversions of) Tj T* 0 Tw 1.332535 Tw (signed permutations, as Bj\366rner and Brenti [1] describe in their sections 8.1 and 8.2. That is not our) Tj T* 0 Tw 1.697616 Tw (count. Here B_n is only the group acting on the vertices, and the discordant pairs are those of the) Tj T* 0 Tw (ordering against the binary reference order, not the Coxeter length of any element of B_n.) Tj T* ET
 Q
 Q
 q
@@ -764,7 +764,7 @@ endstream
 endobj
 34 0 obj
 <<
-/Length 5995
+/Length 5994
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -795,7 +795,7 @@ Q
 q
 1 0 0 1 78 540.8898 cm
 q
-BT 1 0 0 1 0 81.5 Tm .775388 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Prior owner of the germ.) Tj /F1 9.5 Tf ( The idea that an involution which sends the count to its complement forces) Tj T* 0 Tw .865917 Tw (the average to one half on every orbit is the founding example of the homomesy literature. Propp and) Tj T* 0 Tw 2.044476 Tw (Roby [PR], in section 2.1 of arXiv:1310.5201v6, take the permutations of {1, ..., n}, let tau send a) Tj T* 0 Tw .407727 Tw (permutation to its reversal and f be the number of inversions, and observe that since tau squared is the) Tj T* 0 Tw .703695 Tw (identity and f\(pi\) + f\(tau\(pi\)\) = n\(n-1\)/2, the statistic f is c-mesic with c = n\(n-1\)/4. For n = 64 those two) Tj T* 0 Tw -0.055795 Tw (numbers are 2016 and 1008, which are our denominator and our tie: this is not an analogy, it is the same) Tj T* 0 Tw (arithmetic.) Tj T* ET
+BT 1 0 0 1 0 81.5 Tm .775388 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Prior owner of the germ.) Tj /F1 9.5 Tf ( The idea that an involution which sends the count to its complement forces) Tj T* 0 Tw .865917 Tw (the average to one half on every orbit is the founding example of the homomesy literature. Propp and) Tj T* 0 Tw 2.509976 Tw (Roby [8], in section 2.1 of arXiv:1310.5201v6, take the permutations of {1, ..., n}, let tau send a) Tj T* 0 Tw .407727 Tw (permutation to its reversal and f be the number of inversions, and observe that since tau squared is the) Tj T* 0 Tw .703695 Tw (identity and f\(pi\) + f\(tau\(pi\)\) = n\(n-1\)/2, the statistic f is c-mesic with c = n\(n-1\)/4. For n = 64 those two) Tj T* 0 Tw -0.055795 Tw (numbers are 2016 and 1008, which are our denominator and our tie: this is not an analogy, it is the same) Tj T* 0 Tw (arithmetic.) Tj T* ET
 Q
 Q
 q
@@ -809,7 +809,7 @@ q
 1 0 0 1 78 411.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL -0.002057 Tw (In the vocabulary of that literature, the corollary above says that the indicator of discordance is 1/2-mesic) Tj T* 0 Tw .725861 Tw (on the forced orbits, in the sense of Definition 1 of Propp and Roby [PR]. We use the term and do not) Tj T* 0 Tw (present it as ours.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL -0.002057 Tw (In the vocabulary of that literature, the corollary above says that the indicator of discordance is 1/2-mesic) Tj T* 0 Tw 1.102695 Tw (on the forced orbits, in the sense of Definition 1 of Propp and Roby [8]. We use the term and do not) Tj T* 0 Tw (present it as ours.) Tj T* ET
 Q
 Q
 q
@@ -840,7 +840,7 @@ Q
 q
 1 0 0 1 78 214.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .252033 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Prior owner of the mechanism.) Tj /F1 9.5 Tf ( The mechanism of this lemma is stated in one line in Roby's survey of) Tj T* 0 Tw 2.750614 Tw (homomesy [Ro], in his Example 4 on inversions under the ninety degree rotation of permutation) Tj T* 0 Tw 2.027006 Tw (matrices, whose average is again n\(n-1\)/4: "the proof of homomesy is easy: Q takes inversions to) Tj T* 0 Tw (non-inversions, and vice-versa." That is the witness argument, said there for another object.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm .252033 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Prior owner of the mechanism.) Tj /F1 9.5 Tf ( The mechanism of this lemma is stated in one line in Roby's survey of) Tj T* 0 Tw -0.072494 Tw (homomesy [11], in his Example 4 on inversions under the ninety degree rotation of permutation matrices,) Tj T* 0 Tw .301806 Tw (whose average is again n\(n-1\)/4: "the proof of homomesy is easy: Q takes inversions to non-inversions,) Tj T* 0 Tw (and vice-versa." That is the witness argument, said there for another object.) Tj T* ET
 Q
 Q
 q
@@ -868,7 +868,7 @@ endstream
 endobj
 35 0 obj
 <<
-/Length 5905
+/Length 5902
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -916,7 +916,7 @@ q
 1 0 0 1 78 393.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL -0.095818 Tw (The other large phenomenon of this area, cyclic sieving [RSW], is a different question again: it counts the) Tj T* 0 Tw .051768 Tw (fixed points of a cyclic action through a generating function at roots of unity, not the average of a statistic) Tj T* 0 Tw (over orbits. It is named here to place the work, and is not used.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .586505 Tw (The other large phenomenon of this area, cyclic sieving [10], is a different question again: it counts the) Tj T* 0 Tw .051768 Tw (fixed points of a cyclic action through a generating function at roots of unity, not the average of a statistic) Tj T* 0 Tw (over orbits. It is named here to place the work, and is not used.) Tj T* ET
 Q
 Q
 q
@@ -1359,7 +1359,7 @@ endstream
 endobj
 40 0 obj
 <<
-/Length 6923
+/Length 6922
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1391,7 +1391,7 @@ Q
 q
 1 0 0 1 78 470.8898 cm
 q
-BT 1 0 0 1 0 81.5 Tm .774273 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Prior owner of this characterisation.) Tj /F1 9.5 Tf ( It is the complete equivariance of Radisic [Ra], Theorem 3.3 of) Tj T* 0 Tw -0.100619 Tw (arXiv:2601.07175v3, which states that every King Wen pair is either the complement or the reversal of its) Tj T* 0 Tw 2.071392 Tw (partner and splits the 32 pairs into palindromes paired by complement, anti-symmetric ones where) Tj T* 0 Tw .676899 Tw (reversal and complement coincide, and generic ones paired by reversal. That statement has prior date) Tj T* 0 Tw 1.549358 Tw (and a formal verification in Lean 4, which we do not have. We reached it independently and before) Tj T* 0 Tw 1.087773 Tw (opening our review of the literature, which the commit history dates, and independent does not mean) Tj T* 0 Tw (first.) Tj T* ET
+BT 1 0 0 1 0 81.5 Tm 1.231539 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Prior owner of this characterisation.) Tj /F1 9.5 Tf ( It is the complete equivariance of Radisic [9], Theorem 3.3 of) Tj T* 0 Tw -0.100619 Tw (arXiv:2601.07175v3, which states that every King Wen pair is either the complement or the reversal of its) Tj T* 0 Tw 2.071392 Tw (partner and splits the 32 pairs into palindromes paired by complement, anti-symmetric ones where) Tj T* 0 Tw .676899 Tw (reversal and complement coincide, and generic ones paired by reversal. That statement has prior date) Tj T* 0 Tw 1.549358 Tw (and a formal verification in Lean 4, which we do not have. We reached it independently and before) Tj T* 0 Tw 1.087773 Tw (opening our review of the literature, which the commit history dates, and independent does not mean) Tj T* 0 Tw (first.) Tj T* ET
 Q
 Q
 q
@@ -1423,7 +1423,7 @@ q
 1 0 0 1 78 184.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .110971 Tw (A closed list of five candidate structures was declared before measuring anything: the nuclear hexagram) Tj T* 0 Tw .360131 Tw (operation with its exact definition, the two part division of the received sequence, whose literature has a) Tj T* 0 Tw (located owner [HM], and three maps defined through the positions. Nothing outside that list was tried.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .110971 Tw (A closed list of five candidate structures was declared before measuring anything: the nuclear hexagram) Tj T* 0 Tw .360131 Tw (operation with its exact definition, the two part division of the received sequence, whose literature has a) Tj T* 0 Tw (located owner [5], and three maps defined through the positions. Nothing outside that list was tried.) Tj T* ET
 Q
 Q
 q
@@ -2931,7 +2931,7 @@ endstream
 endobj
 45 0 obj
 <<
-/Length 5907
+/Length 5906
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -2946,7 +2946,7 @@ q
 1 0 0 1 78 678.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .469768 Tw (There is one route we can name rather than gesture at. Radisic [Ra] proves that the pairing of the third) Tj T* 0 Tw 2.243216 Tw (ordering is the unique cost-minimising equivariant matching under his criteria. Conditioning on that) Tj T* 0 Tw .387268 Tw (matching leaves a family of orderings: all those that realise it, differing only in the order of the pairs and) Tj T* 0 Tw 1.115152 Tw (in the orientation within each pair. Inside that family, the received ordering is one point, and its count) Tj T* 0 Tw (could be located among the counts of the rest.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .830768 Tw (There is one route we can name rather than gesture at. Radisic [9] proves that the pairing of the third) Tj T* 0 Tw 2.243216 Tw (ordering is the unique cost-minimising equivariant matching under his criteria. Conditioning on that) Tj T* 0 Tw .387268 Tw (matching leaves a family of orderings: all those that realise it, differing only in the order of the pairs and) Tj T* 0 Tw 1.115152 Tw (in the orientation within each pair. Inside that family, the received ordering is one point, and its count) Tj T* 0 Tw (could be located among the counts of the rest.) Tj T* ET
 Q
 Q
 q
@@ -2958,7 +2958,7 @@ Q
 q
 1 0 0 1 78 536.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .222814 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The method that would govern it has a name and a citable version, given here as a pointer and not as a) Tj T* 0 Tw 1.256584 Tw (read artefact: the stopping-criterion work of the same author on nested reference sets, ) Tj /F3 9.5 Tf (Uninformative) Tj T* 0 Tw 5.012466 Tw (rungs: an order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf ( [NL], deposited at doi) Tj T* 0 Tw .585947 Tw (10.5281/zenodo.21750029. We have not read it in the course of this work and make no claim about its) Tj T* 0 Tw (contents; we name it as the framework under which the question above would have to be posed.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm .222814 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The method that would govern it has a name and a citable version, given here as a pointer and not as a) Tj T* 0 Tw 1.256584 Tw (read artefact: the stopping-criterion work of the same author on nested reference sets, ) Tj /F3 9.5 Tf (Uninformative) Tj T* 0 Tw 5.143883 Tw (rungs: an order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf ( [13], deposited at doi) Tj T* 0 Tw .585947 Tw (10.5281/zenodo.21750029. We have not read it in the course of this work and make no claim about its) Tj T* 0 Tw (contents; we name it as the framework under which the question above would have to be posed.) Tj T* ET
 Q
 Q
 q
@@ -3059,13 +3059,13 @@ Q
 q
 1 0 0 1 78 502.8898 cm
 q
-BT 1 0 0 1 0 68.5 Tm 1.425858 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Every working session opens and closes an entry in an append only log: ) Tj /F2 9.5 Tf (25) Tj /F1 9.5 Tf ( closed sessions in ) Tj /F2 9.5 Tf (126) Tj /F1 9.5 Tf  T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
+BT 1 0 0 1 0 68.5 Tm 1.425858 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Every working session opens and closes an entry in an append only log: ) Tj /F2 9.5 Tf (26) Tj /F1 9.5 Tf ( closed sessions in ) Tj /F2 9.5 Tf (134) Tj /F1 9.5 Tf  T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 444.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .725881 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The log also classifies every file as apparatus or analysis, separating what was written here from what) Tj T* 0 Tw .035649 Tw (was extracted, so that the proportion between building instruments and producing results is visible rather) Tj T* 0 Tw .457506 Tw (than anecdotal. At the same point, ) Tj /F2 9.5 Tf (89) Tj /F1 9.5 Tf ( files were classified, over ) Tj /F2 9.5 Tf (18470) Tj /F1 9.5 Tf ( lines: ) Tj /F2 9.5 Tf (5925) Tj /F1 9.5 Tf ( of apparatus against) Tj T* 0 Tw /F2 9.5 Tf (12545) Tj /F1 9.5 Tf ( of analysis, of which ) Tj /F2 9.5 Tf (313) Tj /F1 9.5 Tf ( lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm .725881 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The log also classifies every file as apparatus or analysis, separating what was written here from what) Tj T* 0 Tw .035649 Tw (was extracted, so that the proportion between building instruments and producing results is visible rather) Tj T* 0 Tw .457506 Tw (than anecdotal. At the same point, ) Tj /F2 9.5 Tf (90) Tj /F1 9.5 Tf ( files were classified, over ) Tj /F2 9.5 Tf (18652) Tj /F1 9.5 Tf ( lines: ) Tj /F2 9.5 Tf (6044) Tj /F1 9.5 Tf ( of apparatus against) Tj T* 0 Tw /F2 9.5 Tf (12608) Tj /F1 9.5 Tf ( of analysis, of which ) Tj /F2 9.5 Tf (313) Tj /F1 9.5 Tf ( lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
 Q
 Q
 q
@@ -3118,7 +3118,7 @@ endstream
 endobj
 47 0 obj
 <<
-/Length 6365
+/Length 7538
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -3157,51 +3157,9 @@ BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .056755 Tw (Each entry records the identit
 Q
 Q
 q
-1 0 0 1 78 456.8898 cm
+1 0 0 1 78 79.88976 cm
 q
-BT 1 0 0 1 18 29.5 Tm .655216 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([BB]) Tj /F1 9.5 Tf ( Anders Bjorner and Francesco Brenti, ) Tj /F3 9.5 Tf (Combinatorics of Coxeter Groups) Tj /F1 9.5 Tf (. Equation \(1.25\)) Tj T* 0 Tw .889818 Tw (and Proposition 1.5.2 on printed page 20; Sections 8.1 and 8.2 on printed pages 245 and 252.) Tj T* 0 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 396.8898 cm
-q
-BT 1 0 0 1 18 42.5 Tm 1.172622 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([PR]) Tj /F1 9.5 Tf ( James Propp and Tom Roby, ) Tj /F3 9.5 Tf (Homomesy in products of two chains) Tj /F1 9.5 Tf (, arXiv:1310.5201v6) Tj T* 0 Tw .838035 Tw ([math.CO], 19 June 2015. Definition 1 on page 1 and Section 2.1 on page 4. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and) Tj T* 0 Tw .234318 Tw (Section 2.1 verified against the PDF; its journal identity is second hand, since the artefact read is) Tj T* 0 Tw (the arXiv version.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 349.8898 cm
-q
-BT 1 0 0 1 18 29.5 Tm 3.586859 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Ro]) Tj /F1 9.5 Tf ( Tom Roby, ) Tj /F3 9.5 Tf (Dynamical Algebraic Combinatorics and the Homomesy Phenomenon) Tj /F1 9.5 Tf (.) Tj T* 0 Tw .615727 Tw (Example 1 on page 3, Section 2.1 and Example 4 on page 4. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages) Tj T* 0 Tw (verified against the PDF; its volume identity is second hand.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 302.8898 cm
-q
-BT 1 0 0 1 18 29.5 Tm 2.861292 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([RSW]) Tj /F1 9.5 Tf ( V. Reiner, D. Stanton and D. White, ) Tj /F3 9.5 Tf (The cyclic sieving phenomenon) Tj /F1 9.5 Tf (, Journal of) Tj T* 0 Tw .222174 Tw (Combinatorial Theory, Series A 108 \(2004\) 17 to 50, doi 10.1016/j.jcta.2004.04.009. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read) Tj T* 0 Tw (in identity and definition; cited for context, since it counts fixed points and not orbit averages.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 242.8898 cm
-q
-BT 1 0 0 1 18 42.5 Tm -0.118315 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Ra]) Tj /F1 9.5 Tf ( Alejandro Radisic, ) Tj /F3 9.5 Tf (Optimal Equivariant Matchings on the 6-Cube: With an Application to the) Tj T* 0 Tw 1.103299 Tw (King Wen Sequence) Tj /F1 9.5 Tf (, arXiv:2601.07175v3 [math.GM]. Theorem 3.3, and the full binary table in) Tj T* 0 Tw 2.039542 Tw (Appendix A. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full, eleven pages; its Appendix A was transcribed and collated) Tj T* 0 Tw (against our data, all sixty four positions agreeing.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 195.8898 cm
-q
-BT 1 0 0 1 18 29.5 Tm .848161 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Mu]) Tj /F1 9.5 Tf ( Torsten Mutze, ) Tj /F3 9.5 Tf (Combinatorial Gray codes, an updated survey) Tj /F1 9.5 Tf (, The Electronic Journal of) Tj T* 0 Tw 1.501508 Tw (Combinatorics 30\(3\) \(2023\), Dynamic Survey #DS26. Section 3.2 on printed page 11. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf  T* 0 Tw (read in the cited part, verified against the PDF.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 148.8898 cm
-q
-BT 1 0 0 1 18 29.5 Tm 1.788306 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Sc]) Tj /F1 9.5 Tf ( Andreas Schoter, ) Tj /F3 9.5 Tf (Boolean Algebra and the Yi Jing) Tj /F1 9.5 Tf (, The Oracle: The Journal of Yijing) Tj T* 0 Tw 1.057439 Tw (Studies, Vol 2, No 7, Summer 1998, pages 19 to 34, ISSN 1463-6220. Definition 6, Sequence) Tj T* 0 Tw (Parameters. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 101.8898 cm
-q
-BT 1 0 0 1 18 29.5 Tm .033006 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Mo]) Tj /F1 9.5 Tf ( Steve Moore, ) Tj /F3 9.5 Tf (Structural Elements in the King Wen Sequence of Hexagrams) Tj /F1 9.5 Tf (, Oracle Paper) Tj T* 0 Tw 1.621542 Tw (No. 1, February 2005. Quoted passage on printed page 6. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; the quoted passage) Tj T* 0 Tw (taken verbatim from the rendered PDF page, not from the OCR conversion.) Tj T* ET
+BT 1 0 0 1 0 406.5 Tm .912339 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (1. Bj\366rner, A., & Brenti, F. ) Tj /F3 9.5 Tf (Combinatorics of Coxeter groups) Tj /F1 9.5 Tf (. Equation \(1.25\) and Proposition 1.5.2, p.) Tj T* 0 Tw .346505 Tw (20; Sections 8.1 and 8.2, pp. 245, 252. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; year) Tj T* 0 Tw .369123 Tw (and publisher were not verified against the artefact and are therefore not printed. 2. Cook, R. S. \(2006\).) Tj T* 0 Tw 2.448008 Tw /F3 9.5 Tf (Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence) Tj /F1 9.5 Tf ( \(STEDT) Tj T* 0 Tw .218133 Tw (Monograph Series, Vol. 5\). University of California, Berkeley. ISBN 0-944613-44-6. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read through) Tj T* 0 Tw -0.0269 Tw (its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover. 3.) Tj T* 0 Tw 4.184435 Tw (Drasny, J. ) Tj /F3 9.5 Tf (The solution of the King Wen sequence?) Tj /F1 9.5 Tf ( [Review of the book ) Tj /F3 9.5 Tf (Classical Chinese) Tj T* 0 Tw .351924 Tw (combinatorics) Tj /F1 9.5 Tf (, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full; the) Tj T* 0 Tw .469268 Tw (review carries no date on the page read, so none is printed. 4. Gritter, G. \(2015\). ) Tj /F3 9.5 Tf (The hidden pattern in) Tj T* 0 Tw .290561 Tw (the classical sequence of the I Ching) Tj /F1 9.5 Tf (. Groningen. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full. 5. Hacker, E., & Moore, S. \(2003\).) Tj T* 0 Tw 1.141338 Tw (A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. ) Tj /F3 9.5 Tf (Journal of) Tj T* 0 Tw 2.110326 Tw (Chinese Philosophy) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(2\), 219\226221. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the) Tj T* 0 Tw -0.069151 Tw (bibliography of reference 6; not read. 6. Moore, S. \(2005\). ) Tj /F3 9.5 Tf (Structural elements in the King Wen sequence) Tj T* 0 Tw .208073 Tw (of hexagrams) Tj /F1 9.5 Tf ( \(Oracle Paper No. 1\). ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; the quoted passage taken verbatim from the rendered) Tj T* 0 Tw .65077 Tw (PDF page, p. 6, and not from the OCR conversion. 7. M\374tze, T. \(2023\). Combinatorial Gray codes: An) Tj T* 0 Tw .446161 Tw (updated survey. ) Tj /F3 9.5 Tf (The Electronic Journal of Combinatorics) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(3\), Dynamic Survey DS26. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in) Tj T* 0 Tw .025268 Tw (the cited part, Section 3.2 on p. 11, verified against the PDF. 8. Propp, J., & Roby, T. \(2015\). ) Tj /F3 9.5 Tf (Homomesy) Tj T* 0 Tw 1.388326 Tw (in products of two chains) Tj /F1 9.5 Tf ( \(Version 6\) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read,) Tj T* 0 Tw .817811 Tw (and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact) Tj T* 0 Tw -0.034119 Tw (read is the arXiv version. 9. Radisic, A. ) Tj /F3 9.5 Tf (Optimal equivariant matchings on the 6-cube: With an application) Tj T* 0 Tw .522963 Tw (to the King Wen sequence) Tj /F1 9.5 Tf ( \(Version 3\) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read) Tj T* 0 Tw -0.002495 Tw (in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions) Tj T* 0 Tw 1.194173 Tw (agreeing. 10. Reiner, V., Stanton, D., & White, D. \(2004\). The cyclic sieving phenomenon. ) Tj /F3 9.5 Tf (Journal of) Tj T* 0 Tw .168399 Tw (Combinatorial Theory, Series A) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (108) Tj /F1 9.5 Tf (\(1\), 17\22650. https://doi.org/10.1016/j.jcta.2004.04.009 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in) Tj T* 0 Tw .431152 Tw (identity and definition; cited for context, since it counts fixed points and not orbit averages. 11. Roby, T.) Tj T* 0 Tw .647122 Tw /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3; Section 2.1 and) Tj T* 0 Tw .055699 Tw (Example 4, p. 4. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its volume identity is second) Tj T* 0 Tw .047742 Tw (hand, since the cover of the PDF read does not carry it, and no year is printed here for the same reason.) Tj T* 0 Tw .183035 Tw (12. Sch\366ter, A. \(1998\). Boolean algebra and the Yi Jing. ) Tj /F3 9.5 Tf (The Oracle: The Journal of Yijing Studies) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (2) Tj /F1 9.5 Tf (\(7\),) Tj T* 0 Tw .435049 Tw (19\22634. ISSN 1463-6220. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; Definition 6, Sequence Parameters. 13. ) Tj /F3 9.5 Tf (Uninformative rungs: An) Tj T* 0 Tw 2.328227 Tw (order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf (. https://doi.org/10.5281/zenodo.21750029) Tj T* 0 Tw -0.034713 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: cited as a pointer to the framework that would govern the inferential question of) Tj T* 0 Tw ET
 Q
 Q
  
@@ -3209,47 +3167,23 @@ endstream
 endobj
 48 0 obj
 <<
-/Length 2895
+/Length 626
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 737.8898 cm
+1 0 0 1 78 750.8898 cm
 q
-BT 1 0 0 1 18 16.5 Tm .125662 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Gr]) Tj /F1 9.5 Tf ( Gert Gritter, ) Tj /F3 9.5 Tf (The Hidden Pattern in the classical sequence of the I Ching) Tj /F1 9.5 Tf (, Groningen, 2015.) Tj T* 0 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full.) Tj T* ET
+BT 1 0 0 1 0 3.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg (Section 8.3; not read in the course of this work.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 677.8898 cm
-q
-BT 1 0 0 1 18 42.5 Tm 1.418161 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Co]) Tj /F1 9.5 Tf ( Richard S. Cook, ) Tj /F3 9.5 Tf (Classical Chinese Combinatorics: Derivation of the Book of Changes) Tj T* 0 Tw .200054 Tw (Hexagram Sequence) Tj /F1 9.5 Tf (, STEDT Monograph Series, Vol. 5, University of California, Berkeley, 2006,) Tj T* 0 Tw 1.341806 Tw (xviii plus 642 pages, ISBN 0-944613-44-6. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read through its review in full, plus full text) Tj T* 0 Tw (sweeps of the converted text; the book itself was not read cover to cover.) Tj T* ET
-Q
+1 0 0 1 78 727.8819 cm
 Q
 q
-1 0 0 1 78 643.8898 cm
+1 0 0 1 78 691.8819 cm
 q
-BT 1 0 0 1 18 16.5 Tm 1.015006 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([Dr]) Tj /F1 9.5 Tf ( Jozsef Drasny, review of the preceding, ) Tj /F3 9.5 Tf (The solution of the King Wen sequence?) Tj /F1 9.5 Tf (, Yijing) Tj T* 0 Tw (Dao, biroco.com/yijing/cook.htm. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 583.8898 cm
-q
-BT 1 0 0 1 18 42.5 Tm .524662 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([HM]) Tj /F1 9.5 Tf ( Edward Hacker and Steve Moore, ) Tj /F3 9.5 Tf (A Brief Note on the Two-Part Division of the Received) Tj T* 0 Tw .795721 Tw (Order of the Hexagrams in the Zhouyi) Tj /F1 9.5 Tf (, Journal of Chinese Philosophy 30\(2\), June 2003, pages) Tj T* 0 Tw 1.061545 Tw (219 to 221. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the bibliography of [Mo];) Tj T* 0 Tw (not read.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 536.8898 cm
-q
-BT 1 0 0 1 18 29.5 Tm 1.314674 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf ([NL]) Tj /F1 9.5 Tf ( ) Tj /F3 9.5 Tf (Uninformative rungs: an order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf (, doi) Tj T* 0 Tw 1.732145 Tw (10.5281/zenodo.21750029. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: cited as a pointer to the framework that) Tj T* 0 Tw (would govern the inferential question of Section 8.3; not read in the course of this work.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 511.8819 cm
-Q
-q
-1 0 0 1 78 475.8819 cm
-q
-BT 1 0 0 1 0 22.4 Tm 1.134999 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 026a769f8292441f07a55c3bf605a48b0ca134d8, dated 2026-08-10.) Tj T* 0 Tw 1.200249 Tw (Working tree clean: no. sha256 of the manuscript: 225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02.) Tj T* 0 Tw (Checks green at build time: 59.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm 1.008839 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 3da09bbf43977cfa3bc6c230d37c44e165d61570, dated 2026-08-10.) Tj T* 0 Tw .514349 Tw (Working tree clean: no. sha256 of the manuscript: cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313.) Tj T* 0 Tw (Checks green at build time: 59.) Tj T* ET
 Q
 Q
  
@@ -3288,28 +3222,28 @@ xref
 0000005392 00000 n 
 0000005585 00000 n 
 0000010959 00000 n 
-0000016620 00000 n 
-0000022231 00000 n 
-0000028449 00000 n 
-0000034413 00000 n 
-0000040460 00000 n 
-0000046417 00000 n 
-0000052682 00000 n 
-0000058789 00000 n 
-0000064726 00000 n 
-0000070996 00000 n 
-0000077971 00000 n 
-0000083865 00000 n 
-0000100191 00000 n 
-0000107769 00000 n 
-0000113928 00000 n 
-0000119887 00000 n 
-0000126376 00000 n 
-0000132793 00000 n 
+0000016619 00000 n 
+0000022230 00000 n 
+0000028453 00000 n 
+0000034423 00000 n 
+0000040469 00000 n 
+0000046423 00000 n 
+0000052688 00000 n 
+0000058795 00000 n 
+0000064732 00000 n 
+0000071002 00000 n 
+0000077976 00000 n 
+0000083870 00000 n 
+0000100196 00000 n 
+0000107774 00000 n 
+0000113933 00000 n 
+0000119891 00000 n 
+0000126380 00000 n 
+0000133970 00000 n 
 trailer
 <<
 /ID 
-[<a233b2f43370523b0ae5764496a0b4e1><a233b2f43370523b0ae5764496a0b4e1>]
+[<a4f655da4a5d2d51eafb638ffbcab249><a4f655da4a5d2d51eafb638ffbcab249>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 27 0 R
@@ -3317,5 +3251,5 @@ trailer
 /Size 49
 >>
 startxref
-135740
+134647
 %%EOF

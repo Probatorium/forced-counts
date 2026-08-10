@@ -61,7 +61,7 @@ silent about its origin.
      "Context: Alternative Sequences". Leida de la pagina renderizada del PDF,
      que es el canal fuerte, y no de la conversion OCR. -->
 The caution is not ours to invent, and it is worth quoting from the literature
-itself. Discussing an alternative arrangement, Moore [Mo] writes:
+itself. Discussing an alternative arrangement, Moore [6] writes:
 
 > "Shao Yong's 'Fu Xi' order of the hexagrams, being a Song dynasty production,
 > is too late to concern us here; besides, it was never intended to order the

@@ -4,13 +4,13 @@ el.titulo.del.manuscrito.es.el.congelado	1	la portada de PAPER.md manda
 la.portada.se.separa.del.cuerpo	1	los tres bloques de portada son los esperados y salen del cuerpo para no componerse dos veces
 bloques.de.portada.retirados	3	
 colofon.arbol_limpio	no	
-colofon.commit	026a769f8292441f07a55c3bf605a48b0ca134d8	
+colofon.commit	3da09bbf43977cfa3bc6c230d37c44e165d61570	
 colofon.comprobaciones_en_verde	59	
 colofon.fecha	2026-08-10	
-colofon.sha256_manuscrito	225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02	
-tex.bytes	74414	
-pdf.bytes	136951	
-pdf.caracteres.extraidos	70674	
+colofon.sha256_manuscrito	cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313	
+tex.bytes	74329	
+pdf.bytes	135858	
+pdf.caracteres.extraidos	70706	
 el.pdf.se.deja.leer	1	si no se puede extraer texto, no hay cotejo posible
 cifras.distintas.en.el.manuscrito	149	
 citas.distintas.en.el.manuscrito	13	
@@ -29,12 +29,13 @@ pdf.citas.ausentes	ninguno
 pdf.lleva.todas.las.citas	1	
 pdf.celdas.ausentes	ninguno	
 pdf.lleva.todas.las.celdas	1	
-tex.guiones.largos.unicode	0	
-tex.cero.guiones.largos.unicode	1	
+tex.exentos.raya.corta.de.rango.de.pagina	3	raya corta entre dos numeros de pagina: es el uso convencional de APA para un rango, y es la unica raya que este repositorio admite
 tex.exentos.regla.de.comentario	0	linea de comentario hecha de guiones para separar bloques de fuente
 tex.exentos.opcion.de.paquete	4	opciones de paquete y de clase, donde el guion es parte del nombre
 tex.exentos.guion.de.palabra	17	guion dentro de una palabra compuesta, que no es raya
 tex.exentos.signo.menos	14	signo menos en una expresion
+tex.guiones.largos.unicode	0	fuera de los usos exentos de arriba
+tex.cero.guiones.largos.unicode	1	
 tex.rachas.de.guion.que.LaTeX.compondria.como.raya	0	
 tex.ninguna.raya.compuesta	1	la regla de la casa prohibe la raya tambien en ingles, y en LaTeX una raya se escribe con dos o tres guiones seguidos
 el.tex.lleva.colofon	1	

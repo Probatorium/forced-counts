@@ -67,7 +67,7 @@ since the orbits partition the set of pairs, the total is half of C(N, 2). QED
      1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 **Prior owner of the germ.** The idea that an involution which sends the count to
 its complement forces the average to one half on every orbit is the founding
-example of the homomesy literature. Propp and Roby [PR], in section 2.1 of
+example of the homomesy literature. Propp and Roby [8], in section 2.1 of
 arXiv:1310.5201v6, take the permutations of {1, ..., n}, let tau send a
 permutation to its reversal and f be the number of inversions, and observe that
 since tau squared is the identity and f(pi) + f(tau(pi)) = n(n-1)/2, the
@@ -86,7 +86,7 @@ pairs on which the position permutation preserves the order.
 <!-- origen: NOVELTY.md, alcance; PRIOR-ART.md 14.5 -->
 In the vocabulary of that literature, the corollary above says that the indicator
 of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of
-Propp and Roby [PR]. We use the term and do not present it as ours.
+Propp and Roby [8]. We use the term and do not present it as ours.
 
 ## 3.3 Forcing by a uniform witness
 
@@ -106,7 +106,7 @@ checked on its own: run through the orbit and verify that epsilon is one.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 14.2, punto 1, survey
      de Roby, Example 4, pagina 4, verificado contra el PDF -->
 **Prior owner of the mechanism.** The mechanism of this lemma is stated in one
-line in Roby's survey of homomesy [Ro], in his Example 4 on inversions under the
+line in Roby's survey of homomesy [11], in his Example 4 on inversions under the
 ninety degree rotation of permutation matrices, whose average is again n(n-1)/4:
 "the proof of homomesy is easy: Q takes inversions to non-inversions, and
 vice-versa." That is the witness argument, said there for another object.
@@ -169,7 +169,7 @@ freedom that the construction leaves, and the interval they define is the object
 of the sections that follow.
 
 <!-- origen: PRIOR-ART.md 14.3, artefacto leido en identidad y definicion -->
-The other large phenomenon of this area, cyclic sieving [RSW], is a different
+The other large phenomenon of this area, cyclic sieving [10], is a different
 question again: it counts the fixed points of a cyclic action through a
 generating function at roots of unity, not the average of a statistic over
 orbits. It is named here to place the work, and is not used.

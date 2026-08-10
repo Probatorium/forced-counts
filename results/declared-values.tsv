@@ -14,6 +14,7 @@ declaraciones.totales	173
 derivadas.comprobadas	6	cifras que el texto obtiene con una cuenta a la vista
 constantes.aritmeticas.en.derivadas	1	digitos sueltos que son la operacion y no una cifra publicable
 cifras.impresas.en.la.prosa	202	
+enmascaradas.cita.numerica	18	el numero entre corchetes es una referencia, no una medicion; desde que las claves alfabeticas se cambiaron por numeros, una cita se parece a una cifra y hay que separarlas
 enmascaradas.titulo.de.seccion	58	el numero de un encabezado es el de la seccion, no una medicion
 enmascaradas.cita.verbatim	1	linea de cita literal de otro autor: sus cifras no son nuestras
 enmascaradas.identificador.bibliografico	6	identificador de un artefacto, no una medicion

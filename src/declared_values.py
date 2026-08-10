@@ -83,6 +83,11 @@ ENTRADA = re.compile(
 # su motivo, y el informe cuenta cuantas veces aplica cada una. Nada se exime en
 # silencio.
 MASCARAS = [
+    ("cita.numerica",
+     r"\[\d{1,2}(?:\s*,\s*\d{1,2})*\]",
+     "el numero entre corchetes es una referencia, no una medicion; desde que "
+     "las claves alfabeticas se cambiaron por numeros, una cita se parece a "
+     "una cifra y hay que separarlas"),
     ("titulo.de.seccion",
      r"^#+\s.*$",
      "el numero de un encabezado es el de la seccion, no una medicion"),

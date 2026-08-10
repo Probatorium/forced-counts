@@ -41,7 +41,8 @@ sin.duplicados	1
 secciones.ensambladas	9	
 referencias	13	
 referencias.de.segunda.mano	2	
-guiones.largos.en.el.ensamblado	0	en cualquiera de sus formas
+exentos.raya.corta.de.rango.de.pagina	3	rango de paginas en una referencia APA, unico uso admitido
+guiones.largos.en.el.ensamblado	0	en cualquiera de sus formas, fuera de los usos exentos
 cero.guiones.largos	1	
 citas.distintas.en.el.texto	13	
 citas.sin.referencia	ninguna	
@@ -56,4 +57,4 @@ cifras.el.cotejo.pasa.en.vacio	0	si vale uno, el comprobador no ha comprobado na
 cifras.desajustes	0	
 cifras.toda.cifra.impresa.sale.de.results	1	
 las.cifras.impresas.siguen.saliendo.de.results	1	
-palabras.aproximadas	15470	
+palabras.aproximadas	15468	

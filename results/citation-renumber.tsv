@@ -1,0 +1,9 @@
+# Renumeracion de las citas del manuscrito.
+# clave	valor	nota
+referencias	13	
+mapa	BB>1 Co>2 Dr>3 Gr>4 HM>5 Mo>6 Mu>7 PR>8 Ra>9 RSW>10 Ro>11 Sc>12 NL>13	de la clave alfabetica interna al numero publico
+claves.alfabeticas.encontradas	18	
+citas.numericas.resultantes	18	
+ficheros.tocados	5	
+modo	escribir	
+ninguna.cita.se.pierde.al.renumerar	1	el numero de citas antes y despues tiene que ser el mismo

@@ -95,3 +95,5 @@ dist/THIRD-PARTY.md	aparato	propio	manifiesto de los ficheros de terceros filtra
 dist/forced-counts.bundle	aparato	propio	bundle de la historia filtrada, binario
 results/package.tsv	aparato	propio	salida del verificador del paquete
 VERIFICATIONS.md	analisis	propio	registro de verificaciones de terceros
+tools/renumber_citations.py	aparato	propio	renumerador de citas del manuscrito
+results/citation-renumber.tsv	aparato	propio	salida del renumerador

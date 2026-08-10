@@ -149,7 +149,7 @@ silent about its origin.
      "Context: Alternative Sequences". Leida de la pagina renderizada del PDF,
      que es el canal fuerte, y no de la conversion OCR. -->
 The caution is not ours to invent, and it is worth quoting from the literature
-itself. Discussing an alternative arrangement, Moore [Mo] writes:
+itself. Discussing an alternative arrangement, Moore [6] writes:
 
 > "Shao Yong's 'Fu Xi' order of the hexagrams, being a Song dynasty production,
 > is too late to concern us here; besides, it was never intended to order the
@@ -274,7 +274,7 @@ is reported under all four rather than under the most favourable one.
 
 <!-- origen: PRIOR-ART.md 5.3; Schoter, The Oracle Vol 2 No 7, Summer 1998,
      Definition 6, "Sequence Parameters". Interseccion declarada en NOVELTY.md -->
-The second of those two choices is not ours. Schöter [Sc] parametrises the counting
+The second of those two choices is not ours. Schöter [12] parametrises the counting
 orders of the hexagrams by, among other things, "whether the lower or upper line
 is the least significant bit", and names the two readings Rising Yang and Sinking
 Yang. We use that parameter and do not present it as new.
@@ -300,7 +300,7 @@ paper is the number of discordant pairs.
 counted **between the ordering and a fixed reference order**, in the standard
 sense of rank correlation, where a pair is concordant when two rankings agree on
 it and discordant when they disagree. It is the same object as the combinatorial
-inversion number: Björner and Brenti [BB] define, in their equation (1.25),
+inversion number: Björner and Brenti [1] define, in their equation (1.25),
 inv(x) = card{(i, j) : i < j, x(i) > x(j)}, which is exactly the count above with
 the reference order as the second ranking. It is also the quantity in the
 numerator of Kendall's tau, whose denominator is the same C(N, 2), so the value
@@ -317,17 +317,17 @@ here, once, rather than in a closing note.
      termino chino, Cook, Drasny con zonggua, Moore con invertible -->
 **Inversion.** In the sinological literature on the Yijing, *inversion* names the
 180 degree turn of a hexagram, *fandui*, which is a symmetry of the figure and
-not a discordant pair. Gritter [Gr] states the two pairing principles as inversion and
-opposition and gives the Chinese terms; Cook [Co] devotes a chapter to inversion and
-obversion; Drasny [Dr] writes of inverses of hexagrams, *zonggua*; Moore [Mo]
+not a discordant pair. Gritter [4] states the two pairing principles as inversion and
+opposition and gives the Chinese terms; Cook [2] devotes a chapter to inversion and
+obversion; Drasny [3] writes of inverses of hexagrams, *zonggua*; Moore [6]
 speaks of invertible pairs. In this paper *inversion* is never used for the statistic.
 
 <!-- origen: PRIOR-ART.md 2 y 7; Radisic 4.3 y Mutze 3.2, los dos verificados
      contra su PDF -->
-**Balance.** The word is occupied twice over in the neighbourhood. Radisic [Ra] uses
+**Balance.** The word is occupied twice over in the neighbourhood. Radisic [9] uses
 it for Hamming weight, writing that weight preservation "may be viewed as
 preservation of yin-yang balance" and adding at once that formally it is Hamming
-weight. In the Gray code literature Mütze [Mu] defines a *balanced* Gray code by the
+weight. In the Gray code literature Mütze [7] defines a *balanced* Gray code by the
 condition that the transition counts satisfy |c_i - 2^n/n| < 2, that is, a
 condition on how often each coordinate flips. Neither is the quantity studied
 here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
@@ -336,7 +336,7 @@ here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
 **Length in type B.** This is the subtlest of the three, because we name B_n and
 we count inversions in the same breath. In Coxeter theory the length function of
 a group of type B is a count of certain inversions of signed permutations, as
-Björner and Brenti [BB] describe in their sections 8.1 and 8.2. That is not our
+Björner and Brenti [1] describe in their sections 8.1 and 8.2. That is not our
 count. Here B_n is only the group acting on the vertices, and the discordant
 pairs are those of the ordering against the binary reference order, not the
 Coxeter length of any element of B_n.
@@ -429,7 +429,7 @@ since the orbits partition the set of pairs, the total is half of C(N, 2). QED
      1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 **Prior owner of the germ.** The idea that an involution which sends the count to
 its complement forces the average to one half on every orbit is the founding
-example of the homomesy literature. Propp and Roby [PR], in section 2.1 of
+example of the homomesy literature. Propp and Roby [8], in section 2.1 of
 arXiv:1310.5201v6, take the permutations of {1, ..., n}, let tau send a
 permutation to its reversal and f be the number of inversions, and observe that
 since tau squared is the identity and f(pi) + f(tau(pi)) = n(n-1)/2, the
@@ -448,7 +448,7 @@ pairs on which the position permutation preserves the order.
 <!-- origen: NOVELTY.md, alcance; PRIOR-ART.md 14.5 -->
 In the vocabulary of that literature, the corollary above says that the indicator
 of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of
-Propp and Roby [PR]. We use the term and do not present it as ours.
+Propp and Roby [8]. We use the term and do not present it as ours.
 
 ## 3.3 Forcing by a uniform witness
 
@@ -468,7 +468,7 @@ checked on its own: run through the orbit and verify that epsilon is one.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 14.2, punto 1, survey
      de Roby, Example 4, pagina 4, verificado contra el PDF -->
 **Prior owner of the mechanism.** The mechanism of this lemma is stated in one
-line in Roby's survey of homomesy [Ro], in his Example 4 on inversions under the
+line in Roby's survey of homomesy [11], in his Example 4 on inversions under the
 ninety degree rotation of permutation matrices, whose average is again n(n-1)/4:
 "the proof of homomesy is easy: Q takes inversions to non-inversions, and
 vice-versa." That is the witness argument, said there for another object.
@@ -531,7 +531,7 @@ freedom that the construction leaves, and the interval they define is the object
 of the sections that follow.
 
 <!-- origen: PRIOR-ART.md 14.3, artefacto leido en identidad y definicion -->
-The other large phenomenon of this area, cyclic sieving [RSW], is a different
+The other large phenomenon of this area, cyclic sieving [10], is a different
 question again: it counts the fixed points of a cyclic action through a
 generating function at roots of unity, not the average of a statistic over
 orbits. It is named here to place the work, and is not used.
@@ -984,7 +984,7 @@ half turn leaves fixed, paired among themselves by complementation.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
      linea de cita; artefacto Radisic arXiv:2601.07175v3, Teorema 3.3 -->
 **Prior owner of this characterisation.** It is the complete equivariance of
-Radisic [Ra], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
+Radisic [9], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
 is either the complement or the reversal of its partner and splits the 32
 pairs into palindromes paired by complement, anti-symmetric ones where reversal
 and complement coincide, and generic ones paired by reversal. That statement has
@@ -1038,7 +1038,7 @@ missed by a small amount, it is absent from the list.
 <!-- origen: DEFINICIONES-RESIDUO5.md, lista cerrada declarada antes de medir -->
 A closed list of five candidate structures was declared before measuring
 anything: the nuclear hexagram operation with its exact definition, the two part
-division of the received sequence, whose literature has a located owner [HM], and three maps defined through the positions.
+division of the received sequence, whose literature has a located owner [5], and three maps defined through the positions.
 Nothing outside that list was tried.
 
 <!-- origen: INFORME-RESIDUO5.md 2.1 y 2.2 -->
@@ -1433,7 +1433,7 @@ is relative to the list precisely so that this remains possible.
 
 <!-- origen: PRIOR-ART.md 1.2, artefacto Radisic leido entero; el emparejamiento
      de prioridad de reversion y su unicidad -->
-There is one route we can name rather than gesture at. Radisic [Ra] proves that the
+There is one route we can name rather than gesture at. Radisic [9] proves that the
 pairing of the third ordering is the unique cost-minimising equivariant matching
 under his criteria. Conditioning on that matching leaves a family of orderings:
 all those that realise it, differing only in the order of the pairs and in the
@@ -1453,7 +1453,7 @@ reading with these numbers or with larger ones.
 The method that would govern it has a name and a citable version, given here as a
 pointer and not as a read artefact: the stopping-criterion work of the same
 author on nested reference sets, *Uninformative rungs: an order-theoretic
-stopping criterion for nested reference sets* [NL], deposited at
+stopping criterion for nested reference sets* [13], deposited at
 doi 10.5281/zenodo.21750029. We have not read it in the course of this work and
 make no claim about its contents; we name it as the framework under which the
 question above would have to be posed.
@@ -1539,13 +1539,13 @@ preregistration was left unamended, and the prediction was not cashed.
      nada del objeto de estudio. Las cifras salen de results/effort.tsv, que
      emite el propio registro con `python tools/effort.py export`, y se cuentan
      hasta el ultimo cierre de sesion. -->
-<!-- CIFRAS: 126 = results/effort.tsv:7 registros;
-     25 = results/effort.tsv:9 sesiones.cerradas;
+<!-- CIFRAS: 134 = results/effort.tsv:7 registros;
+     26 = results/effort.tsv:9 sesiones.cerradas;
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: **25**
-closed sessions in **126** records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: **26**
+closed sessions in **134** records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
 verifier reports it, and the chain currently verifies with **0** problems; the
 tool that writes the log has no operation that rewrites or deletes. Exactly **1**
@@ -1554,16 +1554,16 @@ is not equivalent to one taken live, which is the only honest thing to do with a
 log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
-<!-- CIFRAS: 89 = results/effort.tsv:17 ficheros.clasificados;
-     5925 = results/effort.tsv:19 lineas.de.aparato;
-     12545 = results/effort.tsv:20 lineas.de.analisis;
+<!-- CIFRAS: 90 = results/effort.tsv:17 ficheros.clasificados;
+     6044 = results/effort.tsv:19 lineas.de.aparato;
+     12608 = results/effort.tsv:20 lineas.de.analisis;
      313 = results/effort.tsv:22 lineas.extraidas;
-     18470 = results/effort.tsv:21 lineas.totales -->
+     18652 = results/effort.tsv:21 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, **89** files were classified, over **18470** lines: **5925** of apparatus
-against **12545** of analysis, of which **313** lines are extracted from
+point, **90** files were classified, over **18652** lines: **6044** of apparatus
+against **12608** of analysis, of which **313** lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
@@ -1636,29 +1636,29 @@ scope stated as relative to a review whose limits are written down.
 
 Each entry records the identity as the literature review fixed it, and whether the artefact was read here or enters as second hand. That mark is part of the reference.
 
-- **[BB]** Anders Bjorner and Francesco Brenti, *Combinatorics of Coxeter Groups*. Equation (1.25) and Proposition 1.5.2 on printed page 20; Sections 8.1 and 8.2 on printed pages 245 and 252.  
-  *Status:* read, and the cited pages verified against the PDF.
-- **[PR]** James Propp and Tom Roby, *Homomesy in products of two chains*, arXiv:1310.5201v6 [math.CO], 19 June 2015. Definition 1 on page 1 and Section 2.1 on page 4.  
-  *Status:* read, and Section 2.1 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version.
-- **[Ro]** Tom Roby, *Dynamical Algebraic Combinatorics and the Homomesy Phenomenon*. Example 1 on page 3, Section 2.1 and Example 4 on page 4.  
-  *Status:* read, and the cited pages verified against the PDF; its volume identity is second hand.
-- **[RSW]** V. Reiner, D. Stanton and D. White, *The cyclic sieving phenomenon*, Journal of Combinatorial Theory, Series A 108 (2004) 17 to 50, doi 10.1016/j.jcta.2004.04.009.  
-  *Status:* read in identity and definition; cited for context, since it counts fixed points and not orbit averages.
-- **[Ra]** Alejandro Radisic, *Optimal Equivariant Matchings on the 6-Cube: With an Application to the King Wen Sequence*, arXiv:2601.07175v3 [math.GM]. Theorem 3.3, and the full binary table in Appendix A.  
-  *Status:* read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing.
-- **[Mu]** Torsten Mutze, *Combinatorial Gray codes, an updated survey*, The Electronic Journal of Combinatorics 30(3) (2023), Dynamic Survey #DS26. Section 3.2 on printed page 11.  
-  *Status:* read in the cited part, verified against the PDF.
-- **[Sc]** Andreas Schoter, *Boolean Algebra and the Yi Jing*, The Oracle: The Journal of Yijing Studies, Vol 2, No 7, Summer 1998, pages 19 to 34, ISSN 1463-6220. Definition 6, Sequence Parameters.  
-  *Status:* read.
-- **[Mo]** Steve Moore, *Structural Elements in the King Wen Sequence of Hexagrams*, Oracle Paper No. 1, February 2005. Quoted passage on printed page 6.  
-  *Status:* read; the quoted passage taken verbatim from the rendered PDF page, not from the OCR conversion.
-- **[Gr]** Gert Gritter, *The Hidden Pattern in the classical sequence of the I Ching*, Groningen, 2015.  
-  *Status:* read in full.
-- **[Co]** Richard S. Cook, *Classical Chinese Combinatorics: Derivation of the Book of Changes Hexagram Sequence*, STEDT Monograph Series, Vol. 5, University of California, Berkeley, 2006, xviii plus 642 pages, ISBN 0-944613-44-6.  
-  *Status:* read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover.
-- **[Dr]** Jozsef Drasny, review of the preceding, *The solution of the King Wen sequence?*, Yijing Dao, biroco.com/yijing/cook.htm.  
-  *Status:* read in full.
-- **[HM]** Edward Hacker and Steve Moore, *A Brief Note on the Two-Part Division of the Received Order of the Hexagrams in the Zhouyi*, Journal of Chinese Philosophy 30(2), June 2003, pages 219 to 221.  
-  *Status:* SECOND HAND: bibliographic identity taken from the bibliography of [Mo]; not read.
-- **[NL]** *Uninformative rungs: an order-theoretic stopping criterion for nested reference sets*, doi 10.5281/zenodo.21750029.  
-  *Status:* SECOND HAND: cited as a pointer to the framework that would govern the inferential question of Section 8.3; not read in the course of this work.
+1. Björner, A., & Brenti, F. *Combinatorics of Coxeter groups*. Equation (1.25) and Proposition 1.5.2, p. 20; Sections 8.1 and 8.2, pp. 245, 252.  
+   *Status:* read, and the cited pages verified against the PDF; year and publisher were not verified against the artefact and are therefore not printed.
+2. Cook, R. S. (2006). *Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence* (STEDT Monograph Series, Vol. 5). University of California, Berkeley. ISBN 0-944613-44-6.  
+   *Status:* read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover.
+3. Drasny, J. *The solution of the King Wen sequence?* [Review of the book *Classical Chinese combinatorics*, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm  
+   *Status:* read in full; the review carries no date on the page read, so none is printed.
+4. Gritter, G. (2015). *The hidden pattern in the classical sequence of the I Ching*. Groningen.  
+   *Status:* read in full.
+5. Hacker, E., & Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. *Journal of Chinese Philosophy*, *30*(2), 219–221.  
+   *Status:* SECOND HAND: bibliographic identity taken from the bibliography of reference 6; not read.
+6. Moore, S. (2005). *Structural elements in the King Wen sequence of hexagrams* (Oracle Paper No. 1).  
+   *Status:* read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from the OCR conversion.
+7. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. *The Electronic Journal of Combinatorics*, *30*(3), Dynamic Survey DS26.  
+   *Status:* read in the cited part, Section 3.2 on p. 11, verified against the PDF.
+8. Propp, J., & Roby, T. (2015). *Homomesy in products of two chains* (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6  
+   *Status:* read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version.
+9. Radisic, A. *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
+   *Status:* read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing.
+10. Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving phenomenon. *Journal of Combinatorial Theory, Series A*, *108*(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009  
+   *Status:* read in identity and definition; cited for context, since it counts fixed points and not orbit averages.
+11. Roby, T. *Dynamical algebraic combinatorics and the homomesy phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.  
+   *Status:* read, and the cited pages verified against the PDF; its volume identity is second hand, since the cover of the PDF read does not carry it, and no year is printed here for the same reason.
+12. Schöter, A. (1998). Boolean algebra and the Yi Jing. *The Oracle: The Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.  
+   *Status:* read; Definition 6, Sequence Parameters.
+13. *Uninformative rungs: An order-theoretic stopping criterion for nested reference sets*. https://doi.org/10.5281/zenodo.21750029  
+   *Status:* SECOND HAND: cited as a pointer to the framework that would govern the inferential question of Section 8.3; not read in the course of this work.
