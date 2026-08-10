@@ -1,21 +1,25 @@
 # Prueba por mutacion del congelador de cifras.
 # clave	valor	nota
-seis.cifra.sin.declarar.seccion	06-three-historical-orderings.md	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
-seis.cifra.sin.declarar.desajustes	1	
-seis.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-seis.cifra.sin.declarar.aviso	06-three-historical-orderings.md: la cifra 1014 se imprime sin declaracion de procedencia (...n: the tie is impossible The count is **1014** under the two conventi...)	
-seis.la.prosa.contradice.a.results.seccion	06-three-historical-orderings.md	se cambian la cifra y su declaracion a la vez: tiene que saltar porque el valor declarado ya no es el que mide la linea de results
-seis.la.prosa.contradice.a.results.desajustes	2	
-seis.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-seis.la.prosa.contradice.a.results.aviso	06-three-historical-orderings.md: la prosa imprime 1014 y results/measurements.tsv:19 (inv.KingWen.yang1.bottomMSB) mide 1013	
-nueve.cifra.sin.declarar.seccion	09-verification.md	lo mismo sobre una cifra del registro de esfuerzo, que es la clase de cifra que la seccion 9 imprime
-nueve.cifra.sin.declarar.desajustes	2	
-nueve.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-nueve.cifra.sin.declarar.aviso	09-verification.md: la cifra 117 se imprime sin declaracion de procedencia (...append only log: **24** closed sessions in **117** records at the point t...)	
-nueve.la.prosa.contradice.al.registro.seccion	09-verification.md	se cambian la cifra y su declaracion a la vez: tiene que saltar porque results/effort.tsv, que emite el propio registro, mide otra cosa
-nueve.la.prosa.contradice.al.registro.desajustes	2	
-nueve.la.prosa.contradice.al.registro.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-nueve.la.prosa.contradice.al.registro.aviso	09-verification.md: la prosa imprime 117 y results/effort.tsv:7 (registros) mide 116	
+06.cifra.sin.declarar.seccion	06-three-historical-orderings.md	la cifra sale de una medicion
+06.cifra.sin.declarar.cifra	1008 por 1009 (valor.esperado.por.azar)	elegida por la propia herramienta, no escrita a mano
+06.cifra.sin.declarar.desajustes	1	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
+06.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
+06.cifra.sin.declarar.aviso	06-three-historical-orderings.md: la cifra 1009 se imprime sin declaracion de procedencia (...claimed for it is false The count is **1009** in all four convention...)	
+06.la.prosa.contradice.a.results.seccion	06-three-historical-orderings.md	la cifra sale de una medicion
+06.la.prosa.contradice.a.results.cifra	1008 por 1009 (valor.esperado.por.azar)	elegida por la propia herramienta, no escrita a mano
+06.la.prosa.contradice.a.results.desajustes	2	se cambian la cifra y su declaracion a la vez: tiene que saltar porque el valor declarado ya no es el que mide la linea
+06.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
+06.la.prosa.contradice.a.results.aviso	06-three-historical-orderings.md: la prosa imprime 1009 y results/measurements.tsv:7 (valor.esperado.por.azar) mide 1008	
+09.cifra.sin.declarar.seccion	09-verification.md	la cifra sale del registro de esfuerzo
+09.cifra.sin.declarar.cifra	126 por 127 (registros)	elegida por la propia herramienta, no escrita a mano
+09.cifra.sin.declarar.desajustes	2	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
+09.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
+09.cifra.sin.declarar.aviso	09-verification.md: la cifra 127 se imprime sin declaracion de procedencia (...append only log: **25** closed sessions in **127** records at the point t...)	
+09.la.prosa.contradice.a.results.seccion	09-verification.md	la cifra sale del registro de esfuerzo
+09.la.prosa.contradice.a.results.cifra	126 por 127 (registros)	elegida por la propia herramienta, no escrita a mano
+09.la.prosa.contradice.a.results.desajustes	2	se cambian la cifra y su declaracion a la vez: tiene que saltar porque el valor declarado ya no es el que mide la linea
+09.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
+09.la.prosa.contradice.a.results.aviso	09-verification.md: la prosa imprime 127 y results/effort.tsv:7 (registros) mide 126	
 mutaciones.probadas	4	
 corrida.restaurada.desajustes	0	
 corrida.restaurada.limpia	1	

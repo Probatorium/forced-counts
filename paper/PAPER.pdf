@@ -222,8 +222,8 @@ endobj
 endobj
 26 0 obj
 <<
-/Author (Alexis Garcia Hurtado) /CreationDate (D:20260810174627-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon c11b7af6f51e59497dbfebe68fd824b8b625344648a05dbe4b162bf6d786e691) /ModDate (D:20260810174627-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=286d99b78f2bbcbc651a2daa31cbe5555aa308b8 fecha=2026-08-10 sha256=c11b7af6f51e59497dbfebe68fd824b8b625344648a05dbe4b162bf6d786e691 comprobaciones=59 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garcia Hurtado) /CreationDate (D:20260810180108-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02) /ModDate (D:20260810180108-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=be6c00bac260d24bd44dda48662daf770011e52d fecha=2026-08-10 sha256=225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02 comprobaciones=59 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 27 0 obj
@@ -3161,19 +3161,19 @@ Q
 q
 1 0 0 1 74.0315 188.5276 cm
 q
-BT 1 0 0 1 0 68.5 Tm -0.118745 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Every working session opens and closes an entry in an append only log: ) Tj /F2 9.5 Tf (24) Tj /F1 9.5 Tf ( closed sessions in ) Tj /F2 9.5 Tf (116) Tj /F1 9.5 Tf ( records) Tj T* 0 Tw 1.2767 Tw (at the point this text was frozen. Each record carries the previous record's hash, so editing an old line) Tj T* 0 Tw 1.231311 Tw (breaks the chain and a verifier reports it, and the chain currently verifies with ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( problems; the tool that) Tj T* 0 Tw .175755 Tw (writes the log has no operation that rewrites or deletes. Exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( entry is marked retroactive, the first, and) Tj T* 0 Tw .39378 Tw (it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do) Tj T* 0 Tw (with a log that begins one commit late.) Tj T* ET
+BT 1 0 0 1 0 68.5 Tm -0.118745 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Every working session opens and closes an entry in an append only log: ) Tj /F2 9.5 Tf (25) Tj /F1 9.5 Tf ( closed sessions in ) Tj /F2 9.5 Tf (126) Tj /F1 9.5 Tf ( records) Tj T* 0 Tw 1.2767 Tw (at the point this text was frozen. Each record carries the previous record's hash, so editing an old line) Tj T* 0 Tw 1.231311 Tw (breaks the chain and a verifier reports it, and the chain currently verifies with ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( problems; the tool that) Tj T* 0 Tw .175755 Tw (writes the log has no operation that rewrites or deletes. Exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( entry is marked retroactive, the first, and) Tj T* 0 Tw .39378 Tw (it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do) Tj T* 0 Tw (with a log that begins one commit late.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 74.0315 130.5276 cm
 q
-BT 1 0 0 1 0 42.5 Tm .001123 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The log also classifies every file as apparatus or analysis, separating what was written here from what was) Tj T* 0 Tw .488578 Tw (extracted, so that the proportion between building instruments and producing results is visible rather than) Tj T* 0 Tw .458381 Tw (anecdotal. At the same point, ) Tj /F2 9.5 Tf (77) Tj /F1 9.5 Tf ( files were classified, over ) Tj /F2 9.5 Tf (16122) Tj /F1 9.5 Tf ( lines: ) Tj /F2 9.5 Tf (4216) Tj /F1 9.5 Tf ( of apparatus against ) Tj /F2 9.5 Tf (11906) Tj /F1 9.5 Tf  T* 0 Tw (of analysis, of which ) Tj /F2 9.5 Tf (313) Tj /F1 9.5 Tf ( lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm .001123 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The log also classifies every file as apparatus or analysis, separating what was written here from what was) Tj T* 0 Tw .488578 Tw (extracted, so that the proportion between building instruments and producing results is visible rather than) Tj T* 0 Tw .458381 Tw (anecdotal. At the same point, ) Tj /F2 9.5 Tf (89) Tj /F1 9.5 Tf ( files were classified, over ) Tj /F2 9.5 Tf (18470) Tj /F1 9.5 Tf ( lines: ) Tj /F2 9.5 Tf (5925) Tj /F1 9.5 Tf ( of apparatus against ) Tj /F2 9.5 Tf (12545) Tj /F1 9.5 Tf  T* 0 Tw (of analysis, of which ) Tj /F2 9.5 Tf (313) Tj /F1 9.5 Tf ( lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 74.0315 72.52756 cm
 q
-BT 1 0 0 1 0 42.5 Tm -0.053195 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Dead ends are recorded as their own kind of entry, with their cost. There are ) Tj /F2 9.5 Tf (4) Tj /F1 9.5 Tf ( of them: a command written) Tj T* 0 Tw .658475 Tw (with the wrong working tree, a process left running after its replacement had been launched, an analysis) Tj T* 0 Tw -0.086495 Tw (that hung because a group closure exploded exactly as a declaration had warned it might, and a tool of our) Tj T* 0 Tw .047957 Tw (own that resolved a key by prefix and so pointed a figure at the wrong line, caught by the checker that was) Tj T* 0 Tw ET
+BT 1 0 0 1 0 42.5 Tm -0.053195 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Dead ends are recorded as their own kind of entry, with their cost. There are ) Tj /F2 9.5 Tf (5) Tj /F1 9.5 Tf ( of them: a command written) Tj T* 0 Tw .658475 Tw (with the wrong working tree, a process left running after its replacement had been launched, an analysis) Tj T* 0 Tw -0.086495 Tw (that hung because a group closure exploded exactly as a declaration had warned it might, and a tool of our) Tj T* 0 Tw .047957 Tw (own that resolved a key by prefix and so pointed a figure at the wrong line, caught by the checker that was) Tj T* 0 Tw ET
 Q
 Q
  
@@ -3281,7 +3281,7 @@ endstream
 endobj
 46 0 obj
 <<
-/Length 5478
+/Length 5479
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -3351,7 +3351,7 @@ Q
 q
 1 0 0 1 74.0315 250.5197 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.5487 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 286d99b78f2bbcbc651a2daa31cbe5555aa308b8, dated 2026-08-10.) Tj T* 0 Tw 1.979575 Tw (Working tree clean: no. sha256 of the manuscript: c11b7af6f51e59497dbfebe68fd824b8b625344648a05dbe4b162bf6d786e691.) Tj T* 0 Tw (Checks green at build time: 59.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm 1.50614 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit be6c00bac260d24bd44dda48662daf770011e52d, dated 2026-08-10.) Tj T* 0 Tw 2.192375 Tw (Working tree clean: no. sha256 of the manuscript: 225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02.) Tj T* 0 Tw (Checks green at build time: 59.) Tj T* ET
 Q
 Q
  
@@ -3409,7 +3409,7 @@ xref
 trailer
 <<
 /ID 
-[<5551628cea86673b568ea34e84cff24e><5551628cea86673b568ea34e84cff24e>]
+[<36ef2028fdf116c875188affe5e2353c><36ef2028fdf116c875188affe5e2353c>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 26 0 R
@@ -3417,5 +3417,5 @@ trailer
 /Size 47
 >>
 startxref
-138409
+138410
 %%EOF

@@ -531,11 +531,11 @@ The second preregistration, for the general phase, was signed after a phase whos
 
 \subsection*{9.2 The effort log}
 
-Every working session opens and closes an entry in an append only log: \textbf{24} closed sessions in \textbf{116} records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with \textbf{0} problems; the tool that writes the log has no operation that rewrites or deletes. Exactly \textbf{1} entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
+Every working session opens and closes an entry in an append only log: \textbf{25} closed sessions in \textbf{126} records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with \textbf{0} problems; the tool that writes the log has no operation that rewrites or deletes. Exactly \textbf{1} entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
 
-The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, \textbf{77} files were classified, over \textbf{16122} lines: \textbf{4216} of apparatus against \textbf{11906} of analysis, of which \textbf{313} lines are extracted from elsewhere and are not counted as written here.
+The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, \textbf{89} files were classified, over \textbf{18470} lines: \textbf{5925} of apparatus against \textbf{12545} of analysis, of which \textbf{313} lines are extracted from elsewhere and are not counted as written here.
 
-Dead ends are recorded as their own kind of entry, with their cost. There are \textbf{4} of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, and a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, caught by the checker that was written to catch exactly that.
+Dead ends are recorded as their own kind of entry, with their cost. There are \textbf{5} of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, and a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, caught by the checker that was written to catch exactly that.
 
 \subsection*{9.3 Rules that were born during the work, with their origin}
 
@@ -576,6 +576,6 @@ Each entry records the identity as the literature review fixed it, and whether t
 \vfill
 \begin{small}
 \noindent\textbf{Colophon.}
-Built from the assembled manuscript at commit 286d99b78f2bbcbc651a2daa31cbe5555aa308b8, dated 2026-08-10. Working tree clean: no. sha256 of the manuscript: c11b7af6f51e59497dbfebe68fd824b8b625344648a05dbe4b162bf6d786e691. Checks green at build time: 59.
+Built from the assembled manuscript at commit be6c00bac260d24bd44dda48662daf770011e52d, dated 2026-08-10. Working tree clean: no. sha256 of the manuscript: 225df8f34c77fac45cb0edcedf20ade4799397a1947af25713a904e1b811dc02. Checks green at build time: 59.
 \end{small}
 \end{document}

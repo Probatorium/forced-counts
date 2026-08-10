@@ -90,3 +90,7 @@ results/pdf-bridge.tsv	aparato	propio	salida del puente
 results/pdf-bridge-test.tsv	aparato	propio	prueba de que el puente sabe romperse
 .gitattributes	aparato	propio	atributos de git, para que el PDF no se corrompa al sacarlo
 tools/package.py	aparato	propio	verificacion del paquete, historia, secretos y bundle
+dist/HISTORY.txt	aparato	propio	la historia en una linea por commit
+dist/THIRD-PARTY.md	aparato	propio	manifiesto de los ficheros de terceros filtrados del bundle
+dist/forced-counts.bundle	aparato	propio	bundle de la historia filtrada, binario
+results/package.tsv	aparato	propio	salida del verificador del paquete

@@ -1,0 +1,79 @@
+# La historia de forced-counts, una linea por commit, del mas
+# reciente al mas antiguo. El commit raiz es la preinscripcion.
+
+be6c00b El verificador declara la unica linea que no puede reproducirse
+d8fe3e7 Commit C, el verificador del paquete y los tres arreglos que encontro
+286d99b Arreglo: el PDF salia corrupto de un clon nuevo
+0aa2f5f Commit B: LaTeX y PDF, con colofon y con puente
+d3dc6e5 Commit A: las cifras de la seccion 9, con su fichero de results
+c8d4452 Cierre de la sesion 25 en el registro de esfuerzo
+4b64dfe Commit B: el congelador de cifras, con su prueba por mutacion
+5a61f75 Commit A: la pasada de cifras, que la prosa imprima lo que explica
+f9cdd5b Cierre de la sesion 24 en el registro de esfuerzo
+cf61de5 Commit C: el ensamblado, con su comprobador
+b43c520 El resumen, escrito el ultimo porque ya se podia
+d091bf3 Seccion 1 del manuscrito: la introduccion, escrita al final
+f138846 Cierre de la sesion 23 en el registro de esfuerzo
+a580180 Seccion 9 del manuscrito: metodos de verificacion
+5d55fe3 Seccion 8 del manuscrito: problemas abiertos, con lo que faltaria para cerrarlos
+e16552e Seccion 7 del manuscrito: el paisaje B(n,k)
+a3be49f Cierre de la sesion 22 en el registro de esfuerzo
+f6bb7c3 Seccion 6 del manuscrito: los tres ordenes historicos, con sus guardas
+0e13b24 Seccion 5 del manuscrito: la caracterizacion
+74abfe8 Seccion 4 del manuscrito: la obstruccion de paridad
+7796191 Cierre de la sesion 21 en el registro de esfuerzo
+86061b2 Seccion 3 del manuscrito: la contabilidad por orbitas
+a6a6d8e Seccion 2 del manuscrito: preliminares, ensamblada y no redactada de memoria
+3c54a91 La puerta de termino del titulo: pasa, y congela
+03bef8e Cierre de la sesion 20 en el registro de esfuerzo
+cfa977a PAPER.md: el esqueleto, con los ficheros de origen de cada seccion
+c0258fa La revision se CIERRA, y NOVELTY.md dice que se afirma y que no
+07882bc Cierre de la sesion 19 en el registro de esfuerzo
+403265a El residuo de 5: anatomia completa, un estrechamiento, y la frontera declarada
+7ce8f82 Fase 0 del residuo de 5: la lista cerrada, antes de medir nada
+1e48434 Cierre de la sesion 18 en el registro de esfuerzo
+5a0c734 Busqueda acotada del fallo de Hall: no aparece, y no se promueve a teorema
+508b1d1 Cierre de la sesion 17 en el registro de esfuerzo
+0dbf4c8 La clase forzada en B(3,1): hay caracterizacion, y tres candidatos caen
+73aff0a Regla nueva: una reimplementacion hereda las verificaciones del original
+a2f1172 Cierre de la sesion 16 en el registro de esfuerzo
+ab91a66 n = 6 entra en la misma tabla, y la tabla unica destapa un error mio
+43bf845 Las formas de la tabla general, elevadas donde se puede: dos caen
+da0bb62 Cierre de la sesion 15 en el registro de esfuerzo
+4b5bdc6 Primera medicion de la fase general, n = 3, 4 y 5
+7a918ea Declaracion de las construcciones analogas, antes de medir
+f357cce LA FIRMA: PREREGISTRATION-GENERAL.md
+12360d6 Fase previa a la firma: dos teoremas sobre las hipotesis de la paridad
+e66be58 Cierre de la sesion 14: la fase general no se abre
+d6fa3e7 Cierre de la sesion 13 en el registro de esfuerzo
+d0949c3 Cierre de la sesion 12 en el registro de esfuerzo
+ee8da32 Hacker son dos obras y no una: corregida la seccion 12.5
+79d221a PROOFS.md pieza 1: la linea de cita a Propp y Roby
+f783681 La tanda de homomesia entra en PRIOR-ART.md, leida y verificada
+fc0ba1d Cierre de la sesion 11 en el registro de esfuerzo
+9b1dd67 La observacion folk, medida en vez de atribuida
+4fa7280 Cierre de la sesion 10 en el registro de esfuerzo
+0df71b5 Estado de cierre en PRIOR-ART.md, preparado y sin cerrar nada
+2fb197f Decision de vocabulario, tomada por Alexis y registrada con fecha y decisor
+ce971a5 Cierre de la sesion 9 en el registro de esfuerzo
+07e734e La tanda de antecedentes entra en PRIOR-ART.md, leida y verificada
+45a472b Cierre de la sesion 8 en el registro de esfuerzo
+f1ca76a PROOFS.md pieza 3.1: la linea de cita a Radisic 2026 Teorema 3.3
+999e5ef Se abre la revision de antecedentes: PRIOR-ART.md y el primer artefacto
+9f18389 Cierre de la sesion 7 en el registro de esfuerzo
+fdd4621 King Wen, corroborada contra artefacto independiente: las 64 coinciden
+f5be1be Cierre de la sesion 6 en el registro de esfuerzo
+d61a3e0 El codigo de Gray reflejado, como cuarta ordenacion de comparacion
+1636e70 Nombre congelado en forced-counts, y la regla del remoto se cierra
+f500d9f Cierre de la sesion 5 en el registro de esfuerzo
+b220044 La clase (0,1) de Mawangdui: de contada a demostrada, con certificado
+3600627 Enmienda visible al pie de INFORME-GRUPO.md: como se lee el control
+3ab65f8 Cierre de la sesion 4 en el registro de esfuerzo
+7723b2f PROOFS.md: lo medido, elevado a demostrado o declarado enumerativo
+bdc0538 Cierre de la sesion 3 en el registro de esfuerzo
+520c1fa El grupo completo: enumeracion, orbitas y contabilidad forzado frente a libre
+2e9b78f Declaracion previa: la nocion de respeta, el grupo y la contabilidad
+2652c12 Cierre de la sesion 2 en el registro de esfuerzo
+2ed4aee Commit 3: la medicion
+3a75cdf Commit 2: el instrumento de esfuerzo, antes de medir nada
+513e631 Commit raiz: preinscripcion, regla de contacto e instrumentacion de esfuerzo

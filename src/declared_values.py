@@ -434,34 +434,34 @@ def comprobar(overrides=None):
 SEIS = "06-three-historical-orderings.md"
 NUEVE = "09-verification.md"
 
-# Las mutaciones llevan su seccion, porque las cifras del manuscrito salen de dos
-# clases de fichero distintas: las de results que produce una medicion, y la de
-# results que produce el propio registro de esfuerzo. Las dos tienen que estar
-# vigiladas, y una mutacion en la seccion 6 no prueba nada sobre la 9.
-MUTACIONES = [
-    ("seis.cifra.sin.declarar", SEIS,
-     [("**1013**", "**1014**")],
-     "se cambia la cifra en la prosa y no en su declaracion: tiene que saltar "
-     "como cifra impresa sin procedencia"),
-    ("seis.la.prosa.contradice.a.results", SEIS,
-     [("**1013**", "**1014**"),
-      ("1013 = results/measurements.tsv", "1014 = results/measurements.tsv")],
-     "se cambian la cifra y su declaracion a la vez: tiene que saltar porque el "
-     "valor declarado ya no es el que mide la linea de results"),
-    ("nueve.cifra.sin.declarar", NUEVE,
-     [("**116** records", "**117** records")],
-     "lo mismo sobre una cifra del registro de esfuerzo, que es la clase de "
-     "cifra que la seccion 9 imprime"),
-    ("nueve.la.prosa.contradice.al.registro", NUEVE,
-     [("**116** records", "**117** records"),
-      ("116 = results/effort.tsv", "117 = results/effort.tsv")],
-     "se cambian la cifra y su declaracion a la vez: tiene que saltar porque "
-     "results/effort.tsv, que emite el propio registro, mide otra cosa"),
+# Las secciones que se mutan. Son dos porque las cifras del manuscrito salen de
+# dos clases de fichero distintas: las de results que produce una medicion, y la
+# de results que produce el propio registro de esfuerzo. Una mutacion en la
+# seccion 6 no prueba nada sobre la 9.
+SECCIONES_MUTADAS = [
+    (SEIS, "la cifra sale de una medicion"),
+    (NUEVE, "la cifra sale del registro de esfuerzo"),
 ]
 
-# El valor con el que se muta, comun a todas: se busca en el aviso para exigir
-# que el comprobador NOMBRE la cifra y no solo que se queje de algo.
-TESTIGOS = ("1014", "117")
+
+def objetivo(seccion):
+    """Elige que cifra mutar, en vez de llevarla escrita a mano.
+
+    Se toma la primera declaracion de la seccion cuyo valor aparezca en la prosa
+    en negrita, y se muta a ese valor mas uno. Se hace asi porque una cifra
+    escrita a mano en el codigo de la prueba caduca: las del registro de esfuerzo
+    se refrescan cada vez que se cierra una sesion, y la prueba empezaria a
+    fallar por estar desactualizada y no por haber encontrado nada.
+    """
+    t = leer_seccion(seccion)
+    cuerpo = prosa(t)
+    for val, fich, lin, clave in declaraciones(t):
+        if not val.isdigit():
+            continue
+        marca = "**%s**" % val
+        if marca in cuerpo:
+            return val, str(int(val) + 1), fich, clave
+    return None
 
 
 def mutacion():
@@ -469,48 +469,79 @@ def mutacion():
 
     Una asercion que nunca se ha visto fallar no esta probada: puede estar
     comprobando otra cosa, o nada. Aqui se altera el texto de dos secciones de
-    cuatro maneras, se corre el comprobador entero sobre cada texto alterado, y
-    se exige que el aviso NOMBRE la cifra. Despues se corre sin mutar y se exige
-    que no quede ningun desajuste. Las corridas se registran todas, porque el
-    valor de la prueba esta en que figure la que falla y no solo la que pasa.
+    dos maneras cada una, se corre el comprobador entero sobre cada texto
+    alterado, y se exige que el aviso NOMBRE la cifra. Despues se corre sin mutar
+    y se exige que no quede ningun desajuste. Las corridas se registran todas,
+    porque el valor de la prueba esta en que figure la que falla y no solo la que
+    pasa.
 
     Nada de esto se escribe en el arbol de trabajo: el texto alterado vive en
     memoria y los ficheros se comprueban intactos al final.
     """
-    originales = {SEIS: leer_seccion(SEIS), NUEVE: leer_seccion(NUEVE)}
+    originales = {s: leer_seccion(s) for s, _ in SECCIONES_MUTADAS}
     filas = []
     todas_saltan = True
+    probadas = 0
 
-    for nombre, seccion, cambios, motivo in MUTACIONES:
-        mutado = originales[seccion]
-        for viejo_txt, nuevo_txt in cambios:
-            if viejo_txt not in mutado:
-                print("la mutacion %s no encuentra %r" % (nombre, viejo_txt))
-                return 1
-            mutado = mutado.replace(viejo_txt, nuevo_txt, 1)
+    for seccion, porque in SECCIONES_MUTADAS:
+        obj = objetivo(seccion)
+        if obj is None:
+            fallo("no hay cifra que mutar en %s" % seccion)
+            todas_saltan = False
+            continue
+        val, roto_val, fich, clave = obj
+        etiqueta = seccion.split("-")[0]
 
-        comprobar(overrides={seccion: mutado})
-        avisos = list(FALLOS)
-        esperado = [a for a in avisos if any(x in a for x in TESTIGOS)]
-        todas_saltan = todas_saltan and bool(esperado)
-        filas += [
-            ("%s.seccion" % nombre, seccion, motivo),
-            ("%s.desajustes" % nombre, len(avisos), ""),
-            ("%s.el.comprobador.nombra.la.cifra" % nombre, int(bool(esperado)),
-             "si vale cero, el comprobador no vigila lo que dice vigilar"),
-            ("%s.aviso" % nombre, esperado[0] if esperado else "ninguno", ""),
+        casos = [
+            ("%s.cifra.sin.declarar" % etiqueta,
+             [("**%s**" % val, "**%s**" % roto_val)],
+             "se cambia la cifra en la prosa y no en su declaracion: tiene que "
+             "saltar como cifra impresa sin procedencia"),
+            ("%s.la.prosa.contradice.a.results" % etiqueta,
+             [("**%s**" % val, "**%s**" % roto_val),
+              ("%s = %s" % (val, fich), "%s = %s" % (roto_val, fich))],
+             "se cambian la cifra y su declaracion a la vez: tiene que saltar "
+             "porque el valor declarado ya no es el que mide la linea"),
         ]
+
+        for nombre, cambios, motivo in casos:
+            mutado = originales[seccion]
+            for viejo_txt, nuevo_txt in cambios:
+                if viejo_txt not in mutado:
+                    fallo("la mutacion %s no encuentra %r" % (nombre, viejo_txt))
+                    todas_saltan = False
+                    mutado = None
+                    break
+                mutado = mutado.replace(viejo_txt, nuevo_txt, 1)
+            if mutado is None:
+                continue
+
+            probadas += 1
+            comprobar(overrides={seccion: mutado})
+            avisos = list(FALLOS)
+            esperado = [a for a in avisos if roto_val in a]
+            todas_saltan = todas_saltan and bool(esperado)
+            filas += [
+                ("%s.seccion" % nombre, seccion, porque),
+                ("%s.cifra" % nombre, "%s por %s (%s)" % (val, roto_val, clave),
+                 "elegida por la propia herramienta, no escrita a mano"),
+                ("%s.desajustes" % nombre, len(avisos), motivo),
+                ("%s.el.comprobador.nombra.la.cifra" % nombre,
+                 int(bool(esperado)),
+                 "si vale cero, el comprobador no vigila lo que dice vigilar"),
+                ("%s.aviso" % nombre, esperado[0] if esperado else "ninguno", ""),
+            ]
 
     limpio = comprobar()
     intactas = all(leer_seccion(s) == o for s, o in originales.items())
     filas += [
-        ("mutaciones.probadas", len(MUTACIONES), ""),
+        ("mutaciones.probadas", probadas, ""),
         ("corrida.restaurada.desajustes", len(FALLOS), ""),
         ("corrida.restaurada.limpia", int(limpio == 0), ""),
         ("las.secciones.quedan.intactas", int(intactas),
          "el texto mutado vive en memoria y nunca se escribe"),
         ("la.prueba.por.mutacion.pasa",
-         int(todas_saltan and limpio == 0 and intactas),
+         int(todas_saltan and limpio == 0 and intactas and probadas == 4),
          "la asercion se ha visto fallar cuando debia y callar cuando debia"),
     ]
 
@@ -521,12 +552,12 @@ def mutacion():
         for k, v, n in filas:
             fh.write("%s\t%s\t%s\n" % (k, v, n))
     for k, v, _ in filas:
-        print("  %-52s %s" % (k, v))
+        print("  %-46s %s" % (k, v))
 
     if not intactas:
         print("alguna seccion quedo alterada: eso no puede pasar")
         return 1
-    return 0 if (todas_saltan and limpio == 0) else 1
+    return 0 if (todas_saltan and limpio == 0 and probadas == 4) else 1
 
 
 def main():
