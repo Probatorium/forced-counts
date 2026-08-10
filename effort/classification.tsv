@@ -81,3 +81,10 @@ src/declared_values.py	aparato	propio	congelador de cifras del manuscrito
 results/declared-values.tsv	aparato	propio	salida del congelador de cifras
 results/mutation-test.tsv	aparato	propio	prueba por mutacion del congelador
 results/effort.tsv	aparato	propio	recuentos del registro de esfuerzo, emitidos por effort.py export
+src/build_paper.py	aparato	propio	constructor de PAPER.tex y PAPER.pdf desde PAPER.md
+src/pdf_bridge.py	aparato	propio	puente entre el PDF y el manuscrito
+paper/PAPER.tex	analisis	propio	manuscrito en LaTeX, generado desde PAPER.md y no redactado aparte
+paper/PAPER.pdf	analisis	propio	manuscrito en PDF, binario, no se cuentan sus lineas
+results/build-paper.tsv	aparato	propio	salida del constructor
+results/pdf-bridge.tsv	aparato	propio	salida del puente
+results/pdf-bridge-test.tsv	aparato	propio	prueba de que el puente sabe romperse

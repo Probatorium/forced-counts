@@ -142,6 +142,23 @@ def tracked_files():
     return [p for p in out.stdout.splitlines() if p.strip()]
 
 
+def is_binary(data):
+    """Un fichero es binario si sus bytes no son texto.
+
+    Hace falta distinguirlo porque contar los saltos de linea de un PDF y
+    sumarlos a las lineas de analisis no mide esfuerzo ninguno: inflaria una
+    cifra que el manuscrito imprime, con bytes que nadie ha escrito. La primera
+    version de esta funcion buscaba un byte nulo, que es el criterio de costumbre
+    y aqui no sirve: un PDF sin comprimir no tiene ninguno, y colaba 3421 lineas
+    falsas. El criterio que decide es si el contenido se deja decodificar.
+    """
+    try:
+        data.decode("utf-8")
+        return False
+    except UnicodeDecodeError:
+        return True
+
+
 def count_lines(path):
     full = os.path.join(ROOT, path)
     if not os.path.exists(full):
@@ -150,6 +167,8 @@ def count_lines(path):
         data = fh.read()
     if not data:
         return 0
+    if is_binary(data):
+        return None
     return data.count(b"\n") + (0 if data.endswith(b"\n") else 1)
 
 
@@ -166,11 +185,13 @@ def classify(include_untracked=True):
     if missing:
         raise SystemExit("sin clasificar en classification.tsv:\n  " + "\n  ".join(missing))
 
-    per_file, totals = [], {}
+    per_file, totals, binarios = [], {}, []
     for path in sorted(present):
         r = declared[path]
         n = count_lines(path)
         if n is None:
+            if os.path.exists(os.path.join(ROOT, path)):
+                binarios.append(path)
             continue
         per_file.append({"path": path, "class": r["class"], "origin": r["origin"],
                          "lines": n})
@@ -184,6 +205,7 @@ def classify(include_untracked=True):
         "analisis_extraido": totals.get("analisis/extraido", 0),
         "aparato_propio": totals.get("aparato/propio", 0),
         "aparato_extraido": totals.get("aparato/extraido", 0),
+        "binarios_no_contados": len(binarios),
     }
     return per_file, summary
 
@@ -287,6 +309,9 @@ def export():
         ("retroactivos", tipos.get("retroactive", 0),
          "registros reconstruidos, que no equivalen a uno tomado en vivo"),
         ("ficheros.clasificados", ficheros, ""),
+        ("ficheros.binarios.no.contados",
+         resumen.get("binarios_no_contados", 0),
+         "sus saltos de linea no son lineas escritas y no se suman"),
         ("lineas.de.aparato", resumen.get("aparato", 0), ""),
         ("lineas.de.analisis", resumen.get("analisis", 0), ""),
         ("lineas.totales", total, ""),

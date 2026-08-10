@@ -15,6 +15,7 @@ notas	13
 clasificaciones	36	
 retroactivos	1	registros reconstruidos, que no equivalen a uno tomado en vivo
 ficheros.clasificados	77	
+ficheros.binarios.no.contados	0	sus saltos de linea no son lineas escritas y no se suman
 lineas.de.aparato	4216	
 lineas.de.analisis	11906	
 lineas.totales	16122	

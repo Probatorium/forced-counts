@@ -1555,10 +1555,10 @@ log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
 <!-- CIFRAS: 77 = results/effort.tsv:17 ficheros.clasificados;
-     4216 = results/effort.tsv:18 lineas.de.aparato;
-     11906 = results/effort.tsv:19 lineas.de.analisis;
-     313 = results/effort.tsv:21 lineas.extraidas;
-     16122 = results/effort.tsv:20 lineas.totales -->
+     4216 = results/effort.tsv:19 lineas.de.aparato;
+     11906 = results/effort.tsv:20 lineas.de.analisis;
+     313 = results/effort.tsv:22 lineas.extraidas;
+     16122 = results/effort.tsv:21 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same

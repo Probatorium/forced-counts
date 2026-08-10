@@ -1,0 +1,9 @@
+# Prueba de que el puente sabe romperse.
+# clave	valor	nota
+mutacion	un salto de linea de mas al final del manuscrito	el cambio mas pequeno que se le puede hacer a un texto
+con.la.mutacion.desajustes	1	
+con.la.mutacion.el.puente.avisa	1	si vale cero, el puente no vigila lo que dice vigilar
+con.la.mutacion.aviso	el.pdf.corresponde.al.manuscrito.de.ahora  el texto ha cambiado desde que se construyo el PDF: se debe una version nueva, hay que volver a correr src/build_paper.py	
+restaurado.el.puente.esta.entero	1	
+el.fichero.no.se.toco	1	
+la.prueba.del.puente.pasa	1	

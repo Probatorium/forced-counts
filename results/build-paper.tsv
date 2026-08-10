@@ -1,0 +1,42 @@
+# Construccion de PAPER.tex y PAPER.pdf desde PAPER.md.
+# clave	valor	nota
+el.titulo.del.manuscrito.es.el.congelado	1	la portada de PAPER.md manda
+colofon.arbol_limpio	no	
+colofon.commit	d3dc6e5a3bbb42508c5bd449363b558dafa89fdf	
+colofon.comprobaciones_en_verde	59	
+colofon.fecha	2026-08-10	
+colofon.sha256_manuscrito	c11b7af6f51e59497dbfebe68fd824b8b625344648a05dbe4b162bf6d786e691	
+tex.bytes	74487	
+pdf.bytes	139580	
+pdf.caracteres.extraidos	70877	
+el.pdf.se.deja.leer	1	si no se puede extraer texto, no hay cotejo posible
+cifras.distintas.en.el.manuscrito	148	
+citas.distintas.en.el.manuscrito	13	
+filas.de.tabla	17	
+celdas.distintas.de.tabla	53	
+hay.algo.que.cotejar	1	un cotejo sobre nada pasaria en vacio
+tex.cifras.ausentes	ninguno	
+tex.lleva.todas.las.cifras	1	
+tex.citas.ausentes	ninguno	
+tex.lleva.todas.las.citas	1	
+tex.celdas.ausentes	ninguno	
+tex.lleva.todas.las.celdas	1	
+pdf.cifras.ausentes	ninguno	
+pdf.lleva.todas.las.cifras	1	
+pdf.citas.ausentes	ninguno	
+pdf.lleva.todas.las.citas	1	
+pdf.celdas.ausentes	ninguno	
+pdf.lleva.todas.las.celdas	1	
+tex.guiones.largos.unicode	0	
+tex.cero.guiones.largos.unicode	1	
+tex.exentos.regla.de.comentario	0	linea de comentario hecha de guiones para separar bloques de fuente
+tex.exentos.opcion.de.paquete	4	opciones de paquete y de clase, donde el guion es parte del nombre
+tex.exentos.guion.de.palabra	17	guion dentro de una palabra compuesta, que no es raya
+tex.exentos.signo.menos	17	signo menos en una expresion
+tex.rachas.de.guion.que.LaTeX.compondria.como.raya	0	
+tex.ninguna.raya.compuesta	1	la regla de la casa prohibe la raya tambien en ingles, y en LaTeX una raya se escribe con dos o tres guiones seguidos
+el.tex.lleva.colofon	1	
+el.pdf.lleva.colofon.en.su.informacion	1	
+bloques.parseados	245	
+desajustes	0	
+la.construccion.pasa	1	

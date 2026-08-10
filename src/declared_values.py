@@ -237,7 +237,30 @@ def rellenar():
         t = open(ruta, encoding="utf-8").read()
         original = t
         for val, fich, lin, clave in list(declaraciones(t)):
+            lineas_actuales = leer_results(fich)
             if lin != "?":
+                # RERESOLUCION. Un puntero ya resuelto se vuelve a resolver si
+                # ha dejado de apuntar a su clave, que es lo que pasa en cuanto
+                # un fichero de results gana una fila por encima. La clave manda
+                # sobre el numero de linea; el numero es un atajo para el lector.
+                if lineas_actuales is None:
+                    continue
+                i = int(lin)
+                if (1 <= i <= len(lineas_actuales)
+                        and lineas_actuales[i - 1].split("\t")[0] == clave):
+                    continue
+                n = linea_de_clave(lineas_actuales, clave)
+                if n is None:
+                    print("clave no encontrada o repetida: %s en %s (%s)"
+                          % (clave, fich, nombre))
+                    continue
+                for escrito in ('"%s"' % val, val):
+                    patron = (re.escape("%s = %s:%s %s" % (escrito, fich, lin, clave))
+                              + r"(?![\w.])")
+                    t, k = re.subn(patron, "%s = %s:%d %s" % (escrito, fich, n, clave), t)
+                    if k:
+                        cambios += k
+                        break
                 continue
             lineas = leer_results(fich)
             if lineas is None:
