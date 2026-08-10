@@ -107,3 +107,27 @@ uno se puede caer con una dimension mas.
     python src/general_landscape.py
 
 Deterministas las dos. La unica fuente de azar es la semilla declarada.
+
+---
+
+# Enmiendas
+
+Se anaden al pie, con fecha y motivo. No se toca el texto de arriba.
+
+## Enmienda 1, 2026-08-10: el rasgo 1 de la seccion 4 era mas estrecho de lo que parecia
+
+**Motivo.** El rasgo 1 dice que la casilla FORZADO aparece solo con k intermedio
+y que en k igual a 1 y en k igual a n-1 no aparecio ninguno. La frase es cierta
+de lo que se midio, que fue la familia O3 y las dos ordenaciones fijas, y asi
+esta escrita en la seccion 3. Pero invita a leerla como una propiedad de los
+extremos, y no lo es.
+
+**Medido despues, en PROOFS-GENERAL.md pieza 1:** recorriendo las 40320
+ordenaciones de los ocho vertices, B(3,1) tiene 472 ordenaciones forzadas y
+B(3,2) tiene 600, con testigo exhibido. En n igual a 4 con k igual a 1 tambien
+aparece una entre 3000 muestreadas.
+
+**Alcance.** Las cifras de las tablas de arriba siguen siendo validas: son de la
+familia O3 y ahi no hay forzado en los extremos. Lo que queda retirado es la
+lectura general del rasgo 1, sin borrarla, para que se vea que estuvo ahi. La
+propiedad es de la familia O3, no de los extremos.

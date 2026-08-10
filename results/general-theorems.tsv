@@ -1,0 +1,264 @@
+# Elevacion a teorema de las formas de la tabla general.
+# clave	valor	nota
+p1.n3.k1.ordenaciones.recorridas	40320	
+p1.n3.k1.ordenaciones.forzadas	472	
+p1.n3.k1.testigo.forzado	0 1 6 7 3 2 5 4	primera ordenacion forzada encontrada, en orden de recorrido
+p1.n3.k1.perfil.d0_0.peso_1.tamano	8	
+p1.n3.k1.perfil.d0_0.peso_1.mitad	4	
+p1.n3.k1.perfil.d0_0.peso_1.c.par	38528	veces que c salio par
+p1.n3.k1.perfil.d0_0.peso_1.c.impar	30336	veces que c salio impar
+p1.n3.k1.perfil.d0_0.peso_1.veces.forzada	25792	
+p1.n3.k1.perfil.d0_0.peso_2.tamano	4	
+p1.n3.k1.perfil.d0_0.peso_2.mitad	2	
+p1.n3.k1.perfil.d0_0.peso_2.c.par	1984	veces que c salio par
+p1.n3.k1.perfil.d0_0.peso_2.c.impar	1728	veces que c salio impar
+p1.n3.k1.perfil.d0_0.peso_2.veces.forzada	1488	
+p1.n3.k1.perfil.d0_1.peso_0.tamano	4	
+p1.n3.k1.perfil.d0_1.peso_0.mitad	2	
+p1.n3.k1.perfil.d0_1.peso_0.c.par	53568	veces que c salio par
+p1.n3.k1.perfil.d0_1.peso_0.c.impar	53568	veces que c salio impar
+p1.n3.k1.perfil.d0_1.peso_0.veces.forzada	32192	
+p1.n3.k1.perfil.d0_1.peso_1.tamano	8	
+p1.n3.k1.perfil.d0_1.peso_1.mitad	4	
+p1.n3.k1.perfil.d0_1.peso_1.c.par	10624	veces que c salio par
+p1.n3.k1.perfil.d0_1.peso_1.c.impar	10112	veces que c salio impar
+p1.n3.k1.perfil.d0_1.peso_1.veces.forzada	7296	
+p1.n3.k1.perfil.d0_1.peso_2.tamano	4	
+p1.n3.k1.perfil.d0_1.peso_2.mitad	2	
+p1.n3.k1.perfil.d0_1.peso_2.c.par	576	veces que c salio par
+p1.n3.k1.perfil.d0_1.peso_2.c.impar	576	veces que c salio impar
+p1.n3.k1.perfil.d0_1.peso_2.veces.forzada	432	
+p1.n3.k1.modo	enumeracion entera de las 40320 ordenaciones	
+p1.n3.k1.la.conjetura.de.los.extremos.se.sostiene	0	cero seria que ninguna ordenacion queda forzada
+p1.n3.k2.ordenaciones.recorridas	40320	
+p1.n3.k2.ordenaciones.forzadas	600	
+p1.n3.k2.testigo.forzado	0 1 6 7 3 2 5 4	primera ordenacion forzada encontrada, en orden de recorrido
+p1.n3.k2.perfil.d0_0.peso_1.tamano	4	
+p1.n3.k2.perfil.d0_0.peso_1.mitad	2	
+p1.n3.k2.perfil.d0_0.peso_1.c.par	38528	veces que c salio par
+p1.n3.k2.perfil.d0_0.peso_1.c.impar	30336	veces que c salio impar
+p1.n3.k2.perfil.d0_0.peso_1.veces.forzada	27552	
+p1.n3.k2.perfil.d0_0.peso_2.tamano	4	
+p1.n3.k2.perfil.d0_0.peso_2.mitad	2	
+p1.n3.k2.perfil.d0_0.peso_2.c.par	1984	veces que c salio par
+p1.n3.k2.perfil.d0_0.peso_2.c.impar	1728	veces que c salio impar
+p1.n3.k2.perfil.d0_0.peso_2.veces.forzada	1552	
+p1.n3.k2.perfil.d0_1.peso_0.tamano	8	
+p1.n3.k2.perfil.d0_1.peso_0.mitad	4	
+p1.n3.k2.perfil.d0_1.peso_0.c.par	53568	veces que c salio par
+p1.n3.k2.perfil.d0_1.peso_0.c.impar	53568	veces que c salio impar
+p1.n3.k2.perfil.d0_1.peso_0.veces.forzada	34064	
+p1.n3.k2.perfil.d0_1.peso_1.tamano	4	
+p1.n3.k2.perfil.d0_1.peso_1.mitad	2	
+p1.n3.k2.perfil.d0_1.peso_1.c.par	10624	veces que c salio par
+p1.n3.k2.perfil.d0_1.peso_1.c.impar	10112	veces que c salio impar
+p1.n3.k2.perfil.d0_1.peso_1.veces.forzada	7520	
+p1.n3.k2.perfil.d0_1.peso_2.tamano	4	
+p1.n3.k2.perfil.d0_1.peso_2.mitad	2	
+p1.n3.k2.perfil.d0_1.peso_2.c.par	576	veces que c salio par
+p1.n3.k2.perfil.d0_1.peso_2.c.impar	576	veces que c salio impar
+p1.n3.k2.perfil.d0_1.peso_2.veces.forzada	432	
+p1.n3.k2.modo	enumeracion entera de las 40320 ordenaciones	
+p1.n3.k2.la.conjetura.de.los.extremos.se.sostiene	0	cero seria que ninguna ordenacion queda forzada
+p1.n4.k1.ordenaciones.recorridas	3000	
+p1.n4.k1.ordenaciones.forzadas	1	
+p1.n4.k1.testigo.forzado	11 4 5 2 0 7 15 14 10 13 8 1 9 12 6 3	primera ordenacion forzada encontrada, en orden de recorrido
+p1.n4.k1.perfil.d0_0.peso_1.tamano	8	
+p1.n4.k1.perfil.d0_0.peso_1.mitad	4	
+p1.n4.k1.perfil.d0_0.peso_1.c.par	2542	veces que c salio par
+p1.n4.k1.perfil.d0_0.peso_1.c.impar	2483	veces que c salio impar
+p1.n4.k1.perfil.d0_0.peso_1.veces.forzada	1130	
+p1.n4.k1.perfil.d0_0.peso_2.tamano	8	
+p1.n4.k1.perfil.d0_0.peso_2.mitad	4	
+p1.n4.k1.perfil.d0_0.peso_2.c.par	117	veces que c salio par
+p1.n4.k1.perfil.d0_0.peso_2.c.impar	118	veces que c salio impar
+p1.n4.k1.perfil.d0_0.peso_2.veces.forzada	64	
+p1.n4.k1.perfil.d0_1.peso_0.tamano	8	
+p1.n4.k1.perfil.d0_1.peso_0.mitad	4	
+p1.n4.k1.perfil.d0_1.peso_0.c.par	6701	veces que c salio par
+p1.n4.k1.perfil.d0_1.peso_0.c.impar	6830	veces que c salio impar
+p1.n4.k1.perfil.d0_1.peso_0.veces.forzada	2223	
+p1.n4.k1.perfil.d0_1.peso_1.tamano	8	
+p1.n4.k1.perfil.d0_1.peso_1.mitad	4	
+p1.n4.k1.perfil.d0_1.peso_1.c.par	1091	veces que c salio par
+p1.n4.k1.perfil.d0_1.peso_1.c.impar	1050	veces que c salio impar
+p1.n4.k1.perfil.d0_1.peso_1.veces.forzada	501	
+p1.n4.k1.perfil.d0_1.peso_2.tamano	8	
+p1.n4.k1.perfil.d0_1.peso_2.mitad	4	
+p1.n4.k1.perfil.d0_1.peso_2.c.par	39	veces que c salio par
+p1.n4.k1.perfil.d0_1.peso_2.c.impar	29	veces que c salio impar
+p1.n4.k1.perfil.d0_1.peso_2.veces.forzada	19	
+p1.n4.k1.modo	muestra de 3000 ordenaciones, semilla 20261210	
+p1.n4.k1.la.conjetura.de.los.extremos.se.sostiene	0	cero seria que ninguna ordenacion queda forzada
+p1.n4.k3.ordenaciones.recorridas	3000	
+p1.n4.k3.ordenaciones.forzadas	0	
+p1.n4.k3.testigo.forzado	ninguno	primera ordenacion forzada encontrada, en orden de recorrido
+p1.n4.k3.perfil.d0_0.peso_1.tamano	24	
+p1.n4.k3.perfil.d0_0.peso_1.mitad	12	
+p1.n4.k3.perfil.d0_0.peso_1.c.par	2520	veces que c salio par
+p1.n4.k3.perfil.d0_0.peso_1.c.impar	2547	veces que c salio impar
+p1.n4.k3.perfil.d0_0.peso_1.veces.forzada	1196	
+p1.n4.k3.perfil.d0_0.peso_2.tamano	8	
+p1.n4.k3.perfil.d0_0.peso_2.mitad	4	
+p1.n4.k3.perfil.d0_0.peso_2.c.par	112	veces que c salio par
+p1.n4.k3.perfil.d0_0.peso_2.c.impar	86	veces que c salio impar
+p1.n4.k3.perfil.d0_0.peso_2.veces.forzada	63	
+p1.n4.k3.perfil.d0_1.peso_0.tamano	24	
+p1.n4.k3.perfil.d0_1.peso_0.mitad	12	
+p1.n4.k3.perfil.d0_1.peso_0.c.par	6714	veces que c salio par
+p1.n4.k3.perfil.d0_1.peso_0.c.impar	6883	veces que c salio impar
+p1.n4.k3.perfil.d0_1.peso_0.veces.forzada	2498	
+p1.n4.k3.perfil.d0_1.peso_1.tamano	8	
+p1.n4.k3.perfil.d0_1.peso_1.mitad	4	
+p1.n4.k3.perfil.d0_1.peso_1.c.par	1072	veces que c salio par
+p1.n4.k3.perfil.d0_1.peso_1.c.impar	1018	veces que c salio impar
+p1.n4.k3.perfil.d0_1.peso_1.veces.forzada	566	
+p1.n4.k3.perfil.d0_1.peso_2.tamano	8	
+p1.n4.k3.perfil.d0_1.peso_2.mitad	4	
+p1.n4.k3.perfil.d0_1.peso_2.c.par	25	veces que c salio par
+p1.n4.k3.perfil.d0_1.peso_2.c.impar	23	veces que c salio impar
+p1.n4.k3.perfil.d0_1.peso_2.veces.forzada	14	
+p1.n4.k3.modo	muestra de 3000 ordenaciones, semilla 20261212	
+p1.n4.k3.la.conjetura.de.los.extremos.se.sostiene	1	cero seria que ninguna ordenacion queda forzada
+p1.n5.k1.ordenaciones.recorridas	1000	
+p1.n5.k1.ordenaciones.forzadas	0	
+p1.n5.k1.testigo.forzado	ninguno	primera ordenacion forzada encontrada, en orden de recorrido
+p1.n5.k1.perfil.d0_0.peso_1.tamano	64	
+p1.n5.k1.perfil.d0_0.peso_1.mitad	32	
+p1.n5.k1.perfil.d0_0.peso_1.c.par	779	veces que c salio par
+p1.n5.k1.perfil.d0_0.peso_1.c.impar	795	veces que c salio impar
+p1.n5.k1.perfil.d0_0.peso_1.veces.forzada	241	
+p1.n5.k1.perfil.d0_0.peso_2.tamano	16	
+p1.n5.k1.perfil.d0_0.peso_2.mitad	8	
+p1.n5.k1.perfil.d0_0.peso_2.c.par	39	veces que c salio par
+p1.n5.k1.perfil.d0_0.peso_2.c.impar	38	veces que c salio impar
+p1.n5.k1.perfil.d0_0.peso_2.veces.forzada	16	
+p1.n5.k1.perfil.d0_1.peso_0.tamano	96	
+p1.n5.k1.perfil.d0_1.peso_0.mitad	48	
+p1.n5.k1.perfil.d0_1.peso_0.c.par	3372	veces que c salio par
+p1.n5.k1.perfil.d0_1.peso_0.c.impar	3279	veces que c salio impar
+p1.n5.k1.perfil.d0_1.peso_0.veces.forzada	597	
+p1.n5.k1.perfil.d0_1.peso_1.tamano	16	
+p1.n5.k1.perfil.d0_1.peso_1.mitad	8	
+p1.n5.k1.perfil.d0_1.peso_1.c.par	318	veces que c salio par
+p1.n5.k1.perfil.d0_1.peso_1.c.impar	325	veces que c salio impar
+p1.n5.k1.perfil.d0_1.peso_1.veces.forzada	118	
+p1.n5.k1.perfil.d0_1.peso_2.tamano	16	
+p1.n5.k1.perfil.d0_1.peso_2.mitad	8	
+p1.n5.k1.perfil.d0_1.peso_2.c.par	22	veces que c salio par
+p1.n5.k1.perfil.d0_1.peso_2.c.impar	33	veces que c salio impar
+p1.n5.k1.perfil.d0_1.peso_2.veces.forzada	9	
+p1.n5.k1.modo	muestra de 1000 ordenaciones, semilla 20261310	
+p1.n5.k1.la.conjetura.de.los.extremos.se.sostiene	1	cero seria que ninguna ordenacion queda forzada
+p1.n5.k4.ordenaciones.recorridas	1000	
+p1.n5.k4.ordenaciones.forzadas	0	
+p1.n5.k4.testigo.forzado	ninguno	primera ordenacion forzada encontrada, en orden de recorrido
+p1.n5.k4.perfil.d0_0.peso_1.tamano	16	
+p1.n5.k4.perfil.d0_0.peso_1.mitad	8	
+p1.n5.k4.perfil.d0_0.peso_1.c.par	752	veces que c salio par
+p1.n5.k4.perfil.d0_0.peso_1.c.impar	773	veces que c salio impar
+p1.n5.k4.perfil.d0_0.peso_1.veces.forzada	224	
+p1.n5.k4.perfil.d0_0.peso_2.tamano	16	
+p1.n5.k4.perfil.d0_0.peso_2.mitad	8	
+p1.n5.k4.perfil.d0_0.peso_2.c.par	48	veces que c salio par
+p1.n5.k4.perfil.d0_0.peso_2.c.impar	51	veces que c salio impar
+p1.n5.k4.perfil.d0_0.peso_2.veces.forzada	21	
+p1.n5.k4.perfil.d0_1.peso_0.tamano	64	
+p1.n5.k4.perfil.d0_1.peso_0.mitad	32	
+p1.n5.k4.perfil.d0_1.peso_0.c.par	3337	veces que c salio par
+p1.n5.k4.perfil.d0_1.peso_0.c.impar	3306	veces que c salio impar
+p1.n5.k4.perfil.d0_1.peso_0.veces.forzada	681	
+p1.n5.k4.perfil.d0_1.peso_1.tamano	16	
+p1.n5.k4.perfil.d0_1.peso_1.mitad	8	
+p1.n5.k4.perfil.d0_1.peso_1.c.par	320	veces que c salio par
+p1.n5.k4.perfil.d0_1.peso_1.c.impar	360	veces que c salio impar
+p1.n5.k4.perfil.d0_1.peso_1.veces.forzada	131	
+p1.n5.k4.perfil.d0_1.peso_2.tamano	16	
+p1.n5.k4.perfil.d0_1.peso_2.mitad	8	
+p1.n5.k4.perfil.d0_1.peso_2.c.par	30	veces que c salio par
+p1.n5.k4.perfil.d0_1.peso_2.c.impar	23	veces que c salio impar
+p1.n5.k4.perfil.d0_1.peso_2.veces.forzada	9	
+p1.n5.k4.modo	muestra de 1000 ordenaciones, semilla 20261313	
+p1.n5.k4.la.conjetura.de.los.extremos.se.sostiene	1	cero seria que ninguna ordenacion queda forzada
+p3.n3.k1.empate	14	
+p3.n3.k1.paridad.del.empate	0	
+p3.n3.k1.paridad.de.los.compatibles	0	
+p3.n3.k1.minimo	12	
+p3.n3.k1.maximo	16	
+p3.n3.k1.compatibles	2	
+p3.n3.k1.empate.dentro.del.intervalo	1	
+p3.n3.k1.empate.alcanzable	0	
+p3.n3.k1.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n3.k2.empate	14	
+p3.n3.k2.paridad.del.empate	0	
+p3.n3.k2.paridad.de.los.compatibles	0	
+p3.n3.k2.minimo	12	
+p3.n3.k2.maximo	16	
+p3.n3.k2.compatibles	2	
+p3.n3.k2.empate.dentro.del.intervalo	1	
+p3.n3.k2.empate.alcanzable	0	
+p3.n3.k2.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n4.k1.empate	60	
+p3.n4.k1.paridad.del.empate	0	
+p3.n4.k1.paridad.de.los.compatibles	0	
+p3.n4.k1.minimo	56	
+p3.n4.k1.maximo	64	
+p3.n4.k1.compatibles	2	
+p3.n4.k1.empate.dentro.del.intervalo	1	
+p3.n4.k1.empate.alcanzable	0	
+p3.n4.k1.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n4.k2.empate	60	
+p3.n4.k2.paridad.del.empate	0	
+p3.n4.k2.paridad.de.los.compatibles	0	
+p3.n4.k2.minimo	56	
+p3.n4.k2.maximo	64	
+p3.n4.k2.compatibles	2	
+p3.n4.k2.empate.dentro.del.intervalo	1	
+p3.n4.k2.empate.alcanzable	0	
+p3.n4.k2.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n4.k3.empate	60	
+p3.n4.k3.paridad.del.empate	0	
+p3.n4.k3.paridad.de.los.compatibles	0	
+p3.n4.k3.minimo	56	
+p3.n4.k3.maximo	64	
+p3.n4.k3.compatibles	2	
+p3.n4.k3.empate.dentro.del.intervalo	1	
+p3.n4.k3.empate.alcanzable	0	
+p3.n4.k3.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k1.empate	248	
+p3.n5.k1.paridad.del.empate	0	
+p3.n5.k1.paridad.de.los.compatibles	0	
+p3.n5.k1.minimo	240	
+p3.n5.k1.maximo	256	
+p3.n5.k1.compatibles	2	
+p3.n5.k1.empate.dentro.del.intervalo	1	
+p3.n5.k1.empate.alcanzable	0	
+p3.n5.k1.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k2.empate	248	
+p3.n5.k2.paridad.del.empate	0	
+p3.n5.k2.paridad.de.los.compatibles	0	
+p3.n5.k2.minimo	240	
+p3.n5.k2.maximo	256	
+p3.n5.k2.compatibles	2	
+p3.n5.k2.empate.dentro.del.intervalo	1	
+p3.n5.k2.empate.alcanzable	0	
+p3.n5.k2.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k3.empate	248	
+p3.n5.k3.paridad.del.empate	0	
+p3.n5.k3.paridad.de.los.compatibles	0	
+p3.n5.k3.minimo	240	
+p3.n5.k3.maximo	256	
+p3.n5.k3.compatibles	2	
+p3.n5.k3.empate.dentro.del.intervalo	1	
+p3.n5.k3.empate.alcanzable	0	
+p3.n5.k3.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k4.empate	248	
+p3.n5.k4.paridad.del.empate	0	
+p3.n5.k4.paridad.de.los.compatibles	0	
+p3.n5.k4.minimo	240	
+p3.n5.k4.maximo	256	
+p3.n5.k4.compatibles	2	
+p3.n5.k4.empate.dentro.del.intervalo	1	
+p3.n5.k4.empate.alcanzable	0	
+p3.n5.k4.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.teorema.si.las.paridades.diferen.el.empate.es.imposible	1	todos los compatibles comparten paridad, luego uno de paridad distinta no puede estar

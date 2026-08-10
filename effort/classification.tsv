@@ -45,3 +45,6 @@ DEFINICIONES-GENERAL.md	aparato	propio	declaracion de las construcciones antes d
 src/general_landscape.py	analisis	propio	primera medicion de la fase general
 results/general-landscape.tsv	analisis	propio	salida de la medicion general
 INFORME-GENERAL.md	analisis	propio	lectura de la primera medicion general
+src/general_theorems.py	analisis	propio	elevacion a teorema de las formas generales
+results/general-theorems.tsv	analisis	propio	salida de la elevacion
+PROOFS-GENERAL.md	analisis	propio	demostrado, enumerativo y refutado de la fase general
