@@ -1,0 +1,214 @@
+# El residuo de 5: anatomia y simetrias extendidas.
+# clave	valor	nota
+grupo.orden	384	el centralizador del giro, ya demostrado
+herencia.el.orden.del.grupo.es.384	1	
+orbitas	36	
+orbitas.libres	19	
+observado	1013	
+intervalo.minimo	957	
+intervalo.maximo	1059	
+herencia.observado.es.1013	1	
+herencia.orbitas.libres.son.19	1	
+herencia.intervalo.es.957.a.1059	1	
+f1.orbita.00.cardinal	192	
+f1.orbita.00.mitad	96	
+f1.orbita.00.aportacion	90	
+f1.orbita.00.desviacion	-6	
+f1.orbita.01.cardinal	96	
+f1.orbita.01.mitad	48	
+f1.orbita.01.aportacion	50	
+f1.orbita.01.desviacion	2	
+f1.orbita.02.cardinal	96	
+f1.orbita.02.mitad	48	
+f1.orbita.02.aportacion	52	
+f1.orbita.02.desviacion	4	
+f1.orbita.03.cardinal	96	
+f1.orbita.03.mitad	48	
+f1.orbita.03.aportacion	46	
+f1.orbita.03.desviacion	-2	
+f1.orbita.04.cardinal	96	
+f1.orbita.04.mitad	48	
+f1.orbita.04.aportacion	46	
+f1.orbita.04.desviacion	-2	
+f1.orbita.05.cardinal	96	
+f1.orbita.05.mitad	48	
+f1.orbita.05.aportacion	46	
+f1.orbita.05.desviacion	-2	
+f1.orbita.06.cardinal	96	
+f1.orbita.06.mitad	48	
+f1.orbita.06.aportacion	46	
+f1.orbita.06.desviacion	-2	
+f1.orbita.07.cardinal	96	
+f1.orbita.07.mitad	48	
+f1.orbita.07.aportacion	46	
+f1.orbita.07.desviacion	-2	
+f1.orbita.08.cardinal	96	
+f1.orbita.08.mitad	48	
+f1.orbita.08.aportacion	54	
+f1.orbita.08.desviacion	6	
+f1.orbita.09.cardinal	96	
+f1.orbita.09.mitad	48	
+f1.orbita.09.aportacion	52	
+f1.orbita.09.desviacion	4	
+f1.orbita.10.cardinal	48	
+f1.orbita.10.mitad	24	
+f1.orbita.10.aportacion	28	
+f1.orbita.10.desviacion	4	
+f1.orbita.11.cardinal	48	
+f1.orbita.11.mitad	24	
+f1.orbita.11.aportacion	22	
+f1.orbita.11.desviacion	-2	
+f1.orbita.12.cardinal	48	
+f1.orbita.12.mitad	24	
+f1.orbita.12.aportacion	22	
+f1.orbita.12.desviacion	-2	
+f1.orbita.13.cardinal	24	
+f1.orbita.13.mitad	12	
+f1.orbita.13.aportacion	16	
+f1.orbita.13.desviacion	4	
+f1.orbita.14.cardinal	12	
+f1.orbita.14.mitad	6	
+f1.orbita.14.aportacion	5	
+f1.orbita.14.desviacion	-1	
+f1.orbita.15.cardinal	12	
+f1.orbita.15.mitad	6	
+f1.orbita.15.aportacion	8	
+f1.orbita.15.desviacion	2	
+f1.orbita.16.cardinal	12	
+f1.orbita.16.mitad	6	
+f1.orbita.16.aportacion	4	
+f1.orbita.16.desviacion	-2	
+f1.orbita.17.cardinal	4	
+f1.orbita.17.mitad	2	
+f1.orbita.17.aportacion	3	
+f1.orbita.17.desviacion	1	
+f1.orbita.18.cardinal	4	
+f1.orbita.18.mitad	2	
+f1.orbita.18.aportacion	3	
+f1.orbita.18.desviacion	1	
+f1.suma.de.desviaciones	5	tiene que ser 1013 menos 1008
+f1.la.suma.de.desviaciones.es.5	1	
+f1.orbitas.con.desviacion.no.nula	19	
+f1.orbita.00.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.00.A2.pares.dentro.de.una.misma.mitad	104	
+f1.orbita.00.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.01.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.01.A2.pares.dentro.de.una.misma.mitad	40	
+f1.orbita.01.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.02.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.02.A2.pares.dentro.de.una.misma.mitad	40	
+f1.orbita.02.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.03.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.03.A2.pares.dentro.de.una.misma.mitad	40	
+f1.orbita.03.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.04.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.04.A2.pares.dentro.de.una.misma.mitad	52	
+f1.orbita.04.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.05.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.05.A2.pares.dentro.de.una.misma.mitad	48	
+f1.orbita.05.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.06.A1.pares.con.el.mismo.nuclear	32	
+f1.orbita.06.A2.pares.dentro.de.una.misma.mitad	48	
+f1.orbita.06.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.07.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.07.A2.pares.dentro.de.una.misma.mitad	44	
+f1.orbita.07.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.08.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.08.A2.pares.dentro.de.una.misma.mitad	44	
+f1.orbita.08.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.09.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.09.A2.pares.dentro.de.una.misma.mitad	40	
+f1.orbita.09.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.10.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.10.A2.pares.dentro.de.una.misma.mitad	28	
+f1.orbita.10.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.11.A1.pares.con.el.mismo.nuclear	16	
+f1.orbita.11.A2.pares.dentro.de.una.misma.mitad	28	
+f1.orbita.11.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.12.A1.pares.con.el.mismo.nuclear	16	
+f1.orbita.12.A2.pares.dentro.de.una.misma.mitad	28	
+f1.orbita.12.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.13.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.13.A2.pares.dentro.de.una.misma.mitad	8	
+f1.orbita.13.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.14.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.14.A2.pares.dentro.de.una.misma.mitad	12	
+f1.orbita.14.pares.dentro.de.un.mismo.par.de.KW	12	
+f1.orbita.15.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.15.A2.pares.dentro.de.una.misma.mitad	4	
+f1.orbita.15.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.16.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.16.A2.pares.dentro.de.una.misma.mitad	8	
+f1.orbita.16.pares.dentro.de.un.mismo.par.de.KW	0	
+f1.orbita.17.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.17.A2.pares.dentro.de.una.misma.mitad	4	
+f1.orbita.17.pares.dentro.de.un.mismo.par.de.KW	4	
+f1.orbita.18.A1.pares.con.el.mismo.nuclear	0	
+f1.orbita.18.A2.pares.dentro.de.una.misma.mitad	4	
+f1.orbita.18.pares.dentro.de.un.mismo.par.de.KW	4	
+f2.A1.pares.cuyos.dos.miembros.comparten.nuclear	4	de 32
+f2.A1.aporta.biyeccion	0	la operacion nuclear no es biyectiva, declarado en la fase 0
+f2.A1.imagenes.nucleares.distintas	16	
+f2.A1.la.particion.nuclear.refina.o.cruza.los.pares	4	cuantos pares caen enteros en una fibra
+f2.A2.el.corte.respeta.los.pares	1	ningun par cruza la frontera
+f2.A2.aporta.biyeccion	0	las mitades son de 30 y 34, declarado en la fase 0
+f2.A3.respeta.el.sistema.de.pares	1	
+f2.A3.es.afin	0	cero quiere decir que esta fuera de B6
+f2.A3.orden.del.grupo.generado	mas de 200000	tope declarado de 200000; ver la advertencia de la fase 0
+f2.A3.pasa.del.tope.declarado	1	si vale uno, el grupo es grande y sin estructura y no cuenta como hallazgo
+f2.A3.los.generadores.respetan.los.pares	1	
+f2.A3.orbitas	2	
+f2.A3.orbitas.libres	2	
+f2.A3.intervalo.minimo	1003	
+f2.A3.intervalo.maximo	1013	
+f2.A3.anchura	10	
+f2.A3.empate.alcanzable	0	
+f2.A3.reduce.las.orbitas.libres	1	
+f2.A3.estrecha.el.intervalo	1	
+f2.A3.fuerza	0	
+f2.A3.el.observado.no.cambia	1	cambiar el grupo no cambia la secuencia ni su recuento
+f2.A4.respeta.el.sistema.de.pares	1	
+f2.A4.es.afin	0	cero quiere decir que esta fuera de B6
+f2.A4.orden.del.grupo.generado	mas de 200000	tope declarado de 200000; ver la advertencia de la fase 0
+f2.A4.pasa.del.tope.declarado	1	si vale uno, el grupo es grande y sin estructura y no cuenta como hallazgo
+f2.A4.los.generadores.respetan.los.pares	1	
+f2.A4.orbitas	2	
+f2.A4.orbitas.libres	2	
+f2.A4.intervalo.minimo	1003	
+f2.A4.intervalo.maximo	1013	
+f2.A4.anchura	10	
+f2.A4.empate.alcanzable	0	
+f2.A4.reduce.las.orbitas.libres	1	
+f2.A4.estrecha.el.intervalo	1	
+f2.A4.fuerza	0	
+f2.A4.el.observado.no.cambia	1	cambiar el grupo no cambia la secuencia ni su recuento
+f2.A5.respeta.el.sistema.de.pares	1	
+f2.A5.es.afin	0	cero quiere decir que esta fuera de B6
+f2.A5.orden.del.grupo.generado	768	tope declarado de 200000; ver la advertencia de la fase 0
+f2.A5.pasa.del.tope.declarado	0	si vale uno, el grupo es grande y sin estructura y no cuenta como hallazgo
+f2.A5.los.generadores.respetan.los.pares	1	
+f2.A5.orbitas	34	
+f2.A5.orbitas.libres	17	
+f2.A5.intervalo.minimo	961	
+f2.A5.intervalo.maximo	1055	
+f2.A5.anchura	94	
+f2.A5.empate.alcanzable	0	
+f2.A5.reduce.las.orbitas.libres	1	
+f2.A5.estrecha.el.intervalo	1	
+f2.A5.fuerza	0	
+f2.A5.el.observado.no.cambia	1	cambiar el grupo no cambia la secuencia ni su recuento
+f2.A3+A4+A5.respeta.el.sistema.de.pares	1	
+f2.A3+A4+A5.es.afin	0	cero quiere decir que esta fuera de B6
+f2.A3+A4+A5.orden.del.grupo.generado	mas de 200000	tope declarado de 200000; ver la advertencia de la fase 0
+f2.A3+A4+A5.pasa.del.tope.declarado	1	si vale uno, el grupo es grande y sin estructura y no cuenta como hallazgo
+f2.A3+A4+A5.los.generadores.respetan.los.pares	1	
+f2.A3+A4+A5.orbitas	2	
+f2.A3+A4+A5.orbitas.libres	2	
+f2.A3+A4+A5.intervalo.minimo	1003	
+f2.A3+A4+A5.intervalo.maximo	1013	
+f2.A3+A4+A5.anchura	10	
+f2.A3+A4+A5.empate.alcanzable	0	
+f2.A3+A4+A5.reduce.las.orbitas.libres	1	
+f2.A3+A4+A5.estrecha.el.intervalo	1	
+f2.A3+A4+A5.fuerza	0	
+f2.A3+A4+A5.el.observado.no.cambia	1	cambiar el grupo no cambia la secuencia ni su recuento

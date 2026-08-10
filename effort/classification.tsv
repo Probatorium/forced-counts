@@ -58,3 +58,6 @@ PROOFS-B31.md	analisis	propio	teoremas y refutaciones de la clase forzada en B(3
 src/hall_search.py	analisis	propio	busqueda acotada de un fallo de Hall
 results/hall-search.tsv	analisis	propio	salida de la busqueda
 DEFINICIONES-RESIDUO5.md	aparato	propio	lista cerrada de candidatos del residuo, antes de medir
+src/residuo5.py	analisis	propio	anatomia del residuo y simetrias extendidas
+results/residuo5.tsv	analisis	propio	salida del residuo
+INFORME-RESIDUO5.md	analisis	propio	lectura del residuo y su declaracion
