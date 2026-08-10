@@ -52,11 +52,11 @@ preregistration was left unamended, and the prediction was not cashed.
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: **26**
-closed sessions in **134** records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: 26
+closed sessions in 134 records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
-verifier reports it, and the chain currently verifies with **0** problems; the
-tool that writes the log has no operation that rewrites or deletes. Exactly **1**
+verifier reports it, and the chain currently verifies with 0 problems; the
+tool that writes the log has no operation that rewrites or deletes. Exactly 1
 entry is marked retroactive, the first, and it says that a reconstructed record
 is not equivalent to one taken live, which is the only honest thing to do with a
 log that begins one commit late.
@@ -70,14 +70,14 @@ log that begins one commit late.
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, **90** files were classified, over **18652** lines: **6044** of apparatus
-against **12608** of analysis, of which **313** lines are extracted from
+point, 90 files were classified, over 18652 lines: 6044 of apparatus
+against 12608 of analysis, of which 313 lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
 <!-- CIFRAS: 5 = results/effort.tsv:11 dead_ends -->
 Dead ends are recorded as their own kind of entry, with their cost. There are
-**5** of them: a command written with the wrong working tree, a process left
+5 of them: a command written with the wrong working tree, a process left
 running after its replacement had been launched, an analysis that hung because a
 group closure exploded exactly as a declaration had warned it might, and a tool
 of our own that resolved a key by prefix and so pointed a figure at the wrong

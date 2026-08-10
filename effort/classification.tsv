@@ -97,3 +97,5 @@ results/package.tsv	aparato	propio	salida del verificador del paquete
 VERIFICATIONS.md	analisis	propio	registro de verificaciones de terceros
 tools/renumber_citations.py	aparato	propio	renumerador de citas del manuscrito
 results/citation-renumber.tsv	aparato	propio	salida del renumerador
+tools/strip_number_bold.py	aparato	propio	retirada de la negrita de las cifras de la prosa
+results/bold-strip.tsv	aparato	propio	salida de la retirada de negritas

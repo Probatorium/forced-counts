@@ -75,9 +75,9 @@ matching: Hall's condition is needed and could fail. It does not fail in any cas
 we examined, and the search was declared in advance, bounded, and reported with
 its outcome branch fixed beforehand. Its size is the whole content of the word
 *enumerative*, so it is printed here rather than left to the results file:
-**1272** forced orderings traversed across three block systems and two dimensions,
-of which 200 were found by search in the larger one, giving **6960** forced orbits
-in which the matching was verified, and **0** failures of Hall's condition. That
+1272 forced orderings traversed across three block systems and two dimensions,
+of which 200 were found by search in the larger one, giving 6960 forced orbits
+in which the matching was verified, and 0 failures of Hall's condition. That
 is a count, not a proof. **We do not promote it to a theorem.** A failure could
 occur in a higher dimension, in another partition, or in a case the search did
 not reach.
@@ -125,8 +125,8 @@ is fixed by the cardinality, which does not depend on the ordering. QED
      39848 = results/b31-characterization.tsv:9 no.forzadas -->
 *Proof of the second half, by witness.* Take the smallest block system in the
 smallest dimension we enumerate, where the space of orderings is small enough to
-be traversed in full: all **40320** of them, under one and the same group of
-order 16. Of those, **472** are forced and **39848** are not. One group, two
+be traversed in full: all 40320 of them, under one and the same group of
+order 16. Of those, 472 are forced and 39848 are not. One group, two
 outcomes; therefore the outcome is not a function of the group. QED
 
 <!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv. GUARDA: son

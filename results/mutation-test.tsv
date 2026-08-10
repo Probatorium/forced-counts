@@ -1,25 +1,25 @@
 # Prueba por mutacion del congelador de cifras.
 # clave	valor	nota
 06.cifra.sin.declarar.seccion	06-three-historical-orderings.md	la cifra sale de una medicion
-06.cifra.sin.declarar.cifra	1008 por 1009 (valor.esperado.por.azar)	elegida por la propia herramienta, no escrita a mano
-06.cifra.sin.declarar.desajustes	1	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
+06.cifra.sin.declarar.cifra	40320 por 40321 (exhaustivo.octetos.orden.de.familia.ordenes)	elegida por la propia herramienta, no escrita a mano
+06.cifra.sin.declarar.desajustes	2	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
 06.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-06.cifra.sin.declarar.aviso	06-three-historical-orderings.md: la cifra 1009 se imprime sin declaracion de procedencia (...claimed for it is false The count is **1009** in all four convention...)	
+06.cifra.sin.declarar.aviso	06-three-historical-orderings.md: la cifra 40321 se imprime sin declaracion de procedencia (...e octets can be permuted in every one of the 40321 possible ways, all such...)	
 06.la.prosa.contradice.a.results.seccion	06-three-historical-orderings.md	la cifra sale de una medicion
-06.la.prosa.contradice.a.results.cifra	1008 por 1009 (valor.esperado.por.azar)	elegida por la propia herramienta, no escrita a mano
+06.la.prosa.contradice.a.results.cifra	40320 por 40321 (exhaustivo.octetos.orden.de.familia.ordenes)	elegida por la propia herramienta, no escrita a mano
 06.la.prosa.contradice.a.results.desajustes	2	se cambian la cifra y su declaracion a la vez: tiene que saltar porque el valor declarado ya no es el que mide la linea
 06.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-06.la.prosa.contradice.a.results.aviso	06-three-historical-orderings.md: la prosa imprime 1009 y results/measurements.tsv:7 (valor.esperado.por.azar) mide 1008	
+06.la.prosa.contradice.a.results.aviso	06-three-historical-orderings.md: la prosa imprime 40321 y results/measurements.tsv:92 (exhaustivo.octetos.orden.de.familia.ordenes) mide 40320	
 09.cifra.sin.declarar.seccion	09-verification.md	la cifra sale del registro de esfuerzo
-09.cifra.sin.declarar.cifra	134 por 135 (registros)	elegida por la propia herramienta, no escrita a mano
+09.cifra.sin.declarar.cifra	18652 por 18653 (lineas.totales)	elegida por la propia herramienta, no escrita a mano
 09.cifra.sin.declarar.desajustes	2	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
 09.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-09.cifra.sin.declarar.aviso	09-verification.md: la cifra 135 se imprime sin declaracion de procedencia (...append only log: **26** closed sessions in **135** records at the point t...)	
+09.cifra.sin.declarar.aviso	09-verification.md: la cifra 18653 se imprime sin declaracion de procedencia (...e same point, 90 files were classified, over 18653 lines: 6044 of apparatus...)	
 09.la.prosa.contradice.a.results.seccion	09-verification.md	la cifra sale del registro de esfuerzo
-09.la.prosa.contradice.a.results.cifra	134 por 135 (registros)	elegida por la propia herramienta, no escrita a mano
+09.la.prosa.contradice.a.results.cifra	18652 por 18653 (lineas.totales)	elegida por la propia herramienta, no escrita a mano
 09.la.prosa.contradice.a.results.desajustes	2	se cambian la cifra y su declaracion a la vez: tiene que saltar porque el valor declarado ya no es el que mide la linea
 09.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-09.la.prosa.contradice.a.results.aviso	09-verification.md: la prosa imprime 135 y results/effort.tsv:7 (registros) mide 134	
+09.la.prosa.contradice.a.results.aviso	09-verification.md: la prosa imprime 18653 y results/effort.tsv:21 (lineas.totales) mide 18652	
 mutaciones.probadas	4	
 corrida.restaurada.desajustes	0	
 corrida.restaurada.limpia	1	

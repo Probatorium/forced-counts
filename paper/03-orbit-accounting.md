@@ -146,9 +146,9 @@ The lemma is not free. If a set does not contribute exactly half, its two parity
 classes have different cardinalities and no perfect matching can exist, because
 every edge of the relation graph joins opposite parities. The check has been
 carried out where it matters, in both directions. Where the lemma applies, it
-settles a class of **96** pairs that Lemma 2 cannot reach, with a contribution of
-exactly **48**. Where it does not apply, it does not pretend to: of the **19**
-free orbits of the third historical ordering, **19** admit no perfect matching,
+settles a class of 96 pairs that Lemma 2 cannot reach, with a contribution of
+exactly 48. Where it does not apply, it does not pretend to: of the 19
+free orbits of the third historical ordering, 19 admit no perfect matching,
 which is what has to happen if the lemma is not to force what is not forced.
 
 ## 3.5 What this accounting is for

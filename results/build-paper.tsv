@@ -4,13 +4,13 @@ el.titulo.del.manuscrito.es.el.congelado	1	la portada de PAPER.md manda
 la.portada.se.separa.del.cuerpo	1	los tres bloques de portada son los esperados y salen del cuerpo para no componerse dos veces
 bloques.de.portada.retirados	3	
 colofon.arbol_limpio	no	
-colofon.commit	3da09bbf43977cfa3bc6c230d37c44e165d61570	
-colofon.comprobaciones_en_verde	59	
+colofon.commit	1774c31ead6f8588e18b566eb4b6778f21902173	
+colofon.comprobaciones_en_verde	61	
 colofon.fecha	2026-08-10	
-colofon.sha256_manuscrito	cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313	
-tex.bytes	74329	
-pdf.bytes	135858	
-pdf.caracteres.extraidos	70706	
+colofon.sha256_manuscrito	389ebc063cef961e96ef04213a9fddd84abd332e48d58f320a0d40d6ca9423ae	
+tex.bytes	74066	
+pdf.bytes	133982	
+pdf.caracteres.extraidos	70847	
 el.pdf.se.deja.leer	1	si no se puede extraer texto, no hay cotejo posible
 cifras.distintas.en.el.manuscrito	149	
 citas.distintas.en.el.manuscrito	13	
@@ -40,6 +40,6 @@ tex.rachas.de.guion.que.LaTeX.compondria.como.raya	0
 tex.ninguna.raya.compuesta	1	la regla de la casa prohibe la raya tambien en ingles, y en LaTeX una raya se escribe con dos o tres guiones seguidos
 el.tex.lleva.colofon	1	
 el.pdf.lleva.colofon.en.su.informacion	1	
-bloques.parseados	245	
+bloques.parseados	247	
 desajustes	0	
 la.construccion.pasa	1	

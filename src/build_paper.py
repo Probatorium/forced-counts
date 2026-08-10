@@ -275,8 +275,14 @@ def a_tex(bloques, colo, titulo, autor, orcid):
             salida.append(r"\begin{longtable}{%s}" % ("l" * ncol))
             for j, fila in enumerate(cont):
                 fila = fila + [""] * (ncol - len(fila))
-                salida.append(" & ".join(tex_inline(c) for c in fila)
-                              + r" \\")
+                if j == 0:
+                    # La cabecera va en negrita, y la pone el generador. Asi la
+                    # negrita es una decision de formato en un sitio y no un
+                    # asterisco repetido en cada celda del markdown.
+                    celdas = [r"\textbf{%s}" % tex_escapa(c) for c in fila]
+                else:
+                    celdas = [tex_inline(c) for c in fila]
+                salida.append(" & ".join(celdas) + r" \\")
                 if j == 0:
                     salida.append(r"\hline")
             salida.append(r"\end{longtable}")
@@ -355,10 +361,11 @@ def a_pdf(bloques, colo, titulo, autor, orcid):
             ncol = max(len(f) for f in cont)
             datos = [[Paragraph(inline(c), peq) for c in
                       (f + [""] * (ncol - len(f)))] for f in cont]
-            tb = Table(datos, repeatRows=1, hAlign="LEFT")
+            tb = Table(datos, repeatRows=1, hAlign="CENTER")
             tb.setStyle(TableStyle([
                 ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                 ("BACKGROUND", (0, 0), (-1, 0), colors.whitesmoke),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 3),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 3),

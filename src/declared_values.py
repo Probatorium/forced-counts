@@ -100,7 +100,7 @@ MASCARAS = [
      "identificador de un artefacto, no una medicion"),
     ("referencia.cruzada",
      r"(?:[Ss]ection|[Ll]emma|[Tt]heorem|[Cc]orollary|[Pp]roposition|[Aa]ppendix"
-     r"|[Ee]xample|[Dd]efinition|[Ee]quation|[Pp]art|[Aa]mendment)s?\s+"
+     r"|[Ee]xample|[Dd]efinition|[Ee]quation|[Pp]art|[Aa]mendment|[Tt]able)s?\s+"
      r"\(?\d+[a-z]?(?:\.\d+)*\)?(?:\s*(?:,|and|to)\s*\d+(?:\.\d+)*)*",
      "puntero interno o a otro texto, no una medicion"),
     ("simbolo",
@@ -452,21 +452,49 @@ SECCIONES_MUTADAS = [
 def objetivo(seccion):
     """Elige que cifra mutar, en vez de llevarla escrita a mano.
 
-    Se toma la primera declaracion de la seccion cuyo valor aparezca en la prosa
-    en negrita, y se muta a ese valor mas uno. Se hace asi porque una cifra
-    escrita a mano en el codigo de la prueba caduca: las del registro de esfuerzo
-    se refrescan cada vez que se cierra una sesion, y la prueba empezaria a
-    fallar por estar desactualizada y no por haber encontrado nada.
+    Se toma la declaracion de valor mas largo cuyo valor aparezca suelto en la
+    prosa, y se muta a ese valor mas uno. Se elige el mas largo porque una cifra
+    de cuatro digitos es mucho mas dificil de confundir con un trozo de otra que
+    una de un digito.
+
+    No se busca la cifra en negrita, aunque seria comodo: la negrita de las
+    cifras se retiro en la pasada de formato, y una prueba que dependa del
+    marcado del texto se rompe la proxima vez que alguien cambie el estilo, que
+    es fallar por la razon equivocada.
     """
     t = leer_seccion(seccion)
     cuerpo = prosa(t)
+    candidatos = []
     for val, fich, lin, clave in declaraciones(t):
         if not val.isdigit():
             continue
-        marca = "**%s**" % val
-        if marca in cuerpo:
-            return val, str(int(val) + 1), fich, clave
-    return None
+        if re.search(r"(?<![\d.])%s(?![\d.])" % re.escape(val), cuerpo):
+            candidatos.append((len(val), val, fich, clave))
+    if not candidatos:
+        return None
+    _, val, fich, clave = max(candidatos)
+    return val, str(int(val) + 1), fich, clave
+
+
+def muta_prosa(texto, val, nuevo_val):
+    """Cambia la primera aparicion suelta de una cifra EN LA PROSA, y solo esa.
+
+    Los comentarios de ensamblaje se saltan. La primera version no los saltaba y
+    mutaba la declaracion en vez del texto, con lo que la segunda mutacion, la
+    que cambia las dos cosas a la vez, no encontraba luego la declaracion que
+    buscaba. Lo delato la propia prueba, que empezo a probar dos casos en vez de
+    cuatro.
+    """
+    patron = r"(?<![\d.])%s(?![\d.])" % re.escape(val)
+    partes = re.split(r"(<!--.*?-->)", texto, flags=re.S)
+    for i, p in enumerate(partes):
+        if p.startswith("<!--"):
+            continue
+        nuevo_p, k = re.subn(patron, nuevo_val, p, count=1)
+        if k:
+            partes[i] = nuevo_p
+            return "".join(partes)
+    return texto
 
 
 def mutacion():
@@ -498,28 +526,27 @@ def mutacion():
         etiqueta = seccion.split("-")[0]
 
         casos = [
-            ("%s.cifra.sin.declarar" % etiqueta,
-             [("**%s**" % val, "**%s**" % roto_val)],
+            ("%s.cifra.sin.declarar" % etiqueta, False,
              "se cambia la cifra en la prosa y no en su declaracion: tiene que "
              "saltar como cifra impresa sin procedencia"),
-            ("%s.la.prosa.contradice.a.results" % etiqueta,
-             [("**%s**" % val, "**%s**" % roto_val),
-              ("%s = %s" % (val, fich), "%s = %s" % (roto_val, fich))],
+            ("%s.la.prosa.contradice.a.results" % etiqueta, True,
              "se cambian la cifra y su declaracion a la vez: tiene que saltar "
              "porque el valor declarado ya no es el que mide la linea"),
         ]
 
-        for nombre, cambios, motivo in casos:
-            mutado = originales[seccion]
-            for viejo_txt, nuevo_txt in cambios:
-                if viejo_txt not in mutado:
-                    fallo("la mutacion %s no encuentra %r" % (nombre, viejo_txt))
-                    todas_saltan = False
-                    mutado = None
-                    break
-                mutado = mutado.replace(viejo_txt, nuevo_txt, 1)
-            if mutado is None:
+        for nombre, tambien_la_declaracion, motivo in casos:
+            mutado = muta_prosa(originales[seccion], val, roto_val)
+            if mutado == originales[seccion]:
+                fallo("la mutacion %s no encuentra la cifra %s" % (nombre, val))
+                todas_saltan = False
                 continue
+            if tambien_la_declaracion:
+                viejo_d = "%s = %s" % (val, fich)
+                if viejo_d not in mutado:
+                    fallo("la mutacion %s no encuentra %r" % (nombre, viejo_d))
+                    todas_saltan = False
+                    continue
+                mutado = mutado.replace(viejo_d, "%s = %s" % (roto_val, fich), 1)
 
             probadas += 1
             comprobar(overrides={seccion: mutado})

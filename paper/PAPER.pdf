@@ -232,8 +232,8 @@ endobj
 endobj
 27 0 obj
 <<
-/Author (Alexis Garcia Hurtado) /CreationDate (D:20260810185612-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313) /ModDate (D:20260810185612-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=3da09bbf43977cfa3bc6c230d37c44e165d61570 fecha=2026-08-10 sha256=cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313 comprobaciones=59 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garcia Hurtado) /CreationDate (D:20260810190114-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 389ebc063cef961e96ef04213a9fddd84abd332e48d58f320a0d40d6ca9423ae) /ModDate (D:20260810190114-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=1774c31ead6f8588e18b566eb4b6778f21902173 fecha=2026-08-10 sha256=389ebc063cef961e96ef04213a9fddd84abd332e48d58f320a0d40d6ca9423ae comprobaciones=61 arbol_limpio=no) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 28 0 obj
@@ -244,7 +244,7 @@ endobj
 endobj
 29 0 obj
 <<
-/Length 5322
+/Length 5158
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -300,13 +300,15 @@ Q
 q
 1 0 0 1 78 289.2126 cm
 q
-BT 1 0 0 1 0 94.5 Tm .494811 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Applied to three constructed orderings of the 6-cube that have come down to us, with 2016 pairs and a) Tj T* 0 Tw .084199 Tw (midpoint of 1008, the three outcomes all occur. Two of the constructions force the count to ) Tj /F2 9.5 Tf (1008) Tj /F1 9.5 Tf (, and for) Tj T* 0 Tw 2.395122 Tw (one of them the demonstration is complete with no enumerative residue; a mechanism previously) Tj T* 0 Tw .499005 Tw (claimed for the other is refuted here, since the closure it rests on forces only 484 of the 2016 pairs and) Tj T* 0 Tw .524599 Tw (survives rearrangements that destroy the result, the midpoint coming out in 3836 of the 40320 of them.) Tj T* 0 Tw .640256 Tw (The third construction makes 1008 impossible by the parity obstruction: its structure leaves the interval) Tj T* 0 Tw -0.092078 Tw ([957, 1059] and exactly ) Tj /F2 9.5 Tf (52) Tj /F1 9.5 Tf ( compatible totals within it, 1008 is not among them, and the observed count is) Tj T* 0 Tw /F2 9.5 Tf (1013) Tj /F1 9.5 Tf (.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 94.5 Tm /F1 9.5 Tf 13 TL .494811 Tw (Applied to three constructed orderings of the 6-cube that have come down to us, with 2016 pairs and a) Tj T* 0 Tw .084199 Tw (midpoint of 1008, the three outcomes all occur. Two of the constructions force the count to 1008, and for) Tj T* 0 Tw 2.395122 Tw (one of them the demonstration is complete with no enumerative residue; a mechanism previously) Tj T* 0 Tw .499005 Tw (claimed for the other is refuted here, since the closure it rests on forces only 484 of the 2016 pairs and) Tj T* 0 Tw .524599 Tw (survives rearrangements that destroy the result, the midpoint coming out in 3836 of the 40320 of them.) Tj T* 0 Tw .640256 Tw (The third construction makes 1008 impossible by the parity obstruction: its structure leaves the interval) Tj T* 0 Tw -0.092078 Tw ([957, 1059] and exactly 52 compatible totals within it, 1008 is not among them, and the observed count is) Tj T* 0 Tw (1013.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 218.2126 cm
 q
-BT 1 0 0 1 0 55.5 Tm .085783 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (That difference of ) Tj /F2 9.5 Tf (5) Tj /F1 9.5 Tf ( is decomposed completely over the ) Tj /F2 9.5 Tf (19) Tj /F1 9.5 Tf ( free orbits and has no culprit: every free orbit) Tj T* 0 Tw 2.798507 Tw (deviates, and the deviations nearly cancel. Against a list of candidate structures declared before) Tj T* 0 Tw .095364 Tw (measuring, one narrows the interval, namely the construction's own pairing involution, which is not affine) Tj T* 0 Tw .028799 Tw (and so was absent from a group that is exactly its centraliser; none explains the difference. We therefore) Tj T* 0 Tw (declare the residue informative relative to that list, and stop.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .085783 Tw (That difference of 5 is decomposed completely over the 19 free orbits and has no culprit: every free orbit) Tj T* 0 Tw 2.798507 Tw (deviates, and the deviations nearly cancel. Against a list of candidate structures declared before) Tj T* 0 Tw .095364 Tw (measuring, one narrows the interval, namely the construction's own pairing involution, which is not affine) Tj T* 0 Tw .028799 Tw (and so was absent from a group that is exactly its centraliser; none explains the difference. We therefore) Tj T* 0 Tw (declare the residue informative relative to that list, and stop.) Tj T* ET
 Q
 Q
 q
@@ -868,7 +870,7 @@ endstream
 endobj
 35 0 obj
 <<
-/Length 5902
+/Length 5766
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -888,7 +890,8 @@ Q
 q
 1 0 0 1 78 582.8898 cm
 q
-BT 1 0 0 1 0 68.5 Tm 1.523449 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The lemma is not free. If a set does not contribute exactly half, its two parity classes have different) Tj T* 0 Tw .383506 Tw (cardinalities and no perfect matching can exist, because every edge of the relation graph joins opposite) Tj T* 0 Tw -0.000818 Tw (parities. The check has been carried out where it matters, in both directions. Where the lemma applies, it) Tj T* 0 Tw .664768 Tw (settles a class of ) Tj /F2 9.5 Tf (96) Tj /F1 9.5 Tf ( pairs that Lemma 2 cannot reach, with a contribution of exactly ) Tj /F2 9.5 Tf (48) Tj /F1 9.5 Tf (. Where it does) Tj T* 0 Tw .366005 Tw (not apply, it does not pretend to: of the ) Tj /F2 9.5 Tf (19) Tj /F1 9.5 Tf ( free orbits of the third historical ordering, ) Tj /F2 9.5 Tf (19) Tj /F1 9.5 Tf ( admit no perfect) Tj T* 0 Tw (matching, which is what has to happen if the lemma is not to force what is not forced.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL 1.523449 Tw (The lemma is not free. If a set does not contribute exactly half, its two parity classes have different) Tj T* 0 Tw .383506 Tw (cardinalities and no perfect matching can exist, because every edge of the relation graph joins opposite) Tj T* 0 Tw -0.000818 Tw (parities. The check has been carried out where it matters, in both directions. Where the lemma applies, it) Tj T* 0 Tw .664768 Tw (settles a class of 96 pairs that Lemma 2 cannot reach, with a contribution of exactly 48. Where it does) Tj T* 0 Tw .366005 Tw (not apply, it does not pretend to: of the 19 free orbits of the third historical ordering, 19 admit no perfect) Tj T* 0 Tw (matching, which is what has to happen if the lemma is not to force what is not forced.) Tj T* ET
 Q
 Q
 q
@@ -970,7 +973,7 @@ endstream
 endobj
 36 0 obj
 <<
-/Length 6213
+/Length 6043
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1035,13 +1038,15 @@ Q
 q
 1 0 0 1 78 182.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .802766 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (This is checked on an instance where T is genuinely not normal: a group of order ) Tj /F2 9.5 Tf (16) Tj /F1 9.5 Tf ( built from a V of) Tj T* 0 Tw .370241 Tw (dimension 2 and a coordinate permutation that moves it. The subgroup T fails to be normal, the closure) Tj T* 0 Tw 1.052672 Tw (argument produces an invariant subspace W of dimension ) Tj /F2 9.5 Tf (3) Tj /F1 9.5 Tf (, and of the ) Tj /F2 9.5 Tf (5) Tj /F1 9.5 Tf ( orbits of pairs, ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( have odd) Tj T* 0 Tw (cardinality.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL .802766 Tw (This is checked on an instance where T is genuinely not normal: a group of order 16 built from a V of) Tj T* 0 Tw .370241 Tw (dimension 2 and a coordinate permutation that moves it. The subgroup T fails to be normal, the closure) Tj T* 0 Tw 1.052672 Tw (argument produces an invariant subspace W of dimension 3, and of the 5 orbits of pairs, 0 have odd) Tj T* 0 Tw (cardinality.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 150.8898 cm
 q
-BT 1 0 0 1 0 16.5 Tm -0.094701 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (A declared family of ) Tj /F2 9.5 Tf (50) Tj /F1 9.5 Tf ( further cases, over two dimensions and every subspace of dimension at least two) Tj T* 0 Tw (together with every coordinate permutation, produces no orbit of odd cardinality either.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL -0.094701 Tw (A declared family of 50 further cases, over two dimensions and every subspace of dimension at least two) Tj T* 0 Tw (together with every coordinate permutation, produces no orbit of odd cardinality either.) Tj T* ET
 Q
 Q
 q
@@ -1174,14 +1179,14 @@ endstream
 endobj
 38 0 obj
 <<
-/Length 5885
+/Length 5681
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 78 698.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm 2.215106 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (printed here rather than left to the results file: ) Tj /F2 9.5 Tf (1272) Tj /F1 9.5 Tf ( forced orderings traversed across three block) Tj T* 0 Tw .680947 Tw (systems and two dimensions, of which 200 were found by search in the larger one, giving ) Tj /F2 9.5 Tf (6960) Tj /F1 9.5 Tf ( forced) Tj T* 0 Tw .486268 Tw (orbits in which the matching was verified, and ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( failures of Hall's condition. That is a count, not a proof.) Tj T* 0 Tw .140268 Tw /F2 9.5 Tf (We do not promote it to a theorem.) Tj /F1 9.5 Tf ( A failure could occur in a higher dimension, in another partition, or) Tj T* 0 Tw (in a case the search did not reach.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm 2.215106 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (printed here rather than left to the results file: 1272 forced orderings traversed across three block) Tj T* 0 Tw .680947 Tw (systems and two dimensions, of which 200 were found by search in the larger one, giving 6960 forced) Tj T* 0 Tw .486268 Tw (orbits in which the matching was verified, and 0 failures of Hall's condition. That is a count, not a proof.) Tj T* 0 Tw .140268 Tw /F2 9.5 Tf (We do not promote it to a theorem.) Tj /F1 9.5 Tf ( A failure could occur in a higher dimension, in another partition, or) Tj T* 0 Tw (in a case the search did not reach.) Tj T* ET
 Q
 Q
 q
@@ -1231,7 +1236,7 @@ Q
 q
 1 0 0 1 78 303.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm 1.748318 Tw 13 TL /F3 9.5 Tf 0 0 0 rg (Proof of the second half, by witness.) Tj /F1 9.5 Tf ( Take the smallest block system in the smallest dimension we) Tj T* 0 Tw -0.061467 Tw (enumerate, where the space of orderings is small enough to be traversed in full: all ) Tj /F2 9.5 Tf (40320) Tj /F1 9.5 Tf ( of them, under) Tj T* 0 Tw 1.578768 Tw (one and the same group of order 16. Of those, ) Tj /F2 9.5 Tf (472) Tj /F1 9.5 Tf ( are forced and ) Tj /F2 9.5 Tf (39848) Tj /F1 9.5 Tf ( are not. One group, two) Tj T* 0 Tw (outcomes; therefore the outcome is not a function of the group. QED) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm 1.748318 Tw 13 TL /F3 9.5 Tf 0 0 0 rg (Proof of the second half, by witness.) Tj /F1 9.5 Tf ( Take the smallest block system in the smallest dimension we) Tj T* 0 Tw -0.061467 Tw (enumerate, where the space of orderings is small enough to be traversed in full: all 40320 of them, under) Tj T* 0 Tw 1.578768 Tw (one and the same group of order 16. Of those, 472 are forced and 39848 are not. One group, two) Tj T* 0 Tw (outcomes; therefore the outcome is not a function of the group. QED) Tj T* ET
 Q
 Q
 q
@@ -1272,7 +1277,7 @@ endstream
 endobj
 39 0 obj
 <<
-/Length 6218
+/Length 5844
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1307,25 +1312,28 @@ Q
 q
 1 0 0 1 78 561.8898 cm
 q
-BT 1 0 0 1 0 3.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg (The count is ) Tj /F2 9.5 Tf (1008) Tj /F1 9.5 Tf ( in all four conventions, which is the tie exactly.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F1 9.5 Tf 13 TL (The count is 1008 in all four conventions, which is the tie exactly.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 490.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .636268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The block system is the fibres of the upper trigram, that is, the cosets of the subspace spanned by the) Tj T* 0 Tw .081768 Tw (three lower lines. The group of elements of B_6 respecting it is exactly the set of maps whose linear part) Tj T* 0 Tw .082768 Tw (does not mix the two trigrams, with any mask: 36 such permutations with all 64 masks, of order ) Tj /F2 9.5 Tf (2304) Tj /F1 9.5 Tf (. Its) Tj T* 0 Tw .555505 Tw (orbits of pairs are exactly the classes given by the pair of difference weights, one for each trigram, and) Tj T* 0 Tw (there are ) Tj /F2 9.5 Tf (15) Tj /F1 9.5 Tf ( of them.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .636268 Tw (The block system is the fibres of the upper trigram, that is, the cosets of the subspace spanned by the) Tj T* 0 Tw .081768 Tw (three lower lines. The group of elements of B_6 respecting it is exactly the set of maps whose linear part) Tj T* 0 Tw .082768 Tw (does not mix the two trigrams, with any mask: 36 such permutations with all 64 masks, of order 2304. Its) Tj T* 0 Tw .555505 Tw (orbits of pairs are exactly the classes given by the pair of difference weights, one for each trigram, and) Tj T* 0 Tw (there are 15 of them.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 393.8898 cm
 q
-BT 1 0 0 1 0 81.5 Tm .936033 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Every one of those classes is forced, and the demonstration is in two parts. ) Tj /F2 9.5 Tf (9) Tj /F1 9.5 Tf ( of them, covering 1568) Tj T* 0 Tw .293631 Tw (pairs and contributing 784, are forced by a witness that is argued rather than exhibited: complement the) Tj T* 0 Tw .464123 Tw (lower trigram, and the value order of the pair reverses while the block, and therefore the position order,) Tj T* 0 Tw -0.065083 Tw (does not. The remaining classes are forced by witnesses that are exhibited and verified, and one of them) Tj T* 0 Tw .349672 Tw (has no uniform witness at all in the whole group and needed the matching lemma, with a certificate that) Tj T* 0 Tw .621618 Tw (is deposited pair by pair and can be checked line by line. All ) Tj /F2 9.5 Tf (15) Tj /F1 9.5 Tf ( orbits are forced and ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( are free, so by) Tj T* 0 Tw (Lemma 1 the forced contribution is the whole count, 1008, and the width of the interval is zero.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 81.5 Tm /F1 9.5 Tf 13 TL .936033 Tw (Every one of those classes is forced, and the demonstration is in two parts. 9 of them, covering 1568) Tj T* 0 Tw .293631 Tw (pairs and contributing 784, are forced by a witness that is argued rather than exhibited: complement the) Tj T* 0 Tw .464123 Tw (lower trigram, and the value order of the pair reverses while the block, and therefore the position order,) Tj T* 0 Tw -0.065083 Tw (does not. The remaining classes are forced by witnesses that are exhibited and verified, and one of them) Tj T* 0 Tw .349672 Tw (has no uniform witness at all in the whole group and needed the matching lemma, with a certificate that) Tj T* 0 Tw .621618 Tw (is deposited pair by pair and can be checked line by line. All 15 orbits are forced and 0 are free, so by) Tj T* 0 Tw (Lemma 1 the forced contribution is the whole count, 1008, and the width of the interval is zero.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 270.8898 cm
 q
-BT 1 0 0 1 0 107.5 Tm -0.059495 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (The mechanism that was previously claimed for this count does not hold, and saying so is part of) Tj T* 0 Tw .244806 Tw (the result.) Tj /F1 9.5 Tf ( The claim was that closure under complementation forces the count. Closure does hold, and) Tj T* 0 Tw 2.599539 Tw (it is concrete: the complement sends each octet onto another octet. But the group generated by) Tj T* 0 Tw 1.932006 Tw (complementation alone forces only ) Tj /F2 9.5 Tf (484) Tj /F1 9.5 Tf ( of the 2016 pairs, leaves 540 orbits free, and admits 1049) Tj T* 0 Tw 1.581139 Tw (different compatible totals: an interval, not a value. The control settles it exhaustively rather than by) Tj T* 0 Tw 1.112311 Tw (sample. The family order of the octets can be permuted in every one of the ) Tj /F2 9.5 Tf (40320) Tj /F1 9.5 Tf ( possible ways, all) Tj T* 0 Tw .435699 Tw (such rearrangements keep the closure intact, and the tie comes out in ) Tj /F2 9.5 Tf (3836) Tj /F1 9.5 Tf ( of them, a rate of 0.09514.) Tj T* 0 Tw 1.00108 Tw (Closure is true of the construction and is not what forces the count. What forces it is the full group of) Tj T* 0 Tw (order 2304 together with the received family order.) Tj T* ET
+BT 1 0 0 1 0 107.5 Tm -0.059495 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (The mechanism that was previously claimed for this count does not hold, and saying so is part of) Tj T* 0 Tw .244806 Tw (the result.) Tj /F1 9.5 Tf ( The claim was that closure under complementation forces the count. Closure does hold, and) Tj T* 0 Tw 2.599539 Tw (it is concrete: the complement sends each octet onto another octet. But the group generated by) Tj T* 0 Tw 1.932006 Tw (complementation alone forces only 484 of the 2016 pairs, leaves 540 orbits free, and admits 1049) Tj T* 0 Tw 1.581139 Tw (different compatible totals: an interval, not a value. The control settles it exhaustively rather than by) Tj T* 0 Tw 1.112311 Tw (sample. The family order of the octets can be permuted in every one of the 40320 possible ways, all) Tj T* 0 Tw .435699 Tw (such rearrangements keep the closure intact, and the tie comes out in 3836 of them, a rate of 0.09514.) Tj T* 0 Tw 1.00108 Tw (Closure is true of the construction and is not what forces the count. What forces it is the full group of) Tj T* 0 Tw (order 2304 together with the received family order.) Tj T* ET
 Q
 Q
 q
@@ -1338,7 +1346,8 @@ Q
 q
 1 0 0 1 78 223.8898 cm
 q
-BT 1 0 0 1 0 3.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg (The count is again ) Tj /F2 9.5 Tf (1008) Tj /F1 9.5 Tf ( in all four conventions.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F1 9.5 Tf 13 TL (The count is again 1008 in all four conventions.) Tj T* ET
 Q
 Q
 q
@@ -1351,7 +1360,8 @@ Q
 q
 1 0 0 1 78 107.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm 1.673976 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The group respecting the palaces is exactly the translations by the diagonal, of order ) Tj /F2 9.5 Tf (8) Tj /F1 9.5 Tf (, and this is) Tj T* 0 Tw 1.430114 Tw (proved rather than enumerated: any respecting map must preserve the multiset of differences of the) Tj T* 0 Tw 1.714055 Tw (mask set, whose multiplicities line by line are 12 15 16 12 15 0, so one line never appears in any) Tj T* 0 Tw .032006 Tw (difference and the remaining multiplicities are distinct enough to pin the permutation down to the identity,) Tj T* 0 Tw (after which the mask is forced into the diagonal.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL 1.673976 Tw (The group respecting the palaces is exactly the translations by the diagonal, of order 8, and this is) Tj T* 0 Tw 1.430114 Tw (proved rather than enumerated: any respecting map must preserve the multiset of differences of the) Tj T* 0 Tw 1.714055 Tw (mask set, whose multiplicities line by line are 12 15 16 12 15 0, so one line never appears in any) Tj T* 0 Tw .032006 Tw (difference and the remaining multiplicities are distinct enough to pin the permutation down to the identity,) Tj T* 0 Tw (after which the mask is forced into the diagonal.) Tj T* ET
 Q
 Q
  
@@ -1359,14 +1369,14 @@ endstream
 endobj
 40 0 obj
 <<
-/Length 6922
+/Length 6320
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 78 698.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .247768 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The ) Tj /F2 9.5 Tf (280) Tj /F1 9.5 Tf ( orbits are classified by hand into three families, and every one of them is forced: those inside a) Tj T* 0 Tw .184152 Tw (single palace by an argued witness, the complement, which here is the translation by the all ones vector) Tj T* 0 Tw .260477 Tw (of the diagonal; and the rest by exhibited witnesses, deposited orbit by orbit. There are ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( free orbits and) Tj T* 0 Tw .440449 Tw (exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( compatible total, so by Lemma 1 that total is the tie. ) Tj /F2 9.5 Tf (For this ordering the demonstration is) Tj T* 0 Tw (complete: there is no enumerative residue.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm .247768 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The 280 orbits are classified by hand into three families, and every one of them is forced: those inside a) Tj T* 0 Tw .184152 Tw (single palace by an argued witness, the complement, which here is the translation by the all ones vector) Tj T* 0 Tw .260477 Tw (of the diagonal; and the rest by exhibited witnesses, deposited orbit by orbit. There are 0 free orbits and) Tj T* 0 Tw .440449 Tw (exactly 1 compatible total, so by Lemma 1 that total is the tie. ) Tj /F2 9.5 Tf (For this ordering the demonstration is) Tj T* 0 Tw (complete: there is no enumerative residue.) Tj T* ET
 Q
 Q
 q
@@ -1379,13 +1389,15 @@ Q
 q
 1 0 0 1 78 612.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .550268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The count is ) Tj /F2 9.5 Tf (1013) Tj /F1 9.5 Tf ( under the two conventions that read yang as one, and ) Tj /F2 9.5 Tf (1003) Tj /F1 9.5 Tf ( under the two that read) Tj T* 0 Tw 1.112311 Tw (yang as zero. The two are symmetric about the tie, since exchanging the roles of yang and yin turns) Tj T* 0 Tw 2.015417 Tw (every discordant pair into a concordant one, and 1013 plus 1003 is twice 1008. Neither is the tie.) Tj T* 0 Tw (Everything below explains why neither could have been.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL .550268 Tw (The count is 1013 under the two conventions that read yang as one, and 1003 under the two that read) Tj T* 0 Tw 1.112311 Tw (yang as zero. The two are symmetric about the tie, since exchanging the roles of yang and yin turns) Tj T* 0 Tw 2.015417 Tw (every discordant pair into a concordant one, and 1013 plus 1003 is twice 1008. Neither is the tie.) Tj T* 0 Tw (Everything below explains why neither could have been.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 567.8898 cm
 q
-BT 1 0 0 1 0 29.5 Tm .496768 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The construction pairs the sequence into ) Tj /F2 9.5 Tf (32) Tj /F1 9.5 Tf ( adjacent blocks of two: the ) Tj /F2 9.5 Tf (28) Tj /F1 9.5 Tf ( orbits of size two of the half) Tj T* 0 Tw 2.601439 Tw (turn, together with the ) Tj /F2 9.5 Tf (8) Tj /F1 9.5 Tf ( hexagrams that the half turn leaves fixed, paired among themselves by) Tj T* 0 Tw (complementation.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .496768 Tw (The construction pairs the sequence into 32 adjacent blocks of two: the 28 orbits of size two of the half) Tj T* 0 Tw 2.601439 Tw (turn, together with the 8 hexagrams that the half turn leaves fixed, paired among themselves by) Tj T* 0 Tw (complementation.) Tj T* ET
 Q
 Q
 q
@@ -1397,7 +1409,8 @@ Q
 q
 1 0 0 1 78 386.8898 cm
 q
-BT 1 0 0 1 0 68.5 Tm .790366 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (From that block system, the group respecting it is exactly the centraliser of the half turn inside B_6, of) Tj T* 0 Tw -0.069151 Tw (order ) Tj /F2 9.5 Tf (384) Tj /F1 9.5 Tf (, and this is proved rather than counted: the block differences are precisely the nonzero vectors) Tj T* 0 Tw .02353 Tw (of the subspace of size ) Tj /F2 9.5 Tf (8) Tj /F1 9.5 Tf ( fixed by the half turn, a respecting map must preserve that subspace, its only ) Tj /F2 9.5 Tf (3) Tj /F1 9.5 Tf  T* 0 Tw .471268 Tw (elements of weight two are the ones that pair the mirror lines, so the linear part commutes with the half) Tj T* 0 Tw .33988 Tw (turn and there are 48 such permutations, and the mask is then forced to be fixed by the half turn, which) Tj T* 0 Tw (leaves 8 masks. The predicted order 48 times 8 is 384, and it agrees with the enumeration.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL .790366 Tw (From that block system, the group respecting it is exactly the centraliser of the half turn inside B_6, of) Tj T* 0 Tw -0.069151 Tw (order 384, and this is proved rather than counted: the block differences are precisely the nonzero vectors) Tj T* 0 Tw .02353 Tw (of the subspace of size 8 fixed by the half turn, a respecting map must preserve that subspace, its only 3) Tj T* 0 Tw .471268 Tw (elements of weight two are the ones that pair the mirror lines, so the linear part commutes with the half) Tj T* 0 Tw .33988 Tw (turn and there are 48 such permutations, and the mask is then forced to be fixed by the half turn, which) Tj T* 0 Tw (leaves 8 masks. The predicted order 48 times 8 is 384, and it agrees with the enumeration.) Tj T* ET
 Q
 Q
 q
@@ -1409,7 +1422,7 @@ Q
 q
 1 0 0 1 78 257.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .10238 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Here is the whole account in figures. Of the 36 orbits of that group on pairs, ) Tj /F2 9.5 Tf (17) Tj /F1 9.5 Tf ( are forced and contribute) Tj T* 0 Tw 1.176623 Tw (374, and ) Tj /F2 9.5 Tf (19) Tj /F1 9.5 Tf ( are free. The structure therefore leaves the interval ) Tj /F2 9.5 Tf ([957, 1059]) Tj /F1 9.5 Tf (, and inside it exactly ) Tj /F2 9.5 Tf (52) Tj /F1 9.5 Tf  T* 0 Tw .230394 Tw (totals are compatible, of the 103 integers the interval contains. The observed 1013 is one of the 52. The) Tj T* 0 Tw .684255 Tw (tie, 1008, lies well inside the interval and is ) Tj /F2 9.5 Tf (not) Tj /F1 9.5 Tf ( one of them: the nearest compatible total to it is ) Tj /F2 9.5 Tf (1007) Tj /F1 9.5 Tf (,) Tj T* 0 Tw (one below. The tie is not missed by a small amount, it is absent from the list.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm .10238 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Here is the whole account in figures. Of the 36 orbits of that group on pairs, 17 are forced and contribute) Tj T* 0 Tw 1.238094 Tw (374, and 19 are free. The structure therefore leaves the interval [957, 1059], and inside it exactly 52) Tj T* 0 Tw .230394 Tw (totals are compatible, of the 103 integers the interval contains. The observed 1013 is one of the 52. The) Tj T* 0 Tw .684255 Tw (tie, 1008, lies well inside the interval and is ) Tj /F2 9.5 Tf (not) Tj /F1 9.5 Tf ( one of them: the nearest compatible total to it is 1007,) Tj T* 0 Tw (one below. The tie is not missed by a small amount, it is absent from the list.) Tj T* ET
 Q
 Q
 q
@@ -1436,7 +1449,7 @@ Q
 q
 1 0 0 1 78 81.88976 cm
 q
-BT 1 0 0 1 0 29.5 Tm -0.086732 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The one that counts is the pairing involution itself, the map that sends each hexagram to its partner in the) Tj T* 0 Tw 1.58248 Tw (construction. ) Tj /F2 9.5 Tf (It is not affine) Tj /F1 9.5 Tf (, which is why it was not in the group at all, even though that group is) Tj T* 0 Tw .024005 Tw (precisely its centraliser. Adding it takes the group from 384 to ) Tj /F2 9.5 Tf (768) Tj /F1 9.5 Tf (, cuts the free orbits from 19 to ) Tj /F2 9.5 Tf (17) Tj /F1 9.5 Tf (, and) Tj T* 0 Tw ET
+BT 1 0 0 1 0 29.5 Tm -0.086732 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The one that counts is the pairing involution itself, the map that sends each hexagram to its partner in the) Tj T* 0 Tw 1.58248 Tw (construction. ) Tj /F2 9.5 Tf (It is not affine) Tj /F1 9.5 Tf (, which is why it was not in the group at all, even though that group is) Tj T* 0 Tw .024005 Tw (precisely its centraliser. Adding it takes the group from 384 to 768, cuts the free orbits from 19 to 17, and) Tj T* 0 Tw ET
 Q
 Q
  
@@ -1444,14 +1457,14 @@ endstream
 endobj
 41 0 obj
 <<
-/Length 5842
+/Length 5706
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 78 724.8898 cm
 q
-BT 1 0 0 1 0 29.5 Tm .164322 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (narrows the interval from [957, 1059] to ) Tj /F2 9.5 Tf ([961, 1055]) Tj /F1 9.5 Tf (, that is, from a width of 102 to one of ) Tj /F2 9.5 Tf (94) Tj /F1 9.5 Tf (. It does not) Tj T* 0 Tw .274768 Tw (force, the tie is still not reachable, which the table records as ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf (, and the observed count does not move:) Tj T* 0 Tw (changing the group changes neither the sequence nor its discordance.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm .211822 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (narrows the interval from [957, 1059] to [961, 1055], that is, from a width of 102 to one of 94. It does not) Tj T* 0 Tw .274768 Tw (force, the tie is still not reachable, which the table records as 0, and the observed count does not move:) Tj T* 0 Tw (changing the group changes neither the sequence nor its discordance.) Tj T* ET
 Q
 Q
 q
@@ -1464,7 +1477,8 @@ Q
 q
 1 0 0 1 78 625.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .218268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The count differs from the tie by ) Tj /F2 9.5 Tf (5) Tj /F1 9.5 Tf (, that being 1013 minus 1008, and the natural question is where those) Tj T* 0 Tw 1.053268 Tw (5 sit. Each free orbit contributes its half plus a deviation, the deviations sum to exactly 5, and the full) Tj T* 0 Tw .912339 Tw (decomposition over the 19 free orbits, with cardinality, half, contribution and deviation for each one, is) Tj T* 0 Tw .414268 Tw (reported as a table in the results and in the accompanying report. Two things can be read off it directly,) Tj T* 0 Tw (and nothing else is read off it here:) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .218268 Tw (The count differs from the tie by 5, that being 1013 minus 1008, and the natural question is where those) Tj T* 0 Tw 1.053268 Tw (5 sit. Each free orbit contributes its half plus a deviation, the deviations sum to exactly 5, and the full) Tj T* 0 Tw .912339 Tw (decomposition over the 19 free orbits, with cardinality, half, contribution and deviation for each one, is) Tj T* 0 Tw .414268 Tw (reported as a table in the results and in the accompanying report. Two things can be read off it directly,) Tj T* 0 Tw (and nothing else is read off it here:) Tj T* ET
 Q
 Q
 q
@@ -1559,7 +1573,7 @@ endstream
 endobj
 42 0 obj
 <<
-/Length 16273
+/Length 16640
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1580,16 +1594,22 @@ q
 1 0 0 1 78 612.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL 2.141711 Tw (Dimensions three to six, every level, in one table with the same columns. The order of the group) Tj T* 0 Tw .100219 Tw (respecting B\(n, k\) is k factorial times n minus k factorial times 2 to the n, which was stated in the general) Tj T* 0 Tw .470268 Tw (preregistration before any of this was run and is verified in all 14 rows. The order of the group depends) Tj T* 0 Tw 2.174631 Tw (only on the partition and not on the ordering, which the same table confirms across thousands of) Tj T* 0 Tw (orderings.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .557447 Tw (Table 1 gives dimensions three to six, every level, with the same columns throughout. The order of the) Tj T* 0 Tw .452171 Tw (group respecting B\(n, k\) is k factorial times n minus k factorial times 2 to the n, which was stated in the) Tj T* 0 Tw .720768 Tw (general preregistration before any of this was run and is verified in all 14 rows. The order of the group) Tj T* 0 Tw .392193 Tw (depends only on the partition and not on the ordering, which the same table confirms across thousands) Tj T* 0 Tw (of orderings.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 276.8898 cm
+1 0 0 1 78 593.8898 cm
+q
+BT 1 0 0 1 0 3.5 Tm 13 TL /F2 9.5 Tf 0 0 0 rg (Table 1.) Tj /F1 9.5 Tf ( ) Tj /F3 9.5 Tf (The landscape B\(n, k\) in dimensions three to six.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 257.8898 cm
 q
 .960784 .960784 .960784 rg
 n 0 330 439.2756 -16 re f*
 0 0 0 rg
-BT /F1 10 Tf 12 TL ET
+BT /F2 10 Tf 12 TL ET
 q
 1 0 0 1 3 317 cm
 q
@@ -1653,6 +1673,7 @@ q
 BT 1 0 0 1 0 2.4 Tm /F1 7.6 Tf 10 TL (cases) Tj T* ET
 Q
 Q
+BT /F1 10 Tf 12 TL ET
 q
 1 0 0 1 3 301 cm
 q
@@ -1881,7 +1902,7 @@ q
 1 0 0 1 247.042 223 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2.4 Tm /F2 7.6 Tf 10 TL (36) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm /F1 7.6 Tf 10 TL (36) Tj T* ET
 Q
 Q
 q
@@ -2070,7 +2091,7 @@ q
 1 0 0 1 247.042 145 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2.4 Tm /F2 7.6 Tf 10 TL (10) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm /F1 7.6 Tf 10 TL (10) Tj T* ET
 Q
 Q
 q
@@ -2133,7 +2154,7 @@ q
 1 0 0 1 247.042 119 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2.4 Tm /F2 7.6 Tf 10 TL (9) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm /F1 7.6 Tf 10 TL (9) Tj T* ET
 Q
 Q
 q
@@ -2570,25 +2591,25 @@ Q
 Q
 Q
 q
-1 0 0 1 78 268.3858 cm
+1 0 0 1 78 249.3858 cm
 Q
 q
-1 0 0 1 78 210.3858 cm
+1 0 0 1 78 191.3858 cm
 q
-BT 1 0 0 1 0 42.5 Tm .328662 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The last three columns are the distribution of the three outcomes over the parametrised family, by block) Tj T* 0 Tw .18527 Tw (order and internal order; a dot means the distribution was not measured. The ) Tj /F2 9.5 Tf (forced) Tj /F1 9.5 Tf ( column is empty in) Tj T* 0 Tw 1.288061 Tw (every row at an extreme level and non empty only at the intermediate ones, which is the shape that) Tj T* 0 Tw (section 7.3 takes up and cuts down to size.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm -0.125995 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The last three columns of Table 1 are the distribution of the three outcomes over the parametrised family,) Tj T* 0 Tw .247299 Tw (by block order and internal order; a dot means the distribution was not measured. The ) Tj /F2 9.5 Tf (forced) Tj /F1 9.5 Tf ( column is) Tj T* 0 Tw .164768 Tw (empty in every row at an extreme level and non empty only at the intermediate ones, which is the shape) Tj T* 0 Tw (that section 7.3 takes up and cuts down to size.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 152.3858 cm
+1 0 0 1 78 133.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL 2.355706 Tw (Each row reports the outcome for two fixed orderings, the reflected Gray code and the canonical) Tj T* 0 Tw .361912 Tw (member of the parametrised family, and, where the space of orderings of that family was small enough,) Tj T* 0 Tw 1.406283 Tw (the full distribution of the three outcomes over it. Where it was not small enough, a sample with the) Tj T* 0 Tw (frozen seed was used and is labelled as a sample.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 120.3858 cm
+1 0 0 1 78 88.38583 cm
 q
-BT 1 0 0 1 0 16.5 Tm .559682 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (One historical row belongs here and is kept apart.) Tj /F1 9.5 Tf ( The first historical ordering does fit the family, at) Tj T* 0 Tw (the middle level of dimension six, since its octets are exactly those cosets. Its row reads:) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm .559682 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (One historical row belongs here and is kept apart.) Tj /F1 9.5 Tf ( The first historical ordering does fit the family, at) Tj T* 0 Tw .183605 Tw (the middle level of dimension six, since its octets are exactly those cosets. Its row is Table 2, kept out of) Tj T* 0 Tw (Table 1 so that the parametrised family and the received sequence are not read as one population:) Tj T* ET
 Q
 Q
  
@@ -2596,17 +2617,23 @@ endstream
 endobj
 43 0 obj
 <<
-/Length 7526
+/Length 7556
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 711.8898 cm
+1 0 0 1 78 750.8898 cm
+q
+BT 1 0 0 1 0 3.5 Tm 13 TL /F2 9.5 Tf 0 0 0 rg (Table 2.) Tj /F1 9.5 Tf ( ) Tj /F3 9.5 Tf (The one historical ordering that fits the family, reported apart.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 692.8898 cm
 q
 .960784 .960784 .960784 rg
 n 0 52 439.2756 -26 re f*
 0 0 0 rg
-BT /F1 10 Tf 12 TL ET
+BT /F2 10 Tf 12 TL ET
 q
 1 0 0 1 3 39 cm
 q
@@ -2663,6 +2690,7 @@ q
 BT 1 0 0 1 0 2.4 Tm /F1 7.6 Tf 10 TL (outcome) Tj T* ET
 Q
 Q
+BT /F1 10 Tf 12 TL ET
 q
 1 0 0 1 3 3 cm
 q
@@ -2740,85 +2768,86 @@ Q
 Q
 Q
 q
-1 0 0 1 78 703.3858 cm
+1 0 0 1 78 684.3858 cm
 Q
 q
-1 0 0 1 78 658.3858 cm
+1 0 0 1 78 639.3858 cm
 q
-BT 1 0 0 1 0 29.5 Tm 1.345588 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (0) Tj /F1 9.5 Tf ( free orbits, exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( compatible total, and that total is 1008: the forced outcome of section 6 read) Tj T* 0 Tw 2.671106 Tw (inside the general frame rather than beside it, and the same figure that the demonstration there) Tj T* 0 Tw (produces.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL 1.111255 Tw (Table 2 reports 0 free orbits, exactly 1 compatible total, and that total is 1008: the forced outcome of) Tj T* 0 Tw .120447 Tw (section 6 read inside the general frame rather than beside it, and the same figure that the demonstration) Tj T* 0 Tw (there produces.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 630.3858 cm
+1 0 0 1 78 611.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (7.3 A shape that we tried to raise to a theorem, and could not) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 585.3858 cm
+1 0 0 1 78 566.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL 1.229006 Tw (Across the grid, the forced outcome appeared only at intermediate levels and never at the extremes.) Tj T* 0 Tw 1.169311 Tw (That was a real observation about what had been measured, and the temptation was to state it as a) Tj T* 0 Tw (property of the extremes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 501.3858 cm
+1 0 0 1 78 482.3858 cm
 q
-BT 1 0 0 1 0 68.5 Tm -0.093024 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (It is false, and the refutation is by exhaustive enumeration.) Tj /F1 9.5 Tf ( In the smallest dimension the space of all) Tj T* 0 Tw 1.891917 Tw (orderings can be traversed in full, all ) Tj /F2 9.5 Tf (40320) Tj /F1 9.5 Tf ( of them, and at both extreme levels it contains forced) Tj T* 0 Tw .935505 Tw (orderings, with a witness exhibited: ) Tj /F2 9.5 Tf (472) Tj /F1 9.5 Tf ( of them at the lower extreme and ) Tj /F2 9.5 Tf (600) Tj /F1 9.5 Tf ( at the upper. One also) Tj T* 0 Tw 3.382858 Tw (turns up at an extreme level in the next dimension. Note that neither count is zero while the) Tj T* 0 Tw .959799 Tw (corresponding cell of the table above is: the forced orderings exist, and they lie outside the family the) Tj T* 0 Tw (table samples.) Tj T* ET
+BT 1 0 0 1 0 68.5 Tm -0.093024 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (It is false, and the refutation is by exhaustive enumeration.) Tj /F1 9.5 Tf ( In the smallest dimension the space of all) Tj T* 0 Tw 1.891917 Tw (orderings can be traversed in full, all 40320 of them, and at both extreme levels it contains forced) Tj T* 0 Tw .935505 Tw (orderings, with a witness exhibited: 472 of them at the lower extreme and 600 at the upper. One also) Tj T* 0 Tw 3.382858 Tw (turns up at an extreme level in the next dimension. Note that neither count is zero while the) Tj T* 0 Tw .959799 Tw (corresponding cell of the table above is: the forced orderings exist, and they lie outside the family the) Tj T* 0 Tw (table samples.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 456.3858 cm
+1 0 0 1 78 437.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL 2.143539 Tw (What had been measured was not false, it was narrower than the sentence suggested: within the) Tj T* 0 Tw 1.793306 Tw (parametrised family there is indeed no forced ordering at the extremes, and that remains true. The) Tj T* 0 Tw (property belongs to the family, not to the extremes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 385.3858 cm
+1 0 0 1 78 366.3858 cm
 q
 BT 1 0 0 1 0 55.5 Tm .249535 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (The lesson about sampling is worth stating, because it is general.) Tj /F1 9.5 Tf ( The forced class is small, and at) Tj T* 0 Tw 1.418193 Tw (the extreme levels it lies entirely outside the family that was being sampled. No amount of sampling) Tj T* 0 Tw 1.186631 Tw (inside that family would ever have produced a counterexample: the sample was not too small, it was) Tj T* 0 Tw .464123 Tw (drawn from the wrong set. Enumerating the whole space in the one dimension where that is possible is) Tj T* 0 Tw (what settled it.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 357.3858 cm
+1 0 0 1 78 338.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (7.4 The reflected Gray code as a reference, and an error of ours) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 299.3858 cm
+1 0 0 1 78 280.3858 cm
 q
 BT 1 0 0 1 0 42.5 Tm .109268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The reflected Gray code enters as a ) Tj /F2 9.5 Tf (reference ordering) Tj /F1 9.5 Tf ( and not as a relative of anything. It is built from) Tj T* 0 Tw .102306 Tw (its recursive definition and checked against the closed form. A separation is needed on first appearance:) Tj T* 0 Tw 1.424741 Tw (in the Gray code literature ) Tj /F3 9.5 Tf (balanced) Tj /F1 9.5 Tf ( refers to the transition counts per coordinate, and not to the tie) Tj T* 0 Tw (measured here.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 202.3858 cm
+1 0 0 1 78 183.3858 cm
 q
 BT 1 0 0 1 0 81.5 Tm .118505 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (Its results in this table are corrected ones, and the correction is ours to report.) Tj /F1 9.5 Tf ( An earlier run used) Tj T* 0 Tw .927947 Tw (a construction that added the wrong coordinate at each recursive step, so it was not the ordering that) Tj T* 0 Tw .243539 Tw (had been declared. The discrepancy surfaced only when dimension six was brought into the same table) Tj T* 0 Tw .977506 Tw (as the smaller ones and the same object produced two different outcomes. The declared construction) Tj T* 0 Tw .771106 Tw (reproduces the closed form and the earlier one does not. With the declared construction the reference) Tj T* 0 Tw .789311 Tw (ordering falls in the same outcome in every row of the table, and the apparent anomaly that an earlier) Tj T* 0 Tw (draft tried to explain ) Tj /F2 9.5 Tf (did not exist) Tj /F1 9.5 Tf (. Both reports carry a visible amendment saying so.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 170.3858 cm
+1 0 0 1 78 151.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .947806 Tw (That episode produced a working rule that this paper follows: a reimplementation of an object already) Tj T* 0 Tw (built inherits the verifications of the original, or states in writing why it does not.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 142.3858 cm
+1 0 0 1 78 123.3858 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (7.5 What the landscape shows and what it does not) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 84.38583 cm
+1 0 0 1 78 78.38583 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL .449004 Tw (The table shows that the outcome is not a function of the group: within a row the group is fixed and the) Tj T* 0 Tw .923006 Tw (outcomes differ. It shows that the forced outcome is possible in this family only at intermediate levels,) Tj T* 0 Tw 2.04727 Tw (and that outside the family it is possible at the extremes too. And it shows the reference ordering) Tj T* 0 Tw (behaving uniformly across four dimensions.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .449004 Tw (The table shows that the outcome is not a function of the group: within a row the group is fixed and the) Tj T* 0 Tw .923006 Tw (outcomes differ. It shows that the forced outcome is possible in this family only at intermediate levels,) Tj T* 0 Tw 2.04727 Tw (and that outside the family it is possible at the extremes too. And it shows the reference ordering) Tj T* 0 Tw ET
 Q
 Q
  
@@ -2826,104 +2855,111 @@ endstream
 endobj
 44 0 obj
 <<
-/Length 6107
+/Length 5851
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 724.8898 cm
+1 0 0 1 78 750.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F1 9.5 Tf 13 TL (behaving uniformly across four dimensions.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 705.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .229506 Tw (It does not show a classification. Which combinations of group and ordering fall into which outcome was) Tj T* 0 Tw .319588 Tw (declared, before any of this was measured, as a question on which no prediction would be made, and it) Tj T* 0 Tw (remains unanswered. The 14 rows in four dimensions are a shape, not a theorem.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 688.8898 cm
+1 0 0 1 78 669.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 8 Tm /F2 14 Tf 22 TL (8. Open problems) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 656.8898 cm
+1 0 0 1 78 637.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .386768 Tw (Four things are open. Each is stated with what was measured, and with what would close it, so that the) Tj T* 0 Tw (section is a list of specified tasks rather than of wishes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 628.8898 cm
+1 0 0 1 78 609.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (8.1 Does Hall's condition ever fail on a forced orbit?) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 583.8898 cm
+1 0 0 1 78 564.8898 cm
 q
 BT 1 0 0 1 0 29.5 Tm 1.259033 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is proved.) Tj /F1 9.5 Tf ( One direction needs no search: if an orbit is not forced, no perfect matching of the) Tj T* 0 Tw 1.119537 Tw (relation graph can exist, because every edge joins pairs of opposite parity and the two parity classes) Tj T* 0 Tw (then have different cardinalities.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 499.8898 cm
+1 0 0 1 78 480.8898 cm
 q
-BT 1 0 0 1 0 68.5 Tm 1.111206 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( The converse, that a forced orbit always admits such a matching, requires Hall's) Tj T* 0 Tw .121005 Tw (condition, which could fail. A bounded search was declared in advance, with its space, its seed and both) Tj T* 0 Tw .821474 Tw (outcome branches fixed before running: the ) Tj /F2 9.5 Tf (472) Tj /F1 9.5 Tf ( and ) Tj /F2 9.5 Tf (600) Tj /F1 9.5 Tf ( forced orderings of two block systems in the) Tj T* 0 Tw 1.617239 Tw (smallest dimension, taken whole, and ) Tj /F2 9.5 Tf (200) Tj /F1 9.5 Tf ( forced orderings of a third system in the next dimension,) Tj T* 0 Tw -0.118995 Tw (found using Theorem 2 of section 5. That is ) Tj /F2 9.5 Tf (6960) Tj /F1 9.5 Tf ( forced orbits in which the matching was verified, across) Tj T* 0 Tw (three block systems and two dimensions, and ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( failures.) Tj T* ET
+BT 1 0 0 1 0 68.5 Tm 1.111206 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( The converse, that a forced orbit always admits such a matching, requires Hall's) Tj T* 0 Tw .121005 Tw (condition, which could fail. A bounded search was declared in advance, with its space, its seed and both) Tj T* 0 Tw .821474 Tw (outcome branches fixed before running: the 472 and 600 forced orderings of two block systems in the) Tj T* 0 Tw 1.617239 Tw (smallest dimension, taken whole, and 200 forced orderings of a third system in the next dimension,) Tj T* 0 Tw -0.118995 Tw (found using Theorem 2 of section 5. That is 6960 forced orbits in which the matching was verified, across) Tj T* 0 Tw (three block systems and two dimensions, and 0 failures.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 467.8898 cm
+1 0 0 1 78 448.8898 cm
 q
 BT 1 0 0 1 0 16.5 Tm -0.059356 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What was deliberately not done.) Tj /F1 9.5 Tf ( The status was not promoted. Absence of a failure in a finite search is) Tj T* 0 Tw (not a theorem, and the branch that said so was written before the search ran.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 409.8898 cm
+1 0 0 1 78 390.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm 1.787417 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What would close it.) Tj /F1 9.5 Tf ( Either a proof that the relation graph of a forced orbit always satisfies Hall's) Tj T* 0 Tw -0.071861 Tw (condition, or a single counterexample: a forced orbit whose two parity classes admit no perfect matching.) Tj T* 0 Tw 1.404049 Tw (A counterexample would also refute the equivalence between the matching criterion and forcedness,) Tj T* 0 Tw (which is currently the informative half of the characterisation of section 5.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 381.8898 cm
+1 0 0 1 78 362.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (8.2 How many orderings are forced?) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 323.8898 cm
+1 0 0 1 78 304.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .525787 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( In the smallest dimension the space of all ) Tj /F2 9.5 Tf (40320) Tj /F1 9.5 Tf ( orderings is enumerable, and the) Tj T* 0 Tw .349672 Tw (number of forced ones is known exactly for both block systems, under a single group in each case: ) Tj /F2 9.5 Tf (472) Tj /F1 9.5 Tf  T* 0 Tw -0.055795 Tw (for one and ) Tj /F2 9.5 Tf (600) Tj /F1 9.5 Tf ( for the other. Theorem 2 of section 5 says exactly which orderings those are: the ones in) Tj T* 0 Tw (which every difference class splits in two.) Tj T* ET
+BT 1 0 0 1 0 42.5 Tm .525787 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( In the smallest dimension the space of all 40320 orderings is enumerable, and the) Tj T* 0 Tw .349672 Tw (number of forced ones is known exactly for both block systems, under a single group in each case: 472) Tj T* 0 Tw -0.055795 Tw (for one and 600 for the other. Theorem 2 of section 5 says exactly which orderings those are: the ones in) Tj T* 0 Tw (which every difference class splits in two.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 265.8898 cm
+1 0 0 1 78 246.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm 1.923435 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is missing.) Tj /F1 9.5 Tf ( A formula, or even an asymptotic. The characterisation turns membership into a) Tj T* 0 Tw 2.636614 Tw (countable condition but does not count the members. The condition is a system of simultaneous) Tj T* 0 Tw 2.354199 Tw (exact-halving constraints, one per difference class, over the symmetric group on the vertices, and) Tj T* 0 Tw (nothing here says how many permutations satisfy such a system.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 233.8898 cm
+1 0 0 1 78 214.8898 cm
 q
 BT 1 0 0 1 0 16.5 Tm 2.041573 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What would close it.) Tj /F1 9.5 Tf ( A count, in closed form or asymptotically, of the permutations satisfying the) Tj T* 0 Tw (difference-class conditions of Theorem 2, in terms of n and of the block system.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 205.8898 cm
+1 0 0 1 78 186.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (8.3 The residue of the third historical ordering) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 134.8898 cm
+1 0 0 1 78 115.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm .129756 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( The count, ) Tj /F2 9.5 Tf (1013) Tj /F1 9.5 Tf (, differs from the tie by ) Tj /F2 9.5 Tf (5) Tj /F1 9.5 Tf (, that difference is decomposed completely) Tj T* 0 Tw .027682 Tw (over the ) Tj /F2 9.5 Tf (19) Tj /F1 9.5 Tf ( free orbits, and the decomposition has no culprit: every free orbit deviates and the deviations) Tj T* 0 Tw -0.001463 Tw (very nearly cancel. A closed list of five candidate structures was declared before measuring; one of them) Tj T* 0 Tw .790221 Tw (narrows the interval and none explains the difference. The residue is declared ) Tj /F2 9.5 Tf (informative relative to) Tj T* 0 Tw (that list) Tj /F1 9.5 Tf (.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm .129756 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( The count, 1013, differs from the tie by 5, that difference is decomposed completely) Tj T* 0 Tw .027682 Tw (over the 19 free orbits, and the decomposition has no culprit: every free orbit deviates and the deviations) Tj T* 0 Tw -0.001463 Tw (very nearly cancel. A closed list of five candidate structures was declared before measuring; one of them) Tj T* 0 Tw .790221 Tw (narrows the interval and none explains the difference. The residue is declared ) Tj /F2 9.5 Tf (informative relative to) Tj T* 0 Tw (that list) Tj /F1 9.5 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 89.88976 cm
+1 0 0 1 78 83.88976 cm
 q
-BT 1 0 0 1 0 29.5 Tm .564935 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What would close it, structurally.) Tj /F1 9.5 Tf ( A structure, outside the declared list, that the construction respects) Tj T* 0 Tw 1.813037 Tw (and that absorbs the difference. The declaration is relative to the list precisely so that this remains) Tj T* 0 Tw (possible.) Tj T* ET
+BT 1 0 0 1 0 16.5 Tm .564935 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What would close it, structurally.) Tj /F1 9.5 Tf ( A structure, outside the declared list, that the construction respects) Tj T* 0 Tw 1.813037 Tw (and that absorbs the difference. The declaration is relative to the list precisely so that this remains) Tj T* 0 Tw ET
 Q
 Q
  
@@ -2931,100 +2967,106 @@ endstream
 endobj
 45 0 obj
 <<
-/Length 5906
+/Length 5793
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 749.8898 cm
+1 0 0 1 78 750.8898 cm
+q
+BT 1 0 0 1 0 3.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg (possible.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 728.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3.5 Tm /F4 10.5 Tf 14 TL (The one principled route that remains, named as future work) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 678.8898 cm
+1 0 0 1 78 657.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .830768 Tw (There is one route we can name rather than gesture at. Radisic [9] proves that the pairing of the third) Tj T* 0 Tw 2.243216 Tw (ordering is the unique cost-minimising equivariant matching under his criteria. Conditioning on that) Tj T* 0 Tw .387268 Tw (matching leaves a family of orderings: all those that realise it, differing only in the order of the pairs and) Tj T* 0 Tw 1.115152 Tw (in the orientation within each pair. Inside that family, the received ordering is one point, and its count) Tj T* 0 Tw (could be located among the counts of the rest.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 607.8898 cm
+1 0 0 1 78 586.8898 cm
 q
 BT 1 0 0 1 0 55.5 Tm .083768 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (That is an inferential question, and it is not asked in this paper.) Tj /F1 9.5 Tf ( Locating a value inside a family and) Tj T* 0 Tw .032381 Tw (reading anything from where it falls requires a null declared before looking, a family of comparisons fixed) Tj T* 0 Tw .227724 Tw (before looking, and discipline of multiplicity over everything that could have been looked at and was not.) Tj T* 0 Tw .493741 Tw (This work builds none of the three, and therefore cannot support such a reading with these numbers or) Tj T* 0 Tw (with larger ones.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 536.8898 cm
+1 0 0 1 78 515.8898 cm
 q
 BT 1 0 0 1 0 55.5 Tm .222814 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The method that would govern it has a name and a citable version, given here as a pointer and not as a) Tj T* 0 Tw 1.256584 Tw (read artefact: the stopping-criterion work of the same author on nested reference sets, ) Tj /F3 9.5 Tf (Uninformative) Tj T* 0 Tw 5.143883 Tw (rungs: an order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf ( [13], deposited at doi) Tj T* 0 Tw .585947 Tw (10.5281/zenodo.21750029. We have not read it in the course of this work and make no claim about its) Tj T* 0 Tw (contents; we name it as the framework under which the question above would have to be posed.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 508.8898 cm
+1 0 0 1 78 487.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (8.4 The shape of the classification) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 463.8898 cm
+1 0 0 1 78 442.8898 cm
 q
 BT 1 0 0 1 0 29.5 Tm .162412 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What was asked.) Tj /F1 9.5 Tf ( For which subgroups, and under which conditions on the ordering, is the count forced) Tj T* 0 Tw .613033 Tw (to the tie, bounded in an interval, or barred from the tie by parity. The general preregistration fixed that) Tj T* 0 Tw (question and declared, before any measurement, that no prediction would be made about its answer.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 405.8898 cm
+1 0 0 1 78 384.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm .556329 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What is measured.) Tj /F1 9.5 Tf ( The 14 rows in four dimensions of section 7, the three outcomes populated, and a) Tj T* 0 Tw -0.003732 Tw (proved split of what belongs to the group and what to the ordering: the orbit cardinalities and the parity of) Tj T* 0 Tw .292443 Tw (the differences between compatible totals are functions of the group; the values of c, the absolute parity) Tj T* 0 Tw (and the outcome are not.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 347.8898 cm
+1 0 0 1 78 326.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm .711682 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (What would close it.) Tj /F1 9.5 Tf ( A criterion that, given the group and the ordering, returns the outcome, and that) Tj T* 0 Tw .998268 Tw (reduces on the historical cases to what sections 4 to 6 prove. Section 5 gives such a criterion for the) Tj T* 0 Tw .146256 Tw (forced outcome alone, through the difference classes; nothing here separates the other two outcomes in) Tj T* 0 Tw (the same way.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 319.8898 cm
+1 0 0 1 78 298.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (8.5 One thing that is not open) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 274.8898 cm
+1 0 0 1 78 253.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL 2.307631 Tw (For the record: the apparent anomaly of the reference ordering, which an earlier draft listed as a) Tj T* 0 Tw .446755 Tw (question, is not open. It was an error in our own construction of that ordering, it was corrected, and it is) Tj T* 0 Tw (documented as an error in the amendments cited in section 7 rather than removed from the record.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 238.8898 cm
+1 0 0 1 78 217.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 8 Tm /F2 14 Tf 22 TL (9. Methods of verification) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 180.8898 cm
+1 0 0 1 78 159.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm .49948 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The repository is not an appendix to this paper. Its history is part of the result, because most of what is) Tj T* 0 Tw .131537 Tw (claimed here is a claim about ) Tj /F2 9.5 Tf (when) Tj /F1 9.5 Tf ( something was known: what was fixed before a measurement, what) Tj T* 0 Tw -0.069151 Tw (was measured afterwards, and what changed when the two disagreed. A reader who wants to check that) Tj T* 0 Tw (ordering has the commit history, and the ordering is what a finished text cannot show.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 152.8898 cm
+1 0 0 1 78 131.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (9.1 The two preregistrations, and the defect in the first) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 81.88976 cm
+1 0 0 1 78 86.88976 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL .161818 Tw (The root commit of the repository contains a preregistration and nothing else: no analysis code, no data,) Tj T* 0 Tw .085255 Tw (no measured figure. It separates three things by name: a prior result that was to be verified and reported) Tj T* 0 Tw .901506 Tw (as retrodiction, a prediction made before running anything with its refutation criterion attached, and an) Tj T* 0 Tw .671088 Tw (open discrepancy on which no bet was placed. It also fixes, in advance, the bit conventions to be tried) Tj T* 0 Tw (and the denominator, so that neither could be chosen after seeing results.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm /F1 9.5 Tf 13 TL .161818 Tw (The root commit of the repository contains a preregistration and nothing else: no analysis code, no data,) Tj T* 0 Tw .085255 Tw (no measured figure. It separates three things by name: a prior result that was to be verified and reported) Tj T* 0 Tw .901506 Tw (as retrodiction, a prediction made before running anything with its refutation criterion attached, and an) Tj T* 0 Tw ET
 Q
 Q
  
@@ -3032,85 +3074,89 @@ endstream
 endobj
 46 0 obj
 <<
-/Length 6437
+/Length 6057
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 698.8898 cm
+1 0 0 1 78 737.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .671088 Tw (open discrepancy on which no bet was placed. It also fixes, in advance, the bit conventions to be tried) Tj T* 0 Tw (and the denominator, so that neither could be chosen after seeing results.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 666.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL 1.995364 Tw (The second preregistration, for the general phase, was signed after a phase whose only permitted) Tj T* 0 Tw 1.791406 Tw (activity was proving things: two hypotheses that had been in doubt were settled by theorem before) Tj T* 0 Tw -0.062289 Tw (signing, which is why its prediction section is almost empty and says so. The temptation it records having) Tj T* 0 Tw .841406 Tw (avoided is worth naming: a prediction could have been manufactured by narrowing the space until the) Tj T* 0 Tw (answer became unknown again, and that is choosing the question after seeing the answer.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 614.8898 cm
+1 0 0 1 78 582.8898 cm
 q
 BT 1 0 0 1 0 68.5 Tm .095299 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (The refutation criterion of the first preregistration was defective, and this is the place to say so.) Tj /F1 9.5 Tf ( It) Tj T* 0 Tw .109614 Tw (asked, for the prediction, that a hexagram be exhibited whose image under complementation lay outside) Tj T* 0 Tw .922412 Tw (the construction. Since every ordering contains all the vertices, that image is always the same set: no) Tj T* 0 Tw 1.415818 Tw (sequence could ever have failed the criterion. A preregistered criterion that cannot be failed is not a) Tj T* 0 Tw 1.675094 Tw (criterion. It was reported as a defect in the very report that would have benefited from claiming the) Tj T* 0 Tw (prediction as confirmed, the preregistration was left unamended, and the prediction was not cashed.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 586.8898 cm
+1 0 0 1 78 554.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (9.2 The effort log) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 502.8898 cm
+1 0 0 1 78 470.8898 cm
 q
-BT 1 0 0 1 0 68.5 Tm 1.425858 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Every working session opens and closes an entry in an append only log: ) Tj /F2 9.5 Tf (26) Tj /F1 9.5 Tf ( closed sessions in ) Tj /F2 9.5 Tf (134) Tj /F1 9.5 Tf  T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with ) Tj /F2 9.5 Tf (0) Tj /F1 9.5 Tf ( problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly ) Tj /F2 9.5 Tf (1) Tj /F1 9.5 Tf ( entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL 1.425858 Tw (Every working session opens and closes an entry in an append only log: 26 closed sessions in 134) Tj T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 444.8898 cm
+1 0 0 1 78 412.8898 cm
 q
-BT 1 0 0 1 0 42.5 Tm .725881 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (The log also classifies every file as apparatus or analysis, separating what was written here from what) Tj T* 0 Tw .035649 Tw (was extracted, so that the proportion between building instruments and producing results is visible rather) Tj T* 0 Tw .457506 Tw (than anecdotal. At the same point, ) Tj /F2 9.5 Tf (90) Tj /F1 9.5 Tf ( files were classified, over ) Tj /F2 9.5 Tf (18652) Tj /F1 9.5 Tf ( lines: ) Tj /F2 9.5 Tf (6044) Tj /F1 9.5 Tf ( of apparatus against) Tj T* 0 Tw /F2 9.5 Tf (12608) Tj /F1 9.5 Tf ( of analysis, of which ) Tj /F2 9.5 Tf (313) Tj /F1 9.5 Tf ( lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL .725881 Tw (The log also classifies every file as apparatus or analysis, separating what was written here from what) Tj T* 0 Tw .035649 Tw (was extracted, so that the proportion between building instruments and producing results is visible rather) Tj T* 0 Tw .457506 Tw (than anecdotal. At the same point, 90 files were classified, over 18652 lines: 6044 of apparatus against) Tj T* 0 Tw (12608 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 373.8898 cm
+1 0 0 1 78 341.8898 cm
 q
-BT 1 0 0 1 0 55.5 Tm 1.137768 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (Dead ends are recorded as their own kind of entry, with their cost. There are ) Tj /F2 9.5 Tf (5) Tj /F1 9.5 Tf ( of them: a command) Tj T* 0 Tw .558443 Tw (written with the wrong working tree, a process left running after its replacement had been launched, an) Tj T* 0 Tw -0.096936 Tw (analysis that hung because a group closure exploded exactly as a declaration had warned it might, and a) Tj T* 0 Tw 1.052481 Tw (tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, caught by the) Tj T* 0 Tw (checker that was written to catch exactly that.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL 1.137768 Tw (Dead ends are recorded as their own kind of entry, with their cost. There are 5 of them: a command) Tj T* 0 Tw .558443 Tw (written with the wrong working tree, a process left running after its replacement had been launched, an) Tj T* 0 Tw -0.096936 Tw (analysis that hung because a group closure exploded exactly as a declaration had warned it might, and a) Tj T* 0 Tw 1.052481 Tw (tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, caught by the) Tj T* 0 Tw (checker that was written to catch exactly that.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 345.8898 cm
+1 0 0 1 78 313.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (9.3 Rules that were born during the work, with their origin) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 261.8898 cm
+1 0 0 1 78 229.8898 cm
 q
 BT 1 0 0 1 0 68.5 Tm .567173 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (A reimplementation inherits the verifications of the original, or states in writing why it does not.) Tj /F1 9.5 Tf  T* 0 Tw .468949 Tw (This rule exists because of a specific failure. The reference ordering of section 7 was first built with two) Tj T* 0 Tw 5.014328 Tw (checks tied to its definition, and when it was reimplemented for a variable dimension the) Tj T* 0 Tw .486899 Tw (reimplementation dropped both, built a different ordering, and cost a full session explaining an anomaly) Tj T* 0 Tw 1.169838 Tw (that did not exist. The check it dropped would have caught the error at the moment the function was) Tj T* 0 Tw (written.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 203.8898 cm
+1 0 0 1 78 171.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm .858881 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (No figure enters a commit message before a checker has printed it.) Tj /F1 9.5 Tf ( This rule exists because two) Tj T* 0 Tw -0.094701 Tw (commit messages in one day carried counts that had been written from memory rather than counted, in a) Tj T* 0 Tw 2.940614 Tw (repository whose whole point is that figures come with provenance. The counts were small and) Tj T* 0 Tw (harmless; the habit was not.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 145.8898 cm
+1 0 0 1 78 113.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL .581768 Tw (Two further rules predate the work but were exercised by it: contact with the source of the data is read) Tj T* 0 Tw .424576 Tw (only and at a fixed tag, and the name of anything that leaves this work passes a term check before it is) Tj T* 0 Tw .108268 Tw (frozen. The repository name and the title of this paper each have their own record of that check, with the) Tj T* 0 Tw (queries declared before running and the limits of the check declared after.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 117.8898 cm
+1 0 0 1 78 85.88976 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (9.4 What a third party can verify today) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 85.88976 cm
-q
-BT 1 0 0 1 0 16.5 Tm -0.032338 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (These counts are a snapshot, and the apparatus makes going stale a failure rather than a silence.) Tj /F1 9.5 Tf  T* 0 Tw .612505 Tw (They are counted up to the last closed session, so opening a session or recording a decision does not) Tj T* 0 Tw ET
 Q
 Q
  
@@ -3118,39 +3164,39 @@ endstream
 endobj
 47 0 obj
 <<
-/Length 7538
+/Length 7499
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 724.8898 cm
+1 0 0 1 78 698.8898 cm
 q
-BT 1 0 0 1 0 29.5 Tm 1.673976 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (move them; closing one does. When it does, the exporter is rerun and the figures above no longer) Tj T* 0 Tw -0.033789 Tw (match, and the checker that guards every figure in this paper refuses the assembly until they are brought) Tj T* 0 Tw (up to date. A number that would quietly rot is instead a number that stops the build.) Tj T* ET
+BT 1 0 0 1 0 55.5 Tm -0.032338 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (These counts are a snapshot, and the apparatus makes going stale a failure rather than a silence.) Tj /F1 9.5 Tf  T* 0 Tw .612505 Tw (They are counted up to the last closed session, so opening a session or recording a decision does not) Tj T* 0 Tw 1.673976 Tw (move them; closing one does. When it does, the exporter is rerun and the figures above no longer) Tj T* 0 Tw -0.033789 Tw (match, and the checker that guards every figure in this paper refuses the assembly until they are brought) Tj T* 0 Tw (up to date. A number that would quietly rot is instead a number that stops the build.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 653.8898 cm
+1 0 0 1 78 627.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL -0.055732 Tw (Clone the repository and run the programs. Every figure in this paper comes from a results file in it, every) Tj T* 0 Tw 2.236152 Tw (results file is produced by a program in it, and every program is deterministic: the only source of) Tj T* 0 Tw -0.031912 Tw (randomness is a seed that is frozen in the source and declared in the reports. The declarations that were) Tj T* 0 Tw 1.339161 Tw (made before each measurement are separate commits, earlier in the history than the measurements) Tj T* 0 Tw (they govern, and that ordering is checkable without trusting anyone.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 569.8898 cm
+1 0 0 1 78 543.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL -0.111732 Tw (What a third party cannot verify by running anything is the literature review, which is a matter of what was) Tj T* 0 Tw 1.550599 Tw (read. That is why it carries its own doctrine, verdicts only from artefacts actually read, second hand) Tj T* 0 Tw .995144 Tw (marked as second hand with its chain of citation, and every figure with a pointer or returned; why the) Tj T* 0 Tw .142783 Tw (intersections found are recorded next to the results they touch rather than in a closing note; and why the) Tj T* 0 Tw .909116 Tw (single novelty declaration is a signed file with its scope stated as relative to a review whose limits are) Tj T* 0 Tw (written down.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 533.8898 cm
+1 0 0 1 78 507.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 8 Tm /F2 14 Tf 22 TL (References) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 501.8898 cm
+1 0 0 1 78 475.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .056755 Tw (Each entry records the identity as the literature review fixed it, and whether the artefact was read here or) Tj T* 0 Tw (enters as second hand. That mark is part of the reference.) Tj T* ET
@@ -3159,7 +3205,7 @@ Q
 q
 1 0 0 1 78 79.88976 cm
 q
-BT 1 0 0 1 0 406.5 Tm .912339 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (1. Bj\366rner, A., & Brenti, F. ) Tj /F3 9.5 Tf (Combinatorics of Coxeter groups) Tj /F1 9.5 Tf (. Equation \(1.25\) and Proposition 1.5.2, p.) Tj T* 0 Tw .346505 Tw (20; Sections 8.1 and 8.2, pp. 245, 252. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; year) Tj T* 0 Tw .369123 Tw (and publisher were not verified against the artefact and are therefore not printed. 2. Cook, R. S. \(2006\).) Tj T* 0 Tw 2.448008 Tw /F3 9.5 Tf (Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence) Tj /F1 9.5 Tf ( \(STEDT) Tj T* 0 Tw .218133 Tw (Monograph Series, Vol. 5\). University of California, Berkeley. ISBN 0-944613-44-6. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read through) Tj T* 0 Tw -0.0269 Tw (its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover. 3.) Tj T* 0 Tw 4.184435 Tw (Drasny, J. ) Tj /F3 9.5 Tf (The solution of the King Wen sequence?) Tj /F1 9.5 Tf ( [Review of the book ) Tj /F3 9.5 Tf (Classical Chinese) Tj T* 0 Tw .351924 Tw (combinatorics) Tj /F1 9.5 Tf (, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full; the) Tj T* 0 Tw .469268 Tw (review carries no date on the page read, so none is printed. 4. Gritter, G. \(2015\). ) Tj /F3 9.5 Tf (The hidden pattern in) Tj T* 0 Tw .290561 Tw (the classical sequence of the I Ching) Tj /F1 9.5 Tf (. Groningen. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full. 5. Hacker, E., & Moore, S. \(2003\).) Tj T* 0 Tw 1.141338 Tw (A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. ) Tj /F3 9.5 Tf (Journal of) Tj T* 0 Tw 2.110326 Tw (Chinese Philosophy) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(2\), 219\226221. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the) Tj T* 0 Tw -0.069151 Tw (bibliography of reference 6; not read. 6. Moore, S. \(2005\). ) Tj /F3 9.5 Tf (Structural elements in the King Wen sequence) Tj T* 0 Tw .208073 Tw (of hexagrams) Tj /F1 9.5 Tf ( \(Oracle Paper No. 1\). ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; the quoted passage taken verbatim from the rendered) Tj T* 0 Tw .65077 Tw (PDF page, p. 6, and not from the OCR conversion. 7. M\374tze, T. \(2023\). Combinatorial Gray codes: An) Tj T* 0 Tw .446161 Tw (updated survey. ) Tj /F3 9.5 Tf (The Electronic Journal of Combinatorics) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(3\), Dynamic Survey DS26. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in) Tj T* 0 Tw .025268 Tw (the cited part, Section 3.2 on p. 11, verified against the PDF. 8. Propp, J., & Roby, T. \(2015\). ) Tj /F3 9.5 Tf (Homomesy) Tj T* 0 Tw 1.388326 Tw (in products of two chains) Tj /F1 9.5 Tf ( \(Version 6\) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read,) Tj T* 0 Tw .817811 Tw (and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact) Tj T* 0 Tw -0.034119 Tw (read is the arXiv version. 9. Radisic, A. ) Tj /F3 9.5 Tf (Optimal equivariant matchings on the 6-cube: With an application) Tj T* 0 Tw .522963 Tw (to the King Wen sequence) Tj /F1 9.5 Tf ( \(Version 3\) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read) Tj T* 0 Tw -0.002495 Tw (in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions) Tj T* 0 Tw 1.194173 Tw (agreeing. 10. Reiner, V., Stanton, D., & White, D. \(2004\). The cyclic sieving phenomenon. ) Tj /F3 9.5 Tf (Journal of) Tj T* 0 Tw .168399 Tw (Combinatorial Theory, Series A) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (108) Tj /F1 9.5 Tf (\(1\), 17\22650. https://doi.org/10.1016/j.jcta.2004.04.009 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in) Tj T* 0 Tw .431152 Tw (identity and definition; cited for context, since it counts fixed points and not orbit averages. 11. Roby, T.) Tj T* 0 Tw .647122 Tw /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3; Section 2.1 and) Tj T* 0 Tw .055699 Tw (Example 4, p. 4. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its volume identity is second) Tj T* 0 Tw .047742 Tw (hand, since the cover of the PDF read does not carry it, and no year is printed here for the same reason.) Tj T* 0 Tw .183035 Tw (12. Sch\366ter, A. \(1998\). Boolean algebra and the Yi Jing. ) Tj /F3 9.5 Tf (The Oracle: The Journal of Yijing Studies) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (2) Tj /F1 9.5 Tf (\(7\),) Tj T* 0 Tw .435049 Tw (19\22634. ISSN 1463-6220. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; Definition 6, Sequence Parameters. 13. ) Tj /F3 9.5 Tf (Uninformative rungs: An) Tj T* 0 Tw 2.328227 Tw (order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf (. https://doi.org/10.5281/zenodo.21750029) Tj T* 0 Tw -0.034713 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: cited as a pointer to the framework that would govern the inferential question of) Tj T* 0 Tw ET
+BT 1 0 0 1 0 380.5 Tm .912339 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (1. Bj\366rner, A., & Brenti, F. ) Tj /F3 9.5 Tf (Combinatorics of Coxeter groups) Tj /F1 9.5 Tf (. Equation \(1.25\) and Proposition 1.5.2, p.) Tj T* 0 Tw .346505 Tw (20; Sections 8.1 and 8.2, pp. 245, 252. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; year) Tj T* 0 Tw .369123 Tw (and publisher were not verified against the artefact and are therefore not printed. 2. Cook, R. S. \(2006\).) Tj T* 0 Tw 2.448008 Tw /F3 9.5 Tf (Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence) Tj /F1 9.5 Tf ( \(STEDT) Tj T* 0 Tw .218133 Tw (Monograph Series, Vol. 5\). University of California, Berkeley. ISBN 0-944613-44-6. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read through) Tj T* 0 Tw -0.0269 Tw (its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover. 3.) Tj T* 0 Tw 4.184435 Tw (Drasny, J. ) Tj /F3 9.5 Tf (The solution of the King Wen sequence?) Tj /F1 9.5 Tf ( [Review of the book ) Tj /F3 9.5 Tf (Classical Chinese) Tj T* 0 Tw .351924 Tw (combinatorics) Tj /F1 9.5 Tf (, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full; the) Tj T* 0 Tw .469268 Tw (review carries no date on the page read, so none is printed. 4. Gritter, G. \(2015\). ) Tj /F3 9.5 Tf (The hidden pattern in) Tj T* 0 Tw .290561 Tw (the classical sequence of the I Ching) Tj /F1 9.5 Tf (. Groningen. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full. 5. Hacker, E., & Moore, S. \(2003\).) Tj T* 0 Tw 1.141338 Tw (A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. ) Tj /F3 9.5 Tf (Journal of) Tj T* 0 Tw 2.110326 Tw (Chinese Philosophy) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(2\), 219\226221. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the) Tj T* 0 Tw -0.069151 Tw (bibliography of reference 6; not read. 6. Moore, S. \(2005\). ) Tj /F3 9.5 Tf (Structural elements in the King Wen sequence) Tj T* 0 Tw .208073 Tw (of hexagrams) Tj /F1 9.5 Tf ( \(Oracle Paper No. 1\). ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; the quoted passage taken verbatim from the rendered) Tj T* 0 Tw .65077 Tw (PDF page, p. 6, and not from the OCR conversion. 7. M\374tze, T. \(2023\). Combinatorial Gray codes: An) Tj T* 0 Tw .446161 Tw (updated survey. ) Tj /F3 9.5 Tf (The Electronic Journal of Combinatorics) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(3\), Dynamic Survey DS26. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in) Tj T* 0 Tw .025268 Tw (the cited part, Section 3.2 on p. 11, verified against the PDF. 8. Propp, J., & Roby, T. \(2015\). ) Tj /F3 9.5 Tf (Homomesy) Tj T* 0 Tw 1.388326 Tw (in products of two chains) Tj /F1 9.5 Tf ( \(Version 6\) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read,) Tj T* 0 Tw .817811 Tw (and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact) Tj T* 0 Tw -0.034119 Tw (read is the arXiv version. 9. Radisic, A. ) Tj /F3 9.5 Tf (Optimal equivariant matchings on the 6-cube: With an application) Tj T* 0 Tw .522963 Tw (to the King Wen sequence) Tj /F1 9.5 Tf ( \(Version 3\) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read) Tj T* 0 Tw -0.002495 Tw (in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions) Tj T* 0 Tw 1.194173 Tw (agreeing. 10. Reiner, V., Stanton, D., & White, D. \(2004\). The cyclic sieving phenomenon. ) Tj /F3 9.5 Tf (Journal of) Tj T* 0 Tw .168399 Tw (Combinatorial Theory, Series A) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (108) Tj /F1 9.5 Tf (\(1\), 17\22650. https://doi.org/10.1016/j.jcta.2004.04.009 ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in) Tj T* 0 Tw .431152 Tw (identity and definition; cited for context, since it counts fixed points and not orbit averages. 11. Roby, T.) Tj T* 0 Tw .647122 Tw /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3; Section 2.1 and) Tj T* 0 Tw .055699 Tw (Example 4, p. 4. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its volume identity is second) Tj T* 0 Tw .047742 Tw (hand, since the cover of the PDF read does not carry it, and no year is printed here for the same reason.) Tj T* 0 Tw .183035 Tw (12. Sch\366ter, A. \(1998\). Boolean algebra and the Yi Jing. ) Tj /F3 9.5 Tf (The Oracle: The Journal of Yijing Studies) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (2) Tj /F1 9.5 Tf (\(7\),) Tj T* 0 Tw .435049 Tw (19\22634. ISSN 1463-6220. ) Tj /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; Definition 6, Sequence Parameters. 13. ) Tj /F3 9.5 Tf (Uninformative rungs: An) Tj T* 0 Tw ET
 Q
 Q
  
@@ -3167,23 +3213,23 @@ endstream
 endobj
 48 0 obj
 <<
-/Length 626
+/Length 927
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 750.8898 cm
+1 0 0 1 78 724.8898 cm
 q
-BT 1 0 0 1 0 3.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg (Section 8.3; not read in the course of this work.) Tj T* ET
+BT 1 0 0 1 0 29.5 Tm 2.328227 Tw 13 TL /F3 9.5 Tf 0 0 0 rg (order-theoretic stopping criterion for nested reference sets) Tj /F1 9.5 Tf (. https://doi.org/10.5281/zenodo.21750029) Tj T* 0 Tw -0.034713 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: cited as a pointer to the framework that would govern the inferential question of) Tj T* 0 Tw (Section 8.3; not read in the course of this work.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 727.8819 cm
+1 0 0 1 78 701.8819 cm
 Q
 q
-1 0 0 1 78 691.8819 cm
+1 0 0 1 78 665.8819 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.008839 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 3da09bbf43977cfa3bc6c230d37c44e165d61570, dated 2026-08-10.) Tj T* 0 Tw .514349 Tw (Working tree clean: no. sha256 of the manuscript: cc53dc3750c1db60cbcc335aea14bfa18dbeb33bae6880bd3a632d9e0b97f313.) Tj T* 0 Tw (Checks green at build time: 59.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm .881159 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 1774c31ead6f8588e18b566eb4b6778f21902173, dated 2026-08-10.) Tj T* 0 Tw .829749 Tw (Working tree clean: no. sha256 of the manuscript: 389ebc063cef961e96ef04213a9fddd84abd332e48d58f320a0d40d6ca9423ae.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
 Q
 Q
  
@@ -3221,29 +3267,29 @@ xref
 0000004774 00000 n 
 0000005392 00000 n 
 0000005585 00000 n 
-0000010959 00000 n 
-0000016619 00000 n 
-0000022230 00000 n 
-0000028453 00000 n 
-0000034423 00000 n 
-0000040469 00000 n 
-0000046423 00000 n 
-0000052688 00000 n 
-0000058795 00000 n 
-0000064732 00000 n 
-0000071002 00000 n 
-0000077976 00000 n 
-0000083870 00000 n 
-0000100196 00000 n 
-0000107774 00000 n 
-0000113933 00000 n 
-0000119891 00000 n 
-0000126380 00000 n 
-0000133970 00000 n 
+0000010795 00000 n 
+0000016455 00000 n 
+0000022066 00000 n 
+0000028289 00000 n 
+0000034259 00000 n 
+0000040305 00000 n 
+0000046123 00000 n 
+0000052218 00000 n 
+0000058325 00000 n 
+0000064058 00000 n 
+0000069954 00000 n 
+0000076326 00000 n 
+0000082084 00000 n 
+0000098777 00000 n 
+0000106385 00000 n 
+0000112288 00000 n 
+0000118133 00000 n 
+0000124242 00000 n 
+0000131793 00000 n 
 trailer
 <<
 /ID 
-[<a4f655da4a5d2d51eafb638ffbcab249><a4f655da4a5d2d51eafb638ffbcab249>]
+[<d24ecf659d9b1b567265095a56fc7c2d><d24ecf659d9b1b567265095a56fc7c2d>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 27 0 R
@@ -3251,5 +3297,5 @@ trailer
 /Size 49
 >>
 startxref
-134647
+132771
 %%EOF

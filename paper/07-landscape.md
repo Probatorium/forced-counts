@@ -94,23 +94,25 @@ and have no row here.
      0 = results/general-n6.tsv:100 n6.k3.Mawangdui.historica.libres;
      1 = results/general-n6.tsv:106 n6.k3.Mawangdui.historica.alcanzables;
      1008 = results/general-n6.tsv:105 n6.k3.Mawangdui.historica.observado -->
-Dimensions three to six, every level, in one table with the same columns. The
-order of the group respecting B(n, k) is k factorial times n minus k factorial
-times 2 to the n, which was stated in the general preregistration before any of
-this was run and is verified in all 14 rows. The order of the group depends only
+Table 1 gives dimensions three to six, every level, with the same columns
+throughout. The order of the group respecting B(n, k) is k factorial times n
+minus k factorial times 2 to the n, which was stated in the general
+preregistration before any of this was run and is verified in all 14 rows. The order of the group depends only
 on the partition and not on the ordering, which the same table confirms across
 thousands of orderings.
+
+**Table 1.** *The landscape B(n, k) in dimensions three to six.*
 
 | n | k | group order | Gray | canonical | forced | bounded | barred | cases |
 |---|---|---|---|---|---|---|---|---|
 | 3 | 1 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
 | 3 | 2 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
 | 4 | 1 | 96 | bounded | barred | 0 | 827 | 1173 | 2000, sampled |
-| 4 | 2 | 64 | bounded | bounded | **36** | 228 | 312 | 576, enumerated |
+| 4 | 2 | 64 | bounded | bounded | 36 | 228 | 312 | 576, enumerated |
 | 4 | 3 | 96 | bounded | barred | 0 | 828 | 1172 | 2000, sampled |
 | 5 | 1 | 768 | bounded | barred | 0 | 781 | 1219 | 2000, sampled |
-| 5 | 2 | 384 | bounded | barred | **10** | 794 | 1196 | 2000, sampled |
-| 5 | 3 | 384 | bounded | barred | **9** | 753 | 1238 | 2000, sampled |
+| 5 | 2 | 384 | bounded | barred | 10 | 794 | 1196 | 2000, sampled |
+| 5 | 3 | 384 | bounded | barred | 9 | 753 | 1238 | 2000, sampled |
 | 5 | 4 | 768 | bounded | barred | 0 | 771 | 1229 | 2000, sampled |
 | 6 | 1 | 7680 | bounded | barred | . | . | . | not sampled |
 | 6 | 2 | 3072 | bounded | barred | . | . | . | not sampled |
@@ -118,8 +120,8 @@ thousands of orderings.
 | 6 | 4 | 3072 | bounded | barred | . | . | . | not sampled |
 | 6 | 5 | 7680 | bounded | barred | . | . | . | not sampled |
 
-The last three columns are the distribution of the three outcomes over the
-parametrised family, by block order and internal order; a dot means the
+The last three columns of Table 1 are the distribution of the three outcomes
+over the parametrised family, by block order and internal order; a dot means the
 distribution was not measured. The **forced** column is empty in every row at an
 extreme level and non empty only at the intermediate ones, which is the shape
 that section 7.3 takes up and cuts down to size.
@@ -137,14 +139,18 @@ was used and is labelled as a sample.
      su propia fila y no dentro de la tabla. -->
 **One historical row belongs here and is kept apart.** The first historical
 ordering does fit the family, at the middle level of dimension six, since its
-octets are exactly those cosets. Its row reads:
+octets are exactly those cosets. Its row is Table 2, kept out of Table 1 so
+that the parametrised family and the received sequence are not read as one
+population:
+
+**Table 2.** *The one historical ordering that fits the family, reported apart.*
 
 | ordering | n | k | group order | free orbits | compatible totals | count | outcome |
 |---|---|---|---|---|---|---|---|
 | Mawangdui, received | 6 | 3 | 2304 | 0 | 1 | 1008 | forced |
 
-**0** free orbits, exactly **1** compatible total, and that total is 1008: the
-forced outcome of section 6 read inside the general frame rather than beside it,
+Table 2 reports 0 free orbits, exactly 1 compatible total, and that total is
+1008: the forced outcome of section 6 read inside the general frame rather than beside it,
 and the same figure that the demonstration there produces.
 
 ## 7.3 A shape that we tried to raise to a theorem, and could not
@@ -160,9 +166,9 @@ and the temptation was to state it as a property of the extremes.
      472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
      600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
 **It is false, and the refutation is by exhaustive enumeration.** In the smallest
-dimension the space of all orderings can be traversed in full, all **40320** of
+dimension the space of all orderings can be traversed in full, all 40320 of
 them, and at both extreme levels it contains forced orderings, with a witness
-exhibited: **472** of them at the lower extreme and **600** at the upper. One
+exhibited: 472 of them at the lower extreme and 600 at the upper. One
 also turns up at an extreme level in the next dimension. Note that neither count
 is zero while the corresponding cell of the table above is: the forced orderings
 exist, and they lie outside the family the table samples.

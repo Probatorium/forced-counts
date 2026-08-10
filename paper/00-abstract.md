@@ -45,19 +45,19 @@ hypothesis is necessary, by an exhibited witness.
      52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables -->
 Applied to three constructed orderings of the 6-cube that have come down to us,
 with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the
-constructions force the count to **1008**, and for one of them the demonstration
+constructions force the count to 1008, and for one of them the demonstration
 is complete with no enumerative residue; a mechanism previously claimed for the
 other is refuted here, since the closure it rests on forces only 484 of the 2016
 pairs and survives rearrangements that destroy the result, the midpoint coming
 out in 3836 of the 40320 of them. The third construction makes 1008 impossible by
 the parity obstruction: its structure leaves the interval [957, 1059] and exactly
-**52** compatible totals within it, 1008 is not among them, and the observed count
-is **1013**.
+52 compatible totals within it, 1008 is not among them, and the observed count
+is 1013.
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace y declaracion de frontera -->
 <!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
      19 = results/residuo5.tsv:6 orbitas.libres -->
-That difference of **5** is decomposed completely over the **19** free orbits and
+That difference of 5 is decomposed completely over the 19 free orbits and
 has no culprit: every free orbit deviates, and the deviations nearly cancel. Against a list of
 candidate structures declared before measuring, one narrows the interval, namely
 the construction's own pairing involution, which is not affine and so was absent

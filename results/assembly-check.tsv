@@ -52,9 +52,15 @@ referencias.sin.citar	ninguna
 ninguna.referencia.queda.sin.citar	1	
 cifras.declaraciones.totales	173	
 cifras.derivadas.comprobadas	6	cifras que el texto obtiene con una cuenta a la vista
-cifras.cifras.impresas.en.la.prosa	202	
+cifras.cifras.impresas.en.la.prosa	201	
 cifras.el.cotejo.pasa.en.vacio	0	si vale uno, el comprobador no ha comprobado nada
 cifras.desajustes	0	
 cifras.toda.cifra.impresa.sale.de.results	1	
 las.cifras.impresas.siguen.saliendo.de.results	1	
-palabras.aproximadas	15468	
+tablas.en.el.manuscrito	2	
+tablas.con.rotulo	2	
+toda.tabla.lleva.rotulo	1	hay 2 tablas y 2 rotulos
+los.rotulos.van.de.uno.en.uno	1	numeracion esperada 1..n en orden de aparicion, encontrada [1, 2]
+tablas.sin.referencia.en.la.prosa	ninguna	
+toda.tabla.numerada.se.referencia.en.el.texto	1	una tabla que el texto no menciona no tiene por que estar
+palabras.aproximadas	15520	

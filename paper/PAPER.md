@@ -54,19 +54,19 @@ hypothesis is necessary, by an exhibited witness.
      52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables -->
 Applied to three constructed orderings of the 6-cube that have come down to us,
 with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the
-constructions force the count to **1008**, and for one of them the demonstration
+constructions force the count to 1008, and for one of them the demonstration
 is complete with no enumerative residue; a mechanism previously claimed for the
 other is refuted here, since the closure it rests on forces only 484 of the 2016
 pairs and survives rearrangements that destroy the result, the midpoint coming
 out in 3836 of the 40320 of them. The third construction makes 1008 impossible by
 the parity obstruction: its structure leaves the interval [957, 1059] and exactly
-**52** compatible totals within it, 1008 is not among them, and the observed count
-is **1013**.
+52 compatible totals within it, 1008 is not among them, and the observed count
+is 1013.
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace y declaracion de frontera -->
 <!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
      19 = results/residuo5.tsv:6 orbitas.libres -->
-That difference of **5** is decomposed completely over the **19** free orbits and
+That difference of 5 is decomposed completely over the 19 free orbits and
 has no culprit: every free orbit deviates, and the deviations nearly cancel. Against a list of
 candidate structures declared before measuring, one narrows the interval, namely
 the construction's own pairing involution, which is not affine and so was absent
@@ -508,9 +508,9 @@ The lemma is not free. If a set does not contribute exactly half, its two parity
 classes have different cardinalities and no perfect matching can exist, because
 every edge of the relation graph joins opposite parities. The check has been
 carried out where it matters, in both directions. Where the lemma applies, it
-settles a class of **96** pairs that Lemma 2 cannot reach, with a contribution of
-exactly **48**. Where it does not apply, it does not pretend to: of the **19**
-free orbits of the third historical ordering, **19** admit no perfect matching,
+settles a class of 96 pairs that Lemma 2 cannot reach, with a contribution of
+exactly 48. Where it does not apply, it does not pretend to: of the 19
+free orbits of the third historical ordering, 19 admit no perfect matching,
 which is what has to happen if the lemma is not to force what is not forced.
 
 ## 3.5 What this accounting is for
@@ -642,14 +642,14 @@ of V.
      5 = results/parity-hypotheses.tsv:39 t2.orbitas.de.pares;
      0 = results/parity-hypotheses.tsv:40 t2.orbitas.de.cardinal.impar -->
 This is checked on an instance where T is genuinely not normal: a group of order
-**16** built from a V of dimension 2 and a coordinate permutation that moves it.
+16 built from a V of dimension 2 and a coordinate permutation that moves it.
 The subgroup T fails to be normal, the closure argument produces an invariant
-subspace W of dimension **3**, and of the **5** orbits of pairs, **0** have odd
+subspace W of dimension 3, and of the 5 orbits of pairs, 0 have odd
 cardinality.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t3 -->
 <!-- CIFRAS: 50 = results/parity-hypotheses.tsv:42 t3.casos.comprobados -->
-A declared family of **50** further cases, over two dimensions and every subspace
+A declared family of 50 further cases, over two dimensions and every subspace
 of dimension at least two together with every coordinate permutation, produces no
 orbit of odd cardinality either.
 
@@ -750,9 +750,9 @@ matching: Hall's condition is needed and could fail. It does not fail in any cas
 we examined, and the search was declared in advance, bounded, and reported with
 its outcome branch fixed beforehand. Its size is the whole content of the word
 *enumerative*, so it is printed here rather than left to the results file:
-**1272** forced orderings traversed across three block systems and two dimensions,
-of which 200 were found by search in the larger one, giving **6960** forced orbits
-in which the matching was verified, and **0** failures of Hall's condition. That
+1272 forced orderings traversed across three block systems and two dimensions,
+of which 200 were found by search in the larger one, giving 6960 forced orbits
+in which the matching was verified, and 0 failures of Hall's condition. That
 is a count, not a proof. **We do not promote it to a theorem.** A failure could
 occur in a higher dimension, in another partition, or in a case the search did
 not reach.
@@ -800,8 +800,8 @@ is fixed by the cardinality, which does not depend on the ordering. QED
      39848 = results/b31-characterization.tsv:9 no.forzadas -->
 *Proof of the second half, by witness.* Take the smallest block system in the
 smallest dimension we enumerate, where the space of orderings is small enough to
-be traversed in full: all **40320** of them, under one and the same group of
-order 16. Of those, **472** are forced and **39848** are not. One group, two
+be traversed in full: all 40320 of them, under one and the same group of
+order 16. Of those, 472 are forced and 39848 are not. One group, two
 outcomes; therefore the outcome is not a function of the group. QED
 
 <!-- origen: PROOFS-B31.md 1.2, y results/b31-characterization.tsv. GUARDA: son
@@ -866,7 +866,7 @@ unordered pairs of the 64 positions, and the tie is 1008.
      1008 = results/measurements.tsv:12 inv.Mawangdui.yang1.bottomLSB;
      1008 = results/measurements.tsv:13 inv.Mawangdui.yang0.bottomMSB;
      1008 = results/measurements.tsv:14 inv.Mawangdui.yang0.bottomLSB -->
-The count is **1008** in all four conventions, which is the tie exactly.
+The count is 1008 in all four conventions, which is the tie exactly.
 
 <!-- origen: PROOFS.md 2.1 y 2.2, teoremas -->
 <!-- CIFRAS: 2304 = results/group-measurements.tsv:5 grupo.R1.Mawangdui.orden;
@@ -876,8 +876,8 @@ The block system is the fibres of the upper trigram, that is, the cosets of the
 subspace spanned by the three lower lines. The group of elements of B_6
 respecting it is exactly the set of maps whose linear part does not mix the two
 trigrams, with any mask: 36 such permutations with all 64 masks, of order
-**2304**. Its orbits of pairs are exactly the classes given by the pair of
-difference weights, one for each trigram, and there are **15** of them.
+2304. Its orbits of pairs are exactly the classes given by the pair of
+difference weights, one for each trigram, and there are 15 of them.
 
 <!-- origen: PROOFS.md 2.3 a 2.5, con los testigos; el certificado esta en
      results/certificate-mwd-01.txt -->
@@ -887,14 +887,14 @@ difference weights, one for each trigram, and there are **15** of them.
      15 = results/group-measurements.tsv:50 cuenta.R1.Mawangdui.orbitas_forzadas;
      0 = results/group-measurements.tsv:51 cuenta.R1.Mawangdui.orbitas_libres;
      1008 = results/group-measurements.tsv:53 cuenta.R1.Mawangdui.aportacion_forzada -->
-Every one of those classes is forced, and the demonstration is in two parts. **9**
+Every one of those classes is forced, and the demonstration is in two parts. 9
 of them, covering 1568 pairs and contributing 784, are forced by a witness that
 is argued rather than exhibited: complement the lower trigram, and the value
 order of the pair reverses while the block, and therefore the position order,
 does not. The remaining classes are forced by witnesses that are exhibited and
 verified, and one of them has no uniform witness at all in the whole group and
 needed the matching lemma, with a certificate that is deposited pair by pair and
-can be checked line by line. All **15** orbits are forced and **0** are free, so
+can be checked line by line. All 15 orbits are forced and 0 are free, so
 by Lemma 1 the forced contribution is the whole count, 1008, and the width of the
 interval is zero.
 
@@ -910,11 +910,11 @@ interval is zero.
 saying so is part of the result.** The claim was that closure under
 complementation forces the count. Closure does hold, and it is concrete: the
 complement sends each octet onto another octet. But the group generated by
-complementation alone forces only **484** of the 2016 pairs, leaves 540 orbits
+complementation alone forces only 484 of the 2016 pairs, leaves 540 orbits
 free, and admits 1049 different compatible totals: an interval, not a value. The
 control settles it exhaustively rather than by sample. The family order of the
-octets can be permuted in every one of the **40320** possible ways, all such
-rearrangements keep the closure intact, and the tie comes out in **3836** of
+octets can be permuted in every one of the 40320 possible ways, all such
+rearrangements keep the closure intact, and the tie comes out in 3836 of
 them, a rate of 0.09514. Closure is true of the construction and is not what
 forces the count. What forces it is the full group of order 2304 together with
 the received family order.
@@ -926,7 +926,7 @@ the received family order.
      1008 = results/measurements.tsv:16 inv.JingFang.yang1.bottomLSB;
      1008 = results/measurements.tsv:17 inv.JingFang.yang0.bottomMSB;
      1008 = results/measurements.tsv:18 inv.JingFang.yang0.bottomLSB -->
-The count is again **1008** in all four conventions.
+The count is again 1008 in all four conventions.
 
 <!-- origen: PROOFS.md 2.6, teorema con su demostracion -->
 <!-- CIFRAS: 28 = results/proofs.tsv:43 p2.jf.diferencias.de.M -->
@@ -940,7 +940,7 @@ palaces partition the vertices.
 <!-- CIFRAS: 8 = results/group-measurements.tsv:13 grupo.R1.JingFang.orden;
      "12 15 16 12 15 0" = results/proofs.tsv:44 p2.jf.multiplicidad.por.linea -->
 The group respecting the palaces is exactly the translations by the diagonal, of
-order **8**, and this is proved rather than enumerated: any respecting map must
+order 8, and this is proved rather than enumerated: any respecting map must
 preserve the multiset of differences of the mask set, whose multiplicities line
 by line are 12 15 16 12 15 0, so one line never appears in any difference and the
 remaining multiplicities are distinct enough to pin the permutation down to the
@@ -951,11 +951,11 @@ identity, after which the mask is forced into the diagonal.
 <!-- CIFRAS: 280 = results/group-measurements.tsv:107 cuenta.R1.JingFang.orbitas_forzadas;
      0 = results/group-measurements.tsv:108 cuenta.R1.JingFang.orbitas_libres;
      1 = results/group-measurements.tsv:117 cuenta.R1.JingFang.totales_alcanzables -->
-The **280** orbits are classified by hand into three families, and every one of
+The 280 orbits are classified by hand into three families, and every one of
 them is forced: those inside a single palace by an argued witness, the
 complement, which here is the translation by the all ones vector of the diagonal;
-and the rest by exhibited witnesses, deposited orbit by orbit. There are **0**
-free orbits and exactly **1** compatible total, so by Lemma 1 that total is the
+and the rest by exhibited witnesses, deposited orbit by orbit. There are 0
+free orbits and exactly 1 compatible total, so by Lemma 1 that total is the
 tie. **For this ordering the demonstration is complete: there is no enumerative
 residue.**
 
@@ -967,8 +967,8 @@ residue.**
      1013 = results/measurements.tsv:20 inv.KingWen.yang1.bottomLSB;
      1003 = results/measurements.tsv:21 inv.KingWen.yang0.bottomMSB;
      1003 = results/measurements.tsv:22 inv.KingWen.yang0.bottomLSB -->
-The count is **1013** under the two conventions that read yang as one, and
-**1003** under the two that read yang as zero. The two are symmetric about the
+The count is 1013 under the two conventions that read yang as one, and
+1003 under the two that read yang as zero. The two are symmetric about the
 tie, since exchanging the roles of yang and yin turns every discordant pair into a
 concordant one, and 1013 plus 1003 is twice 1008. Neither is the tie. Everything
 below explains why neither could have been.
@@ -977,8 +977,8 @@ below explains why neither could have been.
 <!-- CIFRAS: 28 = results/proofs.tsv:72 p3.orbitas.del.giro.de.tamano.dos;
      8 = results/proofs.tsv:73 p3.palindromos -->
 <!-- CIFRAS DERIVADAS: 32 = 28 + 8/2 -->
-The construction pairs the sequence into **32** adjacent blocks of two: the **28**
-orbits of size two of the half turn, together with the **8** hexagrams that the
+The construction pairs the sequence into 32 adjacent blocks of two: the 28
+orbits of size two of the half turn, together with the 8 hexagrams that the
 half turn leaves fixed, paired among themselves by complementation.
 
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
@@ -999,10 +999,10 @@ commit history dates, and independent does not mean first.
      48 = results/proofs.tsv:79 p3.permutaciones.que.preservan.Fix(giro) -->
 <!-- CIFRAS DERIVADAS: 384 = 48 * 8 -->
 From that block system, the group respecting it is exactly the centraliser of the
-half turn inside B_6, of order **384**, and this is proved rather than counted:
+half turn inside B_6, of order 384, and this is proved rather than counted:
 the block differences are precisely the nonzero vectors of the subspace of size
-**8** fixed by the half turn, a respecting map must preserve that subspace, its
-only **3** elements of weight two are the ones that pair the mirror lines, so the
+8 fixed by the half turn, a respecting map must preserve that subspace, its
+only 3 elements of weight two are the ones that pair the mirror lines, so the
 linear part commutes with the half turn and there are 48 such permutations, and
 the mask is then forced to be fixed by the half turn, which leaves 8 masks. The
 predicted order 48 times 8 is 384, and it agrees with the enumeration.
@@ -1026,11 +1026,11 @@ outside the set of totals compatible with the structure.
      1007 = results/group-measurements.tsv:178 cuenta.R1.KingWen.alcanzable_mas_cercano_al_esperado -->
 <!-- CIFRAS DERIVADAS: 36 = 17 + 19; 103 = 1059 - 957 + 1 -->
 Here is the whole account in figures. Of the 36 orbits of that group on pairs,
-**17** are forced and contribute 374, and **19** are free. The structure
-therefore leaves the interval **[957, 1059]**, and inside it exactly **52** totals
+17 are forced and contribute 374, and 19 are free. The structure
+therefore leaves the interval [957, 1059], and inside it exactly 52 totals
 are compatible, of the 103 integers the interval contains. The observed 1013 is
 one of the 52. The tie, 1008, lies well inside the interval and is **not** one of
-them: the nearest compatible total to it is **1007**, one below. The tie is not
+them: the nearest compatible total to it is 1007, one below. The tie is not
 missed by a small amount, it is absent from the list.
 
 ## 6.4 One structure narrows it, and it is the construction's own rule
@@ -1059,10 +1059,10 @@ count. It does not count.
 The one that counts is the pairing involution itself, the map that sends each
 hexagram to its partner in the construction. **It is not affine**, which is why
 it was not in the group at all, even though that group is precisely its
-centraliser. Adding it takes the group from 384 to **768**, cuts the free orbits
-from 19 to **17**, and narrows the interval from [957, 1059] to
-**[961, 1055]**, that is, from a width of 102 to one of **94**. It does not
-force, the tie is still not reachable, which the table records as **0**, and the
+centraliser. Adding it takes the group from 384 to 768, cuts the free orbits
+from 19 to 17, and narrows the interval from [957, 1059] to
+[961, 1055], that is, from a width of 102 to one of 94. It does not
+force, the tie is still not reachable, which the table records as 0, and the
 observed count does not move: changing the group changes neither the sequence nor
 its discordance.
 
@@ -1072,7 +1072,7 @@ its discordance.
      no se lee mas alla. GUARDA: cero lenguaje de significancia. -->
 <!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones -->
 <!-- CIFRAS DERIVADAS: 5 = 1013 - 1008 -->
-The count differs from the tie by **5**, that being 1013 minus 1008, and the
+The count differs from the tie by 5, that being 1013 minus 1008, and the
 natural question is where those 5 sit. Each free orbit contributes its half plus
 a deviation, the deviations sum to exactly 5, and the full decomposition over the
 19 free orbits, with cardinality, half, contribution and deviation for each one,
@@ -1216,23 +1216,25 @@ and have no row here.
      0 = results/general-n6.tsv:100 n6.k3.Mawangdui.historica.libres;
      1 = results/general-n6.tsv:106 n6.k3.Mawangdui.historica.alcanzables;
      1008 = results/general-n6.tsv:105 n6.k3.Mawangdui.historica.observado -->
-Dimensions three to six, every level, in one table with the same columns. The
-order of the group respecting B(n, k) is k factorial times n minus k factorial
-times 2 to the n, which was stated in the general preregistration before any of
-this was run and is verified in all 14 rows. The order of the group depends only
+Table 1 gives dimensions three to six, every level, with the same columns
+throughout. The order of the group respecting B(n, k) is k factorial times n
+minus k factorial times 2 to the n, which was stated in the general
+preregistration before any of this was run and is verified in all 14 rows. The order of the group depends only
 on the partition and not on the ordering, which the same table confirms across
 thousands of orderings.
+
+**Table 1.** *The landscape B(n, k) in dimensions three to six.*
 
 | n | k | group order | Gray | canonical | forced | bounded | barred | cases |
 |---|---|---|---|---|---|---|---|---|
 | 3 | 1 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
 | 3 | 2 | 16 | bounded | barred | 0 | 24 | 24 | 48, enumerated |
 | 4 | 1 | 96 | bounded | barred | 0 | 827 | 1173 | 2000, sampled |
-| 4 | 2 | 64 | bounded | bounded | **36** | 228 | 312 | 576, enumerated |
+| 4 | 2 | 64 | bounded | bounded | 36 | 228 | 312 | 576, enumerated |
 | 4 | 3 | 96 | bounded | barred | 0 | 828 | 1172 | 2000, sampled |
 | 5 | 1 | 768 | bounded | barred | 0 | 781 | 1219 | 2000, sampled |
-| 5 | 2 | 384 | bounded | barred | **10** | 794 | 1196 | 2000, sampled |
-| 5 | 3 | 384 | bounded | barred | **9** | 753 | 1238 | 2000, sampled |
+| 5 | 2 | 384 | bounded | barred | 10 | 794 | 1196 | 2000, sampled |
+| 5 | 3 | 384 | bounded | barred | 9 | 753 | 1238 | 2000, sampled |
 | 5 | 4 | 768 | bounded | barred | 0 | 771 | 1229 | 2000, sampled |
 | 6 | 1 | 7680 | bounded | barred | . | . | . | not sampled |
 | 6 | 2 | 3072 | bounded | barred | . | . | . | not sampled |
@@ -1240,8 +1242,8 @@ thousands of orderings.
 | 6 | 4 | 3072 | bounded | barred | . | . | . | not sampled |
 | 6 | 5 | 7680 | bounded | barred | . | . | . | not sampled |
 
-The last three columns are the distribution of the three outcomes over the
-parametrised family, by block order and internal order; a dot means the
+The last three columns of Table 1 are the distribution of the three outcomes
+over the parametrised family, by block order and internal order; a dot means the
 distribution was not measured. The **forced** column is empty in every row at an
 extreme level and non empty only at the intermediate ones, which is the shape
 that section 7.3 takes up and cuts down to size.
@@ -1259,14 +1261,18 @@ was used and is labelled as a sample.
      su propia fila y no dentro de la tabla. -->
 **One historical row belongs here and is kept apart.** The first historical
 ordering does fit the family, at the middle level of dimension six, since its
-octets are exactly those cosets. Its row reads:
+octets are exactly those cosets. Its row is Table 2, kept out of Table 1 so
+that the parametrised family and the received sequence are not read as one
+population:
+
+**Table 2.** *The one historical ordering that fits the family, reported apart.*
 
 | ordering | n | k | group order | free orbits | compatible totals | count | outcome |
 |---|---|---|---|---|---|---|---|
 | Mawangdui, received | 6 | 3 | 2304 | 0 | 1 | 1008 | forced |
 
-**0** free orbits, exactly **1** compatible total, and that total is 1008: the
-forced outcome of section 6 read inside the general frame rather than beside it,
+Table 2 reports 0 free orbits, exactly 1 compatible total, and that total is
+1008: the forced outcome of section 6 read inside the general frame rather than beside it,
 and the same figure that the demonstration there produces.
 
 ## 7.3 A shape that we tried to raise to a theorem, and could not
@@ -1282,9 +1288,9 @@ and the temptation was to state it as a property of the extremes.
      472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
      600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
 **It is false, and the refutation is by exhaustive enumeration.** In the smallest
-dimension the space of all orderings can be traversed in full, all **40320** of
+dimension the space of all orderings can be traversed in full, all 40320 of
 them, and at both extreme levels it contains forced orderings, with a witness
-exhibited: **472** of them at the lower extreme and **600** at the upper. One
+exhibited: 472 of them at the lower extreme and 600 at the upper. One
 also turns up at an extreme level in the next dimension. Note that neither count
 is zero while the corresponding cell of the table above is: the forced orderings
 exist, and they lie outside the family the table samples.
@@ -1373,11 +1379,11 @@ of opposite parity and the two parity classes then have different cardinalities.
 **What is measured.** The converse, that a forced orbit always admits such a
 matching, requires Hall's condition, which could fail. A bounded search was
 declared in advance, with its space, its seed and both outcome branches fixed
-before running: the **472** and **600** forced orderings of two block systems in
-the smallest dimension, taken whole, and **200** forced orderings of a third
+before running: the 472 and 600 forced orderings of two block systems in
+the smallest dimension, taken whole, and 200 forced orderings of a third
 system in the next dimension, found using Theorem 2 of section 5. That is
-**6960** forced orbits in which the matching was verified, across three block
-systems and two dimensions, and **0** failures.
+6960 forced orbits in which the matching was verified, across three block
+systems and two dimensions, and 0 failures.
 
 <!-- origen: PROOFS-B31.md 4.4, la rama del desenlace escrita antes -->
 **What was deliberately not done.** The status was not promoted. Absence of a
@@ -1396,9 +1402,9 @@ currently the informative half of the characterisation of section 5.
 <!-- CIFRAS: 40320 = results/general-theorems.tsv:3 p1.n3.k1.ordenaciones.recorridas;
      472 = results/general-theorems.tsv:4 p1.n3.k1.ordenaciones.forzadas;
      600 = results/general-theorems.tsv:34 p1.n3.k2.ordenaciones.forzadas -->
-**What is measured.** In the smallest dimension the space of all **40320**
+**What is measured.** In the smallest dimension the space of all 40320
 orderings is enumerable, and the number of forced ones is known exactly for both
-block systems, under a single group in each case: **472** for one and **600** for
+block systems, under a single group in each case: 472 for one and 600 for
 the other. Theorem 2 of section 5 says exactly which orderings those are: the
 ones in which every difference class splits in two.
 
@@ -1418,8 +1424,8 @@ n and of the block system.
 <!-- CIFRAS: 5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
      19 = results/residuo5.tsv:6 orbitas.libres;
      1013 = results/residuo5.tsv:7 observado -->
-**What is measured.** The count, **1013**, differs from the tie by **5**, that
-difference is decomposed completely over the **19** free orbits, and the
+**What is measured.** The count, 1013, differs from the tie by 5, that
+difference is decomposed completely over the 19 free orbits, and the
 decomposition has no culprit: every free orbit deviates and the deviations very
 nearly cancel. A closed list of five candidate structures was declared before
 measuring; one of them narrows the interval and none explains the difference. The
@@ -1544,11 +1550,11 @@ preregistration was left unamended, and the prediction was not cashed.
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: **26**
-closed sessions in **134** records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: 26
+closed sessions in 134 records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
-verifier reports it, and the chain currently verifies with **0** problems; the
-tool that writes the log has no operation that rewrites or deletes. Exactly **1**
+verifier reports it, and the chain currently verifies with 0 problems; the
+tool that writes the log has no operation that rewrites or deletes. Exactly 1
 entry is marked retroactive, the first, and it says that a reconstructed record
 is not equivalent to one taken live, which is the only honest thing to do with a
 log that begins one commit late.
@@ -1562,14 +1568,14 @@ log that begins one commit late.
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, **90** files were classified, over **18652** lines: **6044** of apparatus
-against **12608** of analysis, of which **313** lines are extracted from
+point, 90 files were classified, over 18652 lines: 6044 of apparatus
+against 12608 of analysis, of which 313 lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
 <!-- CIFRAS: 5 = results/effort.tsv:11 dead_ends -->
 Dead ends are recorded as their own kind of entry, with their cost. There are
-**5** of them: a command written with the wrong working tree, a process left
+5 of them: a command written with the wrong working tree, a process left
 running after its replacement had been launched, an analysis that hung because a
 group closure exploded exactly as a declaration had warned it might, and a tool
 of our own that resolved a key by prefix and so pointed a figure at the wrong

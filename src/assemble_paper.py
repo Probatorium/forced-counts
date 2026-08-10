@@ -278,6 +278,31 @@ ORCID 0009-0003-4636-8206
         emit("cifras.DESAJUSTE", 1, f)
     check("las.cifras.impresas.siguen.saliendo.de.results", salida == 0)
 
+    # --- las tablas, numeradas y referenciadas -----------------------------
+    # Una tabla que el texto no menciona es una tabla que el lector se encuentra
+    # sin saber que hace ahi. Se exige rotulo para cada una y mencion para cada
+    # rotulo, y las dos direcciones se cuentan.
+    sin_com = re.sub(r"<!--.*?-->", " ", texto, flags=re.S)
+    bloques_tabla = len(re.findall(r"(?:\A|\n)(?:[^|\n].*\n|\n)\|",
+                                   "\n" + sin_com))
+    rotulos = [int(n) for n in re.findall(r"\*\*Table (\d+)\.\*\*", sin_com)]
+    emit("tablas.en.el.manuscrito", bloques_tabla, "")
+    emit("tablas.con.rotulo", len(rotulos), "")
+    check("toda.tabla.lleva.rotulo", bloques_tabla == len(rotulos),
+          "hay %d tablas y %d rotulos" % (bloques_tabla, len(rotulos)))
+    check("los.rotulos.van.de.uno.en.uno",
+          rotulos == list(range(1, len(rotulos) + 1)),
+          "numeracion esperada 1..n en orden de aparicion, encontrada %r"
+          % (rotulos,))
+
+    sin_rotulos = re.sub(r"\*\*Table \d+\.\*\*", " ", sin_com)
+    huerfanas_t = [n for n in rotulos
+                   if not re.search(r"\bTable %d\b" % n, sin_rotulos)]
+    emit("tablas.sin.referencia.en.la.prosa",
+         " ".join(str(n) for n in huerfanas_t) if huerfanas_t else "ninguna", "")
+    check("toda.tabla.numerada.se.referencia.en.el.texto", not huerfanas_t,
+          "una tabla que el texto no menciona no tiene por que estar")
+
     emit("palabras.aproximadas", len(texto.split()), "")
 
     with open(OUT, "w", encoding="utf-8", newline="\n") as fh:

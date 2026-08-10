@@ -1,0 +1,108 @@
+# Retirada de la negrita de las cifras de la prosa.
+# clave	valor	nota
+quitadas.00-abstract.md	5	
+quitadas.01-introduction.md	0	
+quitadas.02-preliminaries.md	0	
+quitadas.03-orbit-accounting.md	4	
+quitadas.04-parity-obstruction.md	5	
+quitadas.05-characterisation.md	6	
+quitadas.06-three-historical-orderings.md	33	
+quitadas.07-landscape.md	8	
+quitadas.08-open-problems.md	11	
+quitadas.09-verification.md	10	
+negritas.de.cifra.quitadas	82	
+negritas.conservadas.distintas	82	terminos, rotulos y cabeceras: no son cifras
+modo	escribir	
+#
+# LO CONSERVADO, una linea por texto en negrita que se ha
+# dejado como estaba, con las veces que aparece.
+conservada	4	not
+conservada	4	What is measured.
+conservada	3	forced
+conservada	3	impossible
+conservada	3	Theorem.
+conservada	3	What would close it.
+conservada	2	tie
+conservada	2	Corollary.
+conservada	1	discordant pairs of an ordering against the binary order
+conservada	1	free
+conservada	1	When is the number of discordant pairs of a constructed ordering determined
+> by the symmetry group that its construction respects?
+conservada	1	Section 2
+conservada	1	Section 3
+conservada	1	Section 4
+conservada	1	Section 5
+conservada	1	Section 6
+conservada	1	Section 7
+conservada	1	Section 8
+conservada	1	Section 9
+conservada	1	hyperoctahedral group B_n
+conservada	1	Correspondence, in one line:
+conservada	1	ordering
+conservada	1	four conventions
+conservada	1	reference order
+conservada	1	discordant
+conservada	1	First appearance, and what the term already means.
+conservada	1	between the ordering and a fixed reference order
+conservada	1	Inversion.
+conservada	1	Balance.
+conservada	1	Length in type B.
+conservada	1	blocks
+conservada	1	respects
+conservada	1	Lemma 0.
+conservada	1	Lemma 0b, and why chains give nothing.
+conservada	1	Lemma 1.
+conservada	1	Prior owner of the germ.
+conservada	1	Lemma 2.
+conservada	1	witness
+conservada	1	Prior owner of the mechanism.
+conservada	1	Lemma 3.
+conservada	1	Lemma.
+conservada	1	The exact scope of this, because it is easy to overstate.
+conservada	1	whatever the free bits are
+conservada	1	Theorem 1.
+conservada	1	whether
+conservada	1	what interval
+conservada	1	Theorem 2.
+conservada	1	if and only if, in every difference class, exactly half of its pairs
+> are discordant
+conservada	1	One direction is a theorem.
+conservada	1	The other direction is enumerative, and stays enumerative.
+conservada	1	We do not promote it to a theorem.
+conservada	1	false
+conservada	1	is
+conservada	1	The mechanism that was previously claimed for this count does not hold, and
+saying so is part of the result.
+conservada	1	For this ordering the demonstration is complete: there is no enumerative
+residue.
+conservada	1	Prior owner of this characterisation.
+conservada	1	The tie is therefore impossible for this ordering
+conservada	1	It is not affine
+conservada	1	every free orbit deviates
+conservada	1	The residue is therefore declared informative relative to this list.
+conservada	1	The mathematics reaches bottom where editorial choice begins.
+conservada	1	B(n, k)
+conservada	1	What the family does not cover, checked and not assumed.
+conservada	1	not a subspace
+conservada	1	One historical row belongs here and is kept apart.
+conservada	1	It is false, and the refutation is by exhaustive enumeration.
+conservada	1	The lesson about sampling is worth stating, because it is general.
+conservada	1	reference ordering
+conservada	1	Its results in this table are corrected ones, and the correction is ours to
+report.
+conservada	1	did not exist
+conservada	1	What is proved.
+conservada	1	What was deliberately not done.
+conservada	1	What is missing.
+conservada	1	informative relative to that list
+conservada	1	What would close it, structurally.
+conservada	1	That is an inferential question, and it is not asked in this paper.
+conservada	1	What was asked.
+conservada	1	when
+conservada	1	The refutation criterion of the first preregistration was defective, and this
+is the place to say so.
+conservada	1	A reimplementation inherits the verifications of the original, or states in
+writing why it does not.
+conservada	1	No figure enters a commit message before a checker has printed it.
+conservada	1	These counts are a snapshot, and the apparatus makes going stale a failure
+rather than a silence.

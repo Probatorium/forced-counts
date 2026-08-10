@@ -101,14 +101,14 @@ of V.
      5 = results/parity-hypotheses.tsv:39 t2.orbitas.de.pares;
      0 = results/parity-hypotheses.tsv:40 t2.orbitas.de.cardinal.impar -->
 This is checked on an instance where T is genuinely not normal: a group of order
-**16** built from a V of dimension 2 and a coordinate permutation that moves it.
+16 built from a V of dimension 2 and a coordinate permutation that moves it.
 The subgroup T fails to be normal, the closure argument produces an invariant
-subspace W of dimension **3**, and of the **5** orbits of pairs, **0** have odd
+subspace W of dimension 3, and of the 5 orbits of pairs, 0 have odd
 cardinality.
 
 <!-- origen: results/parity-hypotheses.tsv, seccion t3 -->
 <!-- CIFRAS: 50 = results/parity-hypotheses.tsv:42 t3.casos.comprobados -->
-A declared family of **50** further cases, over two dimensions and every subspace
+A declared family of 50 further cases, over two dimensions and every subspace
 of dimension at least two together with every coordinate permutation, produces no
 orbit of odd cardinality either.
 
