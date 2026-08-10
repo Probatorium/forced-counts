@@ -181,3 +181,57 @@ medio. Eso se puede contar, y se contara al unir n igual a 6 a la misma tabla.
 
     python src/general_landscape.py
     python src/general_theorems.py
+
+---
+
+# Enmiendas
+
+Se anaden al pie, con fecha y motivo. No se toca el texto de arriba, ni siquiera
+la parte que esta mal, para que se vea que estuvo ahi.
+
+## Enmienda 1, 2026-08-10: la pieza 3 se retira. La anomalia de Gray no existia
+
+**Motivo.** Al unir n igual a 6 a la misma tabla B(n, k), con el mismo aparato y
+las mismas columnas, la anomalia se deshizo. No porque se explicase, sino porque
+**no habia anomalia**: era un error mio.
+
+**El error.** DEFINICIONES-GENERAL.md declara, en su seccion 3, que en el codigo
+de Gray reflejado "la linea que se anade en cada paso es la mas significativa de
+la convencion de referencia", que es la linea 1, la inferior. La funcion `gray`
+de `src/general_landscape.py` anadia en cada paso el **bit mas alto**, que bajo
+la convencion de referencia es la linea **menos** significativa. Es decir que la
+implementacion no era la ordenacion declarada, sino otra.
+
+**Como se detecto.** Al medir n igual a 6 con el mismo aparato, la torre de Gray
+salio PROHIBIDA en los cinco niveles, cuando en el informe de n igual a 6 el
+empate si era alcanzable en los cinco. Dos resultados distintos para el mismo
+objeto obligan a mirar el objeto, y los dos programas construian secuencias
+distintas. La comprobacion decisiva: la version declarada reproduce la forma
+cerrada del codigo de Gray, el numero XOR el mismo desplazado uno, bajo la
+convencion de referencia, y la implementada no.
+
+**Lo corregido.** `src/general_landscape.py` construye ahora la ordenacion
+declarada, con la comprobacion contra la forma cerrada. Se volvieron a correr
+los tres programas.
+
+**Lo que sale con la ordenacion declarada:** el codigo de Gray reflejado cae en
+**INTERVALO en las catorce combinaciones**, n de 3 a 6 y todos los k. No hay
+diferencia entre n igual a 6 y los demas, y por tanto **no hay anomalia que
+explicar**.
+
+**Que queda en pie de la pieza 3.** Solo su seccion 3.2, que es un teorema y no
+depende de esto: si la paridad del empate difiere de la paridad comun de los
+totales compatibles, el empate es imposible. Todo lo demas de la pieza 3, la
+pregunta, los mecanismos descartados y la sospecha sobre la resolucion del
+conjunto, **queda retirado por esta enmienda**: describia un fenomeno que no
+existe.
+
+**Lo que no cambia.** La pieza 1 y la pieza 2 no usan la funcion `gray`. La
+refutacion de la conjetura de los extremos, con sus 472 y 600 ordenaciones
+forzadas en la enumeracion entera de n igual a 3, sigue en pie sin tocar. El
+reparto de la pieza 2 tambien, y su testigo de n igual a 4 con k igual a 2 sigue
+siendo valido porque la casilla de la ordenacion canonica de tipo Mawangdui no
+depende de `gray`; lo que cambia es que ahora las dos casillas de esa fila son
+INTERVALO, asi que **el testigo de la pieza 2 pasa a ser el otro**, el de las 472
+ordenaciones forzadas y las 39848 no forzadas de B(3,1), todas con el mismo
+grupo. Ese testigo nunca dependio de `gray`.

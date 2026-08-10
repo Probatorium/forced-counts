@@ -189,10 +189,19 @@ def orden_binario(n, valh):
 
 
 def gray(n):
-    if n == 0:
-        return [0]
-    prev = gray(n - 1)
-    return prev + [x | (1 << (n - 1)) for x in reversed(prev)]
+    """Codigo de Gray reflejado tal y como lo declara DEFINICIONES-GENERAL.md:
+    la linea que se anade en cada paso es la MAS significativa de la convencion
+    de referencia, es decir la linea 1. En enteros, eso desplaza lo anterior un
+    bit hacia arriba y pone el bit 0 en la mitad reflejada.
+
+    La version anterior de esta funcion anadia el bit mas alto, que bajo la
+    convencion de referencia es la linea menos significativa, y por tanto NO era
+    la ordenacion declarada. El error y sus consecuencias estan en
+    PROOFS-GENERAL.md pieza 3 y en la enmienda 2 de INFORME-GENERAL.md."""
+    out = [0]
+    for _ in range(n):
+        out = [x << 1 for x in out] + [(x << 1) | 1 for x in reversed(out)]
+    return out
 
 
 def mawangdui_like(n, k, pi, rho):

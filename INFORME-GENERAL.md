@@ -131,3 +131,27 @@ aparece una entre 3000 muestreadas.
 familia O3 y ahi no hay forzado en los extremos. Lo que queda retirado es la
 lectura general del rasgo 1, sin borrarla, para que se vea que estuvo ahi. La
 propiedad es de la familia O3, no de los extremos.
+
+## Enmienda 2, 2026-08-10: la columna Gray de las tablas de arriba no era el Gray declarado
+
+**Motivo.** La funcion que construia el codigo de Gray en
+`src/general_landscape.py` anadia en cada paso el bit mas alto, mientras que
+DEFINICIONES-GENERAL.md declara que la linea que se anade es la mas
+significativa de la convencion de referencia, que es la inferior. La
+implementacion no era la ordenacion declarada. El detalle del error, como se
+detecto y que se corrigio esta en la enmienda 1 de PROOFS-GENERAL.md.
+
+**Lo que queda mal de arriba.** La columna Gray de la tabla de la seccion 2 y el
+rasgo 4 de la seccion 4. Con la ordenacion declarada, el codigo de Gray
+reflejado cae en **INTERVALO en las nueve combinaciones de n igual a 3, 4 y 5**,
+y no en PROHIBIDO. Y el rasgo 4, que decia que eso lo separaba de n igual a 6,
+**queda retirado**: no lo separa, porque en n igual a 6 tambien cae en INTERVALO
+con el mismo aparato. No habia anomalia.
+
+**Lo que sigue bien de arriba.** Todo lo demas. La verificacion del orden del
+grupo, la columna de tipo Mawangdui canonica, las tablas de la familia O3 de la
+seccion 3, y los rasgos 2 y 3. Ninguno de ellos usa la funcion corregida.
+
+**Donde estan las cifras corregidas.** En `results/general-landscape.tsv` y
+`results/general-n6.tsv`, ya regenerados, y en la tabla unica de
+TABLA-GENERAL.md.

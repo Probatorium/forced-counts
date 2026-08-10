@@ -7,25 +7,25 @@ n3.denominador	28	C(2^n, 2)
 n3.empate	14	
 n3.orden.de.B_n	48	n! por 2^n
 n3.O1.el.orden.binario.da.cero.pares.discordantes	1	control de que el aparato no inventa nada
-n3.total.Gray.yang1.bottomMSB	12	
-n3.total.Gray.yang1.bottomLSB	6	
-n3.total.Gray.yang0.bottomMSB	16	
-n3.total.Gray.yang0.bottomLSB	22	
+n3.total.Gray.yang1.bottomMSB	6	
+n3.total.Gray.yang1.bottomLSB	12	
+n3.total.Gray.yang0.bottomMSB	22	
+n3.total.Gray.yang0.bottomLSB	16	
 n3.k1.es.el.analogo.de.mawangdui	0	solo definido cuando n es par y k es la mitad
 n3.k1.Gray.grupo.orden	16	
 n3.k1.Gray.grupo.orden.predicho	16	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n3.k1.Gray.grupo.coincide.con.lo.predicho	1	
 n3.k1.Gray.orbitas	5	
-n3.k1.Gray.forzadas	4	
-n3.k1.Gray.libres	1	
+n3.k1.Gray.forzadas	1	
+n3.k1.Gray.libres	4	
 n3.k1.Gray.impares	0	
-n3.k1.Gray.minimo	12	
-n3.k1.Gray.maximo	16	
-n3.k1.Gray.anchura	4	
-n3.k1.Gray.observado	12	
-n3.k1.Gray.alcanzables	2	
-n3.k1.Gray.empate_alcanzable	0	
-n3.k1.Gray.casilla	PROHIBIDO	
+n3.k1.Gray.minimo	6	
+n3.k1.Gray.maximo	22	
+n3.k1.Gray.anchura	16	
+n3.k1.Gray.observado	6	
+n3.k1.Gray.alcanzables	5	
+n3.k1.Gray.empate_alcanzable	1	
+n3.k1.Gray.casilla	INTERVALO	
 n3.k1.MWDlike.canonica.grupo.orden	16	
 n3.k1.MWDlike.canonica.grupo.orden.predicho	16	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n3.k1.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -52,16 +52,16 @@ n3.k2.Gray.grupo.orden	16
 n3.k2.Gray.grupo.orden.predicho	16	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n3.k2.Gray.grupo.coincide.con.lo.predicho	1	
 n3.k2.Gray.orbitas	5	
-n3.k2.Gray.forzadas	4	
-n3.k2.Gray.libres	1	
+n3.k2.Gray.forzadas	2	
+n3.k2.Gray.libres	3	
 n3.k2.Gray.impares	0	
-n3.k2.Gray.minimo	12	
-n3.k2.Gray.maximo	16	
-n3.k2.Gray.anchura	4	
-n3.k2.Gray.observado	12	
-n3.k2.Gray.alcanzables	2	
-n3.k2.Gray.empate_alcanzable	0	
-n3.k2.Gray.casilla	PROHIBIDO	
+n3.k2.Gray.minimo	6	
+n3.k2.Gray.maximo	22	
+n3.k2.Gray.anchura	16	
+n3.k2.Gray.observado	6	
+n3.k2.Gray.alcanzables	5	
+n3.k2.Gray.empate_alcanzable	1	
+n3.k2.Gray.casilla	INTERVALO	
 n3.k2.MWDlike.canonica.grupo.orden	16	
 n3.k2.MWDlike.canonica.grupo.orden.predicho	16	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n3.k2.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -88,25 +88,25 @@ n4.denominador	120	C(2^n, 2)
 n4.empate	60	
 n4.orden.de.B_n	384	n! por 2^n
 n4.O1.el.orden.binario.da.cero.pares.discordantes	1	control de que el aparato no inventa nada
-n4.total.Gray.yang1.bottomMSB	56	
-n4.total.Gray.yang1.bottomLSB	28	
-n4.total.Gray.yang0.bottomMSB	64	
-n4.total.Gray.yang0.bottomLSB	92	
+n4.total.Gray.yang1.bottomMSB	28	
+n4.total.Gray.yang1.bottomLSB	56	
+n4.total.Gray.yang0.bottomMSB	92	
+n4.total.Gray.yang0.bottomLSB	64	
 n4.k1.es.el.analogo.de.mawangdui	0	solo definido cuando n es par y k es la mitad
 n4.k1.Gray.grupo.orden	96	
 n4.k1.Gray.grupo.orden.predicho	96	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n4.k1.Gray.grupo.coincide.con.lo.predicho	1	
 n4.k1.Gray.orbitas	7	
-n4.k1.Gray.forzadas	6	
-n4.k1.Gray.libres	1	
+n4.k1.Gray.forzadas	1	
+n4.k1.Gray.libres	6	
 n4.k1.Gray.impares	0	
-n4.k1.Gray.minimo	56	
-n4.k1.Gray.maximo	64	
-n4.k1.Gray.anchura	8	
-n4.k1.Gray.observado	56	
-n4.k1.Gray.alcanzables	2	
-n4.k1.Gray.empate_alcanzable	0	
-n4.k1.Gray.casilla	PROHIBIDO	
+n4.k1.Gray.minimo	28	
+n4.k1.Gray.maximo	92	
+n4.k1.Gray.anchura	64	
+n4.k1.Gray.observado	28	
+n4.k1.Gray.alcanzables	9	
+n4.k1.Gray.empate_alcanzable	1	
+n4.k1.Gray.casilla	INTERVALO	
 n4.k1.MWDlike.canonica.grupo.orden	96	
 n4.k1.MWDlike.canonica.grupo.orden.predicho	96	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n4.k1.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -133,16 +133,16 @@ n4.k2.Gray.grupo.orden	64
 n4.k2.Gray.grupo.orden.predicho	64	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n4.k2.Gray.grupo.coincide.con.lo.predicho	1	
 n4.k2.Gray.orbitas	8	
-n4.k2.Gray.forzadas	7	
-n4.k2.Gray.libres	1	
+n4.k2.Gray.forzadas	2	
+n4.k2.Gray.libres	6	
 n4.k2.Gray.impares	0	
-n4.k2.Gray.minimo	56	
-n4.k2.Gray.maximo	64	
-n4.k2.Gray.anchura	8	
-n4.k2.Gray.observado	56	
-n4.k2.Gray.alcanzables	2	
-n4.k2.Gray.empate_alcanzable	0	
-n4.k2.Gray.casilla	PROHIBIDO	
+n4.k2.Gray.minimo	28	
+n4.k2.Gray.maximo	92	
+n4.k2.Gray.anchura	64	
+n4.k2.Gray.observado	28	
+n4.k2.Gray.alcanzables	9	
+n4.k2.Gray.empate_alcanzable	1	
+n4.k2.Gray.casilla	INTERVALO	
 n4.k2.MWDlike.canonica.grupo.orden	64	
 n4.k2.MWDlike.canonica.grupo.orden.predicho	64	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n4.k2.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -169,16 +169,16 @@ n4.k3.Gray.grupo.orden	96
 n4.k3.Gray.grupo.orden.predicho	96	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n4.k3.Gray.grupo.coincide.con.lo.predicho	1	
 n4.k3.Gray.orbitas	7	
-n4.k3.Gray.forzadas	6	
-n4.k3.Gray.libres	1	
+n4.k3.Gray.forzadas	3	
+n4.k3.Gray.libres	4	
 n4.k3.Gray.impares	0	
-n4.k3.Gray.minimo	56	
-n4.k3.Gray.maximo	64	
-n4.k3.Gray.anchura	8	
-n4.k3.Gray.observado	56	
-n4.k3.Gray.alcanzables	2	
-n4.k3.Gray.empate_alcanzable	0	
-n4.k3.Gray.casilla	PROHIBIDO	
+n4.k3.Gray.minimo	28	
+n4.k3.Gray.maximo	92	
+n4.k3.Gray.anchura	64	
+n4.k3.Gray.observado	28	
+n4.k3.Gray.alcanzables	9	
+n4.k3.Gray.empate_alcanzable	1	
+n4.k3.Gray.casilla	INTERVALO	
 n4.k3.MWDlike.canonica.grupo.orden	96	
 n4.k3.MWDlike.canonica.grupo.orden.predicho	96	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n4.k3.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -205,25 +205,25 @@ n5.denominador	496	C(2^n, 2)
 n5.empate	248	
 n5.orden.de.B_n	3840	n! por 2^n
 n5.O1.el.orden.binario.da.cero.pares.discordantes	1	control de que el aparato no inventa nada
-n5.total.Gray.yang1.bottomMSB	240	
-n5.total.Gray.yang1.bottomLSB	120	
-n5.total.Gray.yang0.bottomMSB	256	
-n5.total.Gray.yang0.bottomLSB	376	
+n5.total.Gray.yang1.bottomMSB	120	
+n5.total.Gray.yang1.bottomLSB	240	
+n5.total.Gray.yang0.bottomMSB	376	
+n5.total.Gray.yang0.bottomLSB	256	
 n5.k1.es.el.analogo.de.mawangdui	0	solo definido cuando n es par y k es la mitad
 n5.k1.Gray.grupo.orden	768	
 n5.k1.Gray.grupo.orden.predicho	768	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k1.Gray.grupo.coincide.con.lo.predicho	1	
 n5.k1.Gray.orbitas	9	
-n5.k1.Gray.forzadas	8	
-n5.k1.Gray.libres	1	
+n5.k1.Gray.forzadas	1	
+n5.k1.Gray.libres	8	
 n5.k1.Gray.impares	0	
-n5.k1.Gray.minimo	240	
-n5.k1.Gray.maximo	256	
-n5.k1.Gray.anchura	16	
-n5.k1.Gray.observado	240	
-n5.k1.Gray.alcanzables	2	
-n5.k1.Gray.empate_alcanzable	0	
-n5.k1.Gray.casilla	PROHIBIDO	
+n5.k1.Gray.minimo	120	
+n5.k1.Gray.maximo	376	
+n5.k1.Gray.anchura	256	
+n5.k1.Gray.observado	120	
+n5.k1.Gray.alcanzables	17	
+n5.k1.Gray.empate_alcanzable	1	
+n5.k1.Gray.casilla	INTERVALO	
 n5.k1.MWDlike.canonica.grupo.orden	768	
 n5.k1.MWDlike.canonica.grupo.orden.predicho	768	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k1.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -250,16 +250,16 @@ n5.k2.Gray.grupo.orden	384
 n5.k2.Gray.grupo.orden.predicho	384	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k2.Gray.grupo.coincide.con.lo.predicho	1	
 n5.k2.Gray.orbitas	11	
-n5.k2.Gray.forzadas	10	
-n5.k2.Gray.libres	1	
+n5.k2.Gray.forzadas	2	
+n5.k2.Gray.libres	9	
 n5.k2.Gray.impares	0	
-n5.k2.Gray.minimo	240	
-n5.k2.Gray.maximo	256	
-n5.k2.Gray.anchura	16	
-n5.k2.Gray.observado	240	
-n5.k2.Gray.alcanzables	2	
-n5.k2.Gray.empate_alcanzable	0	
-n5.k2.Gray.casilla	PROHIBIDO	
+n5.k2.Gray.minimo	120	
+n5.k2.Gray.maximo	376	
+n5.k2.Gray.anchura	256	
+n5.k2.Gray.observado	120	
+n5.k2.Gray.alcanzables	17	
+n5.k2.Gray.empate_alcanzable	1	
+n5.k2.Gray.casilla	INTERVALO	
 n5.k2.MWDlike.canonica.grupo.orden	384	
 n5.k2.MWDlike.canonica.grupo.orden.predicho	384	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k2.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -286,16 +286,16 @@ n5.k3.Gray.grupo.orden	384
 n5.k3.Gray.grupo.orden.predicho	384	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k3.Gray.grupo.coincide.con.lo.predicho	1	
 n5.k3.Gray.orbitas	11	
-n5.k3.Gray.forzadas	10	
-n5.k3.Gray.libres	1	
+n5.k3.Gray.forzadas	3	
+n5.k3.Gray.libres	8	
 n5.k3.Gray.impares	0	
-n5.k3.Gray.minimo	240	
-n5.k3.Gray.maximo	256	
-n5.k3.Gray.anchura	16	
-n5.k3.Gray.observado	240	
-n5.k3.Gray.alcanzables	2	
-n5.k3.Gray.empate_alcanzable	0	
-n5.k3.Gray.casilla	PROHIBIDO	
+n5.k3.Gray.minimo	120	
+n5.k3.Gray.maximo	376	
+n5.k3.Gray.anchura	256	
+n5.k3.Gray.observado	120	
+n5.k3.Gray.alcanzables	17	
+n5.k3.Gray.empate_alcanzable	1	
+n5.k3.Gray.casilla	INTERVALO	
 n5.k3.MWDlike.canonica.grupo.orden	384	
 n5.k3.MWDlike.canonica.grupo.orden.predicho	384	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k3.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
@@ -322,16 +322,16 @@ n5.k4.Gray.grupo.orden	768
 n5.k4.Gray.grupo.orden.predicho	768	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k4.Gray.grupo.coincide.con.lo.predicho	1	
 n5.k4.Gray.orbitas	9	
-n5.k4.Gray.forzadas	8	
-n5.k4.Gray.libres	1	
+n5.k4.Gray.forzadas	4	
+n5.k4.Gray.libres	5	
 n5.k4.Gray.impares	0	
-n5.k4.Gray.minimo	240	
-n5.k4.Gray.maximo	256	
-n5.k4.Gray.anchura	16	
-n5.k4.Gray.observado	240	
-n5.k4.Gray.alcanzables	2	
-n5.k4.Gray.empate_alcanzable	0	
-n5.k4.Gray.casilla	PROHIBIDO	
+n5.k4.Gray.minimo	120	
+n5.k4.Gray.maximo	376	
+n5.k4.Gray.anchura	256	
+n5.k4.Gray.observado	120	
+n5.k4.Gray.alcanzables	15	
+n5.k4.Gray.empate_alcanzable	1	
+n5.k4.Gray.casilla	INTERVALO	
 n5.k4.MWDlike.canonica.grupo.orden	768	
 n5.k4.MWDlike.canonica.grupo.orden.predicho	768	k! por (n-k)! por 2^n, la prediccion de b.4 de la preinscripcion
 n5.k4.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	

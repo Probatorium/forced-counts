@@ -1,0 +1,166 @@
+# n = 6 en el mismo sistema B(n,k) que n = 3, 4 y 5.
+# clave	valor	nota
+n6.vertices	64	
+n6.denominador	2016	C(2^n, 2)
+n6.empate	1008	
+n6.orden.de.B_n	46080	n! por 2^n
+n6.mawangdui.es.una.permutacion.de.los.64	1	
+n6.los.octetos.de.mawangdui.son.los.bloques.de.B(6,3)	1	cada octeto tiene un unico trigrama superior
+n6.los.palacios.de.jing.fang.son.clases.de.un.subespacio	0	cero quiere decir que no encajan en el sistema B(n,k)
+n6.diferencias.distintas.entre.los.pares.de.king.wen	7	uno solo querria decir que son clases de un subespacio de dimension uno
+n6.k1.Gray.grupo.orden	7680	
+n6.k1.Gray.grupo.orden.predicho	7680	k! por (n-k)! por 2^n
+n6.k1.Gray.grupo.coincide.con.lo.predicho	1	
+n6.k1.Gray.orbitas	11	
+n6.k1.Gray.forzadas	1	
+n6.k1.Gray.libres	10	
+n6.k1.Gray.impares	0	
+n6.k1.Gray.minimo	496	
+n6.k1.Gray.maximo	1520	
+n6.k1.Gray.anchura	1024	
+n6.k1.Gray.observado	496	
+n6.k1.Gray.alcanzables	33	
+n6.k1.Gray.empate_alcanzable	1	
+n6.k1.Gray.casilla	INTERVALO	
+n6.k1.MWDlike.canonica.grupo.orden	7680	
+n6.k1.MWDlike.canonica.grupo.orden.predicho	7680	k! por (n-k)! por 2^n
+n6.k1.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
+n6.k1.MWDlike.canonica.orbitas	11	
+n6.k1.MWDlike.canonica.forzadas	9	
+n6.k1.MWDlike.canonica.libres	2	
+n6.k1.MWDlike.canonica.impares	0	
+n6.k1.MWDlike.canonica.minimo	912	
+n6.k1.MWDlike.canonica.maximo	1104	
+n6.k1.MWDlike.canonica.anchura	192	
+n6.k1.MWDlike.canonica.observado	912	
+n6.k1.MWDlike.canonica.alcanzables	4	
+n6.k1.MWDlike.canonica.empate_alcanzable	0	
+n6.k1.MWDlike.canonica.casilla	PROHIBIDO	
+n6.k2.Gray.grupo.orden	3072	
+n6.k2.Gray.grupo.orden.predicho	3072	k! por (n-k)! por 2^n
+n6.k2.Gray.grupo.coincide.con.lo.predicho	1	
+n6.k2.Gray.orbitas	14	
+n6.k2.Gray.forzadas	2	
+n6.k2.Gray.libres	12	
+n6.k2.Gray.impares	0	
+n6.k2.Gray.minimo	496	
+n6.k2.Gray.maximo	1520	
+n6.k2.Gray.anchura	1024	
+n6.k2.Gray.observado	496	
+n6.k2.Gray.alcanzables	33	
+n6.k2.Gray.empate_alcanzable	1	
+n6.k2.Gray.casilla	INTERVALO	
+n6.k2.MWDlike.canonica.grupo.orden	3072	
+n6.k2.MWDlike.canonica.grupo.orden.predicho	3072	k! por (n-k)! por 2^n
+n6.k2.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
+n6.k2.MWDlike.canonica.orbitas	14	
+n6.k2.MWDlike.canonica.forzadas	12	
+n6.k2.MWDlike.canonica.libres	2	
+n6.k2.MWDlike.canonica.impares	0	
+n6.k2.MWDlike.canonica.minimo	912	
+n6.k2.MWDlike.canonica.maximo	1104	
+n6.k2.MWDlike.canonica.anchura	192	
+n6.k2.MWDlike.canonica.observado	912	
+n6.k2.MWDlike.canonica.alcanzables	4	
+n6.k2.MWDlike.canonica.empate_alcanzable	0	
+n6.k2.MWDlike.canonica.casilla	PROHIBIDO	
+n6.k3.Gray.grupo.orden	2304	
+n6.k3.Gray.grupo.orden.predicho	2304	k! por (n-k)! por 2^n
+n6.k3.Gray.grupo.coincide.con.lo.predicho	1	
+n6.k3.Gray.orbitas	15	
+n6.k3.Gray.forzadas	3	
+n6.k3.Gray.libres	12	
+n6.k3.Gray.impares	0	
+n6.k3.Gray.minimo	496	
+n6.k3.Gray.maximo	1520	
+n6.k3.Gray.anchura	1024	
+n6.k3.Gray.observado	496	
+n6.k3.Gray.alcanzables	33	
+n6.k3.Gray.empate_alcanzable	1	
+n6.k3.Gray.casilla	INTERVALO	
+n6.k3.MWDlike.canonica.grupo.orden	2304	
+n6.k3.MWDlike.canonica.grupo.orden.predicho	2304	k! por (n-k)! por 2^n
+n6.k3.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
+n6.k3.MWDlike.canonica.orbitas	15	
+n6.k3.MWDlike.canonica.forzadas	13	
+n6.k3.MWDlike.canonica.libres	2	
+n6.k3.MWDlike.canonica.impares	0	
+n6.k3.MWDlike.canonica.minimo	912	
+n6.k3.MWDlike.canonica.maximo	1104	
+n6.k3.MWDlike.canonica.anchura	192	
+n6.k3.MWDlike.canonica.observado	912	
+n6.k3.MWDlike.canonica.alcanzables	3	
+n6.k3.MWDlike.canonica.empate_alcanzable	1	
+n6.k3.MWDlike.canonica.casilla	INTERVALO	
+n6.k3.Mawangdui.historica.grupo.orden	2304	
+n6.k3.Mawangdui.historica.grupo.orden.predicho	2304	k! por (n-k)! por 2^n
+n6.k3.Mawangdui.historica.grupo.coincide.con.lo.predicho	1	
+n6.k3.Mawangdui.historica.orbitas	15	
+n6.k3.Mawangdui.historica.forzadas	15	
+n6.k3.Mawangdui.historica.libres	0	
+n6.k3.Mawangdui.historica.impares	0	
+n6.k3.Mawangdui.historica.minimo	1008	
+n6.k3.Mawangdui.historica.maximo	1008	
+n6.k3.Mawangdui.historica.anchura	0	
+n6.k3.Mawangdui.historica.observado	1008	
+n6.k3.Mawangdui.historica.alcanzables	1	
+n6.k3.Mawangdui.historica.empate_alcanzable	1	
+n6.k3.Mawangdui.historica.casilla	FORZADO	
+n6.k3.Mawangdui.historica.si.fuerza.el.valor.es.el.empate	1	
+n6.k4.Gray.grupo.orden	3072	
+n6.k4.Gray.grupo.orden.predicho	3072	k! por (n-k)! por 2^n
+n6.k4.Gray.grupo.coincide.con.lo.predicho	1	
+n6.k4.Gray.orbitas	14	
+n6.k4.Gray.forzadas	4	
+n6.k4.Gray.libres	10	
+n6.k4.Gray.impares	0	
+n6.k4.Gray.minimo	496	
+n6.k4.Gray.maximo	1520	
+n6.k4.Gray.anchura	1024	
+n6.k4.Gray.observado	496	
+n6.k4.Gray.alcanzables	33	
+n6.k4.Gray.empate_alcanzable	1	
+n6.k4.Gray.casilla	INTERVALO	
+n6.k4.MWDlike.canonica.grupo.orden	3072	
+n6.k4.MWDlike.canonica.grupo.orden.predicho	3072	k! por (n-k)! por 2^n
+n6.k4.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
+n6.k4.MWDlike.canonica.orbitas	14	
+n6.k4.MWDlike.canonica.forzadas	12	
+n6.k4.MWDlike.canonica.libres	2	
+n6.k4.MWDlike.canonica.impares	0	
+n6.k4.MWDlike.canonica.minimo	912	
+n6.k4.MWDlike.canonica.maximo	1104	
+n6.k4.MWDlike.canonica.anchura	192	
+n6.k4.MWDlike.canonica.observado	912	
+n6.k4.MWDlike.canonica.alcanzables	4	
+n6.k4.MWDlike.canonica.empate_alcanzable	0	
+n6.k4.MWDlike.canonica.casilla	PROHIBIDO	
+n6.k5.Gray.grupo.orden	7680	
+n6.k5.Gray.grupo.orden.predicho	7680	k! por (n-k)! por 2^n
+n6.k5.Gray.grupo.coincide.con.lo.predicho	1	
+n6.k5.Gray.orbitas	11	
+n6.k5.Gray.forzadas	5	
+n6.k5.Gray.libres	6	
+n6.k5.Gray.impares	0	
+n6.k5.Gray.minimo	496	
+n6.k5.Gray.maximo	1520	
+n6.k5.Gray.anchura	1024	
+n6.k5.Gray.observado	496	
+n6.k5.Gray.alcanzables	21	
+n6.k5.Gray.empate_alcanzable	1	
+n6.k5.Gray.casilla	INTERVALO	
+n6.k5.MWDlike.canonica.grupo.orden	7680	
+n6.k5.MWDlike.canonica.grupo.orden.predicho	7680	k! por (n-k)! por 2^n
+n6.k5.MWDlike.canonica.grupo.coincide.con.lo.predicho	1	
+n6.k5.MWDlike.canonica.orbitas	11	
+n6.k5.MWDlike.canonica.forzadas	9	
+n6.k5.MWDlike.canonica.libres	2	
+n6.k5.MWDlike.canonica.impares	0	
+n6.k5.MWDlike.canonica.minimo	912	
+n6.k5.MWDlike.canonica.maximo	1104	
+n6.k5.MWDlike.canonica.anchura	192	
+n6.k5.MWDlike.canonica.observado	912	
+n6.k5.MWDlike.canonica.alcanzables	4	
+n6.k5.MWDlike.canonica.empate_alcanzable	0	
+n6.k5.MWDlike.canonica.casilla	PROHIBIDO	
+n6.O3.muestreada	0	no se muestreo la familia O3 para n = 6, por coste; se dice en vez de disimularlo

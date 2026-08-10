@@ -183,82 +183,82 @@ p1.n5.k4.la.conjetura.de.los.extremos.se.sostiene	1	cero seria que ninguna orden
 p3.n3.k1.empate	14	
 p3.n3.k1.paridad.del.empate	0	
 p3.n3.k1.paridad.de.los.compatibles	0	
-p3.n3.k1.minimo	12	
-p3.n3.k1.maximo	16	
-p3.n3.k1.compatibles	2	
+p3.n3.k1.minimo	6	
+p3.n3.k1.maximo	22	
+p3.n3.k1.compatibles	5	
 p3.n3.k1.empate.dentro.del.intervalo	1	
-p3.n3.k1.empate.alcanzable	0	
-p3.n3.k1.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n3.k1.empate.alcanzable	1	
+p3.n3.k1.mecanismo.de.exclusion	no excluido	
 p3.n3.k2.empate	14	
 p3.n3.k2.paridad.del.empate	0	
 p3.n3.k2.paridad.de.los.compatibles	0	
-p3.n3.k2.minimo	12	
-p3.n3.k2.maximo	16	
-p3.n3.k2.compatibles	2	
+p3.n3.k2.minimo	6	
+p3.n3.k2.maximo	22	
+p3.n3.k2.compatibles	5	
 p3.n3.k2.empate.dentro.del.intervalo	1	
-p3.n3.k2.empate.alcanzable	0	
-p3.n3.k2.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n3.k2.empate.alcanzable	1	
+p3.n3.k2.mecanismo.de.exclusion	no excluido	
 p3.n4.k1.empate	60	
 p3.n4.k1.paridad.del.empate	0	
 p3.n4.k1.paridad.de.los.compatibles	0	
-p3.n4.k1.minimo	56	
-p3.n4.k1.maximo	64	
-p3.n4.k1.compatibles	2	
+p3.n4.k1.minimo	28	
+p3.n4.k1.maximo	92	
+p3.n4.k1.compatibles	9	
 p3.n4.k1.empate.dentro.del.intervalo	1	
-p3.n4.k1.empate.alcanzable	0	
-p3.n4.k1.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n4.k1.empate.alcanzable	1	
+p3.n4.k1.mecanismo.de.exclusion	no excluido	
 p3.n4.k2.empate	60	
 p3.n4.k2.paridad.del.empate	0	
 p3.n4.k2.paridad.de.los.compatibles	0	
-p3.n4.k2.minimo	56	
-p3.n4.k2.maximo	64	
-p3.n4.k2.compatibles	2	
+p3.n4.k2.minimo	28	
+p3.n4.k2.maximo	92	
+p3.n4.k2.compatibles	9	
 p3.n4.k2.empate.dentro.del.intervalo	1	
-p3.n4.k2.empate.alcanzable	0	
-p3.n4.k2.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n4.k2.empate.alcanzable	1	
+p3.n4.k2.mecanismo.de.exclusion	no excluido	
 p3.n4.k3.empate	60	
 p3.n4.k3.paridad.del.empate	0	
 p3.n4.k3.paridad.de.los.compatibles	0	
-p3.n4.k3.minimo	56	
-p3.n4.k3.maximo	64	
-p3.n4.k3.compatibles	2	
+p3.n4.k3.minimo	28	
+p3.n4.k3.maximo	92	
+p3.n4.k3.compatibles	9	
 p3.n4.k3.empate.dentro.del.intervalo	1	
-p3.n4.k3.empate.alcanzable	0	
-p3.n4.k3.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n4.k3.empate.alcanzable	1	
+p3.n4.k3.mecanismo.de.exclusion	no excluido	
 p3.n5.k1.empate	248	
 p3.n5.k1.paridad.del.empate	0	
 p3.n5.k1.paridad.de.los.compatibles	0	
-p3.n5.k1.minimo	240	
-p3.n5.k1.maximo	256	
-p3.n5.k1.compatibles	2	
+p3.n5.k1.minimo	120	
+p3.n5.k1.maximo	376	
+p3.n5.k1.compatibles	17	
 p3.n5.k1.empate.dentro.del.intervalo	1	
-p3.n5.k1.empate.alcanzable	0	
-p3.n5.k1.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k1.empate.alcanzable	1	
+p3.n5.k1.mecanismo.de.exclusion	no excluido	
 p3.n5.k2.empate	248	
 p3.n5.k2.paridad.del.empate	0	
 p3.n5.k2.paridad.de.los.compatibles	0	
-p3.n5.k2.minimo	240	
-p3.n5.k2.maximo	256	
-p3.n5.k2.compatibles	2	
+p3.n5.k2.minimo	120	
+p3.n5.k2.maximo	376	
+p3.n5.k2.compatibles	17	
 p3.n5.k2.empate.dentro.del.intervalo	1	
-p3.n5.k2.empate.alcanzable	0	
-p3.n5.k2.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k2.empate.alcanzable	1	
+p3.n5.k2.mecanismo.de.exclusion	no excluido	
 p3.n5.k3.empate	248	
 p3.n5.k3.paridad.del.empate	0	
 p3.n5.k3.paridad.de.los.compatibles	0	
-p3.n5.k3.minimo	240	
-p3.n5.k3.maximo	256	
-p3.n5.k3.compatibles	2	
+p3.n5.k3.minimo	120	
+p3.n5.k3.maximo	376	
+p3.n5.k3.compatibles	17	
 p3.n5.k3.empate.dentro.del.intervalo	1	
-p3.n5.k3.empate.alcanzable	0	
-p3.n5.k3.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k3.empate.alcanzable	1	
+p3.n5.k3.mecanismo.de.exclusion	no excluido	
 p3.n5.k4.empate	248	
 p3.n5.k4.paridad.del.empate	0	
 p3.n5.k4.paridad.de.los.compatibles	0	
-p3.n5.k4.minimo	240	
-p3.n5.k4.maximo	256	
-p3.n5.k4.compatibles	2	
+p3.n5.k4.minimo	120	
+p3.n5.k4.maximo	376	
+p3.n5.k4.compatibles	15	
 p3.n5.k4.empate.dentro.del.intervalo	1	
-p3.n5.k4.empate.alcanzable	0	
-p3.n5.k4.mecanismo.de.exclusion	dentro del intervalo pero no alcanzable	
+p3.n5.k4.empate.alcanzable	1	
+p3.n5.k4.mecanismo.de.exclusion	no excluido	
 p3.teorema.si.las.paridades.diferen.el.empate.es.imposible	1	todos los compatibles comparten paridad, luego uno de paridad distinta no puede estar

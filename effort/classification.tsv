@@ -48,3 +48,6 @@ INFORME-GENERAL.md	analisis	propio	lectura de la primera medicion general
 src/general_theorems.py	analisis	propio	elevacion a teorema de las formas generales
 results/general-theorems.tsv	analisis	propio	salida de la elevacion
 PROOFS-GENERAL.md	analisis	propio	demostrado, enumerativo y refutado de la fase general
+src/general_n6.py	analisis	propio	n=6 en el mismo sistema B(n,k)
+results/general-n6.tsv	analisis	propio	salida de n=6 en el sistema general
+TABLA-GENERAL.md	analisis	propio	la tabla general unica, n de 3 a 6
