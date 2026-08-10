@@ -42,3 +42,6 @@ src/parity_hypotheses.py	analisis	propio	fase previa a la firma, teoremas sobre 
 results/parity-hypotheses.tsv	analisis	propio	salida de la fase previa
 PREREGISTRATION-GENERAL.md	aparato	propio	preinscripcion de la fase general, texto firmado
 DEFINICIONES-GENERAL.md	aparato	propio	declaracion de las construcciones antes de medir
+src/general_landscape.py	analisis	propio	primera medicion de la fase general
+results/general-landscape.tsv	analisis	propio	salida de la medicion general
+INFORME-GENERAL.md	analisis	propio	lectura de la primera medicion general
