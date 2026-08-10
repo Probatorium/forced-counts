@@ -44,7 +44,7 @@ Actualizado en la sesion 9. Las filas que cambiaron de estado lo dicen.
 | Mutze, survey de codigos de Gray | **ARTEFACTO LEIDO** en la parte citada, verificada contra el PDF | seccion 7 |
 | Bjorner y Brenti, Coxeter groups | **ARTEFACTO LEIDO** en la parte citada, verificada contra el PDF | seccion 8 |
 | Colision de "inversion" en el Yijing | **MEDIDA** en cuatro artefactos | seccion 6 |
-| Observacion folk de paridad de transiciones | **SEGUNDA MANO**, sin dueno localizado | secciones 3.7 y 9 |
+| Observacion folk de paridad de transiciones | **MEDIDA AQUI** en la sesion 11; la observacion sigue sin dueno localizado | secciones 3.7, 9 y 13 |
 | Goldenberg 1975, Davis 1998, Higgins 1998, Hacker y Moore 2003, Mesker 2002, Moore 1989 | **SEGUNDA MANO**, pendientes | seccion 9 |
 
 La lista de pendientes no pretende ser completa.
@@ -274,6 +274,10 @@ segunda mano y asi queda marcada aqui.
   consecutivas. O la observacion cuenta otra cosa, o cuenta 64 transiciones
   cerrando el ciclo, o alguna de las dos cifras viene mal transmitida. No se
   resuelve aqui, se deja senalado.
+> **MEDIDA en la sesion 11.** La nota aritmetica de arriba queda resuelta:
+> la observacion cierra el ciclo y cuenta 64 transiciones. Ver la seccion 13.
+> Lo demas de este apartado sigue en pie, el deslinde incluido.
+
 - **Deslinde obligatorio cuando se lea, y ya desde ahora:** aunque las dos cosas
   lleven la palabra paridad, **la observacion folk y la obstruccion de paridad
   de PROOFS.md 3.3 son objetos distintos**. La folk habla de **transiciones
@@ -745,6 +749,9 @@ localizado como pendiente, y esa lista tampoco pretende ser completa.
   posiciones. El deslinde de la seccion 3.7 es obligatorio.
 - **Nota aritmetica que sigue en pie:** 48 mas 16 son 64, y una secuencia de 64
   hexagramas tiene 63 transiciones consecutivas.
+- **RESUELTA en la seccion 13**, por medicion propia: la variante ciclica da
+  48 y 16 en razon 3 a 1, y la lineal da 48 y 15. La observacion cerraba el
+  ciclo. Sigue sin dueno localizado.
 - **Prioridad:** media. No por lo que pueda contener, sino porque una cifra sin
   puntero circulando cerca del trabajo es una fuente de error para terceros.
 
@@ -769,3 +776,79 @@ leerla entera. Esa es la razon exacta por la que estas lineas no cierran nada.
 Mientras la cabecera de este fichero siga diciendo ABIERTA, no se afirma novedad
 de nada. Cuando se cierre, se dira en la seccion 10, con fecha, con la lista de
 lo leido, y con lo que se decidio no leer y por que.
+
+---
+
+# 13. La observacion folk, medida en vez de atribuida
+
+La observacion informal decia 48 pares y 16 impares, razon 3 a 1, sin dueno
+localizado y sin puntero. En vez de seguir discutiendo la cifra ajena, se mide
+la propia sobre la secuencia King Wen de `data/sequences.json`. Programa:
+`src/transitions.py`. Salida: `results/transitions.tsv`.
+
+**Que se mide.** Para cada transicion entre hexagramas consecutivos, el numero
+de lineas que cambian, y despues el reparto entre transiciones con numero par de
+cambios y transiciones con numero impar. Dos variantes, porque la observacion no
+decia cual: la **lineal**, con 63 transiciones de la posicion 1 a la 64, y la
+**ciclica**, con 64, cerrando de la 64 a la 1.
+
+## 13.1 El resultado
+
+| variante | transiciones | par | impar | razon | coincide con 48 y 16 |
+|---|---|---|---|---|---|
+| lineal | 63 | 48 | 15 | 3.2000 | **no** |
+| ciclica | 64 | **48** | **16** | **3.0000** | **si** |
+
+Origen: `results/transitions.tsv:6` a `:10` y `:20` a `:24`.
+
+**La variante ciclica reproduce exactamente la observacion**, 48 y 16 en razon 3
+a 1. La lineal no: da 48 y 15, razon 3.2. La transicion que las separa es la de
+cierre, de la posicion 64 a la 1, que cambia 3 lineas y por tanto es impar
+(`results/transitions.tsv:42`, `:43`).
+
+## 13.2 La nota aritmetica de la sesion 9 queda resuelta
+
+Aquella nota decia: 48 mas 16 son 64, mientras que 64 hexagramas dan 63
+transiciones consecutivas, luego o la observacion cuenta otra cosa, o cierra el
+ciclo, o viene mal transmitida. **Era la segunda: cierra el ciclo.** La
+observacion no estaba mal transmitida y no contaba otra cosa; contaba 64
+transiciones porque tomaba la secuencia como cerrada.
+
+## 13.3 De donde sale el reparto
+
+La medicion da tambien la descomposicion, que no estaba en la observacion:
+
+| clase de transicion | numero | par | impar | origen |
+|---|---|---|---|---|
+| dentro de un par de la construccion | 32 | 32 | 0 | `results/transitions.tsv:34`, `:35` |
+| entre pares, variante ciclica | 32 | 16 | 16 | `results/transitions.tsv:39` a `:41` |
+
+Es decir que el 48 se descompone en 32 mas 16, y el 16 en 0 mas 16. Las 32
+transiciones de dentro de un par son **todas** de numero par de cambios, y eso
+no es casualidad ni hallazgo: la regla de emparejamiento de la construccion es
+giro o complemento, y las dos cambian un numero par de lineas. Lo que reparte a
+la mitad es la otra clase, la de los saltos de un par al siguiente, y ahi la
+medicion no ofrece ninguna explicacion.
+
+Dato adicional que sale de la misma cuenta: el coste total, la suma de las
+lineas que cambian, es 211 en la variante lineal y 214 en la ciclica
+(`results/transitions.tsv:18`, `:32`).
+
+## 13.4 Estatus de lo registrado
+
+- **La medicion es propia**, hecha aqui, sobre el dato de este repositorio, y
+  reproducible con `python src/transitions.py`.
+- **La observacion sigue siendo informal y sin dueno localizado.** Que la
+  medicion coincida con ella no le pone autor. Se busco en los cuatro artefactos
+  del Yijing leidos y no aparece: cero apariciones de "3:1", "48 pairs", "16
+  pairs", "48 even" y "16 odd".
+- **No se afirma novedad.** Que una observacion circule sin fuente localizada no
+  la convierte en propia por medirla. La revision sigue ABIERTA, y si alguien
+  aporta el puntero, este registro se actualiza con el.
+- **El deslinde de la seccion 3.7 sigue vigente y ahora hace mas falta que
+  antes**, porque ya hay dos cifras de paridad medidas en este repositorio y no
+  hablan de lo mismo. La de aqui es la paridad del **numero de lineas que
+  cambian** en una transicion entre hexagramas consecutivos. La de PROOFS.md 3.3
+  es la paridad del **recuento de pares discordantes** sobre pares de
+  posiciones, que sale del cardinal par de las orbitas del grupo. Ni el objeto,
+  ni la unidad de conteo, ni la demostracion son los mismos.

@@ -1,0 +1,43 @@
+# Transiciones consecutivas de King Wen. Medicion propia.
+# clave	valor	nota
+secuencia	King Wen	de data/sequences.json, con su procedencia en data/PROVENANCE.md
+hexagramas	64	
+lineal.transiciones	63	
+lineal.pares	48	numero de lineas que cambian, par
+lineal.impares	15	numero de lineas que cambian, impar
+lineal.razon.pares.entre.impares	3.2000	
+lineal.coincide.con.48.16	0	la observacion informal que circula
+lineal.razon.es.3.a.1	0	
+lineal.distancia.1	2	transiciones que cambian 1 lineas
+lineal.distancia.2	20	transiciones que cambian 2 lineas
+lineal.distancia.3	13	transiciones que cambian 3 lineas
+lineal.distancia.4	19	transiciones que cambian 4 lineas
+lineal.distancia.6	9	transiciones que cambian 6 lineas
+lineal.distancia.minima	1	
+lineal.distancia.maxima	6	
+lineal.coste.total	211	suma de las lineas que cambian
+ciclica.transiciones	64	
+ciclica.pares	48	numero de lineas que cambian, par
+ciclica.impares	16	numero de lineas que cambian, impar
+ciclica.razon.pares.entre.impares	3.0000	
+ciclica.coincide.con.48.16	1	la observacion informal que circula
+ciclica.razon.es.3.a.1	1	
+ciclica.distancia.1	2	transiciones que cambian 1 lineas
+ciclica.distancia.2	20	transiciones que cambian 2 lineas
+ciclica.distancia.3	14	transiciones que cambian 3 lineas
+ciclica.distancia.4	19	transiciones que cambian 4 lineas
+ciclica.distancia.6	9	transiciones que cambian 6 lineas
+ciclica.distancia.minima	1	
+ciclica.distancia.maxima	6	
+ciclica.coste.total	214	suma de las lineas que cambian
+dentro.del.par.transiciones	32	las 32 de la regla de emparejamiento
+dentro.del.par.pares	32	
+dentro.del.par.impares	0	
+entre.pares.lineal.transiciones	31	
+entre.pares.lineal.pares	16	
+entre.pares.lineal.impares	15	
+entre.pares.ciclica.transiciones	32	
+entre.pares.ciclica.pares	16	
+entre.pares.ciclica.impares	16	
+transicion.de.cierre.64.a.1	3	solo existe en la variante ciclica
+transicion.de.cierre.es.par	0	
