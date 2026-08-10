@@ -242,8 +242,8 @@ endobj
 endobj
 28 0 obj
 <<
-/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810193714-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2) /ModDate (D:20260810193714-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=c33b1e23b2cc29b086ca0207baeffd8bcf67b4c3 fecha=2026-08-10 sha256=b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810193807-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3) /ModDate (D:20260810193807-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=12eef7bcef81a2ffcbacd52e032b21e6698918a5 fecha=2026-08-10 sha256=0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 29 0 obj
@@ -3952,7 +3952,7 @@ q
 1 0 0 1 78 120.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL 1.425858 Tw (Every working session opens and closes an entry in an append only log: 27 closed sessions in 140) Tj T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
+BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL 1.425858 Tw (Every working session opens and closes an entry in an append only log: 28 closed sessions in 144) Tj T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
 Q
 Q
 q
@@ -3975,7 +3975,7 @@ q
 1 0 0 1 78 737.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .457506 Tw (than anecdotal. At the same point, 94 files were classified, over 19200 lines: 6589 of apparatus against) Tj T* 0 Tw (12611 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
+BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .457506 Tw (than anecdotal. At the same point, 97 files were classified, over 19845 lines: 6959 of apparatus against) Tj T* 0 Tw (12886 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
 Q
 Q
 q
@@ -4154,7 +4154,7 @@ Q
 q
 1 0 0 1 78 596.8819 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.305239 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit c33b1e23b2cc29b086ca0207baeffd8bcf67b4c3, dated 2026-08-10.) Tj T* 0 Tw 1.253449 Tw (Working tree clean: si. sha256 of the manuscript: b2b614b44845294ce2eba301d1bdcf55bfb370effd6d038bd29cd313b0ce44e2.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm 1.388839 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 12eef7bcef81a2ffcbacd52e032b21e6698918a5, dated 2026-08-10.) Tj T* 0 Tw 1.572649 Tw (Working tree clean: si. sha256 of the manuscript: 0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
 Q
 Q
  
@@ -4216,7 +4216,7 @@ xref
 trailer
 <<
 /ID 
-[<d966a0af8a6068fbf54a3dace42da52e><d966a0af8a6068fbf54a3dace42da52e>]
+[<44c0357671bd067dd280241b9b70ca8f><44c0357671bd067dd280241b9b70ca8f>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 28 0 R
