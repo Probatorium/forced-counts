@@ -1,0 +1,52 @@
+# Comprobador de ensamblado del manuscrito.
+# clave	valor	nota
+existe.01-introduction.md	1	
+cabecera.01-introduction.md	1	
+numero.correcto.01-introduction.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.01-introduction.md	1	la seccion conserva sus comentarios de origen
+existe.02-preliminaries.md	1	
+cabecera.02-preliminaries.md	1	
+numero.correcto.02-preliminaries.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.02-preliminaries.md	1	la seccion conserva sus comentarios de origen
+existe.03-orbit-accounting.md	1	
+cabecera.03-orbit-accounting.md	1	
+numero.correcto.03-orbit-accounting.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.03-orbit-accounting.md	1	la seccion conserva sus comentarios de origen
+existe.04-parity-obstruction.md	1	
+cabecera.04-parity-obstruction.md	1	
+numero.correcto.04-parity-obstruction.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.04-parity-obstruction.md	1	la seccion conserva sus comentarios de origen
+existe.05-characterisation.md	1	
+cabecera.05-characterisation.md	1	
+numero.correcto.05-characterisation.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.05-characterisation.md	1	la seccion conserva sus comentarios de origen
+existe.06-three-historical-orderings.md	1	
+cabecera.06-three-historical-orderings.md	1	
+numero.correcto.06-three-historical-orderings.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.06-three-historical-orderings.md	1	la seccion conserva sus comentarios de origen
+existe.07-landscape.md	1	
+cabecera.07-landscape.md	1	
+numero.correcto.07-landscape.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.07-landscape.md	1	la seccion conserva sus comentarios de origen
+existe.08-open-problems.md	1	
+cabecera.08-open-problems.md	1	
+numero.correcto.08-open-problems.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.08-open-problems.md	1	la seccion conserva sus comentarios de origen
+existe.09-verification.md	1	
+cabecera.09-verification.md	1	
+numero.correcto.09-verification.md	1	la cabecera del fichero dice el numero que le toca
+comentarios.de.ensamblaje.09-verification.md	1	la seccion conserva sus comentarios de origen
+las.nueve.secciones.en.orden	1	
+sin.duplicados	1	
+secciones.ensambladas	9	
+referencias	13	
+referencias.de.segunda.mano	2	
+guiones.largos.en.el.ensamblado	0	en cualquiera de sus formas
+cero.guiones.largos	1	
+citas.distintas.en.el.texto	13	
+citas.sin.referencia	ninguna	
+toda.cita.resuelve	1	
+el.texto.tiene.citas	1	una comprobacion que pasa en vacio no comprueba nada
+referencias.sin.citar	ninguna	
+ninguna.referencia.queda.sin.citar	1	
+palabras.aproximadas	13198	

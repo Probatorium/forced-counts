@@ -93,7 +93,7 @@ complementation among the hexagrams that the half turn leaves fixed.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
      linea de cita; artefacto Radisic arXiv:2601.07175v3, Teorema 3.3 -->
 **Prior owner of this characterisation.** It is the complete equivariance of
-Radisic, Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
+Radisic [Ra], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
 is either the complement or the reversal of its partner and splits the thirty two
 pairs into palindromes paired by complement, anti-symmetric ones where reversal
 and complement coincide, and generic ones paired by reversal. That statement has
@@ -128,7 +128,7 @@ compatible values.
 <!-- origen: DEFINICIONES-RESIDUO5.md, lista cerrada declarada antes de medir -->
 A closed list of five candidate structures was declared before measuring
 anything: the nuclear hexagram operation with its exact definition, the two part
-division of the received sequence, and three maps defined through the positions.
+division of the received sequence, whose literature has a located owner [HM], and three maps defined through the positions.
 Nothing outside that list was tried.
 
 <!-- origen: INFORME-RESIDUO5.md 2.1 y 2.2 -->

@@ -45,7 +45,7 @@ is reported under all four rather than under the most favourable one.
 
 <!-- origen: PRIOR-ART.md 5.3; Schoter, The Oracle Vol 2 No 7, Summer 1998,
      Definition 6, "Sequence Parameters". Interseccion declarada en NOVELTY.md -->
-The second of those two choices is not ours. Schöter parametrises the counting
+The second of those two choices is not ours. Schöter [Sc] parametrises the counting
 orders of the hexagrams by, among other things, "whether the lower or upper line
 is the least significant bit", and names the two readings Rising Yang and Sinking
 Yang. We use that parameter and do not present it as new.
@@ -69,7 +69,7 @@ paper is the number of discordant pairs.
 counted **between the ordering and a fixed reference order**, in the standard
 sense of rank correlation, where a pair is concordant when two rankings agree on
 it and discordant when they disagree. It is the same object as the combinatorial
-inversion number: Björner and Brenti define, in their equation (1.25),
+inversion number: Björner and Brenti [BB] define, in their equation (1.25),
 inv(x) = card{(i, j) : i < j, x(i) > x(j)}, which is exactly the count above with
 the reference order as the second ranking. It is also the quantity in the
 numerator of Kendall's tau, whose denominator is the same C(N, 2), so the value
@@ -86,17 +86,17 @@ here, once, rather than in a closing note.
      termino chino, Cook, Drasny con zonggua, Moore con invertible -->
 **Inversion.** In the sinological literature on the Yijing, *inversion* names the
 180 degree turn of a hexagram, *fandui*, which is a symmetry of the figure and
-not a discordant pair. Gritter states the two pairing principles as inversion and
-opposition and gives the Chinese terms; Cook devotes a chapter to inversion and
-obversion; Drasny writes of inverses of hexagrams, *zonggua*; Moore speaks of
-invertible pairs. In this paper *inversion* is never used for the statistic.
+not a discordant pair. Gritter [Gr] states the two pairing principles as inversion and
+opposition and gives the Chinese terms; Cook [Co] devotes a chapter to inversion and
+obversion; Drasny [Dr] writes of inverses of hexagrams, *zonggua*; Moore [Mo]
+speaks of invertible pairs. In this paper *inversion* is never used for the statistic.
 
 <!-- origen: PRIOR-ART.md 2 y 7; Radisic 4.3 y Mutze 3.2, los dos verificados
      contra su PDF -->
-**Balance.** The word is occupied twice over in the neighbourhood. Radisic uses
+**Balance.** The word is occupied twice over in the neighbourhood. Radisic [Ra] uses
 it for Hamming weight, writing that weight preservation "may be viewed as
 preservation of yin-yang balance" and adding at once that formally it is Hamming
-weight. In the Gray code literature Mütze defines a *balanced* Gray code by the
+weight. In the Gray code literature Mütze [Mu] defines a *balanced* Gray code by the
 condition that the transition counts satisfy |c_i - 2^n/n| < 2, that is, a
 condition on how often each coordinate flips. Neither is the quantity studied
 here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
@@ -105,7 +105,7 @@ here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
 **Length in type B.** This is the subtlest of the three, because we name B_n and
 we count inversions in the same breath. In Coxeter theory the length function of
 a group of type B is a count of certain inversions of signed permutations, as
-Björner and Brenti describe in their sections 8.1 and 8.2. That is not our
+Björner and Brenti [BB] describe in their sections 8.1 and 8.2. That is not our
 count. Here B_n is only the group acting on the vertices, and the discordant
 pairs are those of the ordering against the binary reference order, not the
 Coxeter length of any element of B_n.

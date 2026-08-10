@@ -74,3 +74,6 @@ paper/08-open-problems.md	analisis	propio	seccion 8 del manuscrito
 paper/09-verification.md	analisis	propio	seccion 9 del manuscrito
 paper/01-introduction.md	analisis	propio	seccion 1 del manuscrito
 paper/00-abstract.md	analisis	propio	resumen del manuscrito
+src/assemble_paper.py	aparato	propio	ensamblador y comprobador del manuscrito
+paper/PAPER.md	analisis	propio	manuscrito ensamblado
+results/assembly-check.tsv	aparato	propio	salida del comprobador de ensamblado
