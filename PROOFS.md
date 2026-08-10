@@ -82,6 +82,13 @@ pares, el total es la mitad de C(64,2). Fin.
 recuento y que salga otro valor: si lo determina, lo determina en C(64,2)
 partido por dos. Esto sale de la demostracion, sin calcular nada.
 
+**Cita.** Este corolario puede enunciarse diciendo que el indicador de
+discordancia es 1/2-mesico sobre las orbitas forzadas, en el sentido de la
+Definicion 1 de Propp y Roby (arXiv:1310.5201v6); el germen del Lema 1 es su
+seccion 2.1, con la involucion actuando por posiciones donde aqui actua por
+valores. Dueno anterior; aqui se obtuvo por via independiente y antes de abrir
+la revision de antecedentes. Registro del artefacto en PRIOR-ART.md 14.
+
 ## Lema 2, criterio de orbita forzada
 
 **Si existe g en G con epsilon(g, p) igual a uno para todo p de la orbita O,
