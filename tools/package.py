@@ -36,6 +36,7 @@ import hashlib
 import os
 import re
 import shutil
+import stat
 import subprocess
 import sys
 import time
@@ -92,6 +93,15 @@ TERCEROS = [
      "fuente de ningun computo."),
 ]
 
+# Lineas que NO pueden reproducirse, porque no miden el objeto de estudio sino
+# la maquina. Se declaran una por una, con su motivo, y el informe dice cuantas
+# se han excluido: una exclusion sin nombre seria una manera elegante de que
+# nada fallara nunca.
+NO_DETERMINISTAS = [
+    ("hall-search.tsv", "segundos.totales",
+     "reloj de pared de la busqueda; mide esta maquina y no el resultado"),
+]
+
 # Patrones de secreto. Cada uno con su nombre, para que un aviso diga que se ha
 # encontrado y no solo que se ha encontrado algo.
 SECRETOS = [
@@ -122,21 +132,44 @@ def corre(args, cwd, timeout=1800):
     return r.returncode, time.time() - t0, (r.stdout + r.stderr)[-400:]
 
 
+def borra_arbol(ruta):
+    """Borra un arbol de git en Windows, donde los objetos son de solo lectura.
+
+    shutil.rmtree con ignore_errors se los salta en silencio y deja el
+    directorio a medias, y el clon siguiente falla diciendo que ya existe. Aqui
+    se les quita el atributo y se vuelve a intentar.
+    """
+    if not os.path.exists(ruta):
+        return
+    def insiste(func, path, _exc):
+        try:
+            os.chmod(path, stat.S_IWRITE)
+            func(path)
+        except Exception:
+            pass
+    shutil.rmtree(ruta, onerror=insiste)
+
+
 def sha(ruta):
     return hashlib.sha256(open(ruta, "rb").read()).hexdigest()
 
 
-def sha_normalizado(ruta):
-    """sha256 del contenido con el fin de linea en unix."""
-    datos = open(ruta, "rb").read()
-    return hashlib.sha256(datos.replace(CRLF, LF)).hexdigest()
+def sha_normalizado(ruta, fichero=None):
+    """sha256 del contenido, con el fin de linea en unix y sin las lineas que
+    estan declaradas no deterministas para ese fichero."""
+    datos = open(ruta, "rb").read().replace(CRLF, LF)
+    claves = [k for f, k, _ in NO_DETERMINISTAS if f == fichero]
+    if claves:
+        lineas = [l for l in datos.split(LF)
+                  if l.split(b"	")[0].decode("utf-8", "replace") not in claves]
+        datos = LF.join(lineas)
+    return hashlib.sha256(datos).hexdigest()
 
 
 # --- fase 1 y 2: el clon limpio ---------------------------------------------
 
 def clon_limpio(destino, rapido):
-    if os.path.exists(destino):
-        shutil.rmtree(destino, ignore_errors=True)
+    borra_arbol(destino)
     rc, seg, sal = corre(["git", "clone", "-q", ROOT, destino], ROOT)
     check("el.clon.se.hace", rc == 0, sal)
     if rc:
@@ -148,8 +181,10 @@ def clon_limpio(destino, rapido):
     # Se compara el CONTENIDO, con el fin de linea normalizado. Lo que se
     # pregunta es si el programa reproduce su salida, no con que convencion la
     # dejo el sistema de ficheros de turno.
-    antes = {f: sha_normalizado(os.path.join(dir_res, f))
+    antes = {f: sha_normalizado(os.path.join(dir_res, f), f)
              for f in sorted(os.listdir(dir_res)) if f.endswith(".tsv")}
+    emit("lineas.excluidas.por.no.deterministas", len(NO_DETERMINISTAS),
+         "; ".join("%s %s: %s" % (f, k, m) for f, k, m in NO_DETERMINISTAS))
     emit("ficheros.de.results.commiteados", len(antes))
 
     # que el clon reciba los ficheros byte a byte como estan aqui: es donde se
@@ -187,7 +222,7 @@ def clon_limpio(destino, rapido):
             ruta = os.path.join(dir_res, f)
             if not os.path.exists(ruta):
                 cambian.append(f + " (desaparecido)")
-            elif sha_normalizado(ruta) != h:
+            elif sha_normalizado(ruta, f) != h:
                 cambian.append(f)
         emit("ficheros.de.results.que.cambian.al.rehacerlos",
              " ".join(cambian) if cambian else "ninguno")
@@ -303,8 +338,7 @@ def manifiesto_y_bundle(tmp):
 
     # el bundle se construye en un clon aparte, para no tocar esta historia
     filtrado = os.path.join(tmp, "filtrado")
-    if os.path.exists(filtrado):
-        shutil.rmtree(filtrado, ignore_errors=True)
+    borra_arbol(filtrado)
     rc, _, sal = corre(["git", "clone", "-q", "--no-local", ROOT, filtrado], ROOT)
     check("el.clon.para.filtrar.se.hace", rc == 0, sal)
     if rc:
@@ -362,8 +396,7 @@ def manifiesto_y_bundle(tmp):
 
         # y se abre de verdad, que es lo unico que prueba que sirve
         abierto = os.path.join(tmp, "desdebundle")
-        if os.path.exists(abierto):
-            shutil.rmtree(abierto, ignore_errors=True)
+        borra_arbol(abierto)
         rc, _, sal = corre(["git", "clone", "-q", bundle, abierto], ROOT)
         check("el.bundle.se.clona", rc == 0, sal)
         if rc == 0:
