@@ -90,8 +90,10 @@ def colofon(md_texto):
         "commit": git("rev-parse", "HEAD") or "sin commit",
         "fecha": git("log", "-1", "--format=%cd", "--date=short") or "sin fecha",
         "arbol_limpio": "si" if not git("status", "--porcelain") else "no",
+        # el fin de linea se normaliza antes de resumir: lo que identifica al
+        # manuscrito es su texto, no como lo haya dejado el sistema en disco
         "sha256_manuscrito": hashlib.sha256(
-            md_texto.encode("utf-8")).hexdigest(),
+            md_texto.replace("\r\n", "\n").encode("utf-8")).hexdigest(),
         "comprobaciones_en_verde": str(comprobaciones_en_verde()),
     }
 

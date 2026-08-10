@@ -58,6 +58,15 @@ def check(k, cond, n=""):
         FALLOS.append(k + ("  " + n if n else ""))
 
 
+def normaliza(datos):
+    """Los bytes del manuscrito con el fin de linea en unix.
+
+    Lo que se resume tiene que ser el texto, no la convencion con que el sistema
+    operativo de turno lo haya dejado en el disco.
+    """
+    return datos.replace(b"\r\n", b"\n")
+
+
 def git(*args):
     try:
         r = subprocess.run(["git", "-C", ROOT] + list(args),
@@ -160,9 +169,15 @@ def main():
     for k in ("commit", "fecha", "sha256", "comprobaciones"):
         emit("colofon.%s" % k, colo.get(k, "ausente"))
 
-    # 1. el sha256, que es la comprobacion que importa
-    ahora = hashlib.sha256(MANUSCRITO[0] if MANUSCRITO
-                           else open(MD, "rb").read()).hexdigest()
+    # 1. el sha256, que es la comprobacion que importa.
+    #
+    # Se normaliza el fin de linea antes de resumir. La pregunta que este puente
+    # tiene que contestar es si el TEXTO ha cambiado, y un retorno de carro que
+    # git anade al sacar el fichero en otra maquina no es un cambio del texto.
+    # Sin esta normalizacion el puente daba rojo en el clon de cualquiera y
+    # verde solo aqui, que es la peor manera posible de fallar.
+    crudo = MANUSCRITO[0] if MANUSCRITO else open(MD, "rb").read()
+    ahora = hashlib.sha256(normaliza(crudo)).hexdigest()
     emit("sha256.del.manuscrito.de.ahora", ahora)
     check("el.pdf.corresponde.al.manuscrito.de.ahora",
           colo.get("sha256") == ahora,

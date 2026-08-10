@@ -47,6 +47,9 @@ OUT = os.path.join(ROOT, "results", "package.tsv")
 ROWS = []
 FALLOS = []
 
+CRLF = b"\r\n"
+LF = b"\n"
+
 # Los programas de analisis, en el orden en que se corren. El orden importa
 # porque algunos leen lo que otros dejan.
 CADENA = [
@@ -123,6 +126,12 @@ def sha(ruta):
     return hashlib.sha256(open(ruta, "rb").read()).hexdigest()
 
 
+def sha_normalizado(ruta):
+    """sha256 del contenido con el fin de linea en unix."""
+    datos = open(ruta, "rb").read()
+    return hashlib.sha256(datos.replace(CRLF, LF)).hexdigest()
+
+
 # --- fase 1 y 2: el clon limpio ---------------------------------------------
 
 def clon_limpio(destino, rapido):
@@ -136,7 +145,10 @@ def clon_limpio(destino, rapido):
 
     # los ficheros de results tal y como estan commiteados
     dir_res = os.path.join(destino, "results")
-    antes = {f: sha(os.path.join(dir_res, f))
+    # Se compara el CONTENIDO, con el fin de linea normalizado. Lo que se
+    # pregunta es si el programa reproduce su salida, no con que convencion la
+    # dejo el sistema de ficheros de turno.
+    antes = {f: sha_normalizado(os.path.join(dir_res, f))
              for f in sorted(os.listdir(dir_res)) if f.endswith(".tsv")}
     emit("ficheros.de.results.commiteados", len(antes))
 
@@ -149,6 +161,11 @@ def clon_limpio(destino, rapido):
             mismo = open(a, "rb").read() == open(b, "rb").read()
             check("el.clon.recibe.intacto.%s" % os.path.basename(rel), mismo,
                   "git ha alterado el fichero al sacarlo, mira .gitattributes")
+            if not mismo:
+                emit("bytes.aqui.%s" % os.path.basename(rel),
+                     os.path.getsize(a))
+                emit("bytes.en.el.clon.%s" % os.path.basename(rel),
+                     os.path.getsize(b))
             iguales += int(mismo)
     emit("ficheros.comparados.contra.el.clon", iguales)
 
@@ -170,7 +187,7 @@ def clon_limpio(destino, rapido):
             ruta = os.path.join(dir_res, f)
             if not os.path.exists(ruta):
                 cambian.append(f + " (desaparecido)")
-            elif sha(ruta) != h:
+            elif sha_normalizado(ruta) != h:
                 cambian.append(f)
         emit("ficheros.de.results.que.cambian.al.rehacerlos",
              " ".join(cambian) if cambian else "ninguno")
@@ -304,6 +321,23 @@ def manifiesto_y_bundle(tmp):
             timeout=1800)
         check("el.filtrado.corre", r.returncode == 0,
               (r.stdout + r.stderr)[-300:])
+
+        # filter-branch guarda la historia vieja en refs/original, y un bundle
+        # hecho con --all se la lleva entera: el fichero filtrado seguiria
+        # viajando dentro del paquete, alcanzable con un solo comando. Hay que
+        # borrar esas referencias, caducar el reflog y podar antes de empaquetar.
+        r = subprocess.run(["git", "for-each-ref", "--format=%(refname)",
+                            "refs/original"], cwd=filtrado,
+                           capture_output=True, text=True)
+        viejas = [x for x in r.stdout.split("\n") if x.strip()]
+        emit("referencias.originales.borradas", len(viejas))
+        for ref in viejas:
+            subprocess.run(["git", "update-ref", "-d", ref], cwd=filtrado,
+                           capture_output=True)
+        subprocess.run(["git", "reflog", "expire", "--expire=now", "--all"],
+                       cwd=filtrado, capture_output=True)
+        subprocess.run(["git", "gc", "--prune=now", "--quiet"],
+                       cwd=filtrado, capture_output=True, timeout=1800)
 
         # y se comprueba que de verdad no queda rastro en NINGUN commit
         r = subprocess.run(["git", "rev-list", "--objects", "--all"],

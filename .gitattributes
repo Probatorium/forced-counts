@@ -1,5 +1,14 @@
-# El PDF no tiene ningun byte nulo, porque se escribe sin comprimir para poder
-# extraerle el texto y cotejarlo. Git lo toma por texto y, con core.autocrlf en
-# true, le mete retornos de carro al sacarlo en un clon nuevo, que es
-# exactamente donde nadie lo mira. Esto lo impide.
+# POLITICA DE FIN DE LINEA, declarada y no heredada del sistema.
+#
+# Todo lo que este repositorio escribe lo escribe con salto de linea unix: cada
+# programa abre sus ficheros con newline="\n" a proposito. Si la copia de
+# trabajo se saca con retornos de carro, el sha256 de un fichero deja de ser el
+# mismo aqui que en el clon de cualquiera, y este repositorio ata cifras a
+# sha256. Se fija el fin de linea en la salida, no solo en el almacen.
+* text=auto eol=lf
+
+# El PDF se escribe SIN COMPRIMIR, para poder extraerle el texto y cotejarlo.
+# Un PDF sin comprimir no tiene ningun byte nulo, asi que git lo toma por texto
+# y le mete retornos de carro al sacarlo, 3421 de ellos, medidos. Esto lo
+# impide.
 *.pdf binary
