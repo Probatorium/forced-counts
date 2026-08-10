@@ -52,3 +52,6 @@ src/general_n6.py	analisis	propio	n=6 en el mismo sistema B(n,k)
 results/general-n6.tsv	analisis	propio	salida de n=6 en el sistema general
 TABLA-GENERAL.md	analisis	propio	la tabla general unica, n de 3 a 6
 DEFINICIONES-B31.md	aparato	propio	lista cerrada de candidatos, declarada antes de mirar
+src/b31_characterization.py	analisis	propio	caracterizacion de la clase forzada en B(3,1)
+results/b31-characterization.tsv	analisis	propio	salida sobre el espacio entero
+PROOFS-B31.md	analisis	propio	teoremas y refutaciones de la clase forzada en B(3,1)

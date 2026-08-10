@@ -1,0 +1,43 @@
+# Caracterizacion de la clase forzada en B(3,1), espacio entero.
+# clave	valor	nota
+grupo.orden	16	el que respeta B(3,1)
+grupo.orden.es.16	1	
+herencia.el.orden.binario.da.cero.discordantes	1	control heredado de src/general_landscape.py
+herencia.el.orden.del.grupo.es.k!.por.(n-k)!.por.2^n	1	
+ordenaciones	40320	las 8 factorial
+forzadas	472	
+no.forzadas	39848	
+particion.472.y.39848	1	
+C2.valores.distintos	54	
+C2.separa.exacto	0	un valor del invariante nunca mezcla forzadas con no forzadas
+C2.confusion.forzadas.en.valores.puros	0	
+C2.confusion.forzadas.en.valores.mezclados	472	
+C2.confusion.no.forzadas.en.valores.puros	29952	
+C2.confusion.no.forzadas.en.valores.mezclados	9896	
+C3.valores.distintos	136	
+C3.separa.exacto	1	un valor del invariante nunca mezcla forzadas con no forzadas
+C3.confusion.forzadas.en.valores.puros	472	
+C3.confusion.forzadas.en.valores.mezclados	0	
+C3.confusion.no.forzadas.en.valores.puros	39848	
+C3.confusion.no.forzadas.en.valores.mezclados	0	
+C4.valores.distintos	29	
+C4.separa.exacto	0	un valor del invariante nunca mezcla forzadas con no forzadas
+C4.confusion.forzadas.en.valores.puros	0	
+C4.confusion.forzadas.en.valores.mezclados	472	
+C4.confusion.no.forzadas.en.valores.puros	36484	
+C4.confusion.no.forzadas.en.valores.mezclados	3364	
+C5.valores.distintos	3	
+C5.separa.exacto	0	un valor del invariante nunca mezcla forzadas con no forzadas
+C5.confusion.forzadas.en.valores.puros	0	
+C5.confusion.forzadas.en.valores.mezclados	472	
+C5.confusion.no.forzadas.en.valores.puros	0	
+C5.confusion.no.forzadas.en.valores.mezclados	39848	
+C1.forzadas.probadas	472	todas
+C1.forzadas.con.emparejamiento.en.todas.las.orbitas	472	
+C1.no.forzadas.probadas	472	las primeras en orden de recorrido, mismo numero que forzadas
+C1.no.forzadas.con.emparejamiento.en.todas.las.orbitas	0	
+C1.separa.exacto	1	el Lema 3 alcanza toda orbita forzada y ninguna libre
+C6.cerrada.bajo.el.grupo.que.respeta.los.bloques	0	
+C6.cerrada.bajo.B_3.entero	0	
+C6.cerrada.bajo.invertir.la.ordenacion	1	
+teorema.forzada.equivale.a.mitad.en.cada.clase.de.diferencia	1	comprobado en 100 casos de los dos lados; la demostracion esta en el informe
