@@ -231,7 +231,14 @@ def clon_limpio(destino, rapido):
 
     fallan_c = []
     for prog in COMPROBADORES:
-        rc, seg, sal = corre([sys.executable, prog], destino)
+        # build_paper se niega a construir desde un arbol sucio, y el clon lo
+        # esta: la cadena de analisis acaba de reescribir el reloj de pared de
+        # hall-search.tsv, que ya esta declarado no determinista. Aqui se
+        # comprueba que el constructor corra, no que el PDF sea de deposito, y
+        # se le pasa la bandera con ese motivo escrito.
+        extra = (["--sucio-a-proposito"]
+                 if prog.endswith("build_paper.py") else [])
+        rc, seg, sal = corre([sys.executable, prog] + extra, destino)
         emit("comprobador.%s" % os.path.basename(prog),
              "pasa" if rc == 0 else "FALLA")
         if rc != 0:

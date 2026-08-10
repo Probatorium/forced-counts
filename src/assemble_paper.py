@@ -81,11 +81,15 @@ SECCIONES = [
 # base de memoria.
 REFERENCIAS = [
     ("BB", "Bjorner",
-     "Björner, A., & Brenti, F. *Combinatorics of Coxeter groups*. "
-     "Equation (1.25) and Proposition 1.5.2, p. 20; Sections 8.1 and 8.2, "
-     "pp. 245, 252.",
-     "read, and the cited pages verified against the PDF; year and publisher "
-     "were not verified against the artefact and are therefore not printed"),
+     "Björner, A., & Brenti, F. (2005). *Combinatorics of Coxeter groups* "
+     "(Graduate Texts in Mathematics, Vol. 231). Springer. "
+     "ISBN 3-540-44238-3. Equation (1.25) and Proposition 1.5.2, p. 20; "
+     "Sections 8.1 and 8.2, pp. 245, 252.",
+     "read, and the cited pages verified against the PDF; the year, series, "
+     "volume, publisher and ISBN were read from the front matter of the copy "
+     "held here, its title page and its copyright page. That title page prints "
+     "the first author as Bjorner, without the diaeresis; the accepted "
+     "spelling is used above and the discrepancy is recorded here"),
 
     ("Co", "Cook",
      "Cook, R. S. (2006). *Classical Chinese combinatorics: Derivation of the "
@@ -111,7 +115,9 @@ REFERENCIAS = [
      "the received order of the hexagrams in the Zhouyi. *Journal of Chinese "
      "Philosophy*, *30*(2), 219–221.",
      "SECOND HAND: bibliographic identity taken from the bibliography of "
-     "reference 6; not read"),
+     "Moore (2005); not read. The pointer names the author and year and "
+     "not a number, so that renumbering the list cannot turn it into a "
+     "reference to itself, which is what it had just become"),
 
     ("Mo", "Moore",
      "Moore, S. (2005). *Structural elements in the King Wen sequence of "
@@ -147,21 +153,24 @@ REFERENCIAS = [
     ("Ro", "Roby",
      "Roby, T. *Dynamical algebraic combinatorics and the homomesy "
      "phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.",
-     "read, and the cited pages verified against the PDF; its volume identity "
-     "is second hand, since the cover of the PDF read does not carry it, and "
-     "no year is printed here for the same reason"),
+     "read, and the cited pages verified against the PDF; its first page was "
+     "checked again for this edition and carries title, author, abstract, key "
+     "words and affiliation but neither year nor volume nor series, so neither "
+     "is printed and the gap stays declared"),
 
     ("Sc", "Schoter",
      "Schöter, A. (1998). Boolean algebra and the Yi Jing. *The Oracle: The "
      "Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.",
      "read; Definition 6, Sequence Parameters"),
 
-    ("NL", "Uninformative",
-     "*Uninformative rungs: An order-theoretic stopping criterion for nested "
-     "reference sets*. https://doi.org/10.5281/zenodo.21750029",
-     "SECOND HAND: cited as a pointer to the framework that would govern the "
-     "inferential question of Section 8.3; not read in the course of this "
-     "work"),
+    ("NL", "Garcia Hurtado",
+     "García Hurtado, A. (2026). *Uninformative rungs: An order-theoretic "
+     "stopping criterion for nested reference sets*. Zenodo. "
+     "https://doi.org/10.5281/zenodo.21750029",
+     "cited as a pointer to the framework under which the inferential question "
+     "of Section 8.3 would have to be posed. ITS CONTENT IS NOT LOAD BEARING "
+     "HERE: nothing in this paper depends on it, and it was not read in the "
+     "course of this work"),
 ]
 
 REFERENCIAS.sort(key=lambda r: r[1])
@@ -188,7 +197,7 @@ def main():
     # --- portada ---------------------------------------------------------
     portada = """# Forced counts: when a symmetry group determines the discordance of a constructed ordering
 
-**Alexis Garcia Hurtado**
+**Alexis García Hurtado**
 
 ORCID 0009-0003-4636-8206
 

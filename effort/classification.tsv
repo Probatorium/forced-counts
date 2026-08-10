@@ -99,3 +99,6 @@ tools/renumber_citations.py	aparato	propio	renumerador de citas del manuscrito
 results/citation-renumber.tsv	aparato	propio	salida del renumerador
 tools/strip_number_bold.py	aparato	propio	retirada de la negrita de las cifras de la prosa
 results/bold-strip.tsv	aparato	propio	salida de la retirada de negritas
+tools/renumber_tables.py	aparato	propio	numerador de tablas por orden de aparicion
+paper/citation-order.tsv	aparato	propio	numeracion vigente de las citas
+results/table-renumber.tsv	aparato	propio	salida del numerador de tablas

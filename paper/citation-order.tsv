@@ -1,0 +1,17 @@
+# Numeracion de las citas que el markdown lleva AHORA MISMO.
+# La mantiene tools/renumber_citations.py, y existe para que
+# reordenar la bibliografia no obligue a tocar el texto a mano.
+# clave	numero
+BB	1
+Co	2
+Dr	3
+NL	4
+Gr	5
+HM	6
+Mo	7
+Mu	8
+PR	9
+Ra	10
+RSW	11
+Ro	12
+Sc	13

@@ -22,7 +22,25 @@ las filas de tabla, y se exige que aparezcan en el .tex y en el TEXTO REALMENTE
 EXTRAIDO DEL PDF, no en el modelo con que se construyo, que seria circular. Para
 que esa extraccion sea posible el PDF se escribe sin comprimir.
 
+SOLO DESDE ARBOL LIMPIO. Este programa SE NIEGA a construir si el arbol de
+trabajo tiene cambios sin commitear, y la razon es el colofon. El colofon dice de
+que commit sale el PDF, y con el arbol sucio eso es mentira: sale de ese commit
+mas lo que hubiera encima sin registrar, que nadie puede reconstruir despues. Un
+PDF que dice venir de un commit tiene que venir de ese commit y de nada mas.
+
+Es la misma disciplina que ya rige en el otro sentido para los comprobadores: un
+verificador nunca escribe, y un constructor nunca construye desde un estado que
+no se pueda nombrar.
+
   python src/build_paper.py
+  python src/build_paper.py --sucio-a-proposito
+
+La segunda forma existe para un caso concreto y declarado: tools/package.py
+corre la cadena de analisis dentro de un clon antes de correr los
+comprobadores, y esa cadena reescribe el reloj de pared de hall-search.tsv, de
+modo que el clon queda sucio por una linea que ya esta declarada como no
+determinista. Ahi lo que se comprueba es que el constructor corra, no que el PDF
+sea de deposito, y el colofon lo dice: arbol_limpio queda en no.
 
 Salidas: paper/PAPER.tex, paper/PAPER.pdf, results/build-paper.tsv
 """
@@ -139,6 +157,27 @@ def parsear(texto):
             bloques.append(("cita", " ".join(trozo).strip()))
             continue
 
+        # Una entrada de referencia empieza por "N. " y puede seguir en las
+        # lineas de debajo, sangradas. Sin esta regla las trece entradas caian
+        # en un unico parrafo corrido, que es como se compusieron hasta ahora.
+        if re.match(r"^\d+\.\s", s):
+            # Cada entrada es una lista de lineas: la cita y, debajo, su
+            # Status. El Status se guarda aparte a proposito, porque es una
+            # linea propia de la entrada y no una coletilla de la cita.
+            entradas = []
+            while i < len(lineas):
+                l2 = lineas[i]
+                s2 = l2.strip()
+                if re.match(r"^\d+\.\s", s2):
+                    entradas.append([s2])
+                elif s2 and l2.startswith(" ") and entradas:
+                    entradas[-1].append(s2)
+                else:
+                    break
+                i += 1
+            bloques.append(("referencias", entradas))
+            continue
+
         if s.startswith("- "):
             trozo = []
             while i < len(lineas) and (lineas[i].strip().startswith("- ")
@@ -194,21 +233,65 @@ def tex_escapa(s):
     return "".join(ESCAPES.get(c, c) for c in s)
 
 
-def tex_inline(s):
-    """Negrita y cursiva a LaTeX, con el resto escapado.
+# NOTACION. Los simbolos con subindice se componen en modo matematico y no como
+# texto con un guion bajo escapado, que es lo que salia antes: B\_n en vez de
+# B_n compuesto. El mapa se declara aqui entero, y el generador comprueba
+# despues que no quede ni un guion bajo de texto en el .tex.
+NOTACION = {
+    "B_n": r"$B_n$", "B_3": r"$B_3$", "B_4": r"$B_4$", "B_5": r"$B_5$",
+    "B_6": r"$B_6$", "F_2": r"$\mathbb{F}_2$",
+    "pi_g": r"$\pi_g$", "c_i": r"$c_i$", "e_0": r"$e_0$", "e_1": r"$e_1$",
+    "pi_1": r"$\pi_1$",
+}
+NOTACION_RE = re.compile(r"\b(?:%s)\b" % "|".join(
+    sorted((re.escape(k) for k in NOTACION), key=len, reverse=True)))
 
-    Se trocea primero por los marcadores y se escapa cada trozo, para no escapar
+# Un enlace no se escapa: va dentro de \url, que ademas le deja partir de linea
+# y evita que se salga de la caja.
+URL_RE = re.compile(r"https?://\S+")
+
+
+def tex_llano(s):
+    """Un trozo sin negrita ni cursiva: URLs, notacion y lo demas escapado."""
+    salida = []
+    for trozo in URL_RE.split(s):
+        pass
+    resto = []
+    pos = 0
+    for m in URL_RE.finditer(s):
+        resto.append(("texto", s[pos:m.start()]))
+        resto.append(("url", m.group(0)))
+        pos = m.end()
+    resto.append(("texto", s[pos:]))
+    for clase, trozo in resto:
+        if clase == "url":
+            salida.append(r"\url{%s}" % trozo.rstrip(".,;"))
+            salida.append(tex_escapa(trozo[len(trozo.rstrip(".,;")):]))
+            continue
+        pos2 = 0
+        for m in NOTACION_RE.finditer(trozo):
+            salida.append(tex_escapa(trozo[pos2:m.start()]))
+            salida.append(NOTACION[m.group(0)])
+            pos2 = m.end()
+        salida.append(tex_escapa(trozo[pos2:]))
+    return "".join(salida)
+
+
+def tex_inline(s):
+    """Negrita y cursiva a LaTeX, con el resto pasado por tex_llano.
+
+    Se trocea primero por los marcadores y se trata cada trozo, para no escapar
     los propios comandos que se acaban de escribir.
     """
     partes = re.split(r"(\*\*[^*]+\*\*|\*[^*]+\*)", s)
     salida = []
     for p in partes:
         if p.startswith("**") and p.endswith("**") and len(p) > 4:
-            salida.append(r"\textbf{%s}" % tex_escapa(p[2:-2]))
+            salida.append(r"\textbf{%s}" % tex_llano(p[2:-2]))
         elif p.startswith("*") and p.endswith("*") and len(p) > 2:
-            salida.append(r"\emph{%s}" % tex_escapa(p[1:-1]))
+            salida.append(r"\emph{%s}" % tex_llano(p[1:-1]))
         else:
-            salida.append(tex_escapa(p))
+            salida.append(tex_llano(p))
     return "".join(salida)
 
 
@@ -267,6 +350,19 @@ def a_tex(bloques, colo, titulo, autor, orcid):
             for it in cont:
                 salida.append(r"\item " + tex_inline(it))
             salida.append(r"\end{itemize}")
+        elif tipo == "referencias":
+            # Sangria francesa: la primera linea al margen y las siguientes
+            # metidas, que es como APA quiere una lista de referencias y como
+            # se distingue una entrada de la siguiente de un vistazo.
+            salida.append(r"\begingroup")
+            salida.append(r"\setlength{\parindent}{0pt}")
+            for lineas_it in cont:
+                cuerpo_it = tex_inline(lineas_it[0])
+                for extra in lineas_it[1:]:
+                    cuerpo_it += r"\\ " + tex_inline(extra)
+                salida.append(r"\hangindent=1.6em\hangafter=1 "
+                              + cuerpo_it + r"\par\vspace{0.5ex}")
+            salida.append(r"\endgroup")
         elif tipo == "tabla":
             if not cont:
                 continue
@@ -326,9 +422,15 @@ def a_pdf(bloques, colo, titulo, autor, orcid):
     cita = ParagraphStyle("cita", parent=cuerpo, leftIndent=18, rightIndent=12,
                           spaceBefore=4, spaceAfter=8)
     peq = ParagraphStyle("peq", parent=cuerpo, fontSize=7.6, leading=10)
+    # sangria francesa para las referencias, la misma que el .tex
+    colgante = ParagraphStyle("colgante", parent=cuerpo, leftIndent=18,
+                              firstLineIndent=-18, spaceAfter=4)
 
     def inline(s):
         s = (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+        # El equivalente del modo matematico aqui es el subindice de verdad.
+        s = NOTACION_RE.sub(
+            lambda m: "%s<sub>%s</sub>" % tuple(m.group(0).split("_", 1)), s)
         s = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", s)
         s = re.sub(r"\*([^*]+)\*", r"<i>\1</i>", s)
         return s
@@ -355,13 +457,26 @@ def a_pdf(bloques, colo, titulo, autor, orcid):
         elif tipo == "lista":
             for it in cont:
                 hist.append(Paragraph("&bull; " + inline(it), cita))
+        elif tipo == "referencias":
+            for lineas_it in cont:
+                hist.append(Paragraph("<br/>".join(inline(x) for x in lineas_it),
+                                      colgante))
         elif tipo == "tabla":
             if not cont:
                 continue
             ncol = max(len(f) for f in cont)
-            datos = [[Paragraph(inline(c), peq) for c in
-                      (f + [""] * (ncol - len(f)))] for f in cont]
-            tb = Table(datos, repeatRows=1, hAlign="CENTER")
+            filas_txt = [f + [""] * (ncol - len(f)) for f in cont]
+            datos = [[Paragraph(inline(c), peq) for c in f] for f in filas_txt]
+            # ANCHOS CALCULADOS, para que ninguna tabla se salga de la caja. Se
+            # reparte el ancho disponible en proporcion a lo que ocupa la
+            # columna mas larga de cada una, con un minimo por columna para que
+            # una columna estrecha no quede en un hilo.
+            disponible = A4[0] - 2 * 2.54 * cm
+            anchos = [max(len(f[j]) for f in filas_txt) for j in range(ncol)]
+            anchos = [max(a, 3) for a in anchos]
+            escala = disponible / float(sum(anchos))
+            col = [a * escala for a in anchos]
+            tb = Table(datos, colWidths=col, repeatRows=1, hAlign="CENTER")
             tb.setStyle(TableStyle([
                 ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                 ("BACKGROUND", (0, 0), (-1, 0), colors.whitesmoke),
@@ -512,11 +627,22 @@ def barrer_tex(tex):
 # --- principal ---------------------------------------------------------------
 
 def main():
+    sucio = git("status", "--porcelain")
+    if sucio and "--sucio-a-proposito" not in sys.argv:
+        print("ARBOL SUCIO: no se construye.")
+        print("El colofon tendria que decir de que commit sale este PDF, y con")
+        print("cambios sin commitear eso no se puede decir. Commitea primero, o")
+        print("pasa --sucio-a-proposito si sabes por que lo haces.")
+        print("")
+        for l in sucio.split("\n")[:12]:
+            print("  " + l)
+        return 1
+
     md = open(MD, encoding="utf-8").read()
     bloques = parsear(md)
 
     titulo = "Forced counts: when a symmetry group determines the discordance of a constructed ordering"
-    autor = "Alexis Garcia Hurtado"
+    autor = "Alexis García Hurtado"
     orcid = "0009-0003-4636-8206"
     check("el.titulo.del.manuscrito.es.el.congelado", bloques[0] == ("h1", titulo),
           "la portada de PAPER.md manda")
@@ -543,6 +669,19 @@ def main():
 
     cotejar(md, tex, pdf_txt, cuerpo_bloques)
     barrer_tex(tex)
+
+    # NOTACION. Un guion bajo escapado en el .tex es notacion compuesta como
+    # texto, que es justo lo que no se quiere. Se cuenta y se exige cero.
+    bajos = tex.count(r"\_")
+    emit("tex.guiones.bajos.compuestos.como.texto", bajos,
+         "cada uno seria un subindice compuesto en redonda en vez de en modo "
+         "matematico")
+    check("tex.cero.notacion.compuesta.como.texto", bajos == 0)
+    emit("tex.simbolos.en.modo.matematico",
+         sum(tex.count(v) for v in set(NOTACION.values())), "")
+    emit("tex.enlaces.en.url", tex.count(r"\url{"), "")
+    check("todo.enlace.va.en.url", tex.count(r"\url{") >= 3,
+          "las tres entradas con enlace tienen que llevarlo dentro de url")
 
     # que el colofon este de verdad en las dos salidas
     check("el.tex.lleva.colofon", colo["sha256_manuscrito"] in tex)

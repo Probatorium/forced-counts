@@ -94,14 +94,14 @@ and have no row here.
      0 = results/general-n6.tsv:100 n6.k3.Mawangdui.historica.libres;
      1 = results/general-n6.tsv:106 n6.k3.Mawangdui.historica.alcanzables;
      1008 = results/general-n6.tsv:105 n6.k3.Mawangdui.historica.observado -->
-Table 1 gives dimensions three to six, every level, with the same columns
+Table 2 gives dimensions three to six, every level, with the same columns
 throughout. The order of the group respecting B(n, k) is k factorial times n
 minus k factorial times 2 to the n, which was stated in the general
 preregistration before any of this was run and is verified in all 14 rows. The order of the group depends only
 on the partition and not on the ordering, which the same table confirms across
 thousands of orderings.
 
-**Table 1.** *The landscape B(n, k) in dimensions three to six.*
+**Table 2.** *The landscape B(n, k) in dimensions three to six.*
 
 | n | k | group order | Gray | canonical | forced | bounded | barred | cases |
 |---|---|---|---|---|---|---|---|---|
@@ -120,7 +120,7 @@ thousands of orderings.
 | 6 | 4 | 3072 | bounded | barred | . | . | . | not sampled |
 | 6 | 5 | 7680 | bounded | barred | . | . | . | not sampled |
 
-The last three columns of Table 1 are the distribution of the three outcomes
+The last three columns of Table 2 are the distribution of the three outcomes
 over the parametrised family, by block order and internal order; a dot means the
 distribution was not measured. The **forced** column is empty in every row at an
 extreme level and non empty only at the intermediate ones, which is the shape
@@ -139,17 +139,17 @@ was used and is labelled as a sample.
      su propia fila y no dentro de la tabla. -->
 **One historical row belongs here and is kept apart.** The first historical
 ordering does fit the family, at the middle level of dimension six, since its
-octets are exactly those cosets. Its row is Table 2, kept out of Table 1 so
+octets are exactly those cosets. Its row is Table 3, kept out of Table 2 so
 that the parametrised family and the received sequence are not read as one
 population:
 
-**Table 2.** *The one historical ordering that fits the family, reported apart.*
+**Table 3.** *The one historical ordering that fits the family, reported apart.*
 
 | ordering | n | k | group order | free orbits | compatible totals | count | outcome |
 |---|---|---|---|---|---|---|---|
 | Mawangdui, received | 6 | 3 | 2304 | 0 | 1 | 1008 | forced |
 
-Table 2 reports 0 free orbits, exactly 1 compatible total, and that total is
+Table 3 reports 0 free orbits, exactly 1 compatible total, and that total is
 1008: the forced outcome of section 6 read inside the general frame rather than beside it,
 and the same figure that the demonstration there produces.
 

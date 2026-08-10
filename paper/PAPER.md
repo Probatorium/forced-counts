@@ -1,6 +1,6 @@
 # Forced counts: when a symmetry group determines the discordance of a constructed ordering
 
-**Alexis Garcia Hurtado**
+**Alexis García Hurtado**
 
 ORCID 0009-0003-4636-8206
 
@@ -149,7 +149,7 @@ silent about its origin.
      "Context: Alternative Sequences". Leida de la pagina renderizada del PDF,
      que es el canal fuerte, y no de la conversion OCR. -->
 The caution is not ours to invent, and it is worth quoting from the literature
-itself. Discussing an alternative arrangement, Moore [6] writes:
+itself. Discussing an alternative arrangement, Moore [7] writes:
 
 > "Shao Yong's 'Fu Xi' order of the hexagrams, being a Song dynasty production,
 > is too late to concern us here; besides, it was never intended to order the
@@ -274,7 +274,7 @@ is reported under all four rather than under the most favourable one.
 
 <!-- origen: PRIOR-ART.md 5.3; Schoter, The Oracle Vol 2 No 7, Summer 1998,
      Definition 6, "Sequence Parameters". Interseccion declarada en NOVELTY.md -->
-The second of those two choices is not ours. Schöter [12] parametrises the counting
+The second of those two choices is not ours. Schöter [13] parametrises the counting
 orders of the hexagrams by, among other things, "whether the lower or upper line
 is the least significant bit", and names the two readings Rising Yang and Sinking
 Yang. We use that parameter and do not present it as new.
@@ -317,17 +317,17 @@ here, once, rather than in a closing note.
      termino chino, Cook, Drasny con zonggua, Moore con invertible -->
 **Inversion.** In the sinological literature on the Yijing, *inversion* names the
 180 degree turn of a hexagram, *fandui*, which is a symmetry of the figure and
-not a discordant pair. Gritter [4] states the two pairing principles as inversion and
+not a discordant pair. Gritter [5] states the two pairing principles as inversion and
 opposition and gives the Chinese terms; Cook [2] devotes a chapter to inversion and
-obversion; Drasny [3] writes of inverses of hexagrams, *zonggua*; Moore [6]
+obversion; Drasny [3] writes of inverses of hexagrams, *zonggua*; Moore [7]
 speaks of invertible pairs. In this paper *inversion* is never used for the statistic.
 
 <!-- origen: PRIOR-ART.md 2 y 7; Radisic 4.3 y Mutze 3.2, los dos verificados
      contra su PDF -->
-**Balance.** The word is occupied twice over in the neighbourhood. Radisic [9] uses
+**Balance.** The word is occupied twice over in the neighbourhood. Radisic [10] uses
 it for Hamming weight, writing that weight preservation "may be viewed as
 preservation of yin-yang balance" and adding at once that formally it is Hamming
-weight. In the Gray code literature Mütze [7] defines a *balanced* Gray code by the
+weight. In the Gray code literature Mütze [8] defines a *balanced* Gray code by the
 condition that the transition counts satisfy |c_i - 2^n/n| < 2, that is, a
 condition on how often each coordinate flips. Neither is the quantity studied
 here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
@@ -429,7 +429,7 @@ since the orbits partition the set of pairs, the total is half of C(N, 2). QED
      1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 **Prior owner of the germ.** The idea that an involution which sends the count to
 its complement forces the average to one half on every orbit is the founding
-example of the homomesy literature. Propp and Roby [8], in section 2.1 of
+example of the homomesy literature. Propp and Roby [9], in section 2.1 of
 arXiv:1310.5201v6, take the permutations of {1, ..., n}, let tau send a
 permutation to its reversal and f be the number of inversions, and observe that
 since tau squared is the identity and f(pi) + f(tau(pi)) = n(n-1)/2, the
@@ -448,7 +448,7 @@ pairs on which the position permutation preserves the order.
 <!-- origen: NOVELTY.md, alcance; PRIOR-ART.md 14.5 -->
 In the vocabulary of that literature, the corollary above says that the indicator
 of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of
-Propp and Roby [8]. We use the term and do not present it as ours.
+Propp and Roby [9]. We use the term and do not present it as ours.
 
 ## 3.3 Forcing by a uniform witness
 
@@ -468,7 +468,7 @@ checked on its own: run through the orbit and verify that epsilon is one.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 14.2, punto 1, survey
      de Roby, Example 4, pagina 4, verificado contra el PDF -->
 **Prior owner of the mechanism.** The mechanism of this lemma is stated in one
-line in Roby's survey of homomesy [11], in his Example 4 on inversions under the
+line in Roby's survey of homomesy [12], in his Example 4 on inversions under the
 ninety degree rotation of permutation matrices, whose average is again n(n-1)/4:
 "the proof of homomesy is easy: Q takes inversions to non-inversions, and
 vice-versa." That is the witness argument, said there for another object.
@@ -531,7 +531,7 @@ freedom that the construction leaves, and the interval they define is the object
 of the sections that follow.
 
 <!-- origen: PRIOR-ART.md 14.3, artefacto leido en identidad y definicion -->
-The other large phenomenon of this area, cyclic sieving [10], is a different
+The other large phenomenon of this area, cyclic sieving [11], is a different
 question again: it counts the fixed points of a cyclic action through a
 generating function at roots of unity, not the average of a statistic over
 orbits. It is named here to place the work, and is not used.
@@ -984,7 +984,7 @@ half turn leaves fixed, paired among themselves by complementation.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
      linea de cita; artefacto Radisic arXiv:2601.07175v3, Teorema 3.3 -->
 **Prior owner of this characterisation.** It is the complete equivariance of
-Radisic [9], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
+Radisic [10], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
 is either the complement or the reversal of its partner and splits the 32
 pairs into palindromes paired by complement, anti-symmetric ones where reversal
 and complement coincide, and generic ones paired by reversal. That statement has
@@ -1038,7 +1038,7 @@ missed by a small amount, it is absent from the list.
 <!-- origen: DEFINICIONES-RESIDUO5.md, lista cerrada declarada antes de medir -->
 A closed list of five candidate structures was declared before measuring
 anything: the nuclear hexagram operation with its exact definition, the two part
-division of the received sequence, whose literature has a located owner [5], and three maps defined through the positions.
+division of the received sequence, whose literature has a located owner [6], and three maps defined through the positions.
 Nothing outside that list was tried.
 
 <!-- origen: INFORME-RESIDUO5.md 2.1 y 2.2 -->
@@ -1074,10 +1074,116 @@ its discordance.
 <!-- CIFRAS DERIVADAS: 5 = 1013 - 1008 -->
 The count differs from the tie by 5, that being 1013 minus 1008, and the
 natural question is where those 5 sit. Each free orbit contributes its half plus
-a deviation, the deviations sum to exactly 5, and the full decomposition over the
-19 free orbits, with cardinality, half, contribution and deviation for each one,
-is reported as a table in the results and in the accompanying report. Two things
-can be read off it directly, and nothing else is read off it here:
+a deviation, and the deviations sum to exactly 5. Table 1 gives the whole
+decomposition over the 19 free orbits, one row each, with cardinality, half,
+contribution and deviation. Two things can be read off Table 1 directly, and
+nothing else is read off it here:
+
+<!-- CIFRAS: 192 = results/residuo5.tsv:13 f1.orbita.00.cardinal;
+     96 = results/residuo5.tsv:14 f1.orbita.00.mitad;
+     90 = results/residuo5.tsv:15 f1.orbita.00.aportacion;
+     -6 = results/residuo5.tsv:16 f1.orbita.00.desviacion;
+     96 = results/residuo5.tsv:17 f1.orbita.01.cardinal;
+     48 = results/residuo5.tsv:18 f1.orbita.01.mitad;
+     50 = results/residuo5.tsv:19 f1.orbita.01.aportacion;
+     2 = results/residuo5.tsv:20 f1.orbita.01.desviacion;
+     96 = results/residuo5.tsv:21 f1.orbita.02.cardinal;
+     48 = results/residuo5.tsv:22 f1.orbita.02.mitad;
+     52 = results/residuo5.tsv:23 f1.orbita.02.aportacion;
+     4 = results/residuo5.tsv:24 f1.orbita.02.desviacion;
+     96 = results/residuo5.tsv:25 f1.orbita.03.cardinal;
+     48 = results/residuo5.tsv:26 f1.orbita.03.mitad;
+     46 = results/residuo5.tsv:27 f1.orbita.03.aportacion;
+     -2 = results/residuo5.tsv:28 f1.orbita.03.desviacion;
+     96 = results/residuo5.tsv:29 f1.orbita.04.cardinal;
+     48 = results/residuo5.tsv:30 f1.orbita.04.mitad;
+     46 = results/residuo5.tsv:31 f1.orbita.04.aportacion;
+     -2 = results/residuo5.tsv:32 f1.orbita.04.desviacion;
+     96 = results/residuo5.tsv:33 f1.orbita.05.cardinal;
+     48 = results/residuo5.tsv:34 f1.orbita.05.mitad;
+     46 = results/residuo5.tsv:35 f1.orbita.05.aportacion;
+     -2 = results/residuo5.tsv:36 f1.orbita.05.desviacion;
+     96 = results/residuo5.tsv:37 f1.orbita.06.cardinal;
+     48 = results/residuo5.tsv:38 f1.orbita.06.mitad;
+     46 = results/residuo5.tsv:39 f1.orbita.06.aportacion;
+     -2 = results/residuo5.tsv:40 f1.orbita.06.desviacion;
+     96 = results/residuo5.tsv:41 f1.orbita.07.cardinal;
+     48 = results/residuo5.tsv:42 f1.orbita.07.mitad;
+     46 = results/residuo5.tsv:43 f1.orbita.07.aportacion;
+     -2 = results/residuo5.tsv:44 f1.orbita.07.desviacion;
+     96 = results/residuo5.tsv:45 f1.orbita.08.cardinal;
+     48 = results/residuo5.tsv:46 f1.orbita.08.mitad;
+     54 = results/residuo5.tsv:47 f1.orbita.08.aportacion;
+     6 = results/residuo5.tsv:48 f1.orbita.08.desviacion;
+     96 = results/residuo5.tsv:49 f1.orbita.09.cardinal;
+     48 = results/residuo5.tsv:50 f1.orbita.09.mitad;
+     52 = results/residuo5.tsv:51 f1.orbita.09.aportacion;
+     4 = results/residuo5.tsv:52 f1.orbita.09.desviacion;
+     48 = results/residuo5.tsv:53 f1.orbita.10.cardinal;
+     24 = results/residuo5.tsv:54 f1.orbita.10.mitad;
+     28 = results/residuo5.tsv:55 f1.orbita.10.aportacion;
+     4 = results/residuo5.tsv:56 f1.orbita.10.desviacion;
+     48 = results/residuo5.tsv:57 f1.orbita.11.cardinal;
+     24 = results/residuo5.tsv:58 f1.orbita.11.mitad;
+     22 = results/residuo5.tsv:59 f1.orbita.11.aportacion;
+     -2 = results/residuo5.tsv:60 f1.orbita.11.desviacion;
+     48 = results/residuo5.tsv:61 f1.orbita.12.cardinal;
+     24 = results/residuo5.tsv:62 f1.orbita.12.mitad;
+     22 = results/residuo5.tsv:63 f1.orbita.12.aportacion;
+     -2 = results/residuo5.tsv:64 f1.orbita.12.desviacion;
+     24 = results/residuo5.tsv:65 f1.orbita.13.cardinal;
+     12 = results/residuo5.tsv:66 f1.orbita.13.mitad;
+     16 = results/residuo5.tsv:67 f1.orbita.13.aportacion;
+     4 = results/residuo5.tsv:68 f1.orbita.13.desviacion;
+     12 = results/residuo5.tsv:69 f1.orbita.14.cardinal;
+     6 = results/residuo5.tsv:70 f1.orbita.14.mitad;
+     5 = results/residuo5.tsv:71 f1.orbita.14.aportacion;
+     -1 = results/residuo5.tsv:72 f1.orbita.14.desviacion;
+     12 = results/residuo5.tsv:73 f1.orbita.15.cardinal;
+     6 = results/residuo5.tsv:74 f1.orbita.15.mitad;
+     8 = results/residuo5.tsv:75 f1.orbita.15.aportacion;
+     2 = results/residuo5.tsv:76 f1.orbita.15.desviacion;
+     12 = results/residuo5.tsv:77 f1.orbita.16.cardinal;
+     6 = results/residuo5.tsv:78 f1.orbita.16.mitad;
+     4 = results/residuo5.tsv:79 f1.orbita.16.aportacion;
+     -2 = results/residuo5.tsv:80 f1.orbita.16.desviacion;
+     4 = results/residuo5.tsv:81 f1.orbita.17.cardinal;
+     2 = results/residuo5.tsv:82 f1.orbita.17.mitad;
+     3 = results/residuo5.tsv:83 f1.orbita.17.aportacion;
+     1 = results/residuo5.tsv:84 f1.orbita.17.desviacion;
+     4 = results/residuo5.tsv:85 f1.orbita.18.cardinal;
+     2 = results/residuo5.tsv:86 f1.orbita.18.mitad;
+     3 = results/residuo5.tsv:87 f1.orbita.18.aportacion;
+     1 = results/residuo5.tsv:88 f1.orbita.18.desviacion;
+     5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
+     19 = results/residuo5.tsv:6 orbitas.libres -->
+
+**Table 1.** *The residue of the third ordering, decomposed over its free orbits.*
+
+| orbit | cardinality | half | contribution | deviation |
+|---|---|---|---|---|
+| o0 | 192 | 96 | 90 | -6 |
+| o1 | 96 | 48 | 50 | 2 |
+| o2 | 96 | 48 | 52 | 4 |
+| o3 | 96 | 48 | 46 | -2 |
+| o4 | 96 | 48 | 46 | -2 |
+| o5 | 96 | 48 | 46 | -2 |
+| o6 | 96 | 48 | 46 | -2 |
+| o7 | 96 | 48 | 46 | -2 |
+| o8 | 96 | 48 | 54 | 6 |
+| o9 | 96 | 48 | 52 | 4 |
+| o10 | 48 | 24 | 28 | 4 |
+| o11 | 48 | 24 | 22 | -2 |
+| o12 | 48 | 24 | 22 | -2 |
+| o13 | 24 | 12 | 16 | 4 |
+| o14 | 12 | 6 | 5 | -1 |
+| o15 | 12 | 6 | 8 | 2 |
+| o16 | 12 | 6 | 4 | -2 |
+| o17 | 4 | 2 | 3 | 1 |
+| o18 | 4 | 2 | 3 | 1 |
+
+The rows are labelled o0 to o18 in the order the accounting produces them; the
+label is a row name and not a measurement.
 
 <!-- origen: INFORME-RESIDUO5.md 1.2 -->
 first, **every free orbit deviates**; there is no orbit carrying the difference
@@ -1089,8 +1195,10 @@ the construction's own pairs, and the even ones are all the rest.
 
 <!-- origen: INFORME-RESIDUO5.md 1.4; GUARDA explicita -->
 The crossing of the deviating orbits against the two structural features of the
-declared list is likewise reported as a table. It is a set of counts with their
-provenance. There is no declared null, no family of comparisons fixed in advance
+declared list is **not** printed here. It stays in results/residuo5.tsv, under
+the keys that name each orbit against each feature, and the reason for leaving it
+there rather than promoting it is the guard below: it is a set of counts with
+their provenance and nothing is read from it. There is no declared null, no family of comparisons fixed in advance
 and no discipline of multiplicity behind it, and in this work that means it is
 not read as evidence of anything.
 
@@ -1216,14 +1324,14 @@ and have no row here.
      0 = results/general-n6.tsv:100 n6.k3.Mawangdui.historica.libres;
      1 = results/general-n6.tsv:106 n6.k3.Mawangdui.historica.alcanzables;
      1008 = results/general-n6.tsv:105 n6.k3.Mawangdui.historica.observado -->
-Table 1 gives dimensions three to six, every level, with the same columns
+Table 2 gives dimensions three to six, every level, with the same columns
 throughout. The order of the group respecting B(n, k) is k factorial times n
 minus k factorial times 2 to the n, which was stated in the general
 preregistration before any of this was run and is verified in all 14 rows. The order of the group depends only
 on the partition and not on the ordering, which the same table confirms across
 thousands of orderings.
 
-**Table 1.** *The landscape B(n, k) in dimensions three to six.*
+**Table 2.** *The landscape B(n, k) in dimensions three to six.*
 
 | n | k | group order | Gray | canonical | forced | bounded | barred | cases |
 |---|---|---|---|---|---|---|---|---|
@@ -1242,7 +1350,7 @@ thousands of orderings.
 | 6 | 4 | 3072 | bounded | barred | . | . | . | not sampled |
 | 6 | 5 | 7680 | bounded | barred | . | . | . | not sampled |
 
-The last three columns of Table 1 are the distribution of the three outcomes
+The last three columns of Table 2 are the distribution of the three outcomes
 over the parametrised family, by block order and internal order; a dot means the
 distribution was not measured. The **forced** column is empty in every row at an
 extreme level and non empty only at the intermediate ones, which is the shape
@@ -1261,17 +1369,17 @@ was used and is labelled as a sample.
      su propia fila y no dentro de la tabla. -->
 **One historical row belongs here and is kept apart.** The first historical
 ordering does fit the family, at the middle level of dimension six, since its
-octets are exactly those cosets. Its row is Table 2, kept out of Table 1 so
+octets are exactly those cosets. Its row is Table 3, kept out of Table 2 so
 that the parametrised family and the received sequence are not read as one
 population:
 
-**Table 2.** *The one historical ordering that fits the family, reported apart.*
+**Table 3.** *The one historical ordering that fits the family, reported apart.*
 
 | ordering | n | k | group order | free orbits | compatible totals | count | outcome |
 |---|---|---|---|---|---|---|---|
 | Mawangdui, received | 6 | 3 | 2304 | 0 | 1 | 1008 | forced |
 
-Table 2 reports 0 free orbits, exactly 1 compatible total, and that total is
+Table 3 reports 0 free orbits, exactly 1 compatible total, and that total is
 1008: the forced outcome of section 6 read inside the general frame rather than beside it,
 and the same figure that the demonstration there produces.
 
@@ -1439,7 +1547,7 @@ is relative to the list precisely so that this remains possible.
 
 <!-- origen: PRIOR-ART.md 1.2, artefacto Radisic leido entero; el emparejamiento
      de prioridad de reversion y su unicidad -->
-There is one route we can name rather than gesture at. Radisic [9] proves that the
+There is one route we can name rather than gesture at. Radisic [10] proves that the
 pairing of the third ordering is the unique cost-minimising equivariant matching
 under his criteria. Conditioning on that matching leaves a family of orderings:
 all those that realise it, differing only in the order of the pairs and in the
@@ -1459,7 +1567,7 @@ reading with these numbers or with larger ones.
 The method that would govern it has a name and a citable version, given here as a
 pointer and not as a read artefact: the stopping-criterion work of the same
 author on nested reference sets, *Uninformative rungs: an order-theoretic
-stopping criterion for nested reference sets* [13], deposited at
+stopping criterion for nested reference sets* [4], deposited at
 doi 10.5281/zenodo.21750029. We have not read it in the course of this work and
 make no claim about its contents; we name it as the framework under which the
 question above would have to be posed.
@@ -1649,29 +1757,29 @@ scope stated as relative to a review whose limits are written down.
 
 Each entry records the identity as the literature review fixed it, and whether the artefact was read here or enters as second hand. That mark is part of the reference.
 
-1. Björner, A., & Brenti, F. *Combinatorics of Coxeter groups*. Equation (1.25) and Proposition 1.5.2, p. 20; Sections 8.1 and 8.2, pp. 245, 252.  
-   *Status:* read, and the cited pages verified against the PDF; year and publisher were not verified against the artefact and are therefore not printed.
+1. Björner, A., & Brenti, F. (2005). *Combinatorics of Coxeter groups* (Graduate Texts in Mathematics, Vol. 231). Springer. ISBN 3-540-44238-3. Equation (1.25) and Proposition 1.5.2, p. 20; Sections 8.1 and 8.2, pp. 245, 252.  
+   *Status:* read, and the cited pages verified against the PDF; the year, series, volume, publisher and ISBN were read from the front matter of the copy held here, its title page and its copyright page. That title page prints the first author as Bjorner, without the diaeresis; the accepted spelling is used above and the discrepancy is recorded here.
 2. Cook, R. S. (2006). *Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence* (STEDT Monograph Series, Vol. 5). University of California, Berkeley. ISBN 0-944613-44-6.  
    *Status:* read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover.
 3. Drasny, J. *The solution of the King Wen sequence?* [Review of the book *Classical Chinese combinatorics*, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm  
    *Status:* read in full; the review carries no date on the page read, so none is printed.
-4. Gritter, G. (2015). *The hidden pattern in the classical sequence of the I Ching*. Groningen.  
+4. García Hurtado, A. (2026). *Uninformative rungs: An order-theoretic stopping criterion for nested reference sets*. Zenodo. https://doi.org/10.5281/zenodo.21750029  
+   *Status:* cited as a pointer to the framework under which the inferential question of Section 8.3 would have to be posed. ITS CONTENT IS NOT LOAD BEARING HERE: nothing in this paper depends on it, and it was not read in the course of this work.
+5. Gritter, G. (2015). *The hidden pattern in the classical sequence of the I Ching*. Groningen.  
    *Status:* read in full.
-5. Hacker, E., & Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. *Journal of Chinese Philosophy*, *30*(2), 219–221.  
-   *Status:* SECOND HAND: bibliographic identity taken from the bibliography of reference 6; not read.
-6. Moore, S. (2005). *Structural elements in the King Wen sequence of hexagrams* (Oracle Paper No. 1).  
+6. Hacker, E., & Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. *Journal of Chinese Philosophy*, *30*(2), 219–221.  
+   *Status:* SECOND HAND: bibliographic identity taken from the bibliography of Moore (2005); not read. The pointer names the author and year and not a number, so that renumbering the list cannot turn it into a reference to itself, which is what it had just become.
+7. Moore, S. (2005). *Structural elements in the King Wen sequence of hexagrams* (Oracle Paper No. 1).  
    *Status:* read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from the OCR conversion.
-7. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. *The Electronic Journal of Combinatorics*, *30*(3), Dynamic Survey DS26.  
+8. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. *The Electronic Journal of Combinatorics*, *30*(3), Dynamic Survey DS26.  
    *Status:* read in the cited part, Section 3.2 on p. 11, verified against the PDF.
-8. Propp, J., & Roby, T. (2015). *Homomesy in products of two chains* (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6  
+9. Propp, J., & Roby, T. (2015). *Homomesy in products of two chains* (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6  
    *Status:* read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version.
-9. Radisic, A. *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
+10. Radisic, A. *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
    *Status:* read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing.
-10. Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving phenomenon. *Journal of Combinatorial Theory, Series A*, *108*(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009  
+11. Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving phenomenon. *Journal of Combinatorial Theory, Series A*, *108*(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009  
    *Status:* read in identity and definition; cited for context, since it counts fixed points and not orbit averages.
-11. Roby, T. *Dynamical algebraic combinatorics and the homomesy phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.  
-   *Status:* read, and the cited pages verified against the PDF; its volume identity is second hand, since the cover of the PDF read does not carry it, and no year is printed here for the same reason.
-12. Schöter, A. (1998). Boolean algebra and the Yi Jing. *The Oracle: The Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.  
+12. Roby, T. *Dynamical algebraic combinatorics and the homomesy phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.  
+   *Status:* read, and the cited pages verified against the PDF; its first page was checked again for this edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor series, so neither is printed and the gap stays declared.
+13. Schöter, A. (1998). Boolean algebra and the Yi Jing. *The Oracle: The Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.  
    *Status:* read; Definition 6, Sequence Parameters.
-13. *Uninformative rungs: An order-theoretic stopping criterion for nested reference sets*. https://doi.org/10.5281/zenodo.21750029  
-   *Status:* SECOND HAND: cited as a pointer to the framework that would govern the inferential question of Section 8.3; not read in the course of this work.

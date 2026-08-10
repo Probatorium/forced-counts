@@ -1,0 +1,10 @@
+# Numeracion de las tablas por orden de aparicion.
+# clave	valor	nota
+tablas	3	
+orden.de.aparicion	06:3 07:1 07:2	
+mapa	3>1 1>2 2>3	del numero que lleva puesto al que le toca por aparicion
+menciones.antes	10	
+menciones.despues	10	
+ficheros.tocados	2	
+modo	escribir	
+ninguna.mencion.se.pierde	1	

@@ -154,7 +154,7 @@ half turn leaves fixed, paired among themselves by complementation.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
      linea de cita; artefacto Radisic arXiv:2601.07175v3, Teorema 3.3 -->
 **Prior owner of this characterisation.** It is the complete equivariance of
-Radisic [9], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
+Radisic [10], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
 is either the complement or the reversal of its partner and splits the 32
 pairs into palindromes paired by complement, anti-symmetric ones where reversal
 and complement coincide, and generic ones paired by reversal. That statement has
@@ -208,7 +208,7 @@ missed by a small amount, it is absent from the list.
 <!-- origen: DEFINICIONES-RESIDUO5.md, lista cerrada declarada antes de medir -->
 A closed list of five candidate structures was declared before measuring
 anything: the nuclear hexagram operation with its exact definition, the two part
-division of the received sequence, whose literature has a located owner [5], and three maps defined through the positions.
+division of the received sequence, whose literature has a located owner [6], and three maps defined through the positions.
 Nothing outside that list was tried.
 
 <!-- origen: INFORME-RESIDUO5.md 2.1 y 2.2 -->
@@ -244,10 +244,116 @@ its discordance.
 <!-- CIFRAS DERIVADAS: 5 = 1013 - 1008 -->
 The count differs from the tie by 5, that being 1013 minus 1008, and the
 natural question is where those 5 sit. Each free orbit contributes its half plus
-a deviation, the deviations sum to exactly 5, and the full decomposition over the
-19 free orbits, with cardinality, half, contribution and deviation for each one,
-is reported as a table in the results and in the accompanying report. Two things
-can be read off it directly, and nothing else is read off it here:
+a deviation, and the deviations sum to exactly 5. Table 1 gives the whole
+decomposition over the 19 free orbits, one row each, with cardinality, half,
+contribution and deviation. Two things can be read off Table 1 directly, and
+nothing else is read off it here:
+
+<!-- CIFRAS: 192 = results/residuo5.tsv:13 f1.orbita.00.cardinal;
+     96 = results/residuo5.tsv:14 f1.orbita.00.mitad;
+     90 = results/residuo5.tsv:15 f1.orbita.00.aportacion;
+     -6 = results/residuo5.tsv:16 f1.orbita.00.desviacion;
+     96 = results/residuo5.tsv:17 f1.orbita.01.cardinal;
+     48 = results/residuo5.tsv:18 f1.orbita.01.mitad;
+     50 = results/residuo5.tsv:19 f1.orbita.01.aportacion;
+     2 = results/residuo5.tsv:20 f1.orbita.01.desviacion;
+     96 = results/residuo5.tsv:21 f1.orbita.02.cardinal;
+     48 = results/residuo5.tsv:22 f1.orbita.02.mitad;
+     52 = results/residuo5.tsv:23 f1.orbita.02.aportacion;
+     4 = results/residuo5.tsv:24 f1.orbita.02.desviacion;
+     96 = results/residuo5.tsv:25 f1.orbita.03.cardinal;
+     48 = results/residuo5.tsv:26 f1.orbita.03.mitad;
+     46 = results/residuo5.tsv:27 f1.orbita.03.aportacion;
+     -2 = results/residuo5.tsv:28 f1.orbita.03.desviacion;
+     96 = results/residuo5.tsv:29 f1.orbita.04.cardinal;
+     48 = results/residuo5.tsv:30 f1.orbita.04.mitad;
+     46 = results/residuo5.tsv:31 f1.orbita.04.aportacion;
+     -2 = results/residuo5.tsv:32 f1.orbita.04.desviacion;
+     96 = results/residuo5.tsv:33 f1.orbita.05.cardinal;
+     48 = results/residuo5.tsv:34 f1.orbita.05.mitad;
+     46 = results/residuo5.tsv:35 f1.orbita.05.aportacion;
+     -2 = results/residuo5.tsv:36 f1.orbita.05.desviacion;
+     96 = results/residuo5.tsv:37 f1.orbita.06.cardinal;
+     48 = results/residuo5.tsv:38 f1.orbita.06.mitad;
+     46 = results/residuo5.tsv:39 f1.orbita.06.aportacion;
+     -2 = results/residuo5.tsv:40 f1.orbita.06.desviacion;
+     96 = results/residuo5.tsv:41 f1.orbita.07.cardinal;
+     48 = results/residuo5.tsv:42 f1.orbita.07.mitad;
+     46 = results/residuo5.tsv:43 f1.orbita.07.aportacion;
+     -2 = results/residuo5.tsv:44 f1.orbita.07.desviacion;
+     96 = results/residuo5.tsv:45 f1.orbita.08.cardinal;
+     48 = results/residuo5.tsv:46 f1.orbita.08.mitad;
+     54 = results/residuo5.tsv:47 f1.orbita.08.aportacion;
+     6 = results/residuo5.tsv:48 f1.orbita.08.desviacion;
+     96 = results/residuo5.tsv:49 f1.orbita.09.cardinal;
+     48 = results/residuo5.tsv:50 f1.orbita.09.mitad;
+     52 = results/residuo5.tsv:51 f1.orbita.09.aportacion;
+     4 = results/residuo5.tsv:52 f1.orbita.09.desviacion;
+     48 = results/residuo5.tsv:53 f1.orbita.10.cardinal;
+     24 = results/residuo5.tsv:54 f1.orbita.10.mitad;
+     28 = results/residuo5.tsv:55 f1.orbita.10.aportacion;
+     4 = results/residuo5.tsv:56 f1.orbita.10.desviacion;
+     48 = results/residuo5.tsv:57 f1.orbita.11.cardinal;
+     24 = results/residuo5.tsv:58 f1.orbita.11.mitad;
+     22 = results/residuo5.tsv:59 f1.orbita.11.aportacion;
+     -2 = results/residuo5.tsv:60 f1.orbita.11.desviacion;
+     48 = results/residuo5.tsv:61 f1.orbita.12.cardinal;
+     24 = results/residuo5.tsv:62 f1.orbita.12.mitad;
+     22 = results/residuo5.tsv:63 f1.orbita.12.aportacion;
+     -2 = results/residuo5.tsv:64 f1.orbita.12.desviacion;
+     24 = results/residuo5.tsv:65 f1.orbita.13.cardinal;
+     12 = results/residuo5.tsv:66 f1.orbita.13.mitad;
+     16 = results/residuo5.tsv:67 f1.orbita.13.aportacion;
+     4 = results/residuo5.tsv:68 f1.orbita.13.desviacion;
+     12 = results/residuo5.tsv:69 f1.orbita.14.cardinal;
+     6 = results/residuo5.tsv:70 f1.orbita.14.mitad;
+     5 = results/residuo5.tsv:71 f1.orbita.14.aportacion;
+     -1 = results/residuo5.tsv:72 f1.orbita.14.desviacion;
+     12 = results/residuo5.tsv:73 f1.orbita.15.cardinal;
+     6 = results/residuo5.tsv:74 f1.orbita.15.mitad;
+     8 = results/residuo5.tsv:75 f1.orbita.15.aportacion;
+     2 = results/residuo5.tsv:76 f1.orbita.15.desviacion;
+     12 = results/residuo5.tsv:77 f1.orbita.16.cardinal;
+     6 = results/residuo5.tsv:78 f1.orbita.16.mitad;
+     4 = results/residuo5.tsv:79 f1.orbita.16.aportacion;
+     -2 = results/residuo5.tsv:80 f1.orbita.16.desviacion;
+     4 = results/residuo5.tsv:81 f1.orbita.17.cardinal;
+     2 = results/residuo5.tsv:82 f1.orbita.17.mitad;
+     3 = results/residuo5.tsv:83 f1.orbita.17.aportacion;
+     1 = results/residuo5.tsv:84 f1.orbita.17.desviacion;
+     4 = results/residuo5.tsv:85 f1.orbita.18.cardinal;
+     2 = results/residuo5.tsv:86 f1.orbita.18.mitad;
+     3 = results/residuo5.tsv:87 f1.orbita.18.aportacion;
+     1 = results/residuo5.tsv:88 f1.orbita.18.desviacion;
+     5 = results/residuo5.tsv:89 f1.suma.de.desviaciones;
+     19 = results/residuo5.tsv:6 orbitas.libres -->
+
+**Table 1.** *The residue of the third ordering, decomposed over its free orbits.*
+
+| orbit | cardinality | half | contribution | deviation |
+|---|---|---|---|---|
+| o0 | 192 | 96 | 90 | -6 |
+| o1 | 96 | 48 | 50 | 2 |
+| o2 | 96 | 48 | 52 | 4 |
+| o3 | 96 | 48 | 46 | -2 |
+| o4 | 96 | 48 | 46 | -2 |
+| o5 | 96 | 48 | 46 | -2 |
+| o6 | 96 | 48 | 46 | -2 |
+| o7 | 96 | 48 | 46 | -2 |
+| o8 | 96 | 48 | 54 | 6 |
+| o9 | 96 | 48 | 52 | 4 |
+| o10 | 48 | 24 | 28 | 4 |
+| o11 | 48 | 24 | 22 | -2 |
+| o12 | 48 | 24 | 22 | -2 |
+| o13 | 24 | 12 | 16 | 4 |
+| o14 | 12 | 6 | 5 | -1 |
+| o15 | 12 | 6 | 8 | 2 |
+| o16 | 12 | 6 | 4 | -2 |
+| o17 | 4 | 2 | 3 | 1 |
+| o18 | 4 | 2 | 3 | 1 |
+
+The rows are labelled o0 to o18 in the order the accounting produces them; the
+label is a row name and not a measurement.
 
 <!-- origen: INFORME-RESIDUO5.md 1.2 -->
 first, **every free orbit deviates**; there is no orbit carrying the difference
@@ -259,8 +365,10 @@ the construction's own pairs, and the even ones are all the rest.
 
 <!-- origen: INFORME-RESIDUO5.md 1.4; GUARDA explicita -->
 The crossing of the deviating orbits against the two structural features of the
-declared list is likewise reported as a table. It is a set of counts with their
-provenance. There is no declared null, no family of comparisons fixed in advance
+declared list is **not** printed here. It stays in results/residuo5.tsv, under
+the keys that name each orbit against each feature, and the reason for leaving it
+there rather than promoting it is the guard below: it is a set of counts with
+their provenance and nothing is read from it. There is no declared null, no family of comparisons fixed in advance
 and no discipline of multiplicity behind it, and in this work that means it is
 not read as evidence of anything.
 

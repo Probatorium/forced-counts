@@ -10,7 +10,7 @@
 \setlength{\emergencystretch}{3em}
 
 \title{Forced counts: when a symmetry group determines the discordance of a constructed ordering}
-\author{Alexis Garcia Hurtado\\ORCID 0009-0003-4636-8206}
+\author{Alexis García Hurtado\\ORCID 0009-0003-4636-8206}
 \date{}
 
 \usepackage{hyperref}
@@ -19,7 +19,7 @@
 \maketitle
 
 \begin{abstract}
-We count the \textbf{discordant pairs of an ordering against the binary order} of the vertices of the n-cube, in the standard sense of rank correlation, and ask when that count is determined by the subgroup of the hyperoctahedral group B\_n that the construction of the ordering respects.
+We count the \textbf{discordant pairs of an ordering against the binary order} of the vertices of the n-cube, in the standard sense of rank correlation, and ask when that count is determined by the subgroup of the hyperoctahedral group $B_n$ that the construction of the ordering respects.
 
 The apparatus is an accounting over the orbits of that subgroup acting on pairs of positions. Each orbit is either \textbf{forced}, contributing exactly half its cardinality whatever else happens, or \textbf{free}, contributing one of two values. A group can therefore only ever force the midpoint of the range, never any other value; equivalently, it can only force Kendall's tau against the binary order to be exactly zero.
 
@@ -49,7 +49,7 @@ The answer is not a single dichotomy. A group can leave the count completely fre
 
 \subsection*{1.2 The object}
 
-The set is the vertex set of the n-cube, the reference order is the binary order induced by reading a vertex as a number, and the symmetries available are the hyperoctahedral group B\_n, which permutes coordinates and complements subsets of them. An ordering is a bijection from positions to vertices; a construction partitions it into blocks; and the group of interest is the subgroup of B\_n that sends every block onto a block.
+The set is the vertex set of the n-cube, the reference order is the binary order induced by reading a vertex as a number, and the symmetries available are the hyperoctahedral group $B_n$, which permutes coordinates and complements subsets of them. An ordering is a bijection from positions to vertices; a construction partitions it into blocks; and the group of interest is the subgroup of $B_n$ that sends every block onto a block.
 
 Three orderings of the 6-cube carry the concrete weight of the paper. They come from a published replication package, read at a fixed tag, and they are of interest here for a structural reason rather than a historical one: each is built by a documented rule with a visible symmetry, and the three rules are different enough that they populate all three outcomes. Two of them force the count to the midpoint of its range. The third bars that midpoint entirely.
 
@@ -59,7 +59,7 @@ To see whether those results are about the constructions or about the dimension,
 
 The three orderings named above have a long history and a long literature, and this paper is not a contribution to it. Nothing here is claimed about who built those sequences, when, with what knowledge or with what intent. What is measured is a property of a received list of sixty four objects, and the measurement is silent about its origin.
 
-The caution is not ours to invent, and it is worth quoting from the literature itself. Discussing an alternative arrangement, Moore [6] writes:
+The caution is not ours to invent, and it is worth quoting from the literature itself. Discussing an alternative arrangement, Moore [7] writes:
 
 \begin{quote}
 "Shao Yong's 'Fu Xi' order of the hexagrams, being a Song dynasty production, is too late to concern us here; besides, it was never intended to order the actual text of the \emph{Zhouyi}, and the notion of ordering the text in this fashion (and in particular that such a textual-ordering has priority to the King Wen sequence) is a 20th century invention [Moore 2005]."
@@ -101,17 +101,17 @@ Everything below is stated for a general dimension n, with N = 2\textasciicircum
 
 \subsection*{2.2 The group}
 
-The maps we consider are those that permute the n coordinates and then complement a subset of them. There are n! 2\textasciicircum{}n of them, which for n = 6 is 46080. This is the \textbf{hyperoctahedral group B\_n}, the symmetry group of the n-cube.
+The maps we consider are those that permute the n coordinates and then complement a subset of them. There are n! 2\textasciicircum{}n of them, which for n = 6 is 46080. This is the \textbf{hyperoctahedral group $B_n$}, the symmetry group of the n-cube.
 
 \textbf{Correspondence, in one line:} the vertices of the n-cube are the binary vectors, permuting lines is permuting coordinate axes, and complementing a subset of lines is reflecting in the corresponding coordinate hyperplanes.
 
-Every element of B\_n is written uniquely as a coordinate permutation followed by a complementation mask, so this parametrisation counts no element twice, and the action preserves adjacency of the cube, that is, the relation of differing in a single coordinate.
+Every element of $B_n$ is written uniquely as a coordinate permutation followed by a complementation mask, so this parametrisation counts no element twice, and the action preserves adjacency of the cube, that is, the relation of differing in a single coordinate.
 
 \subsection*{2.3 Orderings, reference orders, and the four conventions}
 
 An \textbf{ordering} is a bijection from positions 0, ..., N-1 to the vertices. To compare an ordering with a numerical order we must fix how a vertex is read as a number, and there are two independent binary choices: whether yang counts as one or as zero, and whether the bottom line is the most or the least significant bit. That gives \textbf{four conventions}, fixed in advance, and every count in this work is reported under all four rather than under the most favourable one.
 
-The second of those two choices is not ours. Schöter [12] parametrises the counting orders of the hexagrams by, among other things, "whether the lower or upper line is the least significant bit", and names the two readings Rising Yang and Sinking Yang. We use that parameter and do not present it as new.
+The second of those two choices is not ours. Schöter [13] parametrises the counting orders of the hexagrams by, among other things, "whether the lower or upper line is the least significant bit", and names the two readings Rising Yang and Sinking Yang. We use that parameter and do not present it as new.
 
 The \textbf{reference order} throughout is the binary order induced by the convention in use, and the denominator for every rate is C(N, 2), the number of unordered pairs of distinct positions. For n = 6 that is 2016, and its half is 1008.
 
@@ -125,31 +125,31 @@ Given an ordering and the reference order, a pair of distinct positions is \text
 
 Three words that appear near this work already have owners, and we separate them here, once, rather than in a closing note.
 
-\textbf{Inversion.} In the sinological literature on the Yijing, \emph{inversion} names the 180 degree turn of a hexagram, \emph{fandui}, which is a symmetry of the figure and not a discordant pair. Gritter [4] states the two pairing principles as inversion and opposition and gives the Chinese terms; Cook [2] devotes a chapter to inversion and obversion; Drasny [3] writes of inverses of hexagrams, \emph{zonggua}; Moore [6] speaks of invertible pairs. In this paper \emph{inversion} is never used for the statistic.
+\textbf{Inversion.} In the sinological literature on the Yijing, \emph{inversion} names the 180 degree turn of a hexagram, \emph{fandui}, which is a symmetry of the figure and not a discordant pair. Gritter [5] states the two pairing principles as inversion and opposition and gives the Chinese terms; Cook [2] devotes a chapter to inversion and obversion; Drasny [3] writes of inverses of hexagrams, \emph{zonggua}; Moore [7] speaks of invertible pairs. In this paper \emph{inversion} is never used for the statistic.
 
-\textbf{Balance.} The word is occupied twice over in the neighbourhood. Radisic [9] uses it for Hamming weight, writing that weight preservation "may be viewed as preservation of yin-yang balance" and adding at once that formally it is Hamming weight. In the Gray code literature Mütze [7] defines a \emph{balanced} Gray code by the condition that the transition counts satisfy |c\_i - 2\textasciicircum{}n/n| < 2, that is, a condition on how often each coordinate flips. Neither is the quantity studied here, and we therefore call C(N, 2)/2 the \textbf{tie} and not the balance point.
+\textbf{Balance.} The word is occupied twice over in the neighbourhood. Radisic [10] uses it for Hamming weight, writing that weight preservation "may be viewed as preservation of yin-yang balance" and adding at once that formally it is Hamming weight. In the Gray code literature Mütze [8] defines a \emph{balanced} Gray code by the condition that the transition counts satisfy |$c_i$ - 2\textasciicircum{}n/n| < 2, that is, a condition on how often each coordinate flips. Neither is the quantity studied here, and we therefore call C(N, 2)/2 the \textbf{tie} and not the balance point.
 
-\textbf{Length in type B.} This is the subtlest of the three, because we name B\_n and we count inversions in the same breath. In Coxeter theory the length function of a group of type B is a count of certain inversions of signed permutations, as Björner and Brenti [1] describe in their sections 8.1 and 8.2. That is not our count. Here B\_n is only the group acting on the vertices, and the discordant pairs are those of the ordering against the binary reference order, not the Coxeter length of any element of B\_n.
+\textbf{Length in type B.} This is the subtlest of the three, because we name $B_n$ and we count inversions in the same breath. In Coxeter theory the length function of a group of type B is a count of certain inversions of signed permutations, as Björner and Brenti [1] describe in their sections 8.1 and 8.2. That is not our count. Here $B_n$ is only the group acting on the vertices, and the discordant pairs are those of the ordering against the binary reference order, not the Coxeter length of any element of $B_n$.
 
 \subsection*{2.6 Block systems and what it means to respect one}
 
 A construction partitions the ordering into contiguous \textbf{blocks}: eight octets for one of the sequences below, eight palaces for another, thirty two adjacent pairs for the third. We say that a map \textbf{respects} the construction when it sends every block onto a block, as a set. This is the notion fixed in advance, and where a stronger one is used, namely that the map also preserves the index within the block, it is said explicitly.
 
-For each construction, the set of elements of B\_n that respect it is a subgroup, being the stabiliser of a structure, and we compute it exactly rather than sampling it.
+For each construction, the set of elements of $B_n$ that respect it is a subgroup, being the stabiliser of a structure, and we compute it exactly rather than sampling it.
 
 \section*{3. The orbit accounting}
 
-Let G be a group acting on the vertices, sigma an ordering, and let pi\_g denote the permutation of positions induced by g, that is, sigma composed with g and with the inverse of sigma. The group acts on the C(N, 2) pairs of positions through pi\_g. Everything in this section is a theorem about that action.
+Let G be a group acting on the vertices, sigma an ordering, and let $\pi_g$ denote the permutation of positions induced by g, that is, sigma composed with g and with the inverse of sigma. The group acts on the C(N, 2) pairs of positions through $\pi_g$. Everything in this section is a theorem about that action.
 
 \subsection*{3.1 The state relation}
 
-For a pair p of positions and an element g, write A for the bit that is one when pi\_g reverses the order of the two positions, and B for the bit that is one when g reverses the binary order of the two vertices. Both are computable without knowing whether p is discordant.
+For a pair p of positions and an element g, write A for the bit that is one when $\pi_g$ reverses the order of the two positions, and B for the bit that is one when g reverses the binary order of the two vertices. Both are computable without knowing whether p is discordant.
 
 \begin{quote}
 \textbf{Lemma 0.} state(g p) = state(p) XOR A XOR B.
 \end{quote}
 
-\emph{Proof.} Write x and y for the vertices at the two positions of p, taken in position order, so that state(p) is the truth value of v(x) > v(y). Since sigma of pi\_g of a position is g of the vertex at that position, the image pair carries the vertices g(x) and g(y). If pi\_g preserves the position order, state of the image is the truth value of v(g(x)) > v(g(y)); if it reverses it, state of the image is its negation. In both cases state of the image equals that truth value XOR A. And by the definition of B, that truth value equals state(p) XOR B. Substituting gives the formula. No value can tie, because x and y are distinct and v is injective. QED
+\emph{Proof.} Write x and y for the vertices at the two positions of p, taken in position order, so that state(p) is the truth value of v(x) > v(y). Since sigma of $\pi_g$ of a position is g of the vertex at that position, the image pair carries the vertices g(x) and g(y). If $\pi_g$ preserves the position order, state of the image is the truth value of v(g(x)) > v(g(y)); if it reverses it, state of the image is its negation. In both cases state of the image equals that truth value XOR A. And by the definition of B, that truth value equals state(p) XOR B. Substituting gives the formula. No value can tie, because x and y are distinct and v is injective. QED
 
 \begin{quote}
 \textbf{Lemma 0b, and why chains give nothing.} epsilon(gh, p) = epsilon(g, h p) XOR epsilon(h, p), where epsilon(g, p) := A XOR B.
@@ -173,11 +173,11 @@ Fix a representative in each orbit and let parity(p) be the sum of the epsilon a
 \textbf{Corollary.} A group can only ever force the tie. It cannot determine the count and have it come out at some other value.
 \end{quote}
 
-\textbf{Prior owner of the germ.} The idea that an involution which sends the count to its complement forces the average to one half on every orbit is the founding example of the homomesy literature. Propp and Roby [8], in section 2.1 of arXiv:1310.5201v6, take the permutations of \{1, ..., n\}, let tau send a permutation to its reversal and f be the number of inversions, and observe that since tau squared is the identity and f(pi) + f(tau(pi)) = n(n-1)/2, the statistic f is c-mesic with c = n(n-1)/4. For n = 64 those two numbers are 2016 and 1008, which are our denominator and our tie: this is not an analogy, it is the same arithmetic.
+\textbf{Prior owner of the germ.} The idea that an involution which sends the count to its complement forces the average to one half on every orbit is the founding example of the homomesy literature. Propp and Roby [9], in section 2.1 of arXiv:1310.5201v6, take the permutations of \{1, ..., n\}, let tau send a permutation to its reversal and f be the number of inversions, and observe that since tau squared is the identity and f(pi) + f(tau(pi)) = n(n-1)/2, the statistic f is c-mesic with c = n(n-1)/4. For n = 64 those two numbers are 2016 and 1008, which are our denominator and our tie: this is not an analogy, it is the same arithmetic.
 
 The difference is where the involution acts. Theirs reverses the permutation, so it acts on positions and leaves the labels, and the identity is clean because every pair is an inversion in exactly one of the two permutations. Ours is complementation, which acts on the values and, by inducing a permutation of positions, moves both at once. That is precisely why Lemma 0 needs the bit epsilon = A XOR B, and why Lemma 1 is their argument restricted to the class of pairs on which the position permutation preserves the order.
 
-In the vocabulary of that literature, the corollary above says that the indicator of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of Propp and Roby [8]. We use the term and do not present it as ours.
+In the vocabulary of that literature, the corollary above says that the indicator of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of Propp and Roby [9]. We use the term and do not present it as ours.
 
 \subsection*{3.3 Forcing by a uniform witness}
 
@@ -189,7 +189,7 @@ In the vocabulary of that literature, the corollary above says that the indicato
 
 Such a g is called a \textbf{witness}. A witness is a finite certificate that can be checked on its own: run through the orbit and verify that epsilon is one.
 
-\textbf{Prior owner of the mechanism.} The mechanism of this lemma is stated in one line in Roby's survey of homomesy [11], in his Example 4 on inversions under the ninety degree rotation of permutation matrices, whose average is again n(n-1)/4: "the proof of homomesy is easy: Q takes inversions to non-inversions, and vice-versa." That is the witness argument, said there for another object.
+\textbf{Prior owner of the mechanism.} The mechanism of this lemma is stated in one line in Roby's survey of homomesy [12], in his Example 4 on inversions under the ninety degree rotation of permutation matrices, whose average is again n(n-1)/4: "the proof of homomesy is easy: Q takes inversions to non-inversions, and vice-versa." That is the witness argument, said there for another object.
 
 The same survey also contains the direction from a subgroup to the group: if a triple exhibits homomesy for a subgroup, it does for the whole group, because merging orbits with equal averages gives a larger orbit with that average. That is the direction we use whenever a larger group is compared with a smaller one.
 
@@ -211,7 +211,7 @@ The four lemmas turn a question about one ordering into a question about the orb
 
 This is where the present work parts company with the literature just cited. In homomesy, a case in which the average is not constant on orbits is a case to be discarded: the phenomenon is the constancy. Here it is the case that is measured. The free orbits are not failures of a phenomenon; they are the quantity of freedom that the construction leaves, and the interval they define is the object of the sections that follow.
 
-The other large phenomenon of this area, cyclic sieving [10], is a different question again: it counts the fixed points of a cyclic action through a generating function at roots of unity, not the average of a statistic over orbits. It is named here to place the work, and is not used.
+The other large phenomenon of this area, cyclic sieving [11], is a different question again: it counts the fixed points of a cyclic action through a generating function at roots of unity, not the average of a statistic over orbits. It is named here to place the work, and is not used.
 
 \section*{4. The parity obstruction}
 
@@ -230,7 +230,7 @@ The accounting of section 3 leaves each orbit either forced or free, and the fre
 \subsection*{4.2 The theorem, with two hypotheses}
 
 \begin{quote}
-\textbf{Theorem.} Let G be a subgroup of B\_n acting on the vertices, and suppose G contains the translations by a subspace V with dim V >= 2. Then every orbit of G on unordered pairs has even cardinality.
+\textbf{Theorem.} Let G be a subgroup of $B_n$ acting on the vertices, and suppose G contains the translations by a subspace V with dim V >= 2. Then every orbit of G on unordered pairs has even cardinality.
 \end{quote}
 
 \emph{Proof.} Write T for the group of translations by V, of order 2\textasciicircum{}k with k = dim V. First, T is normal in G: conjugating the translation by v gives the translation by P(v), where P is the linear part of the conjugating element, so the set of translation vectors of G is closed under the linear parts. If V itself is not invariant, replace it by W, the span of all images of V under the linear parts of G; the translations by W lie in G, since conjugates of translations are translations and products of translations are translations, W is invariant by construction, and dim W >= dim V. So we may assume T normal.
@@ -333,7 +333,7 @@ Every count below is a number of discordant pairs out of 2016, the number of uno
 
 The count is 1008 in all four conventions, which is the tie exactly.
 
-The block system is the fibres of the upper trigram, that is, the cosets of the subspace spanned by the three lower lines. The group of elements of B\_6 respecting it is exactly the set of maps whose linear part does not mix the two trigrams, with any mask: 36 such permutations with all 64 masks, of order 2304. Its orbits of pairs are exactly the classes given by the pair of difference weights, one for each trigram, and there are 15 of them.
+The block system is the fibres of the upper trigram, that is, the cosets of the subspace spanned by the three lower lines. The group of elements of $B_6$ respecting it is exactly the set of maps whose linear part does not mix the two trigrams, with any mask: 36 such permutations with all 64 masks, of order 2304. Its orbits of pairs are exactly the classes given by the pair of difference weights, one for each trigram, and there are 15 of them.
 
 Every one of those classes is forced, and the demonstration is in two parts. 9 of them, covering 1568 pairs and contributing 784, are forced by a witness that is argued rather than exhibited: complement the lower trigram, and the value order of the pair reverses while the block, and therefore the position order, does not. The remaining classes are forced by witnesses that are exhibited and verified, and one of them has no uniform witness at all in the whole group and needed the matching lemma, with a certificate that is deposited pair by pair and can be checked line by line. All 15 orbits are forced and 0 are free, so by Lemma 1 the forced contribution is the whole count, 1008, and the width of the interval is zero.
 
@@ -355,9 +355,9 @@ The count is 1013 under the two conventions that read yang as one, and 1003 unde
 
 The construction pairs the sequence into 32 adjacent blocks of two: the 28 orbits of size two of the half turn, together with the 8 hexagrams that the half turn leaves fixed, paired among themselves by complementation.
 
-\textbf{Prior owner of this characterisation.} It is the complete equivariance of Radisic [9], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair is either the complement or the reversal of its partner and splits the 32 pairs into palindromes paired by complement, anti-symmetric ones where reversal and complement coincide, and generic ones paired by reversal. That statement has prior date and a formal verification in Lean 4, which we do not have. We reached it independently and before opening our review of the literature, which the commit history dates, and independent does not mean first.
+\textbf{Prior owner of this characterisation.} It is the complete equivariance of Radisic [10], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair is either the complement or the reversal of its partner and splits the 32 pairs into palindromes paired by complement, anti-symmetric ones where reversal and complement coincide, and generic ones paired by reversal. That statement has prior date and a formal verification in Lean 4, which we do not have. We reached it independently and before opening our review of the literature, which the commit history dates, and independent does not mean first.
 
-From that block system, the group respecting it is exactly the centraliser of the half turn inside B\_6, of order 384, and this is proved rather than counted: the block differences are precisely the nonzero vectors of the subspace of size 8 fixed by the half turn, a respecting map must preserve that subspace, its only 3 elements of weight two are the ones that pair the mirror lines, so the linear part commutes with the half turn and there are 48 such permutations, and the mask is then forced to be fixed by the half turn, which leaves 8 masks. The predicted order 48 times 8 is 384, and it agrees with the enumeration.
+From that block system, the group respecting it is exactly the centraliser of the half turn inside $B_6$, of order 384, and this is proved rather than counted: the block differences are precisely the nonzero vectors of the subspace of size 8 fixed by the half turn, a respecting map must preserve that subspace, its only 3 elements of weight two are the ones that pair the mirror lines, so the linear part commutes with the half turn and there are 48 such permutations, and the mask is then forced to be fixed by the half turn, which leaves 8 masks. The predicted order 48 times 8 is 384, and it agrees with the enumeration.
 
 Every orbit of that group on pairs has even cardinality, by the theorem of section 4 applied to the translations by the fixed subspace. Hence the parity of the count is fixed by the structure. That parity is odd, and the tie is even. \textbf{The tie is therefore impossible for this ordering}: not merely unattained, but outside the set of totals compatible with the structure.
 
@@ -365,7 +365,7 @@ Here is the whole account in figures. Of the 36 orbits of that group on pairs, 1
 
 \subsection*{6.4 One structure narrows it, and it is the construction's own rule}
 
-A closed list of five candidate structures was declared before measuring anything: the nuclear hexagram operation with its exact definition, the two part division of the received sequence, whose literature has a located owner [5], and three maps defined through the positions. Nothing outside that list was tried.
+A closed list of five candidate structures was declared before measuring anything: the nuclear hexagram operation with its exact definition, the two part division of the received sequence, whose literature has a located owner [6], and three maps defined through the positions. Nothing outside that list was tried.
 
 Two of the five contribute no bijection at all, so they cannot narrow anything, and that was known before running. Two of the remaining three narrow a great deal but generate groups beyond a bound that was declared in advance, and a narrowing obtained with a large unstructured group was declared in advance not to count. It does not count.
 
@@ -373,13 +373,43 @@ The one that counts is the pairing involution itself, the map that sends each he
 
 \subsection*{6.5 The anatomy of the residue, as a table}
 
-The count differs from the tie by 5, that being 1013 minus 1008, and the natural question is where those 5 sit. Each free orbit contributes its half plus a deviation, the deviations sum to exactly 5, and the full decomposition over the 19 free orbits, with cardinality, half, contribution and deviation for each one, is reported as a table in the results and in the accompanying report. Two things can be read off it directly, and nothing else is read off it here:
+The count differs from the tie by 5, that being 1013 minus 1008, and the natural question is where those 5 sit. Each free orbit contributes its half plus a deviation, and the deviations sum to exactly 5. Table 1 gives the whole decomposition over the 19 free orbits, one row each, with cardinality, half, contribution and deviation. Two things can be read off Table 1 directly, and nothing else is read off it here:
+
+\textbf{Table 1.} \emph{The residue of the third ordering, decomposed over its free orbits.}
+
+\begin{center}\small
+\begin{longtable}{lllll}
+\textbf{orbit} & \textbf{cardinality} & \textbf{half} & \textbf{contribution} & \textbf{deviation} \\
+\hline
+o0 & 192 & 96 & 90 & -6 \\
+o1 & 96 & 48 & 50 & 2 \\
+o2 & 96 & 48 & 52 & 4 \\
+o3 & 96 & 48 & 46 & -2 \\
+o4 & 96 & 48 & 46 & -2 \\
+o5 & 96 & 48 & 46 & -2 \\
+o6 & 96 & 48 & 46 & -2 \\
+o7 & 96 & 48 & 46 & -2 \\
+o8 & 96 & 48 & 54 & 6 \\
+o9 & 96 & 48 & 52 & 4 \\
+o10 & 48 & 24 & 28 & 4 \\
+o11 & 48 & 24 & 22 & -2 \\
+o12 & 48 & 24 & 22 & -2 \\
+o13 & 24 & 12 & 16 & 4 \\
+o14 & 12 & 6 & 5 & -1 \\
+o15 & 12 & 6 & 8 & 2 \\
+o16 & 12 & 6 & 4 & -2 \\
+o17 & 4 & 2 & 3 & 1 \\
+o18 & 4 & 2 & 3 & 1 \\
+\end{longtable}
+\end{center}
+
+The rows are labelled o0 to o18 in the order the accounting produces them; the label is a row name and not a measurement.
 
 first, \textbf{every free orbit deviates}; there is no orbit carrying the difference and none carrying none of it, and the deviations very nearly cancel;
 
 second, the deviations of odd size are exactly those of the orbits that contain the construction's own pairs, and the even ones are all the rest.
 
-The crossing of the deviating orbits against the two structural features of the declared list is likewise reported as a table. It is a set of counts with their provenance. There is no declared null, no family of comparisons fixed in advance and no discipline of multiplicity behind it, and in this work that means it is not read as evidence of anything.
+The crossing of the deviating orbits against the two structural features of the declared list is \textbf{not} printed here. It stays in results/residuo5.tsv, under the keys that name each orbit against each feature, and the reason for leaving it there rather than promoting it is the guard below: it is a set of counts with their provenance and nothing is read from it. There is no declared null, no family of comparisons fixed in advance and no discipline of multiplicity behind it, and in this work that means it is not read as evidence of anything.
 
 \subsection*{6.6 Where this stops}
 
@@ -407,9 +437,9 @@ This single family covers two things at once. At the middle level it is the anal
 
 \subsection*{7.2 The table}
 
-Table 1 gives dimensions three to six, every level, with the same columns throughout. The order of the group respecting B(n, k) is k factorial times n minus k factorial times 2 to the n, which was stated in the general preregistration before any of this was run and is verified in all 14 rows. The order of the group depends only on the partition and not on the ordering, which the same table confirms across thousands of orderings.
+Table 2 gives dimensions three to six, every level, with the same columns throughout. The order of the group respecting B(n, k) is k factorial times n minus k factorial times 2 to the n, which was stated in the general preregistration before any of this was run and is verified in all 14 rows. The order of the group depends only on the partition and not on the ordering, which the same table confirms across thousands of orderings.
 
-\textbf{Table 1.} \emph{The landscape B(n, k) in dimensions three to six.}
+\textbf{Table 2.} \emph{The landscape B(n, k) in dimensions three to six.}
 
 \begin{center}\small
 \begin{longtable}{lllllllll}
@@ -432,13 +462,13 @@ Table 1 gives dimensions three to six, every level, with the same columns throug
 \end{longtable}
 \end{center}
 
-The last three columns of Table 1 are the distribution of the three outcomes over the parametrised family, by block order and internal order; a dot means the distribution was not measured. The \textbf{forced} column is empty in every row at an extreme level and non empty only at the intermediate ones, which is the shape that section 7.3 takes up and cuts down to size.
+The last three columns of Table 2 are the distribution of the three outcomes over the parametrised family, by block order and internal order; a dot means the distribution was not measured. The \textbf{forced} column is empty in every row at an extreme level and non empty only at the intermediate ones, which is the shape that section 7.3 takes up and cuts down to size.
 
 Each row reports the outcome for two fixed orderings, the reflected Gray code and the canonical member of the parametrised family, and, where the space of orderings of that family was small enough, the full distribution of the three outcomes over it. Where it was not small enough, a sample with the frozen seed was used and is labelled as a sample.
 
-\textbf{One historical row belongs here and is kept apart.} The first historical ordering does fit the family, at the middle level of dimension six, since its octets are exactly those cosets. Its row is Table 2, kept out of Table 1 so that the parametrised family and the received sequence are not read as one population:
+\textbf{One historical row belongs here and is kept apart.} The first historical ordering does fit the family, at the middle level of dimension six, since its octets are exactly those cosets. Its row is Table 3, kept out of Table 2 so that the parametrised family and the received sequence are not read as one population:
 
-\textbf{Table 2.} \emph{The one historical ordering that fits the family, reported apart.}
+\textbf{Table 3.} \emph{The one historical ordering that fits the family, reported apart.}
 
 \begin{center}\small
 \begin{longtable}{llllllll}
@@ -448,7 +478,7 @@ Mawangdui, received & 6 & 3 & 2304 & 0 & 1 & 1008 & forced \\
 \end{longtable}
 \end{center}
 
-Table 2 reports 0 free orbits, exactly 1 compatible total, and that total is 1008: the forced outcome of section 6 read inside the general frame rather than beside it, and the same figure that the demonstration there produces.
+Table 3 reports 0 free orbits, exactly 1 compatible total, and that total is 1008: the forced outcome of section 6 read inside the general frame rather than beside it, and the same figure that the demonstration there produces.
 
 \subsection*{7.3 A shape that we tried to raise to a theorem, and could not}
 
@@ -504,11 +534,11 @@ Four things are open. Each is stated with what was measured, and with what would
 
 \subsubsection*{The one principled route that remains, named as future work}
 
-There is one route we can name rather than gesture at. Radisic [9] proves that the pairing of the third ordering is the unique cost-minimising equivariant matching under his criteria. Conditioning on that matching leaves a family of orderings: all those that realise it, differing only in the order of the pairs and in the orientation within each pair. Inside that family, the received ordering is one point, and its count could be located among the counts of the rest.
+There is one route we can name rather than gesture at. Radisic [10] proves that the pairing of the third ordering is the unique cost-minimising equivariant matching under his criteria. Conditioning on that matching leaves a family of orderings: all those that realise it, differing only in the order of the pairs and in the orientation within each pair. Inside that family, the received ordering is one point, and its count could be located among the counts of the rest.
 
 \textbf{That is an inferential question, and it is not asked in this paper.} Locating a value inside a family and reading anything from where it falls requires a null declared before looking, a family of comparisons fixed before looking, and discipline of multiplicity over everything that could have been looked at and was not. This work builds none of the three, and therefore cannot support such a reading with these numbers or with larger ones.
 
-The method that would govern it has a name and a citable version, given here as a pointer and not as a read artefact: the stopping-criterion work of the same author on nested reference sets, \emph{Uninformative rungs: an order-theoretic stopping criterion for nested reference sets} [13], deposited at doi 10.5281/zenodo.21750029. We have not read it in the course of this work and make no claim about its contents; we name it as the framework under which the question above would have to be posed.
+The method that would govern it has a name and a citable version, given here as a pointer and not as a read artefact: the stopping-criterion work of the same author on nested reference sets, \emph{Uninformative rungs: an order-theoretic stopping criterion for nested reference sets} [4], deposited at doi 10.5281/zenodo.21750029. We have not read it in the course of this work and make no claim about its contents; we name it as the framework under which the question above would have to be posed.
 
 \subsection*{8.4 The shape of the classification}
 
@@ -562,11 +592,26 @@ What a third party cannot verify by running anything is the literature review, w
 
 Each entry records the identity as the literature review fixed it, and whether the artefact was read here or enters as second hand. That mark is part of the reference.
 
-1. Björner, A., \& Brenti, F. \emph{Combinatorics of Coxeter groups}. Equation (1.25) and Proposition 1.5.2, p. 20; Sections 8.1 and 8.2, pp. 245, 252. \emph{Status:} read, and the cited pages verified against the PDF; year and publisher were not verified against the artefact and are therefore not printed. 2. Cook, R. S. (2006). \emph{Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence} (STEDT Monograph Series, Vol. 5). University of California, Berkeley. ISBN 0-944613-44-6. \emph{Status:} read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover. 3. Drasny, J. \emph{The solution of the King Wen sequence?} [Review of the book \emph{Classical Chinese combinatorics}, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm \emph{Status:} read in full; the review carries no date on the page read, so none is printed. 4. Gritter, G. (2015). \emph{The hidden pattern in the classical sequence of the I Ching}. Groningen. \emph{Status:} read in full. 5. Hacker, E., \& Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. \emph{Journal of Chinese Philosophy}, \emph{30}(2), 219–221. \emph{Status:} SECOND HAND: bibliographic identity taken from the bibliography of reference 6; not read. 6. Moore, S. (2005). \emph{Structural elements in the King Wen sequence of hexagrams} (Oracle Paper No. 1). \emph{Status:} read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from the OCR conversion. 7. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. \emph{The Electronic Journal of Combinatorics}, \emph{30}(3), Dynamic Survey DS26. \emph{Status:} read in the cited part, Section 3.2 on p. 11, verified against the PDF. 8. Propp, J., \& Roby, T. (2015). \emph{Homomesy in products of two chains} (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6 \emph{Status:} read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version. 9. Radisic, A. \emph{Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence} (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3 \emph{Status:} read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing. 10. Reiner, V., Stanton, D., \& White, D. (2004). The cyclic sieving phenomenon. \emph{Journal of Combinatorial Theory, Series A}, \emph{108}(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009 \emph{Status:} read in identity and definition; cited for context, since it counts fixed points and not orbit averages. 11. Roby, T. \emph{Dynamical algebraic combinatorics and the homomesy phenomenon}. Example 1, p. 3; Section 2.1 and Example 4, p. 4. \emph{Status:} read, and the cited pages verified against the PDF; its volume identity is second hand, since the cover of the PDF read does not carry it, and no year is printed here for the same reason. 12. Schöter, A. (1998). Boolean algebra and the Yi Jing. \emph{The Oracle: The Journal of Yijing Studies}, \emph{2}(7), 19–34. ISSN 1463-6220. \emph{Status:} read; Definition 6, Sequence Parameters. 13. \emph{Uninformative rungs: An order-theoretic stopping criterion for nested reference sets}. https://doi.org/10.5281/zenodo.21750029 \emph{Status:} SECOND HAND: cited as a pointer to the framework that would govern the inferential question of Section 8.3; not read in the course of this work.
+\begingroup
+\setlength{\parindent}{0pt}
+\hangindent=1.6em\hangafter=1 1. Björner, A., \& Brenti, F. (2005). \emph{Combinatorics of Coxeter groups} (Graduate Texts in Mathematics, Vol. 231). Springer. ISBN 3-540-44238-3. Equation (1.25) and Proposition 1.5.2, p. 20; Sections 8.1 and 8.2, pp. 245, 252.\\ \emph{Status:} read, and the cited pages verified against the PDF; the year, series, volume, publisher and ISBN were read from the front matter of the copy held here, its title page and its copyright page. That title page prints the first author as Bjorner, without the diaeresis; the accepted spelling is used above and the discrepancy is recorded here.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 2. Cook, R. S. (2006). \emph{Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence} (STEDT Monograph Series, Vol. 5). University of California, Berkeley. ISBN 0-944613-44-6.\\ \emph{Status:} read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 3. Drasny, J. \emph{The solution of the King Wen sequence?} [Review of the book \emph{Classical Chinese combinatorics}, by R. S. Cook]. Yijing Dao. \url{http://www.biroco.com/yijing/cook.htm}\\ \emph{Status:} read in full; the review carries no date on the page read, so none is printed.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 4. García Hurtado, A. (2026). \emph{Uninformative rungs: An order-theoretic stopping criterion for nested reference sets}. Zenodo. \url{https://doi.org/10.5281/zenodo.21750029}\\ \emph{Status:} cited as a pointer to the framework under which the inferential question of Section 8.3 would have to be posed. ITS CONTENT IS NOT LOAD BEARING HERE: nothing in this paper depends on it, and it was not read in the course of this work.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 5. Gritter, G. (2015). \emph{The hidden pattern in the classical sequence of the I Ching}. Groningen.\\ \emph{Status:} read in full.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 6. Hacker, E., \& Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. \emph{Journal of Chinese Philosophy}, \emph{30}(2), 219–221.\\ \emph{Status:} SECOND HAND: bibliographic identity taken from the bibliography of reference 6; not read.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 7. Moore, S. (2005). \emph{Structural elements in the King Wen sequence of hexagrams} (Oracle Paper No. 1).\\ \emph{Status:} read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from the OCR conversion.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 8. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. \emph{The Electronic Journal of Combinatorics}, \emph{30}(3), Dynamic Survey DS26.\\ \emph{Status:} read in the cited part, Section 3.2 on p. 11, verified against the PDF.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 9. Propp, J., \& Roby, T. (2015). \emph{Homomesy in products of two chains} (Version 6) [Preprint]. arXiv. \url{https://arxiv.org/abs/1310.5201v6}\\ \emph{Status:} read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 10. Radisic, A. \emph{Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence} (Version 3) [Preprint]. arXiv. \url{https://arxiv.org/abs/2601.07175v3}\\ \emph{Status:} read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 11. Reiner, V., Stanton, D., \& White, D. (2004). The cyclic sieving phenomenon. \emph{Journal of Combinatorial Theory, Series A}, \emph{108}(1), 17–50. \url{https://doi.org/10.1016/j.jcta.2004.04.009}\\ \emph{Status:} read in identity and definition; cited for context, since it counts fixed points and not orbit averages.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 12. Roby, T. \emph{Dynamical algebraic combinatorics and the homomesy phenomenon}. Example 1, p. 3; Section 2.1 and Example 4, p. 4.\\ \emph{Status:} read, and the cited pages verified against the PDF; its first page was checked again for this edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor series, so neither is printed and the gap stays declared.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 13. Schöter, A. (1998). Boolean algebra and the Yi Jing. \emph{The Oracle: The Journal of Yijing Studies}, \emph{2}(7), 19–34. ISSN 1463-6220.\\ \emph{Status:} read; Definition 6, Sequence Parameters.\par\vspace{0.5ex}
+\endgroup
 
 \vfill
 \begin{small}
 \noindent\textbf{Colophon.}
-Built from the assembled manuscript at commit f1beaee30355bf909e981ae48be80bec0ab1ae10, dated 2026-08-10. Working tree clean: no. sha256 of the manuscript: 4e2eba518b04be99d11ac672b05f6ca3906bb2d251e3a015dd62ef6ce21cdd49. Checks green at build time: 61.
+Built from the assembled manuscript at commit 3f810d6a437c296c710adafc5defa3c9bd09924f, dated 2026-08-10. Working tree clean: no. sha256 of the manuscript: 9260e5b7eae47f44610463392f96304c34614b99452c34648d8741c3aafc110e. Checks green at build time: 61.
 \end{small}
 \end{document}
