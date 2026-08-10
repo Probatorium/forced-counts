@@ -1,11 +1,21 @@
 # Revision de antecedentes
 
-**Estado: ABIERTA.** Abierta no es cerrada. Mientras este fichero diga ABIERTA,
-en este repositorio no se afirma novedad de nada, ni siquiera de lo que aqui
-aparezca sin antecedente localizado. Que una busqueda no encuentre dueno no es
-prueba de que no lo haya.
+**Estado: CERRADA.** Cerrada por decision de Alexis el **10 de agosto de 2026**,
+en los terminos de la seccion 15. Abierta el 2026-08-09.
 
-Fecha de apertura: 2026-08-09.
+Se cambia esta linea porque es el campo de estado y tiene que decir la verdad.
+**Nada mas de este fichero se reescribe**, y el encabezado que llevo mientras
+estuvo abierta se deja escrito aqui debajo, entero:
+
+> "**Estado: ABIERTA.** Abierta no es cerrada. Mientras este fichero diga
+> ABIERTA, en este repositorio no se afirma novedad de nada, ni siquiera de lo
+> que aqui aparezca sin antecedente localizado. Que una busqueda no encuentre
+> dueno no es prueba de que no lo haya.
+>
+> Fecha de apertura: 2026-08-09."
+
+Desde el cierre, lo que se afirme como nuevo vive **solo** en NOVELTY.md, con el
+alcance relativo que alli se declara.
 
 ## Doctrina, escrita antes de registrar nada
 
@@ -1023,3 +1033,57 @@ constante sobre las orbitas. En particular, el corolario del Lema 1 de PROOFS.md
 puede enunciarse diciendo que el indicador de discordancia es **1/2-mesico**
 sobre las orbitas forzadas. Quien use el termino cita a Propp y Roby, Definicion
 1, y no lo presenta como propio.
+
+---
+
+# 15. El cierre
+
+**Cerrada por decision de Alexis, el 10 de agosto de 2026.** Quien decide es
+quien dijo en la seccion 12.10 que le tocaba decidir, y esta es esa decision.
+
+## 15.1 En que terminos se cierra
+
+En los de la seccion 12, y se repiten aqui para que el cierre no dependa de ir a
+buscarlos:
+
+- **Los seis de segunda mano se asumen como riesgo tasado**, no como huecos
+  ignorados. Cada uno tiene su linea de riesgo con la evidencia que la sostiene,
+  tomada de artefactos leidos y no de suposicion: Goldenberg 1975 por lo que
+  Schoter describe de su algebra y por que no define complemento; Davis 1998,
+  Mesker 2002, Moore 1989 y las dos obras de Hacker por lo que Moore 2005 dice
+  de ellas; Higgins 1998 por la nota de Schoter sobre su espacio polinomico.
+- **Los limites quedan declarados y no se retiran al cerrar.** La revision
+  leyo lo que leyo. Un veredicto de "no aparece" es fuerte para las palabras
+  barridas y mas debil para una nocion escrita con otro vocabulario, y eso
+  sigue siendo verdad despues del cierre.
+- **La salvedad que mas pesa**, y que se repite porque es la que quita
+  soberbia al cierre: el unico solape real encontrado, el de Radisic con
+  PROOFS.md 3.1, **no habria salido de un juicio de plausibilidad**. No estaba
+  en ninguna lista, aparecio al ir a buscar otra cosa, y solo se supo al leer la
+  pieza entera. Cerrar no significa que no quede nada; significa que se deja de
+  buscar con lo que se sabe, sabiendo eso.
+
+## 15.2 Que cambia con el cierre
+
+Una sola cosa: **se levanta la prohibicion de afirmar novedad**, y se levanta
+**solo** dentro de NOVELTY.md, que es texto firmado desde su commit y no se
+enmienda. Fuera de ese fichero, ningun texto de este repositorio afirma novedad
+de nada.
+
+## 15.3 Que NO cambia
+
+- **Las intersecciones declaradas siguen declaradas**, y NOVELTY.md las repite
+  con su dueno anterior en cada una. Cerrar la revision no borra a nadie.
+- **Las piezas de segunda mano siguen siendo de segunda mano.** No se han
+  leido, y el cierre no las convierte en leidas.
+- **La doctrina sigue vigente** para lo que se lea de aqui en adelante:
+  veredictos solo desde artefactos leidos, cadena de cita declarada, toda cifra
+  con puntero, coincidencia no es derivacion, y la interseccion se declara
+  aunque duela.
+- **El vocabulario decidido en la seccion 11 sigue vinculante.**
+
+## 15.4 Si aparece un antecedente despues
+
+Se registra aqui, con su fecha, y **se corrige NOVELTY.md por documento nuevo**,
+nunca editandolo. Cerrada no quiere decir infalible: quiere decir que se decidio
+dejar de buscar y que la decision tiene fecha y dueno.

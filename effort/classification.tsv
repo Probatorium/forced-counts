@@ -61,3 +61,4 @@ DEFINICIONES-RESIDUO5.md	aparato	propio	lista cerrada de candidatos del residuo,
 src/residuo5.py	analisis	propio	anatomia del residuo y simetrias extendidas
 results/residuo5.tsv	analisis	propio	salida del residuo
 INFORME-RESIDUO5.md	analisis	propio	lectura del residuo y su declaracion
+NOVELTY.md	aparato	propio	declaracion de novedad, texto firmado
