@@ -694,21 +694,43 @@ localizado como pendiente, y esa lista tampoco pretende ser completa.
 - **Riesgo de forzado por grupo:** bajo.
 - **Prioridad:** baja.
 
-## 12.5 Hacker, Moore y Patsco, y la nota sobre la fecha
+## 12.5 Hacker: son DOS obras, no una
 
 - **Cadena de cita:** Moore 2005, artefacto leido, cita **"Hacker, Moore &
   Patsco 2002"** y da la entrada de un volumen publicado por Routledge en Nueva
   York y Londres en **2002**, con un indice cuya entrada "Textual Sequence
   (Received Order) of Hexagrams" recomienda consultar. Cita ademas "Hacker 1993"
   paginas 101 a 122 como resumen del trabajo previo hasta 1993.
-- **Discrepancia con la instruccion, que se deja escrita:** la instruccion que
-  abrio esta tanda nombraba "Hacker y Moore 2003". El artefacto dice Hacker,
-  Moore y Patsco, 2002, con un tercer autor y un ano antes. Puede ser otra
-  edicion o una reimpresion; **no se resuelve aqui**, se senala.
-- **Riesgo de pares discordantes:** muy bajo. Es una bibliografia anotada, es
-  decir un instrumento para encontrar piezas, no una pieza con resultados.
-- **Riesgo de forzado por grupo:** muy bajo, por lo mismo.
-- **Prioridad:** alta, pero como **mapa** y no como fuente. Si en algun sitio
+- **RESUELTA en la sesion 12, por artefacto y no por eleccion.** No habia
+  discrepancia: **son dos obras distintas y las dos estan en la misma
+  bibliografia de Moore 2005**. La sesion 10 solo habia encontrado una y la
+  presento como correccion de la otra, y eso estuvo mal. Las dos entradas, tal
+  como las da Moore:
+  - **Hacker y Moore 2003:** Edward Hacker y Steve Moore, "A Brief Note on the
+    Two-Part Division of the Received Order of the Hexagrams in the Zhouyi",
+    *Journal of Chinese Philosophy*, Vol. 30, No. 2, junio de 2003, pp. 219-221.
+  - **Hacker, Moore y Patsco 2002:** Edward Hacker, Steve Moore y Lorraine
+    Patsco, *I Ching: An Annotated Bibliography*, Nueva York y Londres,
+    Routledge, 2002.
+- **Que sabemos del contenido de Hacker y Moore 2003**, por lo que el propio
+  Moore cuenta en 2005: propone una hipotesis para explicar la division en dos
+  mitades desiguales de la secuencia recibida, apoyada en un diagrama del
+  *Zhouyi Qimeng Yizhuan* de Hu Yigui, y el argumento arranca de que 56
+  hexagramas forman 28 pares invertibles y los otros ocho no son invertibles.
+- **Riesgo de pares discordantes en Hacker y Moore 2003:** bajo. Usa el mismo
+  reparto estructural que este repositorio usa en PROOFS.md 3.1, los 28 mas los
+  8, pero para explicar el corte 30 y 34 entre los dos canones, que es otro
+  objeto. No hay ordenacion de referencia ni recuento sobre pares.
+- **Riesgo de forzado por grupo en Hacker y Moore 2003:** bajo, por lo mismo.
+- **Prioridad de Hacker y Moore 2003:** media alta. Son tres paginas y tocan la
+  misma particion estructural, asi que conviene leerlas.
+- **Riesgo de pares discordantes en la bibliografia de 2002:** muy bajo. Es una
+  bibliografia anotada, es decir un instrumento para encontrar piezas, no una
+  pieza con resultados.
+- **Riesgo de forzado por grupo en la bibliografia de 2002:** muy bajo, por lo
+  mismo.
+- **Prioridad de la bibliografia de 2002:** alta, pero como **mapa** y no como
+  fuente. Si en algun sitio
   hay un antecedente de nuestro objeto, el indice de esa bibliografia es el
   camino mas corto para dar con el. Es la pieza que mas puede reducir el hueco
   de la revision, y la que menos puede colisionar por si misma.
