@@ -4,14 +4,14 @@ existe.PAPER.md	1
 existe.PAPER.tex	1	
 existe.PAPER.pdf	1	
 el.pdf.lleva.colofon.legible	1	sin colofon dentro del fichero no hay puente que cotejar
-colofon.commit	1774c31ead6f8588e18b566eb4b6778f21902173	
+colofon.commit	f1beaee30355bf909e981ae48be80bec0ab1ae10	
 colofon.fecha	2026-08-10	
-colofon.sha256	389ebc063cef961e96ef04213a9fddd84abd332e48d58f320a0d40d6ca9423ae	
+colofon.sha256	4e2eba518b04be99d11ac672b05f6ca3906bb2d251e3a015dd62ef6ce21cdd49	
 colofon.comprobaciones	61	
-sha256.del.manuscrito.de.ahora	389ebc063cef961e96ef04213a9fddd84abd332e48d58f320a0d40d6ca9423ae	
+sha256.del.manuscrito.de.ahora	4e2eba518b04be99d11ac672b05f6ca3906bb2d251e3a015dd62ef6ce21cdd49	
 el.pdf.corresponde.al.manuscrito.de.ahora	1	el texto ha cambiado desde que se construyo el PDF: se debe una version nueva, hay que volver a correr src/build_paper.py
 el.commit.del.colofon.existe.en.esta.historia	1	
-head.actual	1774c31ead6f8588e18b566eb4b6778f21902173	
+head.actual	f1beaee30355bf909e981ae48be80bec0ab1ae10	
 commits.desde.el.del.colofon	0	cero quiere decir que el PDF es del estado actual
 el.pdf.retrata.el.head.actual	1	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
 comprobaciones.en.verde.ahora	61	
