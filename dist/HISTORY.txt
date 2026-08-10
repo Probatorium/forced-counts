@@ -1,6 +1,11 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+8d7a92f El PDF y el .tex finales, construidos desde arbol limpio
+12eef7b Cierre de la sesion 29, con la seccion 9 refrescada
+c33b1e2 El cotejo no veia los acentos, y ahora los exige
+2c8756c Pulido final: nombre, referencias, notacion, cajas, colofon y Table 1
+3f810d6 Verificacion del paquete tras la pasada de formato
 b9dd2db Cierre de la sesion 28, con la seccion 9 refrescada
 f1beaee Commit C: tablas numeradas y referenciadas, y la negrita de vuelta a su sitio
 1774c31 Commit B: referencias a APA 7, numeradas y alfabetizadas
