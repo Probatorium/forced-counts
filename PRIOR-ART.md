@@ -45,7 +45,10 @@ Actualizado en la sesion 9. Las filas que cambiaron de estado lo dicen.
 | Bjorner y Brenti, Coxeter groups | **ARTEFACTO LEIDO** en la parte citada, verificada contra el PDF | seccion 8 |
 | Colision de "inversion" en el Yijing | **MEDIDA** en cuatro artefactos | seccion 6 |
 | Observacion folk de paridad de transiciones | **MEDIDA AQUI** en la sesion 11; la observacion sigue sin dueno localizado | secciones 3.7, 9 y 13 |
-| Goldenberg 1975, Davis 1998, Higgins 1998, Hacker y Moore 2003, Mesker 2002, Moore 1989 | **SEGUNDA MANO**, pendientes | seccion 9 |
+| Propp y Roby, arXiv:1310.5201v6 | **ARTEFACTO LEIDO** en las partes citadas, verificadas contra el PDF | seccion 14.1 |
+| Roby, survey de homomesia (IMA) | **ARTEFACTO LEIDO** en las partes citadas, verificadas contra el PDF | seccion 14.2 |
+| Reiner, Stanton y White, cyclic sieving | **ARTEFACTO LEIDO** en identidad y definicion | seccion 14.3 |
+| Goldenberg 1975, Davis 1998, Higgins 1998, Hacker y Moore 2003, Hacker, Moore y Patsco 2002, Mesker 2002, Moore 1989 | **SEGUNDA MANO**, pendientes | secciones 9 y 12 |
 
 La lista de pendientes no pretende ser completa.
 
@@ -852,3 +855,149 @@ lineas que cambian, es 211 en la variante lineal y 214 en la ciclica
   es la paridad del **recuento de pares discordantes** sobre pares de
   posiciones, que sale del cardinal par de las orbitas del grupo. Ni el objeto,
   ni la unidad de conteo, ni la demostracion son los mismos.
+
+---
+
+# 14. La tanda de homomesia
+
+Tres artefactos nuevos, leidos en esta sesion. Fuente: `Probatorium/common`,
+carpeta `proyecto-bibliografias`, segunda tanda. Su README dice que para estos
+tres se subio **tambien el PDF original** junto a la extraccion, y avisa de que
+en los tres las formulas de la conversion no tienen garantia de orden. Regla
+aplicada en consecuencia: **toda formula citada aqui se verifico contra el PDF**.
+
+## 14.1 Propp y Roby, "Homomesy in products of two chains"
+
+- **Identidad, leida en la portada del PDF:** James Propp, Department of
+  Mathematics, University of Massachusetts Lowell, y Tom Roby, Department of
+  Mathematics, University of Connecticut. arXiv:1310.5201v6 [math.CO], con la
+  marca lateral **19 Jun 2015**. 28 paginas.
+- **Identidad de revista: SEGUNDA MANO.** La instruccion la situa en EJC. El
+  artefacto leido es el arXiv y no lleva linea de revista, asi que esa parte no
+  se verifica aqui y queda como noticia sin comprobar.
+- **Definicion 1, pagina 1**, verificada: dado un conjunto S, una aplicacion
+  invertible tau de S en si mismo con todas las orbitas finitas, y una funcion o
+  estadistico f de S en un cuerpo K de caracteristica cero, el triple
+  (S, tau, f) exhibe **homomesia** si existe una constante c en K tal que para
+  toda orbita O el promedio de f sobre O vale c. Y entonces se dice que f es
+  homomesico bajo la accion de tau, o mas concretamente **c-mesico**.
+- **Seccion 2.1, "Inversions in permutations", pagina 4**, verificada contra el
+  PDF y citada literalmente: "Let S be the set of permutations of {1, 2, . . . ,
+  n}, let tau send pi1 pi2 ... pin (a permutation written in one-line notation)
+  to its reversal pin pi(n-1) ... pi1 and let f(pi) be the number of inversions
+  in pi. Since tau squared is the identity, and since f(pi) + f(tau(pi)) =
+  n(n-1)/2, f is c-mesic under the action of tau, where c = n(n-1)/4."
+- **Lo que eso vale en nuestras cifras:** para n igual a 64, n(n-1)/2 es 2016,
+  que es nuestro denominador C(64,2), y n(n-1)/4 es 1008, que es nuestro valor
+  esperado. No es analogia: es la misma aritmetica.
+- **Barridos sobre el texto completo:** Kendall 0, discordant 0, King Wen 0,
+  hexagram 0. Tampoco aparecen las palabras de nuestro aparato: forced 0,
+  interval 0, parity 0, matching 0, stabilizer 0.
+- **Que no hace:** el articulo va de rowmotion y promotion en productos de dos
+  cadenas. La seccion 2.1 es un ejemplo introductorio de tres lineas, no un
+  programa. No hay ordenacion de referencia fijada, ni reparto de una orbita
+  entre parte forzada y parte libre, ni intervalos, ni paridad, ni enumeracion
+  de subgrupos.
+
+## 14.2 Roby, "Dynamical Algebraic Combinatorics and the Homomesy Phenomenon"
+
+- **Identidad:** Tom Roby. PDF `homomesyIMA2015Revised.pdf`, survey de 26
+  paginas. **Identidad de volumen: SEGUNDA MANO**, la portada del PDF leido no
+  la trae.
+- **Example 1, pagina 3**, "Number of inversions under cyclic rotation of binary
+  strings": con S las cadenas binarias de longitud n con k unos, tau el
+  desplazamiento ciclico y f el estadistico de inversiones, inv resulta
+  c-mesico. El ejemplo trabajado que da el propio texto, n igual a 4 y k igual a
+  2, produce las orbitas (0011, 1001, 1100, 0110) con inversiones (0, 2, 4, 2) y
+  (0101, 1010) con inversiones (1, 3), y promedio 2 en las dos.
+- **Seccion 2.1, "General group actions", pagina 4**, verificada contra el PDF:
+  la definicion original pedia una aplicacion invertible, equivalente a la
+  accion de un grupo ciclico, pero "the definition of homomesy makes perfect
+  sense if one considers the action of any finite group, cyclic or not", y la
+  homomesia "can always be lifted from a cyclic subgroup of G to all of G".
+- **Tres cosas de esta pieza que la instruccion no anticipaba y que hay que
+  registrar, porque acercan el antecedente en vez de alejarlo:**
+  1. **Example 4, pagina 4:** inversiones bajo giro de noventa grados de
+     matrices de permutacion, homomesico con promedio **n(n-1)/4**, la misma
+     constante que en 14.1. Y el texto da el mecanismo en una linea: "The proof
+     of homomesy is easy: Q takes inversions to non-inversions, and vice-versa."
+     **Eso es el mecanismo de nuestro Lema 2**, el testigo que manda inversiones
+     a no inversiones, dicho alli para otro objeto.
+  2. **Lema 1 de Roby, pagina 4:** si G actua sobre S, H es subgrupo de G, y el
+     triple (S, H, f) exhibe homomesia, entonces tambien la exhibe (S, G, f). La
+     prueba es que juntar orbitas con el mismo promedio da una orbita mayor con
+     ese promedio. **Eso es adyacente a como este repositorio compara la
+     contabilidad bajo la sola complementacion con la contabilidad bajo R1**, y
+     hay que decirlo: la direccion de subgrupo a grupo ya esta escrita alli.
+  3. **Seccion 3.4, "Refined homomesies and indicator functions":** la idea de
+     descomponer una homomesia en homomesias mas finas, alli por ficheros de un
+     poset. Adyacente en espiritu a nuestra descomposicion por orbitas, con
+     objetos distintos.
+- **Barridos:** Kendall 0, discordant 0, King Wen 0, hexagram 0, forced 0,
+  parity 0, matching 0.
+
+## 14.3 Reiner, Stanton y White, "The cyclic sieving phenomenon"
+
+- **Identidad, leida en la propia cabecera del articulo:** V. Reiner, D. Stanton
+  y D. White, *Journal of Combinatorial Theory, Series A* **108 (2004) 17-50**,
+  doi 10.1016/j.jcta.2004.04.009.
+- **Que es:** el fenomeno de cribado ciclico. Para un triple formado por un
+  conjunto X, un polinomio X(q) y un grupo ciclico C que actua, el fenomeno dice
+  que evaluar el polinomio en raices de la unidad cuenta **puntos fijos** de cada
+  elemento del grupo, y equivalentemente que sus coeficientes cuentan orbitas
+  segun el orden de su estabilizador.
+- **Por que se registra y por que no compite:** es el otro gran fenomeno de la
+  combinatoria algebraica dinamica y aparece citado en los dos artefactos
+  anteriores, asi que conviene tenerlo situado. Pero cuenta puntos fijos, no
+  promedios de un estadistico sobre orbitas. **No es nuestro objeto ni el de la
+  homomesia.** Barridos: homomesy 0, Kendall 0, discordant 0, King Wen 0.
+
+## 14.4 La interseccion, declarada
+
+Igual que con Radisic, se declara sin maquillar.
+
+**El germen del Lema 1 de PROOFS.md tiene dueno anterior.** La idea de que una
+involucion que manda el recuento a su complementario fuerza el promedio a la
+mitad sobre cada orbita es la seccion 2.1 de Propp y Roby, ejemplo fundacional
+del campo, de 2015 o antes. Alli la involucion es la **reversion de la
+permutacion, que actua sobre las posiciones y deja las etiquetas**, y por eso la
+identidad sale limpia: todo par es inversion en exactamente una de las dos
+permutaciones. Aqui la involucion es la **complementacion, que actua sobre los
+valores** y, al inducir una permutacion de posiciones, mueve las dos cosas a la
+vez. Esa es la diferencia tecnica, y es la razon de que nuestro Lema 0 necesite
+el bit epsilon igual a A XOR B: nuestro Lema 1 es su argumento **restringido a
+la clase de pares donde la permutacion de posiciones conserva el orden**.
+
+**Tambien tiene dueno anterior el mecanismo del Lema 2**, en la frase de Roby
+sobre que el giro manda inversiones a no inversiones (14.2, punto 1), y **la
+direccion de subgrupo a grupo** que este repositorio usa al comparar
+contabilidades esta escrita como Lema 1 de Roby (14.2, punto 2).
+
+**Lo que no aparece en ninguno de los tres, por lo leido:** la contabilidad de un
+objeto por **orbitas de pares de posiciones** bajo el subgrupo completo que una
+construccion respeta; el reparto entre parte forzada y parte libre **cuando la
+homomesia falla**, con su intervalo de totales compatibles; la **prohibicion por
+paridad** del valor central; el **Lema 3** de forzado por emparejamiento con
+testigo distinto en cada pareja; y la **enumeracion de subgrupos** de B6 con la
+nocion de respetar una construccion. En homomesia, un caso no homomesico es un
+caso que se descarta; aqui es el caso que se mide.
+
+**Limite de este veredicto, declarado.** Se leyeron enteras las secciones
+citadas, las paginas 1 a 6 de Propp y Roby y 1 a 5 de Roby, la estructura de
+secciones de los dos, y barridos de texto completo. **No se leyeron los dos
+articulos enteros.** El veredicto de "no aparece" es fuerte para las palabras
+barridas y mas debil para una nocion escrita con otro vocabulario.
+
+**Y lo de siempre: nada de esto se afirma nuevo.** La revision sigue ABIERTA.
+
+## 14.5 Vocabulario: "homomesico" entra como termino disponible
+
+**No sustituye a nada.** La decision de la seccion 11 sigue en pie: el
+estadistico se llama **discordant pairs**.
+
+Lo que se anade es que **"homomesico" y "c-mesico" quedan DISPONIBLES**, con
+dueno citado, para nombrar la propiedad de que el promedio de un estadistico sea
+constante sobre las orbitas. En particular, el corolario del Lema 1 de PROOFS.md
+puede enunciarse diciendo que el indicador de discordancia es **1/2-mesico**
+sobre las orbitas forzadas. Quien use el termino cita a Propp y Roby, Definicion
+1, y no lo presenta como propio.
