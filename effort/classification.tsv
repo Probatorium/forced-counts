@@ -38,3 +38,6 @@ results/corroboration.tsv	aparato	propio	salida del cotejo
 PRIOR-ART.md	aparato	propio	revision de antecedentes, documentacion de proceso
 src/transitions.py	analisis	propio	medicion de las transiciones consecutivas
 results/transitions.tsv	analisis	propio	salida de la medicion
+src/parity_hypotheses.py	analisis	propio	fase previa a la firma, teoremas sobre las hipotesis
+results/parity-hypotheses.tsv	analisis	propio	salida de la fase previa
+PREREGISTRATION-GENERAL.md	aparato	propio	preinscripcion de la fase general, texto firmado

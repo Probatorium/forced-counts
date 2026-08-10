@@ -1,0 +1,43 @@
+# Fase previa a la firma: hipotesis de la obstruccion de paridad.
+# clave	valor	nota
+familia.afin.n3.orden	48	n! por 2^n
+t0.los.tamanos.de.orbita.no.dependen.de.la.ordenacion	1	la accion sobre pares de posiciones es conjugada por sigma de la de pares de vertices
+t1.n2.orden.del.grupo	2	G igual a T igual a {id, traslacion por v}
+t1.n2.dimension.del.subespacio.de.traslaciones	1	log2 del cardinal del span
+t1.n2.orbitas.de.pares	4	
+t1.n2.orbitas.de.cardinal.impar	2	
+t1.n2.hay.orbita.impar	1	testigo de que H3 no se puede quitar
+t1.n2.testigo	par {0, 1}, orbita de cardinal 1	los dos vertices difieren exactamente en v, luego la traslacion los intercambia
+t1.n2.el.testigo.es.un.par.que.difiere.en.v	1	
+t1.n2.T.actua.libremente	1	
+t1.n2.T.es.normal.en.G	1	G es igual a T, luego T es normal en G
+t1.n3.orden.del.grupo	2	G igual a T igual a {id, traslacion por v}
+t1.n3.dimension.del.subespacio.de.traslaciones	1	log2 del cardinal del span
+t1.n3.orbitas.de.pares	16	
+t1.n3.orbitas.de.cardinal.impar	4	
+t1.n3.hay.orbita.impar	1	testigo de que H3 no se puede quitar
+t1.n3.testigo	par {0, 1}, orbita de cardinal 1	los dos vertices difieren exactamente en v, luego la traslacion los intercambia
+t1.n3.el.testigo.es.un.par.que.difiere.en.v	1	
+t1.n3.T.actua.libremente	1	
+t1.n3.T.es.normal.en.G	1	G es igual a T, luego T es normal en G
+t1.n4.orden.del.grupo	2	G igual a T igual a {id, traslacion por v}
+t1.n4.dimension.del.subespacio.de.traslaciones	1	log2 del cardinal del span
+t1.n4.orbitas.de.pares	64	
+t1.n4.orbitas.de.cardinal.impar	8	
+t1.n4.hay.orbita.impar	1	testigo de que H3 no se puede quitar
+t1.n4.testigo	par {0, 1}, orbita de cardinal 1	los dos vertices difieren exactamente en v, luego la traslacion los intercambia
+t1.n4.el.testigo.es.un.par.que.difiere.en.v	1	
+t1.n4.T.actua.libremente	1	
+t1.n4.T.es.normal.en.G	1	G es igual a T, luego T es normal en G
+t2.orden.del.grupo	16	generado por las traslaciones por V y una permutacion
+t2.dim.V	2	V es el span de e0 y e1
+t2.T.NO.es.normal.en.G	1	hay un conjugado de T fuera de T
+t2.dim.W	3	W es el span de las imagenes de V
+t2.dim.W.es.al.menos.dim.V	1	
+t2.las.traslaciones.por.W.estan.en.G	1	
+t2.las.traslaciones.por.W.son.normales.en.G	1	
+t2.orbitas.de.pares	5	
+t2.orbitas.de.cardinal.impar	0	
+t2.todas.las.orbitas.son.de.cardinal.par	1	la conclusion vale aunque T no sea normal, por el paso al cierre normal
+t3.casos.comprobados	50	n en 2 y 3, todo subespacio de dimension al menos 2, y toda permutacion de coordenadas
+t3.ninguna.orbita.impar.en.esos.casos	1	
