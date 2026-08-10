@@ -94,3 +94,4 @@ dist/HISTORY.txt	aparato	propio	la historia en una linea por commit
 dist/THIRD-PARTY.md	aparato	propio	manifiesto de los ficheros de terceros filtrados del bundle
 dist/forced-counts.bundle	aparato	propio	bundle de la historia filtrada, binario
 results/package.tsv	aparato	propio	salida del verificador del paquete
+VERIFICATIONS.md	analisis	propio	registro de verificaciones de terceros

@@ -116,3 +116,79 @@ no existia. De ahi la regla.
 - **Como se escribe el control:** enmienda 1 de INFORME-GRUPO.md.
 - **Nociones y construcciones declaradas antes de medir:** DEFINICIONES-GRUPO.md
   y DEFINICIONES-GENERAL.md.
+
+
+**Enmienda 4, 2026-08-10: politica de filtrado en dos niveles.** Decision de
+Alexis, tomada en la sesion 27 con las dos opciones puestas por escrito antes de
+elegir. Entra aqui porque es politica del repositorio y no texto firmado.
+
+El arbol contiene dos ficheros que no se escribieron aqui:
+
+- `data/sequences.json`, extraido del paquete de replicacion
+  kingwen-orderings-replication en la etiqueta `zenodo-v3`, commit
+  `d6afae20bbefba56728251f34f8e3870c43e2cbd`;
+- `artifacts/radisic-2601.07175v3-appendix-A.tsv`, transcripcion del apendice A
+  de arXiv:2601.07175v3.
+
+Los dos reciben trato distinto segun donde vayan, y la diferencia es deliberada:
+
+> **Nivel 1, el paquete depositado.** Un deposito es inmutable: una vez
+> publicado con su DOI no se puede corregir, solo sustituir por una version
+> nueva que convive con la anterior. Lo que no se puede retirar se filtra antes
+> de entrar. Los dos ficheros salen de toda la historia empaquetada, y en su
+> lugar viaja `dist/THIRD-PARTY.md` con la identidad de cada uno, su sha256, sus
+> bytes y como se consigue por cuenta propia. Los programas que los consumen no
+> se filtran, de modo que la cadena se rehace entera en cuanto el material se
+> repone.
+>
+> **Nivel 2, la historia publica en el remoto.** Un remoto es corregible: si
+> manana hubiera que retirar algo, se retira. Por eso conserva los dos ficheros,
+> con su manifiesto y su atribucion en `data/PROVENANCE.md` y en la cabecera del
+> propio artefacto transcrito. Lo que se gana con ello es que un tercero pueda
+> repetir la cadena entera sin reunir material por su cuenta, que es justo lo
+> que la seccion 9 del manuscrito le promete.
+
+**Que esta diferencia es decision y no descuido.** Se escribe precisamente
+porque un lector que compare el bundle con el remoto vera dos contenidos
+distintos y tiene derecho a saber cual de las dos cosas es la intencionada. Las
+dos lo son, y por razones distintas: la inmutabilidad del deposito manda filtrar,
+la corregibilidad del remoto permite conservar.
+
+**Lo que esta enmienda NO autoriza.** No autoriza reescribir la historia
+publicada. Esa era la otra opcion sobre la mesa y se descarto con sus costes a la
+vista: cambiaria el hash de los setenta y siete commits, incluido el commit raiz
+que contiene la preinscripcion firmada, invalidaria todo clon existente, y
+debilitaria la afirmacion de la seccion 9 de que el orden de la historia es
+comprobable sin fiarse de nadie. Si algun dia hubiera que reescribir, sera con su
+propia decision escrita y no al amparo de esta.
+
+**Enmienda 5, 2026-08-10: una cifra comprobada caduca cuando cambia su objeto.**
+Refina la regla de la sesion 22, que decia que ninguna cifra entra en un mensaje
+de commit antes de que un comprobador la haya impreso. Esa regla es necesaria y
+no es suficiente:
+
+> **Una cifra que un comprobador imprimio sigue siendo cierta solo mientras su
+> objeto no cambie. Reutilizarla despues es reportarla sin comprobador, aunque
+> lo hubiera habido en su dia.**
+
+**Caso que origina la regla, y por eso se cita.** El tamano de `paper/PAPER.pdf`.
+En el commit `286d99b` se reporto en **139580** bytes, y era correcto: esa era la
+cifra que `results/build-paper.tsv` traia impresa en ese momento, y la aritmetica
+que la acompanaba cuadraba con ella, 139580 mas 3421 retornos de carro igual a
+143001 en el clon. Despues, en `fbeee9b`, el PDF se reconstruyo con un colofon
+distinto, porque el colofon nombra su propio commit y su propio recuento de
+comprobaciones, y el fichero paso a medir **139581** bytes. La cifra vieja se
+repitio en el informe de cierre de la sesion 26 cuando ya no era la del fichero.
+Lo detecto una auditoria externa, no un comprobador de aqui.
+
+No se reescribe nada: ni el mensaje del commit, que era cierto cuando se
+escribio, ni el informe. Se anota la correccion, que es lo que este repositorio
+hace con sus errores.
+
+**En la practica.** Una cifra que se saca de un fichero de comprobador y se
+vuelve a usar en otro momento se vuelve a leer del fichero, no de la memoria ni
+del mensaje anterior. Las cifras que el manuscrito imprime ya tienen esto
+resuelto por construccion, porque `src/declared_values.py` las coteja contra su
+linea de `results` en cada ensamblado y se niega a ensamblar si han caducado. Lo
+que esta enmienda cubre es el resto: los mensajes de commit y los informes, que
+no pasan por ningun congelador.
