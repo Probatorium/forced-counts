@@ -39,13 +39,13 @@ comentarios.de.ensamblaje.09-verification.md	1	la seccion conserva sus comentari
 las.nueve.secciones.en.orden	1	
 sin.duplicados	1	
 secciones.ensambladas	9	
-referencias	13	
+referencias	14	
 referencias.de.segunda.mano	1	
-exentos.raya.corta.de.rango.de.pagina	3	rango de paginas en una referencia APA, unico uso admitido
+exentos.raya.corta.de.rango.de.pagina	4	rango de paginas en una referencia APA, unico uso admitido
 guiones.largos.en.el.ensamblado	0	en cualquiera de sus formas, fuera de los usos exentos
 cero.guiones.largos	1	
-entradas.citadas.en.el.texto	13	
-menciones.de.autor.y.ano	18	
+entradas.citadas.en.el.texto	14	
+menciones.de.autor.y.ano	19	
 referencias.sin.citar	ninguna	
 ninguna.referencia.queda.sin.citar	1	
 menciones.que.no.resuelven	ninguna	
@@ -66,4 +66,4 @@ toda.tabla.lleva.rotulo	1	hay 3 tablas y 3 rotulos
 los.rotulos.van.de.uno.en.uno	1	numeracion esperada 1..n en orden de aparicion, encontrada [1, 2, 3]
 tablas.sin.referencia.en.la.prosa	ninguna	
 toda.tabla.numerada.se.referencia.en.el.texto	1	una tabla que el texto no menciona no tiene por que estar
-palabras.aproximadas	16990	
+palabras.aproximadas	17243	

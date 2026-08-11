@@ -2,10 +2,10 @@
 # clave	valor	nota
 numeracion.previa.conocida	1	sin ella no habria manera de saber a que apunta un numero ya escrito
 claves.que.cambian.de.numero	10	
-referencias	13	
-mapa	1>1 2>2 3>3 13>4 4>5 5>6 6>7 7>8 8>9 9>10 10>11 11>12 12>13	de lo que el texto lleva hoy al numero que le toca
-citas.encontradas.antes	18	
-citas.numericas.resultantes	18	
-ficheros.tocados	5	
+referencias	14	
+mapa	1>1 2>2 3>3 El>4 4>5 5>6 6>7 7>8 8>9 9>10 10>11 11>12 12>13 13>14	de lo que el texto lleva hoy al numero que le toca
+citas.encontradas.antes	0	
+citas.numericas.resultantes	0	
+ficheros.tocados	0	
 modo	escribir	
 ninguna.cita.se.pierde.al.renumerar	1	el numero de citas antes y despues tiene que ser el mismo

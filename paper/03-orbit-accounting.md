@@ -83,6 +83,20 @@ positions, moves both at once. That is precisely why Lemma 0 needs the bit
 epsilon = A XOR B, and why Lemma 1 is their argument restricted to the class of
 pairs on which the position permutation preserves the order.
 
+<!-- TERCER SITIO DEL MISMO GERMEN. Verificado en pagina renderizada del PDF:
+     Teorema 5.7 en la pagina impresa 22, y las definiciones 5.1 y 5.2 en la
+     21. No es un germen nuevo: es el mismo, con un mapa mas. -->
+The same germ has a third home, and naming it costs one sentence. Elder et al.
+(2024), in their Theorem 5.7, list the inversion number among the statistics
+that are homomesic under **both** the reverse and the complement of a
+permutation, with the same average n(n-1)/4. Their reverse sends the entry at
+position i to position n plus 1 minus i, so it acts on positions; their
+complement sends the value v to n plus 1 minus v, so it acts on values; and
+neither induces the other. Ours is neither: complementation acts on the vertex
+labels and, through the ordering, moves the positions at the same time. The
+delimitation just made covers this third site unchanged, and it is the reason
+Lemma 0 carries a bit and their arguments do not.
+
 <!-- origen: NOVELTY.md, alcance; PRIOR-ART.md 14.5 -->
 In the vocabulary of that literature, the corollary above says that the indicator
 of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of

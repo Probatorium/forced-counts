@@ -168,6 +168,16 @@ REFERENCIAS = [
      "Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.",
      "read; Definition 6, Sequence Parameters"),
 
+    ("El", "Elder",
+     "Elder, J., Lafrenière, N., McNicholas, E., Striker, J., & Welch, A. "
+     "(2024). Homomesies on permutations: An analysis of maps and statistics "
+     "in the FindStat database. *Mathematics of Computation*, *93*(346), "
+     "921\u2013976.",
+     "read in the cited parts, verified against the rendered pages of the PDF: "
+     "Definition 3.8 on p. 6, the treatment of a non homomesic statistic on "
+     "p. 16, and Definitions 5.1 and 5.2 and Theorem 5.7 on pp. 21 and 22. The "
+     "other fifty pages were not read"),
+
     ("NL", "Garcia Hurtado",
      "García Hurtado, A. (2026). *Uninformative rungs: An order-theoretic "
      "stopping criterion for nested reference sets*. Zenodo. "
@@ -194,6 +204,7 @@ CITAS = {
     "BB": ("Björner and Brenti", "Björner & Brenti", "2005"),
     "Co": ("Cook", "Cook", "2006"),
     "Dr": ("Drasny", "Drasny", "n.d."),
+    "El": ("Elder et al.", "Elder et al.", "2024"),
     "NL": ("García Hurtado", "García Hurtado", "2026"),
     "Gr": ("Gritter", "Gritter", "2015"),
     "HM": ("Hacker and Moore", "Hacker & Moore", "2003"),

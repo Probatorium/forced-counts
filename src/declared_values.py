@@ -112,6 +112,9 @@ MASCARAS = [
     ("simbolo",
      r"[A-Za-z_]\w*\([^)]*\)"
      r"|2\^[\w()+-]+|2 to the n|[Nn]\s*minus\s*\w+|N-1"
+     # una formula escrita en palabras sigue siendo una formula: el uno de
+     # "n plus 1 minus i" es parte del simbolo, igual que el de "N minus 1"
+     r"|[a-zA-Z]\s*plus\s*\d+\s*minus\s*\w+"
      r"|\{1, \.\.\., n\}|\|c_i[^|]*\|\s*<\s*\d+"
      r"|dim\s+V\s*>=\s*\d+|\bk\s*>=\s*\d+|XOR\s+[01]|=\s*[01](?![\d.])"
      r"|n\(n-1\)/\d+|\d+/\d+-mesic|size\s+two|of\s+two\b",

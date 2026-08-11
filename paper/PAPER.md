@@ -448,6 +448,20 @@ positions, moves both at once. That is precisely why Lemma 0 needs the bit
 epsilon = A XOR B, and why Lemma 1 is their argument restricted to the class of
 pairs on which the position permutation preserves the order.
 
+<!-- TERCER SITIO DEL MISMO GERMEN. Verificado en pagina renderizada del PDF:
+     Teorema 5.7 en la pagina impresa 22, y las definiciones 5.1 y 5.2 en la
+     21. No es un germen nuevo: es el mismo, con un mapa mas. -->
+The same germ has a third home, and naming it costs one sentence. Elder et al.
+(2024), in their Theorem 5.7, list the inversion number among the statistics
+that are homomesic under **both** the reverse and the complement of a
+permutation, with the same average n(n-1)/4. Their reverse sends the entry at
+position i to position n plus 1 minus i, so it acts on positions; their
+complement sends the value v to n plus 1 minus v, so it acts on values; and
+neither induces the other. Ours is neither: complementation acts on the vertex
+labels and, through the ordering, moves the positions at the same time. The
+delimitation just made covers this third site unchanged, and it is the reason
+Lemma 0 carries a bit and their arguments do not.
+
 <!-- origen: NOVELTY.md, alcance; PRIOR-ART.md 14.5 -->
 In the vocabulary of that literature, the corollary above says that the indicator
 of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of
@@ -1712,13 +1726,13 @@ preregistration was left unamended, and the prediction was not cashed.
      nada del objeto de estudio. Las cifras salen de results/effort.tsv, que
      emite el propio registro con `python tools/effort.py export`, y se cuentan
      hasta el ultimo cierre de sesion. -->
-<!-- CIFRAS: 158 = results/effort.tsv:7 registros;
-     31 = results/effort.tsv:9 sesiones.cerradas;
+<!-- CIFRAS: 172 = results/effort.tsv:7 registros;
+     35 = results/effort.tsv:9 sesiones.cerradas;
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: 31
-closed sessions in 158 records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: 35
+closed sessions in 172 records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
 verifier reports it, and the chain currently verifies with 0 problems; the
 tool that writes the log has no operation that rewrites or deletes. Exactly 1
@@ -1728,15 +1742,15 @@ log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
 <!-- CIFRAS: 98 = results/effort.tsv:17 ficheros.clasificados;
-     7439 = results/effort.tsv:19 lineas.de.aparato;
-     13082 = results/effort.tsv:20 lineas.de.analisis;
+     7426 = results/effort.tsv:19 lineas.de.aparato;
+     13050 = results/effort.tsv:20 lineas.de.analisis;
      313 = results/effort.tsv:22 lineas.extraidas;
-     20521 = results/effort.tsv:21 lineas.totales -->
+     20476 = results/effort.tsv:21 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, 98 files were classified, over 20521 lines: 7439 of apparatus
-against 13082 of analysis, of which 313 lines are extracted from
+point, 98 files were classified, over 20476 lines: 7426 of apparatus
+against 13050 of analysis, of which 313 lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
@@ -1824,23 +1838,25 @@ Each entry records the identity as the literature review fixed it, and whether t
    *Status:* read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover.
 3. Drasny, J. *The solution of the King Wen sequence?* [Review of the book *Classical Chinese combinatorics*, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm  
    *Status:* read in full; the review carries no date on the page read, so none is printed.
-4. García Hurtado, A. (2026). *Uninformative rungs: An order-theoretic stopping criterion for nested reference sets*. Zenodo. https://doi.org/10.5281/zenodo.21750029  
+4. Elder, J., Lafrenière, N., McNicholas, E., Striker, J., & Welch, A. (2024). Homomesies on permutations: An analysis of maps and statistics in the FindStat database. *Mathematics of Computation*, *93*(346), 921–976.  
+   *Status:* read in the cited parts, verified against the rendered pages of the PDF: Definition 3.8 on p. 6, the treatment of a non homomesic statistic on p. 16, and Definitions 5.1 and 5.2 and Theorem 5.7 on pp. 21 and 22. The other fifty pages were not read.
+5. García Hurtado, A. (2026). *Uninformative rungs: An order-theoretic stopping criterion for nested reference sets*. Zenodo. https://doi.org/10.5281/zenodo.21750029  
    *Status:* cited as a pointer to the framework under which the inferential question of Section 8.3 would have to be posed. ITS CONTENT IS NOT LOAD BEARING HERE: nothing in this paper depends on it, and it was not read in the course of this work.
-5. Gritter, G. (2015). *The hidden pattern in the classical sequence of the I Ching*. Groningen: Self-published.  
+6. Gritter, G. (2015). *The hidden pattern in the classical sequence of the I Ching*. Groningen: Self-published.  
    *Status:* read in full; the artefact names a place and a year and no publisher, so the entry says self-published, which is what APA asks for when a work carries none. If a copy turns up that names one, the artefact wins.
-6. Hacker, E., & Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. *Journal of Chinese Philosophy*, *30*(2), 219–221.  
+7. Hacker, E., & Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. *Journal of Chinese Philosophy*, *30*(2), 219–221.  
    *Status:* SECOND HAND: bibliographic identity taken from the bibliography of Moore (2005); not read. The pointer names the author and year and not a number, so that renumbering the list cannot turn it into a reference to itself, which is what it had just become.
-7. Moore, S. (2005). *Structural elements in the King Wen sequence of hexagrams* (Oracle Paper No. 1).  
+8. Moore, S. (2005). *Structural elements in the King Wen sequence of hexagrams* (Oracle Paper No. 1).  
    *Status:* read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from the OCR conversion.
-8. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. *The Electronic Journal of Combinatorics*, *30*(3), Dynamic Survey DS26.  
+9. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. *The Electronic Journal of Combinatorics*, *30*(3), Dynamic Survey DS26.  
    *Status:* read in the cited part, Section 3.2 on p. 11, verified against the PDF.
-9. Propp, J., & Roby, T. (2015). *Homomesy in products of two chains* (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6  
+10. Propp, J., & Roby, T. (2015). *Homomesy in products of two chains* (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6  
    *Status:* read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version.
-10. Radisic, A. (2026). *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
+11. Radisic, A. (2026). *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
    *Status:* read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing. The year comes from the header of version 3, dated 25 May 2026, recorded when the artefact was read.
-11. Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving phenomenon. *Journal of Combinatorial Theory, Series A*, *108*(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009  
+12. Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving phenomenon. *Journal of Combinatorial Theory, Series A*, *108*(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009  
    *Status:* read in identity and definition; cited for context, since it counts fixed points and not orbit averages.
-12. Roby, T. *Dynamical algebraic combinatorics and the homomesy phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.  
+13. Roby, T. *Dynamical algebraic combinatorics and the homomesy phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.  
    *Status:* read, and the cited pages verified against the PDF; its first page was checked again for this edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor series, so neither is printed and the gap stays declared.
-13. Schöter, A. (1998). Boolean algebra and the Yi Jing. *The Oracle: The Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.  
+14. Schöter, A. (1998). Boolean algebra and the Yi Jing. *The Oracle: The Journal of Yijing Studies*, *2*(7), 19–34. ISSN 1463-6220.  
    *Status:* read; Definition 6, Sequence Parameters.
