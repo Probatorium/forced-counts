@@ -3,8 +3,8 @@
 el.titulo.del.manuscrito.es.el.congelado	1	la portada de PAPER.md manda
 la.portada.se.separa.del.cuerpo	1	los tres bloques de portada son los esperados y salen del cuerpo para no componerse dos veces
 bloques.de.portada.retirados	3	
-colofon.arbol_limpio	no	
-colofon.commit	a9cc5f2ea38ac84f934515cdcb5692afde8d98f8	
+colofon.arbol_limpio	si	
+colofon.commit	8c5a3876c1318a3c3f4dc2010824f8568e4f7cf6	
 colofon.comprobaciones_en_verde	61	
 colofon.fecha	2026-08-10	
 colofon.sha256_manuscrito	0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3	

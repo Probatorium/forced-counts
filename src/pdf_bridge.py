@@ -210,11 +210,19 @@ def main():
           str(verde) == colo.get("comprobaciones", ""),
           "los comprobadores dan hoy un numero distinto del que el PDF declara")
 
-    # 5. las dos salidas, del mismo manuscrito
+    # 5. las dos salidas, del mismo manuscrito.
+    #
+    # El sha va compuesto partible en el .tex, con un punto de corte cada ocho
+    # caracteres, porque si no seria una palabra de sesenta y cuatro que no cabe
+    # en la linea. Para buscarlo hay que quitar antes esos cortes: comprobarlo
+    # sobre el .tex tal cual daria rojo por la propia solucion a la caja.
     tex = open(TEX, encoding="utf-8").read()
+    tex_sin_cortes = tex.replace("\\allowbreak ", "")
     check("el.tex.declara.el.mismo.sha256.que.el.pdf",
-          colo.get("sha256", "") in tex,
+          colo.get("sha256", "") in tex_sin_cortes,
           "el .tex y el PDF tienen que haber salido del mismo manuscrito")
+    check("el.tex.declara.el.mismo.commit.que.el.pdf",
+          colo.get("commit", "") in tex_sin_cortes)
 
     return informe()
 
