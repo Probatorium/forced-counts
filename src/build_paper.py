@@ -246,6 +246,19 @@ NOTACION = {
 NOTACION_RE = re.compile(r"\b(?:%s)\b" % "|".join(
     sorted((re.escape(k) for k in NOTACION), key=len, reverse=True)))
 
+def tex_partible(s, n=8):
+    """Un hash en \texttt con puntos de corte cada n caracteres.
+
+    Un sha256 son 64 caracteres sin un solo espacio, y un commit son 40. Para
+    LaTeX eso es UNA palabra, y una palabra que no cabe en la linea se sale de
+    la caja: no hay donde partirla. \allowbreak da permiso para cortar sin
+    meter un guion, que ademas seria falso, porque un guion dentro de un hash se
+    leeria como parte del hash.
+    """
+    trozos = [s[i:i + n] for i in range(0, len(s), n)]
+    return r"\texttt{%s}" % r"\allowbreak ".join(trozos)
+
+
 # Un enlace no se escapa: va dentro de \url, que ademas le deja partir de linea
 # y evita que se salga de la caja.
 URL_RE = re.compile(r"https?://\S+")
@@ -367,8 +380,14 @@ def a_tex(bloques, colo, titulo, autor, orcid):
             if not cont:
                 continue
             ncol = max(len(f) for f in cont)
-            salida.append(r"\begin{center}\small")
-            salida.append(r"\begin{longtable}{%s}" % ("l" * ncol))
+            # SIN \begin{center}. Un longtable dentro de center es un error
+            # documentado: longtable se parte entre paginas y necesita estar al
+            # nivel exterior, y metido en un center produce avisos de caja,
+            # tanto Overfull como Underfull, que no vienen del contenido. Se
+            # centra con su propio argumento opcional, que es como se hace.
+            salida.append(r"\begingroup\footnotesize"
+                          r"\setlength{\tabcolsep}{4pt}")
+            salida.append(r"\begin{longtable}[c]{%s}" % ("l" * ncol))
             for j, fila in enumerate(cont):
                 fila = fila + [""] * (ncol - len(fila))
                 if j == 0:
@@ -382,7 +401,7 @@ def a_tex(bloques, colo, titulo, autor, orcid):
                 if j == 0:
                     salida.append(r"\hline")
             salida.append(r"\end{longtable}")
-            salida.append(r"\end{center}")
+            salida.append(r"\endgroup")
         salida.append("")
 
     texto = "\n".join(salida)
@@ -391,14 +410,20 @@ def a_tex(bloques, colo, titulo, autor, orcid):
     texto = texto.replace(r"\section*{1. Introduction}",
                           "\\end{abstract}\n\n\\section*{1. Introduction}", 1)
 
+    # El colofon, con las dos cadenas largas compuestas partibles. Van en
+    # parrafos propios y no seguidas, para que ninguna arrastre a la otra.
     texto += ("\n" + r"\vfill" + "\n" + r"\begin{small}" + "\n"
               + r"\noindent\textbf{Colophon.}" + "\n"
-              + "Built from the assembled manuscript at commit "
-              + tex_escapa(colo["commit"]) + ", dated "
-              + tex_escapa(colo["fecha"]) + ". Working tree clean: "
-              + tex_escapa(colo["arbol_limpio"]) + ". sha256 of the manuscript: "
-              + tex_escapa(colo["sha256_manuscrito"]) + ". Checks green at build "
-              + "time: " + tex_escapa(colo["comprobaciones_en_verde"]) + ".\n"
+              + "Built from the assembled manuscript at commit\n"
+              + tex_partible(colo["commit"]) + ",\n"
+              + "dated " + tex_escapa(colo["fecha"])
+              + ". Working tree clean: "
+              + tex_escapa(colo["arbol_limpio"])
+              + ". Checks green at build time: "
+              + tex_escapa(colo["comprobaciones_en_verde"]) + ".\n"
+              + r"\par\noindent" + "\n"
+              + "sha256 of the manuscript:\n"
+              + tex_partible(colo["sha256_manuscrito"]) + "\n"
               + r"\end{small}" + "\n" + r"\end{document}" + "\n")
     return texto
 
@@ -604,6 +629,45 @@ EXENTOS_TEX = [
 ]
 
 
+# Ancho de texto de la clase con geometry a una pulgada sobre A4, en puntos.
+# Es una constante de la maquetacion y no una medicion del objeto de estudio.
+ANCHO_TEXTO_PT = 595.276 - 2 * 72.27
+
+
+def estimar_tablas(bloques):
+    """Estima el ancho compuesto de cada tabla y avisa si no cabe.
+
+    ES UNA ESTIMACION Y SE DECLARA COMO TAL. Se calcula con las metricas de
+    Times, que es lo que hay aqui, mientras que el .tex se compone con Computer
+    Modern. Sirve para cazar una tabla que se sale por mucho; no sustituye a la
+    compilacion, que es la unica que sabe de verdad si hay una caja desbordada,
+    y esa la hace quien tenga LaTeX.
+    """
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+    peor = 0.0
+    for n, (tipo, cont) in enumerate(
+            [b for b in bloques if b[0] == "tabla"], start=1):
+        ncol = max(len(f) for f in cont)
+        ancho = 0.0
+        for j in range(ncol):
+            col = 0.0
+            for i, fila in enumerate(cont):
+                celda = (fila[j] if j < len(fila) else "").replace("*", "")
+                fuente = "Times-Bold" if i == 0 else "Times-Roman"
+                col = max(col, stringWidth(celda, fuente, 9.0))
+            ancho += col
+        ancho += 2 * 4.0 * ncol
+        emit("tabla.%d.ancho.estimado.pt" % n, round(ancho, 1),
+             "footnotesize con tabcolsep de 4pt, metricas de Times")
+        peor = max(peor, ancho)
+    emit("ancho.de.texto.pt", round(ANCHO_TEXTO_PT, 1),
+         "A4 con geometry a una pulgada")
+    emit("tabla.mas.ancha.estimada.pt", round(peor, 1), "")
+    emit("holgura.estimada.pt", round(ANCHO_TEXTO_PT - peor, 1), "")
+    check("las.tablas.caben.segun.la.estimacion", peor <= ANCHO_TEXTO_PT,
+          "estimacion, no compilacion: la certifica quien compile")
+
+
 def barrer_tex(tex):
     # Primero se retiran los usos exentos, cada uno contado y con su motivo, y
     # solo despues se cuenta lo que queda. Antes el barrido de unicode iba antes
@@ -673,7 +737,17 @@ def main():
           "si no se puede extraer texto, no hay cotejo posible")
 
     cotejar(md, tex, pdf_txt, cuerpo_bloques)
+    estimar_tablas(cuerpo_bloques)
     barrer_tex(tex)
+
+    # Ninguna palabra larguisima suelta en el .tex fuera de un entorno que sepa
+    # partirla: son las que se salen de la caja sin remedio.
+    largas = [w for w in re.findall(r"[A-Za-z0-9]{30,}", tex)
+              if w not in tex.replace(r"\texttt{", "\x00")]
+    crudas = re.findall(r"(?<!\{)\b[0-9a-f]{30,}\b", tex)
+    emit("cadenas.de.mas.de.30.caracteres.sin.partir", len(crudas),
+         "un hash sin puntos de corte es una palabra que no cabe en la linea")
+    check("ningun.hash.sin.puntos.de.corte", not crudas)
 
     # DIACRITICOS. Si un acento se pierde por el camino, se pierde en silencio:
     # el fichero sigue abriendo y el nombre sigue pareciendose. Se exige que
@@ -705,7 +779,14 @@ def main():
           "las tres entradas con enlace tienen que llevarlo dentro de url")
 
     # que el colofon este de verdad en las dos salidas
-    check("el.tex.lleva.colofon", colo["sha256_manuscrito"] in tex)
+    # El sha va compuesto partible, asi que para buscarlo hay que quitar antes
+    # los puntos de corte. Comprobar el .tex tal cual daria rojo por la propia
+    # solucion al problema de la caja.
+    tex_sin_cortes = tex.replace("\\allowbreak ", "")
+    check("el.tex.lleva.colofon",
+          colo["sha256_manuscrito"] in tex_sin_cortes)
+    check("el.tex.lleva.el.commit.del.colofon",
+          colo["commit"] in tex_sin_cortes)
     check("el.pdf.lleva.colofon.en.su.informacion",
           colo["sha256_manuscrito"] in open(PDF, "rb").read().decode("latin-1"))
 

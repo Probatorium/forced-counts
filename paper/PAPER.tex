@@ -377,8 +377,8 @@ The count differs from the tie by 5, that being 1013 minus 1008, and the natural
 
 \textbf{Table 1.} \emph{The residue of the third ordering, decomposed over its free orbits.}
 
-\begin{center}\small
-\begin{longtable}{lllll}
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{longtable}[c]{lllll}
 \textbf{orbit} & \textbf{cardinality} & \textbf{half} & \textbf{contribution} & \textbf{deviation} \\
 \hline
 o0 & 192 & 96 & 90 & -6 \\
@@ -401,7 +401,7 @@ o16 & 12 & 6 & 4 & -2 \\
 o17 & 4 & 2 & 3 & 1 \\
 o18 & 4 & 2 & 3 & 1 \\
 \end{longtable}
-\end{center}
+\endgroup
 
 The rows are labelled o0 to o18 in the order the accounting produces them; the label is a row name and not a measurement.
 
@@ -441,8 +441,8 @@ Table 2 gives dimensions three to six, every level, with the same columns throug
 
 \textbf{Table 2.} \emph{The landscape B(n, k) in dimensions three to six.}
 
-\begin{center}\small
-\begin{longtable}{lllllllll}
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{longtable}[c]{lllllllll}
 \textbf{n} & \textbf{k} & \textbf{group order} & \textbf{Gray} & \textbf{canonical} & \textbf{forced} & \textbf{bounded} & \textbf{barred} & \textbf{cases} \\
 \hline
 3 & 1 & 16 & bounded & barred & 0 & 24 & 24 & 48, enumerated \\
@@ -460,7 +460,7 @@ Table 2 gives dimensions three to six, every level, with the same columns throug
 6 & 4 & 3072 & bounded & barred & . & . & . & not sampled \\
 6 & 5 & 7680 & bounded & barred & . & . & . & not sampled \\
 \end{longtable}
-\end{center}
+\endgroup
 
 The last three columns of Table 2 are the distribution of the three outcomes over the parametrised family, by block order and internal order; a dot means the distribution was not measured. The \textbf{forced} column is empty in every row at an extreme level and non empty only at the intermediate ones, which is the shape that section 7.3 takes up and cuts down to size.
 
@@ -470,13 +470,13 @@ Each row reports the outcome for two fixed orderings, the reflected Gray code an
 
 \textbf{Table 3.} \emph{The one historical ordering that fits the family, reported apart.}
 
-\begin{center}\small
-\begin{longtable}{llllllll}
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{longtable}[c]{llllllll}
 \textbf{ordering} & \textbf{n} & \textbf{k} & \textbf{group order} & \textbf{free orbits} & \textbf{compatible totals} & \textbf{count} & \textbf{outcome} \\
 \hline
 Mawangdui, received & 6 & 3 & 2304 & 0 & 1 & 1008 & forced \\
 \end{longtable}
-\end{center}
+\endgroup
 
 Table 3 reports 0 free orbits, exactly 1 compatible total, and that total is 1008: the forced outcome of section 6 read inside the general frame rather than beside it, and the same figure that the demonstration there produces.
 
@@ -612,6 +612,11 @@ Each entry records the identity as the literature review fixed it, and whether t
 \vfill
 \begin{small}
 \noindent\textbf{Colophon.}
-Built from the assembled manuscript at commit 12eef7bcef81a2ffcbacd52e032b21e6698918a5, dated 2026-08-10. Working tree clean: si. sha256 of the manuscript: 0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3. Checks green at build time: 61.
+Built from the assembled manuscript at commit
+\texttt{a9cc5f2e\allowbreak a38ac84f\allowbreak 934515cd\allowbreak cb5692af\allowbreak de8d98f8},
+dated 2026-08-10. Working tree clean: no. Checks green at build time: 61.
+\par\noindent
+sha256 of the manuscript:
+\texttt{0d2cf441\allowbreak c3f953c7\allowbreak baa15cc9\allowbreak 70812947\allowbreak 9ac982f1\allowbreak c0848343\allowbreak bc3ca686\allowbreak eb5dfdc3}
 \end{small}
 \end{document}
