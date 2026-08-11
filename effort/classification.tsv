@@ -84,7 +84,7 @@ results/effort.tsv	aparato	propio	recuentos del registro de esfuerzo, emitidos p
 src/build_paper.py	aparato	propio	constructor de PAPER.tex y PAPER.pdf desde PAPER.md
 src/pdf_bridge.py	aparato	propio	puente entre el PDF y el manuscrito
 paper/PAPER.tex	analisis	propio	manuscrito en LaTeX, generado desde PAPER.md y no redactado aparte
-paper/PAPER.pdf	analisis	propio	manuscrito en PDF, binario, no se cuentan sus lineas
+paper/PAPER.pdf	analisis	propio	PDF canonico compilado con LaTeX, lo entrega el auditor
 results/build-paper.tsv	aparato	propio	salida del constructor
 results/pdf-bridge.tsv	aparato	propio	salida del puente
 results/pdf-bridge-test.tsv	aparato	propio	prueba de que el puente sabe romperse
@@ -102,3 +102,5 @@ results/bold-strip.tsv	aparato	propio	salida de la retirada de negritas
 tools/renumber_tables.py	aparato	propio	numerador de tablas por orden de aparicion
 paper/citation-order.tsv	aparato	propio	numeracion vigente de las citas
 results/table-renumber.tsv	aparato	propio	salida del numerador de tablas
+paper/PDF-STATE.tsv	aparato	propio	estado declarado del PDF canonico
+paper/PAPER-preview.pdf	analisis	propio	preview del manuscrito, binario, no va al deposito

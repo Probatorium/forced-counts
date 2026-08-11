@@ -1,0 +1,16 @@
+# EN QUE PUNTO ESTA EL PDF CANONICO DE ESTE MANUSCRITO.
+#
+# El PDF canonico es el que compila LaTeX desde paper/PAPER.tex, y esa
+# compilacion no se puede hacer en esta maquina: no hay cadena de LaTeX.
+# La hace el auditor desde un clon limpio y entrega el fichero, que se
+# commitea despues como paper/PAPER.pdf.
+#
+# Este fichero existe para que el estado intermedio sea DECLARADO y no
+# se confunda con un descuido. El puente lo lee: mientras diga
+# 'esperando', no exige el PDF canonico y avisa en cada corrida de que
+# falta; en cuanto diga 'entregado', lo exige y lo valida.
+#
+# clave	valor	nota
+estado	esperando	esperando la compilacion del auditor desde PAPER.tex
+canonico	paper/PAPER.pdf	lo entrega el auditor, compilado con LaTeX
+preview	paper/PAPER-preview.pdf	compuesto aqui con reportlab

@@ -137,11 +137,14 @@ REFERENCIAS = [
      "identity is second hand, since the artefact read is the arXiv version"),
 
     ("Ra", "Radisic",
-     "Radisic, A. *Optimal equivariant matchings on the 6-cube: With an "
+     "Radisic, A. (2026). *Optimal equivariant matchings on the 6-cube: With "
+     "an "
      "application to the King Wen sequence* (Version 3) [Preprint]. arXiv. "
      "https://arxiv.org/abs/2601.07175v3",
      "read in full, eleven pages; its Appendix A was transcribed and collated "
-     "against our data, all sixty four positions agreeing"),
+     "against our data, all sixty four positions agreeing. The year comes "
+     "from the header of version 3, dated 25 May 2026, recorded when the "
+     "artefact was read"),
 
     ("RSW", "Reiner",
      "Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving "
@@ -178,6 +181,38 @@ REFERENCIAS.sort(key=lambda r: r[1])
 # La clave publica es el numero, en el orden alfabetico de arriba. La clave
 # alfabetica sobrevive solo como identificador interno para la renumeracion.
 NUMERO = {r[0]: str(n) for n, r in enumerate(REFERENCIAS, start=1)}
+
+
+# LA CITA EN EL TEXTO, autor y ano, que es el estilo de la casa. Por entrada:
+# la forma narrativa, con "and" porque va en la frase; la forma entre
+# parentesis, con "&" porque asi lo escribe APA dentro de un parentesis; y el
+# ano. Donde la entrada no trae ano, la cita dice n.d., que es lo que APA pone
+# y no una fecha inventada.
+CITAS = {
+    "BB": ("Björner and Brenti", "Björner & Brenti", "2005"),
+    "Co": ("Cook", "Cook", "2006"),
+    "Dr": ("Drasny", "Drasny", "n.d."),
+    "NL": ("García Hurtado", "García Hurtado", "2026"),
+    "Gr": ("Gritter", "Gritter", "2015"),
+    "HM": ("Hacker and Moore", "Hacker & Moore", "2003"),
+    "Mo": ("Moore", "Moore", "2005"),
+    "Mu": ("Mütze", "Mütze", "2023"),
+    "PR": ("Propp and Roby", "Propp & Roby", "2015"),
+    "Ra": ("Radisic", "Radisic", "2026"),
+    "RSW": ("Reiner et al.", "Reiner et al.", "2004"),
+    "Ro": ("Roby", "Roby", "n.d."),
+    "Sc": ("Schöter", "Schöter", "1998"),
+}
+
+def cita_narrativa(clave):
+    n, _p, a = CITAS[clave]
+    return "%s (%s)" % (n, a)
+
+
+def cita_parentetica(clave):
+    _n, p, a = CITAS[clave]
+    return "(%s, %s)" % (p, a)
+
 
 CLAVES = set(NUMERO.values())
 
@@ -256,21 +291,77 @@ ORCID 0009-0003-4636-8206
          "en cualquiera de sus formas, fuera de los usos exentos")
     check("cero.guiones.largos", guiones == 0)
 
-    # toda cita del texto resuelve a una referencia
+    # LAS CITAS DEL TEXTO, en autor y ano, contra las entradas de la lista.
+    #
+    # El texto cita por autor y ano y la lista del final va numerada, de modo
+    # que el emparejamiento no es una coincidencia de cadenas triviales: hay que
+    # ir entrada por entrada y buscar sus dos formas, la narrativa y la
+    # parentetica. Se siguen exigiendo LAS DOS DIRECCIONES, que es lo que
+    # convierte esto en una comprobacion y no en un adorno:
+    #
+    #   ida    toda mencion de autor y ano del texto resuelve a una entrada;
+    #   vuelta ninguna entrada se queda sin citar.
     cuerpo = re.sub(r"<!--.*?-->", "", texto, flags=re.S)
     cuerpo = cuerpo.split("# References")[0]
-    citas = set(re.findall(r"\[(\d{1,2})\]", cuerpo))
-    huerfanas = sorted(c for c in citas if c not in CLAVES)
-    emit("citas.distintas.en.el.texto", len(citas), "")
-    emit("citas.sin.referencia", " ".join(huerfanas) if huerfanas else "ninguna", "")
-    check("toda.cita.resuelve", not huerfanas)
-    # La comprobacion anterior pasa en vacio si el texto no tiene ninguna clave,
-    # asi que se exige que haya citas y que ninguna referencia quede sin citar.
-    check("el.texto.tiene.citas", len(citas) > 0,
-          "una comprobacion que pasa en vacio no comprueba nada")
-    sin_citar = sorted(CLAVES - citas)
-    emit("referencias.sin.citar", " ".join(sin_citar) if sin_citar else "ninguna", "")
+
+    def suelto(s):
+        """El nombre como patron, con los espacios tolerando salto de linea.
+
+        Una cita puede quedar partida entre dos lineas del markdown, y al lector
+        le llega igual. Exigir un espacio literal haria que el comprobador
+        fallara por como esta plegado el fichero y no por lo que dice, que es
+        fallar por la razon equivocada. Paso justo aqui con Hacker y Moore.
+        """
+        return r"\s+".join(re.escape(p) for p in s.split())
+
+    citadas, veces = set(), 0
+    for clave in CITAS:
+        narr = suelto(CITAS[clave][0]) + r"(?:'s)?\s*\(" \
+            + re.escape(CITAS[clave][2]) + r"\)"
+        paren = r"\(" + suelto(CITAS[clave][1]) + r",\s*" \
+            + re.escape(CITAS[clave][2]) + r"\)"
+        n = len(re.findall(narr, cuerpo)) + len(re.findall(paren, cuerpo))
+        if n:
+            citadas.add(clave)
+            veces += n
+    emit("entradas.citadas.en.el.texto", len(citadas), "")
+    emit("menciones.de.autor.y.ano", veces, "")
+
+    # La vuelta: ninguna entrada sin citar.
+    sin_citar = sorted(set(CITAS) - citadas,
+                       key=lambda k: int(NUMERO[k]))
+    emit("referencias.sin.citar",
+         " ".join("%s (%s)" % (NUMERO[k], CITAS[k][0]) for k in sin_citar)
+         if sin_citar else "ninguna", "")
     check("ninguna.referencia.queda.sin.citar", not sin_citar)
+
+    # La ida: toda mencion con pinta de cita tiene que resolver. Se localiza
+    # cada ano entre parentesis y se mira lo que lo precede; si ningun apellido
+    # de la lista aparece ahi delante, es una cita que no resuelve.
+    apellidos = set()
+    for clave in CITAS:
+        for forma in (CITAS[clave][0], CITAS[clave][1]):
+            apellidos.add(forma.split(" and ")[0].split(" & ")[0])
+    huerfanas = []
+    for m in re.finditer(r"\((?:\d{4}|n\.d\.)\)|,\s*(?:\d{4}|n\.d\.)\)",
+                         cuerpo):
+        antes = " ".join(cuerpo[max(0, m.start() - 60):m.start()].split())
+        if not any(a in antes for a in apellidos):
+            huerfanas.append(" ".join(
+                (antes[-40:] + m.group(0)).split()))
+    emit("menciones.que.no.resuelven",
+         " | ".join(huerfanas) if huerfanas else "ninguna", "")
+    check("toda.mencion.de.autor.y.ano.resuelve", not huerfanas)
+
+    # Y que nada de esto pase en vacio.
+    check("el.texto.tiene.citas", veces > 0,
+          "una comprobacion que pasa en vacio no comprueba nada")
+
+    # Ninguna cita numerica debe quedar suelta en la prosa: la lista va
+    # numerada, pero el texto cita por autor y ano.
+    numericas = re.findall(r"\[\d{1,2}\]", cuerpo)
+    emit("citas.numericas.que.quedan.en.la.prosa", len(numericas), "")
+    check("la.prosa.no.cita.por.numero", not numericas)
 
     # --- el congelador de cifras, dentro del mismo ensamblado -------------
     # No basta con que el manuscrito este bien montado: hay que exigir que las

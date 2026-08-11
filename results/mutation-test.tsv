@@ -11,15 +11,15 @@
 06.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
 06.la.prosa.contradice.a.results.aviso	06-three-historical-orderings.md: la prosa imprime 40321 y results/measurements.tsv:92 (exhaustivo.octetos.orden.de.familia.ordenes) mide 40320	
 09.cifra.sin.declarar.seccion	09-verification.md	la cifra sale del registro de esfuerzo
-09.cifra.sin.declarar.cifra	19845 por 19846 (lineas.totales)	elegida por la propia herramienta, no escrita a mano
+09.cifra.sin.declarar.cifra	19976 por 19977 (lineas.totales)	elegida por la propia herramienta, no escrita a mano
 09.cifra.sin.declarar.desajustes	2	se cambia la cifra en la prosa y no en su declaracion: tiene que saltar como cifra impresa sin procedencia
 09.cifra.sin.declarar.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-09.cifra.sin.declarar.aviso	09-verification.md: la cifra 19846 se imprime sin declaracion de procedencia (...e same point, 97 files were classified, over 19846 lines: 6959 of apparatus...)	
+09.cifra.sin.declarar.aviso	09-verification.md: la cifra 19977 se imprime sin declaracion de procedencia (...e same point, 97 files were classified, over 19977 lines: 7085 of apparatus...)	
 09.la.prosa.contradice.a.results.seccion	09-verification.md	la cifra sale del registro de esfuerzo
-09.la.prosa.contradice.a.results.cifra	19845 por 19846 (lineas.totales)	elegida por la propia herramienta, no escrita a mano
+09.la.prosa.contradice.a.results.cifra	19976 por 19977 (lineas.totales)	elegida por la propia herramienta, no escrita a mano
 09.la.prosa.contradice.a.results.desajustes	2	se cambian la cifra y su declaracion a la vez: tiene que saltar porque el valor declarado ya no es el que mide la linea
 09.la.prosa.contradice.a.results.el.comprobador.nombra.la.cifra	1	si vale cero, el comprobador no vigila lo que dice vigilar
-09.la.prosa.contradice.a.results.aviso	09-verification.md: la prosa imprime 19846 y results/effort.tsv:21 (lineas.totales) mide 19845	
+09.la.prosa.contradice.a.results.aviso	09-verification.md: la prosa imprime 19977 y results/effort.tsv:21 (lineas.totales) mide 19976	
 mutaciones.probadas	4	
 corrida.restaurada.desajustes	0	
 corrida.restaurada.limpia	1	

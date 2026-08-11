@@ -8,8 +8,18 @@ src/declared_values.py. Este programa no vuelve a redactar nada: parsea ese
 fichero a un modelo intermedio y emite desde el modelo las dos formas de salida,
 de manera que las dos digan lo mismo por construccion y no por cuidado.
 
-  paper/PAPER.tex   fuente LaTeX, para compilar donde haya cadena de LaTeX
-  paper/PAPER.pdf   PDF compuesto aqui, sin depender de una instalacion de LaTeX
+  paper/PAPER.tex           fuente LaTeX, y la unica fuente del PDF canonico
+  paper/PAPER-preview.pdf   PREVIEW, compuesto aqui con reportlab
+
+EL PDF CANONICO NO SALE DE AQUI. Es paper/PAPER.pdf, lo compila LaTeX desde
+PAPER.tex, y en esta maquina no hay con que compilarlo. Lo que este programa
+produce es un PREVIEW con otro nombre, y el nombre es la mitad del asunto: un
+fichero llamado PAPER.pdf compuesto por otra cosa se acaba depositando por
+error. El preview sigue siendo util y no es decorativo, porque es sobre su
+texto extraido sobre lo que se coteja que las cifras, las citas y las tablas
+del .tex dicen lo mismo que el manuscrito; pero no va al deposito.
+
+El estado del PDF canonico se declara en paper/PDF-STATE.tsv y lo lee el puente.
 
 COLOFON. Las dos salidas llevan el mismo colofon: el commit, la fecha, el sha256
 del manuscrito del que salieron y el recuento de comprobaciones que estaban en
@@ -54,7 +64,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, "paper", "PAPER.md")
 TEX = os.path.join(ROOT, "paper", "PAPER.tex")
-PDF = os.path.join(ROOT, "paper", "PAPER.pdf")
+PDF = os.path.join(ROOT, "paper", "PAPER-preview.pdf")
 OUT = os.path.join(ROOT, "results", "build-paper.tsv")
 
 ROWS = []
@@ -222,6 +232,20 @@ def separa_portada(bloques, titulo, autor, orcid):
     return True, bloques[len(esperado):]
 
 
+def alineacion(cont, ncol):
+    """Que columnas van centradas y cual no.
+
+    Los datos van centrados; la primera columna se queda a la izquierda cuando
+    es una etiqueta de fila y no un dato, que se reconoce porque su contenido es
+    texto y no un numero corto. Asi "Mawangdui, received" y "orbit" quedan
+    alineados a la izquierda, donde se leen, y las columnas n y k, que son
+    numeros, van centradas como el resto.
+    """
+    primera = [(f[0] if f else "") for f in cont]
+    etiqueta = any(" " in c or len(c) > 4 for c in primera)
+    return ["l" if (j == 0 and etiqueta) else "c" for j in range(ncol)]
+
+
 # --- salida LaTeX ------------------------------------------------------------
 
 ESCAPES = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$",
@@ -387,7 +411,8 @@ def a_tex(bloques, colo, titulo, autor, orcid):
             # centra con su propio argumento opcional, que es como se hace.
             salida.append(r"\begingroup\footnotesize"
                           r"\setlength{\tabcolsep}{4pt}")
-            salida.append(r"\begin{longtable}[c]{%s}" % ("l" * ncol))
+            salida.append(r"\begin{longtable}[c]{%s}"
+                          % "".join(alineacion(cont, ncol)))
             for j, fila in enumerate(cont):
                 fila = fila + [""] * (ncol - len(fila))
                 if j == 0:
@@ -501,15 +526,20 @@ def a_pdf(bloques, colo, titulo, autor, orcid):
             anchos = [max(a, 3) for a in anchos]
             escala = disponible / float(sum(anchos))
             col = [a * escala for a in anchos]
-            tb = Table(datos, colWidths=col, repeatRows=1, hAlign="CENTER")
-            tb.setStyle(TableStyle([
+            alin = alineacion(cont, ncol)
+            estilo = [
                 ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                 ("BACKGROUND", (0, 0), (-1, 0), colors.whitesmoke),
                 ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 3),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 3),
-            ]))
+            ]
+            for j, a in enumerate(alin):
+                estilo.append(("ALIGN", (j, 0), (j, -1),
+                               "LEFT" if a == "l" else "CENTER"))
+            tb = Table(datos, colWidths=col, repeatRows=1, hAlign="CENTER")
+            tb.setStyle(TableStyle(estilo))
             hist.append(tb)
             hist.append(Spacer(1, 0.3 * cm))
 
@@ -565,14 +595,39 @@ def texto_del_pdf(ruta):
 # --- cotejo de equivalencia --------------------------------------------------
 
 CIFRA = re.compile(r"(?<![\w.,:/-])\d+(?:\.\d+)?(?![\w:/-])(?!\.\d)")
-CITA = re.compile(r"\[(\d{1,2})\]")
+# Las citas que hay que reencontrar en las otras dos salidas ya no son numeros
+# entre corchetes: el texto cita por autor y ano. Se toman las formas que
+# assemble_paper declara para cada entrada, que es la misma fuente que usa el
+# comprobador de citas, para que no puedan discrepar.
+import assemble_paper as _A
+
+
+def formas_de_cita():
+    formas = []
+    for clave in _A.CITAS:
+        narr, paren, anio = _A.CITAS[clave]
+        formas.append("%s (%s)" % (narr, anio))
+        formas.append("(%s, %s)" % (paren, anio))
+    return formas
+
+
+def normaliza_cita(s):
+    """Sin barras invertidas y con los espacios colapsados.
+
+    El .tex escapa el ampersand y pliega las lineas donde le conviene, y el PDF
+    trae el texto partido entre operadores. Comparar en crudo daria ausencias
+    que no lo son.
+    """
+    return " ".join(s.replace("\\", "").split())
 
 
 def cotejar(md, tex, pdf_txt, bloques):
     sin_com = re.sub(r"<!--.*?-->", "", md, flags=re.S)
 
     cifras = sorted(set(CIFRA.findall(sin_com)))
-    citas = sorted(set(CITA.findall(sin_com)))
+    presentes = [f for f in formas_de_cita()
+                 if normaliza_cita(f) in normaliza_cita(sin_com)]
+    citas = sorted(set(presentes))
     filas = [f for tipo, cont in bloques if tipo == "tabla" for f in cont]
     # Los asteriscos de la negrita son marcado del markdown, no contenido: en el
     # .tex son \textbf y en el PDF son otra fuente, asi que se comparan sin
@@ -581,7 +636,8 @@ def cotejar(md, tex, pdf_txt, bloques):
                      if c.replace("*", "").strip() not in (".", "")})
 
     emit("cifras.distintas.en.el.manuscrito", len(cifras))
-    emit("citas.distintas.en.el.manuscrito", len(citas))
+    emit("formas.de.cita.en.el.manuscrito", len(citas),
+         "autor y ano, en sus dos formas, narrativa y entre parentesis")
     emit("filas.de.tabla", len(filas))
     emit("celdas.distintas.de.tabla", len(celdas))
     check("hay.algo.que.cotejar", cifras and citas and filas,
@@ -594,7 +650,8 @@ def cotejar(md, tex, pdf_txt, bloques):
         check("%s.lleva.todas.las.%s" % (donde, etiqueta), not ausentes)
 
     falta("tex", tex, cifras, "cifras")
-    falta("tex", tex, citas, "citas")
+    falta("tex", normaliza_cita(tex), [normaliza_cita(c) for c in citas],
+          "citas")
     falta("tex", tex, celdas, "celdas")
 
     # el PDF parte las palabras entre operadores de texto, asi que se compara
@@ -602,7 +659,8 @@ def cotejar(md, tex, pdf_txt, bloques):
     # no que este con el mismo espaciado
     pdf_plano = re.sub(r"\s+", "", pdf_txt)
     falta("pdf", pdf_plano, [re.sub(r"\s+", "", c) for c in cifras], "cifras")
-    falta("pdf", pdf_plano, ["[%s]" % c for c in citas], "citas")
+    falta("pdf", normaliza_cita(pdf_txt),
+          [normaliza_cita(c) for c in citas], "citas")
     falta("pdf", pdf_plano, [re.sub(r"\s+", "", c) for c in celdas], "celdas")
 
 
@@ -658,7 +716,8 @@ def estimar_tablas(bloques):
             ancho += col
         ancho += 2 * 4.0 * ncol
         emit("tabla.%d.ancho.estimado.pt" % n, round(ancho, 1),
-             "footnotesize con tabcolsep de 4pt, metricas de Times")
+             "footnotesize, tabcolsep 4pt, metricas de Times, especificacion "
+             + "".join(alineacion(cont, ncol)))
         peor = max(peor, ancho)
     emit("ancho.de.texto.pt", round(ANCHO_TEXTO_PT, 1),
          "A4 con geometry a una pulgada")

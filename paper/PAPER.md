@@ -149,7 +149,7 @@ silent about its origin.
      "Context: Alternative Sequences". Leida de la pagina renderizada del PDF,
      que es el canal fuerte, y no de la conversion OCR. -->
 The caution is not ours to invent, and it is worth quoting from the literature
-itself. Discussing an alternative arrangement, Moore [7] writes:
+itself. Discussing an alternative arrangement, Moore (2005) writes:
 
 > "Shao Yong's 'Fu Xi' order of the hexagrams, being a Song dynasty production,
 > is too late to concern us here; besides, it was never intended to order the
@@ -274,7 +274,7 @@ is reported under all four rather than under the most favourable one.
 
 <!-- origen: PRIOR-ART.md 5.3; Schoter, The Oracle Vol 2 No 7, Summer 1998,
      Definition 6, "Sequence Parameters". Interseccion declarada en NOVELTY.md -->
-The second of those two choices is not ours. Schöter [13] parametrises the counting
+The second of those two choices is not ours. Schöter (1998) parametrises the
 orders of the hexagrams by, among other things, "whether the lower or upper line
 is the least significant bit", and names the two readings Rising Yang and Sinking
 Yang. We use that parameter and do not present it as new.
@@ -300,7 +300,7 @@ paper is the number of discordant pairs.
 counted **between the ordering and a fixed reference order**, in the standard
 sense of rank correlation, where a pair is concordant when two rankings agree on
 it and discordant when they disagree. It is the same object as the combinatorial
-inversion number: Björner and Brenti [1] define, in their equation (1.25),
+inversion number: Björner and Brenti (2005) define, in their equation (1.25),
 inv(x) = card{(i, j) : i < j, x(i) > x(j)}, which is exactly the count above with
 the reference order as the second ranking. It is also the quantity in the
 numerator of Kendall's tau, whose denominator is the same C(N, 2), so the value
@@ -317,17 +317,20 @@ here, once, rather than in a closing note.
      termino chino, Cook, Drasny con zonggua, Moore con invertible -->
 **Inversion.** In the sinological literature on the Yijing, *inversion* names the
 180 degree turn of a hexagram, *fandui*, which is a symmetry of the figure and
-not a discordant pair. Gritter [5] states the two pairing principles as inversion and
-opposition and gives the Chinese terms; Cook [2] devotes a chapter to inversion and
-obversion; Drasny [3] writes of inverses of hexagrams, *zonggua*; Moore [7]
-speaks of invertible pairs. In this paper *inversion* is never used for the statistic.
+not a discordant pair. Gritter (2015) states the two pairing principles as
+inversion and opposition and gives the Chinese terms; Cook (2006) devotes a
+chapter to inversion and obversion; Drasny (n.d.) writes of inverses of
+hexagrams, *zonggua*; and Moore (2005) speaks of invertible pairs. In this
+paper *inversion* is never used for the statistic.
 
 <!-- origen: PRIOR-ART.md 2 y 7; Radisic 4.3 y Mutze 3.2, los dos verificados
      contra su PDF -->
-**Balance.** The word is occupied twice over in the neighbourhood. Radisic [10] uses
+**Balance.** The word is occupied twice over in the neighbourhood. Radisic
+(2026) uses
 it for Hamming weight, writing that weight preservation "may be viewed as
 preservation of yin-yang balance" and adding at once that formally it is Hamming
-weight. In the Gray code literature Mütze [8] defines a *balanced* Gray code by the
+weight. In the Gray code literature Mütze (2023) defines a *balanced* Gray code
+by the
 condition that the transition counts satisfy |c_i - 2^n/n| < 2, that is, a
 condition on how often each coordinate flips. Neither is the quantity studied
 here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
@@ -336,7 +339,7 @@ here, and we therefore call C(N, 2)/2 the **tie** and not the balance point.
 **Length in type B.** This is the subtlest of the three, because we name B_n and
 we count inversions in the same breath. In Coxeter theory the length function of
 a group of type B is a count of certain inversions of signed permutations, as
-Björner and Brenti [1] describe in their sections 8.1 and 8.2. That is not our
+Björner and Brenti (2005) describe in their sections 8.1 and 8.2. That is not our
 count. Here B_n is only the group acting on the vertices, and the discordant
 pairs are those of the ordering against the binary reference order, not the
 Coxeter length of any element of B_n.
@@ -429,7 +432,7 @@ since the orbits partition the set of pairs, the total is half of C(N, 2). QED
      1008 = results/measurements.tsv:7 valor.esperado.por.azar -->
 **Prior owner of the germ.** The idea that an involution which sends the count to
 its complement forces the average to one half on every orbit is the founding
-example of the homomesy literature. Propp and Roby [9], in section 2.1 of
+example of the homomesy literature. Propp and Roby (2015), in section 2.1 of
 arXiv:1310.5201v6, take the permutations of {1, ..., n}, let tau send a
 permutation to its reversal and f be the number of inversions, and observe that
 since tau squared is the identity and f(pi) + f(tau(pi)) = n(n-1)/2, the
@@ -448,7 +451,7 @@ pairs on which the position permutation preserves the order.
 <!-- origen: NOVELTY.md, alcance; PRIOR-ART.md 14.5 -->
 In the vocabulary of that literature, the corollary above says that the indicator
 of discordance is 1/2-mesic on the forced orbits, in the sense of Definition 1 of
-Propp and Roby [9]. We use the term and do not present it as ours.
+Propp and Roby (2015). We use the term and do not present it as ours.
 
 ## 3.3 Forcing by a uniform witness
 
@@ -468,8 +471,9 @@ checked on its own: run through the orbit and verify that epsilon is one.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 14.2, punto 1, survey
      de Roby, Example 4, pagina 4, verificado contra el PDF -->
 **Prior owner of the mechanism.** The mechanism of this lemma is stated in one
-line in Roby's survey of homomesy [12], in his Example 4 on inversions under the
-ninety degree rotation of permutation matrices, whose average is again n(n-1)/4:
+line in Roby's (n.d.) survey of homomesy, in his Example 4 on inversions under
+the ninety degree rotation of permutation matrices, whose average is again
+n(n-1)/4:
 "the proof of homomesy is easy: Q takes inversions to non-inversions, and
 vice-versa." That is the witness argument, said there for another object.
 
@@ -531,7 +535,8 @@ freedom that the construction leaves, and the interval they define is the object
 of the sections that follow.
 
 <!-- origen: PRIOR-ART.md 14.3, artefacto leido en identidad y definicion -->
-The other large phenomenon of this area, cyclic sieving [11], is a different
+The other large phenomenon of this area, cyclic sieving (Reiner et al., 2004),
+is a different
 question again: it counts the fixed points of a cyclic action through a
 generating function at roots of unity, not the average of a statistic over
 orbits. It is named here to place the work, and is not used.
@@ -984,7 +989,8 @@ half turn leaves fixed, paired among themselves by complementation.
 <!-- CITA, DONDE VIVE EL RESULTADO. origen: PRIOR-ART.md 1.4 y PROOFS.md 3.1,
      linea de cita; artefacto Radisic arXiv:2601.07175v3, Teorema 3.3 -->
 **Prior owner of this characterisation.** It is the complete equivariance of
-Radisic [10], Theorem 3.3 of arXiv:2601.07175v3, which states that every King Wen pair
+Radisic (2026), Theorem 3.3 of arXiv:2601.07175v3, which states that every King
+Wen pair
 is either the complement or the reversal of its partner and splits the 32
 pairs into palindromes paired by complement, anti-symmetric ones where reversal
 and complement coincide, and generic ones paired by reversal. That statement has
@@ -1038,7 +1044,8 @@ missed by a small amount, it is absent from the list.
 <!-- origen: DEFINICIONES-RESIDUO5.md, lista cerrada declarada antes de medir -->
 A closed list of five candidate structures was declared before measuring
 anything: the nuclear hexagram operation with its exact definition, the two part
-division of the received sequence, whose literature has a located owner [6], and three maps defined through the positions.
+division of the received sequence, whose literature has a located owner (Hacker
+& Moore, 2003), and three maps defined through the positions.
 Nothing outside that list was tried.
 
 <!-- origen: INFORME-RESIDUO5.md 2.1 y 2.2 -->
@@ -1547,8 +1554,9 @@ is relative to the list precisely so that this remains possible.
 
 <!-- origen: PRIOR-ART.md 1.2, artefacto Radisic leido entero; el emparejamiento
      de prioridad de reversion y su unicidad -->
-There is one route we can name rather than gesture at. Radisic [10] proves that the
-pairing of the third ordering is the unique cost-minimising equivariant matching
+There is one route we can name rather than gesture at. Radisic (2026) proves
+that the pairing of the third ordering is the unique cost-minimising equivariant
+matching
 under his criteria. Conditioning on that matching leaves a family of orderings:
 all those that realise it, differing only in the order of the pairs and in the
 orientation within each pair. Inside that family, the received ordering is one
@@ -1567,8 +1575,8 @@ reading with these numbers or with larger ones.
 The method that would govern it has a name and a citable version, given here as a
 pointer and not as a read artefact: the stopping-criterion work of the same
 author on nested reference sets, *Uninformative rungs: an order-theoretic
-stopping criterion for nested reference sets* [4], deposited at
-doi 10.5281/zenodo.21750029. We have not read it in the course of this work and
+stopping criterion for nested reference sets* (García Hurtado, 2026), deposited
+at doi 10.5281/zenodo.21750029. We have not read it in the course of this work and
 make no claim about its contents; we name it as the framework under which the
 question above would have to be posed.
 
@@ -1653,13 +1661,13 @@ preregistration was left unamended, and the prediction was not cashed.
      nada del objeto de estudio. Las cifras salen de results/effort.tsv, que
      emite el propio registro con `python tools/effort.py export`, y se cuentan
      hasta el ultimo cierre de sesion. -->
-<!-- CIFRAS: 149 = results/effort.tsv:7 registros;
-     29 = results/effort.tsv:9 sesiones.cerradas;
+<!-- CIFRAS: 153 = results/effort.tsv:7 registros;
+     30 = results/effort.tsv:9 sesiones.cerradas;
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: 29
-closed sessions in 149 records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: 30
+closed sessions in 153 records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
 verifier reports it, and the chain currently verifies with 0 problems; the
 tool that writes the log has no operation that rewrites or deletes. Exactly 1
@@ -1668,16 +1676,16 @@ is not equivalent to one taken live, which is the only honest thing to do with a
 log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
-<!-- CIFRAS: 97 = results/effort.tsv:17 ficheros.clasificados;
-     7085 = results/effort.tsv:19 lineas.de.aparato;
-     12891 = results/effort.tsv:20 lineas.de.analisis;
+<!-- CIFRAS: 98 = results/effort.tsv:17 ficheros.clasificados;
+     7373 = results/effort.tsv:19 lineas.de.aparato;
+     12911 = results/effort.tsv:20 lineas.de.analisis;
      313 = results/effort.tsv:22 lineas.extraidas;
-     19976 = results/effort.tsv:21 lineas.totales -->
+     20284 = results/effort.tsv:21 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, 97 files were classified, over 19976 lines: 7085 of apparatus
-against 12891 of analysis, of which 313 lines are extracted from
+point, 98 files were classified, over 20284 lines: 7373 of apparatus
+against 12911 of analysis, of which 313 lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->
@@ -1777,8 +1785,8 @@ Each entry records the identity as the literature review fixed it, and whether t
    *Status:* read in the cited part, Section 3.2 on p. 11, verified against the PDF.
 9. Propp, J., & Roby, T. (2015). *Homomesy in products of two chains* (Version 6) [Preprint]. arXiv. https://arxiv.org/abs/1310.5201v6  
    *Status:* read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand, since the artefact read is the arXiv version.
-10. Radisic, A. *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
-   *Status:* read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing.
+10. Radisic, A. (2026). *Optimal equivariant matchings on the 6-cube: With an application to the King Wen sequence* (Version 3) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3  
+   *Status:* read in full, eleven pages; its Appendix A was transcribed and collated against our data, all sixty four positions agreeing. The year comes from the header of version 3, dated 25 May 2026, recorded when the artefact was read.
 11. Reiner, V., Stanton, D., & White, D. (2004). The cyclic sieving phenomenon. *Journal of Combinatorial Theory, Series A*, *108*(1), 17–50. https://doi.org/10.1016/j.jcta.2004.04.009  
    *Status:* read in identity and definition; cited for context, since it counts fixed points and not orbit averages.
 12. Roby, T. *Dynamical algebraic combinatorics and the homomesy phenomenon*. Example 1, p. 3; Section 2.1 and Example 4, p. 4.  

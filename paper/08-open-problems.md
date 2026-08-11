@@ -83,8 +83,9 @@ is relative to the list precisely so that this remains possible.
 
 <!-- origen: PRIOR-ART.md 1.2, artefacto Radisic leido entero; el emparejamiento
      de prioridad de reversion y su unicidad -->
-There is one route we can name rather than gesture at. Radisic [10] proves that the
-pairing of the third ordering is the unique cost-minimising equivariant matching
+There is one route we can name rather than gesture at. Radisic (2026) proves
+that the pairing of the third ordering is the unique cost-minimising equivariant
+matching
 under his criteria. Conditioning on that matching leaves a family of orderings:
 all those that realise it, differing only in the order of the pairs and in the
 orientation within each pair. Inside that family, the received ordering is one
@@ -103,8 +104,8 @@ reading with these numbers or with larger ones.
 The method that would govern it has a name and a citable version, given here as a
 pointer and not as a read artefact: the stopping-criterion work of the same
 author on nested reference sets, *Uninformative rungs: an order-theoretic
-stopping criterion for nested reference sets* [4], deposited at
-doi 10.5281/zenodo.21750029. We have not read it in the course of this work and
+stopping criterion for nested reference sets* (García Hurtado, 2026), deposited
+at doi 10.5281/zenodo.21750029. We have not read it in the course of this work and
 make no claim about its contents; we name it as the framework under which the
 question above would have to be posed.
 

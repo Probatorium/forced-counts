@@ -22,6 +22,17 @@ informacion del propio fichero, y lo coteja contra el estado del repositorio:
   5. que el .tex y el PDF declaren el mismo sha256, para que no puedan haber
      salido de dos manuscritos distintos.
 
+DOS PDF Y UN SOLO CANONICO. El canonico es paper/PAPER.pdf, compilado con LaTeX
+desde PAPER.tex por quien tenga la cadena, y no se puede producir en esta
+maquina. El de aqui es paper/PAPER-preview.pdf, compuesto con reportlab, y no va
+al deposito.
+
+Mientras el canonico no ha llegado, el puente NO se calla y NO da un verde
+vacio: lee paper/PDF-STATE.tsv, que declara el estado, e imprime en cada corrida
+que falta. Sobre el preview si comprueba lo que puede, que es que corresponda al
+manuscrito de ahora. En cuanto el estado dice que el canonico esta entregado, lo
+exige y lo valida como se validaba antes, y falla si no esta.
+
   python src/pdf_bridge.py            coteja
   python src/pdf_bridge.py --prueba   exige ver el puente romperse y rehacerse
 
@@ -38,7 +49,9 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, "paper", "PAPER.md")
 TEX = os.path.join(ROOT, "paper", "PAPER.tex")
-PDF = os.path.join(ROOT, "paper", "PAPER.pdf")
+PDF = os.path.join(ROOT, "paper", "PAPER.pdf")            # el canonico
+PREVIEW = os.path.join(ROOT, "paper", "PAPER-preview.pdf")  # el de aqui
+ESTADO = os.path.join(ROOT, "paper", "PDF-STATE.tsv")
 OUT = os.path.join(ROOT, "results", "pdf-bridge.tsv")
 
 ROWS = []
@@ -56,6 +69,19 @@ def check(k, cond, n=""):
     emit(k, int(bool(cond)), n)
     if not cond:
         FALLOS.append(k + ("  " + n if n else ""))
+
+
+def estado_declarado():
+    """Lo que paper/PDF-STATE.tsv dice del PDF canonico."""
+    if not os.path.exists(ESTADO):
+        return "sin declarar"
+    for l in open(ESTADO, encoding="utf-8"):
+        if l.startswith("#") or not l.strip():
+            continue
+        c = l.rstrip("\n").split("\t")
+        if len(c) >= 2 and c[0] == "estado":
+            return c[1]
+    return "sin declarar"
 
 
 def normaliza(datos):
@@ -78,7 +104,8 @@ def git(*args):
 
 def colofon_del_pdf():
     """El colofon tal y como el PDF lo lleva dentro, sin intermediarios."""
-    datos = open(PDF, "rb").read().decode("latin-1")
+    datos = open(globals().get("PDF_EN_USO", PDF),
+                 "rb").read().decode("latin-1")
     m = re.search(r"/Subject\s*\(([^)]*)\)", datos)
     if not m:
         return None
@@ -155,8 +182,43 @@ def prueba():
 
 
 def main():
-    for ruta, nombre in ((MD, "PAPER.md"), (TEX, "PAPER.tex"), (PDF, "PAPER.pdf")):
+    for ruta, nombre in ((MD, "PAPER.md"), (TEX, "PAPER.tex")):
         check("existe.%s" % nombre, os.path.exists(ruta))
+
+    est = estado_declarado()
+    emit("estado.declarado.del.pdf.canonico", est,
+         "sale de paper/PDF-STATE.tsv")
+    hay_canonico = os.path.exists(PDF)
+    emit("el.pdf.canonico.esta", int(hay_canonico), "")
+
+    if est == "esperando":
+        # Estado intermedio DECLARADO. No es un descuido, y no se pasa por alto:
+        # se dice en cada corrida. Lo que si se exige es que no haya un
+        # PAPER.pdf por ahi que nadie sepa de donde salio.
+        check("mientras.se.espera.no.hay.un.pdf.canonico.sin.origen",
+              not hay_canonico,
+              "el estado dice que el canonico esta por llegar, y hay un fichero "
+              "en su sitio: o el estado esta desactualizado o ese PDF no se "
+              "sabe de donde sale")
+        print("PDF CANONICO PENDIENTE. El estado declarado es 'esperando': "
+              "paper/PAPER.pdf lo entrega el auditor compilado desde "
+              "paper/PAPER.tex.")
+        if os.path.exists(PREVIEW):
+            usar = PREVIEW
+            emit("se.coteja.contra", "el preview, a falta del canonico", "")
+        else:
+            check("hay.al.menos.un.pdf.que.cotejar", False,
+                  "ni canonico ni preview: no hay nada que comprobar")
+            return informe()
+    else:
+        check("el.pdf.canonico.existe", hay_canonico,
+              "el estado dice que esta entregado, asi que tiene que estar")
+        if not hay_canonico:
+            return informe()
+        usar = PDF
+        emit("se.coteja.contra", "el PDF canonico", "")
+
+    globals()["PDF_EN_USO"] = usar
     if FALLOS:
         return informe()
 

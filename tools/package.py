@@ -76,8 +76,15 @@ COMPROBADORES = [
     "src/pdf_bridge.py",
 ]
 
-# Ficheros que no son nuestros. Cada uno con lo que hay que saber para
-# conseguirlo por su cuenta, que es lo que sustituye al fichero en el paquete.
+# Ficheros que NO viajan en el paquete depositado. Son de dos clases y por dos
+# razones distintas, y por eso cada entrada dice cual es la suya:
+#
+#   tercero   material que no se escribio aqui. Se filtra porque un deposito es
+#             inmutable y lo que no se puede retirar no entra.
+#   preview   material nuestro que no debe confundirse con el canonico. El PDF
+#             de reportlab se filtra porque el PDF del deposito es el que
+#             compila LaTeX, y dos PDF en el mismo paquete son una invitacion a
+#             depositar el que no toca.
 TERCEROS = [
     ("data/sequences.json",
      "Las tres secuencias, extraidas del paquete de replicacion "
@@ -91,6 +98,12 @@ TERCEROS = [
      "Se obtiene descargando ese articulo de arXiv y transcribiendo su "
      "apendice A. Aqui solo se usa como objeto de comparacion, nunca como "
      "fuente de ningun computo."),
+    ("paper/PAPER-preview.pdf",
+     "PREVIEW compuesto aqui con reportlab desde el mismo modelo intermedio "
+     "que el .tex. NO es el PDF canonico del articulo.",
+     "Se regenera con python src/build_paper.py. El PDF canonico es "
+     "paper/PAPER.pdf, que compila LaTeX desde paper/PAPER.tex y que no se "
+     "puede producir en la maquina donde se escribio este repositorio."),
 ]
 
 # Lineas que NO pueden reproducirse, porque no miden el objeto de estudio sino
@@ -190,7 +203,8 @@ def clon_limpio(destino, rapido):
     # que el clon reciba los ficheros byte a byte como estan aqui: es donde se
     # cazan las conversiones de fin de linea que corrompen un binario
     iguales = 0
-    for rel in ("paper/PAPER.pdf", "paper/PAPER.tex", "paper/PAPER.md"):
+    for rel in ("paper/PAPER-preview.pdf", "paper/PAPER.pdf",
+                "paper/PAPER.tex", "paper/PAPER.md"):
         a, b = os.path.join(ROOT, rel), os.path.join(destino, rel)
         if os.path.exists(a) and os.path.exists(b):
             mismo = open(a, "rb").read() == open(b, "rb").read()
@@ -427,6 +441,19 @@ def main():
                            capture_output=True, text=True).stdout.strip()
     emit("arbol.limpio.al.empaquetar", "no" if sucio else "si",
          "lo que se clona es lo commiteado, no lo que hay sin commitear")
+
+    est = "sin declarar"
+    ruta_est = os.path.join(ROOT, "paper", "PDF-STATE.tsv")
+    if os.path.exists(ruta_est):
+        for l in open(ruta_est, encoding="utf-8"):
+            c = l.rstrip("\n").split("\t")
+            if len(c) >= 2 and c[0] == "estado":
+                est = c[1]
+    emit("estado.del.pdf.canonico", est,
+         "esperando quiere decir que el PDF del deposito todavia no esta, "
+         "porque lo compila quien tenga LaTeX")
+    emit("el.pdf.canonico.esta.en.el.arbol",
+         int(os.path.exists(os.path.join(ROOT, "paper", "PAPER.pdf"))), "")
 
     tmp = os.path.join(os.environ.get("TEMP", "/tmp"), "forced-counts-paquete")
     os.makedirs(tmp, exist_ok=True)

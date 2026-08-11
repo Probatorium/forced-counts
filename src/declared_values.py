@@ -83,6 +83,12 @@ ENTRADA = re.compile(
 # su motivo, y el informe cuenta cuantas veces aplica cada una. Nada se exime en
 # silencio.
 MASCARAS = [
+    ("cita.de.autor.y.ano",
+     r"\((?:\d{4}|n\.d\.)\)|,\s*(?:\d{4}|n\.d\.)\)",
+     "el ano de una cita en el texto es una fecha de publicacion, no una "
+     "medicion; desde que el texto cita por autor y ano hay mas de estas que "
+     "de citas numericas, y sin la mascara el congelador pediria procedencia "
+     "de results para el ano de un articulo ajeno"),
     ("cita.numerica",
      r"\[\d{1,2}(?:\s*,\s*\d{1,2})*\]",
      "el numero entre corchetes es una referencia, no una medicion; desde que "
