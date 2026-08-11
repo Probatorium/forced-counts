@@ -71,6 +71,97 @@ def check(k, cond, n=""):
         FALLOS.append(k + ("  " + n if n else ""))
 
 
+def campo_declarado(clave):
+    """Un campo de paper/PDF-STATE.tsv."""
+    if not os.path.exists(ESTADO):
+        return ""
+    for l in open(ESTADO, encoding="utf-8"):
+        if l.startswith("#") or not l.strip():
+            continue
+        c = l.rstrip("\n").split("\t")
+        if len(c) >= 2 and c[0] == clave:
+            return c[1]
+    return ""
+
+
+def texto_del_pdf(ruta):
+    """El texto que el PDF lleva dentro, descomprimiendo sus flujos.
+
+    El canonico lo compone pdfTeX y viene comprimido, asi que hay que inflarlo
+    antes de poder leer nada. Esto es lo que permite validarlo POR CONTENIDO en
+    vez de por metadatos: un colofon en el diccionario de informacion lo
+    escribimos nosotros, mientras que el sha256 impreso en la ultima pagina solo
+    puede estar ahi si el .tex del que salio lo llevaba.
+    """
+    import zlib
+    datos = open(ruta, "rb").read()
+    cadena = re.compile(rb"\((?:\\.|[^\\()])*\)", re.S)
+    trozos = []
+    for m in re.finditer(rb"stream\r?\n(.*?)endstream", datos, re.S):
+        try:
+            s = zlib.decompress(m.group(1))
+        except Exception:
+            continue
+        for x in cadena.finditer(s):
+            u = x.group(0)[1:-1]
+            u = re.sub(rb"\\([()\\])", rb"\1", u)
+            u = re.sub(rb"\\([0-7]{1,3})",
+                       lambda mm: bytes([int(mm.group(1), 8) & 0xFF]), u)
+            trozos.append(u.decode("latin-1"))
+    return "".join(trozos)
+
+
+def valida_canonico():
+    """Comprueba el PDF entregado contra el manuscrito, por contenido.
+
+    Cuatro cosas, y ninguna se apoya en metadatos escritos por nosotros:
+
+      1. sus bytes son los que el estado declara, que son los que se
+         verificaron por sha256 antes de dejarlo entrar;
+      2. el sha256 del manuscrito de AHORA aparece impreso dentro del PDF, cosa
+         que solo puede pasar si el .tex del que salio llevaba ese colofon;
+      3. el commit que ese colofon nombra existe en esta historia;
+      4. los cinco nombres con diacritico llegaron compuestos.
+    """
+    datos = open(PDF, "rb").read()
+    sha = hashlib.sha256(datos).hexdigest()
+    emit("canonico.bytes", len(datos), "")
+    emit("canonico.sha256", sha, "")
+    emit("canonico.productor",
+         (re.findall(r"/Producer\s*\(([^)]*)\)",
+                     datos.decode("latin-1")) or ["sin declarar"])[0], "")
+    check("el.canonico.es.el.fichero.declarado", sha == campo_declarado("sha256"),
+          "los bytes no son los que se verificaron al entregarlo")
+
+    texto = texto_del_pdf(PDF)
+    plano = re.sub(r"\s+", "", texto)
+    emit("canonico.caracteres.extraidos", len(texto), "")
+    check("del.canonico.se.puede.extraer.texto", len(texto) > 10000,
+          "sin texto no hay nada que cotejar y la comprobacion pasaria en vacio")
+
+    ahora = hashlib.sha256(normaliza(open(MD, "rb").read())).hexdigest()
+    emit("sha256.del.manuscrito.de.ahora", ahora, "")
+    check("el.canonico.lleva.impreso.el.sha.del.manuscrito.de.ahora",
+          ahora in plano,
+          "el PDF entregado no salio de este manuscrito, o el manuscrito ha "
+          "cambiado desde que se compilo: en cualquiera de los dos casos se "
+          "debe una version nueva")
+
+    m = re.search(r"commit\s*\n?\\texttt\{([^}]*)\}",
+                  open(TEX, encoding="utf-8").read())
+    commit = m.group(1).replace("\\allowbreak ", "") if m else ""
+    emit("commit.del.colofon", commit or "no encontrado", "")
+    check("el.canonico.lleva.impreso.ese.commit", bool(commit) and commit in plano)
+    check("ese.commit.existe.en.esta.historia",
+          bool(commit) and git("cat-file", "-t", commit) == "commit")
+
+    faltan = [w for w in ("Garc\u00eda", "Bj\u00f6rner", "M\u00fctze",
+                          "Sch\u00f6ter", "Lafreni\u00e8re") if w not in texto]
+    emit("canonico.acentos.ausentes",
+         " ".join(faltan) if faltan else "ninguno", "")
+    check("los.diacriticos.llegaron.compuestos.al.canonico", not faltan)
+
+
 def estado_declarado():
     """Lo que paper/PDF-STATE.tsv dice del PDF canonico."""
     if not os.path.exists(ESTADO):
@@ -215,8 +306,15 @@ def main():
               "el estado dice que esta entregado, asi que tiene que estar")
         if not hay_canonico:
             return informe()
-        usar = PDF
-        emit("se.coteja.contra", "el PDF canonico", "")
+        emit("se.coteja.contra", "el PDF canonico y, aparte, el preview", "")
+        valida_canonico()
+        # El preview sigue teniendo su propia comprobacion, la de siempre, con
+        # su colofon en el diccionario de informacion: son dos artefactos
+        # distintos y cada uno se comprueba con lo que lleva dentro.
+        usar = PREVIEW
+        check("el.preview.esta", os.path.exists(PREVIEW))
+        if not os.path.exists(PREVIEW):
+            return informe()
 
     globals()["PDF_EN_USO"] = usar
     if FALLOS:

@@ -2,10 +2,24 @@
 # clave	valor	nota
 existe.PAPER.md	1	
 existe.PAPER.tex	1	
-estado.declarado.del.pdf.canonico	esperando	sale de paper/PDF-STATE.tsv
-el.pdf.canonico.esta	0	
-mientras.se.espera.no.hay.un.pdf.canonico.sin.origen	1	el estado dice que el canonico esta por llegar, y hay un fichero en su sitio: o el estado esta desactualizado o ese PDF no se sabe de donde sale
-se.coteja.contra	el preview, a falta del canonico	
+estado.declarado.del.pdf.canonico	entregado	sale de paper/PDF-STATE.tsv
+el.pdf.canonico.esta	1	
+el.pdf.canonico.existe	1	el estado dice que esta entregado, asi que tiene que estar
+se.coteja.contra	el PDF canonico y, aparte, el preview	
+canonico.bytes	370771	
+canonico.sha256	87b934d9ddf7b32aa61599dff0492654366305245c27df4465e3d74f7b11733e	
+canonico.productor	pdfTeX-1.40.25	
+el.canonico.es.el.fichero.declarado	1	los bytes no son los que se verificaron al entregarlo
+canonico.caracteres.extraidos	133810	
+del.canonico.se.puede.extraer.texto	1	sin texto no hay nada que cotejar y la comprobacion pasaria en vacio
+sha256.del.manuscrito.de.ahora	4717d4f848fc7549864c1d4390e74dbb3472f3b720b49ddd7bc7e56915d59060	
+el.canonico.lleva.impreso.el.sha.del.manuscrito.de.ahora	1	el PDF entregado no salio de este manuscrito, o el manuscrito ha cambiado desde que se compilo: en cualquiera de los dos casos se debe una version nueva
+commit.del.colofon	b4a62fa28a7acc33079250213f79d97026bd476b	
+el.canonico.lleva.impreso.ese.commit	1	
+ese.commit.existe.en.esta.historia	1	
+canonico.acentos.ausentes	ninguno	
+los.diacriticos.llegaron.compuestos.al.canonico	1	
+el.preview.esta	1	
 el.pdf.lleva.colofon.legible	1	sin colofon dentro del fichero no hay puente que cotejar
 colofon.commit	b4a62fa28a7acc33079250213f79d97026bd476b	
 colofon.fecha	2026-08-10	
@@ -14,9 +28,9 @@ colofon.comprobaciones	62
 sha256.del.manuscrito.de.ahora	4717d4f848fc7549864c1d4390e74dbb3472f3b720b49ddd7bc7e56915d59060	
 el.pdf.corresponde.al.manuscrito.de.ahora	1	el texto ha cambiado desde que se construyo el PDF: se debe una version nueva, hay que volver a correr src/build_paper.py
 el.commit.del.colofon.existe.en.esta.historia	1	
-head.actual	b4a62fa28a7acc33079250213f79d97026bd476b	
-commits.desde.el.del.colofon	0	cero quiere decir que el PDF es del estado actual
-el.pdf.retrata.el.head.actual	1	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
+head.actual	6b8a145d6eab7f93761b5ce19aab5dd9d3ff4dd8	
+commits.desde.el.del.colofon	1	cero quiere decir que el PDF es del estado actual
+el.pdf.retrata.el.head.actual	0	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
 comprobaciones.en.verde.ahora	62	
 el.recuento.de.comprobaciones.no.ha.cambiado	1	los comprobadores dan hoy un numero distinto del que el PDF declara
 el.tex.declara.el.mismo.sha256.que.el.pdf	1	el .tex y el PDF tienen que haber salido del mismo manuscrito

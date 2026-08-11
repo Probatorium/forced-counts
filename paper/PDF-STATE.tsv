@@ -2,15 +2,19 @@
 #
 # El PDF canonico es el que compila LaTeX desde paper/PAPER.tex, y esa
 # compilacion no se puede hacer en esta maquina: no hay cadena de LaTeX.
-# La hace el auditor desde un clon limpio y entrega el fichero, que se
-# commitea despues como paper/PAPER.pdf.
+# ENTREGADO. El fichero llego compilado desde fuera, su sha256 se verifico
+# contra el declarado ANTES de moverlo a su sitio, y coincide.
 #
-# Este fichero existe para que el estado intermedio sea DECLARADO y no
-# se confunda con un descuido. El puente lo lee: mientras diga
-# 'esperando', no exige el PDF canonico y avisa en cada corrida de que
-# falta; en cuanto diga 'entregado', lo exige y lo valida.
+# El puente lo lee: con el estado en entregado exige el fichero y lo
+# valida por contenido, no por metadatos que hubieramos escrito nosotros.
 #
 # clave	valor	nota
-estado	esperando	esperando la compilacion del auditor desde PAPER.tex
-canonico	paper/PAPER.pdf	lo entrega el auditor, compilado con LaTeX
-preview	paper/PAPER-preview.pdf	compuesto aqui con reportlab
+estado	entregado	verificado por sha256 antes de entrar al repositorio
+canonico	paper/PAPER.pdf	el del deposito
+preview	paper/PAPER-preview.pdf	compuesto aqui con reportlab, no va al deposito
+sha256	87b934d9ddf7b32aa61599dff0492654366305245c27df4465e3d74f7b11733e	del fichero entregado
+bytes	370771	
+productor	pdfTeX-1.40.25	leido del propio fichero
+compilado.desde	6b8a145	clon limpio de ese commit
+colofon.nombra.el.commit	b4a62fa	el commit de contenido del que salio el .tex
+quien.compilo	externo a esta maquina	aqui no hay cadena de LaTeX
