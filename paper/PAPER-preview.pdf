@@ -252,8 +252,8 @@ endobj
 endobj
 29 0 obj
 <<
-/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810224115-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc) /ModDate (D:20260810224115-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=10fcc49631105f3b2eca4320ba2ccfba483b628a fecha=2026-08-10 sha256=0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc comprobaciones=62 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810224141-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc) /ModDate (D:20260810224141-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=85d6eee399a57f4201ed1ec86cf467b3aea80393 fecha=2026-08-10 sha256=0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc comprobaciones=62 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 30 0 obj
@@ -4095,14 +4095,14 @@ endstream
 endobj
 52 0 obj
 <<
-/Length 461
+/Length 460
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 78 733.8898 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.262679 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 10fcc49631105f3b2eca4320ba2ccfba483b628a, dated 2026-08-10.) Tj T* 0 Tw .725249 Tw (Working tree clean: si. sha256 of the manuscript: 0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc.) Tj T* 0 Tw (Checks green at build time: 62.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm .923719 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 85d6eee399a57f4201ed1ec86cf467b3aea80393, dated 2026-08-10.) Tj T* 0 Tw .725249 Tw (Working tree clean: si. sha256 of the manuscript: 0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc.) Tj T* 0 Tw (Checks green at build time: 62.) Tj T* ET
 Q
 Q
  
@@ -4166,7 +4166,7 @@ xref
 trailer
 <<
 /ID 
-[<a500493515239f3bc314a3bf5b0de7f9><a500493515239f3bc314a3bf5b0de7f9>]
+[<1fa374392bd926f26781660680450e8f><1fa374392bd926f26781660680450e8f>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 29 0 R
@@ -4174,5 +4174,5 @@ trailer
 /Size 53
 >>
 startxref
-153252
+153251
 %%EOF
