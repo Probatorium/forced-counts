@@ -52,6 +52,9 @@ hypothesis is necessary, by an exhibited witness.
      957 = results/group-measurements.tsv:169 cuenta.R1.KingWen.minimo;
      1059 = results/group-measurements.tsv:170 cuenta.R1.KingWen.maximo;
      52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables -->
+The apparatus and its three theorems are the contribution; what follows is where
+they came from and what they first settled.
+
 Applied to three constructed orderings of the 6-cube that have come down to us,
 with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the
 constructions force the count to 1008, and for one of them the demonstration
@@ -119,6 +122,14 @@ hyperoctahedral group B_n, which permutes coordinates and complements subsets of
 them. An ordering is a bijection from positions to vertices; a construction
 partitions it into blocks; and the group of interest is the subgroup of B_n that
 sends every block onto a block.
+
+<!-- JERARQUIA DE CONTRIBUCION, dicha una vez y aqui, para que el lector sepa
+     desde el principio que pesa mas. origen: NOVELTY.md, alcance -->
+What the paper contributes is the general apparatus: the orbit accounting, the
+parity obstruction and the two characterisation theorems of sections 3 to 5,
+which are stated and proved for an arbitrary dimension and an arbitrary subgroup.
+The three constructed orderings below are the motivation for that apparatus and
+its first application, not the result it is built to deliver.
 
 <!-- origen: data/PROVENANCE.md; INFORME.md -->
 Three orderings of the 6-cube carry the concrete weight of the paper. They come
@@ -1258,11 +1269,12 @@ free orbits still spread the deviation across almost all of them.
 > decomposition exists, it is complete, and it has no culprit.
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace; la frase de cierre -->
-**The mathematics reaches bottom where editorial choice begins.** What remains of
-the difference, once the symmetry that the construction respects has been
-exhausted and the four additional declared structures have been tried, is not a
-residue that structure can absorb. It is what the received sequence has of choice
-rather than of rule.
+**This is where the declared structures run out.** What remains of the
+difference, once the symmetry that the construction respects has been exhausted
+and the four additional declared structures have been tried, is not a residue
+that any of them absorbs. It is the part of the count that no declared structure
+determines, and that is a statement about the list of structures that were tried
+and about nothing else.
 
 <!-- GUARDA final. origen: NOVELTY.md, seccion NO SE AFIRMA -->
 That sentence is about the limits of this method, not about the people who
@@ -1429,7 +1441,8 @@ Where the space of those pairs has at most 5000 members it is traversed in full,
 and the row says *enumerated*. Where it is larger, 2000 pairs are drawn and the
 row says *sampled*. Each draw takes one permutation of the blocks and one of the
 inner positions, each uniform over its symmetric group and independent of the
-other, from a Mersenne Twister seeded once per row at 20260809, a seed frozen in
+other, from a Mersenne Twister seeded once per sampled row at 20260809, a seed
+frozen in
 the source before any of this was run. The draws are independent and are not
 deduplicated, so the sample is with replacement and a pair can in principle come
 up twice.
@@ -1726,13 +1739,13 @@ preregistration was left unamended, and the prediction was not cashed.
      nada del objeto de estudio. Las cifras salen de results/effort.tsv, que
      emite el propio registro con `python tools/effort.py export`, y se cuentan
      hasta el ultimo cierre de sesion. -->
-<!-- CIFRAS: 172 = results/effort.tsv:7 registros;
-     35 = results/effort.tsv:9 sesiones.cerradas;
+<!-- CIFRAS: 176 = results/effort.tsv:7 registros;
+     36 = results/effort.tsv:9 sesiones.cerradas;
      1 = results/effort.tsv:4 cadena.integra;
      0 = results/effort.tsv:5 problemas.de.la.cadena;
      1 = results/effort.tsv:16 retroactivos -->
-Every working session opens and closes an entry in an append only log: 35
-closed sessions in 172 records at the point this text was frozen. Each record
+Every working session opens and closes an entry in an append only log: 36
+closed sessions in 176 records at the point this text was frozen. Each record
 carries the previous record's hash, so editing an old line breaks the chain and a
 verifier reports it, and the chain currently verifies with 0 problems; the
 tool that writes the log has no operation that rewrites or deletes. Exactly 1
@@ -1742,15 +1755,15 @@ log that begins one commit late.
 
 <!-- origen: effort/classification.tsv y effort/README.md -->
 <!-- CIFRAS: 98 = results/effort.tsv:17 ficheros.clasificados;
-     7426 = results/effort.tsv:19 lineas.de.aparato;
-     13050 = results/effort.tsv:20 lineas.de.analisis;
+     7440 = results/effort.tsv:19 lineas.de.aparato;
+     13079 = results/effort.tsv:20 lineas.de.analisis;
      313 = results/effort.tsv:22 lineas.extraidas;
-     20476 = results/effort.tsv:21 lineas.totales -->
+     20519 = results/effort.tsv:21 lineas.totales -->
 The log also classifies every file as apparatus or analysis, separating what was
 written here from what was extracted, so that the proportion between building
 instruments and producing results is visible rather than anecdotal. At the same
-point, 98 files were classified, over 20476 lines: 7426 of apparatus
-against 13050 of analysis, of which 313 lines are extracted from
+point, 98 files were classified, over 20519 lines: 7440 of apparatus
+against 13079 of analysis, of which 313 lines are extracted from
 elsewhere and are not counted as written here.
 
 <!-- origen: los registros de tipo dead_end del propio log -->

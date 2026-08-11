@@ -19,9 +19,9 @@ enmascaradas.cita.numerica	0	el numero entre corchetes es una referencia, no una
 enmascaradas.titulo.de.seccion	58	el numero de un encabezado es el de la seccion, no una medicion
 enmascaradas.cita.verbatim	1	linea de cita literal de otro autor: sus cifras no son nuestras
 enmascaradas.identificador.bibliografico	6	identificador de un artefacto, no una medicion
-enmascaradas.referencia.cruzada	83	puntero interno o a otro texto, no una medicion
+enmascaradas.referencia.cruzada	84	puntero interno o a otro texto, no una medicion
 enmascaradas.simbolo	82	la cifra es parte de un simbolo matematico, no una medicion
-enmascaradas.indice	42	indice, coordenada o dimension nombrada, no una medicion
+enmascaradas.indice	43	indice, coordenada o dimension nombrada, no una medicion
 enmascaradas.indice.de.tabla	34	las columnas n y k de una fila de tabla son indices, no mediciones
 enmascaradas.recuento.de.filas	4	numero de filas de una tabla impresa en la propia seccion: el lector lo cuenta en la pagina, no sale de results
 enmascaradas.fecha	1	fecha de publicacion, no una medicion

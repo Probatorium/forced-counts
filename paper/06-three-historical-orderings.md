@@ -398,11 +398,12 @@ free orbits still spread the deviation across almost all of them.
 > decomposition exists, it is complete, and it has no culprit.
 
 <!-- origen: INFORME-RESIDUO5.md, desenlace; la frase de cierre -->
-**The mathematics reaches bottom where editorial choice begins.** What remains of
-the difference, once the symmetry that the construction respects has been
-exhausted and the four additional declared structures have been tried, is not a
-residue that structure can absorb. It is what the received sequence has of choice
-rather than of rule.
+**This is where the declared structures run out.** What remains of the
+difference, once the symmetry that the construction respects has been exhausted
+and the four additional declared structures have been tried, is not a residue
+that any of them absorbs. It is the part of the count that no declared structure
+determines, and that is a statement about the list of structures that were tried
+and about nothing else.
 
 <!-- GUARDA final. origen: NOVELTY.md, seccion NO SE AFIRMA -->
 That sentence is about the limits of this method, not about the people who

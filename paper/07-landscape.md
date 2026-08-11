@@ -154,7 +154,8 @@ Where the space of those pairs has at most 5000 members it is traversed in full,
 and the row says *enumerated*. Where it is larger, 2000 pairs are drawn and the
 row says *sampled*. Each draw takes one permutation of the blocks and one of the
 inner positions, each uniform over its symmetric group and independent of the
-other, from a Mersenne Twister seeded once per row at 20260809, a seed frozen in
+other, from a Mersenne Twister seeded once per sampled row at 20260809, a seed
+frozen in
 the source before any of this was run. The draws are independent and are not
 deduplicated, so the sample is with replacement and a pair can in principle come
 up twice.

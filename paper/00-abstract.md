@@ -43,6 +43,9 @@ hypothesis is necessary, by an exhibited witness.
      957 = results/group-measurements.tsv:169 cuenta.R1.KingWen.minimo;
      1059 = results/group-measurements.tsv:170 cuenta.R1.KingWen.maximo;
      52 = results/group-measurements.tsv:174 cuenta.R1.KingWen.totales_alcanzables -->
+The apparatus and its three theorems are the contribution; what follows is where
+they came from and what they first settled.
+
 Applied to three constructed orderings of the 6-cube that have come down to us,
 with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the
 constructions force the count to 1008, and for one of them the demonstration

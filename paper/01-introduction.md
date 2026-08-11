@@ -32,6 +32,14 @@ them. An ordering is a bijection from positions to vertices; a construction
 partitions it into blocks; and the group of interest is the subgroup of B_n that
 sends every block onto a block.
 
+<!-- JERARQUIA DE CONTRIBUCION, dicha una vez y aqui, para que el lector sepa
+     desde el principio que pesa mas. origen: NOVELTY.md, alcance -->
+What the paper contributes is the general apparatus: the orbit accounting, the
+parity obstruction and the two characterisation theorems of sections 3 to 5,
+which are stated and proved for an arbitrary dimension and an arbitrary subgroup.
+The three constructed orderings below are the motivation for that apparatus and
+its first application, not the result it is built to deliver.
+
 <!-- origen: data/PROVENANCE.md; INFORME.md -->
 Three orderings of the 6-cube carry the concrete weight of the paper. They come
 from a published replication package, read at a fixed tag, and they are of
