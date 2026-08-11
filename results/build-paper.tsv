@@ -4,16 +4,16 @@ el.titulo.del.manuscrito.es.el.congelado	1	la portada de PAPER.md manda
 la.portada.se.separa.del.cuerpo	1	los tres bloques de portada son los esperados y salen del cuerpo para no componerse dos veces
 bloques.de.portada.retirados	3	
 colofon.arbol_limpio	si	
-colofon.commit	b274a1ae9b0672cb7ebdfa8c2a4dca2fdb088a6e	
+colofon.commit	10fcc49631105f3b2eca4320ba2ccfba483b628a	
 colofon.comprobaciones_en_verde	62	
 colofon.fecha	2026-08-10	
-colofon.sha256_manuscrito	633f6329bde8a7a0e7511c868779fe5a153c9683805f757ddaedccb817194265	
-tex.bytes	80588	
-pdf.bytes	152610	
-pdf.caracteres.extraidos	75838	
+colofon.sha256_manuscrito	0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc	
+tex.bytes	81876	
+pdf.bytes	154543	
+pdf.caracteres.extraidos	77048	
 el.pdf.se.deja.leer	1	si no se puede extraer texto, no hay cotejo posible
-cifras.distintas.en.el.manuscrito	159	
-formas.de.cita.en.el.manuscrito	12	autor y ano, en sus dos formas, narrativa y entre parentesis
+cifras.distintas.en.el.manuscrito	167	
+formas.de.cita.en.el.manuscrito	13	autor y ano, en sus dos formas, narrativa y entre parentesis
 filas.de.tabla	37	
 celdas.distintas.de.tabla	91	
 hay.algo.que.cotejar	1	un cotejo sobre nada pasaria en vacio
@@ -36,7 +36,7 @@ ancho.de.texto.pt	450.7	A4 con geometry a una pulgada
 tabla.mas.ancha.estimada.pt	358.2	
 holgura.estimada.pt	92.5	
 las.tablas.caben.segun.la.estimacion	1	estimacion, no compilacion: la certifica quien compile
-tex.exentos.raya.corta.de.rango.de.pagina	3	raya corta entre dos numeros de pagina: es el uso convencional de APA para un rango, y es la unica raya que este repositorio admite
+tex.exentos.raya.corta.de.rango.de.pagina	4	raya corta entre dos numeros de pagina: es el uso convencional de APA para un rango, y es la unica raya que este repositorio admite
 tex.exentos.regla.de.comentario	0	linea de comentario hecha de guiones para separar bloques de fuente
 tex.exentos.opcion.de.paquete	7	opciones de paquete y de clase, donde el guion es parte del nombre
 tex.exentos.guion.de.palabra	21	guion dentro de una palabra compuesta, que no es raya
@@ -59,6 +59,6 @@ todo.enlace.va.en.url	1	las tres entradas con enlace tienen que llevarlo dentro 
 el.tex.lleva.colofon	1	
 el.tex.lleva.el.commit.del.colofon	1	
 el.pdf.lleva.colofon.en.su.informacion	1	
-bloques.parseados	254	
+bloques.parseados	255	
 desajustes	0	
 la.construccion.pasa	1	

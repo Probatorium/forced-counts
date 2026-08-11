@@ -813,7 +813,7 @@ def main():
     # esten en las dos salidas, y en el PDF sobre el texto extraido de sus
     # propios flujos, que es donde se veria la perdida.
     ACENTOS = ["García Hurtado", "Björner", "Mütze",
-               "Schöter"]
+               "Schöter", "Lafrenière"]
     faltan_tex = [w for w in ACENTOS if w not in tex]
     faltan_pdf = [w for w in ACENTOS if w not in pdf_txt]
     emit("acentos.comprobados", len(ACENTOS), " ".join(ACENTOS))
