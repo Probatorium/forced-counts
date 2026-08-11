@@ -1,6 +1,9 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+50706ac El .tex y el preview con los tres cambios, desde arbol limpio
+051c1af Tres cambios de formato: citas autor-ano, datos centrados, y el PDF canonico
+e28a4cf Verificacion del paquete tras los arreglos de caja
 75e3ace El .tex y el PDF con los dos arreglos de caja, desde arbol limpio
 ea86bf6 Cierre de la sesion 30, con la seccion 9 refrescada
 4847fe2 El puente tambien tenia que aprender a leer el sha partido

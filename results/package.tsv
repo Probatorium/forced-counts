@@ -2,30 +2,32 @@
 # terceros y bundle.
 # clave	valor	nota
 modo	completo	
-head	75e3ace0b5a3a6ede549ac8531310057bb0dab1c	
+head	50706ac50fb64658e0f1c4ff40b96129aecd1aaf	
 arbol.limpio.al.empaquetar	si	lo que se clona es lo commiteado, no lo que hay sin commitear
+estado.del.pdf.canonico	esperando	esperando quiere decir que el PDF del deposito todavia no esta, porque lo compila quien tenga LaTeX
+el.pdf.canonico.esta.en.el.arbol	0	
 el.clon.se.hace	1	
-clon.segundos	0.5	
+clon.segundos	3.5	
 lineas.excluidas.por.no.deterministas	1	hall-search.tsv segundos.totales: reloj de pared de la busqueda; mide esta maquina y no el resultado
 ficheros.de.results.commiteados	24	
-el.clon.recibe.intacto.PAPER.pdf	1	git ha alterado el fichero al sacarlo, mira .gitattributes
+el.clon.recibe.intacto.PAPER-preview.pdf	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.tex	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.md	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 ficheros.comparados.contra.el.clon	3	
-cadena.measure.py.segundos	18.9	
-cadena.group.py.segundos	56.9	
-cadena.proofs.py.segundos	10.5	
+cadena.measure.py.segundos	20.8	
+cadena.group.py.segundos	48.5	
+cadena.proofs.py.segundos	12.1	
 cadena.gray.py.segundos	1.6	
 cadena.transitions.py.segundos	0.0	
 cadena.corroborate.py.segundos	0.1	
-cadena.parity_hypotheses.py.segundos	0.1	
-cadena.general_landscape.py.segundos	131.4	
-cadena.general_n6.py.segundos	2.7	
-cadena.general_theorems.py.segundos	8.1	
-cadena.b31_characterization.py.segundos	2.6	
-cadena.hall_search.py.segundos	11.3	
-cadena.residuo5.py.segundos	2.2	
-cadena.segundos.totales	246.3	
+cadena.parity_hypotheses.py.segundos	0.0	
+cadena.general_landscape.py.segundos	124.2	
+cadena.general_n6.py.segundos	3.0	
+cadena.general_theorems.py.segundos	11.9	
+cadena.b31_characterization.py.segundos	2.1	
+cadena.hall_search.py.segundos	12.0	
+cadena.residuo5.py.segundos	3.2	
+cadena.segundos.totales	239.7	
 todos.los.programas.de.analisis.corren	1	
 ficheros.de.results.que.cambian.al.rehacerlos	ninguno	
 la.cadena.reproduce.sus.propias.salidas	1	un programa que no reproduce su salida no es reproducible
@@ -37,16 +39,17 @@ comprobador.mutaciones	pasa
 comprobador.prueba.del.puente	pasa	
 comprobador.cadena.del.registro	pasa	
 todos.los.comprobadores.pasan.en.el.clon	1	
-commits.en.la.historia	93	
+commits.en.la.historia	96	
 la.historia.tiene.commits	1	
-objetos.de.la.historia.revisados	594	
+objetos.de.la.historia.revisados	633	
 hallazgos.de.secreto	ninguno	
 ningun.secreto.en.la.historia	1	
 la.busqueda.de.secretos.no.pasa.en.vacio	1	buscar cero patrones en cero objetos daria verde sin mirar nada
-ficheros.de.terceros.en.el.arbol	2	
+ficheros.de.terceros.en.el.arbol	3	
 el.clon.para.filtrar.se.hace	1	
-el.filtrado.corre	1	e0b5a3a6ede549ac8531310057bb0dab1c (92/93) (36 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
+el.filtrado.corre	1	d1aaf (94/96) (43 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
 rm 'data/sequences.json'
+rm 'paper/PAPER-preview.pdf'
 
 Ref 'refs/heads/main' was rewritten
 Ref 'refs/remotes/origin/main' was rewritten
@@ -56,20 +59,21 @@ referencias.originales.borradas	2
 terceros.que.quedan.en.la.historia.filtrada	ninguno	
 el.filtrado.no.deja.rastro	1	filtrar el arbol de ahora no basta: tiene que salir de todos los commits
 el.bundle.se.crea	1	
-bundle.bytes	2525675	
-bundle.sha256	b0fb9b91cac5e47458212db616c59a695757180ac6727b00ae3ac21aeb06f190	
+bundle.bytes	3373263	
+bundle.sha256	ed84d83e72b9ed499681d6c8c11fe190584731aecd08ec09d78210cf53f89373	
 el.bundle.se.verifica	1	4 refs:
-9030c934cf8fbfe2394a267962ed30a43fa62d4e refs/heads/main
-9030c934cf8fbfe2394a267962ed30a43fa62d4e refs/remotes/origin/HEAD
-9030c934cf8fbfe2394a267962ed30a43fa62d4e refs/remotes/origin/main
-9030c934cf8fbfe2394a267962ed30a43fa62d4e HEAD
+f4dbe387c80cdb76e5151c7b16be37e67086bf37 refs/heads/main
+f4dbe387c80cdb76e5151c7b16be37e67086bf37 refs/remotes/origin/HEAD
+f4dbe387c80cdb76e5151c7b16be37e67086bf37 refs/remotes/origin/main
+f4dbe387c80cdb76e5151c7b16be37e67086bf37 HEAD
 The bundle records a complete history.
 The bundle uses this hash algorithm: sha1
 C:/Users/AlexDesk/Documents/forced-counts/dist/forced-counts.bundle is okay
 
 el.bundle.se.clona	1	
-commits.en.el.bundle	93	
+commits.en.el.bundle	96	
 el.bundle.no.trae.sequences.json	1	
 el.bundle.no.trae.radisic-2601.07175v3-appendix-A.tsv	1	
+el.bundle.no.trae.PAPER-preview.pdf	1	
 desajustes	0	
 el.paquete.esta.entero	1	
