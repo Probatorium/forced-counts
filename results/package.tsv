@@ -2,32 +2,32 @@
 # terceros y bundle.
 # clave	valor	nota
 modo	completo	
-head	50706ac50fb64658e0f1c4ff40b96129aecd1aaf	
+head	f51f7d3d977549347a3f7e40fa06c0924aa8c220	
 arbol.limpio.al.empaquetar	si	lo que se clona es lo commiteado, no lo que hay sin commitear
 estado.del.pdf.canonico	esperando	esperando quiere decir que el PDF del deposito todavia no esta, porque lo compila quien tenga LaTeX
 el.pdf.canonico.esta.en.el.arbol	0	
 el.clon.se.hace	1	
-clon.segundos	3.5	
+clon.segundos	0.5	
 lineas.excluidas.por.no.deterministas	1	hall-search.tsv segundos.totales: reloj de pared de la busqueda; mide esta maquina y no el resultado
 ficheros.de.results.commiteados	24	
 el.clon.recibe.intacto.PAPER-preview.pdf	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.tex	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.md	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 ficheros.comparados.contra.el.clon	3	
-cadena.measure.py.segundos	20.8	
-cadena.group.py.segundos	48.5	
-cadena.proofs.py.segundos	12.1	
+cadena.measure.py.segundos	19.5	
+cadena.group.py.segundos	50.2	
+cadena.proofs.py.segundos	11.0	
 cadena.gray.py.segundos	1.6	
 cadena.transitions.py.segundos	0.0	
 cadena.corroborate.py.segundos	0.1	
 cadena.parity_hypotheses.py.segundos	0.0	
-cadena.general_landscape.py.segundos	124.2	
-cadena.general_n6.py.segundos	3.0	
-cadena.general_theorems.py.segundos	11.9	
+cadena.general_landscape.py.segundos	124.4	
+cadena.general_n6.py.segundos	2.7	
+cadena.general_theorems.py.segundos	8.2	
 cadena.b31_characterization.py.segundos	2.1	
-cadena.hall_search.py.segundos	12.0	
-cadena.residuo5.py.segundos	3.2	
-cadena.segundos.totales	239.7	
+cadena.hall_search.py.segundos	11.4	
+cadena.residuo5.py.segundos	2.2	
+cadena.segundos.totales	233.5	
 todos.los.programas.de.analisis.corren	1	
 ficheros.de.results.que.cambian.al.rehacerlos	ninguno	
 la.cadena.reproduce.sus.propias.salidas	1	un programa que no reproduce su salida no es reproducible
@@ -39,15 +39,15 @@ comprobador.mutaciones	pasa
 comprobador.prueba.del.puente	pasa	
 comprobador.cadena.del.registro	pasa	
 todos.los.comprobadores.pasan.en.el.clon	1	
-commits.en.la.historia	96	
+commits.en.la.historia	99	
 la.historia.tiene.commits	1	
-objetos.de.la.historia.revisados	633	
+objetos.de.la.historia.revisados	669	
 hallazgos.de.secreto	ninguno	
 ningun.secreto.en.la.historia	1	
 la.busqueda.de.secretos.no.pasa.en.vacio	1	buscar cero patrones en cero objetos daria verde sin mirar nada
 ficheros.de.terceros.en.el.arbol	3	
 el.clon.para.filtrar.se.hace	1	
-el.filtrado.corre	1	d1aaf (94/96) (43 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
+el.filtrado.corre	1	8c220 (97/99) (39 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
 rm 'data/sequences.json'
 rm 'paper/PAPER-preview.pdf'
 
@@ -59,19 +59,19 @@ referencias.originales.borradas	2
 terceros.que.quedan.en.la.historia.filtrada	ninguno	
 el.filtrado.no.deja.rastro	1	filtrar el arbol de ahora no basta: tiene que salir de todos los commits
 el.bundle.se.crea	1	
-bundle.bytes	3373263	
-bundle.sha256	ed84d83e72b9ed499681d6c8c11fe190584731aecd08ec09d78210cf53f89373	
+bundle.bytes	4318044	
+bundle.sha256	a0798ec750f744422a549aa0cc7d9019102d082a1636401779075d89911be2fe	
 el.bundle.se.verifica	1	4 refs:
-f4dbe387c80cdb76e5151c7b16be37e67086bf37 refs/heads/main
-f4dbe387c80cdb76e5151c7b16be37e67086bf37 refs/remotes/origin/HEAD
-f4dbe387c80cdb76e5151c7b16be37e67086bf37 refs/remotes/origin/main
-f4dbe387c80cdb76e5151c7b16be37e67086bf37 HEAD
+5aad8cdcff0b577f5426fa887206d490fc98fe0b refs/heads/main
+5aad8cdcff0b577f5426fa887206d490fc98fe0b refs/remotes/origin/HEAD
+5aad8cdcff0b577f5426fa887206d490fc98fe0b refs/remotes/origin/main
+5aad8cdcff0b577f5426fa887206d490fc98fe0b HEAD
 The bundle records a complete history.
 The bundle uses this hash algorithm: sha1
 C:/Users/AlexDesk/Documents/forced-counts/dist/forced-counts.bundle is okay
 
 el.bundle.se.clona	1	
-commits.en.el.bundle	96	
+commits.en.el.bundle	99	
 el.bundle.no.trae.sequences.json	1	
 el.bundle.no.trae.radisic-2601.07175v3-appendix-A.tsv	1	
 el.bundle.no.trae.PAPER-preview.pdf	1	

@@ -1,6 +1,9 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+f51f7d3 El .tex y el preview con las nueve reparaciones, desde arbol limpio
+b274a1a Reparacion tras el triaje de tres auditorias externas
+534ebba Verificacion del paquete con el flujo del PDF canonico
 50706ac El .tex y el preview con los tres cambios, desde arbol limpio
 051c1af Tres cambios de formato: citas autor-ano, datos centrados, y el PDF canonico
 e28a4cf Verificacion del paquete tras los arreglos de caja
