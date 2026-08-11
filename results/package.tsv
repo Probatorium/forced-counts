@@ -2,12 +2,12 @@
 # terceros y bundle.
 # clave	valor	nota
 modo	completo	
-head	bb222cd9f96fe5a1457591a9ed018cd9e13b24d5	
+head	b4aa58589f4f0ea61774f6516dae846115a7caa1	
 arbol.limpio.al.empaquetar	si	lo que se clona es lo commiteado, no lo que hay sin commitear
 estado.del.pdf.canonico	entregado	esperando quiere decir que el PDF del deposito todavia no esta, porque lo compila quien tenga LaTeX
 el.pdf.canonico.esta.en.el.arbol	1	
 el.clon.se.hace	1	
-clon.segundos	4.2	
+clon.segundos	0.5	
 lineas.excluidas.por.no.deterministas	1	hall-search.tsv segundos.totales: reloj de pared de la busqueda; mide esta maquina y no el resultado
 ficheros.de.results.commiteados	24	
 el.clon.recibe.intacto.PAPER-preview.pdf	1	git ha alterado el fichero al sacarlo, mira .gitattributes
@@ -15,49 +15,40 @@ el.clon.recibe.intacto.PAPER.pdf	1	git ha alterado el fichero al sacarlo, mira .
 el.clon.recibe.intacto.PAPER.tex	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.md	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 ficheros.comparados.contra.el.clon	4	
-cadena.measure.py.segundos	20.0	
-cadena.group.py.segundos	47.1	
-cadena.proofs.py.segundos	10.2	
+cadena.measure.py.segundos	19.5	
+cadena.group.py.segundos	55.8	
+cadena.proofs.py.segundos	10.4	
 cadena.gray.py.segundos	1.5	
 cadena.transitions.py.segundos	0.0	
 cadena.corroborate.py.segundos	0.1	
 cadena.parity_hypotheses.py.segundos	0.0	
-cadena.general_landscape.py.segundos	119.6	
-cadena.general_n6.py.segundos	3.0	
-cadena.general_theorems.py.segundos	8.4	
-cadena.b31_characterization.py.segundos	2.2	
-cadena.hall_search.py.segundos	11.5	
-cadena.residuo5.py.segundos	2.2	
-cadena.segundos.totales	225.8	
+cadena.general_landscape.py.segundos	130.6	
+cadena.general_n6.py.segundos	2.8	
+cadena.general_theorems.py.segundos	8.8	
+cadena.b31_characterization.py.segundos	2.1	
+cadena.hall_search.py.segundos	11.9	
+cadena.residuo5.py.segundos	2.4	
+cadena.segundos.totales	245.9	
 todos.los.programas.de.analisis.corren	1	
 ficheros.de.results.que.cambian.al.rehacerlos	ninguno	
 la.cadena.reproduce.sus.propias.salidas	1	un programa que no reproduce su salida no es reproducible
 comprobador.assemble_paper.py	pasa	
 comprobador.declared_values.py	pasa	
 comprobador.build_paper.py	pasa	
-comprobador.pdf_bridge.py	FALLA	
+comprobador.pdf_bridge.py	pasa	
 comprobador.mutaciones	pasa	
-comprobador.prueba.del.puente	FALLA	
+comprobador.prueba.del.puente	pasa	
 comprobador.cadena.del.registro	pasa	
-todos.los.comprobadores.pasan.en.el.clon	0	src/pdf_bridge.py: w.esta                                  1
-  desajustes                                       1
-  el.puente.esta.entero                            0
-
-PUENTE ROTO:
-  el.canonico.lleva.impreso.ese.commit | puente:      0
-  con.la.mutacion.aviso                      ninguno
-  restaurado.el.puente.esta.entero           0
-  el.fichero.no.se.toco                      1
-  la.prueba.del.puente.pasa                  0
-commits.en.la.historia	112	
+todos.los.comprobadores.pasan.en.el.clon	1	
+commits.en.la.historia	113	
 la.historia.tiene.commits	1	
-objetos.de.la.historia.revisados	751	
+objetos.de.la.historia.revisados	764	
 hallazgos.de.secreto	ninguno	
 ningun.secreto.en.la.historia	1	
 la.busqueda.de.secretos.no.pasa.en.vacio	1	buscar cero patrones en cero objetos daria verde sin mirar nada
 ficheros.de.terceros.en.el.arbol	3	
 el.clon.para.filtrar.se.hace	1	
-el.filtrado.corre	1	4d5 (110/112) (49 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
+el.filtrado.corre	1	aa1 (113/113) (49 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
 rm 'data/sequences.json'
 rm 'paper/PAPER-preview.pdf'
 
@@ -69,32 +60,21 @@ referencias.originales.borradas	2
 terceros.que.quedan.en.la.historia.filtrada	ninguno	
 el.filtrado.no.deja.rastro	1	filtrar el arbol de ahora no basta: tiene que salir de todos los commits
 el.bundle.se.crea	1	
-bundle.bytes	6867324	
-bundle.sha256	019c47fb3471a63191ab59f0e5b683bdbaf9c664be1b539a78423f66741869a3	
+bundle.bytes	8425450	
+bundle.sha256	603b16a4324008fc80dfd44ed6d6bc96b71dc0799763b1c9579d4a426da2dfaa	
 el.bundle.se.verifica	1	4 refs:
-492709eba36fcbc9d92b0162b596b47ddda3f5e9 refs/heads/main
-492709eba36fcbc9d92b0162b596b47ddda3f5e9 refs/remotes/origin/HEAD
-492709eba36fcbc9d92b0162b596b47ddda3f5e9 refs/remotes/origin/main
-492709eba36fcbc9d92b0162b596b47ddda3f5e9 HEAD
+61ddaf19e4157158ace106a253764195798ae9dd refs/heads/main
+61ddaf19e4157158ace106a253764195798ae9dd refs/remotes/origin/HEAD
+61ddaf19e4157158ace106a253764195798ae9dd refs/remotes/origin/main
+61ddaf19e4157158ace106a253764195798ae9dd HEAD
 The bundle records a complete history.
 The bundle uses this hash algorithm: sha1
 C:/Users/AlexDesk/Documents/forced-counts/dist/forced-counts.bundle is okay
 
 el.bundle.se.clona	1	
-commits.en.el.bundle	112	
+commits.en.el.bundle	113	
 el.bundle.no.trae.sequences.json	1	
 el.bundle.no.trae.radisic-2601.07175v3-appendix-A.tsv	1	
 el.bundle.no.trae.PAPER-preview.pdf	1	
-desajustes	1	
-el.paquete.esta.entero	0	
-DESAJUSTE	1	todos.los.comprobadores.pasan.en.el.clon  src/pdf_bridge.py: w.esta                                  1
-  desajustes                                       1
-  el.puente.esta.entero                            0
-
-PUENTE ROTO:
-  el.canonico.lleva.impreso.ese.commit | puente:      0
-  con.la.mutacion.aviso                      ninguno
-  restaurado.el.puente.esta.entero           0
-  el.fichero.no.se.toco                      1
-  la.prueba.del.puente.pasa                  0
-DESAJUSTE	1	el.paquete.esta.entero
+desajustes	0	
+el.paquete.esta.entero	1	
