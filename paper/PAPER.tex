@@ -31,7 +31,7 @@ That difference of 5 is decomposed completely over the 19 free orbits and has no
 
 A landscape of 14 rows over block systems in dimensions three to six populates the three outcomes away from the historical cases and records two refutations of shapes we tried to raise into theorems, one of them of an error of our own.
 
-Every measurement was preceded, in an earlier commit of a public repository, by a written statement of what would be measured and what would refute it, and that ordering is checkable.
+Every measurement was preceded, in an earlier commit of a public repository, by a written statement of what was going to be measured and, where predictions were made, of what would refute them, and that ordering is checkable.
 
 \end{abstract}
 
@@ -89,7 +89,7 @@ The warning there is about attributing a modern way of ordering to an ancient so
 
 \subsection*{1.5 A note on how this paper was made}
 
-Every measurement in this paper was preceded, in a separate and earlier commit of a public repository, by a written statement of what was going to be measured and what would count as a refutation. Several of those statements were then refuted by the measurements, including one prediction whose refutation criterion turned out to be unfailable and is reported as a defect rather than cashed as a success. Section 9 explains the arrangement. It is mentioned here because it changes how the results below should be read: where this paper says that something was declared in advance, that is a checkable claim and not a rhetorical one.
+Every measurement in this paper was preceded, in a separate and earlier commit of a public repository, by a written statement of what was going to be measured and, where predictions were made, of what would count as a refutation of them. Several of those statements were then refuted by the measurements, including one prediction whose refutation criterion turned out to be unfailable and is reported as a defect rather than cashed as a success. Section 9 explains the arrangement. It is mentioned here because it changes how the results below should be read: where this paper says that something was declared in advance, that is a checkable claim and not a rhetorical one.
 
 \section*{2. Preliminaries}
 
@@ -209,7 +209,7 @@ The lemma is not free. If a set does not contribute exactly half, its two parity
 
 The four lemmas turn a question about one ordering into a question about the orbits of a group action on pairs. Each orbit is either forced, and then its contribution is fixed by the structure, or free, and then it contributes one of two values. The total therefore lies in an interval, and the set of totals compatible with the structure is the minimum plus the subset sums of the gaps.
 
-This is where the present work parts company with the literature just cited. In homomesy, a case in which the average is not constant on orbits is a case to be discarded: the phenomenon is the constancy. Here it is the case that is measured. The free orbits are not failures of a phenomenon; they are the quantity of freedom that the construction leaves, and the interval they define is the object of the sections that follow.
+This is where the present work parts company with the literature just cited. In homomesy, a case in which the average is not constant on orbits is a case that falls outside the phenomenon being collected: the phenomenon is the constancy. Here it is that case that is measured. The free orbits are not failures of a phenomenon; they are the quantity of freedom that the construction leaves, and the interval they define is the object of the sections that follow.
 
 The other large phenomenon of this area, cyclic sieving (Reiner et al., 2004), is a different question again: it counts the fixed points of a cyclic action through a generating function at roots of unity, not the average of a statistic over orbits. It is named here to place the work, and is not used.
 
@@ -283,7 +283,9 @@ This removes the apparatus from the question of \textbf{whether}. To decide if a
 
 \emph{Proof.} The translations act transitively on the pairs with a fixed difference, since the pair at x goes to the pair at x plus v. The linear parts send a difference d to its image. Hence the orbit of a pair is the set of pairs whose difference lies in the orbit of d under the linear parts. Applying Theorem 1 orbit by orbit gives the statement. QED
 
-The argument uses neither a particular dimension nor a particular partition, so it holds for every group containing the full translation group, which covers all the block systems considered here.
+The argument uses neither a particular dimension nor a particular partition, so it holds for every group containing the full translation group, which covers all the B(n, k) block systems of section 7.
+
+It does not cover the other two constructions of section 6. The group that respects the palaces is the translations by a three dimensional subspace, and the group that respects the pairs of the third ordering is the centraliser of the half turn; neither contains all the translations of the cube, so Theorem 2 does not apply to them and their orbits are not the difference classes. Those two cases are settled by the orbit accounting of section 3, which needs no such hypothesis.
 
 \subsection*{5.3 Forcing by a matching, and what is proved versus counted}
 
@@ -337,7 +339,7 @@ The block system is the fibres of the upper trigram, that is, the cosets of the 
 
 Every one of those classes is forced, and the demonstration is in two parts. 9 of them, covering 1568 pairs and contributing 784, are forced by a witness that is argued rather than exhibited: complement the lower trigram, and the value order of the pair reverses while the block, and therefore the position order, does not. The remaining classes are forced by witnesses that are exhibited and verified, and one of them has no uniform witness at all in the whole group and needed the matching lemma, with a certificate that is deposited pair by pair and can be checked line by line. All 15 orbits are forced and 0 are free, so by Lemma 1 the forced contribution is the whole count, 1008, and the width of the interval is zero.
 
-\textbf{The mechanism that was previously claimed for this count does not hold, and saying so is part of the result.} The claim was that closure under complementation forces the count. Closure does hold, and it is concrete: the complement sends each octet onto another octet. But the group generated by complementation alone forces only 484 of the 2016 pairs, leaves 540 orbits free, and admits 1049 different compatible totals: an interval, not a value. The control settles it exhaustively rather than by sample. The family order of the octets can be permuted in every one of the 40320 possible ways, all such rearrangements keep the closure intact, and the tie comes out in 3836 of them, a rate of 0.09514. Closure is true of the construction and is not what forces the count. What forces it is the full group of order 2304 together with the received family order.
+\textbf{The mechanism that was previously claimed for this count does not hold, and saying so is part of the result.} It was claimed in the preregistration of this repository, in the section that listed a prior result to be verified and reported as a retrodiction, and that is where the reader can find it stated before any measurement was taken. The claim was that closure under complementation forces the count. Closure does hold, and it is concrete: the complement sends each octet onto another octet. But the group generated by complementation alone forces only 484 of the 2016 pairs, leaves 540 orbits free, and admits 1049 different compatible totals: an interval, not a value. The control settles it exhaustively rather than by sample. The family order of the octets can be permuted in every one of the 40320 possible ways, all such rearrangements keep the closure intact, and the tie comes out in 3836 of them, a rate of 0.09514. Closure is true of the construction and is not what forces the count. What forces it is the full group of order 2304 together with the received family order.
 
 \subsection*{6.2 Jing Fang: forced, and the demonstration is complete}
 
@@ -352,6 +354,8 @@ The 280 orbits are classified by hand into three families, and every one of them
 \subsection*{6.3 King Wen: the tie is impossible}
 
 The count is 1013 under the two conventions that read yang as one, and 1003 under the two that read yang as zero. The two are symmetric about the tie, since exchanging the roles of yang and yin turns every discordant pair into a concordant one, and 1013 plus 1003 is twice 1008. Neither is the tie. Everything below explains why neither could have been.
+
+The \textbf{half turn} is the element of $B_6$ whose coordinate permutation is (1 6)(2 5)(3 4), reversing the order of the six lines, and whose complementation mask is zero. It is an involution, it fixes the vertex of all yin, and a hexagram it fixes is a palindrome.
 
 The construction pairs the sequence into 32 adjacent blocks of two: the 28 orbits of size two of the half turn, together with the 8 hexagrams that the half turn leaves fixed, paired among themselves by complementation.
 
@@ -416,7 +420,7 @@ The crossing of the deviating orbits against the two structural features of the 
 None of the five declared structures explains the residue. After the one that narrows, the residue is unchanged, the tie is still impossible, and the remaining free orbits still spread the deviation across almost all of them.
 
 \begin{quote}
-\textbf{The residue is therefore declared informative relative to this list.} The decomposition exists, it is complete, and it has no culprit.
+\textbf{The residue is therefore declared informative relative to this list.} Informative in the structural sense, as the part of the count not determined by the declared structures; no inferential claim is attached to the word. The decomposition exists, it is complete, and it has no culprit.
 \end{quote}
 
 \textbf{The mathematics reaches bottom where editorial choice begins.} What remains of the difference, once the symmetry that the construction respects has been exhausted and the four additional declared structures have been tried, is not a residue that structure can absorb. It is what the received sequence has of choice rather than of rule.
@@ -464,7 +468,11 @@ Table 2 gives dimensions three to six, every level, with the same columns throug
 
 The last three columns of Table 2 are the distribution of the three outcomes over the parametrised family, by block order and internal order; a dot means the distribution was not measured. The \textbf{forced} column is empty in every row at an extreme level and non empty only at the intermediate ones, which is the shape that section 7.3 takes up and cuts down to size.
 
-Each row reports the outcome for two fixed orderings, the reflected Gray code and the canonical member of the parametrised family, and, where the space of orderings of that family was small enough, the full distribution of the three outcomes over it. Where it was not small enough, a sample with the frozen seed was used and is labelled as a sample.
+Each row reports the outcome for two fixed orderings, the reflected Gray code and the canonical member of the parametrised family.
+
+The \textbf{parametrised family} of B(n, k) is indexed by a pair of permutations: one of the 2\textasciicircum{}(n-k) blocks, which fixes the order in which the blocks are laid out, and one of the 2\textasciicircum{}k positions inside a block, which is the same for every block. Given the pair, the ordering places at position i times 2\textasciicircum{}k plus j the vertex whose upper n minus k coordinates encode the image of i and whose lower k coordinates encode the image of j. The \textbf{canonical member} is the one obtained when both permutations are the identity, so that position i times 2\textasciicircum{}k plus j carries the vertex whose integer code is exactly i times 2\textasciicircum{}k plus j: the map from positions to vertices is the identity. That is not the binary reference order, because the reference order reads the bottom line as the most significant bit while the vertex code reads it as the least significant one, which is why the canonical member has a discordance to report at all.
+
+Where the space of those pairs has at most 5000 members it is traversed in full, and the row says \emph{enumerated}. Where it is larger, 2000 pairs are drawn and the row says \emph{sampled}. Each draw takes one permutation of the blocks and one of the inner positions, each uniform over its symmetric group and independent of the other, from a Mersenne Twister seeded once per row at 20260809, a seed frozen in the source before any of this was run. The draws are independent and are not deduplicated, so the sample is with replacement and a pair can in principle come up twice.
 
 \textbf{One historical row belongs here and is kept apart.} The first historical ordering does fit the family, at the middle level of dimension six, since its octets are exactly those cosets. Its row is Table 3, kept out of Table 2 so that the parametrised family and the received sequence are not read as one population:
 
@@ -516,7 +524,7 @@ Four things are open. Each is stated with what was measured, and with what would
 
 \textbf{What was deliberately not done.} The status was not promoted. Absence of a failure in a finite search is not a theorem, and the branch that said so was written before the search ran.
 
-\textbf{What would close it.} Either a proof that the relation graph of a forced orbit always satisfies Hall's condition, or a single counterexample: a forced orbit whose two parity classes admit no perfect matching. A counterexample would also refute the equivalence between the matching criterion and forcedness, which is currently the informative half of the characterisation of section 5.
+\textbf{What would close it.} Either a proof that the relation graph of a forced orbit always satisfies Hall's condition, or a single counterexample: a forced orbit whose two parity classes admit no perfect matching. A counterexample would also refute the equivalence between the matching criterion and being forced. That criterion is the one of section 5.3, and it is not the characterisation: one of its two directions is proved and the other is enumerative. The characterisation is Theorem 2, as section 5.6 says.
 
 \subsection*{8.2 How many orderings are forced?}
 
@@ -566,9 +574,9 @@ The second preregistration, for the general phase, was signed after a phase whos
 
 \subsection*{9.2 The effort log}
 
-Every working session opens and closes an entry in an append only log: 30 closed sessions in 153 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
+Every working session opens and closes an entry in an append only log: 31 closed sessions in 158 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
 
-The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 98 files were classified, over 20284 lines: 7373 of apparatus against 12911 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
+The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 98 files were classified, over 20521 lines: 7439 of apparatus against 13082 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
 
 Dead ends are recorded as their own kind of entry, with their cost. There are 8 of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix mistake made again by hand a session later while editing this very section, a criterion for binary files that let an uncompressed PDF pass as text and counted its line breaks as written work, a patch script that truncated a source file because the call that opens a file for writing empties it before it validates its own arguments, and a shell here-document that ate an escape sequence and left a control byte inside a checker, so that the checker failed on the very fix it was meant to confirm. The fourth, the fifth and the eighth were caught by the checkers written to catch exactly that; the sixth by the packaging run; the seventh by the file being under version control, which is the cheapest safety net in the list.
 
@@ -598,7 +606,7 @@ Each entry records the identity as the literature review fixed it, and whether t
 \hangindent=1.6em\hangafter=1 2. Cook, R. S. (2006). \emph{Classical Chinese combinatorics: Derivation of the Book of Changes hexagram sequence} (STEDT Monograph Series, Vol. 5). University of California, Berkeley. ISBN 0-944613-44-6.\\ \emph{Status:} read through its review in full, plus full text sweeps of the converted text; the book itself was not read cover to cover.\par\vspace{0.5ex}
 \hangindent=1.6em\hangafter=1 3. Drasny, J. \emph{The solution of the King Wen sequence?} [Review of the book \emph{Classical Chinese combinatorics}, by R. S. Cook]. Yijing Dao. \url{http://www.biroco.com/yijing/cook.htm}\\ \emph{Status:} read in full; the review carries no date on the page read, so none is printed.\par\vspace{0.5ex}
 \hangindent=1.6em\hangafter=1 4. García Hurtado, A. (2026). \emph{Uninformative rungs: An order-theoretic stopping criterion for nested reference sets}. Zenodo. \url{https://doi.org/10.5281/zenodo.21750029}\\ \emph{Status:} cited as a pointer to the framework under which the inferential question of Section 8.3 would have to be posed. ITS CONTENT IS NOT LOAD BEARING HERE: nothing in this paper depends on it, and it was not read in the course of this work.\par\vspace{0.5ex}
-\hangindent=1.6em\hangafter=1 5. Gritter, G. (2015). \emph{The hidden pattern in the classical sequence of the I Ching}. Groningen.\\ \emph{Status:} read in full.\par\vspace{0.5ex}
+\hangindent=1.6em\hangafter=1 5. Gritter, G. (2015). \emph{The hidden pattern in the classical sequence of the I Ching}. Groningen: Self-published.\\ \emph{Status:} read in full; the artefact names a place and a year and no publisher, so the entry says self-published, which is what APA asks for when a work carries none. If a copy turns up that names one, the artefact wins.\par\vspace{0.5ex}
 \hangindent=1.6em\hangafter=1 6. Hacker, E., \& Moore, S. (2003). A brief note on the two-part division of the received order of the hexagrams in the Zhouyi. \emph{Journal of Chinese Philosophy}, \emph{30}(2), 219–221.\\ \emph{Status:} SECOND HAND: bibliographic identity taken from the bibliography of Moore (2005); not read. The pointer names the author and year and not a number, so that renumbering the list cannot turn it into a reference to itself, which is what it had just become.\par\vspace{0.5ex}
 \hangindent=1.6em\hangafter=1 7. Moore, S. (2005). \emph{Structural elements in the King Wen sequence of hexagrams} (Oracle Paper No. 1).\\ \emph{Status:} read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from the OCR conversion.\par\vspace{0.5ex}
 \hangindent=1.6em\hangafter=1 8. Mütze, T. (2023). Combinatorial Gray codes: An updated survey. \emph{The Electronic Journal of Combinatorics}, \emph{30}(3), Dynamic Survey DS26.\\ \emph{Status:} read in the cited part, Section 3.2 on p. 11, verified against the PDF.\par\vspace{0.5ex}
@@ -613,10 +621,10 @@ Each entry records the identity as the literature review fixed it, and whether t
 \begin{small}
 \noindent\textbf{Colophon.}
 Built from the assembled manuscript at commit
-\texttt{051c1afe\allowbreak 6b334125\allowbreak 3c45cf2c\allowbreak e4d12c7a\allowbreak be39d51e},
+\texttt{b274a1ae\allowbreak 9b0672cb\allowbreak 7ebdfa8c\allowbreak 2a4dca2f\allowbreak db088a6e},
 dated 2026-08-10. Working tree clean: si. Checks green at build time: 62.
 \par\noindent
 sha256 of the manuscript:
-\texttt{8b2ea91c\allowbreak 435f7989\allowbreak 2f113d97\allowbreak d62ac3c5\allowbreak 6d2012dd\allowbreak ce697d2f\allowbreak dd17fe86\allowbreak 6d02fa6a}
+\texttt{633f6329\allowbreak bde8a7a0\allowbreak e7511c86\allowbreak 8779fe5a\allowbreak 153c9683\allowbreak 805f757d\allowbreak daedccb8\allowbreak 17194265}
 \end{small}
 \end{document}
