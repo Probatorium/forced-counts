@@ -566,9 +566,9 @@ The second preregistration, for the general phase, was signed after a phase whos
 
 \subsection*{9.2 The effort log}
 
-Every working session opens and closes an entry in an append only log: 29 closed sessions in 149 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
+Every working session opens and closes an entry in an append only log: 30 closed sessions in 153 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
 
-The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 97 files were classified, over 19976 lines: 7085 of apparatus against 12891 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
+The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 98 files were classified, over 20284 lines: 7373 of apparatus against 12911 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
 
 Dead ends are recorded as their own kind of entry, with their cost. There are 8 of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix mistake made again by hand a session later while editing this very section, a criterion for binary files that let an uncompressed PDF pass as text and counted its line breaks as written work, a patch script that truncated a source file because the call that opens a file for writing empties it before it validates its own arguments, and a shell here-document that ate an escape sequence and left a control byte inside a checker, so that the checker failed on the very fix it was meant to confirm. The fourth, the fifth and the eighth were caught by the checkers written to catch exactly that; the sixth by the packaging run; the seventh by the file being under version control, which is the cheapest safety net in the list.
 
@@ -613,10 +613,10 @@ Each entry records the identity as the literature review fixed it, and whether t
 \begin{small}
 \noindent\textbf{Colophon.}
 Built from the assembled manuscript at commit
-\texttt{e28a4cf9\allowbreak 82b429c0\allowbreak 4e46eba1\allowbreak b6db8de9\allowbreak 8655b11e},
-dated 2026-08-10. Working tree clean: no. Checks green at build time: 62.
+\texttt{051c1afe\allowbreak 6b334125\allowbreak 3c45cf2c\allowbreak e4d12c7a\allowbreak be39d51e},
+dated 2026-08-10. Working tree clean: si. Checks green at build time: 62.
 \par\noindent
 sha256 of the manuscript:
-\texttt{bdba8637\allowbreak 9db7370d\allowbreak 0cddbf89\allowbreak fdb7de77\allowbreak 69049dd5\allowbreak e2efc589\allowbreak a6a84c8a\allowbreak e59d1a63}
+\texttt{8b2ea91c\allowbreak 435f7989\allowbreak 2f113d97\allowbreak d62ac3c5\allowbreak 6d2012dd\allowbreak ce697d2f\allowbreak dd17fe86\allowbreak 6d02fa6a}
 \end{small}
 \end{document}
