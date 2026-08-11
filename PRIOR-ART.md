@@ -1087,3 +1087,47 @@ de nada.
 Se registra aqui, con su fecha, y **se corrige NOVELTY.md por documento nuevo**,
 nunca editandolo. Cerrada no quiere decir infalible: quiere decir que se decidio
 dejar de buscar y que la decision tiene fecha y dueno.
+
+
+# 16. Pistas sin verificar, llegadas por auditoria externa
+
+**Fecha: 10 de agosto de 2026.** Tres auditorias externas del manuscrito
+apuntaron cuatro posibles antecedentes. Esta seccion existe para guardarlos con
+la etiqueta que les corresponde, que no es la de antecedente sino la de pista.
+
+## 16.1 Que estatus tienen, y por que este y no otro
+
+La doctrina de este fichero no cambia por venir de fuera: **un veredicto sale de
+un artefacto leido, y de nada mas**. Una pista no leida no es un antecedente; es
+una tarea. En concreto, y mientras sigan aqui:
+
+- no entran en el manuscrito;
+- no se citan en ninguna parte;
+- no cambian ninguna afirmacion, ni de novedad ni de otra clase;
+- no tocan NOVELTY.md, que ademas es texto firmado y solo se corrige por
+  documento nuevo, nunca editandolo, segun la seccion 15.4.
+
+Que la revision este CERRADA no impide anotarlas: cerrada quiere decir que se
+decidio dejar de buscar, y la seccion 15.4 ya preveia que apareciera algo
+despues y como registrarlo.
+
+## 16.2 EL TEXTO DE LAS CUATRO PISTAS NO ESTA AQUI TODAVIA
+
+Y esto se escribe asi, en grande, porque es la parte que importa.
+
+Las cuatro pistas **no llegaron a la sesion en que se escribio esta seccion**. Se
+sabe que son cuatro y de donde vienen; no se sabe a que apuntan. No se anotan de
+memoria ni se reconstruyen a partir de lo que parecieran ser, que es exactamente
+la clase de atajo que este fichero lleva quince secciones evitando: una ficha
+inventada es peor que un hueco, porque el hueco se ve.
+
+Lo que hace falta para cerrar esta seccion es el texto literal de cada pista tal
+y como la auditoria la formulo. Con eso, cada una se anota abajo con su
+identificador, quien la apunto, a que parte del manuscrito toca, y su estatus de
+lectura, que arrancara siendo NO LEIDA en las cuatro.
+
+## 16.3 Las cuatro
+
+    PENDIENTE. Cuatro entradas por escribir, una por pista, en cuanto llegue
+    su texto literal. Ninguna se rellena antes.
+

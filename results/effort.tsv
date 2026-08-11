@@ -3,22 +3,22 @@
 # clave	valor	nota
 cadena.integra	1	si vale cero, ningun recuento de este fichero es de fiar
 problemas.de.la.cadena	0	
-corte	153	se cuenta hasta el ultimo cierre de sesion incluido, no hasta el final del log, para que la cifra no se mueva a media sesion
-registros	153	lineas del registro append only hasta el corte
-sesiones.abiertas	30	
-sesiones.cerradas	30	
+corte	158	se cuenta hasta el ultimo cierre de sesion incluido, no hasta el final del log, para que la cifra no se mueva a media sesion
+registros	158	lineas del registro append only hasta el corte
+sesiones.abiertas	31	
+sesiones.cerradas	31	
 sesiones.sin.cerrar	0	
 dead_ends	8	callejones sin salida registrados como entrada propia
 decisiones	14	
-procedencias	4	
+procedencias	5	
 notas	13	
-clasificaciones	53	
+clasificaciones	55	
 retroactivos	1	registros reconstruidos, que no equivalen a uno tomado en vivo
 ficheros.clasificados	98	
 ficheros.binarios.no.contados	2	sus saltos de linea no son lineas escritas y no se suman
-lineas.de.aparato	7373	
-lineas.de.analisis	12911	
-lineas.totales	20284	
+lineas.de.aparato	7439	
+lineas.de.analisis	13082	
+lineas.totales	20521	
 lineas.extraidas	313	lineas que vienen de fuera y no se cuentan como escritas aqui
-lineas.de.analisis.propio	12693	
-lineas.de.aparato.propio	7278	
+lineas.de.analisis.propio	12864	
+lineas.de.aparato.propio	7344	

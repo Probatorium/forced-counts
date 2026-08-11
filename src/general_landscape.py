@@ -22,6 +22,7 @@ OUT = os.path.join(ROOT, "results", "general-landscape.tsv")
 
 SEED = 20260809          # la ya congelada en el repositorio
 REPS = 2000              # por combinacion de n y k, donde se muestrea
+UMBRAL = 5000            # por debajo de esto se enumera entero en vez de muestrear
 ROWS = []
 
 
@@ -214,6 +215,9 @@ def mawangdui_like(n, k, pi, rho):
 def main():
     emit("semilla", SEED, "la ya congelada en el repositorio")
     emit("repeticiones.donde.se.muestrea", REPS, "por combinacion de n y k")
+    emit("umbral.de.enumeracion.entera", UMBRAL,
+         "si el espacio de pares de permutaciones no pasa de aqui se recorre "
+         "entero; si lo pasa, se muestrea")
 
     for n in (3, 4, 5):
         N = 1 << n
@@ -276,7 +280,7 @@ def main():
             # O3 muestreada o enumerada
             nb, ni = 1 << (n - k), size
             espacio = factorial(nb) * factorial(ni)
-            enumerable = (espacio <= 5000)
+            enumerable = (espacio <= UMBRAL)
             emit("%s.O3.espacio.de.pares.de.permutaciones" % etiqueta, espacio, "")
             emit("%s.O3.enumerado.entero" % etiqueta, int(enumerable),
                  "si es cero, se muestreo con la semilla declarada")

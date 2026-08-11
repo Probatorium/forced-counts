@@ -40,51 +40,51 @@ and have no row here.
      ENTERA: un paisaje del que solo se dice que existe no es un paisaje. Las
      casillas llevan aqui el nombre ingles de la seccion 1; en los ficheros de
      results son FORZADO, INTERVALO y PROHIBIDO. -->
-<!-- CIFRAS: 16 = results/general-landscape.tsv:15 n3.k1.Gray.grupo.orden;
-     0 = results/general-landscape.tsv:46 n3.k1.O3.FORZADO;
-     24 = results/general-landscape.tsv:47 n3.k1.O3.INTERVALO;
-     24 = results/general-landscape.tsv:48 n3.k1.O3.PROHIBIDO;
-     48 = results/general-landscape.tsv:45 n3.k1.O3.casos;
-     16 = results/general-landscape.tsv:51 n3.k2.Gray.grupo.orden;
-     0 = results/general-landscape.tsv:82 n3.k2.O3.FORZADO;
-     24 = results/general-landscape.tsv:83 n3.k2.O3.INTERVALO;
-     24 = results/general-landscape.tsv:84 n3.k2.O3.PROHIBIDO;
-     48 = results/general-landscape.tsv:81 n3.k2.O3.casos;
-     96 = results/general-landscape.tsv:96 n4.k1.Gray.grupo.orden;
-     0 = results/general-landscape.tsv:127 n4.k1.O3.FORZADO;
-     827 = results/general-landscape.tsv:128 n4.k1.O3.INTERVALO;
-     1173 = results/general-landscape.tsv:129 n4.k1.O3.PROHIBIDO;
-     2000 = results/general-landscape.tsv:126 n4.k1.O3.casos;
-     64 = results/general-landscape.tsv:132 n4.k2.Gray.grupo.orden;
-     36 = results/general-landscape.tsv:163 n4.k2.O3.FORZADO;
-     228 = results/general-landscape.tsv:164 n4.k2.O3.INTERVALO;
-     312 = results/general-landscape.tsv:165 n4.k2.O3.PROHIBIDO;
-     576 = results/general-landscape.tsv:162 n4.k2.O3.casos;
-     96 = results/general-landscape.tsv:168 n4.k3.Gray.grupo.orden;
-     0 = results/general-landscape.tsv:199 n4.k3.O3.FORZADO;
-     828 = results/general-landscape.tsv:200 n4.k3.O3.INTERVALO;
-     1172 = results/general-landscape.tsv:201 n4.k3.O3.PROHIBIDO;
-     2000 = results/general-landscape.tsv:198 n4.k3.O3.casos;
-     768 = results/general-landscape.tsv:213 n5.k1.Gray.grupo.orden;
-     0 = results/general-landscape.tsv:244 n5.k1.O3.FORZADO;
-     781 = results/general-landscape.tsv:245 n5.k1.O3.INTERVALO;
-     1219 = results/general-landscape.tsv:246 n5.k1.O3.PROHIBIDO;
-     2000 = results/general-landscape.tsv:243 n5.k1.O3.casos;
-     384 = results/general-landscape.tsv:249 n5.k2.Gray.grupo.orden;
-     10 = results/general-landscape.tsv:280 n5.k2.O3.FORZADO;
-     794 = results/general-landscape.tsv:281 n5.k2.O3.INTERVALO;
-     1196 = results/general-landscape.tsv:282 n5.k2.O3.PROHIBIDO;
-     2000 = results/general-landscape.tsv:279 n5.k2.O3.casos;
-     384 = results/general-landscape.tsv:285 n5.k3.Gray.grupo.orden;
-     9 = results/general-landscape.tsv:316 n5.k3.O3.FORZADO;
-     753 = results/general-landscape.tsv:317 n5.k3.O3.INTERVALO;
-     1238 = results/general-landscape.tsv:318 n5.k3.O3.PROHIBIDO;
-     2000 = results/general-landscape.tsv:315 n5.k3.O3.casos;
-     768 = results/general-landscape.tsv:321 n5.k4.Gray.grupo.orden;
-     0 = results/general-landscape.tsv:352 n5.k4.O3.FORZADO;
-     771 = results/general-landscape.tsv:353 n5.k4.O3.INTERVALO;
-     1229 = results/general-landscape.tsv:354 n5.k4.O3.PROHIBIDO;
-     2000 = results/general-landscape.tsv:351 n5.k4.O3.casos;
+<!-- CIFRAS: 16 = results/general-landscape.tsv:16 n3.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:47 n3.k1.O3.FORZADO;
+     24 = results/general-landscape.tsv:48 n3.k1.O3.INTERVALO;
+     24 = results/general-landscape.tsv:49 n3.k1.O3.PROHIBIDO;
+     48 = results/general-landscape.tsv:46 n3.k1.O3.casos;
+     16 = results/general-landscape.tsv:52 n3.k2.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:83 n3.k2.O3.FORZADO;
+     24 = results/general-landscape.tsv:84 n3.k2.O3.INTERVALO;
+     24 = results/general-landscape.tsv:85 n3.k2.O3.PROHIBIDO;
+     48 = results/general-landscape.tsv:82 n3.k2.O3.casos;
+     96 = results/general-landscape.tsv:97 n4.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:128 n4.k1.O3.FORZADO;
+     827 = results/general-landscape.tsv:129 n4.k1.O3.INTERVALO;
+     1173 = results/general-landscape.tsv:130 n4.k1.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:127 n4.k1.O3.casos;
+     64 = results/general-landscape.tsv:133 n4.k2.Gray.grupo.orden;
+     36 = results/general-landscape.tsv:164 n4.k2.O3.FORZADO;
+     228 = results/general-landscape.tsv:165 n4.k2.O3.INTERVALO;
+     312 = results/general-landscape.tsv:166 n4.k2.O3.PROHIBIDO;
+     576 = results/general-landscape.tsv:163 n4.k2.O3.casos;
+     96 = results/general-landscape.tsv:169 n4.k3.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:200 n4.k3.O3.FORZADO;
+     828 = results/general-landscape.tsv:201 n4.k3.O3.INTERVALO;
+     1172 = results/general-landscape.tsv:202 n4.k3.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:199 n4.k3.O3.casos;
+     768 = results/general-landscape.tsv:214 n5.k1.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:245 n5.k1.O3.FORZADO;
+     781 = results/general-landscape.tsv:246 n5.k1.O3.INTERVALO;
+     1219 = results/general-landscape.tsv:247 n5.k1.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:244 n5.k1.O3.casos;
+     384 = results/general-landscape.tsv:250 n5.k2.Gray.grupo.orden;
+     10 = results/general-landscape.tsv:281 n5.k2.O3.FORZADO;
+     794 = results/general-landscape.tsv:282 n5.k2.O3.INTERVALO;
+     1196 = results/general-landscape.tsv:283 n5.k2.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:280 n5.k2.O3.casos;
+     384 = results/general-landscape.tsv:286 n5.k3.Gray.grupo.orden;
+     9 = results/general-landscape.tsv:317 n5.k3.O3.FORZADO;
+     753 = results/general-landscape.tsv:318 n5.k3.O3.INTERVALO;
+     1238 = results/general-landscape.tsv:319 n5.k3.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:316 n5.k3.O3.casos;
+     768 = results/general-landscape.tsv:322 n5.k4.Gray.grupo.orden;
+     0 = results/general-landscape.tsv:353 n5.k4.O3.FORZADO;
+     771 = results/general-landscape.tsv:354 n5.k4.O3.INTERVALO;
+     1229 = results/general-landscape.tsv:355 n5.k4.O3.PROHIBIDO;
+     2000 = results/general-landscape.tsv:352 n5.k4.O3.casos;
      7680 = results/general-n6.tsv:11 n6.k1.Gray.grupo.orden;
      3072 = results/general-n6.tsv:39 n6.k2.Gray.grupo.orden;
      2304 = results/general-n6.tsv:67 n6.k3.Gray.grupo.orden;
@@ -129,10 +129,35 @@ that section 7.3 takes up and cuts down to size.
 <!-- origen: TABLA-GENERAL.md; las tres casillas definidas en
      DEFINICIONES-GENERAL.md 5 -->
 Each row reports the outcome for two fixed orderings, the reflected Gray code and
-the canonical member of the parametrised family, and, where the space of
-orderings of that family was small enough, the full distribution of the three
-outcomes over it. Where it was not small enough, a sample with the frozen seed
-was used and is labelled as a sample.
+the canonical member of the parametrised family.
+
+<!-- DEFINICION FORMAL, extraida de la funcion mawangdui_like de
+     src/general_landscape.py y comprobada contra ella para todo n y todo k -->
+The **parametrised family** of B(n, k) is indexed by a pair of permutations: one
+of the 2^(n-k) blocks, which fixes the order in which the blocks are laid out,
+and one of the 2^k positions inside a block, which is the same for every block.
+Given the pair, the ordering places at position i times 2^k plus j the vertex
+whose upper n minus k coordinates encode the image of i and whose lower k
+coordinates encode the image of j. The **canonical member** is the one obtained
+when both permutations are the identity, so that position i times 2^k plus j
+carries the vertex whose integer code is exactly i times 2^k plus j: the map from
+positions to vertices is the identity. That is not the binary reference order,
+because the reference order reads the bottom line as the most significant bit
+while the vertex code reads it as the least significant one, which is why the
+canonical member has a discordance to report at all.
+
+<!-- ESQUEMA DE MUESTREO, tomado del codigo y congelado contra results -->
+<!-- CIFRAS: 20260809 = results/general-landscape.tsv:3 semilla;
+     2000 = results/general-landscape.tsv:4 repeticiones.donde.se.muestrea;
+     5000 = results/general-landscape.tsv:5 umbral.de.enumeracion.entera -->
+Where the space of those pairs has at most 5000 members it is traversed in full,
+and the row says *enumerated*. Where it is larger, 2000 pairs are drawn and the
+row says *sampled*. Each draw takes one permutation of the blocks and one of the
+inner positions, each uniform over its symmetric group and independent of the
+other, from a Mersenne Twister seeded once per row at 20260809, a seed frozen in
+the source before any of this was run. The draws are independent and are not
+deduplicated, so the sample is with replacement and a pair can in principle come
+up twice.
 
 <!-- origen: TABLA-GENERAL.md, fila aparte de la Mawangdui historica.
      Es la unica secuencia historica que encaja en el sistema, y por eso va en

@@ -37,8 +37,10 @@ written before the search ran.
 **What would close it.** Either a proof that the relation graph of a forced orbit
 always satisfies Hall's condition, or a single counterexample: a forced orbit
 whose two parity classes admit no perfect matching. A counterexample would also
-refute the equivalence between the matching criterion and forcedness, which is
-currently the informative half of the characterisation of section 5.
+refute the equivalence between the matching criterion and being forced. That
+criterion is the one of section 5.3, and it is not the characterisation: one of
+its two directions is proved and the other is enumerative. The characterisation
+is Theorem 2, as section 5.6 says.
 
 ## 8.2 How many orderings are forced?
 

@@ -126,8 +126,8 @@ things were fixed and measured is itself checkable.
 
 <!-- origen: EFFORT.md, PREREGISTRATION.md, PREREGISTRATION-GENERAL.md -->
 Every measurement in this paper was preceded, in a separate and earlier commit of
-a public repository, by a written statement of what was going to be measured and
-what would count as a refutation. Several of those statements were then refuted
+a public repository, by a written statement of what was going to be measured
+and, where predictions were made, of what would count as a refutation of them. Several of those statements were then refuted
 by the measurements, including one prediction whose refutation criterion turned
 out to be unfailable and is reported as a defect rather than cashed as a success.
 Section 9 explains the arrangement. It is mentioned here because it changes how

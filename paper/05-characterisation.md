@@ -42,10 +42,20 @@ difference d to its image. Hence the orbit of a pair is the set of pairs whose
 difference lies in the orbit of d under the linear parts. Applying Theorem 1
 orbit by orbit gives the statement. QED
 
-<!-- origen: PROOFS-B31.md 1.2, nota de generalidad -->
+<!-- origen: PROOFS-B31.md 1.2, nota de generalidad. ALCANCE ACOTADO: la
+     frase decia "todos los sistemas de bloques considerados aqui" y eso incluia
+     dos que no cumplen la hipotesis. -->
 The argument uses neither a particular dimension nor a particular partition, so
 it holds for every group containing the full translation group, which covers all
-the block systems considered here.
+the B(n, k) block systems of section 7.
+
+It does not cover the other two constructions of section 6. The group that
+respects the palaces is the translations by a three dimensional subspace, and
+the group that respects the pairs of the third ordering is the centraliser of
+the half turn; neither contains all the translations of the cube, so Theorem 2
+does not apply to them and their orbits are not the difference classes. Those
+two cases are settled by the orbit accounting of section 3, which needs no such
+hypothesis.
 
 ## 5.3 Forcing by a matching, and what is proved versus counted
 

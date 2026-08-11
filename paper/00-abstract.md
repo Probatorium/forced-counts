@@ -71,5 +71,5 @@ shapes we tried to raise into theorems, one of them of an error of our own.
 
 <!-- origen: EFFORT.md, PREREGISTRATION.md, PREREGISTRATION-GENERAL.md -->
 Every measurement was preceded, in an earlier commit of a public repository, by a
-written statement of what would be measured and what would refute it, and that
-ordering is checkable.
+written statement of what was going to be measured and, where predictions were
+made, of what would refute them, and that ordering is checkable.

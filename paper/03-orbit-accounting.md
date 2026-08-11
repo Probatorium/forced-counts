@@ -163,8 +163,9 @@ compatible with the structure is the minimum plus the subset sums of the gaps.
 
 <!-- origen: PRIOR-ART.md 14.4, limite del veredicto; NOVELTY.md -->
 This is where the present work parts company with the literature just cited. In
-homomesy, a case in which the average is not constant on orbits is a case to be
-discarded: the phenomenon is the constancy. Here it is the case that is measured.
+homomesy, a case in which the average is not constant on orbits is a case that
+falls outside the phenomenon being collected: the phenomenon is the constancy.
+Here it is that case that is measured.
 The free orbits are not failures of a phenomenon; they are the quantity of
 freedom that the construction leaves, and the interval they define is the object
 of the sections that follow.

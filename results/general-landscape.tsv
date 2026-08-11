@@ -2,6 +2,7 @@
 # clave	valor	nota
 semilla	20260809	la ya congelada en el repositorio
 repeticiones.donde.se.muestrea	2000	por combinacion de n y k
+umbral.de.enumeracion.entera	5000	si el espacio de pares de permutaciones no pasa de aqui se recorre entero; si lo pasa, se muestrea
 n3.vertices	8	
 n3.denominador	28	C(2^n, 2)
 n3.empate	14	

@@ -107,8 +107,10 @@ REFERENCIAS = [
 
     ("Gr", "Gritter",
      "Gritter, G. (2015). *The hidden pattern in the classical sequence of the "
-     "I Ching*. Groningen.",
-     "read in full"),
+     "I Ching*. Groningen: Self-published.",
+     "read in full; the artefact names a place and a year and no publisher, so "
+     "the entry says self-published, which is what APA asks for when a work "
+     "carries none. If a copy turns up that names one, the artefact wins"),
 
     ("HM", "Hacker",
      "Hacker, E., & Moore, S. (2003). A brief note on the two-part division of "
