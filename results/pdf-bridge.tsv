@@ -7,14 +7,14 @@ el.pdf.canonico.esta	0
 mientras.se.espera.no.hay.un.pdf.canonico.sin.origen	1	el estado dice que el canonico esta por llegar, y hay un fichero en su sitio: o el estado esta desactualizado o ese PDF no se sabe de donde sale
 se.coteja.contra	el preview, a falta del canonico	
 el.pdf.lleva.colofon.legible	1	sin colofon dentro del fichero no hay puente que cotejar
-colofon.commit	85d6eee399a57f4201ed1ec86cf467b3aea80393	
+colofon.commit	b4a62fa28a7acc33079250213f79d97026bd476b	
 colofon.fecha	2026-08-10	
-colofon.sha256	0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc	
+colofon.sha256	4717d4f848fc7549864c1d4390e74dbb3472f3b720b49ddd7bc7e56915d59060	
 colofon.comprobaciones	62	
-sha256.del.manuscrito.de.ahora	0776d2a3b200cc0171a9e4eab74c3a996b7abe1f669d80a150170a4e0f7ea0dc	
+sha256.del.manuscrito.de.ahora	4717d4f848fc7549864c1d4390e74dbb3472f3b720b49ddd7bc7e56915d59060	
 el.pdf.corresponde.al.manuscrito.de.ahora	1	el texto ha cambiado desde que se construyo el PDF: se debe una version nueva, hay que volver a correr src/build_paper.py
 el.commit.del.colofon.existe.en.esta.historia	1	
-head.actual	85d6eee399a57f4201ed1ec86cf467b3aea80393	
+head.actual	b4a62fa28a7acc33079250213f79d97026bd476b	
 commits.desde.el.del.colofon	0	cero quiere decir que el PDF es del estado actual
 el.pdf.retrata.el.head.actual	1	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
 comprobaciones.en.verde.ahora	62	

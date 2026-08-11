@@ -25,6 +25,8 @@ The apparatus is an accounting over the orbits of that subgroup acting on pairs 
 
 Two theorems remove the apparatus once it has been built. An orbit is forced precisely when it contains as many discordant pairs as concordant ones; and when the subgroup contains all translations, an ordering is forced precisely when every difference class splits exactly in two. A third result cuts the other way: if the subgroup contains the translations by a subspace of dimension at least two, every orbit has even cardinality, so the parity of the count is fixed by the structure, and when that parity differs from the parity of the midpoint the midpoint becomes \textbf{impossible} rather than merely unattained. The dimension hypothesis is necessary, by an exhibited witness.
 
+The apparatus and its three theorems are the contribution; what follows is where they came from and what they first settled.
+
 Applied to three constructed orderings of the 6-cube that have come down to us, with 2016 pairs and a midpoint of 1008, the three outcomes all occur. Two of the constructions force the count to 1008, and for one of them the demonstration is complete with no enumerative residue; a mechanism previously claimed for the other is refuted here, since the closure it rests on forces only 484 of the 2016 pairs and survives rearrangements that destroy the result, the midpoint coming out in 3836 of the 40320 of them. The third construction makes 1008 impossible by the parity obstruction: its structure leaves the interval [957, 1059] and exactly 52 compatible totals within it, 1008 is not among them, and the observed count is 1013.
 
 That difference of 5 is decomposed completely over the 19 free orbits and has no culprit: every free orbit deviates, and the deviations nearly cancel. Against a list of candidate structures declared before measuring, one narrows the interval, namely the construction's own pairing involution, which is not affine and so was absent from a group that is exactly its centraliser; none explains the difference. We therefore declare the residue informative relative to that list, and stop.
@@ -50,6 +52,8 @@ The answer is not a single dichotomy. A group can leave the count completely fre
 \subsection*{1.2 The object}
 
 The set is the vertex set of the n-cube, the reference order is the binary order induced by reading a vertex as a number, and the symmetries available are the hyperoctahedral group $B_n$, which permutes coordinates and complements subsets of them. An ordering is a bijection from positions to vertices; a construction partitions it into blocks; and the group of interest is the subgroup of $B_n$ that sends every block onto a block.
+
+What the paper contributes is the general apparatus: the orbit accounting, the parity obstruction and the two characterisation theorems of sections 3 to 5, which are stated and proved for an arbitrary dimension and an arbitrary subgroup. The three constructed orderings below are the motivation for that apparatus and its first application, not the result it is built to deliver.
 
 Three orderings of the 6-cube carry the concrete weight of the paper. They come from a published replication package, read at a fixed tag, and they are of interest here for a structural reason rather than a historical one: each is built by a documented rule with a visible symmetry, and the three rules are different enough that they populate all three outcomes. Two of them force the count to the midpoint of its range. The third bars that midpoint entirely.
 
@@ -425,7 +429,7 @@ None of the five declared structures explains the residue. After the one that na
 \textbf{The residue is therefore declared informative relative to this list.} Informative in the structural sense, as the part of the count not determined by the declared structures; no inferential claim is attached to the word. The decomposition exists, it is complete, and it has no culprit.
 \end{quote}
 
-\textbf{The mathematics reaches bottom where editorial choice begins.} What remains of the difference, once the symmetry that the construction respects has been exhausted and the four additional declared structures have been tried, is not a residue that structure can absorb. It is what the received sequence has of choice rather than of rule.
+\textbf{This is where the declared structures run out.} What remains of the difference, once the symmetry that the construction respects has been exhausted and the four additional declared structures have been tried, is not a residue that any of them absorbs. It is the part of the count that no declared structure determines, and that is a statement about the list of structures that were tried and about nothing else.
 
 That sentence is about the limits of this method, not about the people who ordered the sequence. Nothing here is claimed about design, about intention or about ancient knowledge, and the declaration is relative to the declared list: another structure, not tried here, could absorb what this one leaves.
 
@@ -474,7 +478,7 @@ Each row reports the outcome for two fixed orderings, the reflected Gray code an
 
 The \textbf{parametrised family} of B(n, k) is indexed by a pair of permutations: one of the 2\textasciicircum{}(n-k) blocks, which fixes the order in which the blocks are laid out, and one of the 2\textasciicircum{}k positions inside a block, which is the same for every block. Given the pair, the ordering places at position i times 2\textasciicircum{}k plus j the vertex whose upper n minus k coordinates encode the image of i and whose lower k coordinates encode the image of j. The \textbf{canonical member} is the one obtained when both permutations are the identity, so that position i times 2\textasciicircum{}k plus j carries the vertex whose integer code is exactly i times 2\textasciicircum{}k plus j: the map from positions to vertices is the identity. That is not the binary reference order, because the reference order reads the bottom line as the most significant bit while the vertex code reads it as the least significant one, which is why the canonical member has a discordance to report at all.
 
-Where the space of those pairs has at most 5000 members it is traversed in full, and the row says \emph{enumerated}. Where it is larger, 2000 pairs are drawn and the row says \emph{sampled}. Each draw takes one permutation of the blocks and one of the inner positions, each uniform over its symmetric group and independent of the other, from a Mersenne Twister seeded once per row at 20260809, a seed frozen in the source before any of this was run. The draws are independent and are not deduplicated, so the sample is with replacement and a pair can in principle come up twice.
+Where the space of those pairs has at most 5000 members it is traversed in full, and the row says \emph{enumerated}. Where it is larger, 2000 pairs are drawn and the row says \emph{sampled}. Each draw takes one permutation of the blocks and one of the inner positions, each uniform over its symmetric group and independent of the other, from a Mersenne Twister seeded once per sampled row at 20260809, a seed frozen in the source before any of this was run. The draws are independent and are not deduplicated, so the sample is with replacement and a pair can in principle come up twice.
 
 \textbf{One historical row belongs here and is kept apart.} The first historical ordering does fit the family, at the middle level of dimension six, since its octets are exactly those cosets. Its row is Table 3, kept out of Table 2 so that the parametrised family and the received sequence are not read as one population:
 
@@ -576,9 +580,9 @@ The second preregistration, for the general phase, was signed after a phase whos
 
 \subsection*{9.2 The effort log}
 
-Every working session opens and closes an entry in an append only log: 35 closed sessions in 172 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
+Every working session opens and closes an entry in an append only log: 36 closed sessions in 176 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
 
-The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 98 files were classified, over 20476 lines: 7426 of apparatus against 13050 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
+The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 98 files were classified, over 20519 lines: 7440 of apparatus against 13079 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
 
 Dead ends are recorded as their own kind of entry, with their cost. There are 8 of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix mistake made again by hand a session later while editing this very section, a criterion for binary files that let an uncompressed PDF pass as text and counted its line breaks as written work, a patch script that truncated a source file because the call that opens a file for writing empties it before it validates its own arguments, and a shell here-document that ate an escape sequence and left a control byte inside a checker, so that the checker failed on the very fix it was meant to confirm. The fourth, the fifth and the eighth were caught by the checkers written to catch exactly that; the sixth by the packaging run; the seventh by the file being under version control, which is the cheapest safety net in the list.
 
@@ -624,10 +628,10 @@ Each entry records the identity as the literature review fixed it, and whether t
 \begin{small}
 \noindent\textbf{Colophon.}
 Built from the assembled manuscript at commit
-\texttt{85d6eee3\allowbreak 99a57f42\allowbreak 01ed1ec8\allowbreak 6cf467b3\allowbreak aea80393},
+\texttt{b4a62fa2\allowbreak 8a7acc33\allowbreak 07925021\allowbreak 3f79d970\allowbreak 26bd476b},
 dated 2026-08-10. Working tree clean: si. Checks green at build time: 62.
 \par\noindent
 sha256 of the manuscript:
-\texttt{0776d2a3\allowbreak b200cc01\allowbreak 71a9e4ea\allowbreak b74c3a99\allowbreak 6b7abe1f\allowbreak 669d80a1\allowbreak 50170a4e\allowbreak 0f7ea0dc}
+\texttt{4717d4f8\allowbreak 48fc7549\allowbreak 864c1d43\allowbreak 90e74dbb\allowbreak 3472f3b7\allowbreak 20b49ddd\allowbreak 7bc7e569\allowbreak 15d59060}
 \end{small}
 \end{document}
