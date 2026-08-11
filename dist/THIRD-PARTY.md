@@ -25,7 +25,7 @@ se puede rehacer entera en cuanto el material se repone.
 ## `paper/PAPER-preview.pdf`
 
 - **Que es:** PREVIEW compuesto aqui con reportlab desde el mismo modelo intermedio que el .tex. NO es el PDF canonico del articulo.
-- **sha256:** `1a7b5f888ae2cc85443ac65f00425a785bd456a929831e1d69eb2442d4f28d1c`
-- **Bytes:** 152610
+- **sha256:** `0b662ed889ee02a53a77091970663def2d421f8b3ab8e28dc14f0e4ddcfc1e8b`
+- **Bytes:** 154542
 - **Como se consigue:** Se regenera con python src/build_paper.py. El PDF canonico es paper/PAPER.pdf, que compila LaTeX desde paper/PAPER.tex y que no se puede producir en la maquina donde se escribio este repositorio.
 - **Estado en el bundle:** filtrado de toda la historia.

@@ -2,32 +2,32 @@
 # terceros y bundle.
 # clave	valor	nota
 modo	completo	
-head	f51f7d3d977549347a3f7e40fa06c0924aa8c220	
+head	5fcb058503e3f05e7c14bd8d3520379ff6c1d6fe	
 arbol.limpio.al.empaquetar	si	lo que se clona es lo commiteado, no lo que hay sin commitear
 estado.del.pdf.canonico	esperando	esperando quiere decir que el PDF del deposito todavia no esta, porque lo compila quien tenga LaTeX
 el.pdf.canonico.esta.en.el.arbol	0	
 el.clon.se.hace	1	
-clon.segundos	0.5	
+clon.segundos	4.4	
 lineas.excluidas.por.no.deterministas	1	hall-search.tsv segundos.totales: reloj de pared de la busqueda; mide esta maquina y no el resultado
 ficheros.de.results.commiteados	24	
 el.clon.recibe.intacto.PAPER-preview.pdf	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.tex	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 el.clon.recibe.intacto.PAPER.md	1	git ha alterado el fichero al sacarlo, mira .gitattributes
 ficheros.comparados.contra.el.clon	3	
-cadena.measure.py.segundos	19.5	
-cadena.group.py.segundos	50.2	
-cadena.proofs.py.segundos	11.0	
+cadena.measure.py.segundos	19.8	
+cadena.group.py.segundos	48.2	
+cadena.proofs.py.segundos	10.6	
 cadena.gray.py.segundos	1.6	
-cadena.transitions.py.segundos	0.0	
+cadena.transitions.py.segundos	0.1	
 cadena.corroborate.py.segundos	0.1	
 cadena.parity_hypotheses.py.segundos	0.0	
-cadena.general_landscape.py.segundos	124.4	
-cadena.general_n6.py.segundos	2.7	
-cadena.general_theorems.py.segundos	8.2	
-cadena.b31_characterization.py.segundos	2.1	
-cadena.hall_search.py.segundos	11.4	
-cadena.residuo5.py.segundos	2.2	
-cadena.segundos.totales	233.5	
+cadena.general_landscape.py.segundos	125.6	
+cadena.general_n6.py.segundos	2.8	
+cadena.general_theorems.py.segundos	8.0	
+cadena.b31_characterization.py.segundos	2.0	
+cadena.hall_search.py.segundos	11.2	
+cadena.residuo5.py.segundos	2.5	
+cadena.segundos.totales	232.5	
 todos.los.programas.de.analisis.corren	1	
 ficheros.de.results.que.cambian.al.rehacerlos	ninguno	
 la.cadena.reproduce.sus.propias.salidas	1	un programa que no reproduce su salida no es reproducible
@@ -39,15 +39,15 @@ comprobador.mutaciones	pasa
 comprobador.prueba.del.puente	pasa	
 comprobador.cadena.del.registro	pasa	
 todos.los.comprobadores.pasan.en.el.clon	1	
-commits.en.la.historia	99	
+commits.en.la.historia	108	
 la.historia.tiene.commits	1	
-objetos.de.la.historia.revisados	669	
+objetos.de.la.historia.revisados	716	
 hallazgos.de.secreto	ninguno	
 ningun.secreto.en.la.historia	1	
 la.busqueda.de.secretos.no.pasa.en.vacio	1	buscar cero patrones en cero objetos daria verde sin mirar nada
 ficheros.de.terceros.en.el.arbol	3	
 el.clon.para.filtrar.se.hace	1	
-el.filtrado.corre	1	8c220 (97/99) (39 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
+el.filtrado.corre	1	6fe (107/108) (44 seconds passed, remaining 0 predicted)    rm 'artifacts/radisic-2601.07175v3-appendix-A.tsv'
 rm 'data/sequences.json'
 rm 'paper/PAPER-preview.pdf'
 
@@ -59,19 +59,19 @@ referencias.originales.borradas	2
 terceros.que.quedan.en.la.historia.filtrada	ninguno	
 el.filtrado.no.deja.rastro	1	filtrar el arbol de ahora no basta: tiene que salir de todos los commits
 el.bundle.se.crea	1	
-bundle.bytes	4318044	
-bundle.sha256	a0798ec750f744422a549aa0cc7d9019102d082a1636401779075d89911be2fe	
+bundle.bytes	5355346	
+bundle.sha256	b32d23b3b7f4f837c5a6efc0bb7ad7620c2fe58d0fa2b462d95737a8502510e5	
 el.bundle.se.verifica	1	4 refs:
-5aad8cdcff0b577f5426fa887206d490fc98fe0b refs/heads/main
-5aad8cdcff0b577f5426fa887206d490fc98fe0b refs/remotes/origin/HEAD
-5aad8cdcff0b577f5426fa887206d490fc98fe0b refs/remotes/origin/main
-5aad8cdcff0b577f5426fa887206d490fc98fe0b HEAD
+9df4ea6d2c6b0c288cec88d85ea1304c9fdf5600 refs/heads/main
+9df4ea6d2c6b0c288cec88d85ea1304c9fdf5600 refs/remotes/origin/HEAD
+9df4ea6d2c6b0c288cec88d85ea1304c9fdf5600 refs/remotes/origin/main
+9df4ea6d2c6b0c288cec88d85ea1304c9fdf5600 HEAD
 The bundle records a complete history.
 The bundle uses this hash algorithm: sha1
 C:/Users/AlexDesk/Documents/forced-counts/dist/forced-counts.bundle is okay
 
 el.bundle.se.clona	1	
-commits.en.el.bundle	99	
+commits.en.el.bundle	108	
 el.bundle.no.trae.sequences.json	1	
 el.bundle.no.trae.radisic-2601.07175v3-appendix-A.tsv	1	
 el.bundle.no.trae.PAPER-preview.pdf	1	

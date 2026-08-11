@@ -1,6 +1,15 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+5fcb058 El .tex y el preview con el tercer sitio, desde arbol limpio
+85d6eee El comprobador de diacriticos vigila tambien Lafreniere
+10fcc49 El tercer sitio del germen entra, verificado en pagina renderizada
+a8daf8f Cierre de la sesion 35
+116d6ea Cierre de la sesion 34
+ecf10d0 Cierre de la sesion 33
+da12a8c VERIFICATIONS.md queda solo con el hecho operativo del artefacto
+18d2cb1 Retirada de asientos internos de proceso de PRIOR-ART.md
+3d2f282 Verificacion del paquete tras la reparacion
 f51f7d3 El .tex y el preview con las nueve reparaciones, desde arbol limpio
 b274a1a Reparacion tras el triaje de tres auditorias externas
 534ebba Verificacion del paquete con el flujo del PDF canonico
