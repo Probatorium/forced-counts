@@ -104,3 +104,4 @@ paper/citation-order.tsv	aparato	propio	numeracion vigente de las citas
 results/table-renumber.tsv	aparato	propio	salida del numerador de tablas
 paper/PDF-STATE.tsv	aparato	propio	estado declarado del PDF canonico
 paper/PAPER-preview.pdf	analisis	propio	preview del manuscrito, binario, no va al deposito
+README.md	analisis	propio	puerta de entrada del repositorio, con la linea citable

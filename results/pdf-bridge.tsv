@@ -28,8 +28,8 @@ colofon.comprobaciones	62
 sha256.del.manuscrito.de.ahora	4717d4f848fc7549864c1d4390e74dbb3472f3b720b49ddd7bc7e56915d59060	
 el.pdf.corresponde.al.manuscrito.de.ahora	1	el texto ha cambiado desde que se construyo el PDF: se debe una version nueva, hay que volver a correr src/build_paper.py
 el.commit.del.colofon.existe.en.esta.historia	1	
-head.actual	71ec8b1a7d5e21bbdd2e8b7b2c61d13e21222514	
-commits.desde.el.del.colofon	4	cero quiere decir que el PDF es del estado actual
+head.actual	34cfc291a9bed8b670cab1f71f35d18f49429ca1	
+commits.desde.el.del.colofon	6	cero quiere decir que el PDF es del estado actual
 el.pdf.retrata.el.head.actual	0	informativo: el PDF se construye antes del commit que lo guarda, asi que aqui un cero es lo esperado, no un fallo
 comprobaciones.en.verde.ahora	62	
 el.recuento.de.comprobaciones.no.ha.cambiado	1	los comprobadores dan hoy un numero distinto del que el PDF declara

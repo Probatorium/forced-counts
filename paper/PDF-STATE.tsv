@@ -18,3 +18,30 @@ productor	pdfTeX-1.40.25	leido del propio fichero
 compilado.desde	6b8a145	clon limpio de ese commit
 colofon.nombra.el.commit	b4a62fa28a7acc33079250213f79d97026bd476b	el commit de contenido del que salio el .tex
 quien.compilo	externo a esta maquina	aqui no hay cadena de LaTeX
+#
+# ------------------------------------------------------------------
+# DEPOSITADO. El trio PAPER.md, PAPER.tex y PAPER.pdf que hay aqui es
+# el estado depositado, y sus md5 son los que Zenodo muestra.
+#
+# CUALQUIER CAMBIO FUTURO DEL MANUSCRITO NO SE EDITA EN EL DEPOSITO.
+# Un deposito es inmutable. Tocar el manuscrito obliga, en este orden,
+# a: correr tools/effort.py export y refrescar las cifras de la
+# seccion 9; regenerar paper/PAPER.tex desde arbol limpio; pedir una
+# compilacion externa nueva, porque aqui no hay cadena de LaTeX; y
+# publicar una VERSION NUEVA en Zenodo, que convive con esta.
+# ------------------------------------------------------------------
+deposito.doi	10.5281/zenodo.21889328	
+deposito.fecha	2026-08-11	
+deposito.version	1	
+deposito.etiqueta	zenodo-v1	etiqueta anotada en el remoto publico
+deposito.commit	b4aa58589f4f0ea61774f6516dae846115a7caa1	el que la etiqueta nombra, cabeza que declara dist/HISTORY.txt
+deposito.ficheros	4	
+deposito.md5.PAPER.pdf	065838b9a93cd69ed3bd9f0f8e0e6706	
+deposito.md5.PAPER.tex	d4d2e479daab36d78ec21a5cc02bde12	
+deposito.md5.PAPER.md	08c0bb8685a1f3c5a2c6d895befcfbeb	
+deposito.md5.forced-counts.bundle	879c3d986b6387900b175d3193f9450c	
+deposito.bytes.PAPER.pdf	370771	
+deposito.bytes.PAPER.tex	82467	
+deposito.bytes.PAPER.md	110871	
+deposito.bytes.forced-counts.bundle	8425450	
+deposito.sha256.PAPER.md	4717d4f848fc7549864c1d4390e74dbb3472f3b720b49ddd7bc7e56915d59060	el que el PDF lleva impreso dentro
