@@ -1,6 +1,11 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+75e3ace El .tex y el PDF con los dos arreglos de caja, desde arbol limpio
+ea86bf6 Cierre de la sesion 30, con la seccion 9 refrescada
+4847fe2 El puente tambien tenia que aprender a leer el sha partido
+8c5a387 Las dos cajas: el colofon partible y las tablas fuera del center
+a9cc5f2 Verificacion del paquete tras el pulido final
 8d7a92f El PDF y el .tex finales, construidos desde arbol limpio
 12eef7b Cierre de la sesion 29, con la seccion 9 refrescada
 c33b1e2 El cotejo no veia los acentos, y ahora los exige
