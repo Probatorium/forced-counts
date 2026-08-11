@@ -242,8 +242,8 @@ endobj
 endobj
 28 0 obj
 <<
-/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810202231-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3) /ModDate (D:20260810202231-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (colofon: commit=8c5a3876c1318a3c3f4dc2010824f8568e4f7cf6 fecha=2026-08-10 sha256=0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
+/Author (Alexis Garc\355a Hurtado) /CreationDate (D:20260810202417-04'00') /Creator (\(unspecified\)) /Keywords (forced-counts colofon 476db07e706f9fafa597b164ad465964dbc3ee67706846fa02f4deea218d4c94) /ModDate (D:20260810202417-04'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (colofon: commit=ea86bf60ca6fd2c9af2e5b8e206fc8b402011ded fecha=2026-08-10 sha256=476db07e706f9fafa597b164ad465964dbc3ee67706846fa02f4deea218d4c94 comprobaciones=61 arbol_limpio=si) /Title (Forced counts: when a symmetry group determines the discordance of a constructed ordering) /Trapped /False
 >>
 endobj
 29 0 obj
@@ -3952,7 +3952,7 @@ q
 1 0 0 1 78 120.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL 1.425858 Tw (Every working session opens and closes an entry in an append only log: 28 closed sessions in 144) Tj T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
+BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL 1.425858 Tw (Every working session opens and closes an entry in an append only log: 29 closed sessions in 149) Tj T* 0 Tw -0.102634 Tw (records at the point this text was frozen. Each record carries the previous record's hash, so editing an old) Tj T* 0 Tw .849477 Tw (line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool) Tj T* 0 Tw .930182 Tw (that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the) Tj T* 0 Tw .414268 Tw (first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest) Tj T* 0 Tw (thing to do with a log that begins one commit late.) Tj T* ET
 Q
 Q
 q
@@ -3967,7 +3967,7 @@ endstream
 endobj
 48 0 obj
 <<
-/Length 5927
+/Length 6018
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -3975,74 +3975,67 @@ q
 1 0 0 1 78 737.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .457506 Tw (than anecdotal. At the same point, 97 files were classified, over 19845 lines: 6959 of apparatus against) Tj T* 0 Tw (12886 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
+BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .457506 Tw (than anecdotal. At the same point, 97 files were classified, over 19976 lines: 7085 of apparatus against) Tj T* 0 Tw (12891 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 601.8898 cm
+1 0 0 1 78 588.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 120.5 Tm /F1 9.5 Tf 13 TL 1.137768 Tw (Dead ends are recorded as their own kind of entry, with their cost. There are 7 of them: a command) Tj T* 0 Tw .558443 Tw (written with the wrong working tree, a process left running after its replacement had been launched, an) Tj T* 0 Tw -0.065642 Tw (analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool) Tj T* 0 Tw 1.607655 Tw (of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix) Tj T* 0 Tw .057811 Tw (mistake made again by hand a session later while editing this very section, a criterion for binary files that) Tj T* 0 Tw .790366 Tw (let an uncompressed PDF pass as text and counted its line breaks as written work, and a patch script) Tj T* 0 Tw .525768 Tw (that truncated a source file because the call that opens a file for writing empties it before it validates its) Tj T* 0 Tw 1.053123 Tw (own arguments. The fourth and the fifth were caught by the checker that was written to catch exactly) Tj T* 0 Tw 1.228422 Tw (that; the sixth by the packaging run; the seventh by the file being under version control, which is the) Tj T* 0 Tw (cheapest safety net in the list.) Tj T* ET
+BT 1 0 0 1 0 133.5 Tm /F1 9.5 Tf 13 TL 1.137768 Tw (Dead ends are recorded as their own kind of entry, with their cost. There are 8 of them: a command) Tj T* 0 Tw .558443 Tw (written with the wrong working tree, a process left running after its replacement had been launched, an) Tj T* 0 Tw -0.065642 Tw (analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool) Tj T* 0 Tw 1.607655 Tw (of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix) Tj T* 0 Tw .057811 Tw (mistake made again by hand a session later while editing this very section, a criterion for binary files that) Tj T* 0 Tw .790366 Tw (let an uncompressed PDF pass as text and counted its line breaks as written work, a patch script that) Tj T* 0 Tw .442768 Tw (truncated a source file because the call that opens a file for writing empties it before it validates its own) Tj T* 0 Tw 1.447287 Tw (arguments, and a shell here-document that ate an escape sequence and left a control byte inside a) Tj T* 0 Tw .68378 Tw (checker, so that the checker failed on the very fix it was meant to confirm. The fourth, the fifth and the) Tj T* 0 Tw 1.331976 Tw (eighth were caught by the checkers written to catch exactly that; the sixth by the packaging run; the) Tj T* 0 Tw (seventh by the file being under version control, which is the cheapest safety net in the list.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 573.8898 cm
+1 0 0 1 78 560.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (9.3 Rules that were born during the work, with their origin) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 489.8898 cm
+1 0 0 1 78 476.8898 cm
 q
 BT 1 0 0 1 0 68.5 Tm .567173 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (A reimplementation inherits the verifications of the original, or states in writing why it does not.) Tj /F1 9.5 Tf  T* 0 Tw .468949 Tw (This rule exists because of a specific failure. The reference ordering of section 7 was first built with two) Tj T* 0 Tw 5.014328 Tw (checks tied to its definition, and when it was reimplemented for a variable dimension the) Tj T* 0 Tw .486899 Tw (reimplementation dropped both, built a different ordering, and cost a full session explaining an anomaly) Tj T* 0 Tw 1.169838 Tw (that did not exist. The check it dropped would have caught the error at the moment the function was) Tj T* 0 Tw (written.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 431.8898 cm
+1 0 0 1 78 418.8898 cm
 q
 BT 1 0 0 1 0 42.5 Tm .858881 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (No figure enters a commit message before a checker has printed it.) Tj /F1 9.5 Tf ( This rule exists because two) Tj T* 0 Tw -0.094701 Tw (commit messages in one day carried counts that had been written from memory rather than counted, in a) Tj T* 0 Tw 2.940614 Tw (repository whose whole point is that figures come with provenance. The counts were small and) Tj T* 0 Tw (harmless; the habit was not.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 373.8898 cm
+1 0 0 1 78 360.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 42.5 Tm /F1 9.5 Tf 13 TL .581768 Tw (Two further rules predate the work but were exercised by it: contact with the source of the data is read) Tj T* 0 Tw .424576 Tw (only and at a fixed tag, and the name of anything that leaves this work passes a term check before it is) Tj T* 0 Tw .108268 Tw (frozen. The repository name and the title of this paper each have their own record of that check, with the) Tj T* 0 Tw (queries declared before running and the limits of the check declared after.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 345.8898 cm
+1 0 0 1 78 332.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 6.5 Tm /F2 11.5 Tf 18 TL (9.4 What a third party can verify today) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 274.8898 cm
+1 0 0 1 78 261.8898 cm
 q
 BT 1 0 0 1 0 55.5 Tm -0.032338 Tw 13 TL /F2 9.5 Tf 0 0 0 rg (These counts are a snapshot, and the apparatus makes going stale a failure rather than a silence.) Tj /F1 9.5 Tf  T* 0 Tw .612505 Tw (They are counted up to the last closed session, so opening a session or recording a decision does not) Tj T* 0 Tw 1.673976 Tw (move them; closing one does. When it does, the exporter is rerun and the figures above no longer) Tj T* 0 Tw -0.033789 Tw (match, and the checker that guards every figure in this paper refuses the assembly until they are brought) Tj T* 0 Tw (up to date. A number that would quietly rot is instead a number that stops the build.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 203.8898 cm
+1 0 0 1 78 190.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 55.5 Tm /F1 9.5 Tf 13 TL -0.055732 Tw (Clone the repository and run the programs. Every figure in this paper comes from a results file in it, every) Tj T* 0 Tw 2.236152 Tw (results file is produced by a program in it, and every program is deterministic: the only source of) Tj T* 0 Tw -0.031912 Tw (randomness is a seed that is frozen in the source and declared in the reports. The declarations that were) Tj T* 0 Tw 1.339161 Tw (made before each measurement are separate commits, earlier in the history than the measurements) Tj T* 0 Tw (they govern, and that ordering is checkable without trusting anyone.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 119.8898 cm
+1 0 0 1 78 106.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 68.5 Tm /F1 9.5 Tf 13 TL -0.111732 Tw (What a third party cannot verify by running anything is the literature review, which is a matter of what was) Tj T* 0 Tw 1.550599 Tw (read. That is why it carries its own doctrine, verdicts only from artefacts actually read, second hand) Tj T* 0 Tw .995144 Tw (marked as second hand with its chain of citation, and every figure with a pointer or returned; why the) Tj T* 0 Tw .142783 Tw (intersections found are recorded next to the results they touch rather than in a closing note; and why the) Tj T* 0 Tw .909116 Tw (single novelty declaration is a signed file with its scope stated as relative to a review whose limits are) Tj T* 0 Tw (written down.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 83.88976 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 8 Tm /F2 14 Tf 22 TL (References) Tj T* ET
 Q
 Q
  
@@ -4050,81 +4043,88 @@ endstream
 endobj
 49 0 obj
 <<
-/Length 6466
+/Length 6387
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 737.8898 cm
+1 0 0 1 78 741.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 8 Tm /F2 14 Tf 22 TL (References) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 709.8898 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 16.5 Tm /F1 9.5 Tf 13 TL .056755 Tw (Each entry records the identity as the literature review fixed it, and whether the artefact was read here or) Tj T* 0 Tw (enters as second hand. That mark is part of the reference.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 640.8898 cm
+1 0 0 1 78 612.8898 cm
 q
 BT 1 0 0 1 18 81.5 Tm -18 0 Td 1.168864 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (1. Bj\366rner, A., & Brenti, F. \(2005\). ) Tj /F3 9.5 Tf (Combinatorics of Coxeter groups) Tj /F1 9.5 Tf ( \(Graduate Texts in Mathematics,) Tj T* 0 Tw 18 0 Td .23443 Tw (Vol. 231\). Springer. ISBN 3-540-44238-3. Equation \(1.25\) and Proposition 1.5.2, p. 20; Sections 8.1) Tj T* 0 Tw (and 8.2, pp. 245, 252.) Tj  T* .626873 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; the year, series, volume, publisher and) Tj T* 0 Tw -0.0886 Tw (ISBN were read from the front matter of the copy held here, its title page and its copyright page. That) Tj T* 0 Tw -0.006057 Tw (title page prints the first author as Bjorner, without the diaeresis; the accepted spelling is used above) Tj T* 0 Tw (and the discrepancy is recorded here.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 569.8898 cm
+1 0 0 1 78 541.8898 cm
 q
 BT 1 0 0 1 18 55.5 Tm -18 0 Td .942221 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (2. Cook, R. S. \(2006\). ) Tj /F3 9.5 Tf (Classical Chinese combinatorics: Derivation of the Book of Changes hexagram) Tj T* 0 Tw 18 0 Td 6.015209 Tw (sequence) Tj /F1 9.5 Tf ( \(STEDT Monograph Series, Vol. 5\). University of California, Berkeley. ISBN) Tj T* 0 Tw (0-944613-44-6.) Tj  T* .317616 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read through its review in full, plus full text sweeps of the converted text; the book itself was) Tj T* 0 Tw (not read cover to cover.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 524.8898 cm
+1 0 0 1 78 496.8898 cm
 q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td 3.201206 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (3. Drasny, J. ) Tj /F3 9.5 Tf (The solution of the King Wen sequence?) Tj /F1 9.5 Tf ( [Review of the book ) Tj /F3 9.5 Tf (Classical Chinese) Tj T* 0 Tw 18 0 Td (combinatorics) Tj /F1 9.5 Tf (, by R. S. Cook]. Yijing Dao. http://www.biroco.com/yijing/cook.htm) Tj  T* /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full; the review carries no date on the page read, so none is printed.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 453.8898 cm
+1 0 0 1 78 425.8898 cm
 q
 BT 1 0 0 1 18 55.5 Tm -18 0 Td 2.330299 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (4. Garc\355a Hurtado, A. \(2026\). ) Tj /F3 9.5 Tf (Uninformative rungs: An order-theoretic stopping criterion for nested) Tj T* 0 Tw 18 0 Td (reference sets) Tj /F1 9.5 Tf (. Zenodo. https://doi.org/10.5281/zenodo.21750029) Tj  T* .191662 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( cited as a pointer to the framework under which the inferential question of Section 8.3 would) Tj T* 0 Tw -0.037526 Tw (have to be posed. ITS CONTENT IS NOT LOAD BEARING HERE: nothing in this paper depends on) Tj T* 0 Tw (it, and it was not read in the course of this work.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 421.8898 cm
+1 0 0 1 78 393.8898 cm
 q
 BT 1 0 0 1 18 16.5 Tm -18 0 Td 13 TL /F1 9.5 Tf 0 0 0 rg (5. Gritter, G. \(2015\). ) Tj /F3 9.5 Tf (The hidden pattern in the classical sequence of the I Ching) Tj /F1 9.5 Tf (. Groningen.) Tj  T* 18 0 Td /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 350.8898 cm
+1 0 0 1 78 322.8898 cm
 q
 BT 1 0 0 1 18 55.5 Tm -18 0 Td 1.498268 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (6. Hacker, E., & Moore, S. \(2003\). A brief note on the two-part division of the received order of the) Tj T* 0 Tw 18 0 Td (hexagrams in the Zhouyi. ) Tj /F3 9.5 Tf (Journal of Chinese Philosophy) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(2\), 219\226221.) Tj  T* 1.799299 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( SECOND HAND: bibliographic identity taken from the bibliography of Moore \(2005\); not) Tj T* 0 Tw .272594 Tw (read. The pointer names the author and year and not a number, so that renumbering the list cannot) Tj T* 0 Tw (turn it into a reference to itself, which is what it had just become.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 305.8898 cm
+1 0 0 1 78 277.8898 cm
 q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td 13 TL /F1 9.5 Tf 0 0 0 rg (7. Moore, S. \(2005\). ) Tj /F3 9.5 Tf (Structural elements in the King Wen sequence of hexagrams) Tj /F1 9.5 Tf ( \(Oracle Paper No. 1\).) Tj  T* 18 0 Td .817474 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; the quoted passage taken verbatim from the rendered PDF page, p. 6, and not from) Tj T* 0 Tw (the OCR conversion.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 260.8898 cm
+1 0 0 1 78 232.8898 cm
 q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td 3.775545 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (8. M\374tze, T. \(2023\). Combinatorial Gray codes: An updated survey. ) Tj /F3 9.5 Tf (The Electronic Journal of) Tj T* 0 Tw 18 0 Td (Combinatorics) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (30) Tj /F1 9.5 Tf (\(3\), Dynamic Survey DS26.) Tj  T* /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in the cited part, Section 3.2 on p. 11, verified against the PDF.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 202.8898 cm
+1 0 0 1 78 174.8898 cm
 q
 BT 1 0 0 1 18 42.5 Tm -18 0 Td 1.880724 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (9. Propp, J., & Roby, T. \(2015\). ) Tj /F3 9.5 Tf (Homomesy in products of two chains) Tj /F1 9.5 Tf ( \(Version 6\) [Preprint]. arXiv.) Tj T* 0 Tw 18 0 Td (https://arxiv.org/abs/1310.5201v6) Tj  T* .894005 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and Section 2.1 on p. 4 verified against the PDF; its journal identity is second hand,) Tj T* 0 Tw (since the artefact read is the arXiv version.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 144.8898 cm
+1 0 0 1 78 116.8898 cm
 q
 BT 1 0 0 1 18 42.5 Tm -18 0 Td 2.074506 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (10. Radisic, A. ) Tj /F3 9.5 Tf (Optimal equivariant matchings on the 6-cube: With an application to the King Wen) Tj T* 0 Tw 18 0 Td (sequence) Tj /F1 9.5 Tf ( \(Version 3\) [Preprint]. arXiv. https://arxiv.org/abs/2601.07175v3) Tj  T* .554443 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in full, eleven pages; its Appendix A was transcribed and collated against our data, all) Tj T* 0 Tw (sixty four positions agreeing.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 86.88976 cm
+1 0 0 1 78 84.88976 cm
 q
-BT 1 0 0 1 18 42.5 Tm -18 0 Td -0.071861 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (11. Reiner, V., Stanton, D., & White, D. \(2004\). The cyclic sieving phenomenon. ) Tj /F3 9.5 Tf (Journal of Combinatorial) Tj T* 0 Tw 18 0 Td (Theory, Series A) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (108) Tj /F1 9.5 Tf (\(1\), 17\22650. https://doi.org/10.1016/j.jcta.2004.04.009) Tj  T* 1.510974 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in identity and definition; cited for context, since it counts fixed points and not orbit) Tj T* 0 Tw (averages.) Tj T* ET
+BT 1 0 0 1 18 16.5 Tm -18 0 Td -0.071861 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (11. Reiner, V., Stanton, D., & White, D. \(2004\). The cyclic sieving phenomenon. ) Tj /F3 9.5 Tf (Journal of Combinatorial) Tj T* 0 Tw 18 0 Td (Theory, Series A) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (108) Tj /F1 9.5 Tf (\(1\), 17\22650. https://doi.org/10.1016/j.jcta.2004.04.009) Tj T* ET
 Q
 Q
  
@@ -4132,29 +4132,35 @@ endstream
 endobj
 50 0 obj
 <<
-/Length 1552
+/Length 1812
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 698.8898 cm
+1 0 0 1 78 724.8898 cm
 q
-BT 1 0 0 1 18 55.5 Tm -18 0 Td 1.744738 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (12. Roby, T. ) Tj /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3;) Tj T* 0 Tw 18 0 Td (Section 2.1 and Example 4, p. 4.) Tj  T* .39777 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its first page was checked again for this) Tj T* 0 Tw .909973 Tw (edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor) Tj T* 0 Tw (series, so neither is printed and the gap stays declared.) Tj T* ET
+BT 1 0 0 1 18 29.5 Tm 13 TL /F1 9.5 Tf 0 0 0 rg  T* 1.510974 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read in identity and definition; cited for context, since it counts fixed points and not orbit) Tj T* 0 Tw (averages.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 653.8898 cm
 q
+BT 1 0 0 1 18 55.5 Tm -18 0 Td 1.744738 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (12. Roby, T. ) Tj /F3 9.5 Tf (Dynamical algebraic combinatorics and the homomesy phenomenon) Tj /F1 9.5 Tf (. Example 1, p. 3;) Tj T* 0 Tw 18 0 Td (Section 2.1 and Example 4, p. 4.) Tj  T* .39777 Tw /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read, and the cited pages verified against the PDF; its first page was checked again for this) Tj T* 0 Tw .909973 Tw (edition and carries title, author, abstract, key words and affiliation but neither year nor volume nor) Tj T* 0 Tw (series, so neither is printed and the gap stays declared.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 608.8898 cm
+q
 BT 1 0 0 1 18 29.5 Tm -18 0 Td .183035 Tw 13 TL /F1 9.5 Tf 0 0 0 rg (13. Sch\366ter, A. \(1998\). Boolean algebra and the Yi Jing. ) Tj /F3 9.5 Tf (The Oracle: The Journal of Yijing Studies) Tj /F1 9.5 Tf (, ) Tj /F3 9.5 Tf (2) Tj /F1 9.5 Tf (\(7\),) Tj T* 0 Tw 18 0 Td (19\22634. ISSN 1463-6220.) Tj  T* /F3 9.5 Tf (Status:) Tj /F1 9.5 Tf ( read; Definition 6, Sequence Parameters.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 632.8819 cm
+1 0 0 1 78 587.8819 cm
 Q
 q
-1 0 0 1 78 596.8819 cm
+1 0 0 1 78 551.8819 cm
 q
-BT 1 0 0 1 0 22.4 Tm 1.473959 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit 8c5a3876c1318a3c3f4dc2010824f8568e4f7cf6, dated 2026-08-10.) Tj T* 0 Tw 1.572649 Tw (Working tree clean: si. sha256 of the manuscript: 0d2cf441c3f953c7baa15cc9708129479ac982f1c0848343bc3ca686eb5dfdc3.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
+BT 1 0 0 1 0 22.4 Tm 1.388839 Tw 10 TL /F2 7.6 Tf 0 0 0 rg (Colophon.) Tj /F1 7.6 Tf ( Built from the assembled manuscript at commit ea86bf60ca6fd2c9af2e5b8e206fc8b402011ded, dated 2026-08-10.) Tj T* 0 Tw 1.411149 Tw (Working tree clean: si. sha256 of the manuscript: 476db07e706f9fafa597b164ad465964dbc3ee67706846fa02f4deea218d4c94.) Tj T* 0 Tw (Checks green at build time: 61.) Tj T* ET
 Q
 Q
  
@@ -4211,12 +4217,12 @@ xref
 0000122157 00000 n 
 0000128247 00000 n 
 0000134222 00000 n 
-0000140201 00000 n 
-0000146719 00000 n 
+0000140292 00000 n 
+0000146731 00000 n 
 trailer
 <<
 /ID 
-[<42d9018722a726db0e68cfac93ea41d8><42d9018722a726db0e68cfac93ea41d8>]
+[<8d6b9c859a33b0aab27039c0394a945f><8d6b9c859a33b0aab27039c0394a945f>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 28 0 R
@@ -4224,5 +4230,5 @@ trailer
 /Size 51
 >>
 startxref
-148323
+148595
 %%EOF

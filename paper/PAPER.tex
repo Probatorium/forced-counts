@@ -566,11 +566,11 @@ The second preregistration, for the general phase, was signed after a phase whos
 
 \subsection*{9.2 The effort log}
 
-Every working session opens and closes an entry in an append only log: 28 closed sessions in 144 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
+Every working session opens and closes an entry in an append only log: 29 closed sessions in 149 records at the point this text was frozen. Each record carries the previous record's hash, so editing an old line breaks the chain and a verifier reports it, and the chain currently verifies with 0 problems; the tool that writes the log has no operation that rewrites or deletes. Exactly 1 entry is marked retroactive, the first, and it says that a reconstructed record is not equivalent to one taken live, which is the only honest thing to do with a log that begins one commit late.
 
-The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 97 files were classified, over 19845 lines: 6959 of apparatus against 12886 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
+The log also classifies every file as apparatus or analysis, separating what was written here from what was extracted, so that the proportion between building instruments and producing results is visible rather than anecdotal. At the same point, 97 files were classified, over 19976 lines: 7085 of apparatus against 12891 of analysis, of which 313 lines are extracted from elsewhere and are not counted as written here.
 
-Dead ends are recorded as their own kind of entry, with their cost. There are 7 of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix mistake made again by hand a session later while editing this very section, a criterion for binary files that let an uncompressed PDF pass as text and counted its line breaks as written work, and a patch script that truncated a source file because the call that opens a file for writing empties it before it validates its own arguments. The fourth and the fifth were caught by the checker that was written to catch exactly that; the sixth by the packaging run; the seventh by the file being under version control, which is the cheapest safety net in the list.
+Dead ends are recorded as their own kind of entry, with their cost. There are 8 of them: a command written with the wrong working tree, a process left running after its replacement had been launched, an analysis that hung because a group closure exploded exactly as a declaration had warned it might, a tool of our own that resolved a key by prefix and so pointed a figure at the wrong line, the same prefix mistake made again by hand a session later while editing this very section, a criterion for binary files that let an uncompressed PDF pass as text and counted its line breaks as written work, a patch script that truncated a source file because the call that opens a file for writing empties it before it validates its own arguments, and a shell here-document that ate an escape sequence and left a control byte inside a checker, so that the checker failed on the very fix it was meant to confirm. The fourth, the fifth and the eighth were caught by the checkers written to catch exactly that; the sixth by the packaging run; the seventh by the file being under version control, which is the cheapest safety net in the list.
 
 \subsection*{9.3 Rules that were born during the work, with their origin}
 
@@ -613,10 +613,10 @@ Each entry records the identity as the literature review fixed it, and whether t
 \begin{small}
 \noindent\textbf{Colophon.}
 Built from the assembled manuscript at commit
-\texttt{8c5a3876\allowbreak c1318a3c\allowbreak 3f4dc201\allowbreak 0824f856\allowbreak 8e4f7cf6},
+\texttt{ea86bf60\allowbreak ca6fd2c9\allowbreak af2e5b8e\allowbreak 206fc8b4\allowbreak 02011ded},
 dated 2026-08-10. Working tree clean: si. Checks green at build time: 61.
 \par\noindent
 sha256 of the manuscript:
-\texttt{0d2cf441\allowbreak c3f953c7\allowbreak baa15cc9\allowbreak 70812947\allowbreak 9ac982f1\allowbreak c0848343\allowbreak bc3ca686\allowbreak eb5dfdc3}
+\texttt{476db07e\allowbreak 706f9faf\allowbreak a597b164\allowbreak ad465964\allowbreak dbc3ee67\allowbreak 706846fa\allowbreak 02f4deea\allowbreak 218d4c94}
 \end{small}
 \end{document}
