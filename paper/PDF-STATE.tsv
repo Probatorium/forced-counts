@@ -16,5 +16,5 @@ sha256	87b934d9ddf7b32aa61599dff0492654366305245c27df4465e3d74f7b11733e	del fich
 bytes	370771	
 productor	pdfTeX-1.40.25	leido del propio fichero
 compilado.desde	6b8a145	clon limpio de ese commit
-colofon.nombra.el.commit	b4a62fa	el commit de contenido del que salio el .tex
+colofon.nombra.el.commit	b4a62fa28a7acc33079250213f79d97026bd476b	el commit de contenido del que salio el .tex
 quien.compilo	externo a esta maquina	aqui no hay cadena de LaTeX

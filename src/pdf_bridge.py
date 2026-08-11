@@ -147,10 +147,16 @@ def valida_canonico():
           "cambiado desde que se compilo: en cualquiera de los dos casos se "
           "debe una version nueva")
 
-    m = re.search(r"commit\s*\n?\\texttt\{([^}]*)\}",
-                  open(TEX, encoding="utf-8").read())
-    commit = m.group(1).replace("\\allowbreak ", "") if m else ""
-    emit("commit.del.colofon", commit or "no encontrado", "")
+    # EL COMMIT ESPERADO SALE DEL ESTADO DECLARADO, no del .tex de ahora.
+    #
+    # El .tex se regenera cada vez que se construye, y su colofon nombra el HEAD
+    # del momento. El PDF entregado es una foto del .tex tal y como estaba al
+    # compilarlo, asi que en cuanto se hace un commit mas el .tex va por delante
+    # del PDF y compararlos contra el .tex vivo daria rojo siempre. Lo canto la
+    # verificacion en clon limpio, donde la cadena regenera el .tex antes de
+    # correr los comprobadores.
+    commit = campo_declarado("colofon.nombra.el.commit")
+    emit("commit.del.colofon.segun.el.estado", commit or "no declarado", "")
     check("el.canonico.lleva.impreso.ese.commit", bool(commit) and commit in plano)
     check("ese.commit.existe.en.esta.historia",
           bool(commit) and git("cat-file", "-t", commit) == "commit")

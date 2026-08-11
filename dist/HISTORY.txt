@@ -1,6 +1,10 @@
 # La historia de forced-counts, una linea por commit, del mas
 # reciente al mas antiguo. El commit raiz es la preinscripcion.
 
+bb222cd El PDF canonico entra, verificado por sha antes de moverlo
+6b8a145 El .tex y el preview con los tres retoques, desde arbol limpio
+b4a62fa Tres retoques de ronda 2
+60aeb7b Verificacion del paquete tras entrar el tercer sitio
 5fcb058 El .tex y el preview con el tercer sitio, desde arbol limpio
 85d6eee El comprobador de diacriticos vigila tambien Lafreniere
 10fcc49 El tercer sitio del germen entra, verificado en pagina renderizada
